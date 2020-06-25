@@ -15,16 +15,23 @@ class SkyV1 extends Component {
     super(props);
     this.state={
       file: null,
-      show:false
+      show:false,
+      show2:false,
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
     this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
     this.cancelCourse=this.cancelCourse.bind(this);
   }
 
   handleModal() {
     this.setState({show:!this.state.show})
+  } 
+  
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
   }
   cancelCourse() {
     document.getElementById('firstName').value="";
@@ -34,6 +41,25 @@ class SkyV1 extends Component {
     document.getElementById('location').value="";
     document.getElementById('date').value="";
     document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var firstNameLength=document.getElementById('firstName').value.length;
+    var lastNameLength=document.getElementById('lastName').value.length;
+    var userEmailLength=document.getElementById('userEmail').value.length;
+    var descriptionLength=document.getElementById('description').value.length;
+    var locationLength=document.getElementById('location').value.length;
+    var dateLength=document.getElementById('date').value.length;
+    var subjectFile=document.getElementById('subjectFile').value
+
+    var result=firstNameLength*lastNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
+    console.log(result);
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
   }
 
   saveToFb() {
@@ -64,12 +90,17 @@ class SkyV1 extends Component {
   }
 
   async submitForm(e){
-    var formInputs = this.saveToFb();
+    if(this.checkValue()) {
+      this.handleModal2()
+    }else {
+      var formInputs = this.saveToFb();
 
-    e.preventDefault();
-
-    await this.uploadFile(this.state.file, formInputs);
-    this.handleModal()
+      e.preventDefault();
+  
+      await this.uploadFile(this.state.file, formInputs);
+      this.handleModal()
+    }
+    
   }
 
   async uploadFile(file, formInputs) {
@@ -190,7 +221,7 @@ class SkyV1 extends Component {
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
             {/* <Form.File.Input required  onChange={this.SkyV1} ref={
               fileupload => {inputFile = fileupload;} */}
-              <Form.File.Input required  onChange={this.onChange}  bsPrefix='form-file-input' name="skyPhoto" />
+              <Form.File.Input required  onChange={this.onChange} id="subjectFile" bsPrefix='form-file-input' name="skyPhoto" />
               <p className="hint" >File must be .jpg or .png and under 1MB</p>
             </Col>
         </Form.Row>
@@ -212,6 +243,17 @@ class SkyV1 extends Component {
           <Button  variant="primary" bsPrefix="share_button" className="btn-2">SHARE WITH FRIENDS</Button>
         </Form.Row>
       </Form>
+
+      <Modal show={this.state.show2}>
+            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Body>
+              Please submit all the required folder
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
 
       <Modal show={this.state.show}>
         <Modal.Header> Modal Head Part</Modal.Header>
