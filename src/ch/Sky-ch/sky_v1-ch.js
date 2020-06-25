@@ -22,7 +22,6 @@ class SkyV1_ch extends Component {
 
   saveToFb() {
     var firstName=document.getElementById('firstName').value;
-    var lastName=document.getElementById('lastName').value;
     var userEmail=document.getElementById('userEmail').value;
     var description=document.getElementById('description').value;
     var location=document.getElementById('location').value;
@@ -30,7 +29,6 @@ class SkyV1_ch extends Component {
   
     var testFinal={
       firstName:firstName,
-      lastName:lastName,
       userEmail:userEmail,
       description:description,
       location:location,
@@ -60,7 +58,6 @@ class SkyV1_ch extends Component {
     var formData = new FormData();
     formData.append('skyPhoto', file);
     formData.append('firstName', formInputs['firstName']);
-    formData.append('lastName', formInputs['lastName']);
     formData.append('userEmail', formInputs['userEmail']);
     formData.append('description', formInputs['description']);
     formData.append('location', formInputs['location']);

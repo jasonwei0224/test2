@@ -113,7 +113,7 @@ export default class HeaderV1 extends React.Component {
               <Nav.Link href="/">首頁</Nav.Link>
                 <NavDropdown title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
                   <NavDropdown.Item href="#">活動足跡</NavDropdown.Item>
-                  <NavDropdown.Item href="#">A藝術方針</NavDropdown.Item>
+                  <NavDropdown.Item href="#">藝術方針</NavDropdown.Item>
                   <NavDropdown.Item href="#">媒體資訊</NavDropdown.Item>
                   <NavDropdown.Item href="#">我們團隊</NavDropdown.Item>
                 </NavDropdown>
