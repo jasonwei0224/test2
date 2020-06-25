@@ -79,12 +79,6 @@ export default class HeaderV1 extends React.Component {
       top: this.state.top,
       width: this.state.width,
       zIndex: this.state.zIndex,
-      // fontWeight:"bold",
-      // color:"black",
-      // width:"100%",
-      // fontSize:"14px",
-      // fontFamily:"sofia-pro, Sans-serif",
-      // backgroundColor: "#e2e2e2"
       }}>
       <Container fluid>
         <Navbar expand="lg">
@@ -125,8 +119,8 @@ export default class HeaderV1 extends React.Component {
                 </NavDropdown>
               <Nav.Link href="#">音樂饗宴</Nav.Link>
               <NavDropdown title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
-              <NavDropdown.Item href="#sky">天空</NavDropdown.Item>
-              <NavDropdown.Item href="#IAmDifferent">共同面對的我們</NavDropdown.Item>
+              <NavDropdown.Item href="#sky-ch">天空</NavDropdown.Item>
+              <NavDropdown.Item href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#">希望講堂</Nav.Link>
               <Nav.Link href="#">我們藝樣 (請新增)</Nav.Link>
