@@ -13,13 +13,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import Header from "./header";
 import SkyV1 from "./sky_v1";
-
+import HeaderV1 from "./header_v1.js";
+import logo from "./assets/twftorlogo.png";
 
 function App() {
   return (
       <div className="App">
         <HashRouter>
-        <Header />
+        <img src={logo} id="logo"></img>
+        <HeaderV1 />
           <Route path="/" exact component={Home} />
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
