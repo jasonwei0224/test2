@@ -13,7 +13,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import Header from "./header";
 import SkyV1 from "./sky_v1";
-<<<<<<< HEAD
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
 import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";
 import IAmDifferentForm_ch from "./ch/IAmDifferent-ch/i_am_different_form-ch";
@@ -21,10 +20,8 @@ import Home_ch from "./ch/Home-ch/home-ch";
 import PaulsApple_ch from "./ch/PaulsApple-ch/pauls_apple-ch";
 import PeopleAndMask_ch from "./ch/PeopleAndMask-ch/people_and_mask-ch";
 import Mirror_ch from "./ch/Mirror-ch/mirror-ch";
-=======
 import HeaderV1 from "./header_v1.js";
 import logo from "./assets/twftorlogo.png";
->>>>>>> f2b3f31ef80d3fbd0f9564efcedf002f2f7bebff
 
 function App() {
   return (
