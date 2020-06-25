@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProgramInfo from "./programInfo"
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from './assets/placeholder.png';
 // import './people_and_mask.css'
 import './IAmDifferentForm.css'
@@ -15,12 +15,27 @@ class IAmDifferentForm extends Component {
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
   }
 
+  handleModal() {
+    this.setState({show:!this.state.show})
+  }
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
   saveToFb() {
     console.log("Inside submitForm()");
     var senderFullName=document.getElementById('senderFullName').value;
@@ -55,7 +70,7 @@ class IAmDifferentForm extends Component {
     e.preventDefault();
 
     await this.uploadFile(this.state.file, formInputs);
-
+    this.handleModal()
   }
 
   async uploadFile(file, formInputs) {
@@ -178,6 +193,17 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               <Button bsPrefix="share_button" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
+          
+          <Modal show={this.state.show}>
+            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Body>
+              Your submission done
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
     </Container>
     <Footer/>
   </div>
