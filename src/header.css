@@ -1,0 +1,91 @@
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #BE0027 !important;
+}
+
+/*
+react-bootstrap dropdown on hover:
+https://stackoverflow.com/questions/43010814/how-can-i-make-react-bootstraps-dropdown-open-on-mouse-hover
+*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  font-family: "sofia-pro", Sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.dropdown-item {
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "sofia-pro";
+  color: white !important;
+  text-align: center !important;
+}
+
+.dropdown-item:hover {
+  color: #BE0027 !important;
+}
+
+.dropdown-menu {
+  background-color: #BE0027 !important;
+}
+
+.dropdown-item::selection{
+  color: #BE0027 !important;
+}
+
+.dropdown-item:active{
+  background-color: Black !important;
+}
+
+.navbar-toggler {
+  margin: 0 auto;
+}
+
+.langIcon {
+  width: 30px;
+  height: 30px;
+
+}
+
+.langNavLink {
+  padding-top: 0 !important;
+}
+
+@media screen and (max-width: 400px) {
+  .dropdown-item {
+    font-size: 40px;
+  }
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(244, 247, 241);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline;
+  color: rgb(39, 29, 29);
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  horizontal-align: middle;
+}
+
+a {
+  display: inline-block;
+}
+
+li a:hover {
+  background-color: rgb(158, 219, 221);
+} */

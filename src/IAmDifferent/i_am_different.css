@@ -1,0 +1,250 @@
+.upload_button {
+  text-align: center;
+  border-radius: 20px;
+  text-align: left;
+  background-color: #D9C739;
+  padding-left: 16%;
+  padding-right: 16%;
+  color: white;
+
+}
+.image_col{
+  padding: 0px;
+
+}
+
+.main_image{
+  margin: 0px;
+  width:100%;
+  height: auto;
+}
+.share_button{
+  padding-left:  16%;
+  padding-right: 16%;
+ background-color:#BE0027;
+ color: white;
+ border-radius:20px ;
+
+ margin: auto;
+}
+.form_link {
+  background-color: #d9c739;
+  border-radius: 25px;
+  color: white;
+}
+
+.form_link:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: "adonis-web";
+
+}
+
+.instruction_title {
+  margin-top: 100px;
+  font-family: "sofia-pro", Sans-serif;
+  font-weight: 600;
+  color: #BE0027;
+  font-size: 20px;
+}
+
+.instruction_body {
+  font-family: "sofia-pro", Sans-serif;
+  font-weight: normal;
+  color: #707070;
+  font-size: 20px;
+}
+
+
+/* below are mediaquiries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {.
+  .upload_button {
+    padding-left:  18%;
+    padding-right: 18%;
+   background-color:#D9C739;
+   color: #0C3866;
+   border-radius:20px ;
+   font-size:40px;
+   margin: auto;
+    text-align: left;
+}
+  .share_button{
+    padding-left:  16%;
+    padding-right: 16%;
+   background-color:#BE0027;
+   color: white;
+   border-radius:20px ;
+   font-size:30px !important;
+   margin: auto;
+  }
+   .instruction_title {
+    font-size: 45px;
+  }
+  .instruction_body {
+    font-size: 45px;
+  }
+   .contents > p {
+    font-size: 45px;
+  }
+  .box {
+  }
+  .newsletter > p {
+    font-size: 15px;
+  }
+  .newsletter :first-child {
+    font-size: 25px;
+  }
+  .newsletter > button {
+    margin-bottom: 10px;
+  }
+  .contact_us > p {
+    font-size: 15px;
+  }
+  .contact_us :first-child {
+    font-size: 25px;
+  }
+  .contact_us > button {
+    margin-bottom: 10px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .upload_button {
+    padding-left:  15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+   background-color:#D9C739;
+   color: #0C3866 !important;
+   border-radius:20px ;
+   font-size:30px;
+   font-weight: bold;
+   margin: 0;
+}
+  .share_button{
+    padding-left:  20%;
+    padding-right: 20%;
+   background-color:#BE0027;
+   color: white;
+   border-radius:20px;
+   font-size:30px;
+   font-weight: bold;
+   margin: auto;
+  }
+  .instruction_title {
+    font-size: 45px;
+  }
+   .instruction_body {
+    font-size: 42px;
+  }
+   .contents > p {
+    font-size: 42px;
+  }
+  .newsletter > p {
+    font-size: 15px;
+  }
+  .newsletter :first-child {
+    font-size: 25px;
+  }
+  .newsletter > button {
+    margin-bottom: 10px;
+  }
+  .contact_us > p {
+    font-size: 15px;
+  }
+  .contact_us :first-child {
+    font-size: 25px;
+  }
+  .contact_us > button {
+    margin-bottom: 10px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+
+  .upload_button {
+    padding-left:  10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+   background-color:#D9C739;
+   color: #0C3866 !important;
+   border-radius:20px ;
+   font-size:30px;
+   margin: auto;
+
+}
+
+  .box {
+  }
+  .newsletter > p {
+    font-size: 15px;
+  }
+  .newsletter :first-child {
+    font-size: 30px;
+  }
+  .newsletter > button {
+    margin-bottom: 10px;
+  }
+  .contact_us > p {
+    font-size: 15px;
+  }
+  .contact_us :first-child {
+    font-size: 30px;
+  }
+  .contact_us > button {
+    margin-bottom: 10px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+   .instruction_title {
+    font-size: 20px;
+  }
+   .instruction_body {
+    font-size: 20px;
+  }
+   .contents > p {
+    font-size: 23px;
+  }
+  .upload_button {
+    padding-left:  10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+     margin-left:30%;
+   background-color:#D9C739;
+   color: white;
+   border-radius:20px ;
+   font-size:15px;
+   margin: auto;
+    margin-bottom:10px;
+}
+  .newsletter > p {
+    font-size: 20px;
+  }
+  .newsletter :first-child {
+    font-size: 35px;
+  }
+  .newsletter > button {
+    margin-bottom: 10px;
+  }
+  .contact_us > p {
+    font-size: 20px;
+  }
+  .contact_us :first-child {
+    font-size: 35px;
+  }
+  .contact_us > button {
+    margin-bottom: 10px;
+  }
+}

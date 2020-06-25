@@ -1,0 +1,17 @@
+.footer{
+  background-color:#636569;
+  height: 10%;
+  padding: 10px;
+  text-align: center;
+  color:#FFFFFF;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  font-family: "sofia-pro", Sans-serif !important;
+}
+.footer_content{
+color: #FFFFFF;
+font-weight:normal;
+font-family: "sofia-pro", Sans-serif !important;
+}
