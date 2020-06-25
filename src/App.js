@@ -28,6 +28,7 @@ function App() {
       <div className="App">
         <HashRouter>
         <img src={logo} id="logo"></img>
+        <hr id="mobileLine"/>
         <HeaderV1 />
           <Route path="/" exact component={Home} />
           <Route path="/PaulsApple" component={PaulsApple} />

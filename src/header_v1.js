@@ -74,17 +74,17 @@ export default class HeaderV1 extends React.Component {
 
   render(){
     return (
-    <div style={{
+    <div id="header" style={{
       position: this.state.position,
       top: this.state.top,
       width: this.state.width,
       zIndex: this.state.zIndex,
-      fontWeight:"bold",
-      color:"black",
-      width:"100%",
-      fontSize:"14px",
-      fontFamily:"sofia-pro, Sans-serif",
-      backgroundColor: "#e2e2e2"
+      // fontWeight:"bold",
+      // color:"black",
+      // width:"100%",
+      // fontSize:"14px",
+      // fontFamily:"sofia-pro, Sans-serif",
+      // backgroundColor: "#e2e2e2"
       }}>
       <Container fluid>
         <Navbar expand="lg">
