@@ -141,12 +141,6 @@ class SkyV1_ch extends Component {
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="lastName" type="text" placeholder="Last Name" required size="lg"/>
-            </Col>
-        </Form.Row>
-        <Form.Row style={{marginBottom:"30px"}}>
             
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
               <Form.Control id="userEmail" type="text" placeholder="Email" required size="lg"/>
