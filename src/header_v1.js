@@ -91,26 +91,6 @@ export default class HeaderV1 extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> {/* text align to left for dropdown with centered hamburger icon */}
-              {/* {this.state.english?<Nav.Link href="/">HOME</Nav.Link>:<Nav.Link href="/">首頁</Nav.Link>}
-                <NavDropdown title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item href="#">HISTORY</NavDropdown.Item>
-                  <NavDropdown.Item href="#">ARTIST VISION</NavDropdown.Item>
-                  <NavDropdown.Item href="#">MEDIA</NavDropdown.Item>
-                  <NavDropdown.Item href="#">OUR TEAM</NavDropdown.Item>
-                </NavDropdown>
-              <Nav.Link href="#">CONCERT</Nav.Link>
-              <NavDropdown title="GALLERY" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                {this.state.english? <NavDropdown.Item href="#sky">SKY</NavDropdown.Item> : <NavDropdown.Item href="#Sky-ch">SKY-ch</NavDropdown.Item> }
-                {this.state.english? <NavDropdown.Item href="#IAmDifferent">I AM DIFFERENT</NavDropdown.Item> : <NavDropdown.Item href="#IAmDifferent-ch">I AM DIFFERENT-ch</NavDropdown.Item>}
-              </NavDropdown>
-              <Nav.Link href="#">TALKS</Nav.Link>
-              <Nav.Link href="#">KITCHEN</Nav.Link>
-              <Nav.Link href="#">BOOKSTORE</Nav.Link>
-              <Nav.Link href="#">FILMS</Nav.Link>
-              <Nav.Link href="#">SPONSORS</Nav.Link>
-              <Nav.Link href="#">VOLUNTEER</Nav.Link>
-              {this.state.english?<Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
-              :<Nav.Link className="langNavLink"><img src={en} className="langIcon" onClick={this.languageBtnListener}/></Nav.Link>} */}
               {this.state.english?
               <>
               <Nav.Link href="/">HOME</Nav.Link>
