@@ -13,7 +13,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import Header from "./header";
 import SkyV1 from "./sky_v1";
-
+import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
+import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";
+import IAmDifferentForm_ch from "./ch/IAmDifferent-ch/i_am_different_form-ch";
+import Home_ch from "./ch/Home-ch/home-ch";
+import PaulsApple_ch from "./ch/PaulsApple-ch/pauls_apple-ch";
+import PeopleAndMask_ch from "./ch/PeopleAndMask-ch/people_and_mask-ch";
+import Mirror_ch from "./ch/Mirror-ch/mirror-ch";
 
 function App() {
   return (
@@ -29,6 +35,13 @@ function App() {
           <Route path="/SkyV2" component={Sky} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/Sky" component={SkyV1}/>
+          <Route path="/Sky-ch" component={SkyV1_ch}/>
+          <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
+          <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
+          <Route path="/Home-ch" component={Home_ch}/>
+          <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
+          <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
+          <Route path="/Mirror-ch" component={Mirror_ch}/>
 
           </HashRouter>
       </div>

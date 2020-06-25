@@ -44,9 +44,9 @@ function IAmDifferent() {
             {/* <CardGame /> */}
         </Row>
         <ProgramInfo
-          subtitle="Game Interaction"
-          title="I'M DIFFERENT JUST LIKE YOU"
-          artistName="TAIWANfest"
+          subtitle="我跟你的相同，就是我們都不同 "
+          title="共同面對的我們"
+          artistName="影像創作 X 線上互動 "
           url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
           color="#D9C739"
         ></ProgramInfo>
@@ -63,16 +63,7 @@ function IAmDifferent() {
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
             <p className="instruction_body">
               {" "}
-              CHINESE VERSION
-              The first lesbian movie I loved was Heavenly Creatures, Peter
-              Jackson’s sumptuous 1994 film starring a young Kate Winslet as a
-              dangerously charismatic schoolgirl who enraptures a sallow
-              classmate with her phantasmagoric fantasy world. In the end, they
-              kill the classmate’s mother. At age fourteen, that squared with my
-              concept of love: predicated on fantasy, eroticized by power
-              imbalance, likely to end in murder—not so much that of anyone’s
-              mother, but more likely of me, by the strength of my own whirling
-              feelings.
+              在疫情最辛苦艱難的時期，許多生命受苦臨危之際，醫護人員、警消人員、科學家、衛生官員這些專業人士，在拯救生命的同時，並不會過問危難者的族裔與身份。我們每一個人都會面臨生命終結的一天，當這些專業人士在救助受苦的人們，處理危急的情況當下，並不會過問對方的膚色族裔、語言文化、社經地位，那時，他們的眼中視一切生命皆為平等，不因求助者的外在條件、理想價值而有所不同。
             </p>{" "}
           </Col>
         </Row>
@@ -83,29 +74,24 @@ function IAmDifferent() {
           >
             <p>
               {" "}
-              The first lesbian movie I loved was Heavenly Creatures, Peter
-              Jackson’s sumptuous 1994 film starring a young Kate Winslet as a
-              dangerously charismatic schoolgirl who enraptures a sallow
-              classmate with her phantasmagoric fantasy world. In the end, they
-              kill the classmate’s mother. At age fourteen, that squared with my
-              concept of love: predicated on fantasy, eroticized by power
-              imbalance, likely to end in murder—not so much that of anyone’s
-              mother, but more likely of me, by the strength of my own whirling
-              feelings.
+              若世界以專業領域、社會貢獻的成就來對待每一個人，給予每個人付出後應得的尊重；人們不再以膚色外表、出身背景評斷、喜惡他人，是否才能真正地將每個人當作獨立的個人看待?
             </p>{" "}
             <p>
               {" "}
-              A year later, it was The Incredibly True Adventures of Two Girls
-              in Love, Maria Maggenti’s considerably less gothic tale of high
-              school senior Randy (a young, butch Tina from The L Word), who has
-              been sleeping with an older, married woman when she meets Evie, a
-              rich and popular girl who stops at the gas station where Randy
-              works. The movie ends with the two kissing amid a chaotic muddle
-              of class tension, homophobic friends, and angry parents and school
-              administrators. It was a perfect anthem for me at age fifteen, as
-              I had recently begun making out with my rich best friend and was
-              the only out kid in my high school class.{" "}
+              我們希望從加拿大台灣文化節發起 "I’m different, just like you." (我跟你的相同，就是我們都不同) 運動，蒐集與展示醫護人員、警消人員、科學家、衛生官員的照片，不僅向抗疫英雄致敬，也邀請大家一起參與、呼籲欣賞每個人與眾不同的美，為我們信仰人生而平等的理念喝采。「不同」代表著我們都是獨立的個體；「相同」意謂我們擁有共通的情感，肯定生而為人的人性價值。為我們的不同感到驕傲，為我們的相同愛惜彼此 !
+              {" "}
             </p>
+            <p>
+              {" "}
+              上傳照片的民眾，不僅可能在台灣文化節網站看到自己、親友或世界各地相同職業人士的照片，還能在我們的網站上進行影像互動體驗，一起邀更多朋友響應 "I’m different, just like you."
+              {" "}
+            </p>
+            <p>
+              {" "}
+              8/28起，分享照片的朋友，可以在網站上，看到自己分享的照片，以及體驗影線互動遊戲!
+              {" "}
+            </p>
+            
           </Col>
         </Row>
         <Row>

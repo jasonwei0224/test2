@@ -88,21 +88,11 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo subtitle="Game Interaction" title="I'M DIFFERENT JUST LIKE YOU" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
+          <ProgramInfo subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="影像創作 X 線上互動" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
           <Row className="mainContents" style={{marginTop:"100px"}}>
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <p className="contentsInParagraph"> CHINESE VERSION Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent eget tincidunt felis, sit amet congue lectus.
-              Praesent auctor sodales ligula sed dignissim. Orci varius
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Proin facilisis orci finibus magna aliquet, a
-              elementum purus dignissim.</p> <br />
-              <p className="contentsInParagraph">Fusce sed nisl rhoncus, imperdiet
-              elit vel, imperdiet ex. Quisque lacus ex, pulvinar eget tellus
-              id, suscipit cursus enim. Integer nec erat non leo vulputate
-              fermentum sed at massa. Cras et turpis sagittis, malesuada
-              velit at, semper velit. Sed porta nibh et mauris malesuada,
-              vel placerat tellus feugiat. </p>
+              <p className="contentsInParagraph"> 本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。
+              </p> <br />
             </Col>
           </Row>
 
@@ -172,7 +162,7 @@ class IAmDifferentForm extends Component {
               </Col>
 
               <Col xl={{span:9, offset:0}} lg={{span:10, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-                <div className="formConsent">"I consent the submitted photo for the use in the &quot;We are all in this together&quot; project"</div>
+                <div className="formConsent">"我同意多倫多台灣文化節將我上傳的照片作為「我和你相同，就是我們都不同」節目的 內容與相關宣傳使用。"</div>
               </Col>
             </Form.Row>
 
