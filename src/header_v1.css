@@ -2,7 +2,6 @@
     color: #BE0027 !important;
   }
 
-
   /*
   react-bootstrap dropdown on hover:
   https://stackoverflow.com/questions/43010814/how-can-i-make-react-bootstraps-dropdown-open-on-mouse-hover
@@ -38,6 +37,17 @@
     background-color: Black !important;
   }
 
+  .langIcon {
+    width: 15px;
+    height: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .langNavLink {
+    padding-top: 6px !important;
+    padding-bottom: 0 !important;
+  }
 
   /* ul {
     list-style-type: none;
@@ -71,3 +81,5 @@
   li a:hover {
     background-color: rgb(158, 219, 221);
   } */
+
+  
