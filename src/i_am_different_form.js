@@ -110,7 +110,7 @@ class IAmDifferentForm extends Component {
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
               <p className="contentsInParagraph">In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
 
-On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition “I’m different, just like you! - We are all in this together”. It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
+On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
 </p>
             </Col>
           </Row>
