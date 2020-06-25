@@ -8,6 +8,7 @@
   margin-right: auto;
   width: 16%;
   margin-top: 10px;
+  margin-bottom: 8px;
 }
 /* xs < 768 */
 @media screen and (max-width: 767px) {

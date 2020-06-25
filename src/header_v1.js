@@ -20,7 +20,6 @@ export default class HeaderV1 extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     this.setLanguage();
-
   }
 
   componentWillUnmount() {
@@ -48,6 +47,7 @@ export default class HeaderV1 extends React.Component {
       this.redirect(this.state.english);
     });
   }
+
 
   redirect(englishState){
     var currentUrl = window.location.href;
@@ -79,19 +79,19 @@ export default class HeaderV1 extends React.Component {
       top: this.state.top,
       width: this.state.width,
       zIndex: this.state.zIndex,
-      backgroundColor:"white",
       fontWeight:"bold",
       color:"black",
       width:"100%",
       fontSize:"14px",
-      fontFamily:"sofia-pro, Sans-serif"
+      fontFamily:"sofia-pro, Sans-serif",
+      backgroundColor: "#e2e2e2"
       }}>
       <Container fluid>
         <Navbar expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="m-auto" style={{alignItems:"end"}}> {/* text align to left for dropdown with centered hamburger icon */}
-              <Nav.Link href="/">HOME</Nav.Link>
+            <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> {/* text align to left for dropdown with centered hamburger icon */}
+              {/* {this.state.english?<Nav.Link href="/">HOME</Nav.Link>:<Nav.Link href="/">首頁</Nav.Link>}
                 <NavDropdown title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
                   <NavDropdown.Item href="#">HISTORY</NavDropdown.Item>
                   <NavDropdown.Item href="#">ARTIST VISION</NavDropdown.Item>
@@ -109,7 +109,56 @@ export default class HeaderV1 extends React.Component {
               <Nav.Link href="#">FILMS</Nav.Link>
               <Nav.Link href="#">SPONSORS</Nav.Link>
               <Nav.Link href="#">VOLUNTEER</Nav.Link>
-              {this.state.english?<Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>:<Nav.Link className="langNavLink"><img src={en} className="langIcon" onClick={this.languageBtnListener}/></Nav.Link>}
+              {this.state.english?<Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
+              :<Nav.Link className="langNavLink"><img src={en} className="langIcon" onClick={this.languageBtnListener}/></Nav.Link>} */}
+              {this.state.english?
+              <>
+              <Nav.Link href="/">HOME</Nav.Link>
+                <NavDropdown title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown.Item href="#">HISTORY</NavDropdown.Item>
+                  <NavDropdown.Item href="#">ARTIST VISION</NavDropdown.Item>
+                  <NavDropdown.Item href="#">MEDIA</NavDropdown.Item>
+                  <NavDropdown.Item href="#">OUR TEAM</NavDropdown.Item>
+                </NavDropdown>
+              <Nav.Link href="#">CONCERT</Nav.Link>
+              <NavDropdown title="GALLERY" id="basic-nav-dropdown" renderMenuOnMount={true}>
+              <NavDropdown.Item href="#sky">SKY</NavDropdown.Item>
+              <NavDropdown.Item href="#IAmDifferent">I AM DIFFERENT</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#">HOPE TALK</Nav.Link>
+              <Nav.Link href="#">ARTIST TALK</Nav.Link>
+              <Nav.Link href="#">KITCHEN</Nav.Link>
+              <Nav.Link href="#">BOOKSTORE</Nav.Link>
+              <Nav.Link href="#">FILMS</Nav.Link>
+              <Nav.Link href="#">SPONSORS</Nav.Link>
+              <Nav.Link href="#">VOLUNTEER</Nav.Link>
+              <Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
+              </>
+              :
+              <>
+              <Nav.Link href="/">首頁</Nav.Link>
+                <NavDropdown title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown.Item href="#">活動足跡</NavDropdown.Item>
+                  <NavDropdown.Item href="#">A藝術方針</NavDropdown.Item>
+                  <NavDropdown.Item href="#">媒體資訊</NavDropdown.Item>
+                  <NavDropdown.Item href="#">我們團隊</NavDropdown.Item>
+                </NavDropdown>
+              <Nav.Link href="#">音樂饗宴</Nav.Link>
+              <NavDropdown title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
+              <NavDropdown.Item href="#sky">天空</NavDropdown.Item>
+              <NavDropdown.Item href="#IAmDifferent">共同面對的我們</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#">希望講堂</Nav.Link>
+              <Nav.Link href="#">我們藝樣 (請新增)</Nav.Link>
+              <Nav.Link href="#">友誼廚房</Nav.Link>
+              <Nav.Link href="#">台灣書店</Nav.Link>
+              <Nav.Link href="#">電影櫥窗</Nav.Link>
+              <Nav.Link href="#">贊助單位</Nav.Link>
+              <Nav.Link href="#">義工專區</Nav.Link>
+              <Nav.Link className="langNavLink"><img className="langIcon" src={en} onClick={this.languageBtnListener}/></Nav.Link>
+              </>
+              }
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>
