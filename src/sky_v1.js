@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import ImageSlider from './imageSlider';
 import ProgramInfo from "./programInfo";
 import {Link} from 'react-router-dom'
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from './assets/placeholder.png';
 import Footer from './footer-temp';
 import './sky_v1.css'
@@ -14,10 +14,26 @@ class SkyV1 extends Component {
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
+  }
+
+  handleModal() {
+    this.setState({show:!this.state.show})
+  }
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
   }
 
   saveToFb() {
@@ -53,7 +69,7 @@ class SkyV1 extends Component {
     e.preventDefault();
 
     await this.uploadFile(this.state.file, formInputs);
-
+    this.handleModal()
   }
 
   async uploadFile(file, formInputs) {
@@ -196,6 +212,17 @@ class SkyV1 extends Component {
           <Button  variant="primary" bsPrefix="share_button" className="btn-2">SHARE WITH FRIENDS</Button>
         </Form.Row>
       </Form>
+
+      <Modal show={this.state.show}>
+        <Modal.Header> Modal Head Part</Modal.Header>
+        <Modal.Body>
+          Your submission done
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+          
+        </Modal.Footer>
+      </Modal>
       </Container>
       <Footer/>
     </div>
