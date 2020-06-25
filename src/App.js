@@ -45,7 +45,6 @@ function App() {
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
-
           </HashRouter>
       </div>
   );

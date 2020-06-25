@@ -7,18 +7,20 @@ import ch from "./assets/ch.png";
 
 export default class HeaderV1 extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state={
-            english: true,
-            position: "",
-            top: "",
-            zIndex: "",
-        }
-    }
+  constructor(props) {
+      super(props);
+      this.state={
+          english: true,
+          position: "",
+          top: "",
+          zIndex: "",
+      }
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    this.setLanguage();
+
   }
 
   componentWillUnmount() {
@@ -53,6 +55,19 @@ export default class HeaderV1 extends React.Component {
       window.location.href = currentUrl.slice(0, -3);
     } else {
       window.location.href = currentUrl + "-ch";
+    }
+  }
+
+  setLanguage() {
+    var currentUrl = window.location.href;
+    if(currentUrl.slice(-3) === "-ch") {
+      this.setState({
+        english: false
+      })
+    } else  {
+      this.setState({
+        english: true
+      })
     }
   }
 
