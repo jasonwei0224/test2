@@ -1,0 +1,247 @@
+.mainContents {
+  margin-top: 50px;
+  margin-bottom:50px;
+  font-family: 'adonis-web';
+}
+
+
+input[type="checkbox"]{
+  width: 30px; /*Desired width*/
+  height: 30px; /*Desired height*/
+  cursor: pointer;
+}
+
+.formConsent{
+  color: #BE0027;
+}
+.main_image{
+  margin: 0px;
+  width:100%;
+  height: auto;
+}
+
+.form-section-title{
+  background-color: #D9C739 !important;
+  margin-bottom:2% !important;
+  padding-top: 0.5% !important;
+  padding-bottom:0.5% !important;
+  font-weight: bold !important;
+  font-size: 45px !important;
+
+}
+.form_field_text{
+  font-size:30px;
+}
+
+.share_button{
+  padding-left:  16%;
+  padding-right: 16%;
+ background-color:#BE0027;
+ color: white;
+ border-radius:20px ;
+ font-size:40px;
+ margin: auto;
+}
+#hint{
+  color: #707070;
+}
+.options{
+  font-size: 40px;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+
+  .form_field_text{
+    font-size:40px !important;
+  }
+  .contentsInParagraph {
+    font-size: 45px;
+  }
+
+  .formLabel {
+    font-size:25px;
+  }
+
+  .formConsent {
+    font-size:25px;
+  }
+  .form-section-title{
+    background-color: "#D9C739" !important;
+    margin-bottom:"2%" !important;
+    padding-top:"0.5%" !important;
+    padding-bottom:"0.5%" !important;
+    font-weight: "bold" !important;
+  }
+  .hed{
+     background-color: #D9C739;
+     margin-bottom:2%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    font-weight:bold;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+
+  .form-file-input{
+    font-size: 40px;
+    color: #707070;
+  }
+
+  .contentsInParagraph {
+    font-size: 45px;
+  }
+  .formLabel {
+    font-size:20px;
+  }
+
+  .formConsent {
+    font-size:25px;
+  }
+  #hint{
+    font-size: 30px;
+  }
+  .form_field_text{
+    font-size:40px !important;
+  }
+  .submit_button{
+     padding-left:  30%;
+     padding-right: 30%;
+    background-color:#707070;
+    color: white;
+    border-radius:20px ;
+    font-size:40px;
+    margin: auto;
+  }
+  .form-section-title{
+    background-color: #D9C739 !important;
+    margin-bottom:2% !important;
+    padding-top: 0.5% !important;
+    padding-bottom:0.5% !important;
+    font-weight: bold !important;
+    font-size: 45px !important;
+  }
+  .hed{
+     background-color: #D9C739;
+     margin-bottom:2%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    font-weight:bold;
+  }
+  .btn-2{
+    background-color:#BE0027;
+    margin:auto;
+    margin-bottom:10%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size:40px !important;
+    text-align: center;
+    border-radius: 50px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 1024px) {
+
+  .contentsInParagraph {
+    font-size: 20px;
+  }
+
+  .formLabel {
+    font-size:18px;
+  }
+
+  .formConsent {
+    font-size:18px;
+  }
+  .form_field_text{
+    font-size:40px ;
+  }
+  input[type="checkbox"]{
+    width: 25px; /*Desired width*/
+    height: 25px; /*Desired height*/
+    cursor: pointer;
+  }
+  .form-section-title{
+    background-color: #D9C739 !important;
+    margin-bottom:2% !important;
+    padding-top: 0.5% !important;
+    padding-bottom:0.5% !important;
+    font-weight: bold !important;
+    font-size: 45px !important;
+  }
+  .hed{
+     background-color: #D9C739;
+     margin-bottom:2%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    font-weight:bold;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .form_field_text{
+    font-size:20px !important;
+  }
+  #hint{
+    font-size: 20px !important;
+  }
+
+  .contentsInParagraph {
+    font-size: 25px;
+  }
+
+  .formLabel {
+    font-size:20px;
+  }
+
+  .formConsent {
+    font-size:20px !important;
+    margin-left: -8% !important;
+  }
+  .share_button{
+    display: None;
+  }
+
+  .form-file-input{
+    font-size: 25px;
+  }
+  .form-section-title{
+    background-color: #D9C739 !important;
+    margin-bottom:2% !important;
+    padding-top: 0.5% !important;
+    padding-bottom:0.5% !important;
+    font-weight: bold !important;
+    font-size: 30px !important;
+  }
+  .submit_button{
+       padding-left:  5%!important;
+       padding-right: 5%!important;
+      background-color:#707070 !important;
+      color: white !important;
+      border-radius:50px !important;
+      font-size:15px !important;
+      margin: auto !important;
+  }
+  input[type="checkbox"]{
+    width: 25px; /*Desired width*/
+    height: 25px; /*Desired height*/
+    cursor: pointer;
+  }
+  .form-section-title{
+    font-family: "sofia-pro", Sans-serif;
+    margin-bottom: -0.5%;
+    font-size: 20px;
+  }
+  .hed{
+     background-color: #D9C739;
+     margin-bottom:2%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    font-size: 20px;
+    font-weight:bold;
+  }
+}

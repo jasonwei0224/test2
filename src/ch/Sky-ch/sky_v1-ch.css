@@ -1,0 +1,239 @@
+p {
+  font-family: 'adonis-web';
+}
+
+
+.mainContents {
+  margin-top: 100px;
+  margin-bottom:50px;
+}
+
+.formLabel .formConsent{
+  font-family: "sofia-pro", Sans-serif;
+  color:"#BE0027";
+}
+
+.imageSlider {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  .contentsInParagraph {
+    font-size: 45px;
+  }
+
+  .formLabel {
+    font-size:25px;
+    font-family: sophia
+  }
+
+  .formConsent {
+    font-size:25px;
+  }
+  input[type="checkbox"]{
+    width: 50px; /*Desired width*/
+    height: 50px; /*Desired height*/
+    cursor: pointer;
+  }
+  .submit_button{
+    padding-left: 30% !important;
+    padding-right:30% !important;
+    background-color:#707070 !important;
+    border-radius:20px !important;
+    margin:auto !important;
+    color: white !important;
+  }
+  #description , #firstName, #lastName, #userEmail, #description, #location,
+  #date {
+    font-size: 40px !important;
+  }
+  .hed{
+    font-size:40px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .contentsInParagraph {
+    font-size: 45px;
+  }
+
+  .formLabel {
+    font-size:40px;
+    padding-bottom: 15px;
+  }
+  .formConsent {
+    font-size:30px;
+    padding-bottom: 5%;
+
+  }
+  .form-file-input{
+    font-size: 40px;
+    color: #707070;
+  }
+  .hint{
+    font-size: 30px !important;
+    color: #707070;
+  }
+  .btn{
+    font-size:40px !important;
+    text-align: center;
+  }
+  .share .sharebtn .col-button{
+    font-size: 40px;
+    padding-right:"10%"!important;
+    padding-left:"30%"!important;
+  }
+  .share_button{
+    padding-right:16%;
+    padding-left:16%;
+    background-color:#BE0027;
+    border-radius:20px;
+    margin:auto;
+    margin-bottom:10%;
+}
+  input[type="checkbox"]{
+    width: 50px; /*Desired width*/
+    height: 50px; /*Desired height*/
+    cursor: pointer;
+  }
+  #firstName{
+    font-size: 40px;
+  }
+  .submit_button{
+    padding-left: 30% !important;
+    padding-right:30% !important;
+    background-color:#707070 !important;
+    border-radius:20px !important;
+    margin:auto !important;
+    color: white !important;
+  }
+  #description , #firstName, #lastName, #userEmail, #description, #location,
+  #date {
+    font-size: 40px !important;
+  }
+  .hed{
+    font-size:40px;
+  }
+  .second_title{
+    color:#BE0027;
+    font-size: 40px;
+    font-family: "sofia-pro", Sans-serif;
+  }
+  .project_content{
+    font-size:40px;
+    margin-bottom: 5%;
+    color: #4A4A4A;
+    font-family: "sofia-pro", Sans-serif;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  input[type="checkbox"]{
+    width: 50px; /*Desired width*/
+    height: 50px; /*Desired height*/
+    cursor: pointer;
+  }
+  .contentsInParagraph {
+    font-size: 35px;
+  }
+  .btn{
+    font-size:40px !important;
+    text-align: center;
+  }
+  .form-file-input{
+    font-size: 30px;
+    color: #707070;
+  }
+  .formLabel {
+    font-size:25px;
+  }
+
+  .formConsent {
+    font-size:25px;
+  }
+  input[type="checkbox"]{
+    width: 25px; /*Desired width*/
+    height: 25px; /*Desired height*/
+    cursor: pointer;
+  }
+  #firstName{
+    font-size: 30px !important;
+  }
+  .submit_button{
+    padding-left: 30% !important;
+    padding-right:30% !important;
+    background-color:#707070 !important;
+    border-radius:20px !important;
+    margin:auto !important;
+    color: white !important;
+  }
+  #description , #firstName, #lastName, #userEmail, #description, #location,
+  #date {
+    font-size: 30px !important;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .hed{
+    font-size: 30px!important;
+  }
+  .contentsInParagraph {
+    font-size: 30px;
+  }
+  .btn{
+    font-size:30px !important;
+    text-align: center;
+  }
+
+  .formLabel {
+    font-size:30px;
+  }
+  .form-file-input{
+    font-size: 30px;
+    color: #707070;
+  }
+  .formConsent {
+    font-size:25px !important;
+    margin-left: -8% !important;
+  }
+  input[type="checkbox"]{
+    width: 25px; /*Desired width*/
+    height: 25px; /*Desired height*/
+    cursor: pointer;
+  }
+  #description , #firstName, #lastName, #userEmail, #description, #location,
+  #date {
+    font-size: 30px !important;
+  }
+  .hint{
+    font-size: 20px !important;
+  }
+  .submit_button{
+    padding-left: 5% !important;
+    padding-right:5% !important;
+    background-color:#707070 !important;
+    border-radius:50px !important;
+    margin:auto !important;
+    color:white !important;
+  }
+  .second_title{
+    color:#BE0027;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "sofia-pro", Sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .project_content{
+    font-size:25px;
+    margin-bottom: 5%;
+    color: #4A4A4A;
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: bold;
+  }
+}

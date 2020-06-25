@@ -1,0 +1,255 @@
+.slider{
+    width: 100%;
+    margin-left: 0;
+/*    display: block;*/
+    height: 100%;
+}
+
+.slider img{
+    width: 100vw;
+    height: 70vh;
+}
+
+.imgs{
+    height: 70vh;
+}
+
+.paulBottomSection {
+    padding: 7% 20% 0 20%;
+    margin-bottom: 8%;
+}
+
+.paulBottomSection p {
+    color: #0C3866;
+    font-size: 19pt;
+}
+
+.paulBottomSection img {
+    max-width: -webkit-fill-available;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.image{
+  width:100%;
+  height:auto;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .paulBottomSection {
+        padding: 7% 17% 0 17%;
+    }
+
+    .paulBottomSection p {
+        font-size: 16pt;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .paulBottomSection {
+        padding: 7% 15% 0 15%;
+    }
+
+    .paulBottomSection p {
+        font-size: 13pt;
+    }
+}
+
+
+/* .bottom{
+    width: 100%;
+    background-color: rgb(160, 152, 66);
+
+}
+
+.bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+    display: flex;
+  flex-direction: column;
+  min-height: 0px;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 4% 21% 4% 3.34%;
+    font-family: serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 4% 0 4% 18%;
+    font-weight: 400;
+    color: black;
+    font-family: serif
+}
+
+.p-l{
+    font-size: 40px;
+    width:63%;
+    line-height: 45px;
+    letter-spacing: 0.05em
+}
+
+.logos1 {
+    width: 210px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logos2 {
+    width: 180px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logos3 {
+    width: 150px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.icon {
+    margin: 60px 10px 30px 10px
+} */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 650px) {
+    .p-l {
+        font-size: 25px;
+        width:100%;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+
+    .column2 {
+        float: none;
+        width: 100%;
+        padding: 0% 10% 4% 10%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .column1 {
+        float: none;
+        width: 100%;
+        padding: 8% 10% 5% 10%;
+    }
+
+    .logos1, .logos2{
+        display: none
+    }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 650px) {
+    .p-l {
+        font-size: 30px;
+        width: 71%;
+        line-height: 35px;
+        letter-spacing: 0.05em
+    }
+
+    .column2 {
+        float: left;
+        width: 50%;
+        padding: 4% 17% 4% 3.34%;
+        font-family: serif;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500
+    }
+
+    .column1 {
+        float: left;
+        width: 50%;
+        padding: 4% 0 4% 16.5%;
+        font-weight: 400;
+        color: black;
+        font-family: serif
+    }
+
+    .logos1, .logos2 {
+        display: none
+    }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+    .p-l {
+        font-size: 35px;
+        width:69%;
+        line-height: 40px;
+    }
+
+    .column2 {
+        font-size: 17px;
+        line-height: 22px;
+        padding-right: 19%
+    }
+
+    .column1 {
+        padding-left: 17%
+    }
+
+    .logos1, .logos3 {
+        display: none
+    }
+
+    .logos2 {
+        display: block
+    }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+    .p-l {
+        font-size: 40px;
+        width:66%;
+        line-height: 45px;
+    }
+
+    .column2 {
+        font-size: 18.5px;
+        line-height: 23px;
+        padding-right: 21%
+    }
+
+    .column1 {
+        padding-left: 17.5%
+    }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+    .p-l {
+        width:63%;
+    }
+
+    .column2 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .column1 {
+        padding-left: 18%
+    }
+
+    .logos1 {
+        display: block
+    }
+
+    .logos2 {
+        display: none
+    }
+} */

@@ -1,0 +1,54 @@
+#share_button{
+  background-color: #BE0027;
+}
+
+#logo  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+  margin-top: 10px;
+}
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  #logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 10px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  #logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    margin-top: 10px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  #logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 10px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  #logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 21%;
+    margin-top: 25px;
+  }
+}

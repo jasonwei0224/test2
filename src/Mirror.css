@@ -1,0 +1,65 @@
+.container_modal {
+    display: block;
+    text-align: center;
+}
+
+.title_modal {
+    margin: 25px;
+}
+
+.buttonSkinColor_modal {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.btn_modal {
+    font-size: 20px;
+    padding: 15px;
+    border: 2px black solid;
+    background-color: #94AFC2;
+    margin:10px;
+    color:black;
+    position:relative;
+    margin-top: 50px;
+}
+
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-imgs {
+    width: 100%;
+    height: auto;
+}
+
+#prev-btn {
+     position: absolute;
+     top: 50%;
+     z-index: 10;
+     left: 5%;
+     font-size: 30px;
+     color: white;
+     opacity: 0.8;
+     cursor: pointer;
+}
+
+#next-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
