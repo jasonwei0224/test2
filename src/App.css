@@ -10,6 +10,12 @@
   margin-top: 10px;
   margin-bottom: 8px;
 }
+
+#mobileLine {
+  visibility: hidden;
+  margin: 0;
+}
+
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   #logo  {
@@ -30,6 +36,14 @@
     width: 45%;
     margin-top: 10px;
   }
+
+  #mobileLine {
+    visibility: visible;
+    color: black;
+    width: 70%;
+    border-top: 2px solid #bcbcbc;
+    margin: auto;
+  }
 }
 
 /* md */
@@ -41,6 +55,9 @@
     width: 25%;
     margin-top: 10px;
   }
+  #mobileLine {
+    visibility: hidden;
+  }
 }
 
 /* lg */
@@ -51,5 +68,8 @@
     margin-right: auto;
     width: 21%;
     margin-top: 25px;
+  }
+  #mobileLine {
+    visibility: hidden;
   }
 }

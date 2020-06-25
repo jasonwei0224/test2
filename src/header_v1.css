@@ -83,3 +83,81 @@
   } */
 
   
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .subtitle {
+      font-size: 40px;
+  }
+
+  .title {
+      font-size: 50px;
+      margin-bottom: 10%;
+  }
+
+  div.artist.col {
+      font-size: 32px;
+      margin-bottom: 0px !important;
+  }
+
+  a.upload.btn.btn-primary {
+      font-size: 20px;
+      padding: 5px 36px 5px 36px;
+      display: None;
+      margin-bottom: 0px !important;
+  }
+
+  a.share.btn.btn-primary {
+      font-size: 15px!important;
+
+      padding: 5px 32px 5px 32px;
+      font-family: "sofia-pro", Sans-serif !important;
+
+  }
+
+  #header {
+    font-weight: bold;
+    color:black;
+    width:100%;
+    font-size:14px;
+    font-family: sofia-pro, Sans-serif;
+    background-color: #e2e2e2;
+  }
+}
+
+
+/* md */
+@media only screen and (max-width: 1200px) {
+  #header {
+    background-color: #e2e2e2;
+    font-weight: bold;
+    color:black;
+    width:100%;
+    font-size:14px;
+    font-family: sofia-pro, Sans-serif;
+  }
+}
+/* sm */
+@media only screen and (max-width: 991px) {
+  #header {
+    font-weight: bold;
+    color:black;
+    width:100%;
+    font-size:14px;
+    font-family: sofia-pro, Sans-serif;
+    background-color: white;
+  }
+}
+
+/* style={{
+  position: this.state.position,
+  top: this.state.top,
+  width: this.state.width,
+  zIndex: this.state.zIndex,
+  fontWeight:"bold",
+  color:"black",
+  width:"100%",
+  fontSize:"14px",
+  fontFamily:"sofia-pro, Sans-serif",
+  backgroundColor: "#e2e2e2"
+  }} */
