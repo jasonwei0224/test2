@@ -3,7 +3,7 @@ import CardGame_ch from "./cardGame-ch";
 import styled from "@emotion/styled";
 import different_img from "../../assets/Different.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import ProgramInfo from "../../programInfo";
+import ProgramInfo_ch from "../programInfo-ch";
 import "./i_am_different-ch.css";
 import Header from "../../header";
 import { Link } from "react-router-dom";
@@ -43,13 +43,13 @@ function IAmDifferent() {
             </Col>
             {/* <CardGame /> */}
         </Row>
-        <ProgramInfo
+        <ProgramInfo_ch
           subtitle="我跟你的相同，就是我們都不同 "
           title="共同面對的我們"
           artistName="影像創作 X 線上互動 "
           url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
           color="#D9C739"
-        ></ProgramInfo>
+        ></ProgramInfo_ch>
         <Row>
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
@@ -100,7 +100,7 @@ function IAmDifferent() {
             <Button
               href="#IAmDifferentForm-ch"
               bsPrefix="upload_button" >
-              UPLOAD FRONT-LINE HERO PHOTO
+              上傳照片
 
               {/* <Link to="/IAmDifferentForm" className="form_link">
                 UPLOAD FRONT-LINE HERO PHOTO
@@ -110,7 +110,7 @@ function IAmDifferent() {
         </Row>
         <Row>
           <Col style={{ marginBottom: "50px" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button bsPrefix="share_button" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
+            <Button bsPrefix="share_button" variant="primary" type="submit">分享給朋友</Button>
           </Col>
         </Row>
       </Container>
