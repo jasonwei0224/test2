@@ -1,4 +1,4 @@
-.box {
+/* .box {
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,6 @@
   margin-bottom: 10px;
 }
 
-/* xs < 768 */
 @media screen and (max-width: 767px) {
   .box {
     height: 600px;
@@ -44,7 +43,6 @@
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
   .contact_us > p,
   .newsletter > p {
@@ -56,7 +54,6 @@
   }
 }
 
-/* md */
 @media screen and (min-width: 992px) {
   .contact_us > p,
   .newsletter > p {
@@ -68,7 +65,6 @@
   }
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .contact_us > p,
   .newsletter > p {
@@ -78,4 +74,4 @@
   .newsletter :first-child {
     font-size: 35px;
   }
-}
+} */

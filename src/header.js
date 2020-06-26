@@ -2,7 +2,7 @@ import React from "react";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import {Container, Row, Col, Form, Button, Dropdown, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
-import "./header.css";
+// import "./header.css";
 import logo from "./assets/twftorlogo.png";
 import en from "./assets/en.png";
 import ch from "./assets/ch.png";

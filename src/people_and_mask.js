@@ -7,7 +7,7 @@ import mask5 from './assets/mask5.jpg';
 import SwipeableViews from 'react-swipeable-views';
 import { virtualize, bindKeyboard } from 'react-swipeable-views-utils';
 import { mod } from 'react-swipeable-views-core';
-import './people_and_mask.css'
+// import './people_and_mask.css'
 import { Button } from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 import image2 from './assets/image2.jpg'

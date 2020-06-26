@@ -1,17 +1,11 @@
-/* .main_osom {
-    width: 100%;
-    height:70dp;
-} */
-
+/* 
 
 .container_osom {
-    /* display:inline-block; */
     background-color: #71799d;
     font: white;
     width:100%;
     height:100%;
     float:right;
-    /* text-align: center; */
 }
 .test {
     margin:auto;
@@ -51,7 +45,6 @@
   display:inline-block;
 }
 
-/* xs < 768 */
 @media screen and (max-width: 767px) {
 
   .contents {
@@ -59,7 +52,6 @@
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
 
   .contents {
@@ -67,7 +59,6 @@
   }
 }
 
-/* md */
 @media screen and (min-width: 992px) {
 
   .contents {
@@ -75,10 +66,9 @@
   }
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
 
   .contents {
     font-size: 25px;
   }
-}
+} */

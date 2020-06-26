@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
 }
 
@@ -23,4 +23,4 @@ body {
   width: calc(100%/var(--n));
   user-select: none;
   pointer-events: none;
-}
+} */

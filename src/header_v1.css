@@ -1,6 +1,11 @@
+/* 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #efefef !important;
   }
+  .dropdown-item a:active, a:link a:hover, a:visited, a:active, a:focus{
+    background-color:#fff transparent !important; }
+    
+  
   nav.navbar{
     padding-top: 22px;
     padding-bottom: 13px;
@@ -9,6 +14,7 @@
   }
   .dropdown-item{
     font-family: "sofia-pro", Sans-serif !important;
+    
   }
   .navitem{
   color:black;
@@ -53,6 +59,7 @@
     font-size: 14px;
     font-family: "sofia-pro", Sans-serif;
     text-align: center;
+    
   }
 
   #basic-nav-dropdown{
@@ -68,21 +75,20 @@
     margin-bottom:5px;
     font-size: 14px;
     font-family: "sofia-pro", Sans-serif;
+    
   }
 .dropdown-toggle::before
 .dropdown-toggle:after { content: none }
   .navitem:hover{
     color:#BE0027;
   }
-  /*
-  react-bootstrap dropdown on hover:
-  https://stackoverflow.com/questions/43010814/how-can-i-make-react-bootstraps-dropdown-open-on-mouse-hover
-  */
+
   .dropdown:hover>.dropdown-menu {
     display: block;
     font-family: "sofia-pro", Sans-serif;
     font-size: 14px;
     font-weight: normal;
+    background-color: #BE0027;
   }
 
   .dropdown-item {
@@ -90,12 +96,15 @@
     font-size: 14px;
     font-family: "sofia-pro";
     color: white !important;
-    text-align: left !important; /* alignment for dropdown text */
+    text-align: left !important; 
+    background-color: #BE0027;
   }
 
   .dropdown-item:hover {
     color: #BE0027 !important;
+    background-color: #BE0027;
   }
+
 
   .dropdown-menu {
     background-color: #BE0027 !important;
@@ -103,11 +112,13 @@
 
   .dropdown-item::selection{
     color: #BE0027 !important;
+    background-color: #BE0027;
   }
 
   .dropdown-item:active{
     background-color: Black !important;
   }
+  
 
   .langIcon {
     width: 15px;
@@ -122,7 +133,6 @@
   }
 
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .subtitle {
       font-size: 40px;
@@ -171,7 +181,6 @@
 }
 
 
-/* md */
 @media only screen and (max-width: 1200px) {
   #header {
     background-color: #e2e2e2;
@@ -183,7 +192,6 @@
   }
 
 }
-/* sm */
 @media only screen and (max-width: 991px) {
   #header {
     font-weight: bold;
@@ -317,17 +325,4 @@
     color:white;
   }
 
-}
-
-/* style={{
-  position: this.state.position,
-  top: this.state.top,
-  width: this.state.width,
-  zIndex: this.state.zIndex,
-  fontWeight:"bold",
-  color:"black",
-  width:"100%",
-  fontSize:"14px",
-  fontFamily:"sofia-pro, Sans-serif",
-  backgroundColor: "#e2e2e2"
-  }} */
+} */

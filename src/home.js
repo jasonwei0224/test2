@@ -1,7 +1,7 @@
 import React from 'react';
 import placeholder from './assets/placeholder.jpg';
 import LogoSlider from './logoSlider';
-import './home.css'
+// import './home.css'
 
 const styles = {
     pictureLefted: {

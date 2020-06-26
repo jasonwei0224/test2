@@ -3,7 +3,7 @@ import ImgSlider from './img_slider';
 import ProgramInfoTB from './programInfoTwoButtons';
 import image1 from './assets/image1.jpg';
 import image2 from './assets/image2.jpg';
-import './sky.css'
+// import './sky.css'
 
 function Sky() {
     return (

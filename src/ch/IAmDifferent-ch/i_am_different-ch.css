@@ -1,4 +1,4 @@
-.upload_button {
+/* .upload_button {
   text-align: center;
   border-radius: 20px;
   text-align: left;
@@ -58,8 +58,6 @@ p {
 }
 
 
-/* below are mediaquiries */
-/* xs < 768 */
 @media screen and (max-width: 767px) {
   .upload_button {
     padding-left:  18%;
@@ -111,7 +109,6 @@ p {
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
   .upload_button {
     padding-left:  15%;
@@ -165,7 +162,6 @@ p {
   }
 }
 
-/* md */
 @media screen and (min-width: 992px) {
 
   .upload_button {
@@ -204,7 +200,6 @@ p {
   }
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
    .instruction_title {
     font-size: 30px;
@@ -247,4 +242,4 @@ p {
   .contact_us > button {
     margin-bottom: 10px;
   }
-}
+} */

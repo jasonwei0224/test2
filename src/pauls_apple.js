@@ -2,7 +2,7 @@ import React from 'react';
 import ImgComparison from './img_comparison';
 // import { SocialIcon } from 'react-social-icons';
 import ProgramInfo from './programInfo';
-import './pauls_apple.css'
+// import './pauls_apple.css'
 
 function PaulsApple() {
     return (

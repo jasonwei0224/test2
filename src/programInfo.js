@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
-import './programInfo.css'
+// import './programInfo.css'
 
 
 const ProgramInfo = (props) => {

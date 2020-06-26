@@ -1,4 +1,4 @@
-.mainContents {
+/* .mainContents {
   margin-top: 50px;
   margin-bottom:50px;
   font-family: 'adonis-web';
@@ -6,8 +6,8 @@
 
 
 input[type="checkbox"]{
-  width: 30px; /*Desired width*/
-  height: 30px; /*Desired height*/
+  width: 30px; 
+  height: 30px; 
   cursor: pointer;
 }
 
@@ -39,7 +39,6 @@ input[type="checkbox"]{
   font-size: 40px;
 }
 
-/* xs < 768 */
 @media screen and (max-width: 767px) {
   .contentBox_header {
     color:#0C3866;
@@ -72,7 +71,6 @@ input[type="checkbox"]{
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
   .contentBox_header {
     color:#0C3866;
@@ -127,7 +125,6 @@ input[type="checkbox"]{
   }
 }
 
-/* md */
 @media screen and (min-width: 1024px) {
   .contentBox_header {
     color:#0C3866;
@@ -160,13 +157,12 @@ input[type="checkbox"]{
     font-size:40px;
   }
   input[type="checkbox"]{
-    width: 25px; /*Desired width*/
-    height: 25px; /*Desired height*/
+    width: 25px; 
+    height: 25px; 
     cursor: pointer;
   }
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .contentBox_header {
     color:#0C3866;
@@ -225,8 +221,8 @@ input[type="checkbox"]{
       margin: auto;
   }
   input[type="checkbox"]{
-    width: 25px; /*Desired width*/
-    height: 25px; /*Desired height*/
+    width: 25px; 
+    height: 25px; 
     cursor: pointer;
   }
   .form-section-title{
@@ -234,4 +230,4 @@ input[type="checkbox"]{
     margin-bottom: -0.5%;
     font-size: 20px;
   }
-}
+} */
