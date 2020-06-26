@@ -1,59 +1,101 @@
 import React, {Component} from 'react';
 // import ImgSlider from './img_slider';
 import ImageSlider from '../../imageSlider';
-import ProgramInfo from "../../programInfo";
+import ProgramInfo_ch from "../programInfo-ch";
 import {Link} from 'react-router-dom'
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
 import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 
 class SkyV1_ch extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false,
+      show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
-  saveToFb() {
-    var firstName=document.getElementById('firstName').value;
-    var userEmail=document.getElementById('userEmail').value;
-    var description=document.getElementById('description').value;
-    var location=document.getElementById('location').value;
-    var date=document.getElementById('date').value;
-  
-    var testFinal={
-      firstName:firstName,
-      userEmail:userEmail,
-      description:description,
-      location:location,
-      date:date
-    }
-    let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
-    fire.database().ref('skyTest').push(testFinal);
+  handleModal() {
+    this.setState({show:!this.state.show})
+  }
 
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
+  }
 
-    return testFinal;
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
+  }
+
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var firstNameLength=document.getElementById('firstName').value.length;
+    var lastNameLength=document.getElementById('lastName').value.length;
+    var userEmailLength=document.getElementById('userEmail').value.length;
+    var descriptionLength=document.getElementById('description').value.length;
+    var locationLength=document.getElementById('location').value.length;
+    var dateLength=document.getElementById('date').value.length;
+    var subjectFile=document.getElementById('subjectFile').value
+
+    var result=firstNameLength*lastNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
+
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
   }
 
   onChange(e){
     this.setState({file: e.target.files[0]})
   }
 
-  async submitForm(e){    
-    var formInputs = this.saveToFb();
-
+  async submitForm(e){
     e.preventDefault();
+    if(this.checkValue()) {
+      this.handleModal2();
+    } else {
+      var firstName=document.getElementById('firstName').value;
+      var userEmail=document.getElementById('userEmail').value;
+      var description=document.getElementById('description').value;
+      var location=document.getElementById('location').value;
+      var date=document.getElementById('date').value;
 
-    await this.uploadFile(this.state.file, formInputs);
-
+      var testFinal={
+        firstName:firstName,
+        userEmail:userEmail,
+        description:description,
+        location:location,
+        date:date
+      }
+      await this.uploadFile(this.state.file, testFinal);
+    }
   }
 
+  // fetches php and saves to fb on success
   async uploadFile(file, formInputs) {
     var formData = new FormData();
     formData.append('skyPhoto', file);
@@ -62,17 +104,25 @@ class SkyV1_ch extends Component {
     formData.append('description', formInputs['description']);
     formData.append('location', formInputs['location']);
     formData.append('date', formInputs['date']);
-    
-    const response = await fetch('sky_form_photos.php', {
+
+    const response = await fetch('sky_form_photos-ch.php', {
       method: 'POST',
       body: formData
     })
-    .then(data => {
-      console.log(data);
+    .then(data => data.text())
+    .then(data=> {
+      if(data=="valid") {
+        this.handleModal();
+        let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
+        fire.database().ref('skyTest').push(formInputs);
+      } else if(data=="invalid") {
+        this.invalidFile();
+      }
     })
     .catch(err => {
       console.log(err);
     })
+
   }
   render() {
     return (
@@ -86,9 +136,9 @@ class SkyV1_ch extends Component {
           <img src="" style={{width:"100%", height:"auto"}}/>
         </Col>
       </Row>
-      <ProgramInfo subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
-      </ProgramInfo>
-      
+      <ProgramInfo_ch subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+      </ProgramInfo_ch>
+
       <Row className="mainContents" style={{marginTop:"100px"}}>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <p className="contentsInParagraph">
@@ -126,33 +176,33 @@ class SkyV1_ch extends Component {
       </Row>
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>Photographer</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>攝影師資訊</Col>
       </Row>
 
       <Form encType="multipart/form-data">
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="firstName" type="text" placeholder="First Name" required size="lg"/>
+              <Form.Control id="firstName" type="text" placeholder="英文姓名" required size="lg"/>
             </Col>
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
-            
+
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="userEmail" type="text" placeholder="Email" required size="lg"/>
+              <Form.Control id="userEmail" type="text" placeholder="電子郵件" required size="lg"/>
             </Col>
         </Form.Row>
 
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>Photo Info</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>照片資訊</Col>
       </Row>
 
       <Form.Row style={{marginBottom:"30px"}}>
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.Control id="description" as ="textArea" type="text" placeholder="Description" size="lg"/>
+            <Form.Control id="description" as ="textArea" type="text" placeholder="照片說明" size="lg"/>
           </Col>
       </Form.Row>
 
@@ -160,14 +210,14 @@ class SkyV1_ch extends Component {
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="location" className="formContol" type="text" placeholder="Location" required size="lg"/>
+              <Form.Control id="location" className="formContol" type="text" placeholder="拍攝地點" required size="lg"/>
             </Col>
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="date" type="text" placeholder="Date" required size="lg"/>
+              <Form.Control id="date" type="text" placeholder="拍攝日期" required size="lg"/>
             </Col>
         </Form.Row>
 
@@ -197,18 +247,48 @@ class SkyV1_ch extends Component {
 
         </Form.Row>
         <Form.Row style={{marginBottom:"50px"}}>
-            <Button onClick={this.submitForm} bsPrefix="submit_button" className="btn" variant="primary" type="submit">Submit</Button>
+            <Button onClick={this.submitForm} bsPrefix="submit_button" className="btn" variant="primary" type="submit">送出</Button>
         </Form.Row>
         <Form.Row style={{marginBottom:"50px"}}>
-          <Button  variant="primary" bsPrefix="share_button" >SHARE WITH FRIENDS</Button>
+          <Button  variant="primary" bsPrefix="share_button" >分享給朋友</Button>
         </Form.Row>
       </Form>
+      <Modal show={this.state.show2}>
+            <Modal.Header>Incomplete Form</Modal.Header>
+            <Modal.Body>
+              Please fill out all fields
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+
+            </Modal.Footer>
+          </Modal>
+
+      <Modal show={this.state.show}>
+        <Modal.Header>Success</Modal.Header>
+        <Modal.Body>
+          Thanks for submitting!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
       </Container>
       <Footer/>
     </div>
     );
   }
-  
+
 }
 
 export default SkyV1_ch;

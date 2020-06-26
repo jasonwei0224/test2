@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ProgramInfo from "../../programInfo"
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
+import ProgramInfo_ch from "../programInfo-ch"
 import banner from '../../assets/placeholder.png';
 // import './people_and_mask.css'
 import './IAmDifferentForm-ch.css'
@@ -9,51 +9,93 @@ import fire from '../../firebase/file';
 
 
 class IAmDifferentForm extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false,
+      show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
-  saveToFb() {
-    console.log("Inside submitForm()");
-    var senderFullName=document.getElementById('senderFullName').value;
-    var senderCity=document.getElementById('senderCity').value;
-    var senderEmail=document.getElementById('senderEmail').value;
-    var subjectFirstName=document.getElementById('subjectFirstName').value;
-    var subjectOccupation=document.getElementById('subjectOccupation').value;
-    var subjectEthnicity=document.getElementById('subjectEthnicity').value;
-    var subjectCity=document.getElementById('subjectCity').value;
 
-    var testFinal={
-      senderFullName:senderFullName,
-      senderCity:senderCity,
-      senderEmail:senderEmail,
-      subjectFirstName:subjectFirstName,
-      subjectOccupation: subjectOccupation,
-      subjectEthnicity:subjectEthnicity,
-      subjectCity:subjectCity
-    }
-    let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-    fire.database().ref('formsTest').push(testFinal);
-    return testFinal;
+  handleModal() {
+    console.log("handleModal");
+    this.setState({show:!this.state.show})
+  }
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
+  }
+
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
+  }
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var senderFullNameLength=document.getElementById('senderFullName').value.length;
+    var senderCityLength=document.getElementById('senderCity').value.length;
+    var senderEmailLength=document.getElementById('senderEmail').value.length;
+    var subjectFirstNameLength=document.getElementById('subjectFirstName').value.length;
+    var subjectOccupationLength=document.getElementById('subjectOccupation').value.length;
+    var subjectEthnicityLength=document.getElementById('subjectEthnicity').value.length;
+    var subjectCityLength=document.getElementById('subjectCity').value.length;
+    var subjectFile=document.getElementById('subjectFile').value;
+    var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
+    console.log(result);
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
   }
 
   onChange(e){
     this.setState({file: e.target.files[0]})
   }
 
-  async submitForm(e){    
-    var formInputs = this.saveToFb();
-
+  async submitForm(e){
     e.preventDefault();
+    if(this.checkValue()) {
+      this.handleModal2()
+    }else {
+      var senderFullName=document.getElementById('senderFullName').value;
+      var senderCity=document.getElementById('senderCity').value;
+      var senderEmail=document.getElementById('senderEmail').value;
+      var subjectFirstName=document.getElementById('subjectFirstName').value;
+      var subjectOccupation=document.getElementById('subjectOccupation').value;
+      var subjectEthnicity=document.getElementById('subjectEthnicity').value;
+      var subjectCity=document.getElementById('subjectCity').value;
 
-    await this.uploadFile(this.state.file, formInputs);
-
+      var testFinal={
+        senderFullName:senderFullName,
+        senderCity:senderCity,
+        senderEmail:senderEmail,
+        subjectFirstName:subjectFirstName,
+        subjectOccupation: subjectOccupation,
+        subjectEthnicity:subjectEthnicity,
+        subjectCity:subjectCity
+      }
+      await this.uploadFile(this.state.file, testFinal);
+    }
   }
 
   async uploadFile(file, formInputs) {
@@ -71,12 +113,20 @@ class IAmDifferentForm extends Component {
       method: 'POST',
       body: formData
     })
-    .then(data => {
-      console.log(data);
+    .then(data => data.text())
+    .then(data=> {
+      if(data==="valid") {
+        this.handleModal();
+        let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
+        fire.database().ref('formsTest').push(formInputs);
+      } else if(data==="invalid") {
+        this.invalidFile();
+      }
     })
     .catch(err => {
       console.log(err);
     })
+
   }
     render() {
     return (
@@ -88,7 +138,7 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="影像創作 X 線上互動" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
+          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="影像創作 X 線上互動" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
           <Row className="mainContents" style={{marginTop:"100px"}}>
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
               <p className="contentsInParagraph"> 本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。
@@ -98,59 +148,59 @@ class IAmDifferentForm extends Component {
 
           <Row>
            <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} ><p className="form-section-title">INFO ABOUT THE PHOTO</p></Col>
+             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} ><p className="form-section-title">照片資訊</p></Col>
           </Row>
 
           <Form encType="multipart/form-data">
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderFullName" placeholder="Sender Full Name" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderFullName" placeholder="上傳者 英文姓名" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderCity" placeholder="City And Country" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderCity" placeholder="城市/ 國家" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="email" id="senderEmail" placeholder="Email" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text' type="email" id="senderEmail" placeholder="電子郵件" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="subjectFirstName" placeholder="Subject's First Name" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="subjectFirstName" placeholder="主角 英文名子" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'form_field_text' id="subjectOccupation" as="select" >
-                    <option>Doctor</option>
-                    <option>Firefighter</option>
-                    <option>Healthcare Technician</option>
-                    <option>Nurse</option>
-                    <option>Paramedic</option>
-                    <option>Pharmacist</option>
-                    <option>Police</option>
-                    <option>Social Service Worker</option>
-                    <option>Therapist</option>
+                    <option>醫生</option>
+                    <option>消防員</option>
+                    <option>醫療技術人員</option>
+                    <option>護士</option>
+                    <option>醫護人員</option>
+                    <option>藥劑師</option>
+                    <option>警察</option>
+                    <option>社工</option>
+                    <option>治療師</option>
                   </Form.Control>
 
                 </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectEthnicity" placeholder="Ethnicity" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectEthnicity" placeholder="族裔 (英文)" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectCity" placeholder="City, Country" required size="lg" />
+                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectCity" placeholder="城市/國家" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} required bsCustomPrefix='form-file-input' name="subjectPhoto"/>
+            <Form.File.Input onChange={this.onChange} id="subjectFile" required bsCustomPrefix='form-file-input' name="subjectPhoto"/>
             <p id="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
             </Form.Row>
@@ -167,12 +217,43 @@ class IAmDifferentForm extends Component {
             </Form.Row>
 
             <Form.Row style={{marginBottom:"50px"}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submit_button">Submit</Button>
+                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submit_button">送出</Button>
             </Form.Row>
             <Form.Row style={{marginBottom:"50px"}}>
-              <Button bsPrefix="share_button" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
+              <Button bsPrefix="share_button" variant="primary" type="submit">分享給朋友</Button>
             </Form.Row>
           </Form>
+
+          <Modal show={this.state.show2}>
+            <Modal.Header>Incomplete Form</Modal.Header>
+            <Modal.Body>
+              Please fill out all fields
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+
+            </Modal.Footer>
+          </Modal>
+
+      <Modal show={this.state.show}>
+        <Modal.Header>Success</Modal.Header>
+        <Modal.Body>
+          Thanks for submitting!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
     <Footer/>
   </div>

@@ -17,22 +17,29 @@ class SkyV1 extends Component {
       file: null,
       show:false,
       show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
     this.handleModal=this.handleModal.bind(this);
     this.handleModal2=this.handleModal2.bind(this);
     this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
   handleModal() {
     this.setState({show:!this.state.show})
-  } 
-  
+  }
+
   handleModal2() {
     console.log("handleModal2");
     this.setState({show2:!this.state.show2})
   }
+
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
+  }
+
   cancelCourse() {
     document.getElementById('firstName').value="";
     document.getElementById('lastName').value="";
@@ -53,7 +60,7 @@ class SkyV1 extends Component {
     var subjectFile=document.getElementById('subjectFile').value
 
     var result=firstNameLength*lastNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
-    console.log(result);
+
     if(result==0) {
         return true;
       }else {
@@ -63,26 +70,30 @@ class SkyV1 extends Component {
   }
 
   saveToFb() {
-    var firstName=document.getElementById('firstName').value;
-    var lastName=document.getElementById('lastName').value;
-    var userEmail=document.getElementById('userEmail').value;
-    var description=document.getElementById('description').value;
-    var location=document.getElementById('location').value;
-    var date=document.getElementById('date').value;
+    // if(this.checkValue()) {
+    //   this.handleModal2();
+    //   return null;
+    // } else {
+    //   var firstName=document.getElementById('firstName').value;
+    //   var lastName=document.getElementById('lastName').value;
+    //   var userEmail=document.getElementById('userEmail').value;
+    //   var description=document.getElementById('description').value;
+    //   var location=document.getElementById('location').value;
+    //   var date=document.getElementById('date').value;
 
-    var testFinal={
-      firstName:firstName,
-      lastName:lastName,
-      userEmail:userEmail,
-      description:description,
-      location:location,
-      date:date
-    }
-    let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
-    fire.database().ref('skyTest').push(testFinal);
+    //   var testFinal={
+    //     firstName:firstName,
+    //     lastName:lastName,
+    //     userEmail:userEmail,
+    //     description:description,
+    //     location:location,
+    //     date:date
+    //   }
+    //   let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
+    //   fire.database().ref('skyTest').push(testFinal);
+    //   return testFinal;
+    // }
 
-
-    return testFinal;
   }
 
   onChange(e){
@@ -90,39 +101,79 @@ class SkyV1 extends Component {
   }
 
   async submitForm(e){
+    // if(this.checkValue()) {
+    //   this.handleModal2()
+    // }else {
+    //   var formInputs = this.saveToFb();
+
+    //   e.preventDefault();
+
+    //   await this.uploadFile(this.state.file, formInputs);
+    //   this.handleModal()
+    // }
+
+
     if(this.checkValue()) {
-      this.handleModal2()
-    }else {
-      var formInputs = this.saveToFb();
+      this.handleModal2();
+    } else {
+      var firstName=document.getElementById('firstName').value;
+      var lastName=document.getElementById('lastName').value;
+      var userEmail=document.getElementById('userEmail').value;
+      var description=document.getElementById('description').value;
+      var location=document.getElementById('location').value;
+      var date=document.getElementById('date').value;
+
+      var testFinal={
+        firstName:firstName,
+        lastName:lastName,
+        userEmail:userEmail,
+        description:description,
+        location:location,
+        date:date
+      }
+
+
+      // var formInputs = this.saveToFb();
 
       e.preventDefault();
-  
-      await this.uploadFile(this.state.file, formInputs);
-      this.handleModal()
+      var status = await this.uploadFile(this.state.file, testFinal);
+
+      // if (status) {
+      //   let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
+      //   fire.database().ref('skyTest').push(testFinal);
+      // }
     }
-    
+
   }
 
   async uploadFile(file, formInputs) {
-    var formData = new FormData();
-    formData.append('skyPhoto', file);
-    formData.append('firstName', formInputs['firstName']);
-    formData.append('lastName', formInputs['lastName']);
-    formData.append('userEmail', formInputs['userEmail']);
-    formData.append('description', formInputs['description']);
-    formData.append('location', formInputs['location']);
-    formData.append('date', formInputs['date']);
 
-    const response = await fetch('sky_form_photos.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(data => {
-      console.log(data);
-    })
-    .catch(err => {
-      console.log(err);
-    })
+      var formData = new FormData();
+      formData.append('skyPhoto', file);
+      formData.append('firstName', formInputs['firstName']);
+      formData.append('lastName', formInputs['lastName']);
+      formData.append('userEmail', formInputs['userEmail']);
+      formData.append('description', formInputs['description']);
+      formData.append('location', formInputs['location']);
+      formData.append('date', formInputs['date']);
+
+      const response = await fetch('sky_form_photos-en.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(data => data.text())
+      .then(data=> {
+        if(data=="valid") {
+          this.handleModal();
+          let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
+          fire.database().ref('skyTest').push(formInputs);
+        } else if(data=="invalid") {
+          this.invalidFile();
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
   render() {
     return (
@@ -245,26 +296,36 @@ class SkyV1 extends Component {
       </Form>
 
       <Modal show={this.state.show2}>
-            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Header>Incomplete Form</Modal.Header>
             <Modal.Body>
-              Please submit all the required folder
+              Please fill out all fields
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 
       <Modal show={this.state.show}>
-        <Modal.Header> Modal Head Part</Modal.Header>
+        <Modal.Header>Success</Modal.Header>
         <Modal.Body>
-          Your submission done
+          Thanks for submitting!
         </Modal.Body>
         <Modal.Footer>
           <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
-          
         </Modal.Footer>
       </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
       </Container>
       <Footer/>
     </div>
