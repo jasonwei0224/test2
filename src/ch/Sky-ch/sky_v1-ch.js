@@ -111,11 +111,11 @@ class SkyV1_ch extends Component {
     })
     .then(data => data.text())
     .then(data=> {
-      if(data=="valid") {
+      if(data==="valid") {
         this.handleModal();
         let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
         fire.database().ref('skyTest').push(formInputs);
-      } else if(data=="invalid") {
+      } else if(data==="invalid") {
         this.invalidFile();
       }
     })
