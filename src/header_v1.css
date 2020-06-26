@@ -262,6 +262,16 @@
     height:20% !important;
 
   }
+  nav.navbar{
+    margin-left: 0px;
+  }
+  .Nav.nav-link {
+    color:white;
+  }
+  .nav-link:hover {
+    color:white;
+  }
+
 }
 
 /* style={{
@@ -276,3 +286,5 @@
   fontFamily:"sofia-pro, Sans-serif",
   backgroundColor: "#e2e2e2"
   }} */
+
+  
