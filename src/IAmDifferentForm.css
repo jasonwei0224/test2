@@ -241,7 +241,7 @@ input[type="checkbox"]{
      margin-bottom:2%;
     padding-top:0.5%;
     padding-bottom:0.5%;
-    font-size: 20px;
+    font-size: 20px!important;
     font-weight:bold;
   }
 }
