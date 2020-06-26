@@ -27,19 +27,18 @@
 
  margin: auto;
 }
-.form_link {
+/* .form_link { NOT USED
   background-color: #d9c739;
   border-radius: 25px;
   color: white;
-}
+} */
 
-.form_link:hover {
+/* .form_link:hover {
   text-decoration: none;
-}
+} */
 
-p {
+p { /*should change*/
   font-family: "adonis-web";
-
 }
 
 .instruction_title {
@@ -89,18 +88,18 @@ p {
    .contents > p {
     font-size: 45px;
   }
-  .box {
-  }
-  .newsletter > p {
+  /* .box {
+  } */
+  /* .newsletter > p {
     font-size: 15px;
-  }
-  .newsletter :first-child {
+  } */
+  /* .newsletter :first-child {
     font-size: 25px;
-  }
-  .newsletter > button {
+  } */
+  /* .newsletter > button {
     margin-bottom: 10px;
-  }
-  .contact_us > p {
+  } */
+  /* .contact_us > p {
     font-size: 15px;
   }
   .contact_us :first-child {
@@ -108,7 +107,7 @@ p {
   }
   .contact_us > button {
     margin-bottom: 10px;
-  }
+  } */
 }
 
 /* sm */
@@ -145,7 +144,7 @@ p {
    .contents > p {
     font-size: 42px;
   }
-  .newsletter > p {
+  /* .newsletter > p {
     font-size: 15px;
   }
   .newsletter :first-child {
@@ -162,7 +161,7 @@ p {
   }
   .contact_us > button {
     margin-bottom: 10px;
-  }
+  } */
 }
 
 /* md */
@@ -182,7 +181,7 @@ p {
 
 }
 
-  .box {
+  /* .box {
   }
   .newsletter > p {
     font-size: 15px;
@@ -201,7 +200,7 @@ p {
   }
   .contact_us > button {
     margin-bottom: 10px;
-  }
+  } */
 }
 
 /* lg */
@@ -229,7 +228,7 @@ p {
    margin: auto;
     margin-bottom:10px;
 }
-  .newsletter > p {
+  /* .newsletter > p {
     font-size: 20px;
   }
   .newsletter :first-child {
@@ -246,5 +245,5 @@ p {
   }
   .contact_us > button {
     margin-bottom: 10px;
-  }
+  } */
 }
