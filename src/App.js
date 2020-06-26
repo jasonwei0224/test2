@@ -8,7 +8,7 @@ import PeopleAndMask from "./people_and_mask";
 import OtherSideOfMask from "./other_side_of_mask";
 import Mirror from "./mirror";
 import Sky from "./sky";
-import IAmDifferentForm from "./i_am_different_form";
+import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import Header from "./header";
