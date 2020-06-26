@@ -69,50 +69,12 @@ class SkyV1 extends Component {
 
   }
 
-  saveToFb() {
-    // if(this.checkValue()) {
-    //   this.handleModal2();
-    //   return null;
-    // } else {
-    //   var firstName=document.getElementById('firstName').value;
-    //   var lastName=document.getElementById('lastName').value;
-    //   var userEmail=document.getElementById('userEmail').value;
-    //   var description=document.getElementById('description').value;
-    //   var location=document.getElementById('location').value;
-    //   var date=document.getElementById('date').value;
-
-    //   var testFinal={
-    //     firstName:firstName,
-    //     lastName:lastName,
-    //     userEmail:userEmail,
-    //     description:description,
-    //     location:location,
-    //     date:date
-    //   }
-    //   let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
-    //   fire.database().ref('skyTest').push(testFinal);
-    //   return testFinal;
-    // }
-    
-  }
-
   onChange(e){
     this.setState({file: e.target.files[0]})
   }
 
   async submitForm(e){
-    // if(this.checkValue()) {
-    //   this.handleModal2()
-    // }else {
-    //   var formInputs = this.saveToFb();
-
-    //   e.preventDefault();
-  
-    //   await this.uploadFile(this.state.file, formInputs);
-    //   this.handleModal()
-    // }
-
-
+    e.preventDefault();
     if(this.checkValue()) {
       this.handleModal2();
     } else {
@@ -131,21 +93,12 @@ class SkyV1 extends Component {
         location:location,
         date:date
       }
-
-
-      // var formInputs = this.saveToFb();
-
-      e.preventDefault();
-      var status = await this.uploadFile(this.state.file, testFinal);
-
-      // if (status) {
-      //   let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
-      //   fire.database().ref('skyTest').push(testFinal);
-      // }
+      await this.uploadFile(this.state.file, testFinal);
     }
 
   }
 
+  // fetches php and saves to fb on success
   async uploadFile(file, formInputs) {
      
       var formData = new FormData();
@@ -163,11 +116,11 @@ class SkyV1 extends Component {
       })
       .then(data => data.text())
       .then(data=> {
-        if(data=="valid") {
+        if(data==="valid") {
           this.handleModal();
           let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
           fire.database().ref('skyTest').push(formInputs);
-        } else if(data=="invalid") {
+        } else if(data==="invalid") {
           this.invalidFile();
         }
       })

@@ -68,28 +68,6 @@ class IAmDifferentForm extends Component {
       }
 
   }
-  saveToFb() {
-    // var senderFullName=document.getElementById('senderFullName').value;
-    // var senderCity=document.getElementById('senderCity').value;
-    // var senderEmail=document.getElementById('senderEmail').value;
-    // var subjectFirstName=document.getElementById('subjectFirstName').value;
-    // var subjectOccupation=document.getElementById('subjectOccupation').value;
-    // var subjectEthnicity=document.getElementById('subjectEthnicity').value;
-    // var subjectCity=document.getElementById('subjectCity').value;
-
-    // var testFinal={
-    //   senderFullName:senderFullName,
-    //   senderCity:senderCity,
-    //   senderEmail:senderEmail,
-    //   subjectFirstName:subjectFirstName,
-    //   subjectOccupation: subjectOccupation,
-    //   subjectEthnicity:subjectEthnicity,
-    //   subjectCity:subjectCity
-    // }
-    // let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-    // fire.database().ref('formsTest').push(testFinal);
-    // return testFinal;
-  }
 
   onChange(e){
     this.setState({file: e.target.files[0]})
@@ -139,18 +117,18 @@ class IAmDifferentForm extends Component {
       body: formData
     })
     .then(data => data.text())
-      .then(data=> {
-        if(data=="valid") {
-          this.handleModal();
-          let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-          fire.database().ref('formsTest').push(formInputs);
-        } else if(data=="invalid") {
-          this.invalidFile();
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      })   
+    .then(data=> {
+      if(data==="valid") {
+        this.handleModal();
+        let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
+        fire.database().ref('formsTest').push(formInputs);
+      } else if(data==="invalid") {
+        this.invalidFile();
+      }
+    })
+    .catch(err => {
+      console.log(err);
+    })   
     
   }
     render() {
