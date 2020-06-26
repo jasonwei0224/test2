@@ -111,7 +111,7 @@ export default class HeaderV1 extends React.Component {
               <Nav.Link bsPrefix="navitem" href="#">FILMS</Nav.Link>
               <Nav.Link bsPrefix="navitem" href="#">SPONSORS</Nav.Link>
               <Nav.Link bsPrefix="navitem" href="#">VOLUNTEER</Nav.Link>
-              <Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
+              <Nav.Link className="langNavLink" bsPrefix = "langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               :
               <>
