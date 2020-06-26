@@ -1,4 +1,4 @@
-.upload_button {
+.uploadButton {
   text-align: center;
   border-radius: 20px;
   text-align: left;
@@ -17,7 +17,7 @@
   width:100%;
   height: auto;
 }
-.share_button{
+.mobileSharebutton{
   padding-left:  16%;
   padding-right: 16%;
  background-color:#BE0027;
@@ -26,21 +26,12 @@
 
  margin: auto;
 }
-/* .form_link { NOT USED
-  background-color: #d9c739;
-  border-radius: 25px;
-  color: white;
-} */
-
-/* .form_link:hover {
-  text-decoration: none;
-} */
 
 p { /*should change*/
   font-family: "adonis-web";
 }
 
-.instruction_title {
+.introTitle {
   margin-top: 100px;
   font-family: "sofia-pro", Sans-serif;
   font-weight: 600;
@@ -48,7 +39,7 @@ p { /*should change*/
   font-size: 20px;
 }
 
-.instruction_body {
+.introBody {
   font-family: "sofia-pro", Sans-serif;
   font-weight: normal;
   color: #707070;
@@ -59,7 +50,7 @@ p { /*should change*/
 /* below are mediaquiries */
 /* xs < 768 */
 @media screen and (max-width: 767px) {.
-  .upload_button {
+  .uploadButton {
     padding-left:  18%;
     padding-right: 18%;
    background-color:#D9C739;
@@ -69,7 +60,7 @@ p { /*should change*/
    margin: auto;
     text-align: left;
 }
-  .share_button{
+  .mobileSharebutton{
     padding-left:  16%;
     padding-right: 16%;
    background-color:#BE0027;
@@ -78,40 +69,21 @@ p { /*should change*/
    font-size:30px !important;
    margin: auto;
   }
-   .instruction_title {
+   .introTitle {
     font-size: 45px;
   }
-  .instruction_body {
+  .introBody {
     font-size: 45px;
   }
-   .contents > p {
+   .mainContent > p {
     font-size: 45px;
   }
-  /* .box {
-  } */
-  /* .newsletter > p {
-    font-size: 15px;
-  } */
-  /* .newsletter :first-child {
-    font-size: 25px;
-  } */
-  /* .newsletter > button {
-    margin-bottom: 10px;
-  } */
-  /* .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 25px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
+
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .upload_button {
+  .uploadButton {
     padding-left:  15%;
     padding-right: 15%;
     padding-top: 2%;
@@ -124,7 +96,7 @@ p { /*should change*/
    font-weight: bold;
    margin: 0;
 }
-  .share_button{
+  .mobileSharebutton{
     padding-left:  20%;
     padding-right: 20%;
    background-color:#BE0027;
@@ -134,39 +106,21 @@ p { /*should change*/
    font-weight: bold;
    margin: auto;
   }
-  .instruction_title {
+  .introTitle {
     font-size: 45px;
   }
-   .instruction_body {
+   .introBody {
     font-size: 42px;
   }
-   .contents > p {
+   .mainContent > p {
     font-size: 42px;
   }
-  /* .newsletter > p {
-    font-size: 15px;
-  }
-  .newsletter :first-child {
-    font-size: 25px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 25px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
 
 /* md */
 @media screen and (min-width: 992px) {
 
-  .upload_button {
+  .uploadButton {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
@@ -177,43 +131,21 @@ p { /*should change*/
    border-radius:20px ;
    font-size:30px;
    margin: auto;
-
-}
-
-  /* .box {
   }
-  .newsletter > p {
-    font-size: 15px;
-  }
-  .newsletter :first-child {
-    font-size: 30px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 30px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-   .instruction_title {
+   .introTitle {
     font-size: 20px;
   }
-   .instruction_body {
+   .introBody {
     font-size: 20px;
   }
-   .contents > p {
+   .mainContent > p {
     font-size: 23px;
   }
-  .upload_button {
+  .uploadButton {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
@@ -227,22 +159,7 @@ p { /*should change*/
    margin: auto;
     margin-bottom:10px;
 }
-  /* .newsletter > p {
-    font-size: 20px;
+  .mobileSharebutton{
+    display:none;
   }
-  .newsletter :first-child {
-    font-size: 35px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 20px;
-  }
-  .contact_us :first-child {
-    font-size: 35px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
