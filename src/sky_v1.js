@@ -29,8 +29,8 @@ class SkyV1 extends Component {
 
   handleModal() {
     this.setState({show:!this.state.show})
-  } 
-  
+  }
+
   handleModal2() {
     console.log("handleModal2");
     this.setState({show2:!this.state.show2})
@@ -93,7 +93,7 @@ class SkyV1 extends Component {
     //   fire.database().ref('skyTest').push(testFinal);
     //   return testFinal;
     // }
-    
+
   }
 
   onChange(e){
@@ -107,7 +107,7 @@ class SkyV1 extends Component {
     //   var formInputs = this.saveToFb();
 
     //   e.preventDefault();
-  
+
     //   await this.uploadFile(this.state.file, formInputs);
     //   this.handleModal()
     // }
@@ -147,7 +147,7 @@ class SkyV1 extends Component {
   }
 
   async uploadFile(file, formInputs) {
-     
+
       var formData = new FormData();
       formData.append('skyPhoto', file);
       formData.append('firstName', formInputs['firstName']);
@@ -173,7 +173,7 @@ class SkyV1 extends Component {
       })
       .catch(err => {
         console.log(err);
-      })   
+      })
   }
   render() {
     return (
@@ -302,7 +302,7 @@ class SkyV1 extends Component {
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 

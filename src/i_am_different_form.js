@@ -150,8 +150,8 @@ class IAmDifferentForm extends Component {
       })
       .catch(err => {
         console.log(err);
-      })   
-    
+      })
+
   }
     render() {
     return (
@@ -251,7 +251,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               <Button bsPrefix="share_button" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
-     
+
           <Modal show={this.state.show2}>
             <Modal.Header>Incomplete Form</Modal.Header>
             <Modal.Body>
@@ -259,7 +259,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 
@@ -282,7 +282,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
         </Modal.Footer>
       </Modal>
-            
+
     </Container>
     <Footer/>
   </div>

@@ -9,7 +9,7 @@ import fire from '../../firebase/file';
 
 
 class IAmDifferentForm extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state={
@@ -72,7 +72,7 @@ class IAmDifferentForm extends Component {
     this.setState({file: e.target.files[0]})
   }
 
-  async submitForm(e){    
+  async submitForm(e){
     e.preventDefault();
     if(this.checkValue()) {
       this.handleModal2()
@@ -84,7 +84,7 @@ class IAmDifferentForm extends Component {
       var subjectOccupation=document.getElementById('subjectOccupation').value;
       var subjectEthnicity=document.getElementById('subjectEthnicity').value;
       var subjectCity=document.getElementById('subjectCity').value;
-  
+
       var testFinal={
         senderFullName:senderFullName,
         senderCity:senderCity,
@@ -125,7 +125,7 @@ class IAmDifferentForm extends Component {
     })
     .catch(err => {
       console.log(err);
-    })   
+    })
 
   }
     render() {
@@ -231,7 +231,7 @@ class IAmDifferentForm extends Component {
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 
