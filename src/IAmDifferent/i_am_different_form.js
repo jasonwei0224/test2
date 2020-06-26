@@ -3,6 +3,7 @@ import ProgramInfo from "../programInfo"
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import './IAmDifferentForm.css'
 import './i_am_different.css'
+import '../sky_v1.css';
 // import programInfo from '../programInfo';
 import Footer from '../footer-temp';
 import FormComponent from '../formComponent';
@@ -142,8 +143,8 @@ class IAmDifferentForm extends Component {
 
           <ProgramInfo subtitle="Game Interaction" title="I'M DIFFERENT JUST LIKE YOU" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
           <Row className="mainContents" style={{marginTop:"100px"}}>
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <p className="mainContent">In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
+            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}} className= "mainContent">
+              <p>In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
 
 On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
 </p>
@@ -151,34 +152,34 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           </Row>
 
           <Row>
-           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}bsCustomPrefix="hed" className='hed'
+           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}bsCustomPrefix="formSectionTitle" className='formSectionTitle'
             >INFO ABOUT THE PHOTO</Col>
           </Row>
 
           <Form encType="multipart/form-data">
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text' type="text"  id="senderFullName" placeholder="Sender Full Name" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderFullName" placeholder="Sender Full Name" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text' type="text"  id="senderCity" placeholder="City And Country" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderCity" placeholder="City And Country" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text' type="email" id="senderEmail" placeholder="Email" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="email" id="senderEmail" placeholder="Email" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text'type="text"  id="subjectFirstName" placeholder="Subject's First Name" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text"  id="subjectFirstName" placeholder="Subject's First Name" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                  <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text' id="subjectOccupation" as="select" >
+                  <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' id="subjectOccupation" as="select" >
                     <option>Doctor</option>
                     <option>Firefighter</option>
                     <option>Healthcare Technician</option>
@@ -194,17 +195,17 @@ On this page, front-line workers and organizations can submit their photo(s) to 
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text'type="text" id="subjectEthnicity" placeholder="Ethnicity" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectEthnicity" placeholder="Ethnicity" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' className=  'form_field_text'type="text" id="subjectCity" placeholder="City, Country" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectCity" placeholder="City, Country" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} required bsCustomPrefix='form-file-input' id="subjectFile"className=  'form_field_text' name="subjectPhoto"/>
+            <Form.File.Input onChange={this.onChange} required id="subjectFile" bsPrefix='form-file-input'name="subjectPhoto"/>
             <p id="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
             </Form.Row>
@@ -222,10 +223,10 @@ On this page, front-line workers and organizations can submit their photo(s) to 
             </Form.Row>
 
             <Form.Row style={{marginBottom:"50px"}}>
-                <Button onClick={this.submitForm} variant="primary"  className="btn-1" type="submit" bsPrefix="submit_button">SUBMIT</Button>
+                <Button onClick={this.submitForm} variant="primary"  className="btn-1" type="submit" bsPrefix="submitButton">SUBMIT</Button>
             </Form.Row>
             <Form.Row style={{marginBottom:"50px"}}>
-              <Button bsPrefix="mobileSharebutton" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
+              <Button bsPrefix="mobileSharebutton" variant="primary"  className="mobileSharebutton"type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
 
@@ -235,7 +236,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               Please fill out all fields
             </Modal.Body>
             <Modal.Footer>
-              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+              <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.handleModal2()} >Close</Button>
 
             </Modal.Footer>
           </Modal>
@@ -246,7 +247,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           Thanks for submitting!
         </Modal.Body>
         <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+          <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.handleModal()} >Close</Button>
         </Modal.Footer>
       </Modal>
 
@@ -256,7 +257,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           File must be .jpg or .png and under 1MB
         </Modal.Body>
         <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+          <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.invalidFile()} >Close</Button>
         </Modal.Footer>
       </Modal>
 
