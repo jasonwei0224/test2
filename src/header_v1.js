@@ -115,25 +115,25 @@ export default class HeaderV1 extends React.Component {
               </>
               :
               <>
-              <Nav.Link href="/">首頁</Nav.Link>
-                <NavDropdown title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item href="#">活動足跡</NavDropdown.Item>
+              <Nav.Link bsPrefix="navitem2" href="/">首頁</Nav.Link>
+                <NavDropdown  bsPrefix="navitem2-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown.Item  bsPrefix="navitem" href="#">活動足跡</NavDropdown.Item>
                   <NavDropdown.Item href="#">藝術方針</NavDropdown.Item>
                   <NavDropdown.Item href="#">媒體資訊</NavDropdown.Item>
                   <NavDropdown.Item href="#">我們團隊</NavDropdown.Item>
                 </NavDropdown>
-              <Nav.Link href="#">音樂饗宴</Nav.Link>
-              <NavDropdown title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
+              <Nav.Link bsPrefix="navitem2"  href="#">音樂饗宴</Nav.Link>
+              <NavDropdown bsPrefix="navitem2-dropdown" title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
               <NavDropdown.Item href="#sky-ch">天空</NavDropdown.Item>
               <NavDropdown.Item href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">希望講堂</Nav.Link>
-              <Nav.Link href="#">我們藝樣</Nav.Link>
-              <Nav.Link href="#">友誼廚房</Nav.Link>
-              <Nav.Link href="#">台灣書店</Nav.Link>
-              <Nav.Link href="#">電影櫥窗</Nav.Link>
-              <Nav.Link href="#">贊助單位</Nav.Link>
-              <Nav.Link href="#">義工專區</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">希望講堂</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">我們藝樣</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">友誼廚房</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">台灣書店</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">電影櫥窗</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">贊助單位</Nav.Link>
+              <Nav.Link bsPrefix="navitem2" href="#">義工專區</Nav.Link>
               <Nav.Link className="langNavLink"><img className="langIcon" src={en} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               }
