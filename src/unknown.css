@@ -157,4 +157,42 @@ lg
       margin-bottom: -0.5%;
       font-size: 20px;
     }
+
+    Originally programInfo.css
+    a.share.btn.btn-primary {
+        font-size: 20px;
+        padding: 5px 32px 5px 32px;
+        display: none;
+    }
+    a.share.btn.btn-primary {
+        font-size: 20px;
+        padding: 5px 32px 5px 32px;
+        display: none;
+
+    }
+
+      a.share.btn.btn-primary {
+          font-size: 15px!important;
+
+          padding: 5px 32px 5px 32px;
+          font-family: "sofia-pro", Sans-serif !important;
+
+      }
+
+
+      .borderLine {
+          border-bottom: 1px solid #707070;
+      }
+
+      a.PI-shareButton {
+          border-color: #D9C739;
+          background-color: #D9C739;
+          color: #0C3866;
+          padding-left: 45px;
+          padding-right: 45px;
+          border-radius: 25px;
+          height: fit-content;
+          width: fit-content;
+          border-bottom: 0;
+      }
  */

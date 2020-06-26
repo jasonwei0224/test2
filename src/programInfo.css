@@ -1,54 +1,36 @@
-/* 
-.borderLine {
-    border-bottom: 1px solid #707070;
-}
 
-.contents {
+
+.PI-contents {
     margin-top: 2%;
     font-family: 'adonis-web';
 }
 
-.subtitle {
+.PI-subtitle {
     color: #0C3866;
     margin-top: 5%;
     font-weight: bold;
-    font-family: 'adonis-web';
-    margin-bottom: -20px;
     font-size: 40px;
 }
 
-.title {
+.PI-title {
     color:#BE0027;
-
     font-size: 50px;
     margin-bottom: 45px;
     font-weight:bold;
     font-family: 'adonis-web';
 }
 
-.last {
+.PI-last {
     margin-bottom: 70px;
 }
 
-div.artist.col {
+.PI-artist {
     color: #0C3866;
     font-size: 19pt;
     padding: 0;
 }
 
-a.upload.btn.btn-primary {
-    border-color: #D9C739;
-    background-color: #D9C739;
-    color: #0C3866;
-    padding-left: 45px;
-    padding-right: 45px;
-    border-radius: 25px;
-    height: fit-content;
-    width: fit-content;
-    border-bottom: 0;
-}
-
-a.share.btn.btn-primary {
+a.PI-shareButton {
     border-color: #BE0027;
     background-color: #BE0027;
     padding-left: 40px;
@@ -59,97 +41,78 @@ a.share.btn.btn-primary {
     font-family: "sofia-pro", Sans-serif;
 }
 
-.col-button {
+.PI-colButton {
     display: grid;
 }
 
-
-@media screen and (min-width: 1200px) {
-  .subtitle {
-      font-size: 40px;
-  }
-
-  .title {
-      font-size: 50px;
-      margin-bottom: 10%;
-  }
-
-  div.artist.col {
-      font-size: 32px;
-      margin-bottom: 0px !important;
-  }
-
-  a.upload.btn.btn-primary {
-      font-size: 20px;
-      padding: 5px 36px 5px 36px;
-      display: None;
-      margin-bottom: 0px !important;
-  }
-
-  a.share.btn.btn-primary {
-      font-size: 15px!important;
-
-      padding: 5px 32px 5px 32px;
-      font-family: "sofia-pro", Sans-serif !important;
-
-  }
-}
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
-
-    .subtitle {
-        font-size: 50px;
-    }
-
-    .title {
-        font-size: 60px;
-    }
-
-    div.artist.col {
-        font-size: 50px;
-    }
-
-    a.upload.btn.btn-primary {
-        font-size: 10px;
-        padding: 5px 36px 5px 36px;
-        display: none;
-    }
-
-    a.share.btn.btn-primary {
-        font-size: 20px;
-        padding: 5px 32px 5px 32px;
-        display: none;
-
-    }
-}
-@media only screen and (max-width: 768px) {
-
-  .subtitle {
-      font-size: 50px;
-  }
-
-  .title {
-      font-size: 60px;
-  }
-
-  div.artist.col {
-      font-size: 32px;
-
-  }
-
-  a.upload.btn.btn-primary {
+@media screen and (max-width: 767px) {
+  a.PI-shareButton {
       font-size: 10px;
       padding: 5px 36px 5px 36px;
       display: none;
   }
+}
 
-  a.share.btn.btn-primary {
-      font-size: 20px;
-      padding: 5px 32px 5px 32px;
+@media only screen and (min-width: 768px) {
+
+  .PI-subtitle {
+      font-size: 50px;
+  }
+
+  .PI-title {
+      font-size: 60px;
+  }
+
+  .PI-artist {
+      font-size: 32px;
+  }
+
+  a.PI-shareButton {
+      font-size: 10px;
+      padding: 5px 36px 5px 36px;
       display: none;
   }
-} */
+  @media only screen and (min-width: 992px) {
+
+      .PI-subtitle {
+          font-size: 50px;
+      }
+
+      .PI-title {
+          font-size: 60px;
+      }
+
+      .PI-artist {
+          font-size: 50px;
+      }
+
+      a.PI-shareButton {
+          font-size: 10px;
+          padding: 5px 32px 5px 32px;
+          display: None;
+      }
+  }
+
+@media screen and (min-width: 1200px) {
+  .PI-subtitle {
+      font-size: 40px;
+  }
+
+  .PI-title {
+      font-size: 50px;
+      margin-bottom: 10%;
+  }
+
+  .PI-artist {
+      font-size: 32px;
+      margin-bottom: 0px !important;
+  }
+
+  a.PI-shareButton {
+      font-size: 20px;
+      padding: 5px 32px 5px 32px;
+      margin-bottom: 0px !important;
+      display: block;
+    }
+  }
+}
