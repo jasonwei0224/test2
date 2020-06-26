@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ProgramInfo from "../programInfo"
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import './IAmDifferentForm.css'
+import './i_am_different.css'
 // import programInfo from '../programInfo';
 import Footer from '../footer-temp';
 import FormComponent from '../formComponent';
@@ -142,7 +143,7 @@ class IAmDifferentForm extends Component {
           <ProgramInfo subtitle="Game Interaction" title="I'M DIFFERENT JUST LIKE YOU" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
           <Row className="mainContents" style={{marginTop:"100px"}}>
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <p className="contentsInParagraph">In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
+              <p className="mainContent">In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
 
 On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
 </p>
@@ -224,7 +225,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
                 <Button onClick={this.submitForm} variant="primary"  className="btn-1" type="submit" bsPrefix="submit_button">SUBMIT</Button>
             </Form.Row>
             <Form.Row style={{marginBottom:"50px"}}>
-              <Button bsPrefix="share_button" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
+              <Button bsPrefix="mobileSharebutton" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
 

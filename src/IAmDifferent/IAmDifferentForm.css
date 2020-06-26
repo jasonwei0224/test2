@@ -1,8 +1,8 @@
-.mainContents {
+/* .mainContents {
   margin-top: 50px;
   margin-bottom:50px;
   font-family: 'adonis-web';
-}
+} */
 
 
 input[type="checkbox"]{
@@ -20,19 +20,12 @@ input[type="checkbox"]{
   height: auto;
 }
 
-/* .form-section-title{
-  background-color: #D9C739 !important;
-  margin-bottom:2% !important;
-  padding-top: 0.5% !important;
-  padding-bottom:0.5% !important;
-  font-weight: bold !important;
-  font-size: 45px !important;
-} */
+
 .form_field_text{
   font-size:30px;
 }
 
-.share_button{
+/* .share_button{
   padding-left:  16%;
   padding-right: 16%;
  background-color:#BE0027;
@@ -40,37 +33,24 @@ input[type="checkbox"]{
  border-radius:20px ;
  font-size:40px;
  margin: auto;
-}
+} */
 #hint{
   color: #707070;
 }
-/* .options{
-  font-size: 40px;
-} */
+
 
 @media screen and (max-width: 767px) {
 
   .form_field_text{
     font-size:40px !important;
   }
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 45px;
-  }
-
-  /* .formLabel {
-    font-size:25px;
   } */
-
   .formConsent {
     font-size:25px;
   }
-  /* .form-section-title{
-    background-color: "#D9C739" !important;
-    margin-bottom:"2%" !important;
-    padding-top:"0.5%" !important;
-    padding-bottom:"0.5%" !important;
-    font-weight: "bold" !important;
-  } */
+
   .hed{
      background-color: #D9C739;
      margin-bottom:2%;
@@ -87,11 +67,8 @@ input[type="checkbox"]{
     color: #707070;
   }
 
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 45px;
-  }
-  /* .formLabel {
-    font-size:20px;
   } */
 
   .formConsent {
@@ -112,14 +89,7 @@ input[type="checkbox"]{
     font-size:40px;
     margin: auto;
   }
-  /* .form-section-title{
-    background-color: #D9C739 !important;
-    margin-bottom:2% !important;
-    padding-top: 0.5% !important;
-    padding-bottom:0.5% !important;
-    font-weight: bold !important;
-    font-size: 45px !important;
-  } */
+
   .hed{
      background-color: #D9C739;
      margin-bottom:2%;
@@ -141,13 +111,10 @@ input[type="checkbox"]{
 
 @media screen and (min-width: 1024px) {
 
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 20px;
-  }
-
-  /* .formLabel {
-    font-size:18px;
   } */
+
 
   .formConsent {
     font-size:18px;
@@ -160,14 +127,7 @@ input[type="checkbox"]{
     height: 25px;
     cursor: pointer;
   }
-  /* .form-section-title{
-    background-color: #D9C739 !important;
-    margin-bottom:2% !important;
-    padding-top: 0.5% !important;
-    padding-bottom:0.5% !important;
-    font-weight: bold !important;
-    font-size: 45px !important;
-  } */
+
   .hed{
      background-color: #D9C739;
      margin-bottom:2%;
@@ -189,29 +149,19 @@ input[type="checkbox"]{
     font-size: 25px;
   }
 
-  /* .formLabel {
-    font-size:20px;
-  } */
 
   .formConsent {
     font-size:20px !important;
     margin-left: -8% !important;
   }
-  .share_button{
+  /* .share_button{
     display: None;
-  }
+  } */
 
   .form-file-input{
     font-size: 25px;
   }
-  /* .form-section-title{
-    background-color: #D9C739 !important;
-    margin-bottom:2% !important;
-    padding-top: 0.5% !important;
-    padding-bottom:0.5% !important;
-    font-weight: bold !important;
-    font-size: 30px !important;
-  } */
+
   .submit_button{
        padding-left:  5%!important;
        padding-right: 5%!important;
@@ -226,11 +176,7 @@ input[type="checkbox"]{
     height: 25px;
     cursor: pointer;
   }
-  /* .form-section-title{
-    font-family: "sofia-pro", Sans-serif;
-    margin-bottom: -0.5%;
-    font-size: 20px;
-  } */
+
   .hed{
      background-color: #D9C739;
      margin-bottom:2%;
