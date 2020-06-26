@@ -8,7 +8,7 @@ const ProgramInfo = (props) => {
         <div>
             {/*<Row className="borderLine"></Row>*/}
             <Row className="contents">
-                <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:9, offset:1}}  xs={{span:8, offset:2}}>
+                <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:10, offset:1}}  xs={{span:8, offset:2}}>
                     <Row><p className="subtitle">{props.subtitle}</p></Row>
                     <Row><h1 className="title">{props.title}</h1></Row>
                     <Row className="last">

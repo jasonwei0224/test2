@@ -26,7 +26,7 @@ export default class ImageSlider extends Component {
       <div className="imageSlider">
         <Slider {...settings}>
             {sponsors.map((sponsor, index) => (
-                <img key={index} src={sponsor} alt={index} style={{width:"100%", height:"auto"}}></img>
+                <img key={index} src={sponsor} alt={index}></img>
             ))}
         </Slider>
       </div>

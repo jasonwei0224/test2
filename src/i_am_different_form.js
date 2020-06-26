@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProgramInfo from "./programInfo"
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from './assets/placeholder.png';
 // import './people_and_mask.css'
 import './IAmDifferentForm.css'
@@ -15,14 +15,54 @@ class IAmDifferentForm extends Component {
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false,
+      show2:false,
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
   }
 
+  handleModal() {
+    console.log("handleModal");
+    this.setState({show:!this.state.show})
+  }
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
+  }
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var senderFullNameLength=document.getElementById('senderFullName').value.length;
+    var senderCityLength=document.getElementById('senderCity').value.length;
+    var senderEmailLength=document.getElementById('senderEmail').value.length;
+    var subjectFirstNameLength=document.getElementById('subjectFirstName').value.length;
+    var subjectOccupationLength=document.getElementById('subjectOccupation').value.length;
+    var subjectEthnicityLength=document.getElementById('subjectEthnicity').value.length;
+    var subjectCityLength=document.getElementById('subjectCity').value.length;
+    var subjectFile=document.getElementById('subjectFile').value;
+    var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
+    console.log(result);
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
+  }
   saveToFb() {
-    console.log("Inside submitForm()");
     var senderFullName=document.getElementById('senderFullName').value;
     var senderCity=document.getElementById('senderCity').value;
     var senderEmail=document.getElementById('senderEmail').value;
@@ -50,12 +90,19 @@ class IAmDifferentForm extends Component {
   }
 
   async submitForm(e){
-    var formInputs = this.saveToFb();
+    if(this.checkValue()) {
+      this.handleModal2()
+    }else {
+      var formInputs = this.saveToFb();
 
-    e.preventDefault();
-
-    await this.uploadFile(this.state.file, formInputs);
-
+      e.preventDefault();
+    
+      await this.uploadFile(this.state.file, formInputs);
+      this.handleModal()
+    }
+    
+    
+    
   }
 
   async uploadFile(file, formInputs) {
@@ -95,7 +142,7 @@ class IAmDifferentForm extends Component {
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
               <p className="contentsInParagraph">In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
 
-On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition “I’m different, just like you! - We are all in this together”. It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
+On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
 </p>
             </Col>
           </Row>
@@ -154,7 +201,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} required bsCustomPrefix='form-file-input' className=  'form_field_text' name="subjectPhoto"/>
+            <Form.File.Input onChange={this.onChange} required bsCustomPrefix='form-file-input' id="subjectFile"className=  'form_field_text' name="subjectPhoto"/>
             <p id="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
             </Form.Row>
@@ -178,6 +225,29 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               <Button bsPrefix="share_button" variant="primary"  className="btn-2"type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
+     
+          <Modal show={this.state.show2}>
+            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Body>
+              Please submit all the required folder
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
+               
+          <Modal show={this.state.show}>
+            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Body>
+              Your submission done2
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
+            
     </Container>
     <Footer/>
   </div>
