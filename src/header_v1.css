@@ -7,7 +7,9 @@
     margin-right: 0px;
     margin-left: 150px;
   }
-
+  .dropdown-item{
+    font-family: "sofia-pro", Sans-serif !important;
+  }
   .navitem{
   color:black;
   font-weight: normal;
@@ -152,6 +154,7 @@
   }
   .navitem-dropdown{
     margin-right: 0px !important;
+    font-family: "sofia-pro", Sans-serif !important;
   }
 }
 
@@ -286,5 +289,3 @@
   fontFamily:"sofia-pro, Sans-serif",
   backgroundColor: "#e2e2e2"
   }} */
-
-  
