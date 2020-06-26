@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import ImgSlider from './img_slider';
 import ImageSlider from '../../imageSlider';
-import ProgramInfo from "../../programInfo";
+import ProgramInfo_ch from "../programInfo-ch";
 import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
@@ -86,8 +86,8 @@ class SkyV1_ch extends Component {
           <img src="" style={{width:"100%", height:"auto"}}/>
         </Col>
       </Row>
-      <ProgramInfo subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
-      </ProgramInfo>
+      <ProgramInfo_ch subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+      </ProgramInfo_ch>
       
       <Row className="mainContents" style={{marginTop:"100px"}}>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
@@ -126,33 +126,33 @@ class SkyV1_ch extends Component {
       </Row>
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>Photographer</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>攝影師資訊</Col>
       </Row>
 
       <Form encType="multipart/form-data">
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="firstName" type="text" placeholder="First Name" required size="lg"/>
+              <Form.Control id="firstName" type="text" placeholder="英文姓名" required size="lg"/>
             </Col>
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
             
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="userEmail" type="text" placeholder="Email" required size="lg"/>
+              <Form.Control id="userEmail" type="text" placeholder="電子郵件" required size="lg"/>
             </Col>
         </Form.Row>
 
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>Photo Info</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>照片資訊</Col>
       </Row>
 
       <Form.Row style={{marginBottom:"30px"}}>
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.Control id="description" as ="textArea" type="text" placeholder="Description" size="lg"/>
+            <Form.Control id="description" as ="textArea" type="text" placeholder="照片說明" size="lg"/>
           </Col>
       </Form.Row>
 
@@ -160,14 +160,14 @@ class SkyV1_ch extends Component {
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="location" className="formContol" type="text" placeholder="Location" required size="lg"/>
+              <Form.Control id="location" className="formContol" type="text" placeholder="拍攝地點" required size="lg"/>
             </Col>
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="date" type="text" placeholder="Date" required size="lg"/>
+              <Form.Control id="date" type="text" placeholder="拍攝日期" required size="lg"/>
             </Col>
         </Form.Row>
 
@@ -197,10 +197,10 @@ class SkyV1_ch extends Component {
 
         </Form.Row>
         <Form.Row style={{marginBottom:"50px"}}>
-            <Button onClick={this.submitForm} bsPrefix="submit_button" className="btn" variant="primary" type="submit">Submit</Button>
+            <Button onClick={this.submitForm} bsPrefix="submit_button" className="btn" variant="primary" type="submit">送出</Button>
         </Form.Row>
         <Form.Row style={{marginBottom:"50px"}}>
-          <Button  variant="primary" bsPrefix="share_button" >SHARE WITH FRIENDS</Button>
+          <Button  variant="primary" bsPrefix="share_button" >分享給朋友</Button>
         </Form.Row>
       </Form>
       </Container>
