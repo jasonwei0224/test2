@@ -226,7 +226,7 @@ class SkyV1_ch extends Component {
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
             {/* <Form.File.Input required  onChange={this.SkyV1} ref={
               fileupload => {inputFile = fileupload;} */}
-              <Form.File.Input required  onChange={this.onChange}  bsPrefix='form-file-input' name="skyPhoto" />
+              <Form.File.Input required id="subjectFile" onChange={this.onChange}  bsPrefix='form-file-input' name="skyPhoto" />
               {/*}<Form.File id="custom-file" label="" custom required/>*/}
               {/* <Form.Control.Feedback type="invalid" value={{ff}}  ref={f => {ff = f}}>
                 File must be .jpg or .png and under 1MB
