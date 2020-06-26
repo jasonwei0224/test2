@@ -223,7 +223,6 @@ p {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-weight:bold;
-    font-size:20px;
   }
   .hed2{
     font-size: 20px!important;
@@ -235,7 +234,7 @@ p {
     font-size:20px;
   }
   .contentsInParagraph {
-    font-size: 23px;
+    font-size: 23px !important;
   }
   .btn{
     font-size:30px !important;
@@ -248,7 +247,7 @@ p {
     font-size:30px;
   }
   .form-file-input{
-    font-size: 20px;
+    font-size: 20px !important;
     color: #707070;
   }
   .formConsent {
@@ -260,8 +259,11 @@ p {
     height: 25px; /*Desired height*/
     cursor: pointer;
   }
-  #description , #firstName, #lastName, #userEmail, #description, #location,
+  #description, #firstName, #lastName, #userEmail, #location,
   #date {
+    font-size: 20px !important;
+  }
+  .inputfield{
     font-size: 20px !important;
   }
   .hint{
@@ -279,14 +281,14 @@ p {
   }
   .second_title{
     color:#BE0027;
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: bold;
     font-family: "sofia-pro", Sans-serif;
     margin-bottom: 50px;
   }
 
   .project_content{
-    font-size:20px;
+    font-size:20px !important;
     margin-bottom: 5%;
     color: #707070;
     font-family: "sofia-pro", Sans-serif;
