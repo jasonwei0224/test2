@@ -1,7 +1,65 @@
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #BE0027 !important;
+    color: #efefef !important;
+  }
+  nav.navbar{
+    padding-top: 22px;
+    padding-bottom: 13px;
+    margin-right: 0px;
+    margin-left: 150px;
   }
 
+  .navitem{
+  color:black;
+  font-weight: normal;
+  margin-top: -1.5px;
+  font-size: 14px;
+  font-family: "sofia-pro", Sans-serif;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:3px;
+  padding-bottom: 3px;
+}
+
+  a.langNavLink{
+      padding-top: 0px !important;
+      margin-left: 10px;
+
+  }
+  img.langIcon{
+    width:10%;
+    height:10%;
+    margin-right: 0px;
+  }
+
+  .navitem-dropdown{
+    content:none;
+    color:black;
+    font-weight: normal;
+    margin-right: 20px;
+    margin-top: 20px ;
+    font-size: 14px;
+    font-family: "sofia-pro", Sans-serif;
+    text-align: center;
+  }
+
+  #basic-nav-dropdown{
+    content:none;
+    color:black;
+    font-weight: normal;
+    padding-top:3px;
+    padding-bottom: 3px;
+    padding-left:12px;
+    padding-right:12px;
+    margin-top: 0px;
+    margin-right:0px;
+    font-size: 14px;
+    font-family: "sofia-pro", Sans-serif;
+  }
+.dropdown-toggle::before
+.dropdown-toggle:after { content: none }
+  .navitem:hover{
+    color:#BE0027;
+  }
   /*
   react-bootstrap dropdown on hover:
   https://stackoverflow.com/questions/43010814/how-can-i-make-react-bootstraps-dropdown-open-on-mouse-hover
@@ -49,40 +107,6 @@
     padding-bottom: 0 !important;
   }
 
-  /* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: inline-block;
-    text-align: center;
-    background-color: rgb(244, 247, 241);
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: inline;
-    color: rgb(39, 29, 29);
-    text-align: center;
-    padding: 1px 16px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    horizontal-align: middle;
-  }
-
-  a {
-    display: inline-block;
-  }
-
-  li a:hover {
-    background-color: rgb(158, 219, 221);
-  } */
-
-  
 
 /* lg */
 @media screen and (min-width: 1200px) {
@@ -123,6 +147,12 @@
     font-family: sofia-pro, Sans-serif;
     background-color: #e2e2e2;
   }
+  .border{
+    margin-right: 0px !important;
+  }
+  .navitem-dropdown{
+    margin-right: 0px !important;
+  }
 }
 
 
@@ -136,6 +166,7 @@
     font-size:14px;
     font-family: sofia-pro, Sans-serif;
   }
+
 }
 /* sm */
 @media only screen and (max-width: 991px) {
@@ -146,6 +177,90 @@
     font-size:14px;
     font-family: sofia-pro, Sans-serif;
     background-color: white;
+  }
+  .container-fluid{
+    padding: 0% !important;
+    width:100%!important;
+    padding: 0px !important;
+  }
+  .navbar{
+
+  }
+  nav{
+    background-color: #efefef;
+    padding: 0px !important;
+  }
+  #navLinkContainer{
+    background-color: #BE0027;
+    align-items: center !important;
+    width:100%;
+    text-align: center;
+  }
+
+  .m-auto{
+    text-align: center;
+    border-bottom: 1px;
+    border-color:white;
+  }
+  .navitem{
+    font-size: 16px;
+    color:white;
+    border-bottom: 0.5px;
+    border-color:white;
+    padding-top: 8px;
+    padding-bottom:8px;
+    width:100%;
+    line-height: 20px;
+    border-bottom-style: solid;
+
+  }
+  .navitem:hover{
+    background: white;
+
+  }
+  .navitem:active{
+    background: white;
+  }
+  .navitem-dropdown{
+    font-size: 16px !important;
+    color:white !important;
+    margin-right: 0px !important;
+    padding-top: 8px;
+    padding-bottom:8px;
+    width:100%;
+    text-align: center;
+    line-height: 20px;
+
+  }
+  .dropdown-item{
+    text-align: center!important;
+    font-family: "sofia-pro", Sans-serif;
+    font-size: 16px !important;
+  }
+  .dropdown-item:hover{
+    background: white !important;
+
+  }
+  .dropdown-item:active{
+    background: white;
+  }
+  .border{
+    width: 100%;
+    text-align: center !important;
+    padding-top: 8px;
+    padding-bottom:8px;
+    line-height: 20px;
+
+  }
+  .langIcon{
+    width:15%;
+    height: 15%;
+  }
+  .navtoggle{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%0, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width:20% !important;
+    height:20% !important;
+
   }
 }
 
