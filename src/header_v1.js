@@ -80,33 +80,38 @@ export default class HeaderV1 extends React.Component {
       width: this.state.width,
       zIndex: this.state.zIndex,
       }}>
-      <Container fluid>
+      <Container fluid bsPrefix="container">
         <Navbar expand="lg">
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> {/* text align to left for dropdown with centered hamburger icon */}
               {this.state.english?
               <>
-              <Nav.Link href="/">HOME</Nav.Link>
-                <NavDropdown title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item href="#">HISTORY</NavDropdown.Item>
-                  <NavDropdown.Item href="#">ARTIST VISION</NavDropdown.Item>
-                  <NavDropdown.Item href="#">MEDIA</NavDropdown.Item>
-                  <NavDropdown.Item href="#">OUR TEAM</NavDropdown.Item>
+              <Nav.Link bsPrefix="navitem" href="/">HOME</Nav.Link>
+              <div className="border">
+                <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown.Item bsPrefix="dropdown-item" href="#">HISTORY</NavDropdown.Item>
+                  <NavDropdown.Item  bsPrefix="dropdown-item"href="#">ARTIST VISION</NavDropdown.Item>
+                  <NavDropdown.Item  bsPrefix="dropdown-item"href="#">MEDIA</NavDropdown.Item>
+                  <NavDropdown.Item  bsPrefix="dropdown-item"href="#">OUR TEAM</NavDropdown.Item>
                 </NavDropdown>
-              <Nav.Link href="#">CONCERT</Nav.Link>
-              <NavDropdown title="GALLERY" id="basic-nav-dropdown" renderMenuOnMount={true}>
-              <NavDropdown.Item href="#sky">SKY</NavDropdown.Item>
-              <NavDropdown.Item href="#IAmDifferent">I AM DIFFERENT</NavDropdown.Item>
+              </div>
+              <Nav.Link bsPrefix="navitem" href="#">CONCERT</Nav.Link>
+              <div className="border">
+              <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" id="basic-nav-dropdown" renderMenuOnMount={true}>
+              <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
+              <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">HOPE TALK</Nav.Link>
-              <Nav.Link href="#">ARTIST TALK</Nav.Link>
-              <Nav.Link href="#">KITCHEN</Nav.Link>
-              <Nav.Link href="#">BOOKSTORE</Nav.Link>
-              <Nav.Link href="#">FILMS</Nav.Link>
-              <Nav.Link href="#">SPONSORS</Nav.Link>
-              <Nav.Link href="#">VOLUNTEER</Nav.Link>
-              <Nav.Link className="langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
+            </div>
+
+              <Nav.Link bsPrefix="navitem" href="#">HOPE TALK</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">ARTIST TALK</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">KITCHEN</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">BOOKSTORE</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">FILMS</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">SPONSORS</Nav.Link>
+              <Nav.Link bsPrefix="navitem" href="#">VOLUNTEER</Nav.Link>
+              <Nav.Link className="langNavLink" bsPrefix = "langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               :
               <>
@@ -123,7 +128,7 @@ export default class HeaderV1 extends React.Component {
               <NavDropdown.Item href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#">希望講堂</Nav.Link>
-              <Nav.Link href="#">我們藝樣 (請新增)</Nav.Link>
+              <Nav.Link href="#">我們藝樣</Nav.Link>
               <Nav.Link href="#">友誼廚房</Nav.Link>
               <Nav.Link href="#">台灣書店</Nav.Link>
               <Nav.Link href="#">電影櫥窗</Nav.Link>
