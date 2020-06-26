@@ -7,7 +7,9 @@
     margin-right: 0px;
     margin-left: 150px;
   }
-
+  .dropdown-item{
+    font-family: "sofia-pro", Sans-serif !important;
+  }
   .navitem{
   color:black;
   font-weight: normal;
@@ -16,7 +18,18 @@
   font-family: "sofia-pro", Sans-serif;
   padding-left:12px;
   padding-right:12px;
-  padding-top:3px;
+  padding-top:2.5px;
+  padding-bottom: 3px;
+}
+.navitem2{
+  color:black;
+  font-weight: normal;
+  margin-top: -1.5px;
+  font-size: 14px;
+  font-family: "sofia-pro", Sans-serif;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:1.5px;
   padding-bottom: 3px;
 }
 
@@ -52,6 +65,7 @@
     padding-right:12px;
     margin-top: 0px;
     margin-right:0px;
+    margin-bottom:5px;
     font-size: 14px;
     font-family: "sofia-pro", Sans-serif;
   }
@@ -152,6 +166,7 @@
   }
   .navitem-dropdown{
     margin-right: 0px !important;
+    font-family: "sofia-pro", Sans-serif !important;
   }
 }
 
@@ -214,6 +229,18 @@
     border-bottom-style: solid;
 
   }
+  .navitem2{
+    font-size: 16px;
+    color:white;
+    border-bottom: 0.5px;
+    border-color:white;
+    padding-top: 8px;
+    padding-bottom:8px;
+    width:100%;
+    line-height: 20px;
+    border-bottom-style: solid;
+
+  }
   .navitem:hover{
     background: white;
 
@@ -222,6 +249,24 @@
     background: white;
   }
   .navitem-dropdown{
+    font-size: 16px !important;
+    color:white !important;
+    margin-right: 0px !important;
+    padding-top: 8px;
+    padding-bottom:8px;
+    width:100%;
+    text-align: center;
+    line-height: 20px;
+
+  }
+  .navitem2:hover{
+    background: white;
+
+  }
+  .navitem2:active{
+    background: white;
+  }
+  .navitem2-dropdown{
     font-size: 16px !important;
     color:white !important;
     margin-right: 0px !important;
@@ -262,6 +307,16 @@
     height:20% !important;
 
   }
+  nav.navbar{
+    margin-left: 0px;
+  }
+  .Nav.nav-link {
+    color:white;
+  }
+  .nav-link:hover {
+    color:white;
+  }
+
 }
 
 /* style={{

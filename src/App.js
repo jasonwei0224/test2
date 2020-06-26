@@ -22,13 +22,14 @@ import PeopleAndMask_ch from "./ch/PeopleAndMask-ch/people_and_mask-ch";
 import Mirror_ch from "./ch/Mirror-ch/mirror-ch";
 import HeaderV1 from "./header_v1.js";
 import logo from "./assets/twftorlogo.png";
+import"./sky_v1.css";
 
 function App() {
   return (
       <div className="App">
         <HashRouter>
         <img src={logo} id="logo"></img>
-        <hr id="mobileLine"/>
+        {/* <hr id="mobileLine"/> */}
         <HeaderV1 />
           <Route path="/" exact component={Home} />
           <Route path="/PaulsApple" component={PaulsApple} />

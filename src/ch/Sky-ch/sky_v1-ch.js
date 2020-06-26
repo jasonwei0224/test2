@@ -10,7 +10,7 @@ import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 
 class SkyV1_ch extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state={
@@ -29,8 +29,8 @@ class SkyV1_ch extends Component {
 
   handleModal() {
     this.setState({show:!this.state.show})
-  } 
-  
+  }
+
   handleModal2() {
     console.log("handleModal2");
     this.setState({show2:!this.state.show2})
@@ -73,7 +73,7 @@ class SkyV1_ch extends Component {
     this.setState({file: e.target.files[0]})
   }
 
-  async submitForm(e){ 
+  async submitForm(e){
     e.preventDefault();
     if(this.checkValue()) {
       this.handleModal2();
@@ -83,7 +83,7 @@ class SkyV1_ch extends Component {
       var description=document.getElementById('description').value;
       var location=document.getElementById('location').value;
       var date=document.getElementById('date').value;
-  
+
       var testFinal={
         firstName:firstName,
         userEmail:userEmail,
@@ -104,7 +104,7 @@ class SkyV1_ch extends Component {
     formData.append('description', formInputs['description']);
     formData.append('location', formInputs['location']);
     formData.append('date', formInputs['date']);
-    
+
     const response = await fetch('sky_form_photos-ch.php', {
       method: 'POST',
       body: formData
@@ -121,8 +121,8 @@ class SkyV1_ch extends Component {
     })
     .catch(err => {
       console.log(err);
-    })   
-    
+    })
+
   }
   render() {
     return (
@@ -138,7 +138,7 @@ class SkyV1_ch extends Component {
       </Row>
       <ProgramInfo_ch subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
       </ProgramInfo_ch>
-      
+
       <Row className="mainContents" style={{marginTop:"100px"}}>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <p className="contentsInParagraph">
@@ -188,7 +188,7 @@ class SkyV1_ch extends Component {
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
-            
+
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
               <Form.Control id="userEmail" type="text" placeholder="電子郵件" required size="lg"/>
             </Col>
@@ -260,7 +260,7 @@ class SkyV1_ch extends Component {
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 
@@ -288,7 +288,7 @@ class SkyV1_ch extends Component {
     </div>
     );
   }
-  
+
 }
 
 export default SkyV1_ch;

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from './assets/placeholder.png';
 import Footer from './footer-temp';
-import './sky_v1.css'
+import'./sky_v1.css';
 import fire from './firebase/file';
 
 class SkyV1 extends Component {
@@ -29,8 +29,8 @@ class SkyV1 extends Component {
 
   handleModal() {
     this.setState({show:!this.state.show})
-  } 
-  
+  }
+
   handleModal2() {
     console.log("handleModal2");
     this.setState({show2:!this.state.show2})
@@ -100,7 +100,7 @@ class SkyV1 extends Component {
 
   // fetches php and saves to fb on success
   async uploadFile(file, formInputs) {
-     
+
       var formData = new FormData();
       formData.append('skyPhoto', file);
       formData.append('firstName', formInputs['firstName']);
@@ -126,7 +126,7 @@ class SkyV1 extends Component {
       })
       .catch(err => {
         console.log(err);
-      })   
+      })
   }
   render() {
     return (
@@ -143,18 +143,47 @@ class SkyV1 extends Component {
       <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
       </ProgramInfo>
 
-      <Row className="mainContents" style={{marginTop:"100px"}}>
+      <Row className={"mainContents"} style={{marginTop:"100px"}}>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <p className="contentsInParagraph">
-              What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon. <br></br><br></br>
-
-              Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ Square (formally known as Vancouver Art Gallery North Plaza) in downtown Vancouver. These images show that despite our geographical differences, we all look towards that same sky that looms over our heads, further reaffirming that we are all in this together. Sky is built on the concept of removing the influence of colour; by looking past our differences, we can see that we are one and the same.<br></br><br></br>
-
-              In all that the world has gone through, the unchanging sky gives people a sense of hope and anticipation for the feeling of a normal day to come again. Furthermore, Indigenous teachings and stories about the sky can guide us in these times. By giving each image a background story, we can implore others to look to the sky and gain strength.<br></br><br></br>
-
-              Your experience and view of the sky will be different depending on the time of day. These lanterns will create a whole new dynamic look and feel through the use of LED lights in the evenings.<br></br><br></br>
-
-              As the province is working to reopen the economy in a safe manner and more and more people are getting back to a new normal, please follow all public health guidelines to protect yourself and others from COVID-19. Individuals should monitor their health for signs and symptoms of COVID-19. And if you’re not feeling well, they recommend staying home at this time. Respect social-distancing measures when outdoors and visiting the exhibit. Wear a face covering to protect yourself and others, especially when social-distancing is not possible such as on transit. By visiting the on-site “Sky” activation, you acknowledge that there are inherent risks associated with the COVID-19 Pandemic and will not hold ACSEA or our programming partners liable for your health. <br></br>
+              What is something that you can see when you look up, no matter
+              wherever you are in the world? The sky is one constant no matter
+              where you are and what time of day, it is there above the horizon.
+              <br />
+      </p>      <p className="contentsInParagraph">
+              Working with photographers in Canada and Taiwan, Vancouver
+              TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ
+              Square (formally known as Vancouver Art Gallery North Plaza)
+               in downtown Vancouver. These images show that despite our
+               geographical differences, we all look towards that same sky that
+               looms over our heads, further reaffirming that we are all in this
+               together. Sky is built on the concept of removing the influence
+                of colour; by looking past our differences, we can see that we
+                 are one and the same.<br></br>
+        </p>    <p className="contentsInParagraph">
+              In all that the world has gone through, the unchanging sky gives
+              people a sense of hope and anticipation for the feeling of a
+              normal day to come again. Furthermore, Indigenous teachings and
+              stories about the sky can guide us in these times.
+              By giving each image a background story, we can implore others to
+              look to the sky and gain strength.<br></br>
+        </p>    <p className="contentsInParagraph">
+              Your experience and view of the sky will be different depending on
+               the time of day. These lanterns will create a whole new dynamic
+               look and feel through the use of LED lights in the evenings.<br></br>
+          </p>  <p className="contentsInParagraph">
+              As the province is working to reopen the economy in a safe manner
+              and more and more people are getting back to a new normal, please
+              follow all public health guidelines to protect yourself and others
+               from COVID-19. Individuals should monitor their health for signs
+               and symptoms of COVID-19. And if you’re not feeling well, they
+               recommend staying home at this time. Respect social-distancing
+               measures when outdoors and visiting the exhibit. Wear a face
+               covering to protect yourself and others, especially when
+               social-distancing is not possible such as on transit. By visiting
+                the on-site “Sky” activation, you acknowledge that there are
+                inherent risks associated with the COVID-19 Pandemic and will
+                not hold ACSEA or our programming partners liable for your health. <br></br>
 
             </p>
           </Col>
@@ -176,32 +205,34 @@ class SkyV1 extends Component {
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="firstName" type="text" placeholder="First Name" required size="lg"/>
+              <Form.Control id="firstName" className={"inputfield"} type="text" placeholder="First Name" required size="lg"/>
             </Col>
 
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="lastName" type="text" placeholder="Last Name" required size="lg"/>
+              <Form.Control id="lastName" className="inputfield" type="text" placeholder="Last Name" required size="lg"/>
             </Col>
         </Form.Row>
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="userEmail" type="text" placeholder="Email" required size="lg"/>
+              <Form.Control id="userEmail"  className="inputfield"type="text" placeholder="Email" required size="lg"/>
             </Col>
         </Form.Row>
 
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>Photo Info</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
+          bsCustomPrefix="hed" className='hed' style={{backgroundColor: "#D9C739",
+           marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>Photo Info</Col>
       </Row>
 
       <Form.Row style={{marginBottom:"30px"}}>
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.Control id="description" as ="textArea" type="text" placeholder="Description" size="lg"/>
+            <Form.Control id="description" as ="textArea" className="inputfield" type="text" placeholder="Description" size="lg"/>
           </Col>
       </Form.Row>
 
@@ -255,7 +286,7 @@ class SkyV1 extends Component {
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-              
+
             </Modal.Footer>
           </Modal>
 
