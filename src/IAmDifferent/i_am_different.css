@@ -3,11 +3,14 @@
   border-radius: 20px;
   text-align: left;
   background-color: #D9C739;
+  color: #0C3866;
   padding-left: 16%;
   padding-right: 16%;
-  color: white;
-
+  margin: auto;
+  text-align: left;
+  font-weight: bold;
 }
+
 .image_col{
   padding: 0px;
 }
@@ -17,17 +20,18 @@
   width:100%;
   height: auto;
 }
+
 .mobileSharebutton{
   padding-left:  16%;
   padding-right: 16%;
  background-color:#BE0027;
  color: white;
  border-radius:20px ;
-
  margin: auto;
+ font-weight: bold;
 }
 
-p { /*should change*/
+.mainContent > p { /*should change*/
   font-family: "adonis-web";
 }
 
@@ -53,32 +57,22 @@ p { /*should change*/
   .uploadButton {
     padding-left:  18%;
     padding-right: 18%;
-   background-color:#D9C739;
-   color: #0C3866;
-   border-radius:20px ;
-   font-size:40px;
-   margin: auto;
-    text-align: left;
+     border-radius:20px ;
+     font-size:40px;
+      margin: auto;
 }
   .mobileSharebutton{
-    padding-left:  16%;
-    padding-right: 16%;
-   background-color:#BE0027;
-   color: white;
-   border-radius:20px ;
    font-size:30px !important;
-   margin: auto;
   }
    .introTitle {
     font-size: 45px;
   }
   .introBody {
-    font-size: 45px;
+    font-size: 40px;
   }
    .mainContent > p {
-    font-size: 45px;
+    font-size: 42px;
   }
-
 }
 
 /* sm */
@@ -88,29 +82,22 @@ p { /*should change*/
     padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
-    text-align: left;
-   background-color:#D9C739;
-   color: #0C3866 !important;
-   border-radius:20px ;
    font-size:30px;
-   font-weight: bold;
-   margin: 0;
+     margin: auto;
 }
   .mobileSharebutton{
-    padding-left:  20%;
-    padding-right: 20%;
-   background-color:#BE0027;
-   color: white;
-   border-radius:20px;
+    padding-left:  27%;
+    padding-right: 27%;
+    padding-top: 2%;
+    padding-bottom: 2%;
    font-size:30px;
-   font-weight: bold;
-   margin: auto;
+     margin: auto;
   }
   .introTitle {
     font-size: 45px;
   }
    .introBody {
-    font-size: 42px;
+    font-size: 40px;
   }
    .mainContent > p {
     font-size: 42px;
@@ -119,18 +106,33 @@ p { /*should change*/
 
 /* md */
 @media screen and (min-width: 992px) {
-
+  .introTitle {
+   font-size: 45px;
+  }
+  .introBody {
+   font-size: 40px;
+  }
+  .mainContent > p {
+   font-size: 42px;
+ }
   .uploadButton {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: left;
-   background-color:#D9C739;
-   color: #0C3866 !important;
+
    border-radius:20px ;
    font-size:30px;
    margin: auto;
+  }
+  .mobileSharebutton{
+    padding-left:  24%;
+    padding-right: 24%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   font-size:30px;
+     margin: auto;
   }
 }
 
@@ -152,9 +154,6 @@ p { /*should change*/
     padding-bottom: 2%;
     text-align: left;
      margin-left:30%;
-   background-color:#D9C739;
-   color: white;
-   border-radius:20px ;
    font-size:15px;
    margin: auto;
     margin-bottom:10px;

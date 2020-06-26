@@ -61,7 +61,7 @@ function IAmDifferent() {
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="mainContent">
+            <p className="introBody">
               {" "}
               <b>“I’m different, just like you! - We are all in this together”</b> is an interactive exhibition piece that grows as people continue to contribute to it.
               Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
