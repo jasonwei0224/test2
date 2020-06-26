@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import "./newsletterContactUs.css";
+// import "./newsletterContactUs.css";
 
 const ColoredLine = (props) => {
   return (

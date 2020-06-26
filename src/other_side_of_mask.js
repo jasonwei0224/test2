@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import './other_side_of_mask.css';
+// import './other_side_of_mask.css';
 import {OBJModel, GLTFModel} from 'react-3d-viewer'
 import {ModelViewer} from 'react-3d-model-viewer';
 import image1 from './assets/image1.jpg';

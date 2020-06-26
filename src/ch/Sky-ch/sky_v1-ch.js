@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
-import './sky_v1-ch.css'
+// import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 
 class SkyV1_ch extends Component {

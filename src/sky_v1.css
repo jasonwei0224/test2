@@ -1,4 +1,4 @@
-p {
+/* p {
   font-family: 'adonis-web';
 }
 
@@ -18,7 +18,7 @@ p {
   overflow: hidden;
 }
 
-/* xs < 768 */
+
 @media screen and (max-width: 767px) {
   .contentsInParagraph {
     font-size: 45px;
@@ -33,8 +33,8 @@ p {
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 50px; /*Desired width*/
-    height: 50px; /*Desired height*/
+    width: 50px; 
+    height: 50px; 
     cursor: pointer;
   }
   .submit_button{
@@ -61,7 +61,6 @@ p {
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
   .contentsInParagraph {
     font-size: 45px;
@@ -111,8 +110,8 @@ p {
   }
 
   input[type="checkbox"]{
-    width: 50px; /*Desired width*/
-    height: 50px; /*Desired height*/
+    width: 50px; 
+    height: 50px; 
     cursor: pointer;
   }
   #firstName{
@@ -160,11 +159,10 @@ p {
   }
 }
 
-/* md */
 @media screen and (min-width: 992px) {
   input[type="checkbox"]{
-    width: 50px; /*Desired width*/
-    height: 50px; /*Desired height*/
+    width: 50px; 
+    height: 50px; 
     cursor: pointer;
   }
   .contentsInParagraph {
@@ -188,8 +186,8 @@ p {
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 25px; /*Desired width*/
-    height: 25px; /*Desired height*/
+    width: 25px; 
+    height: 25px; /
     cursor: pointer;
   }
   #firstName{
@@ -214,7 +212,6 @@ p {
 
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .hed{
     font-size: 20px!important;
@@ -255,8 +252,8 @@ p {
     margin-left: -8% !important;
   }
   input[type="checkbox"]{
-    width: 25px; /*Desired width*/
-    height: 25px; /*Desired height*/
+    width: 25px; 
+    height: 25px; 
     cursor: pointer;
   }
   #description, #firstName, #lastName, #userEmail, #location,
@@ -294,4 +291,4 @@ p {
     font-family: "sofia-pro", Sans-serif;
     font-weight: bold;
   }
-}
+} */

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ButtonSkinColor.css'
+// import './ButtonSkinColor.css'
 
 const ButtonSkinColor=(props)=> {
     return (

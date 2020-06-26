@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer-temp.css';
+// import './footer-temp.css';
 
 const FooterPage = () => {
     return (

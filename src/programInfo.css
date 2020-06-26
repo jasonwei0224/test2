@@ -1,14 +1,7 @@
-/* @font-face {
-    font-family: 'adonis';
-    src: local('adonis'), url(./fonts/adonis.ttf) format('truetype');
-} */
-
+/* 
 .borderLine {
     border-bottom: 1px solid #707070;
 }
-/* .borderLineBottom {
-    border-bottom: 60px solid #707070;
-} */
 
 .contents {
     margin-top: 2%;
@@ -71,7 +64,6 @@ a.share.btn.btn-primary {
 }
 
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .subtitle {
       font-size: 40px;
@@ -107,7 +99,6 @@ a.share.btn.btn-primary {
 
 
 
-/* md */
 @media only screen and (max-width: 1024px) {
 
     .subtitle {
@@ -135,7 +126,6 @@ a.share.btn.btn-primary {
 
     }
 }
-/* sm */
 @media only screen and (max-width: 768px) {
 
   .subtitle {
@@ -162,4 +152,4 @@ a.share.btn.btn-primary {
       padding: 5px 32px 5px 32px;
       display: none;
   }
-}
+} */

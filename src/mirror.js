@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Modal from 'react-modal';
 import ButtonSkinColor from './mirror/ButtonSkinColor';
-import './Mirror.css';
+// import './Mirror.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
