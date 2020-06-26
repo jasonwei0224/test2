@@ -1,16 +1,18 @@
-.upload_button {
+.uploadButton {
   text-align: center;
   border-radius: 20px;
   text-align: left;
   background-color: #D9C739;
+  color: #0C3866;
   padding-left: 16%;
   padding-right: 16%;
-  color: white;
-
+  margin: auto;
+  text-align: left;
+  font-weight: bold;
 }
+
 .image_col{
   padding: 0px;
-
 }
 
 .main_image{
@@ -18,30 +20,22 @@
   width:100%;
   height: auto;
 }
-.share_button{
+
+.mobileSharebutton{
   padding-left:  16%;
   padding-right: 16%;
  background-color:#BE0027;
  color: white;
  border-radius:20px ;
-
  margin: auto;
+ font-weight: bold;
 }
-/* .form_link { NOT USED
-  background-color: #d9c739;
-  border-radius: 25px;
-  color: white;
-} */
 
-/* .form_link:hover {
-  text-decoration: none;
-} */
-
-p { /*should change*/
+.mainContent > p { /*should change*/
   font-family: "adonis-web";
 }
 
-.instruction_title {
+.introTitle {
   margin-top: 100px;
   font-family: "sofia-pro", Sans-serif;
   font-weight: 600;
@@ -49,7 +43,7 @@ p { /*should change*/
   font-size: 20px;
 }
 
-.instruction_body {
+.introBody {
   font-family: "sofia-pro", Sans-serif;
   font-weight: normal;
   color: #707070;
@@ -60,190 +54,111 @@ p { /*should change*/
 /* below are mediaquiries */
 /* xs < 768 */
 @media screen and (max-width: 767px) {.
-  .upload_button {
+  .uploadButton {
     padding-left:  18%;
     padding-right: 18%;
-   background-color:#D9C739;
-   color: #0C3866;
-   border-radius:20px ;
-   font-size:40px;
-   margin: auto;
-    text-align: left;
+     border-radius:20px ;
+     font-size:40px;
+      margin: auto;
 }
-  .share_button{
-    padding-left:  16%;
-    padding-right: 16%;
-   background-color:#BE0027;
-   color: white;
-   border-radius:20px ;
+  .mobileSharebutton{
    font-size:30px !important;
-   margin: auto;
   }
-   .instruction_title {
+   .introTitle {
     font-size: 45px;
   }
-  .instruction_body {
-    font-size: 45px;
+  .introBody {
+    font-size: 40px;
   }
-   .contents > p {
-    font-size: 45px;
+   .mainContent > p {
+    font-size: 42px;
   }
-  /* .box {
-  } */
-  /* .newsletter > p {
-    font-size: 15px;
-  } */
-  /* .newsletter :first-child {
-    font-size: 25px;
-  } */
-  /* .newsletter > button {
-    margin-bottom: 10px;
-  } */
-  /* .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 25px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .upload_button {
+  .uploadButton {
     padding-left:  15%;
     padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
-    text-align: left;
-   background-color:#D9C739;
-   color: #0C3866 !important;
-   border-radius:20px ;
    font-size:30px;
-   font-weight: bold;
-   margin: 0;
+     margin: auto;
 }
-  .share_button{
-    padding-left:  20%;
-    padding-right: 20%;
-   background-color:#BE0027;
-   color: white;
-   border-radius:20px;
+  .mobileSharebutton{
+    padding-left:  27%;
+    padding-right: 27%;
+    padding-top: 2%;
+    padding-bottom: 2%;
    font-size:30px;
-   font-weight: bold;
-   margin: auto;
+     margin: auto;
   }
-  .instruction_title {
+  .introTitle {
     font-size: 45px;
   }
-   .instruction_body {
+   .introBody {
+    font-size: 40px;
+  }
+   .mainContent > p {
     font-size: 42px;
   }
-   .contents > p {
-    font-size: 42px;
-  }
-  /* .newsletter > p {
-    font-size: 15px;
-  }
-  .newsletter :first-child {
-    font-size: 25px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 25px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-
-  .upload_button {
+  .introTitle {
+   font-size: 45px;
+  }
+  .introBody {
+   font-size: 40px;
+  }
+  .mainContent > p {
+   font-size: 42px;
+ }
+  .uploadButton {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: left;
-   background-color:#D9C739;
-   color: #0C3866 !important;
+
    border-radius:20px ;
    font-size:30px;
    margin: auto;
-
-}
-
-  /* .box {
   }
-  .newsletter > p {
-    font-size: 15px;
+  .mobileSharebutton{
+    padding-left:  24%;
+    padding-right: 24%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   font-size:30px;
+     margin: auto;
   }
-  .newsletter :first-child {
-    font-size: 30px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 15px;
-  }
-  .contact_us :first-child {
-    font-size: 30px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-   .instruction_title {
+   .introTitle {
     font-size: 20px;
   }
-   .instruction_body {
+   .introBody {
     font-size: 20px;
   }
-   .contents > p {
+   .mainContent > p {
     font-size: 23px;
   }
-  .upload_button {
+  .uploadButton {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: left;
      margin-left:30%;
-   background-color:#D9C739;
-   color: white;
-   border-radius:20px ;
    font-size:15px;
    margin: auto;
     margin-bottom:10px;
 }
-  /* .newsletter > p {
-    font-size: 20px;
+  .mobileSharebutton{
+    display:none;
   }
-  .newsletter :first-child {
-    font-size: 35px;
-  }
-  .newsletter > button {
-    margin-bottom: 10px;
-  }
-  .contact_us > p {
-    font-size: 20px;
-  }
-  .contact_us :first-child {
-    font-size: 35px;
-  }
-  .contact_us > button {
-    margin-bottom: 10px;
-  } */
 }

@@ -55,7 +55,7 @@ function IAmDifferent() {
         <Row>
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="instruction_title">About This Work:</p>
+            <p className="introTitle">About This Work:</p>
           </Col>
         </Row>
 
@@ -63,7 +63,7 @@ function IAmDifferent() {
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="instruction_body">
+            <p className="introBody">
               {" "}
               <b>“I’m different, just like you! - We are all in this together”</b> is an interactive exhibition piece that grows as people continue to contribute to it.
               Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
@@ -75,7 +75,7 @@ function IAmDifferent() {
         <Row>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}
             style={{ marginTop: "50px", marginBottom: "5%" }}
-            className="contents"
+            className="mainContent"
           >
             <p>
               {" "}
@@ -94,7 +94,7 @@ function IAmDifferent() {
             <Button
               // onClick="handleClick"
               href="#IAmDifferentForm"
-              bsPrefix="upload_button" >
+              bsPrefix="uploadButton" >
               UPLOAD FRONT-LINE HERO PHOTO
 
               {/* <Link to="/IAmDifferentForm" className="form_link">
@@ -105,7 +105,7 @@ function IAmDifferent() {
         </Row>
         <Row>
           <Col style={{ marginBottom: "50px" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button bsPrefix="share_button" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
+            <Button bsPrefix="mobileSharebutton" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
           </Col>
         </Row>
       </Container>

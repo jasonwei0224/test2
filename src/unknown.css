@@ -1,0 +1,94 @@
+/* Original File: i_am_different.css
+.form_link { NOT USED
+  background-color: #d9c739;
+  border-radius: 25px;
+  color: white;
+}
+
+.form_link:hover {
+  text-decoration: none;
+}
+xs < 768
+.box {
+}
+.newsletter > p {
+  font-size: 15px;
+}
+.newsletter :first-child {
+  font-size: 25px;
+}
+.newsletter > button {
+  margin-bottom: 10px;
+}
+ .contact_us > p {
+  font-size: 15px;
+}
+.contact_us :first-child {
+  font-size: 25px;
+}
+.contact_us > button {
+  margin-bottom: 10px;
+}
+
+sm
+.newsletter > p {
+  font-size: 15px;
+}
+.newsletter :first-child {
+  font-size: 25px;
+}
+.newsletter > button {
+  margin-bottom: 10px;
+}
+.contact_us > p {
+  font-size: 15px;
+}
+.contact_us :first-child {
+  font-size: 25px;
+}
+.contact_us > button {
+  margin-bottom: 10px;
+}
+
+md
+.box {
+}
+.newsletter > p {
+  font-size: 15px;
+}
+.newsletter :first-child {
+  font-size: 30px;
+}
+.newsletter > button {
+  margin-bottom: 10px;
+}
+.contact_us > p {
+  font-size: 15px;
+}
+.contact_us :first-child {
+  font-size: 30px;
+}
+.contact_us > button {
+  margin-bottom: 10px;
+}
+
+lg
+.newsletter > p {
+  font-size: 20px;
+}
+.newsletter :first-child {
+  font-size: 35px;
+}
+.newsletter > button {
+  margin-bottom: 10px;
+}
+.contact_us > p {
+  font-size: 20px;
+}
+.contact_us :first-child {
+  font-size: 35px;
+}
+.contact_us > button {
+  margin-bottom: 10px;
+}
+*/
