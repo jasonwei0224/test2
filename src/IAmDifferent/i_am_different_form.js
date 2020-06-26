@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import ProgramInfo from "./programInfo"
+import ProgramInfo from "../programInfo"
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
-import banner from './assets/placeholder.png';
-// import './people_and_mask.css'
 import './IAmDifferentForm.css'
-import programInfo from './programInfo';
-import Footer from './footer-temp';
-import FormComponent from './formComponent';
-import fire from './firebase/file';
-import different_img from "./assets/Different.jpg";
+// import programInfo from '../programInfo';
+import Footer from '../footer-temp';
+import FormComponent from '../formComponent';
+import fire from '../firebase/file';
+import different_img from "../assets/Different.jpg";
 
 class IAmDifferentForm extends Component {
 
@@ -128,8 +126,8 @@ class IAmDifferentForm extends Component {
     })
     .catch(err => {
       console.log(err);
-    })   
-    
+    })
+
   }
     render() {
     return (
