@@ -5,7 +5,7 @@ import different_img from "../../assets/Different.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
 // import "./i_am_different-ch.css";
-import Header from "../../header";
+import Header from "../../dummy/header";
 import { Link } from "react-router-dom";
 // import NewsletterContactUs_ch from "./newsletterContactUs-ch";
 import Footer from "../../footer-temp";

@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
-// import "./header_v1.css";
+import "./header_v1.css";
 import en from "./assets/en.png";
 import ch from "./assets/ch.png";
 
@@ -82,59 +82,59 @@ export default class HeaderV1 extends React.Component {
       }}>
       <Container fluid bsPrefix="container">
         <Navbar expand="lg">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> {/* text align to left for dropdown with centered hamburger icon */}
+          <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav_bar_toggle_icon"/>
+          <Navbar.Collapse>
+            <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> 
               {this.state.english?
               <>
-              <Nav.Link bsPrefix="navitem" href="/">HOME</Nav.Link>
-              <div className="border">
-                <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">HISTORY</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">ARTIST VISION</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">MEDIA</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">OUR TEAM</NavDropdown.Item>
-                </NavDropdown>
-              </div>
-              <Nav.Link bsPrefix="navitem" href="#">CONCERT</Nav.Link>
-              <div className="border">
-                <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
-                </NavDropdown>
-              </div>
+                <Nav.Link bsPrefix="navitem" href="/">HOME</Nav.Link>
+                <div className="borderClass">
+                  <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" renderMenuOnMount={true}>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">HISTORY</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">ARTIST VISION</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">MEDIA</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">OUR TEAM</NavDropdown.Item>
+                  </NavDropdown>
+                </div>
+                <Nav.Link bsPrefix="navitem" href="#">CONCERT</Nav.Link>
+                <div className="borderClass">
+                  <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" renderMenuOnMount={true}>
+                    <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
+                  </NavDropdown>
+                </div>
 
-              <Nav.Link bsPrefix="navitem" href="#">HOPE TALK</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">ARTIST TALK</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">KITCHEN</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">BOOKSTORE</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">FILMS</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">SPONSORS</Nav.Link>
-              <Nav.Link bsPrefix="navitem" href="#">VOLUNTEER</Nav.Link>
-              <Nav.Link className="langNavLink" bsPrefix = "langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">HOPE TALK</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">ARTIST TALK</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">KITCHEN</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">BOOKSTORE</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">FILMS</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">SPONSORS</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="#">VOLUNTEER</Nav.Link>
+                <Nav.Link className="langNavLink" bsPrefix = "langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               :
               <>
-              <Nav.Link bsPrefix="navitem2" href="/">首頁</Nav.Link>
-                <NavDropdown  bsPrefix="navitem2-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item  bsPrefix="dropdown-item" href="#">活動足跡</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#">藝術方針</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#">媒體資訊</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#">我們團隊</NavDropdown.Item>
+                <Nav.Link bsPrefix="navitemCh" href="/">首頁</Nav.Link>
+                  <NavDropdown bsPrefix="navitemCh-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">活動足跡</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">藝術方針</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">媒體資訊</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">我們團隊</NavDropdown.Item>
+                  </NavDropdown>
+                <Nav.Link bsPrefix="navitemCh"  href="#">音樂饗宴</Nav.Link>
+                <NavDropdown bsPrefix="navitemCh-dropdown" title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky-ch">天空</NavDropdown.Item>
+                  <NavDropdown.Item bsPrefix="dropdown-item" href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
                 </NavDropdown>
-              <Nav.Link bsPrefix="navitem2"  href="#">音樂饗宴</Nav.Link>
-              <NavDropdown bsPrefix="navitem2-dropdown" title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
-              <NavDropdown.Item bsPrefix="dropdown-item" href="#sky-ch">天空</NavDropdown.Item>
-              <NavDropdown.Item bsPrefix="dropdown-item" href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link bsPrefix="navitem2" href="#">希望講堂</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">我們藝樣</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">友誼廚房</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">台灣書店</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">電影櫥窗</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">贊助單位</Nav.Link>
-              <Nav.Link bsPrefix="navitem2" href="#">義工專區</Nav.Link>
-              <Nav.Link className="langNavLink"><img className="langIcon" src={en} onClick={this.languageBtnListener}/></Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">希望講堂</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">我們藝樣</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">友誼廚房</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">台灣書店</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">電影櫥窗</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">贊助單位</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="#">義工專區</Nav.Link>
+                <Nav.Link className="langNavLink"><img className="langIcon" src={en} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               }
 

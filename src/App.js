@@ -11,7 +11,6 @@ import Sky from "./sky";
 import IAmDifferentForm from "./i_am_different_form";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
-import Header from "./header";
 import SkyV1 from "./sky_v1";
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
 import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";

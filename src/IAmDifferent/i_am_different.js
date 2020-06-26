@@ -6,7 +6,7 @@ import different_img from "../assets/Different.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo from "../programInfo";
 import "./i_am_different.css";
-import Header from "../header";
+import Header from "../dummy/header";
 import { Link } from "react-router-dom";
 import NewsletterContactUs from "./newsletterContactUs";
 import Footer from "../footer-temp";
