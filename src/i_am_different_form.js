@@ -18,12 +18,14 @@ class IAmDifferentForm extends Component {
       file: null,
       show:false,
       show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
     this.handleModal=this.handleModal.bind(this);
     this.handleModal2=this.handleModal2.bind(this);
     this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
   handleModal() {
@@ -33,6 +35,10 @@ class IAmDifferentForm extends Component {
   handleModal2() {
     console.log("handleModal2");
     this.setState({show2:!this.state.show2})
+  }
+
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
   }
   cancelCourse() {
     document.getElementById('firstName').value="";
@@ -63,26 +69,26 @@ class IAmDifferentForm extends Component {
 
   }
   saveToFb() {
-    var senderFullName=document.getElementById('senderFullName').value;
-    var senderCity=document.getElementById('senderCity').value;
-    var senderEmail=document.getElementById('senderEmail').value;
-    var subjectFirstName=document.getElementById('subjectFirstName').value;
-    var subjectOccupation=document.getElementById('subjectOccupation').value;
-    var subjectEthnicity=document.getElementById('subjectEthnicity').value;
-    var subjectCity=document.getElementById('subjectCity').value;
+    // var senderFullName=document.getElementById('senderFullName').value;
+    // var senderCity=document.getElementById('senderCity').value;
+    // var senderEmail=document.getElementById('senderEmail').value;
+    // var subjectFirstName=document.getElementById('subjectFirstName').value;
+    // var subjectOccupation=document.getElementById('subjectOccupation').value;
+    // var subjectEthnicity=document.getElementById('subjectEthnicity').value;
+    // var subjectCity=document.getElementById('subjectCity').value;
 
-    var testFinal={
-      senderFullName:senderFullName,
-      senderCity:senderCity,
-      senderEmail:senderEmail,
-      subjectFirstName:subjectFirstName,
-      subjectOccupation: subjectOccupation,
-      subjectEthnicity:subjectEthnicity,
-      subjectCity:subjectCity
-    }
-    let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-    fire.database().ref('formsTest').push(testFinal);
-    return testFinal;
+    // var testFinal={
+    //   senderFullName:senderFullName,
+    //   senderCity:senderCity,
+    //   senderEmail:senderEmail,
+    //   subjectFirstName:subjectFirstName,
+    //   subjectOccupation: subjectOccupation,
+    //   subjectEthnicity:subjectEthnicity,
+    //   subjectCity:subjectCity
+    // }
+    // let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
+    // fire.database().ref('formsTest').push(testFinal);
+    // return testFinal;
   }
 
   onChange(e){
@@ -90,21 +96,33 @@ class IAmDifferentForm extends Component {
   }
 
   async submitForm(e){
+    e.preventDefault();
+
     if(this.checkValue()) {
       this.handleModal2()
     }else {
-      var formInputs = this.saveToFb();
+      var senderFullName=document.getElementById('senderFullName').value;
+      var senderCity=document.getElementById('senderCity').value;
+      var senderEmail=document.getElementById('senderEmail').value;
+      var subjectFirstName=document.getElementById('subjectFirstName').value;
+      var subjectOccupation=document.getElementById('subjectOccupation').value;
+      var subjectEthnicity=document.getElementById('subjectEthnicity').value;
+      var subjectCity=document.getElementById('subjectCity').value;
 
-      e.preventDefault();
-    
-      await this.uploadFile(this.state.file, formInputs);
-      this.handleModal()
+      var testFinal={
+        senderFullName:senderFullName,
+        senderCity:senderCity,
+        senderEmail:senderEmail,
+        subjectFirstName:subjectFirstName,
+        subjectOccupation: subjectOccupation,
+        subjectEthnicity:subjectEthnicity,
+        subjectCity:subjectCity
+        }
+      await this.uploadFile(this.state.file, testFinal);
     }
-    
-    
-    
   }
 
+  // fetches php and saves to fb on success
   async uploadFile(file, formInputs) {
     var formData = new FormData();
     formData.append('subjectPhoto', file);
@@ -120,12 +138,20 @@ class IAmDifferentForm extends Component {
       method: 'POST',
       body: formData
     })
-    .then(data => {
-      console.log(data);
-    })
-    .catch(err => {
-      console.log(err);
-    })
+    .then(data => data.text())
+      .then(data=> {
+        if(data=="valid") {
+          this.handleModal();
+          let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
+          fire.database().ref('formsTest').push(formInputs);
+        } else if(data=="invalid") {
+          this.invalidFile();
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      })   
+    
   }
     render() {
     return (
@@ -227,26 +253,35 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           </Form>
      
           <Modal show={this.state.show2}>
-            <Modal.Header> Modal Head Part</Modal.Header>
+            <Modal.Header>Incomplete Form</Modal.Header>
             <Modal.Body>
-              Please submit all the required folder
+              Please fill out all fields
             </Modal.Body>
             <Modal.Footer>
               <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
               
             </Modal.Footer>
           </Modal>
-               
-          <Modal show={this.state.show}>
-            <Modal.Header> Modal Head Part</Modal.Header>
-            <Modal.Body>
-              Your submission done2
-            </Modal.Body>
-            <Modal.Footer>
-              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
-              
-            </Modal.Footer>
-          </Modal>
+
+      <Modal show={this.state.show}>
+        <Modal.Header>Success</Modal.Header>
+        <Modal.Body>
+          Thanks for submitting!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
             
     </Container>
     <Footer/>

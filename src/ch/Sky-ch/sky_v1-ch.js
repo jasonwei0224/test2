@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import ImageSlider from '../../imageSlider';
 import ProgramInfo from "../../programInfo";
 import {Link} from 'react-router-dom'
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
 import './sky_v1-ch.css'
@@ -14,46 +14,88 @@ class SkyV1_ch extends Component {
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false,
+      show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
-  saveToFb() {
-    var firstName=document.getElementById('firstName').value;
-    var userEmail=document.getElementById('userEmail').value;
-    var description=document.getElementById('description').value;
-    var location=document.getElementById('location').value;
-    var date=document.getElementById('date').value;
+  handleModal() {
+    this.setState({show:!this.state.show})
+  } 
   
-    var testFinal={
-      firstName:firstName,
-      userEmail:userEmail,
-      description:description,
-      location:location,
-      date:date
-    }
-    let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
-    fire.database().ref('skyTest').push(testFinal);
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
+  }
 
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
+  }
 
-    return testFinal;
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var firstNameLength=document.getElementById('firstName').value.length;
+    var lastNameLength=document.getElementById('lastName').value.length;
+    var userEmailLength=document.getElementById('userEmail').value.length;
+    var descriptionLength=document.getElementById('description').value.length;
+    var locationLength=document.getElementById('location').value.length;
+    var dateLength=document.getElementById('date').value.length;
+    var subjectFile=document.getElementById('subjectFile').value
+
+    var result=firstNameLength*lastNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
+
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
   }
 
   onChange(e){
     this.setState({file: e.target.files[0]})
   }
 
-  async submitForm(e){    
-    var formInputs = this.saveToFb();
-
+  async submitForm(e){ 
     e.preventDefault();
-
-    await this.uploadFile(this.state.file, formInputs);
-
+    if(this.checkValue()) {
+      this.handleModal2();
+    } else {
+      var firstName=document.getElementById('firstName').value;
+      var userEmail=document.getElementById('userEmail').value;
+      var description=document.getElementById('description').value;
+      var location=document.getElementById('location').value;
+      var date=document.getElementById('date').value;
+  
+      var testFinal={
+        firstName:firstName,
+        userEmail:userEmail,
+        description:description,
+        location:location,
+        date:date
+      }
+      await this.uploadFile(this.state.file, testFinal);
+    }
   }
 
+  // fetches php and saves to fb on success
   async uploadFile(file, formInputs) {
     var formData = new FormData();
     formData.append('skyPhoto', file);
@@ -63,16 +105,24 @@ class SkyV1_ch extends Component {
     formData.append('location', formInputs['location']);
     formData.append('date', formInputs['date']);
     
-    const response = await fetch('sky_form_photos.php', {
+    const response = await fetch('sky_form_photos-ch.php', {
       method: 'POST',
       body: formData
     })
-    .then(data => {
-      console.log(data);
+    .then(data => data.text())
+    .then(data=> {
+      if(data=="valid") {
+        this.handleModal();
+        let messageRef=fire.database().ref('skyTest').orderByKey().limitToLast(100);
+        fire.database().ref('skyTest').push(formInputs);
+      } else if(data=="invalid") {
+        this.invalidFile();
+      }
     })
     .catch(err => {
       console.log(err);
-    })
+    })   
+    
   }
   render() {
     return (
@@ -203,6 +253,36 @@ class SkyV1_ch extends Component {
           <Button  variant="primary" bsPrefix="share_button" >SHARE WITH FRIENDS</Button>
         </Form.Row>
       </Form>
+      <Modal show={this.state.show2}>
+            <Modal.Header>Incomplete Form</Modal.Header>
+            <Modal.Body>
+              Please fill out all fields
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
+
+      <Modal show={this.state.show}>
+        <Modal.Header>Success</Modal.Header>
+        <Modal.Body>
+          Thanks for submitting!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
       </Container>
       <Footer/>
     </div>

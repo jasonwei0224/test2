@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProgramInfo from "../../programInfo"
-import {Container, Row, Col, Form, Button, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 // import './people_and_mask.css'
 import './IAmDifferentForm-ch.css'
@@ -13,34 +13,59 @@ class IAmDifferentForm extends Component {
   constructor(props) {
     super(props);
     this.state={
-      file: null
+      file: null,
+      show:false,
+      show2:false,
+      showInvalidFile:false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleModal=this.handleModal.bind(this);
+    this.handleModal2=this.handleModal2.bind(this);
+    this.cancelCourse=this.cancelCourse.bind(this);
+    this.invalidFile=this.invalidFile.bind(this);
   }
 
-  saveToFb() {
-    console.log("Inside submitForm()");
-    var senderFullName=document.getElementById('senderFullName').value;
-    var senderCity=document.getElementById('senderCity').value;
-    var senderEmail=document.getElementById('senderEmail').value;
-    var subjectFirstName=document.getElementById('subjectFirstName').value;
-    var subjectOccupation=document.getElementById('subjectOccupation').value;
-    var subjectEthnicity=document.getElementById('subjectEthnicity').value;
-    var subjectCity=document.getElementById('subjectCity').value;
 
-    var testFinal={
-      senderFullName:senderFullName,
-      senderCity:senderCity,
-      senderEmail:senderEmail,
-      subjectFirstName:subjectFirstName,
-      subjectOccupation: subjectOccupation,
-      subjectEthnicity:subjectEthnicity,
-      subjectCity:subjectCity
-    }
-    let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-    fire.database().ref('formsTest').push(testFinal);
-    return testFinal;
+  handleModal() {
+    console.log("handleModal");
+    this.setState({show:!this.state.show})
+  }
+  handleModal2() {
+    console.log("handleModal2");
+    this.setState({show2:!this.state.show2})
+  }
+
+  invalidFile() {
+    this.setState({showInvalidFile:!this.state.showInvalidFile});
+  }
+  cancelCourse() {
+    document.getElementById('firstName').value="";
+    document.getElementById('lastName').value="";
+    document.getElementById('userEmail').value="";
+    document.getElementById('description').value="";
+    document.getElementById('location').value="";
+    document.getElementById('date').value="";
+    document.getElementById('fileInput').value="";
+  }
+
+  checkValue() {
+    var senderFullNameLength=document.getElementById('senderFullName').value.length;
+    var senderCityLength=document.getElementById('senderCity').value.length;
+    var senderEmailLength=document.getElementById('senderEmail').value.length;
+    var subjectFirstNameLength=document.getElementById('subjectFirstName').value.length;
+    var subjectOccupationLength=document.getElementById('subjectOccupation').value.length;
+    var subjectEthnicityLength=document.getElementById('subjectEthnicity').value.length;
+    var subjectCityLength=document.getElementById('subjectCity').value.length;
+    var subjectFile=document.getElementById('subjectFile').value;
+    var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
+    console.log(result);
+    if(result==0) {
+        return true;
+      }else {
+        return false;
+      }
+
   }
 
   onChange(e){
@@ -48,12 +73,29 @@ class IAmDifferentForm extends Component {
   }
 
   async submitForm(e){    
-    var formInputs = this.saveToFb();
-
     e.preventDefault();
-
-    await this.uploadFile(this.state.file, formInputs);
-
+    if(this.checkValue()) {
+      this.handleModal2()
+    }else {
+      var senderFullName=document.getElementById('senderFullName').value;
+      var senderCity=document.getElementById('senderCity').value;
+      var senderEmail=document.getElementById('senderEmail').value;
+      var subjectFirstName=document.getElementById('subjectFirstName').value;
+      var subjectOccupation=document.getElementById('subjectOccupation').value;
+      var subjectEthnicity=document.getElementById('subjectEthnicity').value;
+      var subjectCity=document.getElementById('subjectCity').value;
+  
+      var testFinal={
+        senderFullName:senderFullName,
+        senderCity:senderCity,
+        senderEmail:senderEmail,
+        subjectFirstName:subjectFirstName,
+        subjectOccupation: subjectOccupation,
+        subjectEthnicity:subjectEthnicity,
+        subjectCity:subjectCity
+      }
+      await this.uploadFile(this.state.file, testFinal);
+    }
   }
 
   async uploadFile(file, formInputs) {
@@ -71,12 +113,20 @@ class IAmDifferentForm extends Component {
       method: 'POST',
       body: formData
     })
-    .then(data => {
-      console.log(data);
+    .then(data => data.text())
+    .then(data=> {
+      if(data==="valid") {
+        this.handleModal();
+        let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
+        fire.database().ref('formsTest').push(formInputs);
+      } else if(data==="invalid") {
+        this.invalidFile();
+      }
     })
     .catch(err => {
       console.log(err);
-    })
+    })   
+
   }
     render() {
     return (
@@ -150,7 +200,7 @@ class IAmDifferentForm extends Component {
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} required bsCustomPrefix='form-file-input' name="subjectPhoto"/>
+            <Form.File.Input onChange={this.onChange} id="subjectFile" required bsCustomPrefix='form-file-input' name="subjectPhoto"/>
             <p id="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
             </Form.Row>
@@ -173,6 +223,37 @@ class IAmDifferentForm extends Component {
               <Button bsPrefix="share_button" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
             </Form.Row>
           </Form>
+
+          <Modal show={this.state.show2}>
+            <Modal.Header>Incomplete Form</Modal.Header>
+            <Modal.Body>
+              Please fill out all fields
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
+              
+            </Modal.Footer>
+          </Modal>
+
+      <Modal show={this.state.show}>
+        <Modal.Header>Success</Modal.Header>
+        <Modal.Body>
+          Thanks for submitting!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={this.state.showInvalidFile}>
+        <Modal.Header>Invalid file type/size</Modal.Header>
+        <Modal.Body>
+          File must be .jpg or .png and under 1MB
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
     <Footer/>
   </div>
