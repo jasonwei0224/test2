@@ -32,7 +32,6 @@ class SkyV1 extends Component {
   }
 
   handleModal2() {
-    console.log("handleModal2");
     this.setState({show2:!this.state.show2})
   }
 

@@ -22,6 +22,7 @@ input[type="checkbox"]{
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 767px) {
   /* .contentsInParagraph {
     font-size: 45px;
@@ -48,6 +49,7 @@ input[type="checkbox"]{
     margin:auto !important;
     color: white !important;
   }
+
 
 }
 
@@ -94,6 +96,7 @@ input[type="checkbox"]{
     background-color:#BE0027;
     margin:auto;
     margin-bottom:10%;
+    font-weight: bold;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-size:40px !important;
@@ -141,6 +144,7 @@ input[type="checkbox"]{
   .formConsent {
     font-size:25px;
   }
+
   .submitButton{
     ppadding-left: 30% !important;
     padding-right:30% !important;
@@ -222,18 +226,23 @@ input[type="checkbox"]{
   .submitButton{
     padding-left: 5% !important;
     padding-right:5% !important;
-    background-color:#707070 !important;
+    background-color:#707070;
     border-radius:50px !important;
     margin:auto !important;
     color:white !important;
     font-size: 15px !important;
     border-color: none;
+    height:50px;
+  }
+  .btn-2 {
+    background-color: #BE0027;
   }
   input[type="checkbox"]{
     width: 25px;
     height: 25px;
     cursor: pointer;
   }
+
 }
 
 
