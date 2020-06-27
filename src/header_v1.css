@@ -2,31 +2,46 @@
   color: #efefef !important;
 } */
 /* .dropdown-item a:active, a:link a:hover, a:visited, a:active, a:focus{
-  background-color:#fff transparent !important; }
-   */
-    
+
+  margin-right: 0px;
+} */
+.dropdownbg{
+  background-color: black;
+}
+
+a.dropdown-toggle{
+  margin-right: 0px;
+  font-weight: 540;
+}
   nav.navbar{
     padding-top: 22px;
     padding-bottom: 13px;
     margin-right: 0px;
     margin-left: 150px;
+    margin-top: 5px;
+  }
+  .dropdown-item{
+    background-color: #BE0027 !important;
+  }
+  .dropdown-background{
+    background-color: black !important;
   }
   /* .dropdown-item{
     font-family: "sofia-pro", Sans-serif !important;
-    
+
   } */
 #header {
   font-weight: bold;
-  color:black;
+  color:#000000;
   width:100%;
   font-size:14px;
-  font-family: sofia-pro, Sans-serif;
+  font-family: "sofia-pro", Sans-serif;
   background-color: #e2e2e2;
 }
 .navitem{
-  color:black;
-  font-weight: normal;
-  margin-top: -1.5px;
+  color:#000000;
+  font-weight: 540;
+  margin-top: -2px;
   font-size: 14px;
   font-family: "sofia-pro", Sans-serif;
   padding-left:12px;
@@ -58,7 +73,7 @@
   font-size: 14px;
   font-family: "sofia-pro", Sans-serif;
   text-align: center;
-  
+
 }
 .navitemCh-dropdown{
   content:none;
@@ -73,9 +88,9 @@
   font-size: 14px;
   font-family: "sofia-pro", Sans-serif;
   text-align: center;
-  
+
 }
-/* #basic-nav-dropdown{ 
+/* #basic-nav-dropdown{
   margin-top: 0px;
   margin-right:0px;
   margin-bottom:5px;
@@ -86,16 +101,16 @@
   font-size: 14px;
   font-family: "sofia-pro";
   color: white !important;
-  text-align: left !important; 
+  text-align: left !important;
   background-color: #BE0027;
 }
 
-/* 
+/*
 .dropdown-item:hover {
   color: #BE0027 !important;
   background-color: #BE0027;
 } */
-/* 
+/*
 .dropdown-toggle::before
 .dropdown-toggle:after { content: none }
   .navitem:hover{
@@ -109,28 +124,29 @@
 
   .dropdown-menu {
     background-color: #007bff !important;
+
   }
 
-  /* .dropdown-item::selection{
+   /* .dropdown-item::selection{
     color: #BE0027 !important;
     background-color: #BE0027;
   } */
 
   .dropdown-item:active{
     background-color: #007bff !important;
-    
+
   }
   .dropdown-item:hover{
-    background: red !important;
-
+    background: white !important;
+    color:black!important;
   }
 
-  
+
   a.langNavLink{
     padding-top: 0px !important;
     margin-left: 10px;
 
-}
+    }
 img.langIcon{
   width:10%;
   height:10%;
@@ -149,7 +165,7 @@ img.langIcon{
   padding-bottom: 0 !important;
 } */
 
-  
+
 @media only screen and (max-width: 1200px) {
   /* .subtitle {
     font-size: 40px;
@@ -165,7 +181,7 @@ img.langIcon{
     color:black;
     width:100%;
     font-size:14px;
-    font-family: sofia-pro, Sans-serif;
+    font-family: "sofia-pro", Sans-serif;
   }
   /* .navitem-dropdown{
     margin-right: 0px !important;
@@ -174,12 +190,13 @@ img.langIcon{
 
   .borderClass {
     margin-right: 0px !important;
+
   }
 
-  
+
 }
 @media only screen and (max-width: 991px) {
-  
+
   .m-auto{
     text-align: center;
     border-bottom: 1px;
@@ -190,7 +207,7 @@ img.langIcon{
     color:black;
     width:100%;
     font-size:14px;
-    font-family: sofia-pro, Sans-serif;
+    font-family: "sofia-pro", Sans-serif;
     background-color: white;
   }
   .container-fluid{
@@ -199,7 +216,7 @@ img.langIcon{
     padding: 0px !important;
   }
   #navLinkContainer{
-    background-color: #BE0027;
+    background-color: #BE0027!important;
     align-items: center !important;
     width:100%;
     text-align: center;
@@ -214,7 +231,7 @@ img.langIcon{
   }
   nav.navbar{
     margin-left: 0px;
-  }  
+  }
   .navitem{
     font-size: 16px;
     color:white;
@@ -238,7 +255,7 @@ img.langIcon{
     line-height: 20px;
     border-bottom-style: solid;
 
-  } 
+  }
    .navitem-dropdown{
     font-size: 16px !important;
     color:white !important;
@@ -280,7 +297,7 @@ img.langIcon{
 
 
 
-/* 
+/*
 
 
 
@@ -325,7 +342,7 @@ img.langIcon{
     border-bottom: 1px;
     border-color:white;
   }
- 
+
   .navitem:hover{
     background: white;
 

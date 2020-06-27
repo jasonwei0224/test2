@@ -314,8 +314,9 @@ class SkyV1 extends Component {
         </Modal>
 
         </Container>
-      <Footer/>
+      <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
     </div>
+
     );
   }
 

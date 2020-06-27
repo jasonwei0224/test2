@@ -84,16 +84,18 @@ export default class HeaderV1 extends React.Component {
         <Navbar expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav_bar_toggle_icon"/>
           <Navbar.Collapse>
-            <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}> 
+            <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}>
               {this.state.english?
               <>
                 <Nav.Link bsPrefix="navitem" href="/">HOME</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" renderMenuOnMount={true}>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">HISTORY</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">ARTIST VISION</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">MEDIA</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#sky">OUR TEAM</NavDropdown.Item>
+                    <div className="dropdownbg">
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">HISTORY</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">ARTIST VISION</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">MEDIA</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">OUR TEAM</NavDropdown.Item>
+                    </div>
                   </NavDropdown>
                 </div>
                 <Nav.Link bsPrefix="navitem" href="#">CONCERT</Nav.Link>

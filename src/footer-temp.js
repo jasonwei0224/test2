@@ -1,11 +1,11 @@
 import React from 'react';
 import './footer-temp.css';
 
-const FooterPage = () => {
+const FooterPage = (props) => {
     return (
         <div className="footer">
-            <p className="footer_content">
-                &copy; {new Date().getFullYear()} TAIWANESE CANADIAN ASSOCIATION OF TORONTO
+            <p className="footer_content">{props.content}
+
             </p>
         </div>
     )

@@ -262,7 +262,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
       </Modal>
 
     </Container>
-    <Footer/>
+    <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
   </div>
     );
   }
