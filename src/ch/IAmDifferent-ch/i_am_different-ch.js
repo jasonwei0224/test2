@@ -27,7 +27,7 @@ function IAmDifferent() {
   const goToForm=()=> {
       window.location='#/IAmDifferentForm-ch';
   };
-  
+
   let Body = styled.div`
     text-align: center;
   `;
@@ -39,7 +39,7 @@ function IAmDifferent() {
     align-items: center;
     background-color: yellow;
   `;
-  
+
 
   return (
     <div>
@@ -53,14 +53,14 @@ function IAmDifferent() {
         <ProgramInfo_ch
           subtitle="我跟你的相同，就是我們都不同 "
           title="共同面對的我們"
-          artistName="影像創作 X 線上互動 "
+          artistName="台灣文化節"
           url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
           color="#D9C739"
         ></ProgramInfo_ch>
         <Row>
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="introTitle">About This Work:</p>
+            <p className="introTitle">影像創作 X 線上互動</p>
           </Col>
         </Row>
 
@@ -103,10 +103,10 @@ function IAmDifferent() {
         </Row>
         <Row>
           {/*  href="#IAmDifferentForm-ch" onClick={aasdf}<Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
-               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton" style={{width:"100%"}} >
-                      上傳照片        
+               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton-ch">
+                      上傳照片
 
               {/* <Link to="/IAmDifferentForm" className="form_link">
                 UPLOAD FRONT-LINE HERO PHOTO
@@ -114,13 +114,13 @@ function IAmDifferent() {
             </Button>
           </Col>
         </Row>
-        
+
         <Row>
           {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:3}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
               variant="primary" type="submit"
-              bsPrefix="mobileSharebutton" style={{width:"100%"}}>
+              bsPrefix="mobileSharebutton-ch">
               分享給朋友
 
               {/* <Link to="/IAmDifferentForm" className="form_link">
@@ -151,7 +151,7 @@ function IAmDifferent() {
       {/*}<GameDiv>
         <CardGame />
       </GameDiv>*/}
-      <Footer></Footer>
+      <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
     </div>
   );
 }

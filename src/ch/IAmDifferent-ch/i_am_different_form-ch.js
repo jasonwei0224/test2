@@ -138,9 +138,9 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="影像創作 X 線上互動" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
+          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
           <Row className="mainContents" style={{marginTop:"100px"}}>
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
+            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}className="mainContent">
               <p className="contentsInParagraph"> 本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。
               </p> <br />
             </Col>
@@ -148,33 +148,33 @@ class IAmDifferentForm extends Component {
 
           <Row>
            <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} ><p className="form-section-title">照片資訊</p></Col>
+             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} className="formSectionTitle">照片資訊</Col>
           </Row>
 
           <Form encType="multipart/form-data">
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderFullName" placeholder="上傳者 英文姓名" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderFullName" placeholder="上傳者 英文姓名" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="senderCity" placeholder="城市/ 國家" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text"  id="senderCity" placeholder="城市/ 國家" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="email" id="senderEmail" placeholder="電子郵件" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="email" id="senderEmail" placeholder="電子郵件" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text' type="text"  id="subjectFirstName" placeholder="主角 英文名子" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield'className=  'inputfield' type="text"  id="subjectFirstName" placeholder="主角 英文名子" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                  <Form.Control bsCustomPrefix = 'form_field_text' id="subjectOccupation" as="select" >
+                  <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' id="subjectOccupation" as="select" >
                     <option>醫生</option>
                     <option>消防員</option>
                     <option>醫療技術人員</option>
@@ -190,17 +190,17 @@ class IAmDifferentForm extends Component {
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectEthnicity" placeholder="族裔 (英文)" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectEthnicity" placeholder="族裔 (英文)" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'form_field_text'type="text" id="subjectCity" placeholder="城市/國家" required size="lg" />
+                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectCity" placeholder="城市/國家" required size="lg" />
               </Col>
             </Form.Row>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} id="subjectFile" required bsCustomPrefix='form-file-input' name="subjectPhoto"/>
+            <Form.File.Input onChange={this.onChange} id="subjectFile" required bsPrefix='form-file-input' name="subjectPhoto"/>
             <p id="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
             </Form.Row>
@@ -217,10 +217,10 @@ class IAmDifferentForm extends Component {
             </Form.Row>
 
             <Form.Row style={{marginBottom:"50px"}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submit_button">送出</Button>
+                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submitButton-ch">送出</Button>
             </Form.Row>
             <Form.Row style={{marginBottom:"50px"}}>
-              <Button bsPrefix="share_button" variant="primary" type="submit">分享給朋友</Button>
+              <Button bsPrefix="mobileSharebutton-ch" variant="primary" type="submit">分享給朋友</Button>
             </Form.Row>
           </Form>
 
@@ -255,7 +255,8 @@ class IAmDifferentForm extends Component {
         </Modal.Footer>
       </Modal>
     </Container>
-    <Footer/>
+    <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"
+/>
   </div>
     );
   }

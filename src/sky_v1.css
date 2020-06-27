@@ -89,25 +89,16 @@ input[type="checkbox"]{
   .formConsent {
     font-size:30px;
     padding-bottom: 5%;
-
   }
-  .btn-1{
-    font-size:40px !important;
-    text-align: center !important;
-    font-weight: bold !important;
-    border-radius: 100px !important;
-    margin: auto !important;
-    margin-bottom:10% !important;
-    padding-top: 0.5% !important;
-    padding-bottom: 0.5% !important;
-  }
-  .btn-2{
+  .mobileSharebutton{
     background-color:#BE0027;
     margin:auto;
     margin-bottom:10%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-size:40px !important;
+    padding-left: 16.5% !important;
+    padding-right:16.5% !important;
     text-align: center;
     border-radius: 50px;
   }
@@ -115,9 +106,15 @@ input[type="checkbox"]{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
-    border-radius:20px ;
     margin:auto !important;
     color: white !important;
+    font-size:40px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    border-radius: 100px !important;
+    margin-bottom:30px !important;
+    padding-top: 0.5% !important;
+    padding-bottom: 0.5% !important;
   }
   .btnCancelInModal {
     padding-left: 30% !important;
@@ -145,12 +142,30 @@ input[type="checkbox"]{
     font-size:25px;
   }
   .submitButton{
-    padding-left: 30% !important;
+    ppadding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
-    border-radius:20px !important;
     margin:auto !important;
     color: white !important;
+    font-size:40px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    border-radius: 100px !important;
+    margin-bottom:30px !important;
+    padding-top: 0.5% !important;
+    padding-bottom: 0.5% !important;
+  }
+  .mobileSharebutton{
+    background-color:#BE0027;
+    margin:auto;
+    margin-bottom:10%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size:40px !important;
+    padding-left: 17% !important;
+    padding-right:17% !important;
+    text-align: center;
+    border-radius: 50px;
   }
   input[type="checkbox"]{
     width: 25px;

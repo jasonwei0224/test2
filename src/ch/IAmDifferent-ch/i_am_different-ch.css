@@ -1,26 +1,15 @@
-.uploadButton {
+.uploadButton-ch {
   text-align: center;
   border-radius: 20px;
   text-align: left;
   background-color: #D9C739;
   color: #0C3866;
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 25%;
+  padding-right: 25%;
   margin: auto;
   font-weight: bold;
 }
-
-.image_col{
-  padding: 0px;
-}
-
-.main_image{
-  margin: 0px;
-  width:100%;
-  height: auto;
-}
-
-.mobileSharebutton{
+.mobileSharebutton-ch{
   padding-left:  16%;
   padding-right: 16%;
  background-color:#BE0027;
@@ -29,31 +18,51 @@
  margin: auto;
  font-weight: bold;
 }
+/*
+.image_col{
+  padding: 0px;
+} */
+/*
+.main_image{
+  margin: 0px;
+  width:100%;
+  height: auto;
+} */
 
-.mainContent > p { /*should change*/
+/* .mobileSharebutton-ch{
+  padding-left:  16%;
+  padding-right: 16%;
+ background-color:#BE0027;
+ color: white;
+ border-radius:20px ;
+ margin: auto;
+ font-weight: bold;
+} */
+
+/* .mainContent > p {
   font-family: "adonis-web";
-}
+} */
 
-.introTitle {
+/* .introTitle {
   margin-top: 100px;
   font-family: "sofia-pro", Sans-serif;
   font-weight: 600;
   color: #BE0027;
   font-size: 20px;
-}
+} */
 
-.introBody {
+/* .introBody {
   font-family: "sofia-pro", Sans-serif;
   font-weight: normal;
   color: #707070;
   font-size: 20px;
-}
+} */
 
 
 /* below are mediaquiries */
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  .uploadButton {
+  .uploadButton-ch {
     padding-left:  18%;
     padding-right: 18%;
     border-radius:20px ;
@@ -61,13 +70,27 @@
     margin: auto;
     text-align: center;
 }
-  .mobileSharebutton{
+  .mobileSharebutton-ch{
    font-size:30px !important;
-   
+
     padding-left:  18%;
     padding-right: 18%;
   }
-   .introTitle {
+  .submitButton-ch{
+    padding-left: 30% !important;
+    padding-right:30% !important;
+    background-color:#707070 !important;
+    margin:auto !important;
+    color: white !important;
+    font-size:40px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    border-radius: 100px !important;
+    margin-bottom:10% !important;
+    padding-top: 0.5% !important;
+    padding-bottom: 0.5% !important;
+  }
+   /* .introTitle {
     font-size: 45px;
   }
   .introBody {
@@ -75,29 +98,44 @@
   }
    .mainContent > p {
     font-size: 42px;
-  }
+  } */
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .uploadButton {
-    padding-left:  15%;
-    padding-right: 15%;
+  .uploadButton-ch {
+    padding-left:  32%;
+    padding-right: 32%;
     padding-top: 2%;
     padding-bottom: 2%;
    font-size:30px;
      margin: auto;
-     text-align: center;
+
 }
-  .mobileSharebutton{
-    padding-left:  15%;
-    padding-right: 15%;
+  .mobileSharebutton-ch{
+    padding-left:  30%;
+    padding-right: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
    font-size:30px;
      margin: auto;
+      text-align: center;
   }
-  .introTitle {
+  .submitButton-ch{
+    padding-left: 30% !important;
+    padding-right:30% !important;
+    background-color:#707070 !important;
+    margin:auto !important;
+    color: white !important;
+    font-size:40px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    border-radius: 100px !important;
+    margin-bottom:10% !important;
+    padding-top: 0.5% !important;
+    padding-bottom: 0.5% !important;
+  }
+  /* .introTitle {
     font-size: 45px;
   }
    .introBody {
@@ -105,12 +143,12 @@
   }
    .mainContent > p {
     font-size: 42px;
-  }
+  } */
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-  .introTitle {
+  /* .introTitle {
    font-size: 45px;
   }
   .introBody {
@@ -118,10 +156,10 @@
   }
   .mainContent > p {
    font-size: 42px;
- }
-  .uploadButton {
-    padding-left:  10%;
-    padding-right: 10%;
+ } */
+  .uploadButton-ch {
+    padding-left:  40%;
+    padding-right: 40%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -130,19 +168,22 @@
    font-size:30px;
    margin: auto;
   }
-  .mobileSharebutton{
-    padding-left:  24%;
-    padding-right: 24%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  .mobileSharebutton-ch{
+    padding-left:  38%;
+    padding-right: 38%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+
+   border-radius:20px ;
    font-size:30px;
-     margin: auto;
+   margin: auto;
   }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-   .introTitle {
+   /* .introTitle {
     font-size: 20px;
   }
    .introBody {
@@ -150,10 +191,10 @@
   }
    .mainContent > p {
     font-size: 23px;
-  }
-  .uploadButton {
-    padding-left:  10%;
-    padding-right: 10%;
+  } */
+  .uploadButton-ch {
+    padding-left:  25%;
+    padding-right: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -162,8 +203,18 @@
    margin: auto;
     margin-bottom:10px;
 }
-  .mobileSharebutton{
+  .mobileSharebutton-ch{
     display:none;
+  }
+  .submitButton-ch{
+    padding-left: 5% !important;
+    padding-right:5% !important;
+    background-color:#707070 !important;
+    border-radius:50px !important;
+    margin:auto !important;
+    color:white !important;
+    font-size: 15px !important;
+    border-color: none;
   }
 }
 

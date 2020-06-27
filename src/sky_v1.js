@@ -274,11 +274,11 @@ class SkyV1 extends Component {
             </Col>
 
           </Form.Row>
-          <Form.Row style={{marginBottom:"50px"}}>
-              <Button onClick={this.submitForm} bsPrefix="submitButton" className="btn-1" variant="primary" type="submit">SUBMIT</Button>
+          <Form.Row >
+              <Button onClick={this.submitForm} bsPrefix="submitButton" className="submitButton" variant="primary" type="submit">SUBMIT</Button>
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
-            <Button  variant="primary" bsPrefix="mobileSharebutton" className="btn-2">SHARE WITH FRIENDS</Button>
+            <Button  variant="primary" bsPrefix="mobileSharebutton" className="mobileSharebutton">SHARE WITH FRIENDS</Button>
           </Form.Row>
         </Form>
 
