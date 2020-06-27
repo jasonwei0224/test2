@@ -130,7 +130,7 @@ class SkyV1 extends Component {
   render() {
     return (
       <div>
-        <ImageSlider className="mainImage"/>
+        <ImageSlider className="mainImage" style={{overflow:"hidden"}}/>
         <Container fluid>
 
         <Row>

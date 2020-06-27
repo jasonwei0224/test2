@@ -3,6 +3,7 @@
 .PI-contents {
     margin-top: 2%;
     font-family: 'adonis-web';
+    overflow: hidden;
 }
 
 .PI-subtitle {
@@ -39,11 +40,13 @@ a.PI-shareButton {
     height: fit-content;
     width: fit-content;
     font-family: "sofia-pro", Sans-serif;
+    overflow: hidden;
 
 }
 
 .PI-colButton {
     display: grid;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
