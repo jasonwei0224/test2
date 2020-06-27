@@ -1,0 +1,119 @@
+/*
+
+.PI-contents {
+    margin-top: 2%;
+    font-family: 'adonis-web';
+}
+
+.PI-subtitle {
+    color: #0C3866;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.PI-title {
+    color:#BE0027;
+    font-size: 50px;
+    margin-bottom: 45px;
+    font-weight:bold;
+    font-family: 'adonis-web';
+}
+
+.PI-last {
+    margin-bottom: 70px;
+}
+
+.PI-artist {
+    color: #0C3866;
+    font-size: 19pt;
+    padding: 0;
+}
+
+a.PI-shareButton {
+    border-color: #BE0027;
+    background-color: #BE0027;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    height: fit-content;
+    width: fit-content;
+    font-family: "sofia-pro", Sans-serif;
+
+}
+
+.PI-colButton {
+    display: grid;
+}
+
+@media screen and (max-width: 767px) {
+  a.PI-shareButton {
+      font-size: 10px;
+      padding: 5px 36px 5px 36px;
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .PI-subtitle {
+      font-size: 50px;
+  }
+
+  .PI-title {
+      font-size: 60px;
+  }
+
+  .PI-artist {
+      font-size: 32px;
+  }
+
+  a.PI-shareButton {
+      font-size: 10px;
+      padding: 5px 36px 5px 36px;
+      display: none;
+  }
+  @media only screen and (min-width: 992px) {
+
+      .PI-subtitle {
+          font-size: 50px;
+      }
+
+      .PI-title {
+          font-size: 60px;
+      }
+
+      .PI-artist {
+          font-size: 50px;
+      }
+
+      a.PI-shareButton {
+          font-size: 10px;
+          padding: 5px 32px 5px 32px;
+          display: None;
+      }
+  }
+
+@media screen and (min-width: 1200px) {
+  .PI-subtitle {
+      font-size: 40px;
+  }
+
+  .PI-title {
+      font-size: 50px;
+      margin-bottom: 10%;
+  }
+
+  .PI-artist {
+      font-size: 32px;
+      margin-bottom: 0px !important;
+  }
+
+  a.PI-shareButton {
+      font-size: 20px;
+      padding: 5px 32px 5px 32px;
+      margin-bottom: 0px !important;
+      display: block;
+    }
+  }
+} */

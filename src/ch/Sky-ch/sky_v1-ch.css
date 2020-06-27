@@ -1,67 +1,65 @@
-p {
+/* p {
   font-family: 'adonis-web';
-}
+} */
 
-.mainImage {
+/* .mainImage {
   padding: 0;
   overflow: hidden;
-}
+} */
 
-.mainSection {
+/* .mainSection {
   margin-top: 100px;
   margin-bottom:50px;
-}
-.formConsent{
+} */
+/* .formConsent{
   font-family: "sofia-pro", Sans-serif;
   color:#BE0027;
-}
+} */
 
-input[type="checkbox"]{
+/* input[type="checkbox"]{
   width: 30px;
   height: 30px;
   cursor: pointer;
-}
+} */
 
 
 @media screen and (max-width: 767px) {
   /* .contentsInParagraph {
     font-size: 45px;
   } */
-  .formSectionTitle {
+  /* .formSectionTitle {
     margin-top: 400px;
     font-size:40px;
     font-size: 40px!important;
     background-color: #D9C739;
     font-weight:bold;
-  }
-  #description , #firstName, #lastName, #userEmail, #description, #location,
+  } */
+  /* #description , #firstName, #lastName, #userEmail, #description, #location,
   #date {
     font-size: 40px !important;
-  }
-  .formConsent {
+  } */
+  /* .formConsent {
     font-size:25px;
-  }
-  .btnCancelInModal {
+  } */
+  /* .btnCancelInModal {
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
     border-radius:20px ;
     margin:auto !important;
     color: white !important;
-  }
-
-
+  } */
 }
 
 @media screen and (min-width: 768px) {
   /* .contentsInParagraph {
     font-size: 45px;
   } */
-  .form-file-input{
+  /* .form-file-input{
     font-size: 40px;
     color: #707070;
-  }
-  .second_title{
+  } */
+  /* .second_title{
     color:#BE0027;
     font-size: 40px;
     font-weight: bold;
@@ -92,8 +90,8 @@ input[type="checkbox"]{
     font-size:30px;
     padding-bottom: 5%;
 
-  }
-  .btn-1{
+  } */
+  /* .btn-1{
     font-size:40px !important;
     text-align: center !important;
     font-weight: bold !important;
@@ -121,22 +119,22 @@ input[type="checkbox"]{
     font-size:40px !important;
     text-align: center;
     border-radius: 50px;
-  }
-  .btnCancelInModal {
+  } */
+  /* .btnCancelInModal {
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
     border-radius:20px ;
     margin:auto !important;
     color: white !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 992px) {
   /* .contentsInParagraph {
     font-size: 35px;
   } */
-  .formSectionTitle {
+  /* .formSectionTitle {
     margin-top: 20px;
     font-size:40px;
   }
@@ -147,7 +145,7 @@ input[type="checkbox"]{
   .formConsent {
     font-size:25px;
   }
-  
+
   .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
@@ -160,15 +158,15 @@ input[type="checkbox"]{
     width: 25px;
     height: 25px;
     cursor: pointer;
-  }
+  } */
 }
 
 
-@media screen and (min-width: 1200px) {
+
   /* .contentsInParagraph {
     font-size: 23px !important;
   } */
-  .form-file-input{
+  /* .form-file-input{
     font-size: 25px;
   }
   .second_title{
@@ -226,12 +224,12 @@ input[type="checkbox"]{
     width: 25px;
     height: 25px;
     cursor: pointer;
-  }
+  } */
 
 }
- 
- 
- 
+
+
+
  /* p {
   font-family: 'adonis-web';
 }
@@ -266,8 +264,8 @@ input[type="checkbox"]{
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   .submit_button{
@@ -327,8 +325,8 @@ input[type="checkbox"]{
     margin-bottom:10%;
 }
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   #firstName{
@@ -364,8 +362,8 @@ input[type="checkbox"]{
 
 @media screen and (min-width: 992px) {
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   .contentsInParagraph {
@@ -387,8 +385,8 @@ input[type="checkbox"]{
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
   #firstName{
@@ -432,8 +430,8 @@ input[type="checkbox"]{
     margin-left: -8% !important;
   }
   input[type="checkbox"]{
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
   #description , #firstName, #lastName, #userEmail, #description, #location,

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
-import './sky_v1-ch.css'
+// import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 
 class SkyV1_ch extends Component {
@@ -194,7 +194,7 @@ class SkyV1_ch extends Component {
 
 
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", }}>照片資訊</Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%", fontWeight:"bold"}}>照片資訊</Col>
       </Row>
 
       <Form.Row style={{marginBottom:"30px"}}>
@@ -244,15 +244,15 @@ class SkyV1_ch extends Component {
           </Col>
 
         </Form.Row>
-        <Form.Row style={{marginBottom:"50px"}}>
-          <Col xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-              <Button onClick={this.submitForm} bsPrefix="submitButton" className="btn-1" variant="primary" type="submit">送出</Button>
-          </Col>
+        <Form.Row >
+
+              <Button onClick={this.submitForm} bsPrefix="submitButton-ch" className="submitButton-ch" variant="primary" type="submit">送出</Button>
+
         </Form.Row>
         <Form.Row style={{marginBottom:"50px"}}>
-          <Col xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button  variant="primary" bsPrefix="submitButton" className="btn-2" >分享給朋友</Button>
-          </Col>
+
+            <Button  variant="primary" bsPrefix="mobileSharebutton-ch" className="mobileSharebutton-ch" >分享給朋友</Button>
+
         </Form.Row>
       </Form>
       <Modal show={this.state.show2}>

@@ -117,7 +117,7 @@ function IAmDifferent() {
 
         <Row>
           {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:3}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
               variant="primary" type="submit"
               bsPrefix="mobileSharebutton-ch">

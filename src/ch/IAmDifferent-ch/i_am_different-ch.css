@@ -8,6 +8,7 @@
   padding-right: 25%;
   margin: auto;
   font-weight: bold;
+
 }
 .mobileSharebutton-ch{
   padding-left:  16%;
@@ -66,8 +67,9 @@
     padding-left:  18%;
     padding-right: 18%;
     border-radius:20px ;
-    font-size:40px;
+    font-size:30px !important;
     margin: auto;
+    font-weight: bold;
     text-align: center;
 }
   .mobileSharebutton-ch{
@@ -86,7 +88,7 @@
     text-align: center !important;
     font-weight: bold !important;
     border-radius: 100px !important;
-    margin-bottom:10% !important;
+    margin-bottom:50px !important;
     padding-top: 0.5% !important;
     padding-bottom: 0.5% !important;
   }
@@ -106,20 +108,22 @@
   .uploadButton-ch {
     padding-left:  32%;
     padding-right: 32%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-   font-size:30px;
-     margin: auto;
-
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+   font-size:40px;
+     margin: auto;border-radius:100px ;
 }
+
   .mobileSharebutton-ch{
-    padding-left:  30%;
-    padding-right: 30%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-left:  29%;
+    padding-right: 29%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 100px;
    font-size:30px;
      margin: auto;
       text-align: center;
+      font-size:40px;
   }
   .submitButton-ch{
     padding-left: 30% !important;
@@ -131,9 +135,9 @@
     text-align: center !important;
     font-weight: bold !important;
     border-radius: 100px !important;
-    margin-bottom:10% !important;
-    padding-top: 0.5% !important;
-    padding-bottom: 0.5% !important;
+    margin-bottom:50px !important;
+    padding-top: 1.5% !important;
+    padding-bottom: 1.5% !important;
   }
   /* .introTitle {
     font-size: 45px;
@@ -157,14 +161,28 @@
   .mainContent > p {
    font-size: 42px;
  } */
+
+ .submitButton-ch{
+   padding-left: 25% !important;
+   padding-right:25% !important;
+   background-color:#707070 !important;
+   margin:auto !important;
+   color: white !important;
+   font-size:40px !important;
+   text-align: center !important;
+   font-weight: bold !important;
+   border-radius: 100px !important;
+   margin-bottom:50px !important;
+   padding-top: 1.5% !important;
+   padding-bottom: 1.5% !important;
+ }
   .uploadButton-ch {
     padding-left:  40%;
     padding-right: 40%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
-
-   border-radius:20px ;
+   border-radius:100px ;
    font-size:30px;
    margin: auto;
   }
@@ -174,9 +192,8 @@
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
-
-   border-radius:20px ;
-   font-size:30px;
+   border-radius:100px ;
+   font-size:30px!important;
    margin: auto;
   }
 }
@@ -209,11 +226,13 @@
   .submitButton-ch{
     padding-left: 5% !important;
     padding-right:5% !important;
+    padding-top: 0.5%!important;
+    padding-bottom: 0.5% !important;
     background-color:#707070 !important;
     border-radius:50px !important;
     margin:auto !important;
     color:white !important;
-    font-size: 15px !important;
+    font-size: 20px !important;
     border-color: none;
   }
 }

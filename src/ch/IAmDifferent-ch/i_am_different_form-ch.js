@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import ProgramInfo_ch from "../programInfo-ch"
-import banner from '../../assets/placeholder.png';
+import different_img from "../../assets/Different.jpg";
 // import './people_and_mask.css'
+import '../../sky_v1.css';
 import './IAmDifferentForm-ch.css'
 import Footer from '../../footer-temp';
 import fire from '../../firebase/file';
@@ -134,7 +135,7 @@ class IAmDifferentForm extends Component {
         <Container fluid>
           <Row>
             <Col lg={{span:12, offset:0}} xs={{span:12, offset:0}}>
-              <img src={banner} style={{width:"100%", height: "auto"}}/>
+              <img src={different_img} style={{width:"100%", height: "auto"}}/>
             </Col>
           </Row>
 
@@ -216,7 +217,7 @@ class IAmDifferentForm extends Component {
               </Col>
             </Form.Row>
 
-            <Form.Row style={{marginBottom:"50px"}}>
+            <Form.Row style={{marginTop:"50px"}}>
                 <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submitButton-ch">送出</Button>
             </Form.Row>
             <Form.Row style={{marginBottom:"50px"}}>
@@ -255,8 +256,7 @@ class IAmDifferentForm extends Component {
         </Modal.Footer>
       </Modal>
     </Container>
-    <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"
-/>
+    <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"/>
   </div>
     );
   }
