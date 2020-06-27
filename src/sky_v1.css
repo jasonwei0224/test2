@@ -7,19 +7,25 @@ p {
   overflow: hidden;
 }
 
-.mainContent {
+.mainSection {
   margin-top: 100px;
   margin-bottom:50px;
 }
-.formLabel .formConsent{
+.formConsent{
   font-family: "sofia-pro", Sans-serif;
-  color:"#BE0027";
+  color:#BE0027;
+}
+
+input[type="checkbox"]{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 45px;
-  }
+  } */
   .formSectionTitle {
     margin-top: 400px;
     font-size:40px;
@@ -42,12 +48,16 @@ p {
     margin:auto !important;
     color: white !important;
   }
- 
+
 }
 
 @media screen and (min-width: 768px) {
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 45px;
+  } */
+  .form-file-input{
+    font-size: 40px;
+    color: #707070;
   }
   .second_title{
     color:#BE0027;
@@ -101,7 +111,7 @@ p {
     text-align: center;
     border-radius: 50px;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
@@ -120,9 +130,9 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 35px;
-  }
+  } */
   .formSectionTitle {
     margin-top: 20px;
     font-size:40px;
@@ -134,7 +144,7 @@ p {
   .formConsent {
     font-size:25px;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
@@ -142,14 +152,21 @@ p {
     margin:auto !important;
     color: white !important;
   }
+  input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
 }
 
 
 @media screen and (min-width: 1200px) {
-  .contentsInParagraph {
+  /* .contentsInParagraph {
     font-size: 23px !important;
+  } */
+  .form-file-input{
+    font-size: 25px;
   }
-
   .second_title{
     color:#BE0027;
     font-size: 20px !important;
@@ -187,7 +204,7 @@ p {
     font-size:20px !important;
     margin-left: -8% !important;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 5% !important;
     padding-right:5% !important;
     background-color:#707070 !important;
@@ -197,7 +214,11 @@ p {
     font-size: 15px !important;
     border-color: none;
   }
-
+  input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
 }
 
 
@@ -236,11 +257,11 @@ p {
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
@@ -313,14 +334,14 @@ p {
   }
 
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   #firstName{
     font-size: 40px;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
@@ -364,8 +385,8 @@ p {
 
 @media screen and (min-width: 992px) {
   input[type="checkbox"]{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   .contentsInParagraph {
@@ -389,14 +410,14 @@ p {
     font-size:25px;
   }
   input[type="checkbox"]{
-    width: 25px; 
+    width: 25px;
     height: 25px; /
     cursor: pointer;
   }
   #firstName{
     font-size: 30px !important;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 30% !important;
     padding-right:30% !important;
     background-color:#707070 !important;
@@ -455,8 +476,8 @@ p {
     margin-left: -8% !important;
   }
   input[type="checkbox"]{
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
   #description, #firstName, #lastName, #userEmail, #location,
@@ -469,7 +490,7 @@ p {
   .hint{
     font-size: 20px !important;
   }
-  .submit_button{
+  .submitButton{
     padding-left: 5% !important;
     padding-right:5% !important;
     background-color:#707070 !important;

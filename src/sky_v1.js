@@ -142,15 +142,15 @@ class SkyV1 extends Component {
         <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
         </ProgramInfo>
 
-        <Row className="mainContent">
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
-              <p className="contentsInParagraph">
+        <Row className="mainSection">
+            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}} className="mainContent">
+              <p >
                 What is something that you can see when you look up, no matter
                 wherever you are in the world? The sky is one constant no matter
                 where you are and what time of day, it is there above the horizon.
                 <br />
-              </p>      
-              <p className="contentsInParagraph">
+              </p>
+              <p >
                 Working with photographers in Canada and Taiwan, Vancouver
                 TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ
                 Square (formally known as Vancouver Art Gallery North Plaza)
@@ -160,21 +160,21 @@ class SkyV1 extends Component {
                 together. Sky is built on the concept of removing the influence
                   of colour; by looking past our differences, we can see that we
                   are one and the same.<br></br>
-              </p>    
-              <p className="contentsInParagraph">
+              </p>
+              <p >
                 In all that the world has gone through, the unchanging sky gives
                 people a sense of hope and anticipation for the feeling of a
                 normal day to come again. Furthermore, Indigenous teachings and
                 stories about the sky can guide us in these times.
                 By giving each image a background story, we can implore others to
                 look to the sky and gain strength.<br></br>
-              </p>    
-              <p className="contentsInParagraph">
+              </p>
+              <p >
                 Your experience and view of the sky will be different depending on
                 the time of day. These lanterns will create a whole new dynamic
                 look and feel through the use of LED lights in the evenings.<br></br>
-              </p>  
-              <p className="contentsInParagraph">
+              </p>
+              <p >
                 As the province is working to reopen the economy in a safe manner
                 and more and more people are getting back to a new normal, please
                 follow all public health guidelines to protect yourself and others
@@ -275,10 +275,10 @@ class SkyV1 extends Component {
 
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
-              <Button onClick={this.submitForm} bsPrefix="submit_button" className="btn-1" variant="primary" type="submit">SUBMIT</Button>
+              <Button onClick={this.submitForm} bsPrefix="submitButton" className="btn-1" variant="primary" type="submit">SUBMIT</Button>
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
-            <Button  variant="primary" bsPrefix="share_button" className="btn-2">SHARE WITH FRIENDS</Button>
+            <Button  variant="primary" bsPrefix="mobileSharebutton" className="btn-2">SHARE WITH FRIENDS</Button>
           </Form.Row>
         </Form>
 
