@@ -4,8 +4,7 @@ import styled from "@emotion/styled";
 import different_img from "../../assets/Different.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
-// import "./i_am_different-ch.css";
-import Header from "../../dummy/header";
+import "./i_am_different-ch.css";
 import { Link } from "react-router-dom";
 // import NewsletterContactUs_ch from "./newsletterContactUs-ch";
 import Footer from "../../footer-temp";
@@ -16,12 +15,19 @@ import Footer from "../../footer-temp";
 //    method: 'share',
 //    href: 'https://developers.facebook.com/docs/',
 
+
+
 function IAmDifferent() {
   const diffForm = <Link to="IAmDifferent"></Link>;
   // let NewsContact = styled.div`
   //   text-align: center;
   //   // background-color: yellow;
   // `;
+
+  const goToForm=()=> {
+      window.location='#/IAmDifferentForm-ch';
+  };
+  
   let Body = styled.div`
     text-align: center;
   `;
@@ -33,6 +39,7 @@ function IAmDifferent() {
     align-items: center;
     background-color: yellow;
   `;
+  
 
   return (
     <div>
@@ -53,7 +60,7 @@ function IAmDifferent() {
         <Row>
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="instruction_title">About This Work:</p>
+            <p className="introTitle">About This Work:</p>
           </Col>
         </Row>
 
@@ -61,7 +68,7 @@ function IAmDifferent() {
           {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="instruction_body">
+            <p className="introBody">
               {" "}
               在疫情最辛苦艱難的時期，許多生命受苦臨危之際，醫護人員、警消人員、科學家、衛生官員這些專業人士，在拯救生命的同時，並不會過問危難者的族裔與身份。我們每一個人都會面臨生命終結的一天，當這些專業人士在救助受苦的人們，處理危急的情況當下，並不會過問對方的膚色族裔、語言文化、社經地位，那時，他們的眼中視一切生命皆為平等，不因求助者的外在條件、理想價值而有所不同。
             </p>{" "}
@@ -70,7 +77,7 @@ function IAmDifferent() {
         <Row>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}
             style={{ marginTop: "80px", marginBottom: "5%" }}
-            className="contents"
+            className="mainContent"
           >
             <p>
               {" "}
@@ -95,12 +102,11 @@ function IAmDifferent() {
           </Col>
         </Row>
         <Row>
-          {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          {/*  href="#IAmDifferentForm-ch" onClick={aasdf}<Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
-              href="#IAmDifferentForm-ch"
-              bsPrefix="upload_button" >
-              上傳照片
+               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton" style={{width:"100%"}} >
+                      上傳照片        
 
               {/* <Link to="/IAmDifferentForm" className="form_link">
                 UPLOAD FRONT-LINE HERO PHOTO
@@ -108,11 +114,27 @@ function IAmDifferent() {
             </Button>
           </Col>
         </Row>
+        
         <Row>
-          <Col style={{ marginBottom: "50px" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button bsPrefix="share_button" variant="primary" type="submit">分享給朋友</Button>
+          {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+            <Button
+              variant="primary" type="submit"
+              bsPrefix="mobileSharebutton" style={{width:"100%"}}>
+              分享給朋友
+
+              {/* <Link to="/IAmDifferentForm" className="form_link">
+                UPLOAD FRONT-LINE HERO PHOTO
+              </Link> */}
+            </Button>
           </Col>
         </Row>
+
+        {/* <Row>
+          <Col style={{ marginBottom: "50px",  textAlign:"center" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+            <Button bsPrefix="mobileSharebutton" variant="primary" type="submit">分享給朋友</Button>
+          </Col>
+        </Row> */}
       </Container>
       <div
         lg={{ span: 3, offset: 3 }}
