@@ -32,7 +32,6 @@ class SkyV1 extends Component {
   }
 
   handleModal2() {
-    console.log("handleModal2");
     this.setState({show2:!this.state.show2})
   }
 
@@ -275,10 +274,14 @@ class SkyV1 extends Component {
 
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
+            <Col xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
               <Button onClick={this.submitForm} bsPrefix="submitButton" className="btn-1" variant="primary" type="submit">SUBMIT</Button>
+            </Col>
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
-            <Button  variant="primary" bsPrefix="mobileSharebutton" className="btn-2">SHARE WITH FRIENDS</Button>
+            <Col xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+              <Button  variant="primary" bsPrefix="submitButton" className="btn-2">SHARE WITH FRIENDS</Button>
+            </Col>
           </Form.Row>
         </Form>
 
