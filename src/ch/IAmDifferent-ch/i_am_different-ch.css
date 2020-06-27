@@ -1,3 +1,173 @@
+.uploadButton {
+  text-align: center;
+  border-radius: 20px;
+  text-align: left;
+  background-color: #D9C739;
+  color: #0C3866;
+  padding-left: 16%;
+  padding-right: 16%;
+  margin: auto;
+  font-weight: bold;
+}
+
+.image_col{
+  padding: 0px;
+}
+
+.main_image{
+  margin: 0px;
+  width:100%;
+  height: auto;
+}
+
+.mobileSharebutton{
+  padding-left:  16%;
+  padding-right: 16%;
+ background-color:#BE0027;
+ color: white;
+ border-radius:20px ;
+ margin: auto;
+ font-weight: bold;
+}
+
+.mainContent > p { /*should change*/
+  font-family: "adonis-web";
+}
+
+.introTitle {
+  margin-top: 100px;
+  font-family: "sofia-pro", Sans-serif;
+  font-weight: 600;
+  color: #BE0027;
+  font-size: 20px;
+}
+
+.introBody {
+  font-family: "sofia-pro", Sans-serif;
+  font-weight: normal;
+  color: #707070;
+  font-size: 20px;
+}
+
+
+/* below are mediaquiries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  .uploadButton {
+    padding-left:  18%;
+    padding-right: 18%;
+    border-radius:20px ;
+    font-size:40px;
+    margin: auto;
+    text-align: center;
+}
+  .mobileSharebutton{
+   font-size:30px !important;
+   
+    padding-left:  18%;
+    padding-right: 18%;
+  }
+   .introTitle {
+    font-size: 45px;
+  }
+  .introBody {
+    font-size: 40px;
+  }
+   .mainContent > p {
+    font-size: 42px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .uploadButton {
+    padding-left:  15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   font-size:30px;
+     margin: auto;
+     text-align: center;
+}
+  .mobileSharebutton{
+    padding-left:  15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   font-size:30px;
+     margin: auto;
+  }
+  .introTitle {
+    font-size: 45px;
+  }
+   .introBody {
+    font-size: 40px;
+  }
+   .mainContent > p {
+    font-size: 42px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  .introTitle {
+   font-size: 45px;
+  }
+  .introBody {
+   font-size: 40px;
+  }
+  .mainContent > p {
+   font-size: 42px;
+ }
+  .uploadButton {
+    padding-left:  10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+
+   border-radius:20px ;
+   font-size:30px;
+   margin: auto;
+  }
+  .mobileSharebutton{
+    padding-left:  24%;
+    padding-right: 24%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   font-size:30px;
+     margin: auto;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+   .introTitle {
+    font-size: 20px;
+  }
+   .introBody {
+    font-size: 20px;
+  }
+   .mainContent > p {
+    font-size: 23px;
+  }
+  .uploadButton {
+    padding-left:  10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+     margin-left:30%;
+   font-size:15px;
+   margin: auto;
+    margin-bottom:10px;
+}
+  .mobileSharebutton{
+    display:none;
+  }
+}
+
+
 /* .upload_button {
   text-align: center;
   border-radius: 20px;
