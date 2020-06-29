@@ -8,6 +8,7 @@ import "./i_am_different-ch.css";
 import { Link } from "react-router-dom";
 // import NewsletterContactUs_ch from "./newsletterContactUs-ch";
 import Footer from "../../footer-temp";
+import ButtonCh from "../../modules/ButtonCh"
 
 // function click(){
 // FB.ui({
@@ -101,40 +102,8 @@ function IAmDifferent() {
 
           </Col>
         </Row>
-        <Row>
-          {/*  href="#IAmDifferentForm-ch" onClick={aasdf}<Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button
-               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton-ch">
-                      上傳照片
+        <ButtonCh onclick={goToForm} title="上傳照片"></ButtonCh>
 
-              {/* <Link to="/IAmDifferentForm" className="form_link">
-                UPLOAD FRONT-LINE HERO PHOTO
-              </Link> */}
-            </Button>
-          </Col>
-        </Row>
-
-        <Row>
-          {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button
-              variant="primary" type="submit"
-              bsPrefix="mobileSharebutton-ch">
-              分享給朋友
-
-              {/* <Link to="/IAmDifferentForm" className="form_link">
-                UPLOAD FRONT-LINE HERO PHOTO
-              </Link> */}
-            </Button>
-          </Col>
-        </Row>
-
-        {/* <Row>
-          <Col style={{ marginBottom: "50px",  textAlign:"center" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button bsPrefix="mobileSharebutton" variant="primary" type="submit">分享給朋友</Button>
-          </Col>
-        </Row> */}
       </Container>
       <div
         lg={{ span: 3, offset: 3 }}

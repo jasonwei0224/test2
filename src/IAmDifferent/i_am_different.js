@@ -12,6 +12,8 @@ import Header from "../dummy/header";
 import { Link } from "react-router-dom";
 import NewsletterContactUs from "./newsletterContactUs";
 import Footer from "../footer-temp";
+import Button2 from "../modules/Button2";
+
 
 // function click(){
 // FB.ui({
@@ -92,22 +94,8 @@ function IAmDifferent() {
 
           </Col>
         </Row>
-        <Row>
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button
-               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton_different">
-                      UPLOAD FRONT-LINE HERO PHOTO
-            </Button>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button
-              variant="primary" type="submit" bsPrefix="mobileSharebutton">SHARE WITH FRIENDS</Button>
-          </Col>
-        </Row>
-     
+        <Button2 onclick={goToForm} title="UPLOAD FRONT-LINE HERO PHOTO"></Button2>
+      
       </Container>
       <div
         lg={{ span: 3, offset: 3 }}

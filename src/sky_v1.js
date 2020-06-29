@@ -8,6 +8,7 @@ import banner from './assets/placeholder.png';
 import Footer from './footer-temp';
 import'./sky_v1.css';
 import fire from './firebase/file';
+import Button1 from "./modules/Button1";
 
 class SkyV1 extends Component {
 
@@ -275,24 +276,9 @@ class SkyV1 extends Component {
               <div className="formConsent" style={{color:"#BE0027"}} >I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project.</div>
             </Col>
           </Form.Row>
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton"> SUBMIT</Button>
-              </Col>
-            </Row>
 
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button
-                  variant="primary" type="submit" bsPrefix="mobileSharebutton">SHARE WITH FRIENDS</Button>
-              </Col>
-            </Row>
-          {/* <Form.Row >
-              <Button onClick={this.submitForm} bsPrefix="submitButton" className="submitButton" variant="primary" type="submit">SUBMIT</Button>
-          </Form.Row>
-          <Form.Row style={{marginBottom:"50px"}}>
-            <Button  variant="primary" bsPrefix="mobileSharebutton" className="mobileSharebutton">SHARE WITH FRIENDS</Button>
-          </Form.Row> */}
+            <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
+
         </Form>
 
         <Modal show={this.state.show2}>

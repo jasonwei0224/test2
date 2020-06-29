@@ -7,6 +7,8 @@ import '../../sky_v1.css';
 import './IAmDifferentForm-ch.css'
 import Footer from '../../footer-temp';
 import fire from '../../firebase/file';
+import ButtonCh from "../../modules/ButtonCh"
+
 
 
 class IAmDifferentForm extends Component {
@@ -217,18 +219,8 @@ class IAmDifferentForm extends Component {
               </Col>
             </Form.Row>
 
-            <Row>
-         
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton_idf_ch">送出</Button>
-              </Col>
-            </Row>
-
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button variant="primary" type="submit" bsPrefix="mobileSharebutton_idf_ch">分享給朋友</Button>
-              </Col>
-            </Row>
+            <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
+           
            
           </Form>
 

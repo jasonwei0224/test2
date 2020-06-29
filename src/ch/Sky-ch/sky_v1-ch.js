@@ -8,6 +8,7 @@ import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
 import './sky_v1-ch.css'
 import fire from '../../firebase/file';
+import ButtonCh from "../../modules/ButtonCh"
 
 class SkyV1_ch extends Component {
 
@@ -246,18 +247,9 @@ class SkyV1_ch extends Component {
           </Col>
 
         </Form.Row>
-          <Row>
-            <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-              <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton"> 送出</Button>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-              <Button
-                variant="primary" type="submit" bsPrefix="mobileSharebutton">分享給朋友</Button>
-            </Col>
-          </Row>
+        
+        <ButtonCh onclick={this.submitForm} title="送出"></ButtonCh>
+         
 
       </Form>
       <Modal show={this.state.show2}>

@@ -6,9 +6,9 @@ import './IAmDifferentForm.css'
 // import '../sky_v1.css';
 // import programInfo from '../programInfo';
 import Footer from '../footer-temp';
-import FormComponent from '../formComponent';
 import fire from '../firebase/file';
 import different_img from "../assets/Different.jpg";
+import Button1 from "../modules/Button1";
 
 class IAmDifferentForm extends Component {
 
@@ -222,19 +222,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               </Col>
             </Form.Row>
 
-
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton"> SUBMIT</Button>
-              </Col>
-            </Row>
-
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button
-                  variant="primary" type="submit" bsPrefix="mobileSharebutton">SHARE WITH FRIENDS</Button>
-              </Col>
-            </Row>
+            <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
 
           </Form>
 
