@@ -191,16 +191,19 @@ class SkyV1 extends Component {
             </Col>
         </Row>
         <Row>
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}><p className ="second_title">Under the same sky project</p></Col>
+          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+            <p className ="second_title">Under the same sky project</p></Col>
         </Row>
         <Row>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <p className="project_content">Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details.</p>
+            <p className="introBody">Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details.</p>
           </Col>
         </Row>
 
         <Row>
-          <Col style={{marginBottom:"2%"}}xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' >Photographer</Col>
+          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
+            bsCustomPrefix="formSectionTitle " className='formSectionTitle ' style={{backgroundColor: "#D9C739",
+            marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>Photographer</Col>
         </Row>
 
         <Form encType="multipart/form-data">
