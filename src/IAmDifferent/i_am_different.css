@@ -1,14 +1,17 @@
-.uploadButton {
+.uploadButton_different {
   text-align: center;
   border-radius: 20px;
-  text-align: left;
   background-color: #D9C739;
   color: #0C3866;
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top:2%;
+  padding-bottom:2%;
   margin: auto;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
+  font-size: 30px;
+  width:80%;
 }
 
 .image_col{
@@ -54,12 +57,16 @@
 /* below are mediaquiries */
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  .uploadButton {
+  .uploadButton_different {
     padding-left:  18%;
     padding-right: 18%;
-     border-radius:20px ;
-     font-size:40px;
-      margin: auto;
+    border-radius:20px ;
+    font-size:20px;
+    margin: auto;
+    width:80%;
+    font-size: 30px;
+    text-align: center;
+
 }
   .mobileSharebutton{
    font-size:30px !important;
@@ -82,8 +89,10 @@
     padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
-   font-size:30px;
+    font-size:30px;
      margin: auto;
+     width:80%;
+     text-align: center;
 }
   .mobileSharebutton{
     padding-left:  27%;
@@ -115,16 +124,16 @@
   .mainContent > p {
    font-size: 42px;
  }
-  .uploadButton {
+  .uploadButton_different {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
-    text-align: left;
-
-   border-radius:20px ;
-   font-size:30px;
-   margin: auto;
+    width:80%;
+    text-align: center;
+    border-radius:20px ;
+    font-size:30px;
+    margin: auto;
   }
   .mobileSharebutton{
     padding-left:  24%;
@@ -147,16 +156,17 @@
    .mainContent > p {
     font-size: 23px;
   }
-  .uploadButton {
+  .uploadButton_different {
     padding-left:  10%;
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
-    text-align: left;
      margin-left:30%;
-   font-size:15px;
-   margin: auto;
+    font-size:15px;
+    margin: auto;
     margin-bottom:10px;
+    width:80%;
+    text-align: center;
 }
   .mobileSharebutton{
     display:none;

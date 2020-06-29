@@ -95,7 +95,7 @@ function IAmDifferent() {
         <Row>
           <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
-               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton">
+               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton_different">
                       UPLOAD FRONT-LINE HERO PHOTO
             </Button>
           </Col>
