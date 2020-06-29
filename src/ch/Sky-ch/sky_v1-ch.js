@@ -244,16 +244,19 @@ class SkyV1_ch extends Component {
           </Col>
 
         </Form.Row>
-        <Form.Row >
+          <Row>
+            <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+              <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton"> 送出</Button>
+            </Col>
+          </Row>
 
-              <Button onClick={this.submitForm} bsPrefix="submitButton-ch" className="submitButton-ch" variant="primary" type="submit">送出</Button>
+          <Row>
+            <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+              <Button
+                variant="primary" type="submit" bsPrefix="mobileSharebutton">分享給朋友</Button>
+            </Col>
+          </Row>
 
-        </Form.Row>
-        <Form.Row style={{marginBottom:"50px"}}>
-
-            <Button  variant="primary" bsPrefix="mobileSharebutton-ch" className="mobileSharebutton-ch" >分享給朋友</Button>
-
-        </Form.Row>
       </Form>
       <Modal show={this.state.show2}>
             <Modal.Header>Incomplete Form</Modal.Header>

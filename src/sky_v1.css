@@ -20,7 +20,14 @@ input[type="checkbox"]{
   width: 30px;
   height: 30px;
   cursor: pointer;
+} 
+.second_title{
+  color:#BE0027;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "sofia-pro", Sans-serif;
 }
+
 
 
 @media screen and (max-width: 767px) {
@@ -47,6 +54,12 @@ input[type="checkbox"]{
     border-radius:20px ;
     margin:auto !important;
     color: white !important;
+  }
+  .second_title{
+    color:#BE0027;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "sofia-pro", Sans-serif;
   }
 
 
