@@ -1,171 +1,81 @@
-/* .mainContents {
-  margin-top: 50px;
-  margin-bottom:50px;
-  font-family: 'adonis-web';
-} */
-
-
-
-
-/* .formConsent{
-  color: #BE0027;
-} */
-/* .main_image{
-  margin: 0px;
-  width:100%;
-  height: auto;
-} */
-
-
-/* .form_field_text{
-  font-size:30px;
-} */
-
-/* .share_button{
-  padding-left:  16%;
-  padding-right: 16%;
- background-color:#BE0027;
- color: white;
- border-radius:20px ;
- font-size:40px;
- margin: auto;
-} */
-/* #hint{
-  color: #707070;
-} */
-
-
+.uploadButton {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #D9C739;
+    color: #0C3866;
+    padding-left: 16%;
+    padding-right: 16%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    width:80%;
+  }
+  .mobileSharebutton{
+    padding-left:  16%;
+    padding-right: 16%;
+   background-color:#BE0027;
+   color: white;
+   border-radius:20px ;
+   margin: auto;
+   font-weight: bold;
+   width:80%;
+  }
+  
 @media screen and (max-width: 767px) {
+    .uploadButton {
+        padding-left:  18%;
+        padding-right: 18%;
+         border-radius:20px ;
+         font-size:40px;
+          margin: auto;
+          width:80%;
+          text-align: center;
+    }
 
-  /* .form_field_text{
-    font-size:40px !important;
-  } */
-  /* .contentsInParagraph {
-    font-size: 45px;
-  } */
-  /* .formConsent {
-    font-size:25px;
-  } */
-/*
-  .hed{
-     background-color: #D9C739;
-     margin-bottom:2%;
-    padding-top:0.5%;
-    padding-bottom:0.5%;
-    font-weight:bold;
-  } */
 }
 
+
 @media screen and (min-width: 768px) {
+    .uploadButton {
+        padding-left:  15%;
+        padding-right: 15%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size:30px;
+         margin: auto;
+         width:80%;
+         text-align: center;
+    }
 
-
-
-  /* .contentsInParagraph {
-    font-size: 45px;
-  } */
-
-  /* .formConsent {
-    font-size:25px;
-  } */
-  /* #hint{
-    font-size: 30px;
-  } */
-  /* .form_field_text{
-    font-size:40px !important;
-  } */
-  /* .submitButton{
-     padding-left:  30%;
-     padding-right: 30%;
-    background-color:#707070;
-    color: white;
-    border-radius:20px ;
-    font-size:40px;
-    margin: auto;
-  } */
-
-  /* .hed{
-     background-color: #D9C739;
-     margin-bottom:2%;
-    padding-top:0.5%;
-    padding-bottom:0.5%;
-    font-weight:bold;
-  } */
-  /* .btn-2{
-    background-color:#BE0027;
-    margin:auto;
-    margin-bottom:10%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    font-size:40px !important;
-    text-align: center;
-    border-radius: 50px;
-  } */
 }
 
 @media screen and (min-width: 992px) {
-
-  /* .contentsInParagraph {
-    font-size: 20px;
-  } */
-
-
-  /* .formConsent {
-    font-size:18px;
-  } */
-  /* .form_field_text{
-    font-size:40px ;
-  } */
-
-
-  /* .hed{
-     background-color: #D9C739;
-     margin-bottom:2%;
-    padding-top:0.5%;
-    padding-bottom:0.5%;
-    font-weight:bold;
-  } */
+    .uploadButton {
+        padding-left:  10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width:80%;
+        text-align: center;
+        border-radius:20px ;
+        font-size:30px;
+        margin: auto;
+      }
 }
+
 
 @media screen and (min-width: 1200px) {
-  /* .form_field_text{
-    font-size:20px !important;
-  } */
-  /* #hint{
-    font-size: 20px !important;
-  } */
-
-  /* .contentsInParagraph {
-    font-size: 25px;
-  } */
-
-/*
-  .formConsent {
-    font-size:20px !important;
-    margin-left: -8% !important;
-  } */
-  /* .share_button{
-    display: None;
-  } */
-
-
-
-  /* .submitButton{
-       padding-left:  5%!important;
-       padding-right: 5%!important;
-      background-color:#707070 !important;
-      color: white !important;
-      border-radius:50px !important;
-      font-size:15px !important;
-      margin: auto !important;
-  } */
-
-/*
-  .hed{
-     background-color: #D9C739;
-     margin-bottom:2%;
-    padding-top:0.5%;
-    padding-bottom:0.5%;
-    font-size: 20px!important;
-    font-weight:bold;
-  } */
+    .uploadButton {
+        padding-left:  10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+         margin-left:30%;
+        font-size:15px;
+        margin: auto;
+        margin-bottom:10px;
+        width:80%;
+        text-align: center;
+    }
 }
+

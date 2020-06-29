@@ -36,6 +36,10 @@ function IAmDifferent() {
     align-items: center;
     background-color: yellow;
   `;
+  const goToForm=()=> {
+    window.location='#/IAmDifferentForm';
+  };
+
   return (
     <div>
       <Container fluid>
@@ -89,25 +93,21 @@ function IAmDifferent() {
           </Col>
         </Row>
         <Row>
-          {/* <Col lg={{ span: 8, offset: 4 }} style={{ marginBottom: "10%" }}> */}
-          <Col style={{ marginBottom: "50px"}} xl={{span:5, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
             <Button
-              // onClick="handleClick"
-              href="#IAmDifferentForm"
-              bsPrefix="uploadButton" >
-              UPLOAD FRONT-LINE HERO PHOTO
-
-              {/* <Link to="/IAmDifferentForm" className="form_link">
-                UPLOAD FRONT-LINE HERO PHOTO
-              </Link> */}
+               onClick={goToForm} variant="primary" type="submit" bsPrefix="uploadButton">
+                      UPLOAD FRONT-LINE HERO PHOTO
             </Button>
           </Col>
         </Row>
+
         <Row>
-          <Col style={{ marginBottom: "50px" }} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <Button bsPrefix="mobileSharebutton" variant="primary" type="submit">SHARE WITH FRIENDS</Button>
+          <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+            <Button
+              variant="primary" type="submit" bsPrefix="mobileSharebutton">SHARE WITH FRIENDS</Button>
           </Col>
         </Row>
+     
       </Container>
       <div
         lg={{ span: 3, offset: 3 }}

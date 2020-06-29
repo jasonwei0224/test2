@@ -271,14 +271,25 @@ class SkyV1 extends Component {
             <Col xl={{span:7, offset:0}} lg={{span:9, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
               <div className="formConsent" style={{color:"#BE0027"}} >I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project.</div>
             </Col>
-
           </Form.Row>
-          <Form.Row >
+            <Row>
+              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton"> SUBMIT</Button>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                <Button
+                  variant="primary" type="submit" bsPrefix="mobileSharebutton">SHARE WITH FRIENDS</Button>
+              </Col>
+            </Row>
+          {/* <Form.Row >
               <Button onClick={this.submitForm} bsPrefix="submitButton" className="submitButton" variant="primary" type="submit">SUBMIT</Button>
           </Form.Row>
           <Form.Row style={{marginBottom:"50px"}}>
             <Button  variant="primary" bsPrefix="mobileSharebutton" className="mobileSharebutton">SHARE WITH FRIENDS</Button>
-          </Form.Row>
+          </Form.Row> */}
         </Form>
 
         <Modal show={this.state.show2}>
