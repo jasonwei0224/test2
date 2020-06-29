@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
 import Footer from '../../footer-temp';
-// import './sky_v1-ch.css'
+import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 
 class SkyV1_ch extends Component {
@@ -139,41 +139,42 @@ class SkyV1_ch extends Component {
 
       <Row className="mainSection" style={{marginTop:"100px"}}>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
-            <p className="project_content">
+            <p className="project_content_ch">
               在同一片藍天下，當一切顏色歸零(Colour Zero)，回到一個個獨立的個體，人們究竟有何不同?
             </p>
-            <p className="project_content">
+            <p className="project_content_ch">
               無論我們身在方，都是看著同一片天空；無論我們的外表、性格多麼不同，都是被同一片天空包覆其下；無論我們背負何種人生境遇，都是在同一片天空下經歷悲歡離合。天空不問我們的身份性別、社經背景；不辨識我們來自什麼文化，說著哪一種語言，我們同樣都能在同一片天空中，看見炎熱的陽光、溫柔的月亮、靜謐的星空、雨後的彩虹。即便我們身體殘缺、內心傷痛，時而因愛歡喜，時而因恨哀愁，依然與世界上的每一個人一樣，每天迎接日出日落，無法避免風起雨落。天空不曾因為個人的不同而排拒過任何一個人，我們每一個人與其他生命萬物相同，都只是大自然的其中一部分。
             </p>
-            <p className="project_content">
+            <p className="project_content_ch">
               當數字「8」轉為橫向成為「∞」無限符號，象徵天空的無邊無際、遼闊遠大。膚色、外貌、族裔、語言、文化，不會是限制人類理解彼此的界線；「∞」也象徵愛的永恆，當人們能互相欣賞不一樣的美麗，平等地認同彼此的存在價值，共同創造了人類永續未來的機會。
             </p>
-            <p className="project_content">
+            <p className="project_content_ch">
               在加拿大台灣文化節活動期間，不只在溫哥華美術館前廣場能看到八座「天空」燈光裝置藝術作品，陪伴溫哥華人度過黎明與黑夜。即使你人不在溫哥華，甚至不在加拿大，你都可以隨時拍下【下午三點】的天空照片上傳分享，立即加入我們 ! 在夏天的尾聲，透過看著同一片天空的不同風景，感受不同的空間氛圍，不受地域和時間限制，貼近彼此，相互作伴 !
             </p>
           </Col>
       </Row>
       <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}><p className ="second_title">我跟你的相同，就是我們都不同 </p></Col>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+          <p className ="second_title">我跟你的相同，就是我們都不同 </p></Col>
       </Row>
       <Row>
         <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-          <p className="project_content">
+          <p className="project_content_ch">
           在地球上不同位置的我們，相約在同一時刻拍下天空的包羅萬象。
           </p>
-          <p className="project_content">
+          <p className="project_content_ch">
           美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重讓人心惶惶；我們抬頭望望藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤?
           </p>
-          <p className="project_content">
+          <p className="project_content_ch">
           我們都不一樣，我們也都一樣 !
           </p>
-          <p className="project_content">
+          <p className="project_content_ch">
           我們都不一樣，我們也都一樣 !加拿大台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【下午三點】的天空，與世界一起反歧視、追求平等。期待有更多人看到您的天空攝影作品 !
           </p>
         </Col>
       </Row>
 
-      <Row>
+      <Row style={{marginBottom:"30px", marginTop:"30px"}}>
         <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>攝影師資訊</Col>
       </Row>
 
@@ -193,9 +194,10 @@ class SkyV1_ch extends Component {
         </Form.Row>
 
 
-      <Row>
-        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' style={{backgroundColor: "#D9C739", marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%", fontWeight:"bold"}}>照片資訊</Col>
+        <Row style={{marginBottom:"30px", marginTop:"30px"}}>
+        <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} bsCustomPrefix="formSectionTitle " className='formSectionTitle' style={{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold", fontSize:"40px"}}>照片資訊</Col>
       </Row>
+
 
       <Form.Row style={{marginBottom:"30px"}}>
 
