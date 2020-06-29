@@ -152,7 +152,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           </Row>
 
           <Row>
-           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}bsCustomPrefix="formSectionTitle" className='formSectionTitle'
+           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}bsCustomPrefix="formSectionTitle_idf" className='formSectionTitle_idf'
             >INFO ABOUT THE PHOTO</Col>
           </Row>
 

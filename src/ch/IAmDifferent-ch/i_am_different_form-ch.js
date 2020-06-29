@@ -149,7 +149,7 @@ class IAmDifferentForm extends Component {
 
           <Row>
            <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} className="formSectionTitle">照片資訊</Col>
+             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} className="formSectionTitle_idf_ch">照片資訊</Col>
           </Row>
 
           <Form encType="multipart/form-data">
@@ -217,12 +217,19 @@ class IAmDifferentForm extends Component {
               </Col>
             </Form.Row>
 
-            <Form.Row style={{marginTop:"50px"}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="submitButton-ch">送出</Button>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"50px"}}>
-              <Button bsPrefix="mobileSharebutton-ch" variant="primary" type="submit">分享給朋友</Button>
-            </Form.Row>
+            <Row>
+         
+              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton_idf_ch">送出</Button>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                <Button variant="primary" type="submit" bsPrefix="mobileSharebutton_idf_ch">分享給朋友</Button>
+              </Col>
+            </Row>
+           
           </Form>
 
           <Modal show={this.state.show2}>
