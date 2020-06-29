@@ -203,7 +203,7 @@ class SkyV1 extends Component {
         <Row>
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
             bsCustomPrefix="formSectionTitle " className='formSectionTitle ' style={{backgroundColor: "#D9C739",
-            marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>Photographer</Col>
+            marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>TEST</Col>
         </Row>
 
         <Form encType="multipart/form-data">

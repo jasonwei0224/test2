@@ -20,7 +20,7 @@ input[type="checkbox"]{
   width: 30px;
   height: 30px;
   cursor: pointer;
-} 
+}
 .second_title{
   color:#BE0027;
   font-size: 40px;
@@ -118,7 +118,7 @@ input[type="checkbox"]{
     padding-left: 16.5% !important;
     padding-right:16.5% !important;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 100px;
   }
   .submitButton{
     padding-left: 30% !important;
