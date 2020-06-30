@@ -9,6 +9,11 @@ import Footer from './footer-temp';
 import'./sky_v1.css';
 import fire from './firebase/file';
 import Button1 from "./modules/Button1";
+import Second_Title from "./modules/Second_Title"
+import FormSectionTitle from "./modules/FormSection_Title"
+import MainContents_First from "./modules/MainContents_First"
+import MainContents_Middle from "./modules/MainContents_Middle"
+import MainContents_Important from "./modules/MainContents_Important"
 
 class SkyV1 extends Component {
 
@@ -142,16 +147,11 @@ class SkyV1 extends Component {
         <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
         </ProgramInfo>
 
-        <Row className="mainSection">
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}} className="mainContent">
-              <p >
-                What is something that you can see when you look up, no matter
+        <MainContents_First contents=" What is something that you can see when you look up, no matter
                 wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.
-                <br />
-              </p>
-              <p >
-                Working with photographers in Canada and Taiwan, Vancouver
+                where you are and what time of day, it is there above the horizon."></MainContents_First>
+
+        <MainContents_Middle contents=" Working with photographers in Canada and Taiwan, Vancouver
                 TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ
                 Square (formally known as Vancouver Art Gallery North Plaza)
                 in downtown Vancouver. These images show that despite our
@@ -159,23 +159,20 @@ class SkyV1 extends Component {
                 looms over our heads, further reaffirming that we are all in this
                 together. Sky is built on the concept of removing the influence
                   of colour; by looking past our differences, we can see that we
-                  are one and the same.<br></br>
-              </p>
-              <p >
-                In all that the world has gone through, the unchanging sky gives
+                  are one and the same."></MainContents_Middle>
+          <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
                 people a sense of hope and anticipation for the feeling of a
                 normal day to come again. Furthermore, Indigenous teachings and
                 stories about the sky can guide us in these times.
                 By giving each image a background story, we can implore others to
-                look to the sky and gain strength.<br></br>
-              </p>
-              <p >
-                Your experience and view of the sky will be different depending on
+                look to the sky and gain strength."></MainContents_Middle>
+
+          <MainContents_Middle contents="Your experience and view of the sky will be different depending on
                 the time of day. These lanterns will create a whole new dynamic
-                look and feel through the use of LED lights in the evenings.<br></br>
-              </p>
-              <p >
-                As the province is working to reopen the economy in a safe manner
+                look and feel through the use of LED lights in the evenings."></MainContents_Middle>
+
+                
+          <MainContents_Middle contents="As the province is working to reopen the economy in a safe manner
                 and more and more people are getting back to a new normal, please
                 follow all public health guidelines to protect yourself and others
                 from COVID-19. Individuals should monitor their health for signs
@@ -186,26 +183,15 @@ class SkyV1 extends Component {
                 social-distancing is not possible such as on transit. By visiting
                   the on-site “Sky” activation, you acknowledge that there are
                   inherent risks associated with the COVID-19 Pandemic and will
-                  not hold ACSEA or our programming partners liable for your health. <br></br>
+                  not hold ACSEA or our programming partners liable for your health."></MainContents_Middle>
 
-              </p>
-            </Col>
-        </Row>
-        <Row>
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <p className ="second_title">Under the same sky project</p></Col>
-        </Row>
-        <Row>
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-            <p className="introBody">Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details.</p>
-          </Col>
-        </Row>
 
-        <Row>
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-            bsCustomPrefix="formSectionTitle " className='formSectionTitle ' style={{backgroundColor: "#D9C739",
-            marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>TEST</Col>
-        </Row>
+        <Second_Title secondTitle="Under the same sky project"></Second_Title>
+ 
+        <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
+
+        
+        <FormSectionTitle title="TEST"></FormSectionTitle>
 
         <Form encType="multipart/form-data">
           <Form.Row style={{marginBottom:"30px"}}>
@@ -229,11 +215,8 @@ class SkyV1 extends Component {
           </Form.Row>
 
 
-        <Row>
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-            bsCustomPrefix="formSectionTitle " className='formSectionTitle ' style={{backgroundColor: "#D9C739",
-            marginTop:"2%", marginBottom:"2%", paddingTop:"0.5%",paddingBottom:"0.5%", fontWeight:"bold"}}>Photo Info</Col>
-        </Row>
+
+        <FormSectionTitle title="Photo Info"></FormSectionTitle>
 
         <Form.Row style={{marginBottom:"30px"}}>
 
@@ -323,31 +306,3 @@ class SkyV1 extends Component {
 
 export default SkyV1;
 
-
-
-  // SkyV1() {
-  //   let inputFile = '';
-  //   let ff= "";
-  //   const fileChangeHandler2 = event =>{
-  //     if(event.target.files[0] != null && inputFile != ''){
-  //       let file_size = event.target.files[0].size;
-  //       if(file_size/1000000 >1){
-  //         console.log("file too big");
-  //         console.log(inputFile);
-  //         inputFile.focus();
-  //         ff.setState = "invalid";
-  //       }
-  //       console.log(file_size);
-  //       //or if you like to have name and type
-  //       let file_name = event.target.files[0].name;
-
-  //       console.log(file_name);
-  //       let file_type = event.target.files[0].type;
-  //       if(file_type != "image/png" && file_type != "image/jpg"){
-  //         console.log("Incorrect File");
-  //       }
-  //       console.log(file_type);
-  //       //do whatever operation you want to do here
-  //       }
-  //   }
-  // }

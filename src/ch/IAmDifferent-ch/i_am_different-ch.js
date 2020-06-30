@@ -6,24 +6,17 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
 import "./i_am_different-ch.css";
 import { Link } from "react-router-dom";
-// import NewsletterContactUs_ch from "./newsletterContactUs-ch";
 import Footer from "../../footer-temp";
 import ButtonCh from "../../modules/ButtonCh"
+import Second_Title_ch from '../../modules/Second_TitleCh';
 
-// function click(){
-// FB.ui({
-//    display: 'popup',
-//    method: 'share',
-//    href: 'https://developers.facebook.com/docs/',
+
 
 
 
 function IAmDifferent() {
   const diffForm = <Link to="IAmDifferent"></Link>;
-  // let NewsContact = styled.div`
-  //   text-align: center;
-  //   // background-color: yellow;
-  // `;
+
 
   const goToForm=()=> {
       window.location='#/IAmDifferentForm-ch';
@@ -49,7 +42,6 @@ function IAmDifferent() {
             <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
               <img className="main_image" src={different_img}/>
             </Col>
-            {/* <CardGame /> */}
         </Row>
         <ProgramInfo_ch
           subtitle="我跟你的相同，就是我們都不同 "
@@ -58,15 +50,11 @@ function IAmDifferent() {
           url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
           color="#D9C739"
         ></ProgramInfo_ch>
-        <Row>
-          {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="introTitle">影像創作 X 線上互動</p>
-          </Col>
-        </Row>
+
+        <Second_Title_ch secondTitle="影像創作 X 線上互動"></Second_Title_ch>
+
 
         <Row>
-          {/* <Col lg={{ span: 6, offset: 3 }} xs={{ span: 6, offset: 2 }}> */}
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
             <p className="introBody">
@@ -114,12 +102,8 @@ function IAmDifferent() {
           alignItems: "center",
         }}
       >
-        {/*}<NewsletterContactUs_ch />*/}
       </div>
 
-      {/*}<GameDiv>
-        <CardGame />
-      </GameDiv>*/}
       <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
     </div>
   );

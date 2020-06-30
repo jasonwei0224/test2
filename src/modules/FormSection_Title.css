@@ -1,0 +1,39 @@
+.formSectionTitle_title {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .formSectionTitle_title {
+        font-size: 25px;
+        background-color: #D9C739;
+    }
+    .formSectionTitle_title_ch {
+        font-size: 35px;
+        background-color: #D9C739;
+        font-weight:bold;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .formSectionTitle_title {
+        font-size: 20px;
+        background-color: #D9C739;
+        font-weight:bold;
+      }
+    .formSectionTitle_title_ch {
+    font-size: 20px;
+    background-color: #D9C739;
+    font-weight:bold;
+    }
+}
+
+    

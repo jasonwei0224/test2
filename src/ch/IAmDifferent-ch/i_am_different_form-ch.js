@@ -8,7 +8,7 @@ import './IAmDifferentForm-ch.css'
 import Footer from '../../footer-temp';
 import fire from '../../firebase/file';
 import ButtonCh from "../../modules/ButtonCh"
-
+import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 
 
 class IAmDifferentForm extends Component {
@@ -149,11 +149,7 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <Row>
-           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} className="formSectionTitle_idf_ch">照片資訊</Col>
-          </Row>
-
+          <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
           <Form encType="multipart/form-data">
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
