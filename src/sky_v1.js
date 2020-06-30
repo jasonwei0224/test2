@@ -14,7 +14,8 @@ import FormSectionTitle from "./modules/FormSection_Title"
 import MainContents_First from "./modules/MainContents_First"
 import MainContents_Middle from "./modules/MainContents_Middle"
 import MainContents_Important from "./modules/MainContents_Important"
-import FormComponent from "./modules/FormComponent"
+import FormComponent from "./modules/formComponent"
+import IncompleteFormModal from "./incompleteFormModal";
 
 class SkyV1 extends Component {
 
@@ -234,7 +235,8 @@ class SkyV1 extends Component {
 
         </Form>
 
-        <Modal show={this.state.show2}>
+        <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
+        {/* <Modal show={this.state.show2}>
               <Modal.Header>Incomplete Form</Modal.Header>
               <Modal.Body>
                 Please fill out all fields
@@ -243,7 +245,7 @@ class SkyV1 extends Component {
                 <Button className="btnCancelInModal"  onClick={()=>this.handleModal2()} >Close</Button>
 
               </Modal.Footer>
-            </Modal>
+            </Modal> */}
 
         <Modal show={this.state.show}>
           <Modal.Header>Success</Modal.Header>
