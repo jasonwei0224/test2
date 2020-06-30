@@ -13,6 +13,7 @@ import Second_Title_ch from '../../modules/Second_TitleCh';
 import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch"
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch"
+import FormComponent from "../../modules/FormComponent"
 
 class SkyV1_ch extends Component {
 
@@ -158,20 +159,10 @@ class SkyV1_ch extends Component {
       <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
 
       <Form encType="multipart/form-data">
-        <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="firstName" className="inputfield" type="text" placeholder="英文姓名" required size="lg"/>
-            </Col>
-
-        </Form.Row>
-        <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="userEmail" className="inputfield" type="text" placeholder="電子郵件" required size="lg"/>
-            </Col>
-        </Form.Row>
-
+      
+        <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文姓名"></FormComponent>
+        <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="電子郵件"></FormComponent>
+     
         <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
 
 
@@ -183,21 +174,9 @@ class SkyV1_ch extends Component {
           </Col>
       </Form.Row>
 
-
-        <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="location" className="inputfield" type="text" placeholder="拍攝地點" required size="lg"/>
-            </Col>
-
-        </Form.Row>
-        <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="date" type="text" className="inputfield" placeholder="拍攝日期" required size="lg"/>
-            </Col>
-        </Form.Row>
-
+      <FormComponent formId="location" formClassName="inputfield_form" placeHolder="拍攝地點"></FormComponent>
+      <FormComponent formId="date" formClassName="inputfield_form" placeHolder="拍攝日期"></FormComponent>
+     
         <Form.Row style={{marginBottom:"30px"}}>
 
             <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>

@@ -11,6 +11,8 @@ import different_img from "../assets/Different.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
 import FormComponent from "../modules/FormComponent"
+import MainContents_First from "../modules/MainContents_First"
+import MainContents_Middle from "../modules/MainContents_Middle"
 
 
 class IAmDifferentForm extends Component {
@@ -145,14 +147,11 @@ class IAmDifferentForm extends Component {
           </Row>
 
           <ProgramInfo subtitle="Game Interaction" title="I'M DIFFERENT JUST LIKE YOU" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
-          <Row className="mainContents" style={{marginTop:"100px"}}>
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}} className= "mainContent">
-              <p>In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation. <br></br><br></br>
-
-On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved.
-</p>
-            </Col>
-          </Row>
+          
+          <MainContents_First contents="In the face of a worldwide pandemic and historical global issues, it is important to remember that <b>We are all in this together.</b>  We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation."></MainContents_First>
+          <MainContents_Middle contents="On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition <b>“I’m different, just like you! - We are all in this together”.</b> It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved."></MainContents_Middle>
+          
+          
 
           <FormSectionTitle title="INFO ABOUT THE PHOTO"></FormSectionTitle>
       
