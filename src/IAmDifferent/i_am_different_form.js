@@ -10,6 +10,7 @@ import fire from '../firebase/file';
 import different_img from "../assets/Different.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
+import FormComponent from "../modules/FormComponent"
 
 
 class IAmDifferentForm extends Component {
@@ -154,13 +155,13 @@ On this page, front-line workers and organizations can submit their photo(s) to 
           </Row>
 
           <FormSectionTitle title="INFO ABOUT THE PHOTO"></FormSectionTitle>
-          {/* <Row>
-           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}bsCustomPrefix="formSectionTitle_idf" className='formSectionTitle_idf'
-            >INFO ABOUT THE PHOTO</Col>
-          </Row> */}
+      
+
+    
+          
 
           <Form encType="multipart/form-data">
-            <Form.Row style={{marginBottom:"30px"}}>
+            {/* <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderFullName" placeholder="Sender Full Name" required size="lg" />
               </Col>
@@ -179,7 +180,11 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text"  id="subjectFirstName" placeholder="Subject's First Name" required size="lg" />
               </Col>
-            </Form.Row>
+            </Form.Row> */}
+            <FormComponent formId="senderFullName" formClassName="inputfield_form" placeHolder="Sender Full Name"> </FormComponent>
+            <FormComponent formId="senderCity" formClassName="inputfield_form" placeHolder="City And Country"> </FormComponent>
+            <FormComponent formId="senderEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
+            <FormComponent formId="subjectFirstName" formClassName="inputfield_form" placeHolder="Subject's First Name"> </FormComponent>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' id="subjectOccupation" as="select" >
@@ -196,7 +201,11 @@ On this page, front-line workers and organizations can submit their photo(s) to 
 
                 </Col>
             </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
+
+            <FormComponent formId="subjectEthnicity" formClassName="inputfield_form" placeHolder="Ethnicity"> </FormComponent>
+            <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="City, Country"> </FormComponent>
+
+            {/* <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectEthnicity" placeholder="Ethnicity" required size="lg" />
               </Col>
@@ -205,7 +214,7 @@ On this page, front-line workers and organizations can submit their photo(s) to 
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectCity" placeholder="City, Country" required size="lg" />
               </Col>
-            </Form.Row>
+            </Form.Row> */}
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
             <Form.File.Input onChange={this.onChange} required id="subjectFile" bsPrefix='form-file-input'name="subjectPhoto"/>
