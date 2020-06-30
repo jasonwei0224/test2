@@ -60,18 +60,7 @@ function IAmDifferent() {
         <MainContents_Important contents="<b>“I’m different, just like you! - We are all in this together”</b> is an interactive exhibition piece that grows as people continue to contribute to it.
               Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
               This piece serves to highlight these essential workers and deliver the message that though we may look different and share varied values, We are all in this together."></MainContents_Important>
-        <Row>
-
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <p className="introBody">
-              {" "}
-              <b>“I’m different, just like you! - We are all in this together”</b> is an interactive exhibition piece that grows as people continue to contribute to it.
-              Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
-              This piece serves to highlight these essential workers and deliver the message that though we may look different and share varied values, We are all in this together.
-
-            </p>{" "}
-          </Col>
-        </Row>
+    
 
         <MainContents_Middle contents="Racism has no place in the fight against any pandemic and the consequence of racially motivated actions is perhaps more deadly than the virus because it is human against human.
                The COVID-19 pandemic has proved that the virus sees no boundaries and the potential cure can also come from anywhere to save lives for all.

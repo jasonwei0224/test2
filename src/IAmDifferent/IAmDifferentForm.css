@@ -1,110 +1,19 @@
-.uploadButton {
-    text-align: center;
-    border-radius: 20px;
-    background-color: #D9C739;
-    color: #0C3866;
-    padding-left: 16%;
-    padding-right: 16%;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    width:80%;
-  }
-  .mobileSharebutton{
-    padding-left:  16%;
-    padding-right: 16%;
-   background-color:#BE0027;
-   color: white;
-   border-radius:20px ;
-   margin: auto;
-   font-weight: bold;
-   width:80%;
-  }
-  
+
 @media screen and (max-width: 767px) {
-    .uploadButton {
-        padding-left:  18%;
-        padding-right: 18%;
-         border-radius:20px ;
-         font-size:40px;
-          margin: auto;
-          width:80%;
-          text-align: center;
-    }
-    .formSectionTitle_idf {
-        margin-top: 400px;
-        font-size: 40px!important;
-        background-color: #D9C739;
-        font-weight:bold;
-        margin-bottom:50px;
-      }
+   
 
 }
 
 
 @media screen and (min-width: 768px) {
-    .uploadButton {
-        padding-left:  15%;
-        padding-right: 15%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-size:30px;
-         margin: auto;
-         width:80%;
-         text-align: center;
-    }
-    .formSectionTitle_idf {
-      margin-top: 40px;
-      margin-bottom:50px;
-      font-size: 40px!important;
-      background-color: #D9C739;
-      font-weight: bold;
-    }
 
 }
-
 @media screen and (min-width: 992px) {
-    .uploadButton {
-        padding-left:  10%;
-        padding-right: 10%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        width:80%;
-        text-align: center;
-        border-radius:20px ;
-        font-size:30px;
-        margin: auto;
-      }
-      .formSectionTitle_idf {
-        margin-top: 20px;
-        font-size: 40px!important;
-        background-color: #D9C739;
-        font-weight: bold;
-      }
+  
 }
 
 
 @media screen and (min-width: 1200px) {
-    .uploadButton {
-        padding-left:  10%;
-        padding-right: 10%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-         margin-left:30%;
-        font-size:15px;
-        margin: auto;
-        margin-bottom:10px;
-        width:80%;
-        text-align: center;
-    }
-    .formSectionTitle_idf {
-        font-size: 20px!important;
-        background-color: #D9C739;
-        margin-bottom:2%;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-        font-weight:bold;
-        font-size:20px;
-      }
+ 
 }
 
