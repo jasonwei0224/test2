@@ -19,6 +19,7 @@ import MainContents_Important from "../modules/MainContents_Important"
 
 
 
+
 function IAmDifferent() {
   const diffForm = <Link to="IAmDifferent"></Link>;
 

@@ -1,0 +1,69 @@
+.inputfield_form {
+    margin-bottom: 30px;
+    width:80%;
+    height:100px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 25px;
+}
+::-moz-placeholder {
+    font-size: 25px;
+}
+:-ms-input-placeholder {
+    font-size: 25px;
+}
+::placeholder {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .inputfield_form {
+        margin-bottom: 30px;
+        width:80%;
+        height:30px;
+    }
+    
+    ::-webkit-input-placeholder {
+        font-size: 25px;
+    }
+    ::-moz-placeholder {
+        font-size: 25px;
+    }
+    :-ms-input-placeholder {
+        font-size: 25px;
+    }
+    ::placeholder {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .inputfield_form {
+        margin-bottom: 30px;
+        width:80%;
+        height:30px;
+    }
+    
+    ::-webkit-input-placeholder {
+        font-size: 25px;
+    }
+    ::-moz-placeholder {
+        font-size: 25px;
+    }
+    :-ms-input-placeholder {
+        font-size: 25px;
+    }
+    ::placeholder {
+        font-size: 25px;
+    }
+}

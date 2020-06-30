@@ -14,6 +14,7 @@ import FormSectionTitle from "./modules/FormSection_Title"
 import MainContents_First from "./modules/MainContents_First"
 import MainContents_Middle from "./modules/MainContents_Middle"
 import MainContents_Important from "./modules/MainContents_Important"
+import FormComponent from "./modules/FormComponent"
 
 class SkyV1 extends Component {
 
@@ -194,57 +195,26 @@ class SkyV1 extends Component {
         <FormSectionTitle title="TEST"></FormSectionTitle>
 
         <Form encType="multipart/form-data">
+
+          <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="First Name"> </FormComponent>
+          <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="Last Name"> </FormComponent>
+          <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
+
+          <FormSectionTitle title="Photo Info"></FormSectionTitle>
+
           <Form.Row style={{marginBottom:"30px"}}>
 
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control id="firstName" className="inputfield" type="text" placeholder="First Name" required size="lg"/>
-              </Col>
-
-          </Form.Row>
-          <Form.Row style={{marginBottom:"30px"}}>
-
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control id="lastName" className="inputfield" type="text" placeholder="Last Name" required size="lg"/>
-              </Col>
-          </Form.Row>
-          <Form.Row style={{marginBottom:"30px"}}>
-
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control id="userEmail"  className="inputfield"type="text" placeholder="Email" required size="lg"/>
+                <Form.Control id="description" as ="textArea" className="inputfield" type="text" placeholder="Description" size="lg"/>
               </Col>
           </Form.Row>
 
-
-
-        <FormSectionTitle title="Photo Info"></FormSectionTitle>
-
-        <Form.Row style={{marginBottom:"30px"}}>
-
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <Form.Control id="description" as ="textArea" className="inputfield" type="text" placeholder="Description" size="lg"/>
-            </Col>
-        </Form.Row>
-
+          <FormComponent formId="location" formClassName="inputfield_form" placeHolder="Location"> </FormComponent>
+          <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
 
           <Form.Row style={{marginBottom:"30px"}}>
 
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control id="location" className="formContol" type="text" placeholder="Location" required size="lg"/>
-              </Col>
-
-          </Form.Row>
-          <Form.Row style={{marginBottom:"30px"}}>
-
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control id="date" type="text" placeholder="Date" required size="lg"/>
-              </Col>
-          </Form.Row>
-
-          <Form.Row style={{marginBottom:"30px"}}>
-
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-              {/* <Form.File.Input required  onChange={this.SkyV1} ref={
-                fileupload => {inputFile = fileupload;} */}
                 <Form.File.Input required  onChange={this.onChange} id="subjectFile" bsPrefix='form-file-input' name="skyPhoto" />
                 <p className="hint" >File must be .jpg or .png and under 1MB</p>
               </Col>
