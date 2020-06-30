@@ -1,0 +1,111 @@
+.mainSection_First_Row {
+    margin-top: 50px;
+    margin-bottom:30px;
+    font-family: "adonis-web";
+}
+.mainSection_Row {
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family: "adonis-web";
+}
+.mainSection_Important_Row {
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: normal;
+    color: #707070;
+    font-size: 20px;
+}
+.mainSection_First_Row_ch {
+    margin-top: 50px;
+    margin-bottom:30px;
+    font-family: "adonis-web";
+}
+.mainSection_Row_ch {
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family: "adonis-web";
+}
+.mainSection_Important_Row_ch {
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: normal;
+    color: #707070;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .mainSection_First_Row {
+        font-size: 42px;
+        margin-top:50px;
+        margin-bottom:10px;
+    }
+    .mainSection_Row {
+        font-size: 42px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .mainSection_Important_Row {
+        font-size: 40px;
+        margin-top:10px;
+        margin-bottom:10px;
+    } 
+    .mainSection_First_Row_ch {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom:10px;
+        
+    }
+    .mainSection_Row_ch {
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .mainSection_Important_Row_ch {
+        font-family: "sofia-pro", Sans-serif;
+        font-weight: normal;
+        color: #707070;
+        font-size: 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .mainSection_First_Row {
+        margin-top: 50px;
+        margin-bottom:30px;
+        font-size: 23px;
+    }
+    .mainSection_Row {
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size: 23px;
+    }
+    .mainSection_Important_Row {
+        font-size: 20px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .mainSection_First_Row_ch {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-bottom:10px;
+    }
+    .mainSection_Row_ch {
+        font-size: 16px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .mainSection_Important_Row_ch {
+        font-family: "sofia-pro", Sans-serif;
+        font-weight: normal;
+        color: #707070;
+        font-size: 20px;
+    }
+}
+

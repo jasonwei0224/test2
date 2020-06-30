@@ -7,7 +7,9 @@ import '../../sky_v1.css';
 import './IAmDifferentForm-ch.css'
 import Footer from '../../footer-temp';
 import fire from '../../firebase/file';
-
+import ButtonCh from "../../modules/ButtonCh"
+import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
+import MainContents_First_ch from "../../modules/MainContents_First_ch";
 
 class IAmDifferentForm extends Component {
 
@@ -140,18 +142,10 @@ class IAmDifferentForm extends Component {
           </Row>
 
           <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
-          <Row className="mainContents" style={{marginTop:"100px"}}>
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}} xs={{span:10, offset:1}}className="mainContent">
-              <p className="contentsInParagraph"> 本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。
-              </p> <br />
-            </Col>
-          </Row>
-
-          <Row>
-           <Col  xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}
-             style = {{backgroundColor: "#D9C739", marginBottom:"2%", paddingTop:"0.5%", paddingBottom:"0.5%",fontWeight:"bold"}} className="formSectionTitle_idf_ch">照片資訊</Col>
-          </Row>
-
+          <MainContents_First_ch contents="本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。"></MainContents_First_ch>
+          
+          <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
+          
           <Form encType="multipart/form-data">
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
@@ -217,18 +211,8 @@ class IAmDifferentForm extends Component {
               </Col>
             </Form.Row>
 
-            <Row>
-         
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button onClick={this.submitForm} variant="primary" type="submit" bsPrefix="uploadButton_idf_ch">送出</Button>
-              </Col>
-            </Row>
-
-            <Row>
-              <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                <Button variant="primary" type="submit" bsPrefix="mobileSharebutton_idf_ch">分享給朋友</Button>
-              </Col>
-            </Row>
+            <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
+           
            
           </Form>
 

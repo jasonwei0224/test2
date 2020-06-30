@@ -1,0 +1,64 @@
+.uploadBtn {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #D9C739;
+    color: #0C3866;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+    width:80%;
+}
+.mobileShareBtn {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #BE0027;
+    color: #0C3866;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+    width:80%;
+    background-color:#BE0027;
+    color: white;
+}
+.uploadBtnLong {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #D9C739;
+    color: #0C3866;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 15px;
+    width:80%;
+}
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .uploadBtnLong {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .mobileShareBtn {
+        display:none;
+    }
+}
+
