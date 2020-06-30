@@ -17,6 +17,7 @@ import MainContents_Important from "./modules/MainContents_Important"
 import FormComponent from "./modules/formComponent"
 import IncompleteFormModal from "./incompleteFormModal";
 import SuccessModal from './successModal';
+import InvalidFileModal from './invalidFileModal';
 
 class SkyV1 extends Component {
 
@@ -259,7 +260,8 @@ class SkyV1 extends Component {
           </Modal.Footer>
         </Modal> */}
 
-        <Modal show={this.state.showInvalidFile}>
+        <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
+        {/* <Modal show={this.state.showInvalidFile}>
           <Modal.Header>Invalid file type/size</Modal.Header>
           <Modal.Body>
             File must be .jpg or .png and under 1MB
@@ -267,7 +269,7 @@ class SkyV1 extends Component {
           <Modal.Footer>
             <Button className="btnCancelInModal"  onClick={()=>this.invalidFile()} >Close</Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
 
         </Container>
       <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
