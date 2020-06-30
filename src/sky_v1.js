@@ -16,6 +16,7 @@ import MainContents_Middle from "./modules/MainContents_Middle"
 import MainContents_Important from "./modules/MainContents_Important"
 import FormComponent from "./modules/formComponent"
 import IncompleteFormModal from "./incompleteFormModal";
+import SuccessModal from './successModal';
 
 class SkyV1 extends Component {
 
@@ -247,7 +248,8 @@ class SkyV1 extends Component {
               </Modal.Footer>
             </Modal> */}
 
-        <Modal show={this.state.show}>
+        <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
+        {/* <Modal show={this.state.show}>
           <Modal.Header>Success</Modal.Header>
           <Modal.Body>
             Thanks for submitting!
@@ -255,7 +257,7 @@ class SkyV1 extends Component {
           <Modal.Footer>
             <Button className="btnCancelInModal"  onClick={()=>this.handleModal()} >Close</Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
 
         <Modal show={this.state.showInvalidFile}>
           <Modal.Header>Invalid file type/size</Modal.Header>
