@@ -24,6 +24,12 @@
     margin-bottom:10px;
     font-family: "adonis-web";
 }
+.mainSection_Important_Row_ch {
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: normal;
+    color: #707070;
+    font-size: 20px;
+}
 
 @media screen and (max-width: 767px) {
 
@@ -55,6 +61,12 @@
         font-size: 30px;
         margin-top:10px;
         margin-bottom:10px;
+    }
+    .mainSection_Important_Row_ch {
+        font-family: "sofia-pro", Sans-serif;
+        font-weight: normal;
+        color: #707070;
+        font-size: 30px;
     }
     
 }
@@ -89,6 +101,11 @@
         margin-top:10px;
         margin-bottom:10px;
     }
-    
+    .mainSection_Important_Row_ch {
+        font-family: "sofia-pro", Sans-serif;
+        font-weight: normal;
+        color: #707070;
+        font-size: 20px;
+    }
 }
 
