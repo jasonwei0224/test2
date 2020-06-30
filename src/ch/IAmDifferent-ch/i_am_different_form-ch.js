@@ -10,6 +10,9 @@ import fire from '../../firebase/file';
 import ButtonCh from "../../modules/ButtonCh"
 import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch";
+import IncompleteFormModal from "../../incompleteFormModal";
+import SuccessModal from '../../successModal';
+import InvalidFileModal from '../../invalidFileModal';
 
 class IAmDifferentForm extends Component {
 
@@ -215,37 +218,11 @@ class IAmDifferentForm extends Component {
            
            
           </Form>
+          
+        <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
+        <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
+        <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
 
-          <Modal show={this.state.show2}>
-            <Modal.Header>Incomplete Form</Modal.Header>
-            <Modal.Body>
-              Please fill out all fields
-            </Modal.Body>
-            <Modal.Footer>
-              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
-
-            </Modal.Footer>
-          </Modal>
-
-      <Modal show={this.state.show}>
-        <Modal.Header>Success</Modal.Header>
-        <Modal.Body>
-          Thanks for submitting!
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
-
-      <Modal show={this.state.showInvalidFile}>
-        <Modal.Header>Invalid file type/size</Modal.Header>
-        <Modal.Body>
-          File must be .jpg or .png and under 1MB
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
     </Container>
     <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"/>
   </div>

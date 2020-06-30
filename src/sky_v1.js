@@ -238,38 +238,8 @@ class SkyV1 extends Component {
         </Form>
 
         <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
-        {/* <Modal show={this.state.show2}>
-              <Modal.Header>Incomplete Form</Modal.Header>
-              <Modal.Body>
-                Please fill out all fields
-              </Modal.Body>
-              <Modal.Footer>
-                <Button className="btnCancelInModal"  onClick={()=>this.handleModal2()} >Close</Button>
-
-              </Modal.Footer>
-            </Modal> */}
-
         <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
-        {/* <Modal show={this.state.show}>
-          <Modal.Header>Success</Modal.Header>
-          <Modal.Body>
-            Thanks for submitting!
-          </Modal.Body>
-          <Modal.Footer>
-            <Button className="btnCancelInModal"  onClick={()=>this.handleModal()} >Close</Button>
-          </Modal.Footer>
-        </Modal> */}
-
         <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
-        {/* <Modal show={this.state.showInvalidFile}>
-          <Modal.Header>Invalid file type/size</Modal.Header>
-          <Modal.Body>
-            File must be .jpg or .png and under 1MB
-          </Modal.Body>
-          <Modal.Footer>
-            <Button className="btnCancelInModal"  onClick={()=>this.invalidFile()} >Close</Button>
-          </Modal.Footer>
-        </Modal> */}
 
         </Container>
       <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

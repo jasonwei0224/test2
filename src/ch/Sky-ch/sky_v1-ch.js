@@ -13,7 +13,11 @@ import Second_Title_ch from '../../modules/Second_TitleCh';
 import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch"
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch"
-import FormComponent from "../../modules/FormComponent"
+import FormComponent from "../../modules/formComponent"
+import IncompleteFormModal from "../../incompleteFormModal";
+import SuccessModal from '../../successModal';
+import InvalidFileModal from '../../invalidFileModal';
+
 
 class SkyV1_ch extends Component {
 
@@ -207,36 +211,11 @@ class SkyV1_ch extends Component {
          
 
       </Form>
-      <Modal show={this.state.show2}>
-            <Modal.Header>Incomplete Form</Modal.Header>
-            <Modal.Body>
-              Please fill out all fields
-            </Modal.Body>
-            <Modal.Footer>
-              <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal2()} >Close</Button>
 
-            </Modal.Footer>
-          </Modal>
+      <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
+      <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
+      <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
 
-      <Modal show={this.state.show}>
-        <Modal.Header>Success</Modal.Header>
-        <Modal.Body>
-          Thanks for submitting!
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.handleModal()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
-
-      <Modal show={this.state.showInvalidFile}>
-        <Modal.Header>Invalid file type/size</Modal.Header>
-        <Modal.Body>
-          File must be .jpg or .png and under 1MB
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submit_button" onClick={()=>this.invalidFile()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
       </Container>
       <Footer/>
     </div>

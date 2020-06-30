@@ -10,9 +10,12 @@ import fire from '../firebase/file';
 import different_img from "../assets/Different.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
-import FormComponent from "../modules/FormComponent"
+import FormComponent from "../modules/formComponent"
 import MainContents_First from "../modules/MainContents_First"
 import MainContents_Middle from "../modules/MainContents_Middle"
+import IncompleteFormModal from "../incompleteFormModal";
+import SuccessModal from '../successModal';
+import InvalidFileModal from '../invalidFileModal';
 
 
 class IAmDifferentForm extends Component {
@@ -237,36 +240,10 @@ class IAmDifferentForm extends Component {
 
           </Form>
 
-          <Modal show={this.state.show2}>
-            <Modal.Header>Incomplete Form</Modal.Header>
-            <Modal.Body>
-              Please fill out all fields
-            </Modal.Body>
-            <Modal.Footer>
-              <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.handleModal2()} >Close</Button>
+      <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
+      <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
+      <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
 
-            </Modal.Footer>
-          </Modal>
-
-      <Modal show={this.state.show}>
-        <Modal.Header>Success</Modal.Header>
-        <Modal.Body>
-          Thanks for submitting!
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.handleModal()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
-
-      <Modal show={this.state.showInvalidFile}>
-        <Modal.Header>Invalid file type/size</Modal.Header>
-        <Modal.Body>
-          File must be .jpg or .png and under 1MB
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btnModal" bsPrefix="submitButton" onClick={()=>this.invalidFile()} >Close</Button>
-        </Modal.Footer>
-      </Modal>
 
     </Container>
     <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
