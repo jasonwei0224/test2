@@ -1,9 +1,10 @@
 p {
   font-family: 'adonis-web';
 }
-
+/* * {
+  overflow-x: hidden;
+} */
 .mainImage {
-  padding: 0;
   overflow: hidden;
 }
 
@@ -11,12 +12,22 @@ p {
   margin-top: 100px;
   margin-bottom:50px;
 }
-
+.slick-slider {
+  overflow-x: hidden;
+  height:auto;
+  overflow-y:hidden;
+}
+.slick-dots {
+  position:initial;
+  width:100%;
+  height:auto;
+}
 
 @media screen and (max-width: 767px) {
 }
 
 @media screen and (max-width: 768px) {
+
 }
 
 @media screen and (min-width: 992px) {
