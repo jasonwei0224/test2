@@ -26,7 +26,8 @@ class IAmDifferentForm extends Component {
       file: null,
       show:false,
       show2:false,
-      showInvalidFile:false
+      showInvalidFile:false,
+      consentChecked: false
     }
     this.submitForm = this.submitForm.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -34,6 +35,13 @@ class IAmDifferentForm extends Component {
     this.handleModal2=this.handleModal2.bind(this);
     this.cancelCourse=this.cancelCourse.bind(this);
     this.invalidFile=this.invalidFile.bind(this);
+    this.handleConsentCheckBox=this.handleConsentCheckBox(this);
+  }
+
+  handleConsentCheckBox(e) {
+
+    // this.setState({consentChecked:!this.state.consentChecked});
+    console.log("clicked");
   }
 
   handleModal() {
@@ -68,12 +76,14 @@ class IAmDifferentForm extends Component {
     var subjectCityLength=document.getElementById('subjectCity').value.length;
     var subjectFile=document.getElementById('subjectFile').value.length;
     var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
+    
+    var checkbox=document.getElementById('iamdiff-consent-en').checked;
+    console.log(checkbox);
     if(result==0) {
       return true;
     }else {
       return false;
     }
-
   }
 
   onChange(e){
@@ -128,7 +138,7 @@ class IAmDifferentForm extends Component {
       if(data==="valid") {
         this.handleModal();
         let messageRef=fire.database().ref('formsTest').orderByKey().limitToLast(100);
-        fire.database().ref('formsTest').push(formInputs);
+        // fire.database().ref('formsTest').push(formInputs);
       } else if(data==="invalid") {
         this.invalidFile();
       }
@@ -186,7 +196,7 @@ class IAmDifferentForm extends Component {
 
             <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-            <FormConsent inputId="iamdiff-consent"></FormConsent>
+            <FormConsent inputId="iamdiff-consent-en" ></FormConsent>
 
 
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
