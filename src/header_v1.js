@@ -74,7 +74,7 @@ export default class HeaderV1 extends React.Component {
 
   render(){
     return (
-    <div id="header" style={{
+    <div id="headerFinal" style={{
       position: this.state.position,
       top: this.state.top,
       width: this.state.width,
@@ -118,17 +118,21 @@ export default class HeaderV1 extends React.Component {
               :
               <>
                 <Nav.Link bsPrefix="navitemCh" href="/">首頁</Nav.Link>
+                <div className="borderClass">
                   <NavDropdown bsPrefix="navitemCh-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">活動足跡</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">藝術方針</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">媒體資訊</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">我們團隊</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">活動足跡</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">藝術方針</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">媒體資訊</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">我們團隊</NavDropdown.Item>
                   </NavDropdown>
+                </div>
                 <Nav.Link bsPrefix="navitemCh"  href="#">音樂饗宴</Nav.Link>
+                <div className="borderClass">
                 <NavDropdown bsPrefix="navitemCh-dropdown" title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#sky-ch">天空</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdown-item" href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
+                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="#sky-ch">天空</NavDropdown.Item>
+                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
                 </NavDropdown>
+                </div>
                 <Nav.Link bsPrefix="navitemCh" href="#">希望講堂</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">我們藝樣</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">友誼廚房</Nav.Link>
@@ -136,7 +140,7 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitemCh" href="#">電影櫥窗</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">贊助單位</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">義工專區</Nav.Link>
-                <Nav.Link className="langNavLink"><img className="langIcon" src={en} onClick={this.languageBtnListener}/></Nav.Link>
+                <Nav.Link className="langNavLinkCh"><img className="langIconCh" src={en} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               }
 
