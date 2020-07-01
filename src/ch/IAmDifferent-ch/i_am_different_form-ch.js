@@ -65,7 +65,7 @@ class IAmDifferentForm extends Component {
     var subjectOccupationLength=document.getElementById('subjectOccupation').value.length;
     var subjectEthnicityLength=document.getElementById('subjectEthnicity').value.length;
     var subjectCityLength=document.getElementById('subjectCity').value.length;
-    var subjectFile=document.getElementById('subjectFile').value;
+    var subjectFile=document.getElementById('subjectFile').value.length;
     var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
     console.log(result);
     if(result==0) {
@@ -182,7 +182,7 @@ class IAmDifferentForm extends Component {
 
 
 
-            <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
+            <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
             <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
 

@@ -67,7 +67,7 @@ class SkyV1_ch extends Component {
     var descriptionLength=document.getElementById('description').value.length;
     var locationLength=document.getElementById('location').value.length;
     var dateLength=document.getElementById('date').value.length;
-    var subjectFile=document.getElementById('subjectFile').value
+    var subjectFile=document.getElementById('subjectFile').value.length;
 
     var result=firstNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
 
@@ -182,7 +182,7 @@ class SkyV1_ch extends Component {
       <FormComponent formId="location" formClassName="inputfield_form" placeHolder="拍攝地點"></FormComponent>
       <FormComponent formId="date" formClassName="inputfield_form" placeHolder="拍攝日期"></FormComponent>
 
-      <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
+      <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
       <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
 
