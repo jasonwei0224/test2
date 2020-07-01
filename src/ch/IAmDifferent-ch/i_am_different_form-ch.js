@@ -9,7 +9,7 @@ import fire from '../../firebase/file';
 import ButtonCh from "../../modules/ButtonCh"
 import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch";
-import FormComponent from "../../modules/FormComponent"
+import FormComponent from "../../modules/formComponent"
 import FormFile from "../../modules/FormFile"
 import FormConsent_ch from "../../modules/FormConsent_ch"
 import IncompleteFormModal from "../../incompleteFormModal";
@@ -148,9 +148,9 @@ class IAmDifferentForm extends Component {
 
           <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
           <MainContents_First_ch contents="本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起參與向世界各地的抗疫英雄致敬活動。"></MainContents_First_ch>
-          
+
           <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
-          
+
           <Form encType="multipart/form-data">
 
           <FormComponent formId="senderFullName" formClassName="inputfield_form" placeHolder="上傳者 英文姓名"></FormComponent>
@@ -159,7 +159,7 @@ class IAmDifferentForm extends Component {
           <FormComponent formId="subjectFirstName" formClassName="inputfield_form" placeHolder="主角 英文名子"></FormComponent>
 
 
-           
+
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'inputfield_select_ch' className=  'inputfield_select_ch' id="subjectOccupation" as="select" >
@@ -180,19 +180,19 @@ class IAmDifferentForm extends Component {
             <FormComponent formId="subjectEthnicity" formClassName="inputfield_form" placeHolder="族裔 (英文)"></FormComponent>
             <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="城市/國家"></FormComponent>
 
-          
+
 
             <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
 
             <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
 
-            
+
 
             <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
-           
-           
+
+
           </Form>
-          
+
         <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
         <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
         <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />

@@ -13,7 +13,7 @@ import FormSectionTitle from "./modules/FormSection_Title"
 import MainContents_First from "./modules/MainContents_First"
 import MainContents_Middle from "./modules/MainContents_Middle"
 import MainContents_Important from "./modules/MainContents_Important"
-import FormComponent from "./modules/FormComponent"
+import FormComponent from "./modules/formComponent"
 import FormConsent from "./modules/FormConsent"
 import FormFile from "./modules/FormFile"
 import IncompleteFormModal from "./incompleteFormModal";
@@ -176,7 +176,7 @@ class SkyV1 extends Component {
                 the time of day. These lanterns will create a whole new dynamic
                 look and feel through the use of LED lights in the evenings."></MainContents_Middle>
 
-                
+
           <MainContents_Middle contents="As the province is working to reopen the economy in a safe manner
                 and more and more people are getting back to a new normal, please
                 follow all public health guidelines to protect yourself and others
@@ -192,10 +192,10 @@ class SkyV1 extends Component {
 
 
         <Second_Title secondTitle="Under the same sky project"></Second_Title>
- 
+
         <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
 
-        
+
         <FormSectionTitle title="PHOTOGRAPHER"></FormSectionTitle>
 
         <Form encType="multipart/form-data">
@@ -216,7 +216,7 @@ class SkyV1 extends Component {
           <FormComponent formId="location" formClassName="inputfield_form" placeHolder="Location"> </FormComponent>
           <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
 
-        
+
 
 
           <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
@@ -242,4 +242,3 @@ class SkyV1 extends Component {
 }
 
 export default SkyV1;
-

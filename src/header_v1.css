@@ -30,7 +30,7 @@ a.navitem-dropdown{
   font-size: 14px;
   font-family: "sofia-pro", Sans-serif;
   text-align: center;
-  
+
 
 }
 div.borderClass {
@@ -42,7 +42,7 @@ div.borderClass {
 .dropdown-item {
   font-weight: normal;
   font-size: 14px;
-  font-family: "sofia-pro";
+  font-family: "sofia-pro", Sans-serif;
   color: white !important;
   text-align: left !important;
   background-color: #BE0027 !important;
@@ -73,6 +73,12 @@ div.dropdown-menu{
 .dropdown-item:hover{
   background: white !important;
   color:black!important;
+  text-decoration: none;
+}
+.dropdownCh-item:hover{
+  background: white !important;
+  color:black!important;
+  text-decoration: none;
 }
 
 .navitemCh-dropdown{
@@ -110,7 +116,7 @@ a.langNavLink{
     height:60px !important;
   }
   nav.navbar{
-    margin-left: 0px; 
+    margin-left: 0px;
     text-align: center;
   }
   a.navitem{
@@ -121,6 +127,7 @@ a.langNavLink{
     margin-bottom: 10px;
     font-size:30px;
     padding-bottom: 15px;
+    font-weight: bold;
   }
 
 
@@ -131,20 +138,23 @@ a.langNavLink{
     margin-top: 10px;
     margin-bottom:10px;
     font-size:30px !important;
+    font-weight: bold!important;
   }
   a.navitemCh {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom:15px;
+    font-weight: bold;
   }
   .navitemCh-dropdown{
     font-size:30px !important;
+    font-weight: bold !important;
   }
   .dropdown-item {
-    font-weight: normal;
+    font-weight: bold !important;
     font-size: 30px !important;
-    font-family: "sofia-pro";
+    font-family: "sofia-pro", Sans-serif !important;
     color: white !important;
     text-align: center !important;
     background-color: #BE0027 !important;
@@ -157,6 +167,7 @@ a.langNavLink{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: bold!important;
 
     /* font-family: "sofia-pro";
     color: white !important;
@@ -180,7 +191,7 @@ a.langNavLink{
     width:100%;
     height:100%;
     margin-right: 0px;
-  } 
+  }
   a.langNavLinkCh{
     padding-top: 0px !important;
     width:40px;
@@ -214,9 +225,11 @@ a.langNavLink{
     padding-top:2.5px;
     padding-bottom: 3px;
     margin-bottom: 0px;
+    font-weight: normal!important;
   }
   a.navitem-dropdown {
     font-size:14px !important;
+    font-weight: normal !important;
   }
   img.langIcon{
     width:90%;
@@ -228,11 +241,11 @@ a.langNavLink{
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
-  
+
   }
   div.borderClass {
     border-bottom:0px solid white;
-  
+
   }
   .dropdown-item {
     font-size: 14px !important;
@@ -240,6 +253,7 @@ a.langNavLink{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight:normal !important;
   }
   .dropdownCh-item {
     font-size: 14px;
@@ -247,27 +261,30 @@ a.langNavLink{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight:normal !important;
   }
   a.navitemCh {
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-top: -2px;
+    font-weight:normal !important;
   }
   .navitemCh-dropdown{
     font-size:14px !important;
-    
+    font-weight:normal !important;
+
   }
 }
 
 
-/* 
+/*
 
 a.dropdown-toggle{
   margin-right: 0px;
   font-weight: 540;
 }
-  
+
 
 #headerFinal {
   font-weight: bold;
@@ -339,7 +356,7 @@ a.dropdown-toggle{
 
 
 
-  
+
 
 
 
@@ -366,7 +383,7 @@ a.dropdown-toggle{
     font-size:30px !important;
     margin-top: 5px;
     margin-bottom: 5px;
-  
+
   }
   a.dropdown-item {
     font-size:30px !important;
@@ -376,7 +393,7 @@ a.dropdown-toggle{
   }
   div.dropdown.nav-item {
     border-bottom-style: solid !important;
-    
+
     border-bottom: 0.5px;
     border-color:white;
   }

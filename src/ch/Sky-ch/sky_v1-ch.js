@@ -13,7 +13,7 @@ import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch"
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch"
 import MainContents_Important_ch from "../../modules/MainContents_Important_ch"
-import FormComponent from "../../modules/FormComponent"
+import FormComponent from "../../modules/formComponent"
 import FormFile from "../../modules/FormFile"
 import FormConsent_ch from "../../modules/FormConsent_ch"
 import IncompleteFormModal_ch from "../../incompleteFormModal_ch";
@@ -160,14 +160,14 @@ class SkyV1_ch extends Component {
       <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重讓人心惶惶；我們抬頭望望藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤?"></MainContents_Important_ch>
       <MainContents_Important_ch contents=" 我們都不一樣，我們也都一樣 !"></MainContents_Important_ch>
       <MainContents_Important_ch contents="我們都不一樣，我們也都一樣 !加拿大台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【下午三點】的天空，與世界一起反歧視、追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
-    
+
       <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
 
       <Form encType="multipart/form-data">
-      
+
         <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文姓名"></FormComponent>
         <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="電子郵件"></FormComponent>
-     
+
         <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
 
 
@@ -181,14 +181,14 @@ class SkyV1_ch extends Component {
 
       <FormComponent formId="location" formClassName="inputfield_form" placeHolder="拍攝地點"></FormComponent>
       <FormComponent formId="date" formClassName="inputfield_form" placeHolder="拍攝日期"></FormComponent>
-     
+
       <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
 
       <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
-   
-        
+
+
         <ButtonCh onclick={this.submitForm} title="送出"></ButtonCh>
-         
+
 
       </Form>
 
@@ -205,4 +205,3 @@ class SkyV1_ch extends Component {
 }
 
 export default SkyV1_ch;
-
