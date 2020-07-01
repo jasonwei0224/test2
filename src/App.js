@@ -27,7 +27,7 @@ function App() {
   return (
       <div className="App">
         <HashRouter>
-        <img src={logo} id="logo"></img>
+          <a href="https://torontotaiwanfest.ca/"><img src={logo} id="logo" ></img></a>
         {/* <hr id="mobileLine"/> */}
         <HeaderV1 />
           <Route path="/" exact component={Home} />

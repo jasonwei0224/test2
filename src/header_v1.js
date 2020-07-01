@@ -81,13 +81,13 @@ export default class HeaderV1 extends React.Component {
       zIndex: this.state.zIndex,
       }}>
       <Container fluid bsPrefix="container">
-        <Navbar expand="lg">
+        <Navbar expand="xl">
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav_bar_toggle_icon"/>
           <Navbar.Collapse>
             <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}>
               {this.state.english?
               <>
-                <Nav.Link bsPrefix="navitem" href="/">HOME</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="https://torontotaiwanfest.ca/">HOME</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" renderMenuOnMount={true}>
                     <div className="dropdownbg">
