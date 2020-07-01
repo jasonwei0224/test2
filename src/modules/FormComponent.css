@@ -1,9 +1,9 @@
 .inputfield_form {
     margin-bottom: 30px;
-    width:80%;
-    height:100px;
-}
+    /* width:80%; */
+    height:100px !important;
 
+}
 ::-webkit-input-placeholder {
     font-size: 25px;
 }
@@ -23,11 +23,11 @@
 
 @media only screen and (min-width: 768px) {
 
-    .inputfield_form {
-        margin-bottom: 30px;
-        width:80%;
-        height:30px;
-    }
+  .inputfield_form {
+      margin-bottom: 30px;
+      /* width:80%; */
+      height:100px !important;
+  }
 
     ::-webkit-input-placeholder {
         font-size: 25px;
@@ -48,11 +48,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-    /* .inputfield_form {
-        margin-bottom: 30px;
-        width:80%;
-        height:30px;
-    } */
+  .inputfield_form {
+      /* margin-bottom: 30px; */
+      /* width:80%; */
+      height:50px !important;
+  }
 
     ::-webkit-input-placeholder {
         font-size: 25px;
