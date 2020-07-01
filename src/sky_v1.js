@@ -67,7 +67,7 @@ class SkyV1 extends Component {
     var descriptionLength=document.getElementById('description').value.length;
     var locationLength=document.getElementById('location').value.length;
     var dateLength=document.getElementById('date').value.length;
-    var subjectFile=document.getElementById('subjectFile').value
+    var subjectFile=document.getElementById('subjectFile').value.length;
 
     var result=firstNameLength*lastNameLength*userEmailLength*descriptionLength*locationLength*dateLength*subjectFile;
 
