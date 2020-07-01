@@ -9,7 +9,7 @@
     font-size: 45px;
     font-weight: bold;
     font-family: "sofia-pro", Sans-serif;
-    } 
+    }
 
 
 @media screen and (max-width: 767px) {
@@ -28,7 +28,7 @@
         font-size: 40px;
         font-weight: bold;
         font-family: "sofia-pro", Sans-serif;
-    } 
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -48,6 +48,6 @@
         font-size: 20px;
         font-weight: bold;
         font-family: "sofia-pro", Sans-serif;
-    } 
+        margin-bottom: 20px;
+    }
 }
-
