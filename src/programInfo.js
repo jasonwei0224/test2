@@ -5,8 +5,7 @@ import './programInfo.css'
 
 const ProgramInfo = (props) => {
     return (
-        <div>
-            {/*<Row className="borderLine"></Row>*/}
+        <div style={{marginBottom:"100px"}}>
             <Row className="PI-contents">
                 <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:10, offset:1}}  xs={{span:8, offset:2}}>
                     <Row><p className="PI-subtitle">{props.subtitle}</p></Row>

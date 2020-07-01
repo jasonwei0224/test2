@@ -1,0 +1,33 @@
+.hintFormFile {
+    font-size:20px;
+}
+.form-file-input{
+    font-size: 25px;
+  }
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hintFormFile {
+        font-size: 40px;
+    }
+    .formFileInput{
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .hintFormFile {
+        font-size:20px;
+    }
+    .formFileInput{
+        font-size: 25px;
+    }
+}
+

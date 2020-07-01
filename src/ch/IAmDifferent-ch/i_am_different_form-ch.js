@@ -2,14 +2,16 @@ import React, {Component} from 'react';
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import ProgramInfo_ch from "../programInfo-ch"
 import different_img from "../../assets/Different.jpg";
-// import './people_and_mask.css'
-import '../../sky_v1.css';
+
 import './IAmDifferentForm-ch.css'
 import Footer from '../../footer-temp';
 import fire from '../../firebase/file';
 import ButtonCh from "../../modules/ButtonCh"
 import FormSectionTitle_ch from "../../modules/FormSection_Title_ch"
 import MainContents_First_ch from "../../modules/MainContents_First_ch";
+import FormComponent from "../../modules/FormComponent"
+import FormFile from "../../modules/FormFile"
+import FormConsent_ch from "../../modules/FormConsent_ch"
 import IncompleteFormModal from "../../incompleteFormModal";
 import SuccessModal from '../../successModal';
 import InvalidFileModal from '../../invalidFileModal';
@@ -150,29 +152,17 @@ class IAmDifferentForm extends Component {
           <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
           
           <Form encType="multipart/form-data">
+
+          <FormComponent formId="senderFullName" formClassName="inputfield_form" placeHolder="上傳者 英文姓名"></FormComponent>
+          <FormComponent formId="senderCity" formClassName="inputfield_form" placeHolder="城市/ 國家"></FormComponent>
+          <FormComponent formId="senderEmail" formClassName="inputfield_form" placeHolder="電子郵件"></FormComponent>
+          <FormComponent formId="subjectFirstName" formClassName="inputfield_form" placeHolder="主角 英文名子"></FormComponent>
+
+
+           
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderFullName" placeholder="上傳者 英文姓名" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text"  id="senderCity" placeholder="城市/ 國家" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="email" id="senderEmail" placeholder="電子郵件" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield'className=  'inputfield' type="text"  id="subjectFirstName" placeholder="主角 英文名子" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                  <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' id="subjectOccupation" as="select" >
+                  <Form.Control bsCustomPrefix = 'inputfield_select_ch' className=  'inputfield_select_ch' id="subjectOccupation" as="select" >
                     <option>醫生</option>
                     <option>消防員</option>
                     <option>醫療技術人員</option>
@@ -186,33 +176,17 @@ class IAmDifferentForm extends Component {
 
                 </Col>
             </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectEthnicity" placeholder="族裔 (英文)" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectCity" placeholder="城市/國家" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} id="subjectFile" required bsPrefix='form-file-input' name="subjectPhoto"/>
-            <p id="hint" >File must be .jpg or .png and under 1MB</p>
-              </Col>
-            </Form.Row>
 
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:1, offset:2}} lg={{span:1, offset:1}} xs={{span:1, offset:1}}>
-                <Form.Check aria-label="option 1"/>
-                <input type="checkbox" class="custom-control-input" id="checkbox-3"></input>
-              </Col>
+            <FormComponent formId="subjectEthnicity" formClassName="inputfield_form" placeHolder="族裔 (英文)"></FormComponent>
+            <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="城市/國家"></FormComponent>
 
-              <Col xl={{span:9, offset:0}} lg={{span:10, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-                <div className="formConsent">"我同意多倫多台灣文化節將我上傳的照片作為「我和你相同，就是我們都不同」節目的 內容與相關宣傳使用。"</div>
-              </Col>
-            </Form.Row>
+          
+
+            <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
+
+            <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
+
+            
 
             <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
            

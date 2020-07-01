@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import ImgSlider from './img_slider';
 import ImageSlider from './imageSlider';
 import ProgramInfo from "./programInfo";
 import {Link} from 'react-router-dom'
@@ -14,7 +13,9 @@ import FormSectionTitle from "./modules/FormSection_Title"
 import MainContents_First from "./modules/MainContents_First"
 import MainContents_Middle from "./modules/MainContents_Middle"
 import MainContents_Important from "./modules/MainContents_Important"
-import FormComponent from "./modules/formComponent"
+import FormComponent from "./modules/FormComponent"
+import FormConsent from "./modules/FormConsent"
+import FormFile from "./modules/FormFile"
 import IncompleteFormModal from "./incompleteFormModal";
 import SuccessModal from './successModal';
 import InvalidFileModal from './invalidFileModal';
@@ -195,7 +196,7 @@ class SkyV1 extends Component {
         <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
 
         
-        <FormSectionTitle title="TEST"></FormSectionTitle>
+        <FormSectionTitle title="PHOTOGRAPHER"></FormSectionTitle>
 
         <Form encType="multipart/form-data">
 
@@ -203,7 +204,7 @@ class SkyV1 extends Component {
           <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="Last Name"> </FormComponent>
           <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
 
-          <FormSectionTitle title="Photo Info"></FormSectionTitle>
+          <FormSectionTitle title="PHOTO INFO"></FormSectionTitle>
 
           <Form.Row style={{marginBottom:"30px"}}>
 
@@ -215,23 +216,13 @@ class SkyV1 extends Component {
           <FormComponent formId="location" formClassName="inputfield_form" placeHolder="Location"> </FormComponent>
           <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
 
-          <Form.Row style={{marginBottom:"30px"}}>
+        
 
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.File.Input required  onChange={this.onChange} id="subjectFile" bsPrefix='form-file-input' name="skyPhoto" />
-                <p className="hint" >File must be .jpg or .png and under 1MB</p>
-              </Col>
-          </Form.Row>
-          <Form.Row style={{marginBottom:"30px"}}>
-            <Col xl={{span:1, offset:2}} lg={{span:1, offset:1}} xs={{span:1, offset:1}}>
-              <Form.Check aria-label="option 1"/>
-              <input type="checkbox" class="custom-control-input" id="checkbox-3" checked="" ></input>
-            </Col>
 
-            <Col xl={{span:7, offset:0}} lg={{span:9, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-              <div className="formConsent" style={{color:"#BE0027"}} >I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project.</div>
-            </Col>
-          </Form.Row>
+          <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
+
+          <FormConsent inputId="checkbox-3"></FormConsent>
+
 
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
 

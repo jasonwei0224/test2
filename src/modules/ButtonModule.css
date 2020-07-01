@@ -8,6 +8,7 @@
     padding-top:2%;
     padding-bottom:2%;
     margin: auto;
+    margin-top:60px;
     font-weight: bold;
     font-size: 30px;
     width:80%;
@@ -42,13 +43,18 @@
     font-size: 15px;
     width:80%;
 }
+
 @media screen and (max-width: 767px) {
 
 }
 
 @media only screen and (min-width: 768px) {
     .uploadBtnLong {
-        font-size: 18px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .uploadBtn {
+        margin-top:30px;
     }
 }
 
@@ -59,6 +65,18 @@
 @media screen and (min-width: 1200px) {
     .mobileShareBtn {
         display:none;
+        
     }
+    .uploadBtn {
+
+        font-size: 18px;
+        margin-top:50px;
+    }
+    .uploadBtnLong {
+
+        font-size: 18px;
+        margin-top:100px;
+    }
+    
 }
 

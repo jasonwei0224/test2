@@ -9,11 +9,11 @@
 
 @media only screen and (min-width: 768px) {
     .formSectionTitle_title {
-        font-size: 25px;
+        font-size: 40px;
         background-color: #D9C739;
     }
     .formSectionTitle_title_ch {
-        font-size: 35px;
+        font-size: 40px;
         background-color: #D9C739;
         font-weight:bold;
     }
