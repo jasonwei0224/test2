@@ -185,7 +185,7 @@ class IAmDifferentForm extends Component {
             <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="City, Country"> </FormComponent>
 
 
-            <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
+            <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
             <FormConsent inputId="checkbox-3"></FormConsent>
 
