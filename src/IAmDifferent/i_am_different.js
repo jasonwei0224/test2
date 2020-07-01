@@ -1,5 +1,4 @@
 import React from "react";
-// import newsletterContactUs from "./newsletterContactUs";
 import CardGame from "./cardGame";
 import styled from "@emotion/styled";
 import different_img from "../assets/Different.jpg";
@@ -16,7 +15,6 @@ import Button2 from "../modules/Button2";
 import Second_Title from "../modules/Second_Title"
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
-
 
 
 

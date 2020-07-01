@@ -126,6 +126,10 @@ a.dropdown-toggle{
     background-color: #007bff !important;
 
   }
+  div.dropdown-menu{
+    background-color: #BE0027!important;
+    border: None;
+  }
 
    /* .dropdown-item::selection{
     color: #BE0027 !important;

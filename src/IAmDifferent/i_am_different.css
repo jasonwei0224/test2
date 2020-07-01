@@ -1,4 +1,3 @@
-
 .image_col{
   padding: 0px;
 }
@@ -10,13 +9,6 @@
 }
 
 
-.mainContent > p { /*should change*/
-  font-family: "adonis-web";
-}
-
-
-
-/* below are mediaquiries */
 /* xs < 768 */
 @media screen and (max-width: 767px) {
 

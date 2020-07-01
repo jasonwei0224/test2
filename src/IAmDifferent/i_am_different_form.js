@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 import ProgramInfo from "../programInfo"
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import './IAmDifferentForm.css'
-// import './i_am_different.css'
-// import '../sky_v1.css';
-// import programInfo from '../programInfo';
 import Footer from '../footer-temp';
 import fire from '../firebase/file';
 import different_img from "../assets/Different.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
-import FormComponent from "../modules/formComponent"
+import FormComponent from "../modules/FormComponent"
+import FormFile from "../modules/FormFile"
+import FormConsent from "../modules/FormConsent"
 import MainContents_First from "../modules/MainContents_First"
 import MainContents_Middle from "../modules/MainContents_Middle"
 import IncompleteFormModal from "../incompleteFormModal";
@@ -158,38 +157,15 @@ class IAmDifferentForm extends Component {
 
           <FormSectionTitle title="INFO ABOUT THE PHOTO"></FormSectionTitle>
       
-
-    
-          
-
           <Form encType="multipart/form-data">
-            {/* <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderFullName" placeholder="Sender Full Name" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="text"  id="senderCity" placeholder="City And Country" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' type="email" id="senderEmail" placeholder="Email" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text"  id="subjectFirstName" placeholder="Subject's First Name" required size="lg" />
-              </Col>
-            </Form.Row> */}
+      
             <FormComponent formId="senderFullName" formClassName="inputfield_form" placeHolder="Sender Full Name"> </FormComponent>
             <FormComponent formId="senderCity" formClassName="inputfield_form" placeHolder="City And Country"> </FormComponent>
             <FormComponent formId="senderEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
             <FormComponent formId="subjectFirstName" formClassName="inputfield_form" placeHolder="Subject's First Name"> </FormComponent>
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                  <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield' id="subjectOccupation" as="select" >
+                  <Form.Control bsCustomPrefix = 'inputfield_selection' className=  'inputfield_selection' id="subjectOccupation" as="select" >
                     <option>Doctor</option>
                     <option>Firefighter</option>
                     <option>Healthcare Technician</option>
@@ -207,35 +183,12 @@ class IAmDifferentForm extends Component {
             <FormComponent formId="subjectEthnicity" formClassName="inputfield_form" placeHolder="Ethnicity"> </FormComponent>
             <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="City, Country"> </FormComponent>
 
-            {/* <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectEthnicity" placeholder="Ethnicity" required size="lg" />
-              </Col>
-            </Form.Row>
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <Form.Control bsCustomPrefix = 'inputfield' className=  'inputfield'type="text" id="subjectCity" placeholder="City, Country" required size="lg" />
-              </Col>
-            </Form.Row> */}
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.File.Input onChange={this.onChange} required id="subjectFile" bsPrefix='form-file-input'name="subjectPhoto"/>
-            <p id="hint" >File must be .jpg or .png and under 1MB</p>
-              </Col>
-            </Form.Row>
+        
+            <FormFile FormId="subjectFile" onChange="this.onChange"></FormFile>
 
-            <Form.Row style={{marginBottom:"30px"}}>
-              <Col xl={{span:1, offset:2}} lg={{span:1, offset:1}} xs={{span:1, offset:1}}>
-                <Form.Check aria-label="option 1"/>
-                <input type="checkbox" class="custom-control-input" id="checkbox-3"></input>
-              </Col>
+            <FormConsent inputId="checkbox-3"></FormConsent>
 
-              <Col xl={{span:7, offset:0}} lg={{span:7, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-                <div className="formConsent">I consent for the submitted photo(s) to be used by TAIWANfest in the “I’m different, just like you! -
-                   We are all in this together” project.</div>
-              </Col>
-            </Form.Row>
-
+          
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
 
           </Form>

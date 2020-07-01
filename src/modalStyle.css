@@ -1,0 +1,36 @@
+
+
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .btnCancelIn_Modal {
+        font-size:30px;
+    }
+    .modalContents {
+        font-size:30px;
+    }
+    .modalHeader {
+        font-size:30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .btnCancelIn_Modal {
+        font-size:20px;
+    }  
+    .modalContents {
+        font-size:20px;
+    }
+    .modalHeader {
+        font-size:20px;
+    }
+}
+
+    

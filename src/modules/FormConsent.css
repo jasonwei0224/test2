@@ -1,0 +1,41 @@
+
+.consentLine{
+    font-family: "sofia-pro", Sans-serif;
+    color:#BE0027;
+  }
+  input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .consentLine {
+        font-size:40px;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    input[type="checkbox"]{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+}
+
+@media screen and (min-width: 1200px) {
+    .consentLine {
+        font-size:20px !important;
+        margin-left: -8% !important;
+    }
+    input[type="checkbox"]{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+}

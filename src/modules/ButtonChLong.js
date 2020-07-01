@@ -8,7 +8,7 @@ const Button2 = (props) => {
         <div>
             <Row>
                 <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <Button onClick={props.onclick} bsPrefix="uploadBtn"> {props.title}</Button>
+                    <Button onClick={props.onclick} bsPrefix="uploadBtnLong"> {props.title}</Button>
                 </Col>
             </Row>
 
