@@ -65,8 +65,8 @@
     }
     .mainSection_Row_ch {
         font-size: 42px;
-        margin-top:10px;
-        margin-bottom:10px;
+        margin-top:5px;
+        margin-bottom:5px;
     }
     .mainSection_Important_Row_ch {
         font-family: "sofia-pro", Sans-serif;
@@ -90,7 +90,7 @@
 
     }
     .mainSection_Row {
-        margin-top:50px;
+        margin-top:30px;
         margin-bottom:10px;
         font-size: 23px;
     }

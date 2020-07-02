@@ -14,7 +14,8 @@
     font-size: 25px;
 }
 ::placeholder {
-    font-size: 25px;
+    font-size: 20px;
+    overflow-y: visible;
 }
 
 @media screen and (max-width: 767px) {
@@ -30,16 +31,18 @@
   }
 
     ::-webkit-input-placeholder {
-        font-size: 25px;
+        font-size: 35px;
     }
     ::-moz-placeholder {
-        font-size: 25px;
+        font-size: 35px;
     }
     :-ms-input-placeholder {
-        font-size: 25px;
+        font-size: 35px;
     }
     ::placeholder {
-        font-size: 35px;
+        font-size: 33px;
+        line-height: 110%;
+        padding-bottom:0px;
     }
 }
 
