@@ -54,10 +54,10 @@ function IAmDifferent() {
           color="#D9C739"
         ></ProgramInfo>
 
-        <Second_Title secondTitle="About This Work:"></Second_Title>
+      <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro"}}></Second_Title>
 
 
-        <MainContents_WithBold_Impt contents="" bold='“I’m different, just like you! - We are all in this together” ' contents2="is an interactive exhibition piece that grows as people continue to contribute to it.
+        <MainContents_WithBold_Impt   contents="" bold='“I’m different, just like you! - We are all in this together” ' contents2="is an interactive exhibition piece that grows as people continue to contribute to it.
               Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
               This piece serves to highlight these essential workers and deliver the message that though we may look different and share varied values, We are all in this together."></MainContents_WithBold_Impt>
 
@@ -65,11 +65,11 @@ function IAmDifferent() {
                The COVID-19 pandemic has proved that the virus sees no boundaries and the potential cure can also come from anywhere to save lives for all.
                Despite coming from a range of backgrounds and looking different, these professionals all do their jobs to work on the problems our world is facing, embodying the message"
                bold=' “I’m different, just like you!” ' contents2="Everyone should be proud of their differences and the only certainty for the world is that everyone is different regardless of birthplaces, lifestyles, skin colours or languages spoken."></MainContents_WithBold>
-       
-       
+
+
 
         <Button2 onclick={goToForm} title="UPLOAD FRONT-LINE HERO PHOTO"></Button2>
-      
+
       </Container>
       <div
         lg={{ span: 3, offset: 3 }}

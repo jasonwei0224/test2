@@ -158,7 +158,7 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo subtitle="Game Interaction" title="I'M DIFFERENT JUST LIKE YOU" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
+          <ProgramInfo subtitle="I'm different, just like you !" title="WE ARE ALL IN THIS TOGETHER" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo>
 
           <MainContents_WithBold contents="In the face of a worldwide pandemic and historical global issues, it is important to remember that" bold=' We are all in this together.'contents2= " We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation."></MainContents_WithBold>
           <MainContents_WithBold contents="On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition" bold=' “I’m different, just like you! - We are all in this together”. ' contents2=" It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved."></MainContents_WithBold>
@@ -185,6 +185,7 @@ class IAmDifferentForm extends Component {
                     <option>Police</option>
                     <option>Social Service Worker</option>
                     <option>Therapist</option>
+                    <option>Other</option>
                   </Form.Control>
 
                 </Col>

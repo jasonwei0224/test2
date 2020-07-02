@@ -19,6 +19,7 @@ import FormFile from "./modules/FormFile"
 import IncompleteFormModal from "./incompleteFormModal";
 import SuccessModal from './successModal';
 import InvalidFileModal from './invalidFileModal';
+import mainImage from './assets/sky4.jpeg';
 
 class SkyV1 extends Component {
 
@@ -141,18 +142,18 @@ class SkyV1 extends Component {
   render() {
     return (
       <div>
-        <ImageSlider className="mainImage"/>
+        {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
+          <Row>
+              <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
+                <img className="main_image" src={mainImage}/>
+              </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <img src="" style={{width:"100%", height:"auto", margin:"0px", padding:"0px"}}/>
-          </Col>
-        </Row>
         <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
         </ProgramInfo>
 
-        <MainContents_First contents=" What is something that you can see when you look up, no matter
+        <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
                 wherever you are in the world? The sky is one constant no matter
                 where you are and what time of day, it is there above the horizon."></MainContents_First>
 

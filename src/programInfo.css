@@ -43,7 +43,9 @@ a.PI-shareButton {
     overflow: hidden;
 
 }
-
+a.PI-shareButton:hover{
+  background-color: #0C3866;
+}
 .PI-colButton {
     display: grid;
     overflow: hidden;
@@ -104,7 +106,7 @@ a.PI-shareButton {
 
   .PI-title {
       font-size: 50px;
-      margin-bottom: 10%;
+      margin-bottom: 7.5%;
   }
 
   .PI-artist {

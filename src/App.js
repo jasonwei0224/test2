@@ -9,7 +9,7 @@ import OtherSideOfMask from "./other_side_of_mask";
 import Mirror from "./mirror";
 import Sky from "./sky";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import SkyV1 from "./sky_v1";
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
@@ -20,17 +20,22 @@ import PaulsApple_ch from "./ch/PaulsApple-ch/pauls_apple-ch";
 import PeopleAndMask_ch from "./ch/PeopleAndMask-ch/people_and_mask-ch";
 import Mirror_ch from "./ch/Mirror-ch/mirror-ch";
 import HeaderV1 from "./header_v1.js";
-import logo from "./assets/twftorlogo.png";
+import twftorlogo from "./assets/twftorlogo.png";
+import twflogo from "./assets/taiwanfest-eng+chi.png";
+import twfvanlogo from "./assets/vantwflogo.png";
 // import"./sky_v1.css";
 
 function App() {
   return (
       <div className="App">
         <HashRouter>
-          <a href="https://torontotaiwanfest.ca/"><img src={logo} id="logo" ></img></a>
+          <a href="https://torontotaiwanfest.ca/"><img src={twftorlogo} id="logo" ></img></a>
+
         {/* <hr id="mobileLine"/> */}
         <HeaderV1 />
           <Route path="/" exact component={Home} />
+          {/*<Route path="/" component={() => {
+     window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
