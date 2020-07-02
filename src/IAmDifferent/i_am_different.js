@@ -16,7 +16,7 @@ import Second_Title from "../modules/Second_Title"
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
 import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt"
-import MainContents_WithBold from "../modules/MainContents_WithBold"
+import MainContents_With_Bold from "../modules/MainContents_WithBold"
 
 
 
@@ -61,10 +61,11 @@ function IAmDifferent() {
               Through these most recent difficult times, we have all come to rely on the skills and hard work of the front-line workers who have all come from different backgrounds to serve their communities.
               This piece serves to highlight these essential workers and deliver the message that though we may look different and share varied values, We are all in this together."></MainContents_WithBold_Impt>
 
-        <MainContents_WithBold contents="Racism has no place in the fight against any pandemic and the consequence of racially motivated actions is perhaps more deadly than the virus because it is human against human.
+
+            <MainContents_With_Bold contents="Racism has no place in the fight against any pandemic and the consequence of racially motivated actions is perhaps more deadly than the virus because it is human against human.
                The COVID-19 pandemic has proved that the virus sees no boundaries and the potential cure can also come from anywhere to save lives for all.
                Despite coming from a range of backgrounds and looking different, these professionals all do their jobs to work on the problems our world is facing, embodying the message"
-               bold=' “I’m different, just like you!” ' contents2="Everyone should be proud of their differences and the only certainty for the world is that everyone is different regardless of birthplaces, lifestyles, skin colours or languages spoken."></MainContents_WithBold>
+               bold=' “I’m different, just like you!” ' contents2="Everyone should be proud of their differences and the only certainty for the world is that everyone is different regardless of birthplaces, lifestyles, skin colours or languages spoken."></MainContents_With_Bold>
 
 
 

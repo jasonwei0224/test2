@@ -145,7 +145,7 @@ class SkyV1_ch extends Component {
             </Col>
         </Row>
 
-      <ProgramInfo_ch subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+      <ProgramInfo_ch subtitle="裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
       </ProgramInfo_ch>
 
       <MainContents_First_ch contents="在同一片藍天下，當一切顏色歸零(Colour Zero)，回到一個個獨立的個體，人們究竟有何不同?"></MainContents_First_ch>
@@ -160,8 +160,8 @@ class SkyV1_ch extends Component {
       <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重讓人心惶惶；我們抬頭望望藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤?"></MainContents_Important_ch>
       <MainContents_Important_ch contents=" 我們都不一樣，我們也都一樣 !"></MainContents_Important_ch>
       <MainContents_Important_ch contents="我們都不一樣，我們也都一樣 !加拿大台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【下午三點】的天空，與世界一起反歧視、追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
-
-      <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
+  <Row className="space"><Col></Col></Row>
+    <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
 
       <Form encType="multipart/form-data">
 
