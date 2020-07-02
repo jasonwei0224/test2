@@ -1,11 +1,19 @@
-p {
+/* p {
   font-family: 'adonis-web';
-}
+} */
 /* * {
   overflow-x: hidden;
 } */
-.mainImage {
+.main_image{
+  margin: 0px;
+  width:100%;
+  height: auto;
   overflow: hidden;
+
+}
+.image_col{
+  padding: 0px;
+  margin-bottom: -100px!important;
 }
 
 .mainSection {

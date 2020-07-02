@@ -2,11 +2,13 @@
     margin-top: 50px;
     margin-bottom:30px;
     font-family: "adonis-web";
+    color:#0C3866;
 }
 .mainSection_Row {
     margin-top:10px;
     margin-bottom:10px;
     font-family: "adonis-web";
+    color:#0C3866;
 }
 .mainSection_Important_Row {
     font-family: "sofia-pro", Sans-serif;
@@ -18,11 +20,13 @@
     margin-top: 50px;
     margin-bottom:30px;
     font-family: "adonis-web";
+      color:#0C3866;
 }
 .mainSection_Row_ch {
     margin-top:10px;
     margin-bottom:10px;
     font-family: "adonis-web";
+      color:#0C3866;
 }
 .mainSection_Important_Row_ch {
     font-family: "sofia-pro", Sans-serif;
@@ -40,22 +44,24 @@
         font-size: 42px;
         margin-top:50px;
         margin-bottom:10px;
+        color:#0C3866;
     }
     .mainSection_Row {
         font-size: 42px;
         margin-top:10px;
         margin-bottom:10px;
+
     }
     .mainSection_Important_Row {
         font-size: 40px;
         margin-top:10px;
         margin-bottom:10px;
-    } 
+    }
     .mainSection_First_Row_ch {
         font-size: 42px;
         margin-top: 50px;
         margin-bottom:10px;
-        
+
     }
     .mainSection_Row_ch {
         font-size: 42px;
@@ -68,7 +74,7 @@
         color: #707070;
         font-size: 40px;
     }
-    
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -78,8 +84,9 @@
 @media screen and (min-width: 1200px) {
     .mainSection_First_Row {
         margin-top: 100px;
-        margin-bottom:30px;
         font-size: 23px;
+        color:#0C3866;
+
     }
     .mainSection_Row {
         margin-top:10px;
@@ -87,6 +94,7 @@
         font-size: 23px;
     }
     .mainSection_Important_Row {
+        font-family: "sofia-pro", Sans-serif!important;
         font-size: 20px;
         margin-top:10px;
         margin-bottom:10px;
@@ -102,10 +110,9 @@
         margin-bottom:10px;
     }
     .mainSection_Important_Row_ch {
-        font-family: "sofia-pro", Sans-serif;
+        font-family: "sofia-pro", Sans-serif!important;
         font-weight: normal;
         color: #707070;
         font-size: 20px;
     }
 }
-
