@@ -3,11 +3,6 @@ import { Button, Row, Col, Form } from 'react-bootstrap';
 import './FormConsent.css'
 
 const FormConsent = (props) => {
-    const [checked, setChecked] = React.useState(false);
-    const handleChecked = ({target}) => {
-        setChecked(target.checked);
-        console.log(checked);
-    }
     return (
         <Row style={{marginBottom:"30px"}}>
             <Col xl={{span:1, offset:2}} lg={{span:1, offset:1}} xs={{span:1, offset:1}}>
