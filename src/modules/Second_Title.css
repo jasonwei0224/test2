@@ -28,6 +28,7 @@
         font-size: 40px;
         font-weight: bold;
         font-family: "sofia-pro", Sans-serif;
+        margin-top: 85px;
     }
 }
 
@@ -49,5 +50,6 @@
         font-weight: bold;
         font-family: "sofia-pro", Sans-serif;
         margin-bottom: 20px;
+        margin-top: 0px;
     }
 }

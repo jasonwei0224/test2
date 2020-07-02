@@ -12,6 +12,9 @@
   .project_content_ch, .hint, .inputfield, .formConsent {
     font-size: 30px;
   }
+  .space{
+    margin-top: 50px;
+  }
 }
 
 /* md */

@@ -26,7 +26,7 @@
     margin-top:10px;
     margin-bottom:10px;
     font-family: "adonis-web";
-      color:#0C3866;
+    color:#0C3866;
 }
 .mainSection_Important_Row_ch {
     font-family: "sofia-pro", Sans-serif;
@@ -48,7 +48,7 @@
     }
     .mainSection_Row {
         font-size: 42px;
-        margin-top:10px;
+        margin-top:50px;
         margin-bottom:10px;
 
     }
@@ -73,6 +73,7 @@
         font-weight: normal;
         color: #707070;
         font-size: 40px;
+
     }
 
 }
@@ -89,7 +90,7 @@
 
     }
     .mainSection_Row {
-        margin-top:10px;
+        margin-top:50px;
         margin-bottom:10px;
         font-size: 23px;
     }
