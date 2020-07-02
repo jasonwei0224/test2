@@ -35,7 +35,6 @@ class IAmDifferentForm extends Component {
     this.cancelCourse=this.cancelCourse.bind(this);
     this.invalidFile=this.invalidFile.bind(this);
   }
-
   handleModal() {
     console.log("handleModal");
     this.setState({show:!this.state.show})
@@ -68,12 +67,14 @@ class IAmDifferentForm extends Component {
     var subjectCityLength=document.getElementById('subjectCity').value.length;
     var subjectFile=document.getElementById('subjectFile').value.length;
     var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
+    
+    var checkbox=document.getElementById('iamdiff-consent-en').checked;
+    console.log(checkbox);
     if(result==0) {
       return true;
     }else {
       return false;
     }
-
   }
 
   onChange(e){
@@ -187,7 +188,7 @@ class IAmDifferentForm extends Component {
 
             <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-            <FormConsent inputId="iamdiff-consent"></FormConsent>
+            <FormConsent inputId="iamdiff-consent-en" ></FormConsent>
 
 
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
