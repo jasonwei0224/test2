@@ -19,7 +19,7 @@ import FormConsent_ch from "../../modules/FormConsent_ch"
 import IncompleteFormModal_ch from "../../incompleteFormModal_ch";
 import SuccessModal_ch from '../../successModal_ch';
 import InvalidFileModal_ch from '../../invalidFileModal_ch';
-
+import mainImage from '../../assets/sky4.jpeg';
 
 class SkyV1_ch extends Component {
 
@@ -137,14 +137,14 @@ class SkyV1_ch extends Component {
   render() {
     return (
       <div>
-      <ImageSlider className="mainImage" />
+      {/*<ImageSlider className="mainImage" />*/}
       <Container fluid>
+        <Row>
+            <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
+              <img className="main_image" src={mainImage}/>
+            </Col>
+        </Row>
 
-      <Row>
-        <Col>
-          <img src="" style={{width:"100%", height:"auto"}}/>
-        </Col>
-      </Row>
       <ProgramInfo_ch subtitle="大型實體裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
       </ProgramInfo_ch>
 

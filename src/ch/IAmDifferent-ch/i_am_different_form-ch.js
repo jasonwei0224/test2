@@ -172,6 +172,7 @@ class IAmDifferentForm extends Component {
                     <option>警察</option>
                     <option>社工</option>
                     <option>治療師</option>
+                    <option>其他</option>
                   </Form.Control>
 
                 </Col>

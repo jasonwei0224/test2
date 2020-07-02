@@ -17,4 +17,3 @@ const MainContents_With_Bold = (props) => {
 }
 
 export default MainContents_With_Bold;
-
