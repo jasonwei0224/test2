@@ -150,7 +150,7 @@ class SkyV1 extends Component {
               </Col>
           </Row>
 
-        <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+        <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/sky" color="#D9C739">
         </ProgramInfo>
 
         <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter

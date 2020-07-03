@@ -170,7 +170,7 @@ class SkyV1_ch extends Component {
 
       <Form encType="multipart/form-data">
 
-        <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文名子"></FormComponent>
+        <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文名字"></FormComponent>
         <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="英文姓氏"></FormComponent>
         <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="電子郵件"></FormComponent>
 

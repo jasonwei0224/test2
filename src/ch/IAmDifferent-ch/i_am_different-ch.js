@@ -49,7 +49,7 @@ function IAmDifferent() {
           subtitle="我跟你的相同，就是我們都不同 "
           title="共同面對的我們"
           artistName="台灣文化節"
-          url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
+          url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferent-ch"
           color="#D9C739"
         ></ProgramInfo_ch>
 
