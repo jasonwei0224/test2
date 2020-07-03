@@ -146,7 +146,7 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=" color="#0C3866"></ProgramInfo_ch>
+          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm-ch" color="#0C3866"></ProgramInfo_ch>
           <MainContents_First_ch contents="本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起，向世界各地的防疫英雄致敬。"></MainContents_First_ch>
           <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
 
@@ -189,7 +189,7 @@ class IAmDifferentForm extends Component {
 
 
 
-            <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
+            <ButtonCh title="送出" onclick={this.submitForm} url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm-ch"></ButtonCh>
 
 
           </Form>
