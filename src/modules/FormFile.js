@@ -8,7 +8,7 @@ const FormFile = (props) => {
             <Row style={{marginBottom:"30px"}}>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                     <Form.File.Input required  onChange={props.onChange} id={props.FormId} bsPrefix='formFileInput' name="skyPhoto" />
-                        <p className="hintFormFile" >File must be .jpg or .png and under 1MB</p>
+                        <p className="hintFormFile" > {props.hint} </p>
                 </Col>
             </Row>
         </div>
@@ -16,4 +16,3 @@ const FormFile = (props) => {
 }
 
 export default FormFile;
-
