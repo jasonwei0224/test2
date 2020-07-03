@@ -87,7 +87,7 @@ export default class HeaderV1 extends React.Component {
             <Nav className="m-auto" id="navLinkContainer" style={{alignItems:"end"}}>
               {this.state.english?
               <>
-                <Nav.Link bsPrefix="navitem" href="https://torontotaiwanfest.ca/">HOME</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="https://torontotaiwanfest.ca/toronto-2020/">HOME</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" renderMenuOnMount={true}>
                     <div className="dropdownbg">
@@ -117,7 +117,7 @@ export default class HeaderV1 extends React.Component {
               </>
               :
               <>
-                <Nav.Link bsPrefix="navitemCh" href="/">首頁</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant">首頁</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitemCh-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
                     <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">活動足跡</NavDropdown.Item>

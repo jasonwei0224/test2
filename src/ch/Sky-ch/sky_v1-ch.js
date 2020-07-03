@@ -197,7 +197,7 @@ class SkyV1_ch extends Component {
       <InvalidFileModal_ch show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
 
       </Container>
-      <Footer/>
+      <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"/>
     </div>
     );
   }
