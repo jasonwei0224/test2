@@ -222,7 +222,7 @@ class SkyV1 extends Component {
           <FormConsent inputId="checkbox-3" consent= "I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project."></FormConsent>
 
 
-            <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
+            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.acsea.ca/"></Button1>
 
         </Form>
 

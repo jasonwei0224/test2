@@ -14,7 +14,7 @@ const Button1 = (props) => {
 
             <Row>
                 <Col style={{ marginBottom: "50px", textAlign:"center"}} xl={{span:4, offset:4}} lg={{span:8, offset:2}}sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <Button variant="primary" type="submit" bsPrefix="mobileShareBtn">SHARE WITH FRIENDS</Button>
+                    <Button variant="primary" type="submit" bsPrefix="mobileShareBtn" href={"https://www.facebook.com/sharer/sharer.php?u="+props.togoUrl}>SHARE WITH FRIENDS</Button>
                 </Col>
             </Row>
 
