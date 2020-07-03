@@ -1,0 +1,71 @@
+/* projectsScrollable.js */
+#projectsScrollingSection {
+    background-color: rgb(206, 188, 44);
+}
+#emptySpace {
+    height: 30px;
+}
+
+/* projectNameRight.js & projectNameLeft.js */
+#projectImage {
+    width:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projectLine {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    margin-top: 30%;
+}
+
+#projectName { 
+    color: white;
+    font-size: 12px;
+    margin-top: 30%;
+}
+
+
+#mainRow{
+    width: 100%;
+    padding-top: 100px;
+    margin: 0;
+
+}
+
+.projectCols {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* homeTopSection.js */
+#homeTopSection {
+    width: 100%;
+}
+#homeTopSection #topSectionRow {
+    width: 100%;
+    margin: 0;
+    height: 30%;
+
+}
+
+#homeTopSection .firstCols {
+    padding: 0;
+}
+
+#homeTopSection #projects {
+    height: 100%;
+    overflow: scroll;
+}
+
+/* home_v2.js  */
+#homeFirstRow {
+    width: 100%;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+}

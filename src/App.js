@@ -23,6 +23,7 @@ import HeaderV1 from "./header_v1.js";
 import twftorlogo from "./assets/twftorlogo.png";
 import twflogo from "./assets/taiwanfest-eng+chi.png";
 import twfvanlogo from "./assets/vantwflogo.png";
+import Home2 from "./homeComponents/home_v2";
 // import"./sky_v1.css";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
           <Route path="/-ch" exact component={Home_ch} />
+          <Route path="/home" component={Home2}/>
           </HashRouter>
       </div>
   );
