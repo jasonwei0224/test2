@@ -54,6 +54,7 @@ class SkyV1_ch extends Component {
   cancelCourse() {
     document.getElementById('firstName').value="";
     document.getElementById('lastName').value="";
+    document.getElementById('lastName').value="";
     document.getElementById('userEmail').value="";
     document.getElementById('description').value="";
     document.getElementById('location').value="";
@@ -63,6 +64,7 @@ class SkyV1_ch extends Component {
 
   checkValue() {
     var firstNameLength=document.getElementById('firstName').value.length;
+    var lastNameLength=document.getElementById('lastName').value.length;
     var userEmailLength=document.getElementById('userEmail').value.length;
     var descriptionLength=document.getElementById('description').value.length;
     var locationLength=document.getElementById('location').value.length;
@@ -89,6 +91,7 @@ class SkyV1_ch extends Component {
       this.handleModal2();
     } else {
       var firstName=document.getElementById('firstName').value;
+      var lastName=document.getElementById('lastName').value;
       var userEmail=document.getElementById('userEmail').value;
       var description=document.getElementById('description').value;
       var location=document.getElementById('location').value;
@@ -96,10 +99,12 @@ class SkyV1_ch extends Component {
 
       var testFinal={
         firstName:firstName,
+        lastName:lastName,
         userEmail:userEmail,
         description:description,
         location:location,
-        date:date
+        date:date,
+        from:"torontotaiwanfest"
       }
       await this.uploadFile(this.state.file, testFinal);
     }
@@ -110,6 +115,7 @@ class SkyV1_ch extends Component {
     var formData = new FormData();
     formData.append('skyPhoto', file);
     formData.append('firstName', formInputs['firstName']);
+    formData.append('lastName', formInputs['lastName']);
     formData.append('userEmail', formInputs['userEmail']);
     formData.append('description', formInputs['description']);
     formData.append('location', formInputs['location']);
@@ -145,7 +151,7 @@ class SkyV1_ch extends Component {
             </Col>
         </Row>
 
-      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.vancouvertaiwanfest.ca/#/sky-ch" color="#D9C739">
       </ProgramInfo_ch>
 
       <MainContents_First_ch contents="在同一片藍天下，當一切顏色歸零(Colour Zero)，回到一個個獨立的個體，人們究竟有何不同?"></MainContents_First_ch>
@@ -156,7 +162,7 @@ class SkyV1_ch extends Component {
 
 
       <MainContents_Important_ch contents="在地球上不同位置的我們，相約在同一時刻拍下天空的包羅萬象。"></MainContents_Important_ch>
-      <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完  美；人類的命運因為 疫情改變了，種族  之間的 歧視 日漸嚴重，讓社會人心 惶惶 ；我們  抬頭望向藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤？"></MainContents_Important_ch>
+      <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重，讓社會人心惶惶 ；我們抬頭望向藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤？"></MainContents_Important_ch>
       <MainContents_Important_ch contents=" 我們都不一樣，我們也都一樣 !"></MainContents_Important_ch>
       <MainContents_Important_ch contents="台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【中午十二點】的天空，與世界一起反歧視、一起追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
   <Row className="space"><Col></Col></Row>
@@ -164,7 +170,8 @@ class SkyV1_ch extends Component {
 
       <Form encType="multipart/form-data">
 
-        <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文姓名"></FormComponent>
+        <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="英文名子"></FormComponent>
+        <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="英文姓氏"></FormComponent>
         <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="電子郵件"></FormComponent>
 
         <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>

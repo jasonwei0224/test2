@@ -146,9 +146,8 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#0C3866"></ProgramInfo_ch>
-          <MainContents_First_ch contents="本計畫 蒐集醫護人員、警消 人員、科學家  、衛生官員 等防疫幕  後英雄 的照片，我們 邀請您  無論身在何處，若您 自己或您  的家人、 朋友 是醫護 人員、警消 人員、科學家  、衛生官員 等專業 人士，請您 不吝惜 地分享  給我們上  述職業  人士的照片，與我們一起，向世界各地的防疫英雄致敬。"></MainContents_First_ch>
-
+          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=" color="#0C3866"></ProgramInfo_ch>
+          <MainContents_First_ch contents="本計畫蒐集醫護人員、警消人員、科學家、衛生官員等防疫幕後英雄的照片，我們邀請您無論身在何處，若您自己或您的家人、朋友是醫護人員、警消人員、科學家、衛生官員等專業人士，請您不吝惜地分享給我們上述職業人士的照片，與我們一起，向世界各地的防疫英雄致敬。"></MainContents_First_ch>
           <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
 
           <Form encType="multipart/form-data">
@@ -163,6 +162,7 @@ class IAmDifferentForm extends Component {
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'inputfield_select_ch' className=  'inputfield_select_ch' id="subjectOccupation" as="select" >
+                    <option value="1">主角職業</option>
                     <option>醫生</option>
                     <option>消防員</option>
                     <option>醫療技術人員</option>
