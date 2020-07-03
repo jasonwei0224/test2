@@ -9,7 +9,7 @@
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .project_content_ch, .hint, .inputfield, .formConsent {
+  .project_content_ch, .hint, .inputfield, .formConsent .inputfield.form-control{
     font-size: 30px;
   }
   .space{
@@ -20,13 +20,13 @@
 /* md */
 @media screen and (min-width: 992px) {
   .project_content_ch, .hint, .inputfield {
-    font-size: 25px;
+    /* font-size: 25px; */
   }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-  .project_content_ch, .hint, .inputfield {
+  .project_content_ch, .hint, .inputfield, .inputfield.form-control{
     font-size: 16px;
   }
 }

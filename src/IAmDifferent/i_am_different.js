@@ -50,11 +50,11 @@ function IAmDifferent() {
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"
           artistName="TAIWANfest"
-          url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
+          url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferent"
           color="#D9C739"
         ></ProgramInfo>
 
-      <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro"}}></Second_Title>
+      <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
 
 
         <MainContents_WithBold_Impt   contents="" bold='“I’m different, just like you! - We are all in this together” ' contents2="is an interactive exhibition piece that grows as people continue to contribute to it.
@@ -69,7 +69,7 @@ function IAmDifferent() {
 
 
 
-        <Button2 onclick={goToForm} title="UPLOAD FRONT-LINE HERO PHOTO" togoUrl="https://www.acsea.ca/"></Button2>
+        <Button2 onclick={goToForm} title="UPLOAD FRONT-LINE HERO PHOTO" togoUrl="https://gallery.torontotaiwanfest.ca/#/IAmDifferent"></Button2>
 
       </Container>
       <div

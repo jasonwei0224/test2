@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     // header('Content-Type: application/json; charset=utf-8');
     header("Access-Control-Allow-Origin: *"); // only for testing purposes - should change to domain
     header("Access-Control-Allow-Methods: PUT, GET, POST");
@@ -17,4 +17,4 @@
             move_uploaded_file($_FILES['skyPhoto']['tmp_name'], "skyPhotos/" . $filename);
         }
     }
-?>
+?> -->
