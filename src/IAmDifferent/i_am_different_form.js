@@ -191,7 +191,7 @@ class IAmDifferentForm extends Component {
             <FormConsent inputId="iamdiff-consent-en" consent= "I consent for the submitted photo(s) to be used by TAIWANfest in the “I’m different, just like you! - We are all in this together” project."></FormConsent>
 
 
-            <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>
+            <Button1 onclick={this.submitForm} title="SUBMIT" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm"></Button1>
 
           </Form>
 

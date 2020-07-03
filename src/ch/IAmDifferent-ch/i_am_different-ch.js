@@ -63,7 +63,7 @@ function IAmDifferent() {
         <MainContents_Middle_ch contents='上傳照片的民眾，不僅可能在台灣文化節網站看到自己、親友或世界各地相同職業人士的照片，還能在我們的網站上進行影像互動體驗，一起邀更多朋友響應 "I’m different, just like you."'></MainContents_Middle_ch>
         <MainContents_Middle_ch contents='8/28起，上傳照片的朋友，可以在網站上，看到自己分享的照片，以及體驗影像互動遊戲!'></MainContents_Middle_ch>
 
-        <ButtonCh onclick={goToForm} title="上傳照片"></ButtonCh>
+        <ButtonCh onclick={goToForm} title="上傳照片" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferent-ch"></ButtonCh>
 
       </Container>
       <div

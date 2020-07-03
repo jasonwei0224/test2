@@ -189,7 +189,7 @@ class IAmDifferentForm extends Component {
 
 
 
-            <ButtonCh title="送出" onclick={this.submitForm}></ButtonCh>
+            <ButtonCh title="送出" onclick={this.submitForm} url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm-ch"></ButtonCh>
 
 
           </Form>

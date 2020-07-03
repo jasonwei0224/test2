@@ -193,7 +193,7 @@ class SkyV1_ch extends Component {
       <FormConsent_ch inputId="checkbox-3" consent="我同意台灣文化節將我所拍攝的照片作為「頭頂同一片天計畫」節目的內容與相關宣傳使用。"></FormConsent_ch>
 
 
-        <ButtonCh onclick={this.submitForm} title="送出"></ButtonCh>
+        <ButtonCh onclick={this.submitForm} title="送出" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.vancouvertaiwanfest.ca/#/sky-ch"></ButtonCh>
 
 
       </Form>
