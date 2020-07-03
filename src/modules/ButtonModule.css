@@ -18,11 +18,14 @@
   background-color: #0C3866;
   color:white;
 }
+a{
+  color:white!important;
+}
 .mobileShareBtn {
     text-align: center;
     border-radius: 20px;
     background-color: #BE0027;
-    color: #0C3866;
+    color: #0C3866!important;
     padding-left: 5%;
     padding-right: 5%;
     padding-top:2%;
