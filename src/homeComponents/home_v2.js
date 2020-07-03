@@ -7,9 +7,9 @@ import "./homeCss/homeMain.css";
 function Home2() {
     return (
         <div>
-            <Row id="homeFirstRow">
-                <HomeTopSection/>
-            </Row>
+        <Row id="homeFirstRow">
+            <HomeTopSection/>
+        </Row>
         </div>
 
     )

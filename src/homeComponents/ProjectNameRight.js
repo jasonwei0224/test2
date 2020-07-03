@@ -9,10 +9,10 @@ function ProjectNameRight(props) {
                     <img id="projectImage" src={props.image}/>
                 </Col>
                 <Col className="projectCols">
-                    <Row className="rightRows">
+                    <Row className="projectRows">
                         <div id="projectName">{props.name}</div>
                     </Row>
-                    <Row className="rightRows">
+                    <Row className="projectRows">
                         <hr id="projectLine"/>
                     </Row>
 

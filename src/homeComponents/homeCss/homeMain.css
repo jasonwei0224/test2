@@ -8,7 +8,7 @@
 
 /* projectNameRight.js & projectNameLeft.js */
 #projectImage {
-    width:100px;
+    width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +23,7 @@
 
 #projectName { 
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 30%;
 }
 
@@ -31,13 +31,18 @@
 #mainRow{
     width: 100%;
     padding-top: 100px;
-    margin: 0;
-
+    margin:0;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-.projectCols {
-    margin-left: 20px;
-    margin-right: 20px;
+/* #mainRow .projectCols {
+    margin-right: 3%;
+    margin-left: 3%;
+} */
+
+.projectCols .projectRows {
+    width: 100%;
 }
 
 /* homeTopSection.js */
@@ -55,17 +60,14 @@
     padding: 0;
 }
 
-#homeTopSection #projects {
+#homeTopSection #projectsScroll {
+    width: 100%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 /* home_v2.js  */
 #homeFirstRow {
     width: 100%;
     margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-
 }

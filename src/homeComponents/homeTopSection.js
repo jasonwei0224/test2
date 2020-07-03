@@ -9,7 +9,7 @@ function HomeTopSection() {
                 <Col className="firstCols">
                     HI
                 </Col>
-                <Col id="projects" className="firstCols">
+                <Col id="projectsScroll" className="firstCols">
                     <ProjectScrollable/>
                 </Col>
             </Row>
