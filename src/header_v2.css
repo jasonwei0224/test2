@@ -1,0 +1,42 @@
+#navbar-v2 {
+    margin: 0 5% 2% 5%;
+    text-align: center;
+}
+
+#logo-image  {
+    max-width: 80%;
+}
+
+a.navitem-v2 {
+    color: black!important;
+    font-size: 14px;
+    font-family: "sofia-pro", Sans-serif;
+    padding: 5px 12px 3px 12px;
+    font-weight: normal!important;
+    background-color: initial;
+    font-weight: bold!important;
+}
+
+a.navitem-v2:hover{
+    color:#BE0027!important;
+}
+
+.nav-group {
+    padding: 2% 0 2% 0;
+}
+
+img.langIcon-v2{
+    width:30px;
+}
+
+img.langIconCh-v2{
+    width:30px;
+}
+
+
+/* To put logo and hamburger icon in one line for screens below 519px */
+@media screen and (max-width: 519px) {
+    #logo-image  { 
+        margin-right: -20px;
+    }
+}
