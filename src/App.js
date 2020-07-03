@@ -33,8 +33,8 @@ function App() {
           {/* <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a> */}
 
         {/* <hr id="mobileLine"/> */}
-        {/* <HeaderV1 /> */}
-        <HeaderV2 />
+       <HeaderV1 />
+        {/*<HeaderV2 />*/}
           <Route path="/" exact component={Home} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}

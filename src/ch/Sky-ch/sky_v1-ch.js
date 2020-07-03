@@ -145,21 +145,20 @@ class SkyV1_ch extends Component {
             </Col>
         </Row>
 
-      <ProgramInfo_ch subtitle="裝置藝術" title="天空" artistName="藝術家暨策展人：宋浩芬 " url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
+      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/" color="#D9C739">
       </ProgramInfo_ch>
 
       <MainContents_First_ch contents="在同一片藍天下，當一切顏色歸零(Colour Zero)，回到一個個獨立的個體，人們究竟有何不同?"></MainContents_First_ch>
-      <MainContents_Middle_ch contents="無論我們身在方，都是看著同一片天空；無論我們的外表、性格多麼不同，都是被同一片天空包覆其下；無論我們背負何種人生境遇，都是在同一片天空下經歷悲歡離合。天空不問我們的身份性別、社經背景；不辨識我們來自什麼文化，說著哪一種語言，我們同樣都能在同一片天空中，看見炎熱的陽光、溫柔的月亮、靜謐的星空、雨後的彩虹。即便我們身體殘缺、內心傷痛，時而因愛歡喜，時而因恨哀愁，依然與世界上的每一個人一樣，每天迎接日出日落，無法避免風起雨落。天空不曾因為個人的不同而排拒過任何一個人，我們每一個人與其他生命萬物相同，都只是大自然的其中一部分。"></MainContents_Middle_ch>
-      <MainContents_Middle_ch contents="當數字「8」轉為橫向成為「∞」無限符號，象徵天空的無邊無際、遼闊遠大。膚色、外貌、族裔、語言、文化，不會是限制人類理解彼此的界線；「∞」也象徵愛的永恆，當人們能互相欣賞不一樣的美麗，平等地認同彼此的存在價值，共同創造了人類永續未來的機會。"></MainContents_Middle_ch>
-      <MainContents_Middle_ch contents="在加拿大台灣文化節活動期間，不只在溫哥華美術館前廣場能看到八座「天空」燈光裝置藝術作品，陪伴溫哥華人度過黎明與黑夜。即使你人不在溫哥華，甚至不在加拿大，你都可以隨時拍下【下午三點】的天空照片上傳分享，立即加入我們 ! 在夏天的尾聲，透過看著同一片天空的不同風景，感受不同的空間氛圍，不受地域和時間限制，貼近彼此，相互作伴 !"></MainContents_Middle_ch>
+      <MainContents_Middle_ch contents="無論我們身在何方，都是看著同一片天空；無論我們的外表、性格多麼不同，都是被同一片天空包覆其下；無論我們背負何種人生境遇，都是在同一片天空下經歷悲歡離合。天空不問我們的身份性別、社經背景；不辨識我們來自什麼文化，說著哪一種語言，我們同樣都能在同一片天空中，看見炎熱的陽光、溫柔的月亮、靜謐的星空、雨後的彩虹。即便我們身體殘缺、內心傷痛，時而因愛歡喜，時而因恨哀愁，依然與世界上的每一個人一樣，每天迎接日出日落，無法避免風起雨落。天空不曾因為個人的不同而排拒過任何一個人，我們每一個人與其他生命萬物相同，都只是大自然的其中一部分。"></MainContents_Middle_ch>
+      <MainContents_Middle_ch contents="在台灣文化節活動期間，拍下【中午十二點】的天空照片上傳分享，立即加入我們 ! 在夏天的尾聲，透過看著同一片天空的不同風景，感受不同的空間氛圍，不受地域和時間限制，貼近彼此，相互作伴 !"></MainContents_Middle_ch>
 
       <Second_Title_ch secondTitle="我跟你的相同，就是我們都不同"></Second_Title_ch>
 
 
       <MainContents_Important_ch contents="在地球上不同位置的我們，相約在同一時刻拍下天空的包羅萬象。"></MainContents_Important_ch>
-      <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重讓人心惶惶；我們抬頭望望藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤?"></MainContents_Important_ch>
+      <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完  美；人類的命運因為 疫情改變了，種族  之間的 歧視 日漸嚴重，讓社會人心 惶惶 ；我們  抬頭望向藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤？"></MainContents_Important_ch>
       <MainContents_Important_ch contents=" 我們都不一樣，我們也都一樣 !"></MainContents_Important_ch>
-      <MainContents_Important_ch contents="我們都不一樣，我們也都一樣 !加拿大台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【下午三點】的天空，與世界一起反歧視、追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
+      <MainContents_Important_ch contents="台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【中午十二點】的天空，與世界一起反歧視、一起追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
   <Row className="space"><Col></Col></Row>
     <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
 
@@ -175,16 +174,16 @@ class SkyV1_ch extends Component {
       <Form.Row style={{marginBottom:"30px"}}>
 
           <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
-            <Form.Control id="description" className="inputfield" as ="textArea" type="text" placeholder="照片說明" size="lg"/>
+            <Form.Control id="description" className="inputfield" as ="textArea" type="text" placeholder="請簡短分享照片的故事" size="lg"/>
           </Col>
       </Form.Row>
 
       <FormComponent formId="location" formClassName="inputfield_form" placeHolder="拍攝地點"></FormComponent>
       <FormComponent formId="date" formClassName="inputfield_form" placeHolder="拍攝日期"></FormComponent>
 
-      <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
+      <FormFile FormId="subjectFile" onChange={this.onChange} hint="檔案格式必須為jpg或png，且檔案大小在1MB以下"></FormFile>
 
-      <FormConsent_ch inputId="checkbox-3" consent="我同意多倫多台灣文化節將我所拍攝的照片作為「天空」節目的內容與相關宣傳使用。"></FormConsent_ch>
+      <FormConsent_ch inputId="checkbox-3" consent="我同意台灣文化節將我所拍攝的照片作為「頭頂同一片天計畫」節目的內容與相關宣傳使用。"></FormConsent_ch>
 
 
         <ButtonCh onclick={this.submitForm} title="送出"></ButtonCh>

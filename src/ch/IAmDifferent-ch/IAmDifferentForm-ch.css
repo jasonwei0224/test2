@@ -5,13 +5,17 @@
 
 @media screen and (max-width: 767px) {
 
-  
+
 }
 
 @media screen and (min-width: 768px) {
   .inputfield_select_ch {
     font-size:40px !important;
     color:#6D767E !important;
+}
+.inputfield_form {
+  font-size:40px !important;
+  color:#6D767E !important;
 }
 }
 
@@ -25,5 +29,9 @@
   .inputfield_select_ch {
     font-size:25px !important;
     color:#6D767E !important;
-}
+  }
+  .inputfield_form {
+    font-size:25px !important;
+    color:#6D767E !important;
+  }
 }

@@ -186,7 +186,7 @@ class IAmDifferentForm extends Component {
             <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="City, Country"> </FormComponent>
 
 
-            <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
+            <FormFile FormId="subjectFile" onChange={this.onChange} hint="File must be .jpg or .png and under 1MB"></FormFile>
 
             <FormConsent inputId="iamdiff-consent-en" consent= "I consent for the submitted photo(s) to be used by TAIWANfest in the “I’m different, just like you! - We are all in this together” project."></FormConsent>
 
