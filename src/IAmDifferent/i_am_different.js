@@ -54,7 +54,7 @@ function IAmDifferent() {
           color="#D9C739"
         ></ProgramInfo>
 
-      <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro"}}></Second_Title>
+      <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
 
 
         <MainContents_WithBold_Impt   contents="" bold='“I’m different, just like you! - We are all in this together” ' contents2="is an interactive exhibition piece that grows as people continue to contribute to it.
