@@ -86,7 +86,7 @@ export default class HeaderV2 extends React.Component {
             <Navbar.Brand href="https://torontotaiwanfest.ca/toronto-2020/"><img id="logo-image" src={twftorlogo}></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto" />
+                <Nav className="nav-group mr-auto" />
                 {this.state.english?
                 <>
                     <Nav.Link className="navitem-v2" href="https://torontotaiwanfest.ca/">HOME</Nav.Link>
@@ -98,8 +98,8 @@ export default class HeaderV2 extends React.Component {
                 :
                 <>
                     <Nav.Link className="navitem-v2" href="/">首頁</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">希望講堂??</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">我們藝樣??</Nav.Link>
+                    <Nav.Link className="navitem-v2" href="#">程式??</Nav.Link>
+                    <Nav.Link className="navitem-v2" href="#">線上藝廊</Nav.Link>
                     <Nav.Link className="navitem-v2" href="#">贊助單位</Nav.Link>
                     <Nav.Link className="langNavLinkCh-v2"><img className="langIconCh-v2" src={en} onClick={this.languageBtnListener}/></Nav.Link>
                 </>
