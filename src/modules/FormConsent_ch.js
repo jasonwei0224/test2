@@ -11,10 +11,10 @@ const FormConsent_ch = (props) => {
             </Col>
 
             <Col xl={{span:7, offset:0}} lg={{span:9, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-                <div className="consentLine" style={{color:"#BE0027"}} >我同意多倫多台灣文化節將我所拍攝的照片作為「天空」節目的內容與相關宣傳使用。</div>
+                <div className="consentLine" style={{color:"#BE0027"}} >{props.consent}</div>
             </Col>
          </Row>
-        
+
     );
 }
 
