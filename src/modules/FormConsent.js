@@ -10,12 +10,11 @@ const FormConsent = (props) => {
                 {/* <input type="checkbox" className="custom-control-input" id={props.inputId} onChange={}></input> */}
             </Col>
             <Col xl={{span:7, offset:0}} lg={{span:9, offset:0}}sm={{span:9, offset:0}}xs={{span:9, offset:0}}>
-                <div className="consentLine" style={{color:"#BE0027"}} >I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project.</div>
+                <div className="consentLine" style={{color:"#BE0027"}} >{props.consent}</div>
             </Col>
          </Row>
-        
+
     );
 }
 
 export default FormConsent;
-

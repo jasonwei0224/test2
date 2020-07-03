@@ -2,9 +2,10 @@
     margin-bottom: 30px;
     /* width:80%; */
     height:100px !important;
+    font-size: 30px;
 
 }
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
     font-size: 25px;
 }
 ::-moz-placeholder {
@@ -16,7 +17,7 @@
 ::placeholder {
     font-size: 20px;
     overflow-y: visible;
-}
+} */
 
 @media screen and (max-width: 767px) {
 
@@ -30,7 +31,7 @@
       height:100px !important;
   }
 
-    ::-webkit-input-placeholder {
+    /* ::-webkit-input-placeholder {
         font-size: 35px;
     }
     ::-moz-placeholder {
@@ -43,7 +44,7 @@
         font-size: 33px;
         line-height: 110%;
         padding-bottom:0px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 992px) {
@@ -57,7 +58,7 @@
       height:50px !important;
   }
 
-    ::-webkit-input-placeholder {
+    /* ::-webkit-input-placeholder {
         font-size: 25px;
     }
     ::-moz-placeholder {
@@ -68,5 +69,5 @@
     }
     ::placeholder {
         font-size: 25px;
-    }
+    } */
 }

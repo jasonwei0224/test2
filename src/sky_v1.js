@@ -157,12 +157,9 @@ class SkyV1 extends Component {
                 wherever you are in the world? The sky is one constant no matter
                 where you are and what time of day, it is there above the horizon."></MainContents_First>
 
-        <MainContents_Middle contents=" Working with photographers in Canada and Taiwan, Vancouver
-                TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ
-                Square (formally known as Vancouver Art Gallery North Plaza)
-                in downtown Vancouver. These images show that despite our
-                geographical differences, we all look towards that same sky that
-                looms over our heads, further reaffirming that we are all in this
+        <MainContents_Middle contents=" Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ
+                Square (formally known as Vancouver Art Gallery North Plaza) in downtown Vancouver. These images show that despite our
+                geographical differences, we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
                 together. Sky is built on the concept of removing the influence
                   of colour; by looking past our differences, we can see that we
                   are one and the same."></MainContents_Middle>
@@ -222,7 +219,7 @@ class SkyV1 extends Component {
 
           <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-          <FormConsent inputId="checkbox-3"></FormConsent>
+          <FormConsent inputId="checkbox-3" consent= "I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project."></FormConsent>
 
 
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>

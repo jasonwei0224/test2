@@ -184,7 +184,7 @@ class SkyV1_ch extends Component {
 
       <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-      <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
+      <FormConsent_ch inputId="checkbox-3" consent="我同意多倫多台灣文化節將我所拍攝的照片作為「天空」節目的內容與相關宣傳使用。"></FormConsent_ch>
 
 
         <ButtonCh onclick={this.submitForm} title="送出"></ButtonCh>

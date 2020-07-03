@@ -67,7 +67,7 @@ class IAmDifferentForm extends Component {
     var subjectCityLength=document.getElementById('subjectCity').value.length;
     var subjectFile=document.getElementById('subjectFile').value.length;
     var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
-    
+
     var checkbox=document.getElementById('iamdiff-consent-en').checked;
     console.log(checkbox);
     if(result==0) {
@@ -188,7 +188,7 @@ class IAmDifferentForm extends Component {
 
             <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-            <FormConsent inputId="iamdiff-consent-en" ></FormConsent>
+            <FormConsent inputId="iamdiff-consent-en" consent= "I consent for the submitted photo(s) to be used by TAIWANfest in the “I’m different, just like you! - We are all in this together” project."></FormConsent>
 
 
             <Button1 onclick={this.submitForm} title="SUBMIT"></Button1>

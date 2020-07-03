@@ -185,7 +185,8 @@ class IAmDifferentForm extends Component {
 
             <FormFile FormId="subjectFile" onChange={this.onChange}></FormFile>
 
-            <FormConsent_ch inputId="checkbox-3"></FormConsent_ch>
+            <FormConsent_ch inputId="checkbox-3" consent="我同意多倫多台灣文化節將我上傳的照片作為「我和你相同，就是我們都不同」節目的
+內容與相關宣傳使用。"></FormConsent_ch>
 
 
 
