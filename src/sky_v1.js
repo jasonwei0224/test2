@@ -102,7 +102,8 @@ class SkyV1 extends Component {
         userEmail:userEmail,
         description:description,
         location:location,
-        date:date
+        date:date,
+        from:"torontotaiwanfest"
       }
       await this.uploadFile(this.state.file, testFinal);
     }

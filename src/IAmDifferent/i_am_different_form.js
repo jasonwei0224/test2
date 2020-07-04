@@ -67,7 +67,7 @@ class IAmDifferentForm extends Component {
     var subjectCityLength=document.getElementById('subjectCity').value.length;
     var subjectFile=document.getElementById('subjectFile').value.length;
     var result=senderFullNameLength*senderCityLength*senderEmailLength*subjectFirstNameLength*subjectOccupationLength*subjectEthnicityLength*subjectCityLength*subjectFile;
-    
+
     if(result==0) {
       return true;
     }else {
@@ -101,7 +101,8 @@ class IAmDifferentForm extends Component {
         subjectFirstName:subjectFirstName,
         subjectOccupation: subjectOccupation,
         subjectEthnicity:subjectEthnicity,
-        subjectCity:subjectCity
+        subjectCity:subjectCity,
+        from:"torontotaiwanfest"
         }
       await this.uploadFile(this.state.file, testFinal);
     }
