@@ -48,11 +48,11 @@ function App() {
           <Route path="/Sky-ch" component={SkyV1_ch}/>
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
           <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
-          <Route path="/Home-ch" component={Home_ch}/>
+          <Route path="/Home-ch" component={IAmDifferent_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
-          <Route path="/-ch" exact component={Home_ch} />
+          <Route path="/-ch" exact component={IAmDifferent_ch} />
           </HashRouter>
       </div>
   );
