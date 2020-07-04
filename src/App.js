@@ -31,11 +31,11 @@ function App() {
   return (
       <div className="App">
         <HashRouter>
-           <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a> 
+           <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
         {/* <hr id="mobileLine"/> */}
        <HeaderV1 />
         {/*<HeaderV2 />*/}
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
           <Route path="/PaulsApple" component={PaulsApple} />
@@ -49,12 +49,11 @@ function App() {
           <Route path="/Sky-ch" component={SkyV1_ch}/>
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
           <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
-          <Route path="/Home-ch" component={Home_ch}/>
+          <Route path="/Home-ch" component={IAmDifferent_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
-          <Route path="/-ch" exact component={Home_ch} />
-          <Route path="/home" component={Home2}/>
+          <Route path="/-ch" exact component={IAmDifferent_ch} />
           </HashRouter>
       </div>
   );
