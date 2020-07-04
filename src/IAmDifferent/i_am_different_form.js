@@ -148,7 +148,7 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo subtitle="I'm different, just like you !" title="WE ARE ALL IN THIS TOGETHER" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm" color="#0C3866"></ProgramInfo>
+          <ProgramInfo subtitle="I'm different, just like you !" title="WE ARE ALL IN THIS TOGETHER" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferentForm&amp;src=sdkpreparse" color="#0C3866"></ProgramInfo>
 
           <MainContents_WithBold contents="In the face of a worldwide pandemic and historical global issues, it is important to remember that" bold=' We are all in this together.'contents2= " We have relied heavily on the bravery, dedication, and hard work of front-line workers more than before, and TAIWANfest looks to recognize the differences among this diverse and essential group of people. We should view others without prejudices, just as they have treated the ill without discrimination for race, gender, or sexual orientation."></MainContents_WithBold>
           <MainContents_WithBold contents="On this page, front-line workers and organizations can submit their photo(s) to be part of the evolving virtual exhibition" bold=' “I’m different, just like you! - We are all in this together”. ' contents2=" It may take a few business days after the listed time above for your photo to be shown. An email will be sent once the photo has been approved."></MainContents_WithBold>
@@ -190,7 +190,7 @@ class IAmDifferentForm extends Component {
             <FormConsent inputId="iamdiff-consent-en" consent= "I consent for the submitted photo(s) to be used by TAIWANfest in the “I’m different, just like you! - We are all in this together” project."></FormConsent>
 
 
-            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://gallery.torontotaiwanfest.ca/#/IAmDifferentForm"></Button1>
+            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferentForm&amp;src=sdkpreparse"></Button1>
 
           </Form>
 
