@@ -163,7 +163,7 @@ class IAmDifferentForm extends Component {
             <Form.Row style={{marginBottom:"30px"}}>
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'inputfield_select_ch' className=  'inputfield_select_ch' id="subjectOccupation" as="select" >
-                    <option value="1">主角職業</option>
+                    <option>主角職業</option>
                     <option>醫生</option>
                     <option>消防員</option>
                     <option>醫療技術人員</option>
