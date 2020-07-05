@@ -24,11 +24,16 @@ import HeaderV2 from "./header_v2.js";
 import twftorlogo from "./assets/twftorlogo.png";
 import twflogo from "./assets/taiwanfest-eng+chi.png";
 import twfvanlogo from "./assets/vantwflogo.png";
+import featureImage from "./assets/tor-feature-image1.jpg";
 import Home2 from "./homeComponents/home_v2";
 // import"./sky_v1.css";
 
 function App() {
+
   return (
+
+
+
       <div className="App">
         <HashRouter>
            <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
