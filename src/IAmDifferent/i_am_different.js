@@ -17,6 +17,8 @@ import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
 import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt"
 import MainContents_With_Bold from "../modules/MainContents_WithBold"
+import {Helmet} from "react-helmet";
+
 
 
 
@@ -50,7 +52,7 @@ function IAmDifferent() {
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"
           artistName="TAIWANfest"
-          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse" 
+          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>
 
