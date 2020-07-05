@@ -3,6 +3,7 @@ import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import "./header_v1.css";
 import en from "./assets/en.png";
 import ch from "./assets/ch.png";
+import twftorlogo from "./assets/twftorlogo.png";
 
 
 export default class HeaderV1 extends React.Component {
@@ -74,12 +75,23 @@ export default class HeaderV1 extends React.Component {
 
   render(){
     return (
+    <div>
+      {this.state.english?
+        <>
+    <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
+    </>
+    :
+      <>
+    <a href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant"><img src={twftorlogo} id="logo" ></img></a>
+    </>
+}
     <div id="headerFinal" style={{
       position: this.state.position,
       top: this.state.top,
       width: this.state.width,
       zIndex: this.state.zIndex,
       }}>
+
       <Container fluid bsPrefix="container">
         <Navbar expand="xl">
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav_bar_toggle_icon"/>
@@ -148,6 +160,7 @@ export default class HeaderV1 extends React.Component {
           </Navbar.Collapse>
         </Navbar>
       </Container>
+    </div>
     </div>
     );
   }

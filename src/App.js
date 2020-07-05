@@ -31,12 +31,9 @@ import Home2 from "./homeComponents/home_v2";
 function App() {
 
   return (
-
-
-
       <div className="App">
         <HashRouter>
-           <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
+          
         {/* <hr id="mobileLine"/> */}
        <HeaderV1 />
         {/*<HeaderV2 />*/}
