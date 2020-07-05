@@ -72,19 +72,18 @@ export default class HeaderV1 extends React.Component {
     }
   }
 
-
   render(){
     return (
-    <div>
-      {this.state.english?
+      <div>
+        {this.state.english?
+          <>
+      <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
+      </>
+      :
         <>
-    <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
-    </>
-    :
-      <>
-    <a href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant"><img src={twftorlogo} id="logo" ></img></a>
-    </>
-}
+      <a href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant"><img src={twftorlogo} id="logo" ></img></a>
+      </>
+  }
     <div id="headerFinal" style={{
       position: this.state.position,
       top: this.state.top,
