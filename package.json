@@ -32,6 +32,7 @@
     "react-compare-image": "^2.0.4",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.6.4",
+    "react-ga": "^3.1.2",
     "react-helmet": "^6.1.0",
     "react-howler": "^3.7.4",
     "react-image-comparison-slider": "^1.8.4",
@@ -69,7 +70,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": "react-app"
