@@ -1,18 +1,18 @@
 import React from 'react';
 // import ImgComparison from '../../img_comparison';
 import ReactCompareImage from 'react-compare-image';
-import image1 from './assets/image1.jpg';
-import image2 from './assets/image2.jpg';
+import image1 from '../../assets/image1.jpg';
+import image2 from '../../assets/image2.jpg';
 import { Container } from "react-bootstrap";
 // import { SocialIcon } from 'react-social-icons';
-import ProgramInfo from './programInfo';
-import Second_Title from "./modules/Second_Title"
-import MainContents_First from "./modules/MainContents_First"
-import MainContents_Middle from "./modules/MainContents_Middle"
-import MainContents_Important from "./modules/MainContents_Important"
-import MainContents_Img from "./modules/MainContents_img"
-import Footer from "./footer-temp";
-import MobileShareButton from "./modules/mobileShareButton";
+import ProgramInfo_ch from "../programInfo-ch";
+import Second_Title from "../../modules/Second_Title"
+import MainContents_First from "../../modules/MainContents_First"
+import MainContents_Middle from "../../modules/MainContents_Middle"
+import MainContents_Important from "../../modules/MainContents_Important"
+import MainContents_Img from "../../modules/MainContents_img"
+import Footer from "../../footer-temp";
+import MobileShareButton from "../../modules/mobileShareButton";
 // import './pauls_apple-ch.css'
 
 function PaulsApple_ch() {
@@ -24,13 +24,13 @@ function PaulsApple_ch() {
               rightImage={image2}
             />
 
-            <ProgramInfo 
+            <ProgramInfo_ch 
               subtitle="Behind the Masks" 
               title="PAUL'S APPLES" 
               artistName="Lady Hao Hao" 
               url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
               color="#D9C739"
-            ></ProgramInfo>
+            ></ProgramInfo_ch>
 
             <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
             <MainContents_Important contents="This province's condo insurance market is unhealthy and has saddled owners with sudden increases of an estimated 50 percent in Metro Vancouver, according to a three-month investigation by the B.C. Financial Services Authority."></MainContents_Important>
