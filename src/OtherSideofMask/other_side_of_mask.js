@@ -27,7 +27,7 @@ class OtherSideOfMask extends Component {
           <div>
             <Container fluid>
             <Row>
-              <Col lg={12} className="model3D_col" >
+              <Col lg={12} className="model3D-col" >
               <div>
                 <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
                    position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>

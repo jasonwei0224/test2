@@ -1,77 +1,37 @@
- /* .main_osom {
-    width: 100%;
-    height:70dp;
-} 
-
-
-.container_osom {
-    background-color: #71799d;
-    font: white;
-    width:100%;
-    height:100%;
-    float:right;
+.img-other-side-ch{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding-top:30px;
+  padding-bottom:30px;
 }
-.test {
-    margin:auto;
-    padding:10px;
-}
-
-
-#title_osom {
-    color: white;
-    font-size: 50px;
-    margin:30px;
-    text-align: left;
+.model3D-col-ch{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
-#content_osom {
-    color:white;
-    font-size:20px;
-    margin:30px;
-    text-align: left;
 
-}
-.btn_osom {
-    font-size: 20px;
-    padding: 15px;
-    border: 1px white solid;
-    background-color: #71799d;
-    color:white;
-    margin:10px;
-    margin-bottom: 50px;
-
-}
-.test2 {
-    text-align: center;
-}
-
-#mod{
-  display:inline-block;
-}
-
+/* xs < 768 */
 @media screen and (max-width: 767px) {
 
-  .contents {
-    font-size: 50px;
-  }
 }
+
+/* sm */
 @media screen and (min-width: 768px) {
 
-  .contents {
-    font-size: 45px;
-  }
 }
 
+/* md */
 @media screen and (min-width: 992px) {
 
-  .contents {
-    font-size: 40px;
-  }
 }
 
+/* lg */
 @media screen and (min-width: 1200px) {
 
-  .contents {
-    font-size: 25px;
-  }
-}  */
+}
