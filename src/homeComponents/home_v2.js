@@ -6,6 +6,7 @@ import HomeSecondSection from './homeSecondSection';
 import "./homeCss/homeMain.css";
 import HomeProjectRight from './HomeProjectRight';
 import HomeProjectLeft from './HomeProjectLeft';
+import LogoSlider from '../logoSlider';
 
 function Home2() {
     return (
@@ -20,6 +21,7 @@ function Home2() {
             <HomeProjectLeft title="PAUL'S APPLES"/>
             <HomeProjectRight title="MIRROR"/>
             <HomeProjectLeft title="(UN) BEING CHINESE"/>
+            <LogoSlider/>
         </div>
 
     )
