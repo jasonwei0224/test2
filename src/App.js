@@ -26,14 +26,23 @@ import twflogo from "./assets/taiwanfest-eng+chi.png";
 import twfvanlogo from "./assets/vantwflogo.png";
 import featureImage from "./assets/tor-feature-image1.jpg";
 import Home2 from "./homeComponents/home_v2";
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
+
 // import"./sky_v1.css";
 
 function App() {
+  const history = createBrowserHistory();
+ReactGA.initialize('UA-2521987-19');
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
   return (
       <div className="App">
         <HashRouter>
-          
+
         {/* <hr id="mobileLine"/> */}
        <HeaderV1 />
         {/*<HeaderV2 />*/}
