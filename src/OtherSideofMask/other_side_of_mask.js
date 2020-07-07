@@ -13,6 +13,7 @@ import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
+import MainContents_img from "../modules/MainContents_img";
 
 class OtherSideOfMask extends Component {
     render() {
@@ -43,15 +44,13 @@ class OtherSideOfMask extends Component {
               <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
                       wherever you are in the world? The sky is one constant no matter
                       where you are and what time of day, it is there above the horizon."></MainContents_Middle>
-                    <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <img src={image1}  className="img-other-side"></img>
-              </Col>
+
+              <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
+
               <MainContents_Middle contents=" Despite our geographical differences,
                 we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
               together. "></MainContents_Middle>
-            <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-                <img src={image1} className="img-other-side"></img>
-              </Col>
+                <MainContents_img src={image1} className="img-other-side"></MainContents_img>
               <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
               people a sense of hope and anticipation for the feeling of a
               normal day to come again. Furthermore, Indigenous teachings and
