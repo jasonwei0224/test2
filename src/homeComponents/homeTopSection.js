@@ -10,7 +10,7 @@ function HomeTopSection() {
                 <Col className="firstCols">
                     <img id='leftImage' src={placeHolder}/>
                 </Col>
-                <Col id="projectsScroll" className="firstCols">
+                <Col id="projectsScroll">
                     <ProjectScrollable/>
                 </Col>
             </Row>

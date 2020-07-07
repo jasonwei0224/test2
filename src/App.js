@@ -54,6 +54,7 @@ function App() {
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
           <Route path="/-ch" exact component={IAmDifferent_ch} />
+          <Route path="/Home2" component={Home2}/>
           </HashRouter>
       </div>
   );
