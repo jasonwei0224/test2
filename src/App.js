@@ -5,7 +5,7 @@ import PaulsApple from "./pauls_apple";
 import Home from "./home";
 import IAmDifferent from "./IAmDifferent/i_am_different";
 import PeopleAndMask from "./people_and_mask";
-import OtherSideOfMask from "./other_side_of_mask";
+import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
 import Mirror from "./mirror";
 import Sky from "./sky";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
@@ -24,14 +24,26 @@ import HeaderV2 from "./header_v2.js";
 import twftorlogo from "./assets/twftorlogo.png";
 import twflogo from "./assets/taiwanfest-eng+chi.png";
 import twfvanlogo from "./assets/vantwflogo.png";
+import featureImage from "./assets/tor-feature-image1.jpg";
 import Home2 from "./homeComponents/home_v2";
+import ReactGA from 'react-ga';
+import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
+import { createBrowserHistory } from 'history';
+
 // import"./sky_v1.css";
 
 function App() {
+  const history = createBrowserHistory();
+ReactGA.initialize('UA-2521987-19');
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
   return (
       <div className="App">
         <HashRouter>
-           <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
+
         {/* <hr id="mobileLine"/> */}
        <HeaderV1 />
         {/*<HeaderV2 />*/}
@@ -53,8 +65,9 @@ function App() {
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
-          <Route path="/-ch" exact component={IAmDifferent_ch} />
           <Route path="/Home2" component={Home2}/>
+          <Route path="/-ch" exact component={IAmDifferent_ch}/>
+          <Route path="/OtherSideOfMask-ch" component={OtherSideOfMask_ch} />
           </HashRouter>
       </div>
   );

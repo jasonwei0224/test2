@@ -1,4 +1,4 @@
-.img-other-side-ch{
+.img-other-side{
   display: block;
   max-width: 100%;
   height: auto;
@@ -6,7 +6,7 @@
   padding-top:30px;
   padding-bottom:30px;
 }
-.model3D-col-ch{
+.model3D-col{
   display: flex;
   width: 100%;
   text-align: center;

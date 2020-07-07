@@ -20,6 +20,7 @@ import IncompleteFormModal from "./incompleteFormModal";
 import SuccessModal from './successModal';
 import InvalidFileModal from './invalidFileModal';
 import mainImage from './assets/sky4.jpeg';
+import {Helmet} from "react-helmet";
 
 class SkyV1 extends Component {
 
