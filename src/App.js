@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./navigation";
-import PaulsApple from "./pauls_apple";
+import PaulsApple from "./PaulsApple/pauls_apple";
 import Home from "./home";
 import IAmDifferent from "./IAmDifferent/i_am_different";
 import PeopleAndMask from "./people_and_mask";

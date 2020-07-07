@@ -1,10 +1,8 @@
 import React from 'react';
-// import ImgComparison from '../../img_comparison';
 import ReactCompareImage from 'react-compare-image';
 import image1 from '../../assets/image1.jpg';
 import image2 from '../../assets/image2.jpg';
 import { Container } from "react-bootstrap";
-// import { SocialIcon } from 'react-social-icons';
 import ProgramInfo_ch from "../programInfo-ch";
 import Second_Title from "../../modules/Second_Title"
 import MainContents_First from "../../modules/MainContents_First"

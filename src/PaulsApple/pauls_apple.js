@@ -1,18 +1,16 @@
 import React from 'react';
-// import ImgComparison from './img_comparison';
 import ReactCompareImage from 'react-compare-image';
-import image1 from './assets/image1.jpg';
-import image2 from './assets/image2.jpg';
+import image1 from '../assets/image1.jpg';
+import image2 from '../assets/image2.jpg';
 import { Container } from "react-bootstrap";
-// import { SocialIcon } from 'react-social-icons';
-import ProgramInfo from './programInfo';
-import Second_Title from "./modules/Second_Title"
-import MainContents_First from "./modules/MainContents_First"
-import MainContents_Middle from "./modules/MainContents_Middle"
-import MainContents_Important from "./modules/MainContents_Important"
-import MainContents_Img from "./modules/MainContents_img"
-import Footer from "./footer-temp";
-import MobileShareButton from "./modules/mobileShareButton";
+import ProgramInfo from '../programInfo';
+import Second_Title from "../modules/Second_Title"
+import MainContents_First from "../modules/MainContents_First"
+import MainContents_Middle from "../modules/MainContents_Middle"
+import MainContents_Important from "../modules/MainContents_Important"
+import MainContents_Img from "../modules/MainContents_img"
+import Footer from "../footer-temp";
+import MobileShareButton from "../modules/mobileShareButton";
 // import './pauls_apple.css'
 
 
