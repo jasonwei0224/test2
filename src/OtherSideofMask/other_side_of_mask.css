@@ -1,0 +1,37 @@
+.img-other-side{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.model3D_col{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+}
