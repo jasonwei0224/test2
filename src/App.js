@@ -6,7 +6,7 @@ import Home from "./home";
 import IAmDifferent from "./IAmDifferent/i_am_different";
 import PeopleAndMask from "./people_and_mask";
 import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
-import Mirror from "./mirror";
+import Mirror from "./mirror/mirror";
 import Sky from "./Sky/sky";
 import Sky_ch from "./ch/Sky-ch/sky-ch";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";

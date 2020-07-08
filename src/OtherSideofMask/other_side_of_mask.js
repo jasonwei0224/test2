@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgramInfo from "../programInfo";
 import Second_Title from "../modules/Second_Title"
+import MainContents_First from "../modules/MainContents_First";
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
 import Footer from '../footer-temp';
