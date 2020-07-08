@@ -7,11 +7,11 @@ import IAmDifferent from "./IAmDifferent/i_am_different";
 import PeopleAndMask from "./people_and_mask";
 import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
 import Mirror from "./mirror";
-import Sky from "./sky";
+import Sky from "./Sky/sky";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
-import SkyV1 from "./sky_v1";
+import SkyV1 from "./Sky/sky_v1";
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
 import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";
 import IAmDifferentForm_ch from "./ch/IAmDifferent-ch/i_am_different_form-ch";
@@ -30,7 +30,7 @@ import ReactGA from 'react-ga';
 import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
 import { createBrowserHistory } from 'history';
 
-// import"./sky_v1.css";
+// import"./Sky/sky_v1.css";
 
 function App() {
   const history = createBrowserHistory();

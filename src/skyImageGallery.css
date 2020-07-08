@@ -1,0 +1,43 @@
+.SIM-container {
+  margin-bottom: 5%;
+}
+.SIM-blue {
+  background-color: #0C3866;
+  color: white;
+  font-family: "sofia";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.SIM-red {
+  background-color: #be0027;
+} 
+
+/*  xs < 768  */
+@media screen and (max-width: 767px) {
+  .SIM-artist {
+    font-size: 20px;
+    margin-bottom: 0 !important;
+  } 
+}
+
+/*  sm  */
+@media screen and (min-width: 768px) {
+  .SIM-artist {
+    font-size: 32px;
+  } 
+}
+
+/*  md  */
+@media screen and (min-width: 992px) {
+  .SIM-artist {
+    font-size: 50px;
+  }
+}
+
+/*  lg  */
+@media screen and (min-width: 1200px) {
+  .SIM-artist {
+    font-size: 32px;
+  }
+}
