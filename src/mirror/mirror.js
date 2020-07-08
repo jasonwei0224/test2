@@ -15,8 +15,8 @@ import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_img from "../modules/MainContents_img";
 import doctor from "../assets/doctor.jpg";
-import firefigther from "../assets/firefighter.jpg";
-import MainContetn_TwoPic from "../modules/MainContetn_TwoPic";
+import firefighter from "../assets/firefighter.jpg";
+import MainContetn_TwoPic from "../modules/MainContent_TwoPic";
 
 class Mirror extends Component {
     // constructor(props) {
