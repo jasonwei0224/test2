@@ -93,7 +93,9 @@ function IAmDifferent() {
           alignItems: "center",
         }}
       ></div>
-      <NewsletterContactUs></NewsletterContactUs>
+      <Row style={{ justifyContent: "center", alignItems: "center" }}>
+        <NewsletterContactUs></NewsletterContactUs>
+      </Row>
       <Footer content="&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
     </div>
   );
