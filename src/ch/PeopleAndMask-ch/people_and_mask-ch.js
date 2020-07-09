@@ -1,19 +1,17 @@
 import React, {Component} from 'react';
-import mask1 from '../../assets/mask1.jpg';
-import mask2 from '../../assets/mask2.jpg';
-import mask3 from '../../assets/mask3.jpg';
-import mask4 from '../../assets/mask4.jpg';
-import mask5 from '../../assets/mask5.jpg';
 import SwipeableViews from 'react-swipeable-views';
 import { virtualize, bindKeyboard } from 'react-swipeable-views-utils';
 import { mod } from 'react-swipeable-views-core';
-// import './people_and_mask-ch.css'
-import { Button } from 'react-bootstrap';
-import {Container, Row, Col} from 'react-bootstrap';
+// import './people_and_mask.css'
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import image2 from '../../assets/image2.jpg'
 import Pagination from '../../modules/Pagination';
 import banner from '../../assets/placeholder.png';
 import ProgramInfo from "../../programInfo"
+import Second_Title from "../../modules/Second_Title"
+import MainContents_First from "../../modules/MainContents_First"
+import MainContents_Middle from "../../modules/MainContents_Middle"
+import MainContents_Important from "../../modules/MainContents_Important"
 
 const styles = {
   root: {
@@ -73,35 +71,76 @@ class PeopleAndMask_ch extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo subtitle="Behind the Masks" title="People and Mask" artistName="Lady Hao Hao"></ProgramInfo>
- 
-          <Row className="mainContents">
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <p className="contentsInParagraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </Col>
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
+          <ProgramInfo
+            subtitle="Behind the Masks"
+            title="People and Mask"
+            artistName="Lady Hao Hao"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse"
+            color="#D9C739">
+            
+          </ProgramInfo>
 
-            </Col>
+          <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
 
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <p className="contentsInParagraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </Col>
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
-            </Col>
-          </Row>
+
+          <MainContents_Important style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matt
+                where you are and what time of day, it is there above the horizon.">
+
+          </MainContents_Important>
+          
+          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.">
+          </MainContents_Middle>
+
+
           <Row>
-
-
+            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
+              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
+            </Col>
           </Row>
 
+          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.">
+          </MainContents_Middle>
 
 
+          <Row>
+            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
+              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
+            </Col>
+          </Row>
+
+          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.">
+          </MainContents_Middle>
         </Container>
       </div>
 

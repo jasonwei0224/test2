@@ -1,0 +1,17 @@
+.spanTest {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: red;
+}
+.divTest {
+  position: relative;
+  bottom: 125px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:green;
+  
+}
