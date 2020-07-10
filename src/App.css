@@ -15,6 +15,10 @@
   visibility: hidden;
   margin: 0;
 }
+.row {
+  margin-right:0px;
+  
+}
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
@@ -35,6 +39,10 @@
     margin-right: auto;
     width: 45%;
     margin-top: 10px;
+  }
+    .row {
+      margin-right:0px !important;
+      
   }
 
   #mobileLine {
@@ -72,4 +80,8 @@
   #mobileLine {
     visibility: hidden;
   }
+      .row {
+    margin-right:-15px !important;
+    
+}
 }
