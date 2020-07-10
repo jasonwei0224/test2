@@ -28,7 +28,7 @@ function PaulsApple_ch() {
               subtitle="Behind the Masks"
               title="PAUL'S APPLES"
               artistName="Lady Hao Hao"
-              url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"
               color="#D9C739"
             ></ProgramInfo_ch>
 
@@ -41,7 +41,7 @@ function PaulsApple_ch() {
             <MainContents_Img src="https://via.placeholder.com/600x300"></MainContents_Img>
             <MainContents_Middle_ch contents="After that came Bound, Chasing Amy, All Over Me, High Art, and But I'm a Cheerleader. I watched and re-watched all of these movies because they showed me myself. Not only because I was queer and prone to phantasmagoric imaginings - as well as to listening to Patti Smith on repeat, wearing stilettos, and heroin addicition - but also because they reflected and suggested my vision of love: as sexy and codependent, forged in opposition to some external conflict. It's no surprise that both I and the movies I worshiped relied upon a certain kind of high-femme, drug-addled, ambisexual Riot Grrrl iconography. After all, we grew out of the same '90s post-AIDS homophobia, Cindy Crawford-cum-heroin chic, third-wave feminist stew."></MainContents_Middle_ch>
 
-            <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton_ch>
+            <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
           </Container>
 
           <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
