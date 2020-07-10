@@ -35,6 +35,7 @@ class OtherSideOfMask_ch extends Component {
                </div>
               </Col>
             </Row>
+            <Row className="other-side-hint-ch"><p>Click and drag or scroll to look around</p></Row>
             <ProgramInfo_ch subtitle="Behind the Masks" title="THE OTHER SIDE OF MASK" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse" color="#D9C739">
             </ProgramInfo_ch>
             <Second_Title_ch secondTitle="Under the same sky project"></Second_Title_ch>
