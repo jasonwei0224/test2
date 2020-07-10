@@ -103,7 +103,7 @@ export default class HeaderV2 extends React.Component {
                     <Nav.Link className="navitem-v2" href="https://torontotaiwanfest.ca/">HOME</Nav.Link>
                   <div className="nav-dropdown-wrapper">
                     <div className="nav-dropdown-wrapper2">
-                      <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" alignRight renderMenuOnMount={true}>
+                      <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" alignCenter renderMenuOnMount={true}>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="#">MIRRORS</NavDropdown.Item>
@@ -112,8 +112,8 @@ export default class HeaderV2 extends React.Component {
                         <NavDropdown.Item bsPrefix="dropdown-item"href="#">"UN" BEGIND CHINESE</NavDropdown.Item>
                       </NavDropdown>
                     </div>
-                  
-                     
+
+
                   </div>
                     <Nav.Link bsPrefix = "langNavLink-v2"><img className="langIcon-v2" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
                 </>
