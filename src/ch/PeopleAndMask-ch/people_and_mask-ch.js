@@ -75,9 +75,9 @@ class PeopleAndMask_ch extends Component {
             subtitle="Behind the Masks"
             title="People and Mask"
             artistName="Lady Hao Hao"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask-ch&amp;src=sdkpreparse"
             color="#D9C739">
-            
+
           </ProgramInfo>
 
           <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
@@ -94,24 +94,6 @@ class PeopleAndMask_ch extends Component {
                 where you are and what time of day, it is there above the horizon.">
 
           </MainContents_Important>
-          
-          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.">
-          </MainContents_Middle>
-
-
-          <Row>
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
-            </Col>
-          </Row>
 
           <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
                 wherever you are in the world? The sky is one constant no matter
@@ -141,6 +123,27 @@ class PeopleAndMask_ch extends Component {
                 wherever you are in the world? The sky is one constant no matter
                 where you are and what time of day, it is there above the horizon.">
           </MainContents_Middle>
+
+
+          <Row>
+            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
+              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
+            </Col>
+          </Row>
+
+          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
+                wherever you are in the world? The sky is one constant no matter
+                where you are and what time of day, it is there above the horizon.">
+          </MainContents_Middle>
+
+          <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
+
         </Container>
       </div>
 

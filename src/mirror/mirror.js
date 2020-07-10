@@ -105,7 +105,7 @@ class Mirror extends Component {
                     </div>
                 </Col>
             </Row>*/}
-            <ProgramInfo subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse" color="#D9C739"/>
+            <ProgramInfo subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse" color="#D9C739"/>
             <Second_Title secondTitle="Under the same sky project"></Second_Title>
             <MainContents_Important contents=" What is something that you can see when you look up, no matter
                     wherever you are in the world? The sky is one constant no matter
@@ -149,7 +149,7 @@ class Mirror extends Component {
 
             <MainContetn_TwoPic src={image1} className="img-other-side"></MainContetn_TwoPic>
 
-            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
+            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>
 
           <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
