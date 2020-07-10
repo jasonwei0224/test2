@@ -35,6 +35,9 @@ class OtherSideOfMask extends Component {
                </div>
               </Col>
             </Row>
+            <Row className="other-side-hint">
+              <p>Click and drag or scroll to look around</p>
+            </Row>
             <ProgramInfo subtitle="Behind the Masks" title="THE OTHER SIDE OF MASK" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse" color="#D9C739">
             </ProgramInfo>
             <Second_Title secondTitle="Under the same sky project"></Second_Title>
