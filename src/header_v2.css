@@ -305,8 +305,17 @@ a.dropdown-toggle.navitem-dropdown{
     margin-left:80px;
     margin-bottom: 20px;
   }
+  img.langIconCh-v2{
+    width:60%;
+    margin:auto;
+    margin-left:80px;
+    margin-bottom: 20px;
+  }
   .langNavLink-v2 {
       width:15%;
+  }
+  .langNavLinkCh-v2{
+    width:15%;
   }
 
 }
