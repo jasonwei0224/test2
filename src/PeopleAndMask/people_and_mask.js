@@ -3,19 +3,20 @@ import SwipeableViews from 'react-swipeable-views';
 import { virtualize, bindKeyboard } from 'react-swipeable-views-utils';
 import { mod } from 'react-swipeable-views-core';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import image1 from './assets/mask1.jpg'
-import image2 from './assets/mask2.jpg'
-import image3 from './assets/mask3.jpg'
-import image4 from './assets/mask4.jpg'
-import image5 from './assets/mask5.jpg'
-import Pagination from './modules/Pagination';
-import banner from './assets/placeholder.png';
-import ProgramInfo from "./programInfo"
-import Second_Title from "./modules/Second_Title"
-import MainContents_Middle from "./modules/MainContents_Middle"
-import MainContents_Important from "./modules/MainContents_Important"
-import Footer from './footer-temp';
-import Slider from './modules/img_slider_final'
+import image1 from '../assets/mask1.jpg'
+import image2 from '../assets/mask2.jpg'
+import image3 from '../assets/mask3.jpg'
+import image4 from '../assets/mask4.jpg'
+import image5 from '../assets/mask5.jpg'
+import Pagination from '../modules/Pagination';
+import banner from '../assets/placeholder.png';
+import ProgramInfo from "../programInfo"
+import Second_Title from "../modules/Second_Title"
+import MainContents_Middle from "../modules/MainContents_Middle"
+import MainContents_Important from "../modules/MainContents_Important"
+import Footer from '../footer-temp';
+import Slider from '../modules/img_slider_final'
+import MobileShareButton from "../modules/mobileShareButton";
 
 const styles = {
   root: {
@@ -136,7 +137,7 @@ class PeopleAndMask extends Component {
                 where you are and what time of day, it is there above the horizon.">
           </MainContents_Middle>
 
-          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"></MobileShareButton> 
+          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"></MobileShareButton>
 
         </Container>
         <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

@@ -4,7 +4,7 @@ import Navigation from "./navigation";
 import PaulsApple from "./PaulsApple/pauls_apple";
 import Home from "./home";
 import IAmDifferent from "./IAmDifferent/i_am_different";
-import PeopleAndMask from "./people_and_mask";
+import PeopleAndMask from "./PeopleAndMask/people_and_mask";
 import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
 import Mirror from "./mirror/mirror";
 import Sky from "./Sky/sky";
