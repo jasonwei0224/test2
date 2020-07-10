@@ -77,6 +77,7 @@ class Slider extends React.Component {
            goToNextSlide={this.goToNextSlide}
           />
           <Dots slides={this.state.images} activeIndex={this.state.currentIndex}>asd</Dots>
+          
         </div>
       );
     }
