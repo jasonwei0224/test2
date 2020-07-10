@@ -12,6 +12,8 @@ import Second_Title from "../../modules/Second_Title"
 import MainContents_First from "../../modules/MainContents_First"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important from "../../modules/MainContents_Important"
+import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
+import Slider from '../../modules/img_slider_final'
 
 const styles = {
   root: {
@@ -56,7 +58,7 @@ class PeopleAndMask_ch extends Component {
     return (
       <div>
         <Container fluid>
-          <Row>
+          {/*}<Row>
             <Col>
               <div style={styles2.root}>
                 <SwipeableViews index={index} enableMouseEvents onChangeIndex={this.handleChangeIndex}>
@@ -69,8 +71,10 @@ class PeopleAndMask_ch extends Component {
                 <Pagination dots={5} index={index} onChangeIndex={this.handleChangeIndex} />
               </div>
             </Col>
+          </Row>*/}
+          <Row>
+            <Slider></Slider>
           </Row>
-
           <ProgramInfo
             subtitle="Behind the Masks"
             title="People and Mask"
