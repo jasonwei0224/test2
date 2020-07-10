@@ -9,6 +9,9 @@ import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
 import Mirror from "./mirror/mirror";
 import Sky from "./Sky/sky";
 import SkyArtist from "./Sky/skyArtist";
+import SkyArtist1 from "./Sky/skyArtist1";
+import SkyArtist2 from "./Sky/skyArtist2";
+import SkyArtist3 from "./Sky/skyArtist3";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
@@ -62,6 +65,9 @@ history.listen(location => {
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/Sky" component={SkyV1}/>
           <Route path="/SkyArtist" component={SkyArtist}/>
+          <Route path="/SkyArtist1" component={SkyArtist1}/>
+          <Route path="/SkyArtist2" component={SkyArtist2}/>
+          <Route path="/SkyArtist3" component={SkyArtist3}/>
           <Route path="/Sky-ch" component={SkyV1_ch}/>
           <Route path="/SkyV2-ch" component={Sky_ch} />
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
