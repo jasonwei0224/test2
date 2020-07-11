@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './sky_v1.css'
+import './Sky/sky_v1.css'
 
 import sky1 from "./assets/sky1.jpeg";
 import sky2 from "./assets/sky2.jpeg";

@@ -2,80 +2,91 @@ import React from 'react';
 import {Component} from 'react';
 import Modal from 'react-modal';
 import ButtonSkinColor from '../../mirror/ButtonSkinColor';
-// import './Mirror-ch.css';
+import './Mirror-ch.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
 import ProgramInfo from '../../programInfo.js';
 import {Container, Row, Col} from 'react-bootstrap';
 import image1 from '../../assets/image1.jpg';
+import Second_TitleCh from '../../modules/Second_TitleCh';
+import MainContents_Important_ch from '../../modules/MainContents_Important_ch';
+import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
+import Footer from "../../footer-temp";
+import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
+import MainContents_Img from "../../modules/MainContents_img";
+import MainContetn_TwoPic from "../../modules/MainContent_TwoPic";
+import MainContents_First_ch from "../../modules/MainContents_First_ch";
+import doctor from "../../assets/doctor.jpg";
+import firefighter from "../../assets/firefighter.jpg";
 
 class Mirror_2 extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            show:false,
-            counter: 1
-        }
-        this.carouselSlider = "";
-        this.carouselImages = "";
-        this.size = "";
-    }
-
-    handleModal=()=>{
-        this.setState({show:!this.state.show});
-    }
-
-    componentDidMount() {
-        this.carouselSlider = document.querySelector('.carousel-slide');
-        this.carouselImages = document.querySelectorAll('.carousel-slide img');
-        this.size = this.carouselImages[0].clientWidth;
-        this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    }
-
-    nextBtnListener=()=>{
-        if(this.state.counter >= this.carouselImages.length -1) return;
-        this.size = this.carouselImages[0].clientWidth;
-        this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
-            this.setState({counter: this.state.counter + 1}, ()=> {
-                this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-            });
-    }
-
-    prevBtnListener=()=>{
-        if(this.state.counter <= 0) return;
-        this.size = this.carouselImages[0].clientWidth;
-
-        this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
-            this.setState({counter: this.state.counter - 1}, ()=> {
-                this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-            });
-    }
-
-    // fired when animation stops - to go back to first image
-    carouselSlideListener=()=> {
-        if (this.carouselImages[this.state.counter].id === 'lastClone') {
-            this.carouselSlider.style.transition = "none";
-
-            this.setState({counter: this.carouselImages.length - 2}, ()=> {
-                this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-            });
-        }
-
-        if (this.carouselImages[this.state.counter].id === 'firstClone') {
-            this.carouselSlider.style.transition = "none";
-
-            this.setState({counter: this.carouselImages.length - this.state.counter}, ()=> {
-                this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-            });
-        }
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state={
+    //         show:false,
+    //         counter: 1
+    //     }
+    //     this.carouselSlider = "";
+    //     this.carouselImages = "";
+    //     this.size = "";
+    // }
+    //
+    // handleModal=()=>{
+    //     this.setState({show:!this.state.show});
+    // }
+    //
+    // componentDidMount() {
+    //     this.carouselSlider = document.querySelector('.carousel-slide');
+    //     this.carouselImages = document.querySelectorAll('.carousel-slide img');
+    //     this.size = this.carouselImages[0].clientWidth;
+    //     this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
+    // }
+    //
+    // nextBtnListener=()=>{
+    //     if(this.state.counter >= this.carouselImages.length -1) return;
+    //     this.size = this.carouselImages[0].clientWidth;
+    //     this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
+    //         this.setState({counter: this.state.counter + 1}, ()=> {
+    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
+    //         });
+    // }
+    //
+    // prevBtnListener=()=>{
+    //     if(this.state.counter <= 0) return;
+    //     this.size = this.carouselImages[0].clientWidth;
+    //
+    //     this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
+    //         this.setState({counter: this.state.counter - 1}, ()=> {
+    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
+    //         });
+    // }
+    //
+    // // fired when animation stops - to go back to first image
+    // carouselSlideListener=()=> {
+    //     if (this.carouselImages[this.state.counter].id === 'lastClone') {
+    //         this.carouselSlider.style.transition = "none";
+    //
+    //         this.setState({counter: this.carouselImages.length - 2}, ()=> {
+    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
+    //         });
+    //     }
+    //
+    //     if (this.carouselImages[this.state.counter].id === 'firstClone') {
+    //         this.carouselSlider.style.transition = "none";
+    //
+    //         this.setState({counter: this.carouselImages.length - this.state.counter}, ()=> {
+    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
+    //         });
+    //     }
+    // }
 
     render() {
         return (
             <div className='mirror'>
+              <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/>
             <Container fluid>
-            <Row>
+            {/*<Row>
                 <Col lg={12} style={{display:"flex", width:"100%", textAlign:"center",
                 overFlow:"hidden", alignItems:"center", justifyContent:"center", borderBottom: "1px solid"}}>
                     <div>
@@ -94,173 +105,31 @@ class Mirror_2 extends Component {
                         </div>
                     </div>
                 </Col>
-            </Row>
-            <ProgramInfo subtitle="Illustration" title="Mirroring" artistName="Mina Lu"/>
-            <Row style={{borderBottom: "1px solid"}}></Row>
-            <Row>
-              <Col lg={{span:6, offset:3}} xs={{span:8, offset:2}} style={{marginTop:"5%", marginBottom:"2%"}} className='contents'>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent eget tincidunt felis, sit amet congue lectus.
-                Praesent auctor sodales ligula sed dignissim. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Proin facilisis orci finibus magna aliquet, a
-                elementum purus dignissim. Fusce sed nisl rhoncus, imperdiet
-                elit vel, imperdiet ex. Quisque lacus ex, pulvinar eget tellus
-                id, suscipit cursus enim. Integer nec erat non leo vulputate
-                fermentum sed at massa. Cras et turpis sagittis, malesuada
-                velit at, semper velit. Sed porta nibh et mauris malesuada,
-                vel placerat tellus feugiat. Cras cursus magna diam, at mollis
-                lorem porta eget. Nunc rutrum nibh suscipit rutrum posuere.
-                In aliquam semper leo. Cras ligula ligula, mattis sit amet
-                lacinia ut, efficitur a ante. Sed in nunc nisi.Cras eget velit
-                a mauris imperdiet ultrices in nec nunc. Proin viverra, sem
-                sed fermentum commodo, elit tortor eleifend urna, vehicula
-                dapibus tortor augue at nisl. Ut nec venenatis mi. Nunc in
-                justo sem. Vestibulum non vehicula erat. Donec eu ipsum sed
-                turpis vestibulum rhoncus in ut tellus. Suspendisse tincidunt
-                nisi sed tortor efficitur, ac sodales ipsum blandit. Praesent
-                lorem justo, rhoncus eu porttitor a, molestie eget ligula.
-                In accumsan diam eget eleifend posuere. Donec et quam turpis.
-                Aenean in enim vitae libero efficitur cursus. In hac
-                habitasse platea dictumst. Etiam sollicitudin nisi a enim
-                vestibulum, eu rutrum est hendrerit. Sed ornare dui dui, a
-                cursus dolor congue vitae. Phasellus massa erat, mollis
-                quis egestas sit amet, facilisis at orci. Nunc ullamcorper
-                orem vel dolor venenatis congue. Aenean a laoreet leo, quis
-                ornare metus. Praesent erat sem, rhoncus quis mollis eu,
-                ullamcorper vitae sem. Ut semper ante sit amet nulla dictum
-                tincidunt. In hac habitasse platea dictumst. Fusce vel
-                scelerisque dolor. Aenean in metus varius, dictum metus
-                vel, convallis dolor. Donec ut tellus tristique, condimentum
-                nisl in, iaculis ante. Nam dictum placerat est, a placerat
-                dolor suscipit ut. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos.
-                Fusce eu eros at odio feugiat condimentum. Vivamus quis
-                sem dolor.</p>
-              </Col>
-            </Row>
-            <Row>
-            <Col lg={{span:6, offset:3}} xs={{span:8, offset:2}} >
-              <img src={image1} style={{display:'block',
-                maxWidth: "100%", height: "auto", width:"100%"}} class="img-responsive"></img>
-            </Col>
-            </Row>
-            <Row>
-              <Col lg={{span:6, offset:3}} xs={{span:8, offset:2}} style={{marginTop:"2%", marginBottom:"2%"}} className='contents'>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent eget tincidunt felis, sit amet congue lectus.
-                Praesent auctor sodales ligula sed dignissim. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Proin facilisis orci finibus magna aliquet, a
-                elementum purus dignissim. Fusce sed nisl rhoncus, imperdiet
-                elit vel, imperdiet ex. Quisque lacus ex, pulvinar eget tellus
-                id, suscipit cursus enim. Integer nec erat non leo vulputate
-                fermentum sed at massa. Cras et turpis sagittis, malesuada
-                velit at, semper velit. Sed porta nibh et mauris malesuada,
-                vel placerat tellus feugiat. Cras cursus magna diam, at mollis
-                lorem porta eget. Nunc rutrum nibh suscipit rutrum posuere.
-                In aliquam semper leo. Cras ligula ligula, mattis sit amet
-                lacinia ut, efficitur a ante. Sed in nunc nisi.Cras eget velit
-                a mauris imperdiet ultrices in nec nunc. Proin viverra, sem
-                sed fermentum commodo, elit tortor eleifend urna, vehicula
-                dapibus tortor augue at nisl. Ut nec venenatis mi. Nunc in
-                justo sem. Vestibulum non vehicula erat. Donec eu ipsum sed
-                turpis vestibulum rhoncus in ut tellus. Suspendisse tincidunt
-                nisi sed tortor efficitur, ac sodales ipsum blandit. Praesent
-                lorem justo, rhoncus eu porttitor a, molestie eget ligula.
-                In accumsan diam eget eleifend posuere. Donec et quam turpis.
-                Aenean in enim vitae libero efficitur cursus. In hac
-                habitasse platea dictumst. Etiam sollicitudin nisi a enim
-                vestibulum, eu rutrum est hendrerit. Sed ornare dui dui, a
-                cursus dolor congue vitae. Phasellus massa erat, mollis
-                quis egestas sit amet, facilisis at orci. Nunc ullamcorper
-                orem vel dolor venenatis congue. Aenean a laoreet leo, quis
-                ornare metus. Praesent erat sem, rhoncus quis mollis eu,
-                ullamcorper vitae sem. Ut semper ante sit amet nulla dictum
-                tincidunt. In hac habitasse platea dictumst. Fusce vel
-                scelerisque dolor. Aenean in metus varius, dictum metus
-                vel, convallis dolor. Donec ut tellus tristique, condimentum
-                nisl in, iaculis ante. Nam dictum placerat est, a placerat
-                dolor suscipit ut. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos.
-                Fusce eu eros at odio feugiat condimentum. Vivamus quis
-                sem dolorh </p>
-              </Col>
-            </Row>
-            <Row>
-            <Col lg={{span:6, offset:3}} xs={{span:8, offset:2}}>
-              <img src={image1} style={{display:'block',
-                maxWidth: "100%", height: "auto", width:"100%"}} class="img-responsive"></img>
-            </Col>
-            </Row>
-            <Row>
-              <Col lg={{span:6, offset:3}} xs={{span:8, offset:2}} style={{marginTop:"2%", marginBottom:"2%"}} className='contents'>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent eget tincidunt felis, sit amet congue lectus.
-                Praesent auctor sodales ligula sed dignissim. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Proin facilisis orci finibus magna aliquet, a
-                elementum purus dignissim. Fusce sed nisl rhoncus, imperdiet
-                elit vel, imperdiet ex. Quisque lacus ex, pulvinar eget tellus
-                id, suscipit cursus enim. Integer nec erat non leo vulputate
-                fermentum sed at massa. Cras et turpis sagittis, malesuada
-                velit at, semper velit. Sed porta nibh et mauris malesuada,
-                vel placerat tellus feugiat. Cras cursus magna diam, at mollis
-                lorem porta eget. Nunc rutrum nibh suscipit rutrum posuere.
-                In aliquam semper leo. Cras ligula ligula, mattis sit amet
-                lacinia ut, efficitur a ante. Sed in nunc nisi.Cras eget velit
-                a mauris imperdiet ultrices in nec nunc. Proin viverra, sem
-                sed fermentum commodo, elit tortor eleifend urna, vehicula
-                dapibus tortor augue at nisl. Ut nec venenatis mi. Nunc in
-                justo sem. Vestibulum non vehicula erat. Donec eu ipsum sed
-                turpis vestibulum rhoncus in ut tellus. Suspendisse tincidunt
-                nisi sed tortor efficitur, ac sodales ipsum blandit. Praesent
-                lorem justo, rhoncus eu porttitor a, molestie eget ligula.
-                In accumsan diam eget eleifend posuere. Donec et quam turpis.
-                Aenean in enim vitae libero efficitur cursus. In hac
-                habitasse platea dictumst. Etiam sollicitudin nisi a enim
-                vestibulum, eu rutrum est hendrerit. Sed ornare dui dui, a
-                cursus dolor congue vitae. Phasellus massa erat, mollis
-                quis egestas sit amet, facilisis at orci. Nunc ullamcorper
-                orem vel dolor venenatis congue. Aenean a laoreet leo, quis
-                ornare metus. Praesent erat sem, rhoncus quis mollis eu,
-                ullamcorper vitae sem. Ut semper ante sit amet nulla dictum
-                tincidunt. In hac habitasse platea dictumst. Fusce vel
-                scelerisque dolor. Aenean in metus varius, dictum metus
-                vel, convallis dolor. Donec ut tellus tristique, condimentum
-                nisl in, iaculis ante. Nam dictum placerat est, a placerat
-                dolor suscipit ut. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos.
-                Fusce eu eros at odio feugiat condimentum. Vivamus quis
-                sem dolor. </p>
-              </Col>
-            </Row>
-          </Container>
+            </Row>*/}
+            <ProgramInfo subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror-ch&amp;src=sdkpreparse" color="#D9C739"/>
+
+            <Second_TitleCh secondTitle="About This Work"></Second_TitleCh>
+            <MainContents_Important_ch contents="在疫情最辛苦艱難的時期，許多生命受苦臨危之際，醫護人員、警消人員、科學家、衛生官員這些專業人士，在拯救生命的同時，並不會過問危難者的族裔與身份。我們每一個人都會面臨生命終結的一天，當這些專業人士在救助受苦的人們，處理危急的情況當下，並不會過問對方的膚色族裔、語言文化、社經地位，那時，他們的眼中視一切生命皆為平等，不因求助者的外在條件、理想價值而有所不同。"></MainContents_Important_ch>
+          <MainContents_First_ch contents="若世界以專業領域、社會貢獻的成就來對待每一個人，給予每個人付出後應得的尊重；人們不再以膚色外表、出身背景評斷、喜惡他人，是否才能真正地將每個人當作獨立的個人看待?"></MainContents_First_ch>
 
 
-                {/* modal */}
-                {/* <button onClick={this.handleModal}>Open modal</button>
-                <Modal isOpen={this.state.show} style={{content:{background:'#94AFC2'}}}>
-                    <div className="container_modal">
-                        <div className="title_modal">
-                            <h3>Select a skin color</h3>
-                        </div>
-                        <div className="buttonSkinColor_modal">
-                            <ButtonSkinColor name={'asdf'} col={'#5A453C'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#785C50'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#A57E6E'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#C39582'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#E1AC96'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#FFCEB4'}></ButtonSkinColor>
-                            <ButtonSkinColor name={'asdf'} col={'#FCDFD0'}></ButtonSkinColor>
-                        </div>
-                        <div>
-                            <button className = "btn_modal" onClick={this.handleModal} >Close</button>
-                            <button className = "btn_modal">Enter</button>
-                        </div>
-                    </div>
-                </Modal> */}
-            </div>
+          <MainContents_Img src={image1}></MainContents_Img>
+
+            <MainContents_Middle_ch contents="若世界以專業領域、社會貢獻的成就來對待每一個人，給予每個人付出後應得的尊重；人們不再以膚色外表、出身背景評斷、喜惡他人，是否才能真正地將每個人當作獨立的個人看待?"></MainContents_Middle_ch>
+
+
+          <MainContents_Img src={image1}></MainContents_Img>
+
+            <MainContents_Middle_ch contents="若世界以專業領域、社會貢獻的成就來對待每一個人，給予每個人付出後應得的尊重；人們不再以膚色外表、出身背景評斷、喜惡他人，是否才能真正地將每個人當作獨立的個人看待?"></MainContents_Middle_ch>
+            <MainContetn_TwoPic src={image1} className="img-other-side"></MainContetn_TwoPic>
+              <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
+        </Container>
+
+
+
+
+          <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
+        </div>
         );
     }
 };

@@ -15,23 +15,34 @@
   justify-content: center;
 }
 
-
+.other-side-hint{
+ text-align: center;
+ display:block;
+}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-
+  .other-side-hint{
+   font-size: 25px;
+  }
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
-
+  .other-side-hint{
+   font-size: 25px;
+  }
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-
+  .other-side-hint{
+   font-size: 25px;
+  }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-
+  .other-side-hint{
+   font-size: 14px;
+  }
 }

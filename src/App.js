@@ -1,18 +1,23 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./navigation";
-import PaulsApple from "./pauls_apple";
+import PaulsApple from "./PaulsApple/pauls_apple";
 import Home from "./home";
 import IAmDifferent from "./IAmDifferent/i_am_different";
-import PeopleAndMask from "./people_and_mask";
+import PeopleAndMask from "./PeopleAndMask/people_and_mask";
 import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
-import Mirror from "./mirror";
-import Sky from "./sky";
+import Mirror from "./mirror/mirror";
+import Sky from "./Sky/sky";
+import SkyArtist from "./Sky/skyArtist";
+import SkyArtist1 from "./Sky/skyArtist1";
+import SkyArtist2 from "./Sky/skyArtist2";
+import SkyArtist3 from "./Sky/skyArtist3";
 import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
-import SkyV1 from "./sky_v1";
+import SkyV1 from "./Sky/sky_v1";
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
+import Sky_ch from "./ch/Sky-ch/sky-ch";
 import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";
 import IAmDifferentForm_ch from "./ch/IAmDifferent-ch/i_am_different_form-ch";
 import Home_ch from "./ch/Home-ch/home-ch";
@@ -30,7 +35,8 @@ import ReactGA from 'react-ga';
 import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
 import { createBrowserHistory } from 'history';
 
-// import"./sky_v1.css";
+
+// import"./Sky/sky_v1.css";
 
 function App() {
   const history = createBrowserHistory();
@@ -45,8 +51,8 @@ history.listen(location => {
         <HashRouter>
 
         {/* <hr id="mobileLine"/> */}
-       <HeaderV1 />
-        {/*<HeaderV2 />*/}
+       {/* <HeaderV1 /> */}
+        <HeaderV2 />
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
@@ -58,7 +64,12 @@ history.listen(location => {
           <Route path="/SkyV2" component={Sky} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/Sky" component={SkyV1}/>
+          <Route path="/SkyArtist" component={SkyArtist}/>
+          <Route path="/SkyArtist1" component={SkyArtist1}/>
+          <Route path="/SkyArtist2" component={SkyArtist2}/>
+          <Route path="/SkyArtist3" component={SkyArtist3}/>
           <Route path="/Sky-ch" component={SkyV1_ch}/>
+          <Route path="/SkyV2-ch" component={Sky_ch} />
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
           <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
           <Route path="/Home-ch" component={IAmDifferent_ch}/>

@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgramInfo from "../programInfo";
 import Second_Title from "../modules/Second_Title"
+import MainContents_First from "../modules/MainContents_First";
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
 import Footer from '../footer-temp';
@@ -33,6 +34,9 @@ class OtherSideOfMask extends Component {
                    position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
                </div>
               </Col>
+            </Row>
+            <Row className="other-side-hint">
+              <p>Click and drag or scroll to look around</p>
             </Row>
             <ProgramInfo subtitle="Behind the Masks" title="THE OTHER SIDE OF MASK" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse" color="#D9C739">
             </ProgramInfo>
