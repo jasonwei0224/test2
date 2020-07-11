@@ -4,7 +4,20 @@ import "./newsletterContactUs.css";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
 
+
+
+
 const NewsletterContactUs = () => {
+  async function submitForm(e){
+    console.log("submit");
+    var formData = new FormData();
+    formData.append('message', document.getElementById('contact_message').value)
+    console.log(formData);
+    const response = await fetch('footer_mail.php', {
+        method: 'POST',
+        body: formData,
+      })
+  }
   let Container = styled.div`
     text-align: center;
     display: flex;
@@ -12,20 +25,30 @@ const NewsletterContactUs = () => {
     justify-content: space-around;
     align-items: center;
     width: 75%;
+    margin-bottom: 20px;
   `;
   let Box = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
   `;
-  let Newsletter = styled.div`
+  let Newsletter = styled.form`
     background-color: yellow;
     flex: 1;
   `;
-  let ContactUs = styled.div`
+  let ContactUs = styled.form`
     flex: 1;
   `;
-  let Button = styled.button`
+  // let Button = styled.button`
+  //   background-color: lightgrey;
+  //   border-radius: 25px;
+  //   padding-left: 12%;
+  //   padding-right: 12%;
+  //   position: absolute;
+  //   bottom: 0;
+  // `;
+  let Paragraph = styled.p``;
+  let Button = styled.input`
     background-color: lightgrey;
     border-radius: 25px;
     padding-left: 12%;
@@ -33,7 +56,6 @@ const NewsletterContactUs = () => {
     position: absolute;
     bottom: 0;
   `;
-  let Paragraph = styled.p``;
   let Input = styled.input`
     text-align: left;
     border-radius: 10px;
@@ -44,19 +66,11 @@ const NewsletterContactUs = () => {
     border-radius: 10px;
     border: 2px solid grey;
   `;
-  const [newsletter, setNewsLetter] = useState([
-    {
-      name: "",
-      email: "",
-    },
-  ]);
 
-  const [contactUs, setContactUs] = useState("");
-  const updateContactUsState = () => {
-    const contactUs = [...contactUs];
-    contactUs.tellUsMore = document.getElementById("contact").value;
-    setContactUs(contactUs);
-  };
+/*  const response = await fetch('footer_mail.php', {
+    method: 'POST',
+    body: formData
+  })*/
 
   return (
     <Container>
@@ -66,26 +80,30 @@ const NewsletterContactUs = () => {
           <Paragraph>For Early Announcements And More</Paragraph>
           <Input type="text" placeholder="NAME" />
           <Input type="text" placeholder="EMAIL" />
-          <Button>JOIN</Button>
+          {/* <Button>JOIN</Button> */}
+          <Button type="submit" value="Join" />
         </Newsletter>
-        <ContactUs className="contact_us">
+        {/* action="mailto:generaltestemailhelloworld@gmail.com"
+         method="post"*/}
+        <ContactUs
+          className="contact_us"
+
+          enctype="text/plain"
+        >
           <Paragraph>CONTACT US</Paragraph>
           <Paragraph>
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
           </Paragraph>
           <TextBox
-            id="contact"
+            id="contact_message"
             type="text"
             placeholder="TELL US MORE..."
             style={{ height: 80, wordWrap: "-moz-initial" }}
           />
-          <Button
-            onClick={() =>
-              setContactUs(alert(document.getElementById("contact").value))
-            }
-          >
+          {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
             SUBMIT
-          </Button>
+          </Button> */}
+          <Button type="submit" value="Submit" onClick={submitForm} />
         </ContactUs>
       </Box>
     </Container>
