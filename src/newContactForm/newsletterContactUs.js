@@ -66,14 +66,11 @@ const NewsletterContactUs = () => {
     border-radius: 10px;
     border: 2px solid grey;
   `;
-<<<<<<< HEAD:src/newContactForm/newsletterContactUs.js
 
 /*  const response = await fetch('footer_mail.php', {
     method: 'POST',
     body: formData
   })*/
-=======
->>>>>>> 51103251b16201fdf7aee022937764cc7c6a70e6:src/IAmDifferent/newsletterContactUs.js
 
   return (
     <Container>
@@ -86,18 +83,11 @@ const NewsletterContactUs = () => {
           {/* <Button>JOIN</Button> */}
           <Button type="submit" value="Join" />
         </Newsletter>
-<<<<<<< HEAD:src/newContactForm/newsletterContactUs.js
         {/* action="mailto:generaltestemailhelloworld@gmail.com"
          method="post"*/}
         <ContactUs
           className="contact_us"
 
-=======
-        <ContactUs
-          className="contact_us"
-          action="mailto:generaltestemailhelloworld@gmail.com"
-          method="post"
->>>>>>> 51103251b16201fdf7aee022937764cc7c6a70e6:src/IAmDifferent/newsletterContactUs.js
           enctype="text/plain"
         >
           <Paragraph>CONTACT US</Paragraph>
@@ -113,11 +103,7 @@ const NewsletterContactUs = () => {
           {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
             SUBMIT
           </Button> */}
-<<<<<<< HEAD:src/newContactForm/newsletterContactUs.js
           <Button type="submit" value="Submit" onClick={submitForm} />
-=======
-          <Button type="submit" value="Submit" />
->>>>>>> 51103251b16201fdf7aee022937764cc7c6a70e6:src/IAmDifferent/newsletterContactUs.js
         </ContactUs>
       </Box>
     </Container>
