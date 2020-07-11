@@ -81,6 +81,12 @@
 }
 
 /* homeProjectRight.js */
+#thirdSectionHomeProjectRow {
+    width: 100%;
+    margin-right: 0!important;
+    margin-left: 0 !important;
+}
+
 #homeProjectRight .homeProjectBlankCol {
     background-color: rgb(93, 93, 93);
     padding-top: 130px;
@@ -96,7 +102,8 @@
 }
 
 #homeProjectRight {
-    margin: 10%;
+    margin: 10% 0;
+    
 }
 
 #sponsorSlider {
@@ -114,6 +121,25 @@
     width: 80%;
     margin: 0 auto;
 }
+
+/* home_colored_header.js */
+#home_colored_header_title {
+    background-color:rgb(173, 0, 30);
+    padding-left: 5%;
+    color: white;
+    font-size: 24pt;
+}
+
+#home_colored_header_line {
+    background-color:rgb(173, 0, 30);
+    height: 3px;
+    margin-top: 7px;
+}
+
+#homeThirdSection {
+    padding: 10%;
+}
+
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {

@@ -5,40 +5,8 @@ import ItemsCarousel from 'react-items-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
-// class SponsorImgSlider extends React.Component {
-//     render() {
-//       var settings = {
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 3,
-//         slidesToScroll: 3
-//       };
-//       return (
-//           <div id="home_sponsor_slider">
-//         <Slider {...settings}>
-//           <div>
-//               <img className="home_sponsor_img" src={placeholder}/>
-//           </div>
-//           <div>
-//             <img className="home_sponsor_img" src={placeholder}/>
-//           </div>
-//           <div>
-//             <img className="home_sponsor_img" src={placeholder}/>
-//           </div>
-//           <div>
-//             <img className="home_sponsor_img" src={placeholder}/>
-//           </div>
-//         </Slider>
-//         </div>
-//       );
-//     }
-//   }
-
-//   export default SponsorImgSlider;
 
 class SponsorImgSlider extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {

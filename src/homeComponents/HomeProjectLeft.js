@@ -8,7 +8,7 @@ import {Row, Col} from 'react-bootstrap';
 function HomeProjectLeft(props) {
     return (
         <div id="homeProjectRight">
-            <Row className="thirdSectionHomeProjectRow">
+            <Row className="thirdSectionHomeProjectRow no-gutters">
                 <Col xs="4"className="homeProjectTitleCol">{props.title}</Col>
                 <Col xs="8"className="homeProjectBlankCol"></Col>
             </Row>
