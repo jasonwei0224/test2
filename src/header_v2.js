@@ -75,118 +75,74 @@ export default class HeaderV2 extends React.Component {
 
   render(){
     return (
-    <div style={{
+      <div>
+        {this.state.english?
+          <>
+      <a href="https://torontotaiwanfest.ca/toronto-2020/"><img src={twftorlogo} id="logo" ></img></a>
+      </>
+      :
+        <>
+      <a href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant"><img src={twftorlogo} id="logo" ></img></a>
+      </>
+  }
+  {/*  <div style={{
       position: this.state.position,
       top: this.state.top,
       zIndex: this.state.zIndex,
-      width: "100%",
-      backgroundColor:"white"
-      }}>
-        <Navbar id="navbar-v2" collapseOnSelect expand="lg" >
-            <Navbar.Brand href="https://torontotaiwanfest.ca/toronto-2020/"><img id="logo-image" src={twftorlogo}></img></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      width: this.state.width,
+
+      }}>*/}
+      <Container fluid bsPrefix="container">
+        <Navbar id="navbar-v2" collapseOnSelect expand="xl" >
+          <Navbar.Brand href="https://torontotaiwanfest.ca/toronto-2020/"><img id="logo-image" src={twftorlogo}></img></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav_bar_toggle_icon"/>
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="nav-group mr-auto" />
+                <Nav className="ml-auto"style={{alignItems:"end"}}>
                 {this.state.english?
                 <>
                     <Nav.Link className="navitem-v2" href="https://torontotaiwanfest.ca/">HOME</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">PROGRAMS</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">GALLERY</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">SPONSORS</Nav.Link>
+                  <div className="nav-dropdown-wrapper">
+                    <div className="nav-dropdown-wrapper2">
+                      <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" alignCenter renderMenuOnMount={true}>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">MIRRORS</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">PAUL'S APPLE</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">THE OTHER SIDE OF MASKS</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">"UN" BEGIND CHINESE</NavDropdown.Item>
+                      </NavDropdown>
+                    </div>
+
+
+                  </div>
                     <Nav.Link bsPrefix = "langNavLink-v2"><img className="langIcon-v2" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
                 </>
                 :
                 <>
                     <Nav.Link className="navitem-v2" href="/">首頁</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">程式??</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">線上藝廊</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="#">贊助單位</Nav.Link>
+                      <div className="nav-dropdown-wrapper">
+                        <div className="nav-dropdown-wrapper2">
+                      <NavDropdown bsPrefix="navitem-dropdown"title="線上藝廊" renderMenuOnMount={true}>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">MIRRORS</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">PAUL'S APPLE</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">THE OTHER SIDE OF MASKS</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">"UN" BEGIND CHINESE</NavDropdown.Item>
+                      </NavDropdown>
+                    </div>
+
+
+                  </div>
                     <Nav.Link className="langNavLinkCh-v2"><img className="langIconCh-v2" src={en} onClick={this.languageBtnListener}/></Nav.Link>
                 </>
                 }
+              </Nav>
             </Navbar.Collapse>
         </Navbar>
-     </div>
+        </Container>
+    {/* </div>*/}
+       </div>
     );
   }
-}
-
-function Home() {
-  return (
-    <div>
-      <h2>HOME</h2>
-    </div>
-  );
-}
-
-function Aboutus() {
-  return (
-    <div>
-      <h2>ABOUT US</h2>
-    </div>
-  );
-}
-
-function Concert() {
-  return (
-    <div>
-      <h2>CONCERT</h2>
-    </div>
-  );
-}
-
-function Gallery() {
-  return (
-    <div>
-      <h2>GALLERY</h2>
-    </div>
-  );
-}
-
-function Talks() {
-  return (
-    <div>
-      <h2>TALKS</h2>
-    </div>
-  );
-}
-
-function Kitchen() {
-  return (
-    <div>
-      <h2>KITCHEN</h2>
-    </div>
-  );
-}
-
-function Bookstore() {
-  return (
-    <div>
-      <h2>BOOKSTORE</h2>
-    </div>
-  );
-}
-
-function Films() {
-  return (
-    <div>
-      <h2>FILMS</h2>
-    </div>
-  );
-}
-
-function Sponsors() {
-  return (
-    <div>
-      <h2>SPONSORS</h2>
-    </div>
-  );
-}
-
-function Volunteer() {
-  return (
-    <div>
-      <h2>VOLUNTEER</h2>
-    </div>
-  );
 }
