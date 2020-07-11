@@ -4,7 +4,20 @@ import "./newsletterContactUs.css";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
 
+
+
+
 const NewsletterContactUs = () => {
+  async function submitForm(e){
+    console.log("submit");
+    var formData = new FormData();
+    formData.append('message', document.getElementById('contact_message').value)
+    console.log(formData);
+    const response = await fetch('footer_mail.php', {
+        method: 'POST',
+        body: formData,
+      })
+  }
   let Container = styled.div`
     text-align: center;
     display: flex;
@@ -54,6 +67,11 @@ const NewsletterContactUs = () => {
     border: 2px solid grey;
   `;
 
+/*  const response = await fetch('footer_mail.php', {
+    method: 'POST',
+    body: formData
+  })*/
+
   return (
     <Container>
       <Box className="box">
@@ -65,10 +83,11 @@ const NewsletterContactUs = () => {
           {/* <Button>JOIN</Button> */}
           <Button type="submit" value="Join" />
         </Newsletter>
+        {/* action="mailto:generaltestemailhelloworld@gmail.com"
+         method="post"*/}
         <ContactUs
           className="contact_us"
-          action="mailto:generaltestemailhelloworld@gmail.com"
-          method="post"
+
           enctype="text/plain"
         >
           <Paragraph>CONTACT US</Paragraph>
@@ -76,7 +95,7 @@ const NewsletterContactUs = () => {
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
           </Paragraph>
           <TextBox
-            id="contact"
+            id="contact_message"
             type="text"
             placeholder="TELL US MORE..."
             style={{ height: 80, wordWrap: "-moz-initial" }}
@@ -84,7 +103,7 @@ const NewsletterContactUs = () => {
           {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
             SUBMIT
           </Button> */}
-          <Button type="submit" value="Submit" />
+          <Button type="submit" value="Submit" onClick={submitForm} />
         </ContactUs>
       </Box>
     </Container>
