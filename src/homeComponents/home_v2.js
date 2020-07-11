@@ -30,7 +30,6 @@ function Home2() {
             <SponsorImgSlider id="sponsorSlider"/>
         </div>
         </div>
-
     )
 }
 
