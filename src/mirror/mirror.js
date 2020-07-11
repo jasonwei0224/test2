@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
 import {Container, Row, Col} from 'react-bootstrap';
+import MirrorBird from "./mirrorBird";
 import image1 from '../assets/image1.jpg';
 import ProgramInfo from "../programInfo";
 import Second_Title from "../modules/Second_Title"
@@ -82,8 +83,12 @@ class Mirror extends Component {
     render() {
         return (
             <div className='mirror'>
-             <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/>
+             {/* <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/> */}
+
             <Container fluid>
+
+            {/* flying bird */}
+            <MirrorBird></MirrorBird>
 
             {/*}<Row>
                 <Col lg={12} style={{display:"flex", width:"100%", textAlign:"center",
