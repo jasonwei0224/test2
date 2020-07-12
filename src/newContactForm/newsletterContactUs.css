@@ -12,11 +12,27 @@
   width: 100%;
   position: relative;
 }
-.newsletter > *,
+/* .newsletter > *,
 .contact_us > * {
   margin-bottom: 10px;
+} */
+#contact_name{
+  font-size: 15px;
+  font-weight: normal;
+  width:46%;
+  margin-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
+#contact_email{
+  width:46%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.NC_btn:hover{
+  background-color: #0C3866;
+  color:white;
+}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   .box {
@@ -66,12 +82,16 @@
 
 /* lg */
 @media screen and (min-width: 1200px) {
+  .row{
+    margin-right: 0px!important;
+  }
   .contact_us > p,
   .newsletter > p {
-    font-size: 20px;
+    font-size: 12px;
   }
   .contact_us :first-child,
   .newsletter :first-child {
-    font-size: 35px;
+    font-size: 20px;
+    font-weight:bold;
   }
 }
