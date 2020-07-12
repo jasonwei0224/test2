@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Alert } from "react-bootstrap";
 // import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-
+import Footer from "../footer-temp";
 
 
 const NewsletterContactUs = () => {
@@ -45,7 +45,7 @@ const NewsletterContactUs = () => {
     document.getElementById('newsletter_name').value='';
 
   }
-  let Container = styled.div`
+  let NC_Container = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -54,44 +54,80 @@ const NewsletterContactUs = () => {
     width: 75%;
     margin-bottom: 20px;
   `;
-  let Box = styled.div`
+  let NC_Box = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 270px;
+    border-top: 2px solid #D0D0D0;;
+    padding-top:20px;
+    margin-bottom:40px;
   `;
   let Newsletter = styled.form`
-    background-color: yellow;
+    background-color: white;
+    border-right: 2px;
+    border-right-style: solid;
+    border-right-color: #D0D0D0;
     flex: 1;
   `;
   let ContactUs = styled.form`
     flex: 1;
   `;
-  // let Button = styled.button`
-  //   background-color: lightgrey;
-  //   border-radius: 25px;
-  //   padding-left: 12%;
-  //   padding-right: 12%;
-  //   position: absolute;
-  //   bottom: 0;
-  // `;
-  let Paragraph = styled.p``;
-  let Button = styled.input`
+  let NC_Paragraph = styled.p`
+      font-family: "sofia-pro", Sans-serif;
+  `;
+  let NC_Button = styled.input`
     background-color: lightgrey;
     border-radius: 25px;
+    border: none !important;
+    padding-top:2%;
+    padding-bottom:2%;
     padding-left: 12%;
     padding-right: 12%;
     position: absolute;
     bottom: 0;
+    font-family: "sofia-pro", Sans-serif;
+    margin-top:20px;
+    color:#606060;
+    font-weight:bold;
   `;
-  let Input = styled.input`
-    text-align: left;
-    border-radius: 10px;
-    width: 80%;
+  let NC_Input = styled.input`
+    text-align: center;
+    border-radius: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 60%;
+    color: black;
+    border-color: #D0D0D0;
+    border-style: solid;
+    margin-bottom:10px;
+    outline:none;
   `;
-  let TextBox = styled.textarea`
-    width: 90%;
-    border-radius: 10px;
-    border: 2px solid grey;
+  let NC_TextBox = styled.textarea`
+    width: 60%;
+    height: 40%;
+    border-radius: 25px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    resize:none;
+    padding-top:10px;
+    padding-bottom:30px;
+    outline:none;
+    ::-webkit-input-placeholder {
+      text-align: center;
+      vertical-align: middle;
+    }
+    -moz-placeholder {
+      text-align: center;
+    }
+    ::-moz-placeholder {
+      text-align: center;
+    }
+    :-ms-input-placeholder {
+      text-align: center;
+    }
+
   `;
 
 /*  const response = await fetch('footer_mail.php', {
@@ -100,16 +136,16 @@ const NewsletterContactUs = () => {
   })*/
 
   return (
-    <Container>
-      <Box className="box">
+    <NC_Container fluid>
+      <NC_Box  className="box">
         <Newsletter className="newsletter">
-          <Paragraph>JOIN OUR NEWSLETTER</Paragraph>
-          <Paragraph>For Early Announcements And More</Paragraph>
+          <NC_Paragraph>JOIN OUR NEWSLETTER</ NC_Paragraph>
+          <NC_Paragraph>For Early Announcements And More</ NC_Paragraph>
 
-          <Input id="newsletter_name" type="text" placeholder="NAME" name="FNAME"/>
-          <Input id="newsletter_email"type="text" placeholder="EMAIL" name="EMAIL" />
+          <NC_Input id="newsletter_name" type="text" placeholder="NAME" name="FNAME"/>
+          <NC_Input id="newsletter_email"type="text" placeholder="EMAIL" name="EMAIL" />
           {/* <Button>JOIN</Button> */}
-          <Button type="submit" value="subscribe" onClick={subscribe} />
+          <NC_Button className="NC_btn" type="submit" value="Join" onClick={subscribe} />
 
         </Newsletter>
         {/* action="mailto:generaltestemailhelloworld@gmail.com"
@@ -119,23 +155,25 @@ const NewsletterContactUs = () => {
 
           enctype="text/plain"
         >
-          <Paragraph>CONTACT US</Paragraph>
-          <Paragraph>
+          <NC_Paragraph>CONTACT US</NC_Paragraph>
+          <NC_Paragraph>
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
-          </Paragraph>
-          <TextBox
+          </NC_Paragraph>
+          <NC_TextBox
             id="contact_message"
             type="text"
             placeholder="TELL US MORE..."
-            style={{ height: 80, wordWrap: "-moz-initial" }}
+            style={{ wordWrap: "-moz-initial" }}
           />
           {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
             SUBMIT
           </Button> */}
-          <Button type="submit" value="Submit" onClick={submitForm} />
+          <NC_Button className="NC_btn" type="submit" value="Submit" onClick={submitForm} />
         </ContactUs>
-      </Box>
-    </Container>
+      </NC_Box>
+
+    </NC_Container>
+
   );
 };
 
