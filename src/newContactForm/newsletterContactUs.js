@@ -1,4 +1,4 @@
-{/*import React from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import "./newsletterContactUs.css";
 import { useState } from "react";
@@ -7,44 +7,51 @@ import { Alert } from "react-bootstrap";
 
 import Footer from "../footer-temp";
 
-
 const NewsletterContactUs = () => {
-  async function submitForm(e){
+  async function submitForm(e) {
     e.preventDefault();
     console.log("submit");
     var formData = new FormData();
-    formData.append('contact_name', document.getElementById('contact_name').value)
-    formData.append('cotact_email', document.getElementById('contact_email').value)
-    formData.append('message', document.getElementById('contact_message').value)
+    formData.append(
+      "contact_name",
+      document.getElementById("contact_name").value
+    );
+    formData.append(
+      "cotact_email",
+      document.getElementById("contact_email").value
+    );
+    formData.append(
+      "message",
+      document.getElementById("contact_message").value
+    );
     console.log(formData);
-    const response = await fetch('footer_mail.php', {
-        method: 'POST',
-        body: formData,
-      })
-    .then(data => data.text())
-    .then(data=>{
-      if(data ==="success"){
-        alert("Submission Successful!");
-        document.getElementById('contact_message').value='';
-      }else if(data==="failed"){
-        alert("Please try again");
-      }
-    })
-  }
-
-  async function subscribe(e){
-    e.preventDefault();
-    var formData = new FormData();
-    formData.append('EMAIL',document.getElementById('newsletter_email').value);
-    formData.append('NAME',document.getElementById('newsletter_name').value);
-    const response = await fetch('subscribe_mail.php',{
-      method: 'POST',
+    const response = await fetch("footer_mail.php", {
+      method: "POST",
       body: formData,
     })
-    alert("Thanks for Subscribing");
-    document.getElementById('newsletter_email').value='';
-    document.getElementById('newsletter_name').value='';
+      .then((data) => data.text())
+      .then((data) => {
+        if (data === "success") {
+          alert("Submission Successful!");
+          document.getElementById("contact_message").value = "";
+        } else if (data === "failed") {
+          alert("Please try again");
+        }
+      });
+  }
 
+  async function subscribe(e) {
+    e.preventDefault();
+    var formData = new FormData();
+    formData.append("EMAIL", document.getElementById("newsletter_email").value);
+    formData.append("NAME", document.getElementById("newsletter_name").value);
+    const response = await fetch("subscribe_mail.php", {
+      method: "POST",
+      body: formData,
+    });
+    alert("Thanks for Subscribing");
+    document.getElementById("newsletter_email").value = "";
+    document.getElementById("newsletter_name").value = "";
   }
   let NC_Container = styled.div`
     text-align: center;
@@ -60,61 +67,61 @@ const NewsletterContactUs = () => {
     align-items: center;
     width: 100%;
     height: 300px;
-    border-top: 2px solid #D0D0D0;;
-    padding-top:20px;
-    margin-bottom:40px;
+    border-top: 2px solid #d0d0d0;
+    padding-top: 20px;
+    margin-bottom: 40px;
   `;
   let Newsletter = styled.form`
     background-color: white;
     border-right: 2px;
     border-right-style: solid;
-    border-right-color: #D0D0D0;
+    border-right-color: #d0d0d0;
     flex: 1;
   `;
   let ContactUs = styled.form`
     flex: 1;
   `;
   let NC_Paragraph = styled.p`
-      font-family: "sofia-pro", Sans-serif;
+    font-family: "sofia-pro", Sans-serif;
   `;
   let NC_Button = styled.input`
     background-color: lightgrey;
     border-radius: 25px;
     border: none !important;
-    padding-top:2%;
-    padding-bottom:2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 12%;
     padding-right: 12%;
     position: absolute;
     bottom: 0;
     font-family: "sofia-pro", Sans-serif;
-    margin-top:20px;
-    color:#606060;
-    font-weight:bold;
+    margin-top: 20px;
+    color: #606060;
+    font-weight: bold;
   `;
   let NC_Input = styled.input`
     text-align: center;
     border-radius: 25px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 60%;
     color: black;
-    border-color: #D0D0D0;
+    border-color: #d0d0d0;
     border-style: solid;
-    margin-bottom:10px;
-    outline:none;
+    margin-bottom: 10px;
+    outline: none;
   `;
   let NC_TextBox = styled.textarea`
     width: 80%;
     height: 25%;
     border-radius: 25px;
     border: 2px;
-    border-color: #D0D0D0;
+    border-color: #d0d0d0;
     border-style: solid;
-    resize:none;
-    padding-top:10px;
-    padding-bottom:30px;
-    outline:none;
+    resize: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    outline: none;
     ::-webkit-input-placeholder {
       text-align: center;
       vertical-align: middle;
@@ -128,53 +135,70 @@ const NewsletterContactUs = () => {
     :-ms-input-placeholder {
       text-align: center;
     }
-
   `;
 
-  const response = await fetch('footer_mail.php', {
-    method: 'POST',
-    body: formData
-  })
+  const [resetContactUsArea, setResetContactTextArea] = useState("");
+  const handleEmailSubmission = () => {
+    setResetContactTextArea("");
+  };
 
   return (
     <NC_Container fluid>
-      <NC_Box  className="box">
+      <NC_Box className="box">
         <Newsletter className="newsletter">
-          <NC_Paragraph>JOIN OUR NEWSLETTER</ NC_Paragraph>
-          <NC_Paragraph>For Early Announcements And More</ NC_Paragraph>
+          <NC_Paragraph>JOIN OUR NEWSLETTER</NC_Paragraph>
+          <NC_Paragraph>For Early Announcements And More</NC_Paragraph>
 
-          <NC_Input id="newsletter_name" type="text" placeholder="NAME" name="FNAME"/>
-          <NC_Input id="newsletter_email"type="text" placeholder="EMAIL" name="EMAIL" />
+          <NC_Input
+            id="newsletter_name"
+            type="text"
+            placeholder="NAME"
+            name="FNAME"
+          />
+          <NC_Input
+            id="newsletter_email"
+            type="text"
+            placeholder="EMAIL"
+            name="EMAIL"
+          />
 
-          <NC_Button className="NC_btn" type="submit" value="Join" onClick={subscribe} />
-
+          <NC_Button
+            className="NC_btn"
+            type="submit"
+            value="Join"
+            onClick={subscribe}
+          />
         </Newsletter>
 
         <ContactUs
           className="contact_us"
-          enctype="text/plain">
-          <NC_Paragraph>CONTACT US</NC_Paragraph>
-          <NC_Paragraph>
+          // action="mailto:generaltestemailhelloworld@gmail.com"
+          // method="post"
+          // enctype="text/plain"
+        >
+          <Paragraph>CONTACT US</Paragraph>
+          <Paragraph>
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
-          </NC_Paragraph>
-          <div>
-            <NC_Input id="contact_name" type="text" placeholder="NAME" name="FNAME"/>
-            <NC_Input id="contact_email"type="text" placeholder="EMAIL" name="EMAIL" />
-          </div>
-        <NC_TextBox
-            id="contact_message"
-            type="text"
+          </Paragraph>
+          <TextBox
+            id="contactUsText"
+            // type="text"
             placeholder="TELL US MORE..."
-            style={{ wordWrap: "-moz-initial" }}
+            // value={resetContactUsArea}
+            style={{ height: 80, wordWrap: "-moz-initial" }}
           />
-
-          <NC_Button className="NC_btn" type="submit" value="Submit" onClick={submitForm} />
+          {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
+            SUBMIT
+          </Button> */}
+          <Button
+            type="submit"
+            value="Submit"
+            onClick={handleEmailSubmission}
+          />
         </ContactUs>
       </NC_Box>
-
     </NC_Container>
-
   );
 };
 
-export default NewsletterContactUs;*/}
+export default NewsletterContactUs;
