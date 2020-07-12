@@ -58,7 +58,7 @@ const NewsletterContactUs = () => {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 270px;
+    height: 300px;
     border-top: 2px solid #D0D0D0;;
     padding-top:20px;
     margin-bottom:40px;
@@ -104,8 +104,8 @@ const NewsletterContactUs = () => {
     outline:none;
   `;
   let NC_TextBox = styled.textarea`
-    width: 60%;
-    height: 40%;
+    width: 80%;
+    height: 25%;
     border-radius: 25px;
     border: 2px;
     border-color: #D0D0D0;
@@ -152,14 +152,16 @@ const NewsletterContactUs = () => {
          method="post"*/}
         <ContactUs
           className="contact_us"
-
-          enctype="text/plain"
-        >
+          enctype="text/plain">
           <NC_Paragraph>CONTACT US</NC_Paragraph>
           <NC_Paragraph>
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
           </NC_Paragraph>
-          <NC_TextBox
+          <div>
+            <NC_Input id="contact_name" type="text" placeholder="NAME" name="FNAME"/>
+            <NC_Input id="contact_email"type="text" placeholder="EMAIL" name="EMAIL" />
+          </div>
+        <NC_TextBox
             id="contact_message"
             type="text"
             placeholder="TELL US MORE..."
