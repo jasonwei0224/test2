@@ -13,6 +13,8 @@ const NewsletterContactUs = () => {
     e.preventDefault();
     console.log("submit");
     var formData = new FormData();
+    formData.append('contact_name', document.getElementById('contact_name').value)
+    formData.append('cotact_email', document.getElementById('contact_email').value)
     formData.append('message', document.getElementById('contact_message').value)
     console.log(formData);
     const response = await fetch('footer_mail.php', {
