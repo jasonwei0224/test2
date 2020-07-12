@@ -17,6 +17,8 @@ const NewsletterContactUs = () => {
         method: 'POST',
         body: formData,
       })
+      alert("Submission Successful!");
+      document.getElementById('contact_message').value='';
   }
   let Container = styled.div`
     text-align: center;
