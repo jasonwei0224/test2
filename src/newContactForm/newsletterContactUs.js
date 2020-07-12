@@ -3,12 +3,14 @@ import styled from "@emotion/styled";
 import "./newsletterContactUs.css";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
+// import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 
 
 
 const NewsletterContactUs = () => {
   async function submitForm(e){
+    e.preventDefault();
     console.log("submit");
     var formData = new FormData();
     formData.append('message', document.getElementById('contact_message').value)
@@ -17,6 +19,31 @@ const NewsletterContactUs = () => {
         method: 'POST',
         body: formData,
       })
+    .then(data => data.text())
+    .then(data=>{
+      if(data ==="success"){
+        alert("Submission Successful!");
+        document.getElementById('contact_message').value='';
+      }else if(data==="failed"){
+        alert("Please try again");
+      }
+    })
+  }
+
+  async function subscribe(e){
+    e.preventDefault();
+    var formData = new FormData();
+    formData.append('EMAIL',document.getElementById('newsletter_email').value);
+    formData.append('NAME',document.getElementById('newsletter_name').value);
+    const response = await fetch('subscribe_mail.php',{
+      method: 'POST',
+      body: formData,
+    })
+    console.log(response)
+    alert("Thanks for Subscribing");
+    document.getElementById('newsletter_email').value='';
+    document.getElementById('newsletter_name').value='';
+
   }
   let Container = styled.div`
     text-align: center;
@@ -78,10 +105,12 @@ const NewsletterContactUs = () => {
         <Newsletter className="newsletter">
           <Paragraph>JOIN OUR NEWSLETTER</Paragraph>
           <Paragraph>For Early Announcements And More</Paragraph>
-          <Input type="text" placeholder="NAME" />
-          <Input type="text" placeholder="EMAIL" />
+
+          <Input id="newsletter_name" type="text" placeholder="NAME" name="FNAME"/>
+          <Input id="newsletter_email"type="text" placeholder="EMAIL" name="EMAIL" />
           {/* <Button>JOIN</Button> */}
-          <Button type="submit" value="Join" />
+          <Button type="submit" value="subscribe" onClick={subscribe} />
+
         </Newsletter>
         {/* action="mailto:generaltestemailhelloworld@gmail.com"
          method="post"*/}
