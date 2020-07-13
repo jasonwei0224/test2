@@ -58,7 +58,9 @@
       height:50px !important;
       font-size: 30px;
   }
-
+  .form-row{
+    margin-right: 0px !important;
+  }
 
     /* ::-webkit-input-placeholder {
         font-size: 25px;

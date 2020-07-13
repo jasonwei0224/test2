@@ -16,8 +16,8 @@
   margin: 0;
 }
 .row {
-  margin-right:0px;
-  
+  margin-right:0px !important;
+
 }
 
 /* xs < 768 */
@@ -42,7 +42,7 @@
   }
     .row {
       margin-right:0px !important;
-      
+
   }
 
   #mobileLine {
@@ -81,7 +81,7 @@
     visibility: hidden;
   }
       .row {
-    margin-right:-15px !important;
-    
+    margin-right:0px !important;
+
 }
 }

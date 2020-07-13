@@ -94,7 +94,7 @@ function IAmDifferent() {
         }}
       ></div>
       <Row style={{ justifyContent: "center", alignItems: "center" }}>
-        <NewsletterContactUs></NewsletterContactUs>
+        {/*<NewsletterContactUs></NewsletterContactUs>*/}
       </Row>
     <Footer content="&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
     </div>

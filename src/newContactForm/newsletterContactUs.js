@@ -1,4 +1,4 @@
-import React from "react";
+{/*import React from "react";
 import styled from "@emotion/styled";
 import "./newsletterContactUs.css";
 import { useState } from "react";
@@ -131,10 +131,10 @@ const NewsletterContactUs = () => {
 
   `;
 
-/*  const response = await fetch('footer_mail.php', {
+  const response = await fetch('footer_mail.php', {
     method: 'POST',
     body: formData
-  })*/
+  })
 
   return (
     <NC_Container fluid>
@@ -145,12 +145,11 @@ const NewsletterContactUs = () => {
 
           <NC_Input id="newsletter_name" type="text" placeholder="NAME" name="FNAME"/>
           <NC_Input id="newsletter_email"type="text" placeholder="EMAIL" name="EMAIL" />
-          {/* <Button>JOIN</Button> */}
+
           <NC_Button className="NC_btn" type="submit" value="Join" onClick={subscribe} />
 
         </Newsletter>
-        {/* action="mailto:generaltestemailhelloworld@gmail.com"
-         method="post"*/}
+
         <ContactUs
           className="contact_us"
           enctype="text/plain">
@@ -168,9 +167,7 @@ const NewsletterContactUs = () => {
             placeholder="TELL US MORE..."
             style={{ wordWrap: "-moz-initial" }}
           />
-          {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
-            SUBMIT
-          </Button> */}
+
           <NC_Button className="NC_btn" type="submit" value="Submit" onClick={submitForm} />
         </ContactUs>
       </NC_Box>
@@ -180,4 +177,4 @@ const NewsletterContactUs = () => {
   );
 };
 
-export default NewsletterContactUs;
+export default NewsletterContactUs;*/}

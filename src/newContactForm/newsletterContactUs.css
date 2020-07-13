@@ -1,4 +1,4 @@
-.box {
+/* .box {
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -12,10 +12,6 @@
   width: 100%;
   position: relative;
 }
-/* .newsletter > *,
-.contact_us > * {
-  margin-bottom: 10px;
-} */
 #contact_name{
   font-size: 15px;
   font-weight: normal;
@@ -33,7 +29,7 @@
   background-color: #0C3866;
   color:white;
 }
-/* xs < 768 */
+
 @media screen and (max-width: 767px) {
   .box {
     min-height: 600px;
@@ -56,7 +52,6 @@
   }
 }
 
-/* sm */
 @media screen and (min-width: 768px) {
   .contact_us > p,
   .newsletter > p {
@@ -68,7 +63,7 @@
   }
 }
 
-/* md */
+
 @media screen and (min-width: 992px) {
   .contact_us > p,
   .newsletter > p {
@@ -80,7 +75,6 @@
   }
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
   .row{
     margin-right: 0px!important;
@@ -94,4 +88,4 @@
     font-size: 20px;
     font-weight:bold;
   }
-}
+} */
