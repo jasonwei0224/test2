@@ -1,9 +1,12 @@
 <?php
 
 include('./MailChimp.php');    // You may have to modify the path based on your own configuration.
+include('./env.php');
+include('./autoload.php');
 
-$api_key = "a8f091752e825a639f9df0e2c0be299a-us4";
-$list_id = "7355b495b7";
+$api_key = env('API_KEY');
+$list_id = env('LIST_ID');
+$interest_id = env('INTEREST_ID');
 
 use \MailChimp;
 
@@ -22,8 +25,9 @@ try
 
     $result = $Mailchimp->patch("lists/$list_id/members/$subscriber_hash", [
 				'merge_fields' => ['FNAME'=>$name],
-                'interests' => ['65eed5e376' => true],
+                'interests' => [$interest_id => true],
 			]);
+
     }
 }
 catch (Exception $e)
@@ -31,13 +35,13 @@ catch (Exception $e)
     echo "Caught exception: " . $e;
 }
 
-if ( ! empty($subscriber['leid']) )
-{
-    echo "Subscriber added successfully.";
-}
-else
-{
-    echo "Subscriber add attempt failed.";
-}
+// if ( ! empty($subscriber['leid']) )
+// {
+//     echo "Subscriber added successfully.";
+// }
+// else
+// {
+//     echo "Subscriber add attempt failed.";
+// }
 
 ?>

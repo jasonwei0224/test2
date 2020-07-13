@@ -13,6 +13,7 @@
 
 # api keys
 .env
+env.php
 
 # misc
 .DS_Store

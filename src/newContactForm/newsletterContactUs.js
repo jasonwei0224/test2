@@ -41,7 +41,6 @@ const NewsletterContactUs = () => {
       method: 'POST',
       body: formData,
     })
-    console.log(response)
     alert("Thanks for Subscribing");
     document.getElementById('newsletter_email').value='';
     document.getElementById('newsletter_name').value='';
