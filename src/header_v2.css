@@ -297,7 +297,7 @@ a.dropdown-toggle.navitem-dropdown{
       font-size: 14px;
   }
   .navbar{
-    display:block;
+    /* display:block; */
   }
   img.langIcon-v2{
     width:50%;
