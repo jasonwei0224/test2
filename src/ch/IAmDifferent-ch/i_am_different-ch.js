@@ -6,7 +6,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
 import "./i_am_different-ch.css";
 import { Link } from "react-router-dom";
-import Footer from "../../footer-temp";
+import FooterCH from "../footer-ch";
 import ButtonCh from "../../modules/ButtonCh"
 import Second_Title_ch from '../../modules/Second_TitleCh';
 import MainContents_Important_ch from "../../modules/MainContents_Important_ch";
@@ -77,7 +77,7 @@ function IAmDifferent() {
       >
       </div>
 
-      <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
+      <FooterCH/>
     </div>
   );
 }

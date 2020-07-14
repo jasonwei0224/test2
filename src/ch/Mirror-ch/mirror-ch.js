@@ -12,7 +12,7 @@ import image1 from '../../assets/image1.jpg';
 import Second_TitleCh from '../../modules/Second_TitleCh';
 import MainContents_Important_ch from '../../modules/MainContents_Important_ch';
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
-import Footer from "../../footer-temp";
+import FooterCH from "../footer-ch";
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
 import MainContents_Img from "../../modules/MainContents_img";
 import MainContetn_TwoPic from "../../modules/MainContent_TwoPic";
@@ -128,7 +128,7 @@ class Mirror_2 extends Component {
 
 
 
-          <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
+          <FooterCH/>
         </div>
         );
     }

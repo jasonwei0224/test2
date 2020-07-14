@@ -14,7 +14,7 @@ import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
 import Footer from '../../footer-temp';
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
 import MainContents_img from "../../modules/MainContents_img";
-
+import FooterCH from "../footer-ch";
 
 class OtherSideOfMask_ch extends Component {
     render() {
@@ -67,7 +67,7 @@ class OtherSideOfMask_ch extends Component {
 
               <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
           </Container>
-          <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
+          <FooterCH/>
         </div>
         );
     }
