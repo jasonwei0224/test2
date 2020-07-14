@@ -6,14 +6,13 @@
 	box-sizing: border-box;
 }
 
-.mirror-bird-container {
+.MB-container {
 	z-index: 1;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* // min-height: 100vh; */
 	min-height: 35rem;
 	background-image: url('../assets/doctor.jpg');
 	background-blend-mode: soft-light;
@@ -22,43 +21,38 @@
 	padding: 2rem;
 }
 
-.bird {
+.clickBtn {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+}
+
+.MB-bird {
   background-image: url(../assets/pigeon-01.svg);
-	/* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg); */
 	background-size: auto 100%;
 	width: 201px;
   height: 332px;
-  /* width: 88px;
-	height: 125px; */
 	will-change: background-position;
-	
+  
   animation-name: fly-cycle;
   animation-timing-function: steps(5);
-	/* animation-timing-function: steps(10); */
-	animation-iteration-count: infinite;
-
-}
-.bird--one {
+  animation-iteration-count: infinite;
   animation-duration: 1s;
-  animation-delay: -0.5s;		
+  animation-delay: -0.5s;	
 }
 
-.bird-container {
+.MB-bird-container {
   position: absolute;
   top: -15%;
-	/* top: 20%; */
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
 	
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	
-}
-.bird-container--one {
-  animation-duration: 15s;
+  animation-duration: 8s;
   animation-delay: 0;
+  animation-iteration-count: initial;   /* fly only once */
 }
 
 @keyframes fly-cycle {
@@ -72,35 +66,51 @@
 @keyframes fly-right-one {
 	
 	0% {
-		transform: scale(0.3) translateX(-10vw);
+		transform: scale(0.3) translateY(-10vh) translateX(-10vw);
 	}
 	
 	10% {
-		transform: translateY(2vh) translateX(10vw) scale(0.4);
+		transform: translateY(16vh) translateX(10vw) scale(0.6);
 	}
 	
 	20% {
-		transform: translateY(0vh) translateX(30vw) scale(0.5);
+		transform: translateY(24vh) translateX(30vw) scale(0.6);
 	}
 	
 	30% {
-		transform: translateY(4vh) translateX(50vw) scale(0.6);
+		transform: translateY(30vh) translateX(50vw) scale(0.6);
 	}
 	
 	40% {
-		transform: translateY(2vh) translateX(70vw) scale(0.6);
+		transform: translateY(36vh) translateX(70vw) scale(0.6);
 	}
 	
 	50% {
-		transform: translateY(0vh) translateX(90vw) scale(0.6);
-	}
-	
-	60% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
-	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
+		transform: translateY(42vh) translateX(85vw) scale(0.6);
+  }
+}
+
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  .clickBtn {
+    bottom: 35%;
+    right: 2%;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .clickBtn {
+    bottom: 25%;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
 }

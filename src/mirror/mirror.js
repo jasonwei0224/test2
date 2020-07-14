@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
 import {Component} from 'react';
 // import ButtonSkinColor from './mirror/ButtonSkinColor';
 import './Mirror.css';
@@ -7,6 +8,7 @@ import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
 import {Container, Row, Col} from 'react-bootstrap';
 import MirrorBird from "./mirrorBird";
+import MirrorBirdV1 from "./mirrorBird_v1";
 import image1 from '../assets/image1.jpg';
 import ProgramInfo from "../programInfo";
 import Second_Title from "../modules/Second_Title"
@@ -88,7 +90,7 @@ class Mirror extends Component {
             <Container fluid>
 
             {/* flying bird */}
-            <MirrorBird></MirrorBird>
+            <MirrorBirdV1></MirrorBirdV1>
 
             {/*}<Row>
                 <Col lg={12} style={{display:"flex", width:"100%", textAlign:"center",
