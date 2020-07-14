@@ -13,7 +13,7 @@ import Footer from "../../footer-temp";
 import MobileShareButton from "../../modules/mobileShareButton";
 import Second_TitleCh from "../../modules/Second_TitleCh";
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
-// import './pauls_apple-ch.css'
+import FooterCH from "../footer-ch";
 
 function PaulsApple_ch() {
     return (
@@ -44,7 +44,7 @@ function PaulsApple_ch() {
             <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
           </Container>
 
-          <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"></Footer>
+          <FooterCH/>
         </div>
     );
 }
