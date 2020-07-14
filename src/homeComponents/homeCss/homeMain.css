@@ -151,7 +151,8 @@
 
 #homeMobileIntro {
     padding: 10%;
-    padding-bottom: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #homeMobileIntroDescription {
@@ -232,6 +233,10 @@
     #home_colored_header_line{
         display: none;
     }
+    #home_colored_header_title {
+        padding-top: 5%;
+        padding-bottom: 5%;
+     }
 
     #homeThirdSection {
         padding: 0;
