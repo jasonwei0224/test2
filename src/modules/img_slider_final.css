@@ -6,19 +6,19 @@
     overflow: hidden;
     white-space: nowrap;
   }
-  
+
   .slider-wrapper {
     position: relative;
     height: 100%;
     width: 100%;
   }
-  
+
   .slide {
     display: inline-block;
     height: 100%;
     width: 100%;
   }
-  
+
   .arrow {
     height: 50px;
     width: 50px;
@@ -30,7 +30,7 @@
     cursor: pointer;
     transition: transform ease-in .1s;
   }
-  
+
   .nextArrow {
     position: absolute;
     top: 50%;
@@ -38,7 +38,7 @@
     z-index: 999;
     color: #fff;
   }
-  
+
   .backArrow {
     position: absolute;
     top: 50%;
@@ -46,28 +46,29 @@
     z-index: 999;
     color: #fff;
   }
-  
+
   .fa-arrow-right:before, .fa-arrow-left:before {
     color: #222
   }
-  
+
   #vids {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   #vids a:first-of-type {
     margin-bottom: 5px;
   }
-  
+
   .dotSpan {
     padding: 10px;
     margin-right: 5px;
-    cursor: pointer;
+    cursor: default;
     background-color: gray;
     border-radius: 50%;
+
   }
 .dot_pagination {
   position: absolute;
