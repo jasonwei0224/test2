@@ -176,11 +176,11 @@ const NewsletterContactUs = () => {
           // method="post"
           // enctype="text/plain"
         >
-          <Paragraph>CONTACT US</Paragraph>
-          <Paragraph>
+          <NC_Paragraph>CONTACT US</NC_Paragraph>
+          <NC_Paragraph>
             PERFORMANCE / VENDOR / SPONSORSHIP OPPORTUNITIES
-          </Paragraph>
-          <TextBox
+          </NC_Paragraph>
+          <NC_TextBox
             id="contactUsText"
             // type="text"
             placeholder="TELL US MORE..."
@@ -190,7 +190,7 @@ const NewsletterContactUs = () => {
           {/* <Button onClick={() => setContactUs(alert("Submission Successful!"))}>
             SUBMIT
           </Button> */}
-          <Button
+          <NC_Button
             type="submit"
             value="Submit"
             onClick={handleEmailSubmission}
