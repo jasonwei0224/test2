@@ -142,9 +142,48 @@
     margin-top: 7px;
 }
 
+/* homeMobileIntro.js */
+.homeMobileIntroLine {
+    width: 50%;
+    background-color: rgb(173, 0, 30);
+    height: 1px;
+}
+
+#homeMobileIntro {
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+#homeMobileIntroDescription {
+    color:rgb(19, 46, 83);
+}
+
+/* homeMobileProject.js */
+#homeMobileProjectRight {
+    margin: 0;
+}
+#homeMobileProjectImg {
+    width: 100%;
+    height: 30vh;
+}
+#homeMobileProjectBottomSection {
+    padding: 10%;
+}
+#homeMobileProjectLine {
+    background-color: rgb(206, 188, 44);
+    height: 2px;
+}
+#homeMobileProjectType {
+    color: rgb(173, 0, 30);;
+}
+#homeMobileProjectTitle {
+    color: rgb(19, 46, 83);
+    font-size: 20pt;
+}
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
+
     #projectName {
         font-size: 10pt;
     }
@@ -182,6 +221,25 @@
     #home_colored_header_title {
         font-size: 15pt;
     }
+
+    #homeFirstRow {
+        display: none;
+    }
+
+    #homeSecondSection {
+        display: none;
+    }
+    #home_colored_header_line{
+        display: none;
+    }
+
+    #homeThirdSection {
+        padding: 0;
+    }
+
+    #homeThirdSection {
+        display: none;
+    }
 }
 
 /* sm */
@@ -206,6 +264,25 @@
     #homeProjectRight .homeProjectTitleCol {
         padding-top: 90px;
         padding-bottom: 90px;
+    }
+        
+    #homeFirstRow {
+        display: none;
+    }
+
+    #homeSecondSection {
+        display: none;
+    }
+    #home_colored_header_line{
+        display: none;
+    }
+    #home_colored_header_title {
+       padding-top: 5%;
+       padding-bottom: 5%;
+    }
+
+    #homeThirdSection {
+        display: none;
     }
 
 }
@@ -236,6 +313,35 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
+    #homeFirstRow {
+        display: block;
+    }
+
+    #homeSecondSection {
+        display: block;
+    }
+
+    #home_colored_header_line{
+        display: block;
+    }
+
+    #home_colored_header_title {
+        padding-top: 0;
+        padding-bottom: 0;
+     }
+
+    #homeMobileIntro {
+        display: none;
+    }
+
+    #homeThirdSection {
+        display: block;
+    }
+
+    #homeThirdSectionMobile {
+        display: none;
+    }
 }
 
 /* lg */
@@ -262,4 +368,5 @@
         font-family: sofia-pro, sans-serif;
         font-size: 35px;
     }
+
 }
