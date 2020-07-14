@@ -17,7 +17,7 @@ const NewsletterContactUs = () => {
       document.getElementById("contact_name").value
     );
     formData.append(
-      "cotact_email",
+      "contact_email",
       document.getElementById("contact_email").value
     );
     formData.append(
@@ -72,10 +72,10 @@ const NewsletterContactUs = () => {
     margin-bottom: 40px;
   `;
   let Newsletter = styled.form`
-    background-color: white;
-    border-right: 2px;
-    border-right-style: solid;
-    border-right-color: #d0d0d0;
+    // background-color: white;
+    // border-right: 2px;
+    // border-right-style: solid;
+    // border-right-color: #d0d0d0;
     flex: 1;
   `;
   let ContactUs = styled.form`
