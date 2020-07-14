@@ -4,7 +4,7 @@ import ProgramInfo_ch from "../programInfo-ch";
 import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import banner from '../../assets/placeholder.png';
-import Footer from '../../footer-temp';
+import FooterCH from "../footer-ch";
 import './sky_v1-ch.css'
 import fire from '../../firebase/file';
 import ButtonCh from "../../modules/ButtonCh"
@@ -203,7 +203,7 @@ class SkyV1_ch extends Component {
       <InvalidFileModal_ch show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
 
       </Container>
-      <Footer content= "&copy; 2020 多倫多臺灣同鄉會 (TCAT)"/>
+      <FooterCH/>
     </div>
     );
   }

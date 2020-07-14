@@ -13,7 +13,8 @@ import MainContents_First from "../../modules/MainContents_First"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important from "../../modules/MainContents_Important"
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
-import Slider from '../../modules/img_slider_final'
+import Slider from '../../modules/img_slider_final';
+import FooterCH from "../footer-ch";
 
 const styles = {
   root: {
@@ -149,6 +150,7 @@ class PeopleAndMask_ch extends Component {
           <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
 
         </Container>
+        <FooterCH></FooterCH>
       </div>
 
 
