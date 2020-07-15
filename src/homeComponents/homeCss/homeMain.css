@@ -25,7 +25,7 @@
 }
 
 #projectLine {
-    width: 100%;
+    width: 80%;
     background-color: black;
     height: 1px;
     margin-top: 30%;
@@ -33,17 +33,21 @@
 
 #projectName {
     color: white;
-    font-size: 15px;
+    font-size: 30px;
+    width:80%;
+    margin:auto;
     margin-top: 30%;
+    font-family: sofia-pro, sans-serif;
 }
 
 
 #mainRow{
-    width: 100%;
+    width: 60%;
     padding-top: 100px;
-    margin:0;
+    margin:auto !important;
     padding-left: 3%;
     padding-right: 3%;
+    box-sizing: unset;
 }
 
 
@@ -290,7 +294,7 @@
         padding-top: 90px;
         padding-bottom: 90px;
     }
-        
+
     #homeFirstRow {
         display: none;
     }
@@ -374,7 +378,7 @@
 /* lg */
 @media screen and (min-width: 1200px) {
     #projectName {
-        font-size: 20pt;
+        font-size: 30px;
     }
     #homeTopSection #projectsScroll {
         height: 70vh;
@@ -382,11 +386,7 @@
     #topSectionRow .firstCols #leftImage{
         height: 70vh;
     }
-    #homeProjectRight .homeProjectBlankCol {
-        background-color: rgb(93, 93, 93);
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
+
 
     #homeProjectRight .homeProjectTitleCol {
         background-color: rgb(206, 188, 44);
