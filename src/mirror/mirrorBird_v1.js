@@ -5,30 +5,57 @@ import './mirrorBird_v1.css';
 class MirrorBirdV1 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { fade: false }
+    this.state = { 
+      fade: false,
+      background: "doctor"
+    }
   }
 
-  showButton(){
-    document.getElementById("MB-btn").style.display = "initial";
+  showButton1() {
+    document.getElementById("MB-btn1").style.display = "initial";
+  }
+
+  showButton2() {
+    document.getElementById("MB-btn2").style.display = "initial";
+  }
+
+  moveBird=() => {
+    console.log("move bird")
+    return (
+      <>
+        <div className="MB-bird-container2">
+          <div className="MB-bird2"></div>
+        </div>
+        {setTimeout(this.showButton2, 5500)}
+        <button
+        id="MB-btn2"
+        onClick={() => this.setState({ background: "doctor"})}
+        style={{position: "absolute", top: "20%", left: "30%", display:"none"}}>
+        Click me!
+      </button>
+    </>
+    );
   }
 
   render(){
     const fade = this.state.fade
+    const background = this.state.background
 
     return (
-      <div className={fade ? 'MB-container-firefighter' : 'MB-container-doctor'}>
+      <div className={"MB-container-"+background}>
         <div className="MB-bird-container">
           <div className="MB-bird"></div>
         </div>
-        {setTimeout(this.showButton, 5000)}
+        {setTimeout(this.showButton1, 6000)}
         <button
-          id="MB-btn"
+          id="MB-btn1"
           ref='button'
-          onClick={() => this.setState({ fade: true })}
+          onClick={() => this.setState({ fade: true, background: "firefighter"})}
           onAnimationEnd={() => this.setState({ fade: false })}
-          className={fade ? 'fade' : 'clickBtn'}>
+          className={fade ? 'fade' : 'clickBtn1'}>
           Click me!
         </button>
+        {background=="firefighter"? this.moveBird() : <></>}
       </div>
     );
   }

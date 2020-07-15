@@ -36,14 +36,14 @@
 	padding: 2rem;
 }
 
-.clickBtn {
+.clickBtn1 {
   position: absolute;
   bottom: 20%;
   right: 10%;
   display: none;
 }
 
-.MB-bird {
+.MB-bird, .MB-bird2 {
   background-image: url(../assets/pigeon-01.svg);
 	background-size: auto 100%;
 	width: 201px;
@@ -71,45 +71,66 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes fly-cycle {
+.MB-bird-container2 {
+  position: absolute;
+  top: -15%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
 	
+	animation-name: fly-right-two;
+	animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fly-cycle {
 	100% {
 		background-position: -900px 0;
 	}
-	
 }
 
 @keyframes fly-right-one {
-	
-	0% {
-		transform: scale(0.3) translateY(-10vh) translateX(-10vw);
-	}
-	
+	0% { 
+    transform: translateY(-10vh) translateX(-10vw) scale(0.3); 
+  }
 	10% {
 		transform: translateY(16vh) translateX(10vw) scale(0.6);
 	}
-	
 	20% {
 		transform: translateY(24vh) translateX(30vw) scale(0.6);
 	}
-	
 	30% {
 		transform: translateY(30vh) translateX(50vw) scale(0.6);
 	}
-	
 	40% {
 		transform: translateY(36vh) translateX(70vw) scale(0.6);
 	}
-	
 	50% {
 		transform: translateY(42vh) translateX(85vw) scale(0.6);
   }
 }
 
+@keyframes fly-right-two {
+	0% { 
+    transform: translateY(45vh) translateX(-10vw) scale(0.3); 
+  }
+	10% {
+		transform: translateY(30vh) translateX(10vw) scale(0.6);
+	}
+	20% {
+		transform: translateY(18vh) translateX(25vw) scale(0.6);
+	}
+	30% {
+		transform: translateY(7vh) translateX(38vw) scale(0.6);
+	}
+}
+
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  .clickBtn {
+  .clickBtn1 {
     bottom: 35%;
     right: 2%;
   }
@@ -117,7 +138,7 @@
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .clickBtn {
+  .clickBtn1 {
     bottom: 25%;
   }
 }
