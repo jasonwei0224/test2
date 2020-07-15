@@ -8,27 +8,27 @@ class MirrorBirdV1 extends React.Component {
     this.state = { fade: false }
   }
 
-  getAnimatedBird() {
-    return (
-      <div className="MB-bird-container">
-        <div className="MB-bird"></div>
-      </div>
-    );
+  showButton(){
+    document.getElementById("MB-btn").style.display = "initial";
   }
 
   render(){
     const fade = this.state.fade
 
     return (
-      <div className="MB-container">
+      <div className={fade ? 'MB-container-firefighter' : 'MB-container-doctor'}>
+        <div className="MB-bird-container">
+          <div className="MB-bird"></div>
+        </div>
+        {setTimeout(this.showButton, 5000)}
         <button
+          id="MB-btn"
           ref='button'
-          onClick={() => { this.setState({ fade: true }); this.getAnimatedBird();}}
+          onClick={() => this.setState({ fade: true })}
           onAnimationEnd={() => this.setState({ fade: false })}
           className={fade ? 'fade' : 'clickBtn'}>
           Click me!
         </button>
-        {this.state.fade? this.getAnimatedBird() : <div/>}
       </div>
     );
   }

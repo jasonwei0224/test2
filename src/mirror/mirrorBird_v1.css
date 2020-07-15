@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-.MB-container {
+.MB-container-doctor {
 	z-index: 1;
 	position: relative;
 	overflow: hidden;
@@ -21,10 +21,26 @@
 	padding: 2rem;
 }
 
+.MB-container-firefighter {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 35rem;
+	background-image: url('../assets/firefighter.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+
 .clickBtn {
   position: absolute;
   bottom: 20%;
   right: 10%;
+  display: none;
 }
 
 .MB-bird {
@@ -36,7 +52,7 @@
   
   animation-name: fly-cycle;
   animation-timing-function: steps(5);
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
   animation-duration: 1s;
   animation-delay: -0.5s;	
 }
@@ -52,7 +68,7 @@
 	animation-timing-function: linear;
   animation-duration: 8s;
   animation-delay: 0;
-  animation-iteration-count: initial;   /* fly only once */
+  animation-fill-mode: forwards;
 }
 
 @keyframes fly-cycle {
