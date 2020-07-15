@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.mirror-bird-container {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* // min-height: 100vh; */
+	min-height: 35rem;
+	background-image: url('../assets/doctor.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+
+.bird {
+  background-image: url(../assets/pigeon3.svg);
+	/* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg); */
+	background-size: auto 100%;
+	width: 201px;
+  height: 332px;
+  /* width: 88px;
+	height: 125px; */
+	will-change: background-position;
+	
+  animation-name: fly-cycle;
+  animation-timing-function: steps(5);
+	/* animation-timing-function: steps(10); */
+	animation-iteration-count: infinite;
+
+
+}
+.bird--one {
+	animation-duration: 1s;
+	animation-delay: -0.5s;		
+}
+.bird--two {
+	animation-duration: 5s;
+	animation-delay: -0.5s;		
+}
+  
+
+
+.bird-container {
+  
+	
+
+	/* animation-iteration-count: infinite; */
+
+}
+.bird-container--one {
+	position: absolute;
+  top: -15%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-one;
+	background-color: green;
+	animation-timing-function: linear;
+	animation-duration: 5s;
+	animation-delay: 0;	
+	animation-fill-mode: forwards;  
+	animation-play-state: unset;
+}
+.bird-container--two {
+	position: absolute;
+  top: -15%;
+	left: 50%;
+	background-color: red;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-two;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	animation-delay: 0;	
+	animation-fill-mode: forwards;  
+	animation-play-state: unset;
+}
+
+
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -900px 0;
+	}
+	
+}
+
+@keyframes fly-right-one {
+	
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(0vh) translateX(20vw) scale(0.5);
+	}
+	
+	30% {
+		transform: translateY(4vh) translateX(30vw) scale(0.6);
+	}
+	
+	40% {
+		transform: translateY(2vh) translateX(40vw) scale(0.6);
+	}
+	
+	50% {
+		transform: translateY(0vh) translateX(50vw) scale(0.6);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(60vw) scale(0.6);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(80vw) scale(0.6);
+		animation-play-state: paused;
+	}
+	
+}
+@keyframes fly-right-two {
+	
+	0% {
+		transform: scale(0.3) translateX(80vw);
+	}
+	
+
+	
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	
+	
+	100% {
+		transform: translateY(0vh) translateX(100vw) scale(0.6);
+	}
+	
+}
