@@ -35,6 +35,7 @@ import ReactGA from 'react-ga';
 import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
 import { createBrowserHistory } from 'history';
 
+import test  from "./IAmDifferent/test";
 
 // import"./Sky/sky_v1.css";
 
@@ -51,11 +52,12 @@ history.listen(location => {
         <HashRouter>
 
         {/* <hr id="mobileLine"/> */}
-       {/* <HeaderV1 /> */}
+        {/*}<HeaderV1 />*/}
         <HeaderV2 />
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
+          <Route path="/test" component={test}></Route>
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />

@@ -1,4 +1,4 @@
-nav.navbar{
+/* nav.navbar{
   padding-top: 22px;
   padding-bottom: 13px;
   margin-right: 0px;
@@ -53,13 +53,11 @@ div.borderClass {
   font-size: 14px;
   font-family: "sofia-pro";
   color: white !important;
-  /* text-align: left !important; */
+
   background-color: #BE0027 !important;
   border-bottom: solid 1px;
 }
-/* .dropdown-background{
-  background-color: black ;
-} */
+
 .dropdown-menu {
   background-color: #007bff !important;
 
@@ -95,7 +93,7 @@ div.dropdown-menu{
   font-size: 14px;
   font-family: "sofia-pro", Sans-serif;
   text-align: center;
-  /* border-bottom: solid 2px; */
+
 }
 img.langIcon{
   width:90%;
@@ -222,10 +220,7 @@ a.langNavLink{
     margin-left: 10px;
 
   }
-  /* div.borderClass {
-    border-bottom:1px solid white;
-    background-color: white;
-  } */
+
   #navLinkContainer {
     background-color: white !important;
   }
@@ -332,4 +327,4 @@ a.langNavLink{
   div.dropdown{
     border:None;
   }
-}
+} */

@@ -86,6 +86,8 @@
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: sofia-pro, sans-serif;
+    color:#0C3866;
 }
 
 /* homeProjectRight.js */
@@ -97,8 +99,8 @@
 
 #homeProjectRight .homeProjectBlankCol { /*changed*/
     /* background-color: rgb(93, 93, 93); */
-    /* padding-top: 130px; */
-    /* padding-bottom: 130px; */
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 #homeProjectRight .homeProjectTitleCol {
@@ -156,8 +158,8 @@
 #homeMobileIntro { /*changed*/
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     font-size: 35px;
 }
 
@@ -334,6 +336,7 @@
         padding-bottom: 5%;
         padding-left: 10%;
         padding-right: 10%;
+        font-size: 20px;
     }
     #homeProjectRight .homeProjectBlankCol { /*changed*/
         padding-top: 0px;
@@ -387,7 +390,9 @@
         height: 70vh;
     }
 
-
+    #homeSecondSection{
+      font-size:20px;
+    }
     #homeProjectRight .homeProjectTitleCol {
         background-color: rgb(206, 188, 44);
         padding-top: 130px;
@@ -402,5 +407,12 @@
         width:100%;
         height:auto;
     }
-
+    #homeSecondSectionTitle{
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    #home_colored_header_title{
+      text-align: left;
+    }
 }

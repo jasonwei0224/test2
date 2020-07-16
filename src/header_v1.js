@@ -102,10 +102,10 @@ export default class HeaderV1 extends React.Component {
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitem-dropdown"title="ABOUT US" renderMenuOnMount={true}>
                     <div className="dropdownbg">
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">HISTORY</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">ARTIST VISION</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">MEDIA</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item" href="#">OUR TEAM</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="https://torontotaiwanfest.ca/toronto-history/">HISTORY</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="https://torontotaiwanfest.ca/artist-vision/">ARTIST VISION</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="https://torontotaiwanfest.ca/media/">MEDIA</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item" href="https://torontotaiwanfest.ca/our-team/">OUR TEAM</NavDropdown.Item>
                     </div>
                   </NavDropdown>
                 </div>
@@ -123,7 +123,7 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitem" href="#">BOOKSTORE</Nav.Link>
                 <Nav.Link bsPrefix="navitem" href="#">FILMS</Nav.Link>
                 <Nav.Link bsPrefix="navitem" href="#">SPONSORS</Nav.Link>
-                <Nav.Link bsPrefix="navitem" href="#">VOLUNTEER</Nav.Link>
+                <Nav.Link bsPrefix="navitem" href="https://torontotaiwanfest.ca/volunteer/">VOLUNTEER</Nav.Link>
                 <Nav.Link className="langNavLink" bsPrefix = "langNavLink"><img className="langIcon" src={ch} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               :
@@ -131,10 +131,10 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitemCh" href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant">首頁</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitemCh-dropdown" title="關於我們" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">活動足跡</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">藝術方針</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">媒體資訊</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="#">我們團隊</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="https://torontotaiwanfest.ca/%e6%b4%bb%e5%8b%95%e8%b6%b3%e8%b7%a1/?lang=zh-hant">活動足跡</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="https://torontotaiwanfest.ca/%e8%97%9d%e8%a1%93%e6%96%b9%e9%87%9d/?lang=zh-hant">藝術方針</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="https://torontotaiwanfest.ca/%e5%aa%92%e9%ab%94%e8%b3%87%e8%a8%8a/?lang=zh-hant">媒體資訊</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdownCh-item" href="https://torontotaiwanfest.ca/%e6%88%91%e5%80%91%e7%9a%84%e5%9c%98%e9%9a%8a/?lang=zh-hant">我們團隊</NavDropdown.Item>
                   </NavDropdown>
                 </div>
                 <Nav.Link bsPrefix="navitemCh"  href="#">音樂饗宴</Nav.Link>
@@ -150,7 +150,7 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitemCh" href="#">台灣書店</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">電影櫥窗</Nav.Link>
                 <Nav.Link bsPrefix="navitemCh" href="#">贊助單位</Nav.Link>
-                <Nav.Link bsPrefix="navitemCh" href="#">義工專區</Nav.Link>
+                <Nav.Link bsPrefix="navitemCh" href="https://torontotaiwanfest.ca/volunteer/?lang=zh-hant">義工專區</Nav.Link>
                 <Nav.Link className="langNavLinkCh"><img className="langIconCh" src={en} onClick={this.languageBtnListener}/></Nav.Link>
               </>
               }
@@ -163,156 +163,4 @@ export default class HeaderV1 extends React.Component {
     </div>
     );
   }
-}
-
-
-{/*<div>
-        <ul>
-          <li>
-            <Link to="/">Home </Link>
-          </li>
-          <li>
-            <Link to="/about">About </Link>
-          </li>
-          <li>
-            <Link to="/concert">Concert </Link>
-          </li>
-          <li>
-            <Link to="/home">Gallery </Link>
-          </li>
-          <li>
-            <Link to="/talk">Talks </Link>
-          </li>
-          <li>
-            <Link to="/kitchen">Kitchen </Link>
-          </li>
-          <li>
-            <Link to="/bookstore">Bookstore </Link>
-          </li>
-          <li>
-            <Link to="/films">Films </Link>
-          </li>
-          <li>
-            <Link to="/sponsors">Sponsors </Link>
-          </li>
-          <li>
-            <Link to="/volunteer">Volunteer </Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <Aboutus />
-          </Route>
-          <Route path="/concert">
-            <Concert />
-          </Route>
-          <Route path="/gallery">
-            <Gallery />
-          </Route>
-          <Route path="/talk">
-            <Talks />
-          </Route>
-          <Route path="/kitchen">
-            <Kitchen />
-          </Route>
-          <Route path="/bookstore">
-            <Bookstore />
-          </Route>
-          <Route path="/films">
-            <Films />
-          </Route>
-          <Route path="/sponsors">
-            <Sponsors />
-          </Route>
-          <Route path="/volunteer">
-            <Volunteer />
-          </Route>
-        </Switch>
-      </div>*/}
-//PAGES
-
-function Home() {
-  return (
-    <div>
-      <h2>HOME</h2>
-    </div>
-  );
-}
-
-function Aboutus() {
-  return (
-    <div>
-      <h2>ABOUT US</h2>
-    </div>
-  );
-}
-
-function Concert() {
-  return (
-    <div>
-      <h2>CONCERT</h2>
-    </div>
-  );
-}
-
-function Gallery() {
-  return (
-    <div>
-      <h2>GALLERY</h2>
-    </div>
-  );
-}
-
-function Talks() {
-  return (
-    <div>
-      <h2>TALKS</h2>
-    </div>
-  );
-}
-
-function Kitchen() {
-  return (
-    <div>
-      <h2>KITCHEN</h2>
-    </div>
-  );
-}
-
-function Bookstore() {
-  return (
-    <div>
-      <h2>BOOKSTORE</h2>
-    </div>
-  );
-}
-
-function Films() {
-  return (
-    <div>
-      <h2>FILMS</h2>
-    </div>
-  );
-}
-
-function Sponsors() {
-  return (
-    <div>
-      <h2>SPONSORS</h2>
-    </div>
-  );
-}
-
-function Volunteer() {
-  return (
-    <div>
-      <h2>VOLUNTEER</h2>
-    </div>
-  );
 }
