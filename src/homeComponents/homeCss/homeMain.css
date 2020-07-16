@@ -6,6 +6,7 @@
 
 #homeThirdSection {
     padding: 10%;
+    padding-bottom: 85px;
 }
 
 /* projectsScrollable.js */
@@ -64,6 +65,7 @@
 
 #homeTopSection .firstCols {
     padding: 0;
+    background-color: #DBDBDB;
 }
 
 #homeTopSection #projectsScroll {
@@ -128,8 +130,9 @@
 }
 
 #home_sponsor_slider {
-    padding: 0 60px;
-    width: 80%;
+    /* padding: 0 60px; */
+    padding-top: 80px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -414,5 +417,6 @@
     }
     #home_colored_header_title{
       text-align: left;
+      font-size:30px;
     }
 }
