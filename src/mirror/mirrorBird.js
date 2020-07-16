@@ -1,7 +1,8 @@
 import React from 'react';
 import './mirrorBird.css';
-import jQuery from "jquery";
+import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
+import pigeon from "../assets/pigeon_stop.svg";
 
 
 class MirrorBird extends React.Component {
@@ -10,55 +11,81 @@ class MirrorBird extends React.Component {
     this.state={
       show:0,
     }
-    this.changeBird = this.changeBird.bind(this);
-    this.testFunction = this.testFunction.bind(this);
-  }
-  testFunction() {
-    document.addEventListener('DOMContentLoaded', function() {
-      console.log("Bae");
-      var styleTest=document.getElementById('test1Container-one').style;
-      styleTest.animationPlayState="running";
-      window.setTimeout(function() {console.log("inside testFunction")}, 2000); 
-  }, false);
-    
-  }
-  
-  changeBird() {
-    this.setState({show:this.state.show+1})
-    console.log(this.state.show);
-    // document.getElementById('test1bird').style.backgroundColor="red";
-    
-    // document.getElementById('test1Container-one').className="bird-container bird-container--two";
-    // document.getElementById('test1bird').className="bird bird--two";
-    // document.getElementById('test1bird2').style.visibility="hidden";
-    // console.log("asdfasdf1"+document.getElementById('test1Container-one').style.webkitAnimationPlayState =="paused");
-    // console.log("asdfasdf2"+document.getElementById('test1Container-one').style.webkitAnimationPlayState=="running");
-    // if(this.state.show%2!=0) {
-        document.getElementById('test1bird').style.animationPlayState="paused";
-        document.getElementById('test1Container-one').style.animationPlayState="paused";
-        document.getElementById('test1Container-one').style.visibility="hidden";
-    // }else {
-    //   // document.getElementById('test2bird').style.animationPlayState="running";
-    //   document.getElementById('test1Container-two').style.animationPlayState="running";
-    //   document.getElementById('test1Container-one').style.visibility="visible";
-    //   document.getElementById('test1Container-one').style.animationPlayState="running";
-    //   document.getElementById('test1bird').style.animationPlayState="running";
-    }
-  
 
+
+  
+    
+  }
+  componentDidMount=() =>{
+    $('#wrapper_mirror').one('click', function(e) {
+      console.log("Please done");
+      $('#box_1').addClass('bird-container bird-container--one')
+      $('#bird_1').addClass('bird bird--one')
+      setTimeout(function() {
+        $(".test1PlizWorking").css({"visibility":"visible"});
+        $('#box_1').css({"display":"none"});
+        $('.test1PlizWorking').one('click', function(e) {
+          e.preventDefault();
+          $('#box_1').css({"display":"block"});
+          $(".test1PlizWorking").css({"visibility":"hidden"});
+          $('#box_1').addClass('bird-container bird-container--two')
+          setTimeout(function() {
+            console.log("asdf?");
+            $('#container_box_bird_1').css({"display":"none"});
+            $('#container_box_bird_2').css({"display":"block"});
+            $('#container_box_bird_2').on('click', function() {
+              $('#box_2').css({"display":"block"});
+              $('#box_1').css({"z-index":"1"});
+              $('#box_2').addClass('bird-container bird-container--three')
+              $('#bird_2').addClass('bird bird--one')
+            
+              setTimeout(function() {
+                $(".test2PlizWorking").css({"visibility":"visible"});
+                $('#box_2').css({"display":"none"});
+
+                $('.test2PlizWorking').on('click', function() {
+                  $(".test2PlizWorking").css({"visibility":"hidden"});
+                  
+                  $('#box_2').addClass('bird-container bird-container--four')
+                  
+                });
+              }, 3000)
+            })
+          }, 2000)
+        })
+      }, 5000)
+    });
+    $(".test2PlizWorking").css({"visibility":"hidden"});
+    
+
+  }
+  
   render(){
-    this.testFunction(); 
+
     return (
-      <div className="mirror-bird-container">
+      <div id="wrapper_mirror" >
         
-        <div id="test1Container-one" className="bird-container bird-container--one"  onClick={()=>this.changeBird()}>
-          <div id="test1bird" className="bird bird--one"></div>
+        <div id="container_box_bird_1" className="mirror-bird-container">
+          <div id="box_1">
+            <div id="bird_1"></div>
+            
+          </div>
+          <div class="test1PlizWorking">
+              <img src={pigeon}></img>
+          </div>
         </div>
 
-        {/* <div id="test1Container-two" className="bird-container bird-container--two">
-          <div id="test2bird" className="bird bird--two"></div>
-        </div> */}
-        
+        <div id="container_box_bird_2" className="mirror-bird-container2">
+          <div id="box_2">
+            <div id="bird_2"></div>
+          </div>
+          <div class="test2PlizWorking">
+              <img src={pigeon}></img>
+          </div>
+        </div>
+
+
+
         
       </div>
     );

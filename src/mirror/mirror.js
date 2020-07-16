@@ -17,74 +17,17 @@ import MainContents_img from "../modules/MainContents_img";
 import doctor from "../assets/doctor.jpg";
 import firefighter from "../assets/firefighter.jpg";
 import MainContetn_TwoPic from "../modules/MainContent_TwoPic";
+import MirrorBird from "./mirrorBird"
+
 
 class Mirror extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state={
-    //         show:false,
-    //         counter: 1
-    //     }
-    //     this.carouselSlider = "";
-    //     this.carouselImages = "";
-    //     this.size = "";
-    // }
-    //
-    // handleModal=()=>{
-    //     this.setState({show:!this.state.show});
-    // }
-    //
-    // componentDidMount() {
-    //     this.carouselSlider = document.querySelector('.carousel-slide');
-    //     this.carouselImages = document.querySelectorAll('.carousel-slide img');
-    //     this.size = this.carouselImages[0].clientWidth;
-    //     this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    // }
-    //
-    // nextBtnListener=()=>{
-    //     if(this.state.counter >= this.carouselImages.length -1) return;
-    //     this.size = this.carouselImages[0].clientWidth;
-    //     this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
-    //         this.setState({counter: this.state.counter + 1}, ()=> {
-    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    //         });
-    // }
-    //
-    // prevBtnListener=()=>{
-    //     if(this.state.counter <= 0) return;
-    //     this.size = this.carouselImages[0].clientWidth;
-    //
-    //     this.carouselSlider.style.transition = "transform 0.4s ease-in-out";
-    //         this.setState({counter: this.state.counter - 1}, ()=> {
-    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    //         });
-    // }
-
-    // fired when animation stops - to go back to first image
-    // carouselSlideListener=()=> {
-    //     if (this.carouselImages[this.state.counter].id === 'lastClone') {
-    //         this.carouselSlider.style.transition = "none";
-    //
-    //         this.setState({counter: this.carouselImages.length - 2}, ()=> {
-    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    //         });
-    //     }
-    //
-    //     if (this.carouselImages[this.state.counter].id === 'firstClone') {
-    //         this.carouselSlider.style.transition = "none";
-    //
-    //         this.setState({counter: this.carouselImages.length - this.state.counter}, ()=> {
-    //             this.carouselSlider.style.transform = 'translateX(' + (-this.size * this.state.counter) + 'px';
-    //         });
-    //     }
-    // }
-
+ 
     render() {
         return (
             <div className='mirror'>
-             <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/>
+             {/* <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/> */}
             <Container fluid>
-
+                <MirrorBird></MirrorBird>
             {/*}<Row>
                 <Col lg={12} style={{display:"flex", width:"100%", textAlign:"center",
                 overFlow:"hidden", alignItems:"center", justifyContent:"center", borderBottom: "1px solid"}}>
@@ -105,7 +48,7 @@ class Mirror extends Component {
                     </div>
                 </Col>
             </Row>*/}
-            <ProgramInfo subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse" color="#D9C739"/>
+            <ProgramInfo id="test" subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse" color="#D9C739"/>
             <Second_Title secondTitle="Under the same sky project"></Second_Title>
             <MainContents_Important contents=" What is something that you can see when you look up, no matter
                     wherever you are in the world? The sky is one constant no matter
