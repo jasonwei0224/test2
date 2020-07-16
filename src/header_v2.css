@@ -161,6 +161,8 @@ div.dropdown-menu.show{
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 30px;
+    position:relative;
+    top:20px;
 
 }
 .dropdown-menu{
@@ -281,6 +283,7 @@ a.navitem-v2{
 .nav-dropdown-wrapper2 {
   margin-top: 0px;
   background-color: white;
+  
 }
 a.dropdown-toggle.navitem-dropdown{
   font-size: 14px !important;
