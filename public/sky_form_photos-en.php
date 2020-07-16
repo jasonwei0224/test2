@@ -9,7 +9,7 @@
         $description = trim($_POST['description']);
         $location = trim($_POST['location']);
         $date = trim($_POST['date']);
-        $filename = $firstName . $lastName . $userEmail . $description  . $location . $date;
+        $filename = $firstName . $lastName . $userEmail . $description  . $location . $date .".jpg";
 
         if($_FILES['skyPhoto']['type'] === "image/jpeg" || $_FILES['skyPhoto']['type'] === "image/png" && $_FILES['skyPhoto']['size'] < 1000000) {
             move_uploaded_file($_FILES['skyPhoto']['tmp_name'], "skyPhotos/" . $filename);
