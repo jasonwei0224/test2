@@ -1,7 +1,12 @@
 import React from "react";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.jpg";
-import image3 from "../assets/image3.jpeg";
+import image1 from "../assets/diff_p1.jpg";
+import image2 from "../assets/diff_p2.jpg";
+import image3 from "../assets/diff_p3.jpg";
+import image4 from "../assets/diff_p4.jpg";
+import image5 from "../assets/diff_p5.jpg";
+import image6 from "../assets/diff_p6.jpg";
+import image7 from "../assets/diff_p7.jpg";
+
 import placeholder from "../assets/placeholder.jpg";
 
 function Shuffle(array) {
@@ -24,6 +29,7 @@ const BuildCards = () => {
     image1,
     image2,
     image3,
+
   };
   const cards = Object.keys(images).reduce((result, key) => {
     const createCard = () => ({

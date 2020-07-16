@@ -9,8 +9,8 @@ const Card = (props) => {
   `;
   let Pic = styled.img`
     // margin: 20px 20px 20px 20px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   `;
   const { frontImg, backImg, flipped, onClick } = props;
   const img = flipped ? frontImg : backImg;

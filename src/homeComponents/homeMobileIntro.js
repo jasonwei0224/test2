@@ -5,16 +5,13 @@ function HomeMobileIntro() {
         <div id="homeMobileIntro">
             <hr className="homeMobileIntroLine"/>
             <div id="homeMobileIntroDescription">
-                Food banks across the United States have been
-                seeing an unprecedented uptick in usage since
-                the beginning of the COVID-19 pandemic, and
-                dozens of Chicago natives and current residents
-                have joined together to provide local aid.
-                Since June 25, Prints for Hunger has raised
-                $20,000 for the Greater Chicago Food Depository
-                through its online fundraiser selling 84
-                photographers significant works from the past 
-                few decades.
+                The world seems to have lost its order because we forget to give
+                others space; nature seems to be protesting because we forget to
+                be humble. Artists are risk takers and they dare to challenge the
+                reality of our society.
+                For things words can’t express, let pictures do the talking.
+                For the warmth people can’t feel, maybe colours can ignite.
+                 To appreciate our artists here, time and space are all is required.
             </div>
             <hr className="homeMobileIntroLine"/>
         </div>
