@@ -66,7 +66,7 @@
 	
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-delay: 0;
   animation-fill-mode: forwards;
 }
@@ -80,7 +80,7 @@
 	
 	animation-name: fly-right-two;
 	animation-timing-function: linear;
-  animation-duration: 8s;
+  animation-duration: 2s;
   animation-delay: 0;
   animation-fill-mode: forwards;
 }
@@ -95,19 +95,19 @@
 	0% { 
     transform: translateY(-10vh) translateX(-10vw) scale(0.3); 
   }
-	10% {
+	20% {
 		transform: translateY(16vh) translateX(10vw) scale(0.6);
 	}
-	20% {
+	40% {
 		transform: translateY(24vh) translateX(30vw) scale(0.6);
 	}
-	30% {
+	60% {
 		transform: translateY(30vh) translateX(50vw) scale(0.6);
 	}
-	40% {
+	80% {
 		transform: translateY(36vh) translateX(70vw) scale(0.6);
 	}
-	50% {
+	100% {
 		transform: translateY(42vh) translateX(85vw) scale(0.6);
   }
 }
@@ -116,15 +116,15 @@
 	0% { 
     transform: translateY(45vh) translateX(-10vw) scale(0.3); 
   }
-	10% {
+	35% {
 		transform: translateY(30vh) translateX(10vw) scale(0.6);
 	}
-	20% {
+	70% {
 		transform: translateY(18vh) translateX(25vw) scale(0.6);
 	}
-	30% {
+  100% {
 		transform: translateY(7vh) translateX(38vw) scale(0.6);
-	}
+  }
 }
 
 
