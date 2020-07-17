@@ -15,6 +15,7 @@ import MainContents_Important from "../modules/MainContents_Important"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_img from "../modules/MainContents_img";
+import ImageWithDescription from"../modules/MainContent_ImageWithDescription";
 
 class OtherSideOfMask extends Component {
     render() {
@@ -35,40 +36,28 @@ class OtherSideOfMask extends Component {
                </div>
               </Col>
             </Row>
-            <Row className="other-side-hint">
+          {/*<Row className="other-side-hint">
               <p>Click and drag or scroll to look around</p>
-            </Row>
+            </Row>*/}
             <ProgramInfo subtitle="Behind the Masks" title="THE OTHER SIDE OF MASK" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse" color="#D9C739">
             </ProgramInfo>
-            <Second_Title secondTitle="Under the same sky project"></Second_Title>
-            <MainContents_Important contents=" What is something that you can see when you look up, no matter
-                    wherever you are in the world? The sky is one constant no matter
-                    where you are and what time of day, it is there above the horizon."></MainContents_Important>
 
-              <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
+
+              <MainContents_Middle style={{color:"#0C3866"}} contents="It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm."></MainContents_Middle>
+
+
+              <MainContents_Middle contents=" This art piece portrays the irony that on the flip side of every beautiful story and gesture exists its potentially damaging impact. Further, the appearance of the inner side of the mask and its similarity to the media’s images of the SARS-CoV-2 virus reflects that it can be difficult for us to differentiate between what is poisonous and what is beautiful. In these current times, we must examine our past behaviours and reflect on how we can learn from them. It takes courage to understand ourselves and each other, and even more so to own our past mistakes. "></MainContents_Middle>
+              <MainContents_Middle contents="“The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow."></MainContents_Middle>
+              <ImageWithDescription src={image1} description="What is something that you can see when you look up, no matter
                       wherever you are in the world? The sky is one constant no matter
-                      where you are and what time of day, it is there above the horizon."></MainContents_Middle>
-
-              <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
-
-              <MainContents_Middle contents=" Despite our geographical differences,
-                we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-              together. "></MainContents_Middle>
-                <MainContents_img src={image1} className="img-other-side"></MainContents_img>
-              <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength. In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength."></MainContents_Middle>
+                      where you are and what time of day, it is there above the horizon."></ImageWithDescription>
 
               <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
-
+                <Second_Title secondTitle="Under the same sky project"></Second_Title>
+                <MainContents_Important contents=" What is something that you can see when you look up, no matter
+                        wherever you are in the world? The sky is one constant no matter
+                        where you are and what time of day, it is there above the horizon."></MainContents_Important>
+                      <Second_Title secondTitle="About This Artitst"></Second_Title>
           </Container>
 
             <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

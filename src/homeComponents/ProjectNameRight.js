@@ -3,22 +3,19 @@ import { Row, Col } from 'react-bootstrap';
 
 function ProjectNameRight(props) {
     return (
-        <div>
+        <div id="projectInScroll">
             <Row id="mainRow">
-                <Col className="projectCols">
+                <Col xl={{span:6, offset:0}} className="projectCols">
                     <img id="projectImage" src={props.image}/>
                 </Col>
-                <Col className="projectCols">
-                    <Row className="projectRows">
+                <Col xl={{span:5, offset:1}} lg={{span:10, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}} className="projectCols2">
+
                         <div id="projectName">{props.name}</div>
-                    </Row>
-                    <Row className="projectRows">
-                        <hr id="projectLine"/>
-                    </Row>
+
 
                 </Col>
             </Row>
-            
+
         </div>
     )
 }

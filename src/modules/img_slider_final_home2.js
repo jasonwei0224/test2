@@ -55,7 +55,8 @@ class Slider_home extends React.Component {
 
     render() {
       return (
-        <div className="slider_home">
+        <div className="testPliz">
+          <div className="slider_home">
 
           <div className="slider-wrapper"
             style={{
@@ -68,6 +69,8 @@ class Slider_home extends React.Component {
                 ))
               }
           </div>
+        </div>
+
 
           <LeftArrow
            goToPrevSlide={this.goToPrevSlide}

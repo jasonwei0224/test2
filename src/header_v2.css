@@ -10,7 +10,7 @@ margin:auto;
 }
 
 #logo-image  {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 #responsive-navbar-nav{
@@ -27,7 +27,7 @@ a.navitem-v2 {
   font-family: "sofia-pro", Sans-serif;
   padding: 5px 12px 3px 12px;
   background-color: initial;
-  font-weight: bold!important;
+  font-weight: normal !important;
 }
 .dropdown-item {
 font-weight: normal;
@@ -83,7 +83,27 @@ img.langIconCh-v2{
 
 
 @media screen and (max-width: 767px) {
+  #navbar-v2 {
 
+      text-align: center;
+      vertical-align: bottom;
+      background-color: #D9C739 !important;
+      padding:0px;
+  }
+  div.ml-auto {
+  background-color: white;
+  }
+  .navitem-dropdown{
+  margin-top: 40px !important;
+  color:black !important;
+
+  }
+  .navbar-toggler-icon {
+  margin: auto;
+  width: 60px !important;
+  height:60px !important;
+
+  }
 }
 
 
@@ -130,6 +150,8 @@ a.dropdown-toggle.navitem-dropdown{
   width:100%;
   background-color: #D9C739;
   text-decoration: none;
+  font-weight: normal !important;
+
 
 }
 .nav-dropdown-wrapper {
@@ -174,15 +196,15 @@ align-items:center!important;
   width:100%;
 }
 img.langIcon-v2{
-  width:30%;
-  height:30%;
+  width:20%;
+  height:20%;
   margin-top: 15px;
   margin-right: 0px;
   margin-bottom:15px;
 }
 #logo{
-  max-width: 100%;
-  width: 50%;
+  /* max-width: 100%; */
+  width: 40%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -203,10 +225,11 @@ a.navitem-v2{
 }
 a.dropdown-toggle.navitem-dropdown{
   font-size: 30px;
+  font-weight: normal !important;
 }
 a.dropdown-item{
   font-size: 30px;
-  text-align: center;
+  text-align: left !important;
 }
 .dropdown-item{
   text-align: center!important;
@@ -227,14 +250,14 @@ div.ml-auto{
   width:100%;
 }
 img.langIcon-v2{
-  width:30%;
-  height:30%;
+  width:20%;
+  height:20%;
   margin-top: 30px;
   margin-right: 0px;
 }
 #logo{
-  max-width: 100%;
-  width: 50%;
+  /* max-width: 100%; */
+  width: 40%;
 }
 }
 
@@ -248,6 +271,8 @@ img.langIcon-v2{
   }
   nav.navbar{
     margin-left: 10%;
+    margin-top: 30px!important;
+    margin-bottom: 20px!important;
   }
 #responsive-navbar-nav{
   margin-top:50px;
@@ -275,6 +300,7 @@ a.navitem-v2{
   border:0px;
   margin-top: 0px;
   margin-bottom: 20px;
+  font-weight: normal !important;
 }
 .nav-dropdown-wrapper {
   background-color: white;
@@ -289,6 +315,7 @@ a.dropdown-toggle.navitem-dropdown{
   font-size: 14px !important;
   border: 0px;
   background-color: white;
+  font-weight: normal !important;
 }
 
 div.dropdown-menu.show{
@@ -301,7 +328,7 @@ div.dropdown-menu.show{
 
 }
 img.langIcon-v2{
-  width:50%;
+  width:70%;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
@@ -318,5 +345,12 @@ img.langIconCh-v2{
 .langNavLinkCh-v2{
   width:10%;
 }
+}
+@media screen and (min-width: 1500px) {
 
+  div.ml-auto{
+    text-align: right;
+    align-items: center!important;
+    margin-left: 70% !important;
+  }
 }

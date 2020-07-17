@@ -6,7 +6,7 @@
 
 #homeThirdSection {
     padding: 10%;
-    padding-top:85px;
+    padding-top:60px;
     padding-bottom: 85px;
 }
 
@@ -36,7 +36,7 @@
 #projectName {
     color: white;
     font-size: 30px;
-    width:80%;
+    width:100%;
     margin:auto;
     margin-top: 30%;
     font-family: sofia-pro, sans-serif;
@@ -57,7 +57,7 @@
 #homeTopSection {
     width: 100%;
     overflow: hidden !important;
-    border-top: 1px solid;
+    /* border-top: 1px solid; */
 }
 
 #homeTopSection #topSectionRow {
@@ -84,13 +84,13 @@
 
 /* homeSecondSection.js */
 #homeSecondSection {
-    border-top: solid 0.5px gray;
-    border-bottom: solid 0.5px gray;
+    /* border-top: solid 0.5px gray; */
+    border-bottom: solid 2px gray;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: sofia-pro, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: adonis-web, serif;
     color:#0C3866;
 }
 
@@ -119,6 +119,8 @@
 
 #homeProjectRight {
     margin: 5% 0;
+    margin-top: 60px;
+    margin-bottom:60px;
 }
 
 #sponsorSlider {
@@ -145,7 +147,15 @@
     color: white;
     font-size: 24pt;
     font-family: sofia-pro, sans-serif; /*changed*/
-    margin-top: 85px;
+    margin-top: 60px;
+}
+#home_colored_header_title2 { /*changed*/
+    background-color:#BE0027;
+    padding-left: 5%;
+    color: white;
+    font-size: 24pt;
+    font-family: sofia-pro, sans-serif; /*changed*/
+    margin-top: 60px;
 }
 
 #home_colored_header_line {
@@ -173,8 +183,11 @@
 
 #homeMobileIntroDescription { /*Changed*/
     color:#0C3866;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    font-family: adonis-web, serif;
+    font-size:45px;
+    text-align:justify;
 }
 
 /* homeMobileProject.js */
@@ -207,12 +220,15 @@
     font-family: sofia-pro, sans-serif;
 }
 
-
+.projectCols2{
+  border-bottom: solid 3px;
+  width:80%;
+}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
 
     #projectName {
-        font-size: 10pt;
+        font-size: 40px;
     }
     #homeTopSection #projectsScroll {
         height: 30vh;
@@ -254,6 +270,12 @@
         text-align: center;
         font-size: 40px;
      }
+     #home_colored_header_title2 {
+       padding-top: 5%;
+       padding-bottom: 5%;
+       text-align: center;
+       font-size: 40px;
+      }
 
     #homeFirstRow {
         display: none;
@@ -269,6 +291,10 @@
         padding-top: 5%;
         padding-bottom: 5%;
      }
+     #home_colored_header_title2 {
+         padding-top: 5%;
+         padding-bottom: 5%;
+      }
 
     #homeThirdSection {
         padding: 0;
@@ -319,11 +345,19 @@
         text-align: center;
         font-size: 40px;
      }
+     #home_colored_header_title2{
+       padding-top: 5%;
+       padding-bottom: 5%;
+       text-align: center;
+       font-size: 40px;
+     }
 
     #homeThirdSection {
         display: none;
     }
-
+    #projectName{
+      font-size: 30px;
+    }
 }
 
 /* md */
@@ -370,7 +404,10 @@
         padding-top: 0;
         padding-bottom: 0;
      }
-
+    #home_colored_header_title{
+      padding-top:0;
+      padding-bottom: 0;
+    }
     #homeMobileIntro {
         display: none;
     }
@@ -382,10 +419,20 @@
     #homeThirdSectionMobile {
         display: none;
     }
+    #projectName{
+      font-size:20px;
+    }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
+    /* .projectRows2{
+      border-bottom:2px solid;
+    } */
+    .projectCols{
+      padding:0px!important
+    }
+
     #projectName {
         font-size: 30px;
     }
@@ -397,7 +444,10 @@
     }
 
     #homeSecondSection{
-      font-size:20px;
+      font-size:35px;
+      padding-left: 20%;
+      padding-right:20%;
+      text-align: center;
     }
     #homeProjectRight .homeProjectTitleCol {
         background-color: rgb(206, 188, 44);
@@ -421,5 +471,18 @@
     #home_colored_header_title{
       text-align: left;
       font-size:30px;
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+    #home_colored_header_title2{
+      text-align: left;
+      font-size:30px;
+      padding-top:5px;
+      padding-bottom:5px;
+      margin-top:120px;
     }
 }
+/* @media screen and (min-width: 1500px) {
+
+
+} */

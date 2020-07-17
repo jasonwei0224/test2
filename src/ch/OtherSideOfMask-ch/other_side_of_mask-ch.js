@@ -35,36 +35,22 @@ class OtherSideOfMask_ch extends Component {
                </div>
               </Col>
             </Row>
-            <Row className="other-side-hint-ch"><p>Click and drag or scroll to look around</p></Row>
-            <ProgramInfo_ch subtitle="Behind the Masks" title="THE OTHER SIDE OF MASK" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse" color="#D9C739">
+            {/*<Row className="other-side-hint-ch"><p>Click and drag or scroll to look around</p></Row>*/}
+            <ProgramInfo_ch subtitle="Behind the Masks" title="一罩之隔" artistName="Lady Hao Hao" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse" color="#D9C739">
             </ProgramInfo_ch>
             <Second_Title_ch secondTitle="Under the same sky project"></Second_Title_ch>
-            <MainContents_Important_ch contents=" What is something that you can see when you look up, no matter
-                    wherever you are in the world? The sky is one constant no matter
-                    where you are and what time of day, it is there above the horizon."></MainContents_Important_ch>
+            <MainContents_Important_ch contents="口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。"></MainContents_Important_ch>
 
-              <MainContents_Middle_ch style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                      wherever you are in the world? The sky is one constant no matter
-                      where you are and what time of day, it is there above the horizon."></MainContents_Middle_ch>
+              <MainContents_Middle_ch style={{color:"#0C3866"}} contents="透過這樣的作品呈現，讓人不禁懷疑，到底那一面是「保護」？那一面是我們應該相信的「真實」？我們常常經由語言與行為，表達傷害與歧視；在這次的疫情裡，我們也看見了許多美麗包裝下的話術，說出來的卻是醜陋的意涵與不實的陳述。這次的疫情如此嚴重，究竟是因為病毒肆虐，還是我們選擇性無視那真實的訊息？"></MainContents_Middle_ch>
 
-              <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
+              <MainContents_Middle_ch contents="「我在創作這幅畫作時，非常清楚的想要呈現一個美麗的畫面，而這個美麗的畫面卻是人們所害怕的事實。我足足花了兩個星期思考：『它』是什麼樣子？人們何時成為了病毒滋生的溫床，習慣它並與它共存？！ "></MainContents_Middle_ch>
 
-              <MainContents_Middle_ch contents=" Despite our geographical differences,
-                we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-              together. "></MainContents_Middle_ch>
+              <MainContents_Middle_ch contents="「內心信仰的藝術品，又該如何說服自己，它很美卻又是病毒。」－ 藝術家Lady Hao Hao"></MainContents_Middle_ch>
                 <MainContents_img src={image1} className="img-other-side"></MainContents_img>
-              <MainContents_Middle_ch contents=" In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength. In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength."></MainContents_Middle_ch>
+                <Second_Title_ch secondTitle="Under the same sky project"></Second_Title_ch>
+                <MainContents_Important_ch contents="口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。"></MainContents_Important_ch>
 
+                <Second_Title_ch secondTitle="About This Artist"></Second_Title_ch>
               <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
           </Container>
           <FooterCH/>
