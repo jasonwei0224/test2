@@ -6,6 +6,7 @@
 
 #homeThirdSection {
     padding: 10%;
+    padding-bottom: 85px;
 }
 
 /* projectsScrollable.js */
@@ -25,7 +26,7 @@
 }
 
 #projectLine {
-    width: 100%;
+    width: 80%;
     background-color: black;
     height: 1px;
     margin-top: 30%;
@@ -33,17 +34,21 @@
 
 #projectName {
     color: white;
-    font-size: 15px;
+    font-size: 30px;
+    width:80%;
+    margin:auto;
     margin-top: 30%;
+    font-family: sofia-pro, sans-serif;
 }
 
 
 #mainRow{
-    width: 100%;
+    width: 60%;
     padding-top: 100px;
-    margin:0;
+    margin:auto !important;
     padding-left: 3%;
     padding-right: 3%;
+    box-sizing: unset;
 }
 
 
@@ -60,6 +65,7 @@
 
 #homeTopSection .firstCols {
     padding: 0;
+    background-color: #DBDBDB;
 }
 
 #homeTopSection #projectsScroll {
@@ -82,6 +88,8 @@
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: sofia-pro, sans-serif;
+    color:#0C3866;
 }
 
 /* homeProjectRight.js */
@@ -91,8 +99,8 @@
     margin-left: 0 !important;
 }
 
-#homeProjectRight .homeProjectBlankCol {
-    background-color: rgb(93, 93, 93);
+#homeProjectRight .homeProjectBlankCol { /*changed*/
+    /* background-color: rgb(93, 93, 93); */
     padding-top: 130px;
     padding-bottom: 130px;
 }
@@ -108,7 +116,7 @@
 }
 
 #homeProjectRight {
-    margin: 10% 0;
+    margin: 5% 0;
 }
 
 #sponsorSlider {
@@ -122,18 +130,19 @@
 }
 
 #home_sponsor_slider {
-    padding: 0 60px;
-    width: 80%;
+    /* padding: 0 60px; */
+    padding-top: 80px;
+    width: 100%;
     margin: 0 auto;
 }
 
 /* home_colored_header.js */
-#home_colored_header_title {
-    background-color:rgb(173, 0, 30);
+#home_colored_header_title { /*changed*/
+    background-color:#BE0027;
     padding-left: 5%;
     color: white;
     font-size: 24pt;
-
+    font-family: sofia-pro, sans-serif; /*changed*/
 }
 
 #home_colored_header_line {
@@ -149,38 +158,52 @@
     height: 1px;
 }
 
-#homeMobileIntro {
-    padding: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+#homeMobileIntro { /*changed*/
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 35px;
 }
 
-#homeMobileIntroDescription {
-    color:rgb(19, 46, 83);
+
+
+#homeMobileIntroDescription { /*Changed*/
+    color:#0C3866;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* homeMobileProject.js */
 #homeMobileProjectRight {
     margin: 0;
 }
-#homeMobileProjectImg {
+
+#homeMobileProjectImg {/*changed*/
     width: 100%;
-    height: 30vh;
+    height: auto;
 }
+
 #homeMobileProjectBottomSection {
     padding: 10%;
 }
-#homeMobileProjectLine {
-    background-color: rgb(206, 188, 44);
+#homeMobileProjectLine { /*changed*/
+    background-color: #EF5797;
     height: 2px;
 }
-#homeMobileProjectType {
-    color: rgb(173, 0, 30);;
+
+#homeMobileProjectType { /*changed*/
+    color: #BE0027;
+    font-size:30px;
+    font-family: sofia-pro, sans-serif;
 }
-#homeMobileProjectTitle {
-    color: rgb(19, 46, 83);
-    font-size: 20pt;
+
+#homeMobileProjectTitle { /* changed*/
+    color: #246F79;
+    font-size: 40px;
+    font-family: sofia-pro, sans-serif;
 }
+
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
@@ -222,6 +245,12 @@
     #home_colored_header_title {
         font-size: 15pt;
     }
+    #home_colored_header_title {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 40px;
+     }
 
     #homeFirstRow {
         display: none;
@@ -270,7 +299,7 @@
         padding-top: 90px;
         padding-bottom: 90px;
     }
-        
+
     #homeFirstRow {
         display: none;
     }
@@ -282,9 +311,11 @@
         display: none;
     }
     #home_colored_header_title {
-       padding-top: 5%;
-       padding-bottom: 5%;
-    }
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 40px;
+     }
 
     #homeThirdSection {
         display: none;
@@ -308,10 +339,11 @@
         padding-bottom: 5%;
         padding-left: 10%;
         padding-right: 10%;
+        font-size: 20px;
     }
-    #homeProjectRight .homeProjectBlankCol {
-        padding-top: 100px;
-        padding-bottom: 100px;
+    #homeProjectRight .homeProjectBlankCol { /*changed*/
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     #homeProjectRight .homeProjectTitleCol {
@@ -352,7 +384,7 @@
 /* lg */
 @media screen and (min-width: 1200px) {
     #projectName {
-        font-size: 20pt;
+        font-size: 30px;
     }
     #homeTopSection #projectsScroll {
         height: 70vh;
@@ -360,12 +392,10 @@
     #topSectionRow .firstCols #leftImage{
         height: 70vh;
     }
-    #homeProjectRight .homeProjectBlankCol {
-        background-color: rgb(93, 93, 93);
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
 
+    #homeSecondSection{
+      font-size:20px;
+    }
     #homeProjectRight .homeProjectTitleCol {
         background-color: rgb(206, 188, 44);
         padding-top: 130px;
@@ -373,5 +403,20 @@
         font-family: sofia-pro, sans-serif;
         font-size: 35px;
     }
-
+    .homeProjectBlankCol { /* changed*/
+        /* background-color: rgb(93, 93, 93); */
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width:100%;
+        height:auto;
+    }
+    #homeSecondSectionTitle{
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    #home_colored_header_title{
+      text-align: left;
+      font-size:30px;
+    }
 }

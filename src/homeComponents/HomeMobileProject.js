@@ -13,14 +13,14 @@ function HomeMobileProject(props) {
                 <Col xs="4"className="homeProjectTitleCol">{props.title}</Col>
             </Row> */}
             <div>
-                <img id="homeMobileProjectImg" src={homepage_placeholder}/>
+                <img id="homeMobileProjectImg" src={props.image}/>
             </div>
             <div id="homeMobileProjectBottomSection">
                 <div id="homeMobileProjectType">{props.type}</div>
                 <hr id="homeMobileProjectLine"/>
                 <div id="homeMobileProjectTitle">{props.title}</div>
             </div>
-            
+
         </div>
     );
 }
