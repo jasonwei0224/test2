@@ -27,6 +27,120 @@ font-family: "sofia-pro", Sans-serif !important;
 }
 
 @media screen and (max-width: 767px) {
+  .footer{
+    font-size: 18px;
+  }
+  #newsletter_name, #newsletter_email, #contact_name, #contact_email, #contact_message{
+    font-size: 40px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    outline:none;
+  }
+  #newsletter_name{
+    margin-bottom: 20px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+  }
+  #newsletter_email, #contact_message{
+    margin-bottom: 20px;
+  }
+  #contact_name, #contact_email{
+    margin-bottom: 40px;
+    width:100%;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  #contact_name{
+    margin-left: 0px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  #newsletter_email{
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #contact_message{
+    width:100%;
+    margin-left: 20px;
+    margin: auto;
+    height: 70%;
+    margin-bottom: 20px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+  }
+  .footer_form_container{
+    border-top: none;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+
+  .footer_newsletter_container{
+    margin-top:30px;
+  }
+  .footer_contact_container{
+    /* border-left: 2px;
+    border-left-color:  #D0D0D0;
+    border-left-style: solid; */
+    margin-top:30px;
+
+  }
+  .footer_button_row{
+    text-align: center;
+  }
+  .footer_submit_btn, .footer_subscribe_btn{
+    background-color:#D0D0D0;
+    color:#606060;
+    border-radius: 35px;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size:30px;
+  }
+  .footer_subscribe_btn{
+    margin-top: 10px;
+    margin-bottom:50px;
+  }
+
+  .footer_title{
+    font-size: 40px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 0px !important;
+    border-top: 2px solid;
+    color:#606060;
+    margin-bottom:20px;
+  }
+  .footer_subtitle{
+    font-size: 25px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+    color:#606060;
+  }
+
 }
 
 
