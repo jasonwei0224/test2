@@ -347,7 +347,7 @@ img.langIconCh-v2{
   width:10%;
 }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1501px) {
 
   div.ml-auto{
     text-align: right;
@@ -356,11 +356,10 @@ img.langIconCh-v2{
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1501px) {
   #responsive-navbar-nav{
     margin-top:50px;
     margin-left:350px;
   }
-  
-}
 
+}
