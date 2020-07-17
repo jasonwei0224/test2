@@ -6,6 +6,7 @@
 
 #homeThirdSection {
     padding: 10%;
+    padding-top:85px;
     padding-bottom: 85px;
 }
 
@@ -56,6 +57,7 @@
 #homeTopSection {
     width: 100%;
     overflow: hidden !important;
+    border-top: 1px solid;
 }
 
 #homeTopSection #topSectionRow {
@@ -143,6 +145,7 @@
     color: white;
     font-size: 24pt;
     font-family: sofia-pro, sans-serif; /*changed*/
+    margin-top: 85px;
 }
 
 #home_colored_header_line {

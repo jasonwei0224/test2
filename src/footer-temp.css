@@ -39,6 +39,7 @@ font-family: "sofia-pro", Sans-serif !important;
     border-style: solid;
     border-width: 2px;
     outline:none;
+    resize:unset;
   }
   #newsletter_name{
     margin-bottom: 20px;

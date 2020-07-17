@@ -4,6 +4,7 @@ import './other_side_of_mask.css';
 import {OBJModel, GLTFModel} from 'react-3d-viewer'
 // import {ModelViewer} from 'react-3d-model-viewer';
 import image1 from '../assets/image1.jpg';
+import image2 from '../assets/mask1.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +13,7 @@ import Second_Title from "../modules/Second_Title"
 import MainContents_First from "../modules/MainContents_First";
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
+import MainContents_WithPicture from "../modules/MainContents_WithPicture"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_img from "../modules/MainContents_img";
@@ -50,6 +52,15 @@ class OtherSideOfMask extends Component {
                       where you are and what time of day, it is there above the horizon."></MainContents_Middle>
 
               <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
+
+              <MainContents_WithPicture src={image2} contents="asdf
+              Despite our geographical differences,
+              we all look towards that same sky that looms over our heads,asdf
+              Despite our geographical differences,
+              we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+            together."></MainContents_WithPicture>
+
+
 
               <MainContents_Middle contents=" Despite our geographical differences,
                 we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
