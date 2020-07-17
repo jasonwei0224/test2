@@ -85,13 +85,6 @@ export default class HeaderV2 extends React.Component {
       <a href="https://torontotaiwanfest.ca/%e5%a4%9a%e5%80%ab%e5%a4%9a%e5%8f%b0%e7%81%a3%e6%96%87%e5%8c%96%e7%af%802020/?lang=zh-hant"><img src={twftorlogo} id="logo" ></img></a>
       </>
   }
-  {/*  <div style={{
-      position: this.state.position,
-      top: this.state.top,
-      zIndex: this.state.zIndex,
-      width: this.state.width,
-
-      }}>*/}
       <Container fluid bsPrefix="container">
         <Navbar id="navbar-v2" collapseOnSelect expand="xl" >
           <Navbar.Brand href="https://torontotaiwanfest.ca/toronto-2020/"><img id="logo-image" src={twftorlogo}></img></Navbar.Brand>
@@ -141,7 +134,6 @@ export default class HeaderV2 extends React.Component {
             </Navbar.Collapse>
         </Navbar>
         </Container>
-    {/* </div>*/}
        </div>
     );
   }
