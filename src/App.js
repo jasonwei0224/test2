@@ -52,8 +52,8 @@ history.listen(location => {
         <HashRouter>
 
         {/* <hr id="mobileLine"/> */}
-        <HeaderV1 />
-        {/*<HeaderV2 />*/}
+        {/*<HeaderV1 />*/}
+        <HeaderV2 />
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
