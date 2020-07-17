@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
-// import "./header_v1.css";
+import "./header_v1.css";
 import en from "./assets/en.png";
 import ch from "./assets/ch.png";
 import twftorlogo from "./assets/twftorlogo.png";
