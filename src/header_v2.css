@@ -202,6 +202,13 @@ img.langIcon-v2{
   margin-right: 0px;
   margin-bottom:15px;
 }
+img.langIconCh-v2{
+  width:20%;
+  height:20%;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom:15px;
+}
 #logo{
   /* max-width: 100%; */
   width: 40%;
@@ -250,6 +257,12 @@ div.ml-auto{
   width:100%;
 }
 img.langIcon-v2{
+  width:20%;
+  height:20%;
+  margin-top: 30px;
+  margin-right: 0px;
+}
+img.langIconCh-v2{
   width:20%;
   height:20%;
   margin-top: 30px;
@@ -335,7 +348,7 @@ img.langIcon-v2{
   margin-bottom: 20px;
 }
 img.langIconCh-v2{
-  width:60%;
+  width:70%;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
@@ -347,14 +360,14 @@ img.langIconCh-v2{
   width:10%;
 }
 }
-@media screen and (min-width: 1501px) {
+/* @media screen and (min-width: 1501px) {
 
   div.ml-auto{
     text-align: right;
     align-items: center!important;
     margin-left: 70% !important;
   }
-}
+} */
 
 @media screen and (min-width: 1501px) {
   #responsive-navbar-nav{
