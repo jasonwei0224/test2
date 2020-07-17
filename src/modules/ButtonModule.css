@@ -18,9 +18,7 @@
   background-color: #0C3866;
   color:white;
 }
-/* a{
-  color:white!important;
-} */
+
 .mobileShareBtn {
     text-align: center;
     border-radius: 20px;
@@ -59,7 +57,13 @@
 }
 
 @media screen and (max-width: 767px) {
-
+  .uploadBtnLong {
+      font-size: 30px;
+      margin-top: 50px;
+  }
+  .uploadBtn {
+      margin-top:30px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,7 +77,13 @@
 }
 
 @media only screen and (min-width: 992px) {
-
+  .uploadBtnLong {
+      font-size: 30px;
+      margin-top: 50px;
+  }
+  .uploadBtn {
+      margin-top:30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

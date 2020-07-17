@@ -8,6 +8,7 @@ import HomeProjectRight from './HomeProjectRight';
 import HomeProjectLeft from './HomeProjectLeft';
 import SponsorImgSlider from './SponsorImgSlider';
 import HomeColoredHeader from './home_colored_header';
+import HomeColoredHeader2 from './home_colored_header_2';
 import HomeMobileIntro from './homeMobileIntro';
 import HomeMobileProject from './HomeMobileProject';
 import homepage_placeholder_lg from '../assets/homepage_placeholder_lg.jpg';
@@ -20,7 +21,7 @@ function Home2() {
             <HomeTopSection/>
         </Row>
         <HomeMobileIntro/>
-        <HomeSecondSection id="homeSecondSection" title="TAIWANfest Online Gallery:" header="The world seems to have
+        <HomeSecondSection id="homeSecondSection" header="The world seems to have
           lost its order because we forget to give others space; nature seems to
           be protesting because we forget to be humble. Artists are risk takers
           and they dare to challenge the reality of our society.  For things
@@ -35,11 +36,12 @@ function Home2() {
             <HomeProjectLeft title="WE ARE ALL IN THIS TOGETHER" image={homepage_placeholder_lg}/>
             <HomeProjectRight title="(UN) BEING CHINESE" image={homepage_placeholder_lg}/>
             <HomeProjectLeft title="MIRRORS" image={homepage_placeholder_lg}/>
-            <HomeColoredHeader title="BEHIND THE MASK" image={homepage_placeholder_lg}/>
+
+            <HomeColoredHeader2 title="BEHIND THE MASK" image={homepage_placeholder_lg}/>
             <HomeProjectRight title="THE OTHER SIDE OF MASK" image={homepage_placeholder_lg}/>
             <HomeProjectLeft title="PAUL'S APPLES" image={homepage_placeholder_lg}/>
             <HomeProjectRight title="PEOPLE AND MASK" image={homepage_placeholder_lg}/>
-            <SponsorImgSlider id="sponsorSlider"/>
+          {/*}  <SponsorImgSlider id="sponsorSlider"/>*/}
         </div>
         <div id="homeThirdSectionMobile">
             <HomeColoredHeader title="I'M DIFFERENT, JUST LIKE YOU!"/>
