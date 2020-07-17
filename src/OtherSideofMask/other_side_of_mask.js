@@ -4,6 +4,7 @@ import './other_side_of_mask.css';
 import {OBJModel, GLTFModel} from 'react-3d-viewer'
 // import {ModelViewer} from 'react-3d-model-viewer';
 import image1 from '../assets/image1.jpg';
+import image2 from '../assets/mask1.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +13,7 @@ import Second_Title from "../modules/Second_Title"
 import MainContents_First from "../modules/MainContents_First";
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
+import MainContents_WithPicture from "../modules/MainContents_WithPicture"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_img from "../modules/MainContents_img";
@@ -45,6 +47,30 @@ class OtherSideOfMask extends Component {
 
               <MainContents_Middle style={{color:"#0C3866"}} contents="It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm."></MainContents_Middle>
 
+              <MainContents_WithPicture src={image2} contents="asdf
+              Despite our geographical differences,
+              we all look towards that same sky that looms over our heads,asdf
+              Despite our geographical differences,
+              we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+            together."></MainContents_WithPicture>
+
+
+
+              <MainContents_Middle contents=" Despite our geographical differences,
+                we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+              together. "></MainContents_Middle>
+                <MainContents_img src={image1} className="img-other-side"></MainContents_img>
+              <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
+              people a sense of hope and anticipation for the feeling of a
+              normal day to come again. Furthermore, Indigenous teachings and
+              stories about the sky can guide us in these times.
+              By giving each image a background story, we can implore others to
+              look to the sky and gain strength. In all that the world has gone through, the unchanging sky gives
+              people a sense of hope and anticipation for the feeling of a
+              normal day to come again. Furthermore, Indigenous teachings and
+              stories about the sky can guide us in these times.
+              By giving each image a background story, we can implore others to
+              look to the sky and gain strength."></MainContents_Middle>
 
               <MainContents_Middle contents=" This art piece portrays the irony that on the flip side of every beautiful story and gesture exists its potentially damaging impact. Further, the appearance of the inner side of the mask and its similarity to the media’s images of the SARS-CoV-2 virus reflects that it can be difficult for us to differentiate between what is poisonous and what is beautiful. In these current times, we must examine our past behaviours and reflect on how we can learn from them. It takes courage to understand ourselves and each other, and even more so to own our past mistakes. "></MainContents_Middle>
               <MainContents_Middle contents="“The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow."></MainContents_Middle>

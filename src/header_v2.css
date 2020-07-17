@@ -277,6 +277,7 @@ img.langIcon-v2{
 #responsive-navbar-nav{
   margin-top:50px;
   margin-left:250px;
+
 }
 div.ml-auto{
   text-align: right;
@@ -354,3 +355,12 @@ img.langIconCh-v2{
     margin-left: 70% !important;
   }
 }
+
+@media screen and (min-width: 1500px) {
+  #responsive-navbar-nav{
+    margin-top:50px;
+    margin-left:350px;
+  }
+  
+}
+
