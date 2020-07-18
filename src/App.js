@@ -31,6 +31,7 @@ import twflogo from "./assets/taiwanfest-eng+chi.png";
 import twfvanlogo from "./assets/vantwflogo.png";
 import featureImage from "./assets/tor-feature-image1.jpg";
 import Home2 from "./homeComponents/home_v2";
+import Home2_ch from "./ch/Home-ch/home_v2_ch";
 import ReactGA from 'react-ga';
 import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
 import { createBrowserHistory } from 'history';
@@ -49,15 +50,17 @@ history.listen(location => {
 
   return (
       <div className="App">
-        <HashRouter>
-
-        {/* <hr id="mobileLine"/> */}
-        {/*<HeaderV1 />*/}
+        {/*}<HeaderV1 />*/}
         <HeaderV2 />
+        <Router>
+          <Switch>
+        {/* <hr id="mobileLine"/> */}
+
+
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
-          <Route path="/test" component={test}></Route>
+          {/*}<Route path="/test" component={test}></Route>*/}
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
@@ -79,9 +82,11 @@ history.listen(location => {
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
           <Route path="/Mirror-ch" component={Mirror_ch}/>
           <Route path="/Home2" component={Home2}/>
+          <Route path="/Home2-ch" component={Home2_ch}/>
           <Route path="/-ch" exact component={IAmDifferent_ch}/>
           <Route path="/OtherSideOfMask-ch" component={OtherSideOfMask_ch} />
-          </HashRouter>
+          </Switch>
+        </Router>
       </div>
   );
 }

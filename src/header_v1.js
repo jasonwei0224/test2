@@ -112,8 +112,8 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitem" href="#">CONCERT</Nav.Link>
                 <div className="borderClass">
                   <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" renderMenuOnMount={true}>
-                    <NavDropdown.Item bsPrefix="dropdown-item"href="#sky">SKY</NavDropdown.Item>
-                    <NavDropdown.Item bsPrefix="dropdown-item"href="#IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item"href="/sky">SKY</NavDropdown.Item>
+                    <NavDropdown.Item bsPrefix="dropdown-item"href="/IAmDifferent">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
                   </NavDropdown>
                 </div>
 
@@ -140,8 +140,8 @@ export default class HeaderV1 extends React.Component {
                 <Nav.Link bsPrefix="navitemCh"  href="#">音樂饗宴</Nav.Link>
                 <div className="borderClass">
                 <NavDropdown bsPrefix="navitemCh-dropdown" title="線上藝廊" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="#sky-ch">天空</NavDropdown.Item>
-                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="#IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
+                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="/sky-ch">天空</NavDropdown.Item>
+                  <NavDropdown.Item bsPrefix="dropdownCh-item" href="/IAmDifferent-ch">共同面對的我們</NavDropdown.Item>
                 </NavDropdown>
                 </div>
                 <Nav.Link bsPrefix="navitemCh" href="#">希望講堂</Nav.Link>

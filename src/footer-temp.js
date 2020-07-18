@@ -41,7 +41,7 @@ const FooterPage = (props) => {
   }
     return (
       <Container fluid>
-        <Row className="footer_form_container">
+      <Row className="footer_form_container">
           <Col xl={{span:10, offset:1}} className="footer_form_border"></Col>
           <Col  className ="footer_newsletter_container"xl={{span:5, offset:1}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <Row><Col className="footer_title">JOIN OUR NEWSLETTER</Col></Row>

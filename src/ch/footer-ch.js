@@ -41,7 +41,7 @@ const FooterCH = (props) => {
   }
     return (
       <Container fluid>
-        {/*<Row className="footer_form_container_ch">
+        {/*}<Row className="footer_form_container_ch">
           <Col xl={{span:8, offset:2}} className="footer_form_border_ch"></Col>
           <Col  className ="footer_newsletter_container_ch"xl={{span:4, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <Row><Col className="footer_title_ch">訂閱活動訊息</Col></Row>
