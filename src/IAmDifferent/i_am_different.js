@@ -34,7 +34,7 @@ function IAmDifferent() {
     background-color: yellow;
   `;
   const goToForm = () => {
-    window.location = "#/IAmDifferentForm";
+    window.location = "/IAmDifferentForm";
   };
 
   return (

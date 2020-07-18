@@ -50,15 +50,17 @@ history.listen(location => {
 
   return (
       <div className="App">
-        <HashRouter>
-
-        {/* <hr id="mobileLine"/> */}
-        {/*<HeaderV1 />*/}
+        {/*}<HeaderV1 />*/}
         <HeaderV2 />
+        <Router>
+          <Switch>
+        {/* <hr id="mobileLine"/> */}
+
+
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
-          <Route path="/test" component={test}></Route>
+          {/*}<Route path="/test" component={test}></Route>*/}
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
@@ -83,7 +85,8 @@ history.listen(location => {
           <Route path="/Home2-ch" component={Home2_ch}/>
           <Route path="/-ch" exact component={IAmDifferent_ch}/>
           <Route path="/OtherSideOfMask-ch" component={OtherSideOfMask_ch} />
-          </HashRouter>
+          </Switch>
+        </Router>
       </div>
   );
 }

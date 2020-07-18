@@ -21,7 +21,7 @@ function IAmDifferent() {
 
 
   const goToForm=()=> {
-      window.location='#/IAmDifferentForm-ch';
+      window.location='/IAmDifferentForm-ch';
   };
 
   let Body = styled.div`

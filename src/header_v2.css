@@ -210,7 +210,7 @@ img.langIconCh-v2{
   margin-bottom:15px;
 }
 #logo{
-  /* max-width: 100%; */
+
   width: 40%;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -269,7 +269,7 @@ img.langIconCh-v2{
   margin-right: 0px;
 }
 #logo{
-  /* max-width: 100%; */
+
   width: 40%;
 }
 }
@@ -367,7 +367,7 @@ img.langIconCh-v2{
     align-items: center!important;
     margin-left: 70% !important;
   }
-} */
+}*/
 
 @media screen and (min-width: 1501px) {
   #responsive-navbar-nav{
