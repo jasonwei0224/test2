@@ -48,7 +48,7 @@ const FooterCH = (props) => {
             <Row><Col className="footer_subtitle_ch">接收即時通知與更多服務</Col></Row>
             <Row><Form.Control id='newsletter_name' className='newsletter_name_ch' type="text" placeholder="姓名" required size="lg"></Form.Control></Row>
             <Row><Form.Control id='newsletter_email'className='newsletter_email_ch' type="email" placeholder="電子郵件" required size="lg"></Form.Control></Row>
-            <Row><Col className="footer_button_row_ch"><Button  bsPrefix="footer_submit_btn_ch" className="footer_subscribe_btn_ch">訂閱</Button></Col></Row>
+            <Row><Col className="footer_button_row_ch"><Button  bsPrefix="footer_subscribe_btn_ch" className="footer_subscribe_btn_ch">訂閱</Button></Col></Row>
           </Col>
 
           <Col className="footer_contact_container_ch" xl={{span:5, offset:0}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
