@@ -27,6 +27,7 @@
     "react": "^16.13.1",
     "react-3d-model-viewer": "^1.1.1",
     "react-3d-viewer": "^1.0.12",
+    "react-audio-player": "^0.13.0",
     "react-before-after-slider": "^1.0.4",
     "react-bootstrap": "^1.0.1",
     "react-compare-image": "^2.1.1",
