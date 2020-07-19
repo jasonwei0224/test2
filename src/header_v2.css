@@ -104,6 +104,9 @@ img.langIconCh-v2{
   height:60px !important;
 
   }
+  #logo-image  {
+    display: none;
+  }
 }
 
 

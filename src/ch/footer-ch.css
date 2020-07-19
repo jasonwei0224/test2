@@ -25,12 +25,19 @@ font-family: "sofia-pro", Sans-serif !important;
   background-color: #0C3866;
   color:white;
 }
-
-@media screen and (max-width: 767px) {
+::-webkit-input-placeholder {
+      color: rgba(96, 96, 96,);
 }
-
-
-@media screen and (min-width: 768px) {
+::-moz-placeholder {
+      color: rgba(96, 96, 96);
+}
+::-moz-placeholder {
+    color: rgba(96, 96, 96);
+}
+:-ms-input-placeholder {
+    color: rgba(96, 96, 96);
+}
+@media screen and (max-width: 767px) {
   .footer_ch{
     font-size: 18px;
   }
@@ -43,6 +50,7 @@ font-family: "sofia-pro", Sans-serif !important;
     border-style: solid;
     border-width: 2px;
     outline:none;
+    resize:none;
   }
   .newsletter_name_ch{
     margin-bottom: 20px;
@@ -56,7 +64,7 @@ font-family: "sofia-pro", Sans-serif !important;
     margin-bottom: 20px;
   }
   .contact_name_ch, .contact_email_ch{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width:100%;
     border-color: #D0D0D0;
     border-style: solid;
@@ -92,6 +100,8 @@ font-family: "sofia-pro", Sans-serif !important;
     border-top: none;
     margin-left: 0% !important;
     margin-right: 0% !important;
+    margin-top:60px;
+    margin-bottom:60px;
   }
 
   .footer_newsletter_container_ch{
@@ -132,32 +142,285 @@ font-family: "sofia-pro", Sans-serif !important;
     padding-left: 0px !important;
     border-top: 2px solid;
     color:#606060;
+      margin-bottom:20px;
   }
   .footer_subtitle_ch{
     font-size: 25px;
     font-family: "sofia-pro", sans-serif;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     color:#606060;
   }
-  /* ::-webkit-input-placeholder {
-    text-align: center;
-    vertical-align: middle;
+  ::-webkit-input-placeholder {
+        color: rgba(96, 96, 96,);
   }
   ::-moz-placeholder {
-    text-align: center;
+        color: rgba(96, 96, 96);
   }
   ::-moz-placeholder {
-    text-align: center;
+      color: rgba(96, 96, 96);
   }
   :-ms-input-placeholder {
+      color: rgba(96, 96, 96);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer_ch{
+    font-size: 18px;
+  }
+  .newsletter_name_ch, .newsletter_email_ch, .contact_name_ch, .contact_email_ch, .contact_message_ch{
+    font-size: 40px;
+    border-radius: 25px;
     text-align: center;
-  } */
+    color: black;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    outline:none;
+    resize:none;
+  }
+  .newsletter_name_ch{
+    margin-bottom: 20px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+  }
+  .newsletter_email_ch, .contact_message_ch{
+    margin-bottom: 20px;
+  }
+  .contact_name_ch, .contact_email_ch{
+    margin-bottom: 40px;
+    width:100%;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .contact_name_ch{
+    margin-left: 0px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .newsletter_email_ch{
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact_message_ch{
+    width:100%;
+    margin-left: 20px;
+    margin: auto;
+    height: 70%;
+    margin-bottom: 20px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+  }
+  .footer_form_container_ch{
+    border-top: none;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+
+  .footer_newsletter_container_ch{
+    margin-top:30px;
+  }
+  .footer_contact_container_ch{
+    /* border-left: 2px;
+    border-left-color:  #D0D0D0;
+    border-left-style: solid; */
+    margin-top:30px;
+
+  }
+  .footer_button_row_ch{
+    text-align: center;
+  }
+  .footer_submit_btn_ch, .footer_subscribe_btn_ch{
+    background-color:#D0D0D0;
+    color:#606060;
+    border-radius: 35px;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size:30px;
+  }
+  .footer_subscribe_btn_ch{
+    margin-top: 10px;
+  }
+
+  .footer_title_ch{
+    font-size: 40px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0px !important;
+    border-top: 2px solid;
+    color:#606060;
+      margin-bottom:20px;
+  }
+  .footer_subtitle_ch{
+    font-size: 25px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+    color:#606060;
+  }
+  ::-webkit-input-placeholder {
+        color: rgba(96, 96, 96,);
+  }
+  ::-moz-placeholder {
+        color: rgba(96, 96, 96);
+  }
+  ::-moz-placeholder {
+      color: rgba(96, 96, 96);
+  }
+  :-ms-input-placeholder {
+      color: rgba(96, 96, 96);
+  }
 }
 
 
 @media screen and (min-width: 992px) {
+  .footer_ch{
+    font-size: 18px;
+  }
+  .newsletter_name_ch, .newsletter_email_ch, .contact_name_ch, .contact_email_ch, .contact_message_ch{
+    font-size: 40px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    outline:none;
+    resize:none;
+  }
+  .newsletter_name_ch{
+    margin-bottom: 20px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+  }
+  .newsletter_email_ch, .contact_message_ch{
+    margin-bottom: 20px;
+  }
+  .contact_name_ch, .contact_email_ch{
+    margin-bottom: 40px;
+    width:100%;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .contact_name_ch{
+    margin-left: 0px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .newsletter_email_ch{
+    border-color: #D0D0D0;
+    border-style: solid;
+    border-width: 2px;
+    width:100%;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact_message_ch{
+    width:100%;
+    margin-left: 20px;
+    margin: auto;
+    height: 70%;
+    margin-bottom: 20px;
+    border: 2px;
+    border-color: #D0D0D0;
+    border-style: solid;
+  }
+  .footer_form_container_ch{
+    border-top: none;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
 
+  .footer_newsletter_container_ch{
+    margin-top:30px;
+  }
+  .footer_contact_container_ch{
+    /* border-left: 2px;
+    border-left-color:  #D0D0D0;
+    border-left-style: solid; */
+    margin-top:30px;
+
+  }
+  .footer_button_row_ch{
+    text-align: center;
+  }
+  .footer_submit_btn_ch, .footer_subscribe_btn_ch{
+    background-color:#D0D0D0;
+    color:#606060;
+    border-radius: 35px;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-family: "sofia-pro", Sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size:30px;
+  }
+  .footer_subscribe_btn_ch{
+    margin-top: 10px;
+  }
+
+  .footer_title_ch{
+    font-size: 40px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0px !important;
+    border-top: 2px solid;
+    color:#606060;
+      margin-bottom:20px;
+  }
+  .footer_subtitle_ch{
+    font-size: 25px;
+    font-family: "sofia-pro", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+    color:#606060;
+  }
+  ::-webkit-input-placeholder {
+        color: rgba(96, 96, 96,);
+  }
+  ::-moz-placeholder {
+        color: rgba(96, 96, 96);
+  }
+  ::-moz-placeholder {
+      color: rgba(96, 96, 96);
+  }
+  :-ms-input-placeholder {
+      color: rgba(96, 96, 96);
+  }
 }
 
 
@@ -185,13 +448,13 @@ font-family: "sofia-pro", Sans-serif !important;
   }
   .contact_name_ch, .contact_email_ch{
     margin-bottom: 20px;
-    width:90%;
+    width:85%;
     border-color: #D0D0D0;
     border-style: solid;
     border-width: 2px;
   }
   .contact_name_ch{
-    margin-left: 20px;
+    margin-left: 25px;
     border: 2px;
     border-color: #D0D0D0;
     border-style: solid;
@@ -229,16 +492,19 @@ font-family: "sofia-pro", Sans-serif !important;
   }
 
   .footer_newsletter_container_ch{
-    /* border-right: 2px;
+    border-right: 2px;
     border-right-color:  #D0D0D0;
-    border-right-style: solid; */
+    border-right-style: solid;
     margin-top:30px;
+    padding-top:30px;
   }
   .footer_contact_container_ch{
-    border-left: 2px;
+    /* border-left: 2px;
     border-left-color:  #D0D0D0;
-    border-left-style: solid;
+    border-left-style: solid; */
     margin-top:30px;
+    padding-top:30px;
+    margin-left:25px!important
 
   }
   .footer_button_row_ch{
@@ -265,29 +531,46 @@ font-family: "sofia-pro", Sans-serif !important;
     font-size: 30px;
     font-family: "sofia-pro", sans-serif;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 0px !important;
     border-top: 0px;
     color:#606060;
   }
   .footer_subtitle_ch{
-    font-size: 12px;
+    font-size: 16px;
     font-family: "sofia-pro", sans-serif;
     text-align: center;
     padding-bottom: 20px;
     color:#606060;
   }
-  /* ::-webkit-input-placeholder {
-    text-align: center;
-    vertical-align: middle;
+    ::-webkit-input-placeholder {
+          color: #D0D0D0;
+    }
+    ::-moz-placeholder {
+          color: #D0D0D0;
+    }
+    ::-moz-placeholder {
+        color: #D0D0D0;
+    }
+    :-ms-input-placeholder {
+        color: #D0D0D0;
+    }
   }
-  ::-moz-placeholder {
-    text-align: center;
+  @media screen and (min-width: 1501px) {
+    #contact_name{
+      margin-left: 50px;
+      border: 2px;
+      border-color: #D0D0D0;
+      border-style: solid;
+      border-width: 2px;
+    }
+    #contact_email{
+      margin-bottom: 20px;
+      width:88%;
+      border-color: #D0D0D0;
+      border-style: solid;
+      border-width: 2px;
+
+    }
+
   }
-  ::-moz-placeholder {
-    text-align: center;
-  }
-  :-ms-input-placeholder {
-    text-align: center;
-  } */
-}

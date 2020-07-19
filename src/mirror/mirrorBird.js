@@ -11,11 +11,8 @@ class MirrorBird extends React.Component {
     this.state={
       show:0,
     }
-
-
-  
-    
   }
+
   componentDidMount=() =>{
     $('#wrapper_mirror').one('click', function(e) {
       console.log("Please done");
@@ -38,16 +35,16 @@ class MirrorBird extends React.Component {
               $('#box_1').css({"z-index":"1"});
               $('#box_2').addClass('bird-container bird-container--three')
               $('#bird_2').addClass('bird bird--one')
-            
+
               setTimeout(function() {
                 $(".test2PlizWorking").css({"visibility":"visible"});
                 $('#box_2').css({"display":"none"});
 
                 $('.test2PlizWorking').on('click', function() {
                   $(".test2PlizWorking").css({"visibility":"hidden"});
-                  
+
                   $('#box_2').addClass('bird-container bird-container--four')
-                  
+
                 });
               }, 3000)
             })
@@ -56,19 +53,24 @@ class MirrorBird extends React.Component {
       }, 5000)
     });
     $(".test2PlizWorking").css({"visibility":"hidden"});
-    
-
   }
-  
+  cancelCourse() {
+    var taiwan = document.getElementByClassName("cls-5");
+    console.log(taiwan);
+    taiwan.addEventListener("mouseover", function( event ) {
+      console.log("hovering taiwan");
+    });
+  }
+
   render(){
 
     return (
       <div id="wrapper_mirror" >
-        
+
         <div id="container_box_bird_1" className="mirror-bird-container">
           <div id="box_1">
             <div id="bird_1"></div>
-            
+
           </div>
           <div class="test1PlizWorking">
               <img src={pigeon}></img>
@@ -86,7 +88,7 @@ class MirrorBird extends React.Component {
 
 
 
-        
+
       </div>
     );
   }
