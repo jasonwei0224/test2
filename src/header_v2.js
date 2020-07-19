@@ -117,11 +117,11 @@ export default class HeaderV2 extends React.Component {
                         <div className="nav-dropdown-wrapper2">
                       <NavDropdown bsPrefix="navitem-dropdown"title="線上藝廊" renderMenuOnMount={true}>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="/sky-ch">天空</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="/IAmDifferent=ch">I'M DIFFERENT, JUST LIKE YOU</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">MIRRORS</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">PAUL'S APPLE</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">THE OTHER SIDE OF MASKS</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">"UN" BEGIND CHINESE</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="/IAmDifferent=ch">共同面對的我們</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">鏡子</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">保羅的蘋果</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">一罩之隔</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="#">「趣」中國化</NavDropdown.Item>
                       </NavDropdown>
                     </div>
 
