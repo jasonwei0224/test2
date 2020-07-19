@@ -21,6 +21,15 @@
 	left:465px;
 	visibility: hidden;
 }
+.test1_square {
+	position: absolute;
+	width:30px;
+	height:30px;
+	/* z-index: 4; */
+	top:350px;
+	left:1135px;
+	background-color: red;
+}
 .mirror-bird-container {
 	z-index: 3;
 	position: relative;
@@ -30,7 +39,22 @@
 	justify-content: center;
 	/* // min-height: 100vh; */
 	min-height: 50rem;
-	background-image: url('../assets/doctor.svg');
+	background-image: url('../assets/doctor.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+.mirror-bird-container_after_hover {
+	z-index: 3;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* // min-height: 100vh; */
+	min-height: 50rem;
+	background-image: url('../assets/doctor2.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;

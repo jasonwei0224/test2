@@ -25,29 +25,10 @@ class Mirror extends Component {
     render() {
         return (
             <div className='mirror'>
-             {/* <img src= {doctor} style={{width:"100%", height:"auto", overFlow:"hidden"}}/> */}
+             
             <Container fluid>
                 <MirrorBird></MirrorBird>
-            {/*}<Row>
-                <Col lg={12} style={{display:"flex", width:"100%", textAlign:"center",
-                overFlow:"hidden", alignItems:"center", justifyContent:"center", borderBottom: "1px solid"}}>
-                    <div>
-                        <div className="carousel-container">
-                            <FontAwesomeIcon icon={faChevronLeft} id="prev-btn" onClick={this.prevBtnListener}></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faChevronRight} id="next-btn" onClick={this.nextBtnListener}></FontAwesomeIcon>
-                                <div className="carousel-slide" onTransitionEnd={this.carouselSlideListener}>
-                                    <img id="lastClone" className="carousel-imgs" src={require('../assets/mask5.jpg')} alt="test"/>
-                                    <img className="carousel-imgs"  src={require('../assets/mask1.jpg')} alt="test"/>
-                                    <img className="carousel-imgs"  src={require('../assets/mask2.jpg')} alt="test"/>
-                                    <img className="carousel-imgs"  src={require('../assets/mask3.jpg')} alt="test"/>
-                                    <img className="carousel-imgs"  src={require('../assets/mask4.jpg')} alt="test"/>
-                                    <img className="carousel-imgs"  src={require('../assets/mask5.jpg')} alt="test"/>
-                                    <img id="firstClone" className="carousel-imgs"  src={require('../assets/mask1.jpg')} alt="test"/>
-                                </div>
-                        </div>
-                    </div>
-                </Col>
-            </Row>*/}
+           
             <ProgramInfo id="test" subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse" color="#D9C739"/>
             <Second_Title secondTitle="Under the same sky project"></Second_Title>
             <MainContents_Important contents=" What is something that you can see when you look up, no matter

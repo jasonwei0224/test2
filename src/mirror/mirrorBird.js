@@ -4,16 +4,23 @@ import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
 import pigeon from "../assets/pigeon_stop.svg";
 
-
 class MirrorBird extends React.Component {
   constructor(props) {
     super(props);
     this.state={
+      play:false,
       show:0,
-    }
+    }  
   }
-
+  
   componentDidMount=() =>{
+
+    $('#test1_sq').on('mouseenter', function() {
+      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      audio.play()
+      $('.mirror-bird-container').addClass('mirror-bird-container_after_hover ')
+    })
+    
     $('#wrapper_mirror').one('click', function(e) {
       console.log("Please done");
       $('#box_1').addClass('bird-container bird-container--one')
@@ -52,7 +59,7 @@ class MirrorBird extends React.Component {
         })
       }, 5000)
     });
-    $(".test2PlizWorking").css({"visibility":"hidden"});
+    
   }
   cancelCourse() {
     var taiwan = document.getElementByClassName("cls-5");
@@ -61,9 +68,9 @@ class MirrorBird extends React.Component {
       console.log("hovering taiwan");
     });
   }
-
+ 
   render(){
-
+    
     return (
       <div id="wrapper_mirror" >
 
@@ -75,6 +82,7 @@ class MirrorBird extends React.Component {
           <div class="test1PlizWorking">
               <img src={pigeon}></img>
           </div>
+          <div class="test1_square" id="test1_sq"></div>
         </div>
 
         <div id="container_box_bird_2" className="mirror-bird-container2">
@@ -85,10 +93,8 @@ class MirrorBird extends React.Component {
               <img src={pigeon}></img>
           </div>
         </div>
-
-
-
-
+        
+      
       </div>
     );
   }
