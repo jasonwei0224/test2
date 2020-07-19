@@ -1,8 +1,8 @@
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import "./header_v2.css";
-import en from "./assets/en.png";
-import ch from "./assets/ch.png";
+import en from "./assets/en.jpg";
+import ch from "./assets/ch.jpg";
 import twftorlogo from "./assets/twftorlogo.png";
 
 
@@ -127,7 +127,7 @@ export default class HeaderV2 extends React.Component {
 
 
                   </div>
-                    <Nav.Link className="langNavLinkCh-v2"><img className="langIconCh-v2" src={en} onClick={this.languageBtnListener}/></Nav.Link>
+                    <Nav.Link bsPrefix="langNavLinkCh-v2"><img className="langIconCh-v2" src={en} onClick={this.languageBtnListener}/></Nav.Link>
                 </>
                 }
               </Nav>

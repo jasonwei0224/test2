@@ -101,8 +101,7 @@
     margin-left: 0 !important;
 }
 
-#homeProjectRight .homeProjectBlankCol { /*changed*/
-    /* background-color: rgb(93, 93, 93); */
+/*
     padding-top: 130px;
     padding-bottom: 130px;
 }
@@ -115,12 +114,17 @@
     text-align: center;
     font-size: 15pt;
     font-weight: bold;
-}
+} */
 
 #homeProjectRight {
     margin: 5% 0;
     margin-top: 60px;
     margin-bottom:60px;
+}
+
+.home_image{
+  margin-top: 60px;
+  margin-bottom:60px;
 }
 
 #sponsorSlider {
@@ -186,8 +190,8 @@
     margin-top: 90px;
     margin-bottom: 90px;
     font-family: adonis-web, serif;
-    font-size:45px;
-    text-align:justify;
+    font-size:50px;
+    text-align:center;
 }
 
 /* homeMobileProject.js */
@@ -242,7 +246,7 @@
         padding-left: 10%;
         padding-right: 10%;
     }
-    #homeProjectRight .homeProjectBlankCol {
+    /* #homeProjectRight .homeProjectBlankCol {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -252,7 +256,7 @@
         padding-bottom: 50px;
         font-size: 10pt;
 
-    }
+    } */
     .home_sponsor_img {
         height: 10vh;
     }
@@ -303,6 +307,9 @@
     #homeThirdSection {
         display: none;
     }
+    .home_image{
+      display:none;
+    }
 }
 
 /* sm */
@@ -319,7 +326,7 @@
         padding-left: 10%;
         padding-right: 10%;
     }
-    #homeProjectRight .homeProjectBlankCol {
+    /* #homeProjectRight .homeProjectBlankCol {
         padding-top: 90px;
         padding-bottom: 90px;
     }
@@ -327,7 +334,7 @@
     #homeProjectRight .homeProjectTitleCol {
         padding-top: 90px;
         padding-bottom: 90px;
-    }
+    } */
 
     #homeFirstRow {
         display: none;
@@ -358,6 +365,9 @@
     #projectName{
       font-size: 30px;
     }
+    .home_image{
+      display:none;
+    }
 }
 
 /* md */
@@ -378,7 +388,7 @@
         padding-right: 10%;
         font-size: 20px;
     }
-    #homeProjectRight .homeProjectBlankCol { /*changed*/
+    /* #homeProjectRight .homeProjectBlankCol {
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -386,7 +396,7 @@
     #homeProjectRight .homeProjectTitleCol {
         padding-top: 100px;
         padding-bottom: 100px;
-    }
+    } */
 
     #homeFirstRow {
         display: block;
@@ -449,13 +459,13 @@
       padding-right:20%;
       text-align: center;
     }
-    #homeProjectRight .homeProjectTitleCol {
+    /* #homeProjectRight .homeProjectTitleCol {
         background-color: rgb(206, 188, 44);
         padding-top: 130px;
         padding-bottom: 130px;
         font-family: sofia-pro, sans-serif;
         font-size: 35px;
-    }
+    } */
     .homeProjectBlankCol { /* changed*/
         /* background-color: rgb(93, 93, 93); */
         padding-top: 0px;
@@ -480,6 +490,10 @@
       padding-top:5px;
       padding-bottom:5px;
       margin-top:120px;
+    }
+    .home_image{
+      display:block;
+
     }
 }
 /* @media screen and (min-width: 1500px) {

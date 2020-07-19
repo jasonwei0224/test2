@@ -52,7 +52,7 @@ font-family: "sofia-pro", Sans-serif !important;
     border-style: solid;
     border-width: 2px;
     outline:none;
-    resize:unset;
+    resize:none;
   }
   #newsletter_name{
     margin-bottom: 20px;

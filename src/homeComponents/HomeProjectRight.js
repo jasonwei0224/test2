@@ -10,8 +10,8 @@ function HomeProjectRight(props) {
     return (
         <div id="homeProjectRight">
             <Row className="thirdSectionHomeProjectRow no-gutters">
-                <Col xs="8"className="homeProjectBlankCol"><img src={props.image} href={props.location} style={{width:'100%', height:"auto"}}></img></Col>
-                <Col xs="4"className="homeProjectTitleCol">{props.title}</Col>
+                <Col xs="12"className="homeProjectBlankCol"><img src={props.image} href={props.location} style={{width:'100%', height:"auto"}}></img></Col>
+                {/*}<Col xs="4"className="homeProjectTitleCol">{props.title}</Col>*/}
             </Row>
         </div>
     );

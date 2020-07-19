@@ -41,9 +41,9 @@ const FooterCH = (props) => {
   }
     return (
       <Container fluid>
-        {/*}<Row className="footer_form_container_ch">
-          <Col xl={{span:8, offset:2}} className="footer_form_border_ch"></Col>
-          <Col  className ="footer_newsletter_container_ch"xl={{span:4, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
+        <Row className="footer_form_container_ch">
+          <Col xl={{span:10, offset:1}} className="footer_form_border_ch"></Col>
+          <Col  className ="footer_newsletter_container_ch"xl={{span:5, offset:1}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <Row><Col className="footer_title_ch">訂閱活動訊息</Col></Row>
             <Row><Col className="footer_subtitle_ch">接收即時通知與更多服務</Col></Row>
             <Row><Form.Control id='newsletter_name' className='newsletter_name_ch' type="text" placeholder="姓名" required size="lg"></Form.Control></Row>
@@ -51,7 +51,7 @@ const FooterCH = (props) => {
             <Row><Col className="footer_button_row_ch"><Button  bsPrefix="footer_submit_btn_ch" className="footer_subscribe_btn_ch">訂閱</Button></Col></Row>
           </Col>
 
-          <Col className="footer_contact_container_ch" xl={{span:4, offset:0}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
+          <Col className="footer_contact_container_ch" xl={{span:5, offset:0}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
             <Row><Col className="footer_title_ch">與我們連絡</Col></Row>
             <Row><Col className="footer_subtitle_ch">表演 / 攤商 / 贊助合作機會</Col></Row>
             <Row><Col><Form.Control id="contact_name" className='contact_name_ch' type="text" placeholder="姓名"required size="lg"></Form.Control></Col>
@@ -62,7 +62,7 @@ const FooterCH = (props) => {
           </Col></Row>
             <Row><Col className="footer_button_row_ch"><Button bsPrefix="footer_submit_btn_ch" className="footer_submit_btn_ch">送出</Button></Col></Row>
         </Col>
-      </Row>*/}
+      </Row>
         <Row className="footer_ch" >
           <Col xl={{span:12, offset:0}} style={{textAlign:"center"}}>
             <p className="footer_content_ch">&copy; 2020 多倫多臺灣同鄉會 (TCAT)</p>
