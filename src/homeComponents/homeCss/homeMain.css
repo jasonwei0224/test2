@@ -432,6 +432,10 @@
     #projectName{
       font-size:20px;
     }
+    .home_image{
+      display:block;
+
+    }
 }
 
 /* lg */

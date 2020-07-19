@@ -132,6 +132,7 @@ font-family: "sofia-pro", Sans-serif !important;
   }
   .footer_subscribe_btn_ch{
     margin-top: 10px;
+    margin-bottom:50px;
   }
 
   .footer_title_ch{
@@ -261,7 +262,12 @@ font-family: "sofia-pro", Sans-serif !important;
   }
   .footer_subscribe_btn_ch{
     margin-top: 10px;
+    margin-bottom:50px;
   }
+  .footer_submit_btn_ch{
+   margin-top: 10px;
+   margin-bottom:25px;
+ }
 
   .footer_title_ch{
     font-size: 40px;
@@ -390,8 +396,12 @@ font-family: "sofia-pro", Sans-serif !important;
   }
   .footer_subscribe_btn_ch{
     margin-top: 10px;
+    margin-bottom:50px;
   }
-
+  .footer_submit_btn_ch{
+   margin-top: 10px;
+   margin-bottom:30px;
+ }
   .footer_title_ch{
     font-size: 40px;
     font-family: "sofia-pro", sans-serif;
