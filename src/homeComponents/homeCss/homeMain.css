@@ -67,7 +67,7 @@
 
 #homeTopSection .firstCols {
     padding: 0;
-    background-color: #DBDBDB;
+    background-color: #0C3866;
 }
 
 #homeTopSection #projectsScroll {
@@ -92,6 +92,7 @@
     padding-right: 20%;
     font-family: adonis-web, serif;
     color:#0C3866;
+    white-space: pre-line;
 }
 
 /* homeProjectRight.js */
@@ -458,7 +459,7 @@
     }
 
     #homeSecondSection{
-      font-size:35px;
+      font-size:30px;
       padding-left: 20%;
       padding-right:20%;
       text-align: center;

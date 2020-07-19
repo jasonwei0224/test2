@@ -16,9 +16,10 @@ function ProjectScrollable(props) {
     return (
         <div id="projectsScrollingSection">
           <ProjectNameRight image={sky_top_tor} name="Sky"/>
-          <ProjectNameRight image={people_and_mask_top_tor} name=""/>
+                    <ProjectNameLeft image={different_top_tor} name="I am different, just like you"/>
           <ProjectNameRight image={mirror_top_tor} name="Mirrors"/>
-          <ProjectNameLeft image={different_top_tor} name="I am different, just like you"/>
+
+            <ProjectNameRight image={people_and_mask_top_tor} name=""/>
           <ProjectNameLeft image={apple_top_tor} name="Paul's Apples"/>
           <ProjectNameRight image={otherside_top_tor} name="The Other Side of Mask"/>
             <div id="emptySpace"></div>
