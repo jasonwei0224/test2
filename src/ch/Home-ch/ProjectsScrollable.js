@@ -15,13 +15,13 @@ import people_and_mask_top_tor from '../../assets/people_and_mask_top_tor.jpg';
 function ProjectScrollable(props) {
     return (
         <div id="projectsScrollingSection">
-          <ProjectNameRight image={sky_top_tor} name="Sky"/>
-                    <ProjectNameLeft image={different_top_tor} name="I am different, just like you"/>
-          <ProjectNameRight image={mirror_top_tor} name="Mirrors"/>
+          <ProjectNameRight url = "/sky-ch" image={sky_top_tor} name="Sky"/>
+          <ProjectNameLeft  url ="/IAmDifferent-ch"image={different_top_tor} name="I am different, just like you"/>
+          <ProjectNameRight url=""image={mirror_top_tor} name="Mirrors"/>
 
-            <ProjectNameRight image={people_and_mask_top_tor} name=""/>
-          <ProjectNameLeft image={apple_top_tor} name="Paul's Apples"/>
-          <ProjectNameRight image={otherside_top_tor} name="The Other Side of Mask"/>
+            <ProjectNameRight url="" image={people_and_mask_top_tor} name=""/>
+          <ProjectNameLeft url="" image={apple_top_tor} name="Paul's Apples"/>
+          <ProjectNameRight url="" image={otherside_top_tor} name="The Other Side of Mask"/>
             <div id="emptySpace"></div>
         </div>
     )

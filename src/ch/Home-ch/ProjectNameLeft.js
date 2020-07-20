@@ -10,7 +10,7 @@ function ProjectNameRight(props) {
 
                 </Col>*/}
                 <Col xl={{span:12, offset:0}} className="projectCols">
-                    <img id="projectImage" src={props.image}/>
+                    <a href={props.url}><img id="projectImage" src={props.image}/></a>
                 </Col>
             </Row>
 

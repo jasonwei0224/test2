@@ -84,28 +84,113 @@ img.langIconCh-v2{
 
 @media screen and (max-width: 767px) {
   #navbar-v2 {
+
       text-align: center;
       vertical-align: bottom;
       background-color: #D9C739 !important;
       padding:0px;
   }
-  #logo-image  {
-    display: none;
-  }
-  div.ml-auto {
+ div.ml-auto {
   background-color: white;
   }
-  .navitem-dropdown{
+.navitem-dropdown{
   margin-top: 40px !important;
   color:black !important;
 
-  }
-  .navbar-toggler-icon {
+}
+.navbar-toggler-icon {
   margin: auto;
   width: 60px !important;
   height:60px !important;
 
+}
+#nav_bar_toggle_icon{
+    border:none !important;
+}
+
+#logo-image  {
+  display: none;
+
   }
+a.navitem-v2{
+  font-size:30px;
+  margin-bottom: 10px;
+  margin-top:10px;
+  color: #0C3866 !important;
+
+}
+a.dropdown-toggle.navitem-dropdown{
+  font-size: 30px !important;
+  color:#0C3866!important;
+  width:100%;
+  background-color: #D9C739;
+  text-decoration: none;
+  font-weight: normal !important;
+
+
+}
+.nav-dropdown-wrapper {
+    background-color: #D9C739;
+    width:100%;
+}
+.nav-dropdown-wrapper2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  height:100%;
+}
+a.dropdown-item{
+  font-size: 30px !important;
+  text-align: center;
+  border-bottom: solid 3px #D9C739;
+
+}
+a.dropdown-item:hover{
+  background-color: #D9C739;
+  color:white;
+}
+.dropdown-item{
+  text-align: center!important;
+}
+div.dropdown-menu.show{
+    text-align: center;
+    color:#0C3866;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    position:relative;
+    top:20px;
+
+}
+.dropdown-menu{
+  background:none!important;
+  border:none!important;
+}
+div.ml-auto{
+align-items:center!important;
+  width:100%;
+}
+img.langIcon-v2{
+  width:20%;
+  height:20%;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom:15px;
+}
+img.langIconCh-v2{
+  width:20%;
+  height:20%;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom:15px;
+}
+#logo{
+
+  width: 40%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 }
 
 
@@ -371,7 +456,12 @@ img.langIconCh-v2{
   }
 }*/
 
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 2560px) {
+  div.ml-auto{
+    text-align: right;
+    align-items: center!important;
+    margin-left: 70% !important;
+  }
   #responsive-navbar-nav{
     margin-top:50px;
     margin-left:350px;
