@@ -143,7 +143,7 @@
 }
 
 /* home_colored_header.js */
-#home_colored_header_title { /*changed*/
+#home_colored_header_title_ch { /*changed*/
     background-color:#BE0027;
     padding-left: 5%;
     color: white;
@@ -151,7 +151,7 @@
     font-family: sofia-pro, sans-serif; /*changed*/
     margin-top: 60px;
 }
-#home_colored_header_title2 { /*changed*/
+#home_colored_header_title2_ch { /*changed*/
     background-color:#BE0027;
     padding-left: 5%;
     color: white;
@@ -263,20 +263,20 @@
         width: 90%;
     }
 
-    #home_colored_header_title {
+    #home_colored_header_title_ch {
         font-size: 15pt;
     }
-    #home_colored_header_title {
+    #home_colored_header_title_ch {
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center;
-        font-size: 40px;
+        font-size: 45px;
      }
-     #home_colored_header_title2 {
+     #home_colored_header_title2_ch {
        padding-top: 5%;
        padding-bottom: 5%;
        text-align: center;
-       font-size: 40px;
+       font-size: 45px;
       }
 
     #homeFirstRow {
@@ -289,11 +289,11 @@
     #home_colored_header_line{
         display: none;
     }
-    #home_colored_header_title {
+    #home_colored_header_title_ch {
         padding-top: 5%;
         padding-bottom: 5%;
      }
-     #home_colored_header_title2 {
+     #home_colored_header_title2_ch {
          padding-top: 5%;
          padding-bottom: 5%;
       }
@@ -341,17 +341,17 @@
     #home_colored_header_line{
         display: none;
     }
-    #home_colored_header_title {
+    #home_colored_header_title_ch {
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center;
-        font-size: 40px;
+        font-size: 45px;
      }
-     #home_colored_header_title2{
+     #home_colored_header_title2_ch{
        padding-top: 5%;
        padding-bottom: 5%;
        text-align: center;
-       font-size: 40px;
+       font-size: 45px;
      }
 
     #homeThirdSection {
@@ -402,11 +402,11 @@
         display: block;
     }
 
-    #home_colored_header_title {
+    #home_colored_header_title_ch {
         padding-top: 0;
         padding-bottom: 0;
      }
-    #home_colored_header_title{
+    #home_colored_header_title_ch{
       padding-top:0;
       padding-bottom: 0;
     }
@@ -470,13 +470,13 @@
       font-weight: bold;
       margin-bottom: 10px;
     }
-    #home_colored_header_title{
+    #home_colored_header_title_ch{
       text-align: left;
       font-size:30px;
       padding-top:5px;
       padding-bottom:5px;
     }
-    #home_colored_header_title2{
+    #home_colored_header_title2_ch{
       text-align: left;
       font-size:30px;
       padding-top:5px;

@@ -3,7 +3,7 @@ import React from 'react';
 function HomeColoredHeader2(props) {
     return (
         <div id="home_colored_header">
-            <div id="home_colored_header_title2">
+            <div id="home_colored_header_title2_ch">
                 {props.title}
             </div>
             <div id="home_colored_header_line">

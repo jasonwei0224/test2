@@ -7,7 +7,7 @@ import homepage_placeholder from "../../assets/placeholder.jpg";
  */
 function HomeMobileProject(props) {
     return (
-        <div id="homeMobileProjectRight">
+        <a href={props.url}><div id="homeMobileProjectRight">
             {/* <Row className="homeMobileProject no-gutters">
                 <Col xs="8"className="homeProjectBlankCol"></Col>
                 <Col xs="4"className="homeProjectTitleCol">{props.title}</Col>
@@ -21,7 +21,7 @@ function HomeMobileProject(props) {
                 <div id="homeMobileProjectTitle">{props.title}</div>
             </div>
 
-        </div>
+        </div></a>
     );
 }
 
