@@ -119,12 +119,7 @@ class IAmDifferentForm extends Component {
     formData.append('subjectOccupation', formInputs['subjectOccupation']);
     formData.append('subjectEthnicity', formInputs['subjectEthnicity']);
     formData.append('subjectCity', formInputs['subjectCity']);
-    await fetch('IAmDiffGame.php')
-    .then(response => response.text())
-    .then(text => {
-         console.log(text);
-         // do something else with the text
-    })
+    
     const response = await fetch('i_am_different_form_photos.php', {
       method: 'POST',
       body: formData
