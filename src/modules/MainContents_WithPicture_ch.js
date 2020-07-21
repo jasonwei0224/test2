@@ -12,7 +12,7 @@ const MainContents_WithPicture = (props) => {
 
                 </Col>
                 <Col xl={{span:4}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}} className="main_content_text_column" >
-                    <p className="picture_description_main_content">{props.contents}
+                    <p className="picture_description_main_content_ch">{props.contents}
                         <br/>
                     </p>
                 </Col>
