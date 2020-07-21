@@ -11,6 +11,7 @@ import otherside_top_tor from '../../assets/otherside_top_tor.jpg';
 import apple_top_tor from '../../assets/apple_top_tor.jpg';
 import mirror_top_tor from '../../assets/mirror_top_tor.jpg';
 import people_and_mask_top_tor from '../../assets/people_and_mask_top_tor.jpg';
+import "../../homeComponents/homeCss/homeMain.css";
 
 function ProjectScrollable(props) {
     return (

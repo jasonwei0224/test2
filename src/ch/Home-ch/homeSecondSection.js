@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../../homeComponents/homeCss/homeMain.css";
 function HomeSecondSection(props) {
     return (
         <div id="homeSecondSection">

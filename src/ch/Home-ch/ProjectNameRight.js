@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import "../../homeComponents/homeCss/homeMain.css";
 
 function ProjectNameRight(props) {
     return (

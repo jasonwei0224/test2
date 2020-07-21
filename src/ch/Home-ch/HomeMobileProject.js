@@ -1,5 +1,6 @@
 import React from 'react';
 import homepage_placeholder from "../../assets/placeholder.jpg";
+import "../../homeComponents/homeCss/homeMain.css";
 /**
  * Third section in Homepage.
  * Props: title - project title.

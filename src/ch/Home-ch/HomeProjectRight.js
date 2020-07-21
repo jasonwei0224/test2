@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import homepage_placeholder from "../../assets/homepage_placeholder_lg.jpg";
+import "../../homeComponents/homeCss/homeMain.css";
 /**
  * Third section in Homepage.
  * Props: title - project title.
