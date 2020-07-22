@@ -13,11 +13,11 @@
 .mainSection_Row {
     margin-top:10px;
     margin-bottom:10px;
-    /* font-family: "adonis-web";
-    color:#0C3866; */
+    /* font-family: "adonis-web"; */
+    color:#0C3866;
     font-family: "sofia-pro", Sans-serif;
     font-weight: normal;
-    color: #707070;
+
     font-size: 20px;
 }
 .mainSection_Important_Row {
@@ -134,9 +134,11 @@
   }
   .picture_description_main_content{
     display:block;
+    color: #707070;
   }
   .picture_description_main_content_ch{
     display:block;
+    color: #707070;
   }
 #mainSection_withPicture_div {
   display: none !important;
@@ -201,9 +203,11 @@
     }
     .picture_description_main_content{
       display:block;
+      color: #707070;
     }
     .picture_description_main_content_ch{
       display:block;
+      color: #707070;
     }
 }
 
@@ -220,9 +224,11 @@
   }
   .picture_description_main_content{
     display:block;
+    color: #707070;
   }
   .picture_description_main_content_ch{
     display:block;
+    color: #707070;
   }
 }
 
@@ -297,9 +303,11 @@
     }
     .picture_description_main_content{
       display:inline;
+      color: #707070;
     }
     .picture_description_main_content_ch{
       display:inline;
+      color: #707070;
     }
     #mainSection_withPicture_div {
       display: inline-block !important;
