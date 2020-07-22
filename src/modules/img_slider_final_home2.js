@@ -4,8 +4,8 @@ import './img_slider_final.css'
 import image1 from '../../src/assets/mask1.jpg'
 import image2 from '../../src/assets/mask2.jpg'
 import Dots_home from './img_slider_final_dots_home2'
-import homepage_placeholder_sm_1 from '../../src/assets/homepage_placeholder_sm_1.jpg';
-import homepage_placeholder_sm_2 from '../../src/assets/homepage_placeholder_sm_2.jpg';
+import homepage_placeholder_sm_1 from '../../src/assets/test1.jpg';
+import homepage_placeholder_sm_2 from '../../src/assets/test2.jpg';
 import homepage_placeholder_sm_3 from '../../src/assets/homepage_placeholder_sm_3.jpg';
 
 class Slider_home extends React.Component {
@@ -90,9 +90,9 @@ class Slider_home extends React.Component {
   const Slide = ({ image }) => {
     const styles = {
       backgroundImage: `url(${image})`,
-      backgroundSize: 'cover',
+      backgroundSize: '100% auto',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 60%'
+      backgroundPosition: '50% 40%'
     }
     return <div className="slide_home" style={styles}></div>
   }
@@ -100,7 +100,7 @@ class Slider_home extends React.Component {
 
   const LeftArrow = (props) => {
     return (
-      <div className="backArrow arrow_home" onClick={props.goToPrevSlide}>
+      <div className="backArrow_home arrow_home" onClick={props.goToPrevSlide}>
         <i className="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
       </div>
     );
@@ -109,7 +109,7 @@ class Slider_home extends React.Component {
 
   const RightArrow = (props) => {
     return (
-      <div className="nextArrow arrow_home" onClick={props.goToNextSlide}>
+      <div className="nextArrow_home arrow_home" onClick={props.goToNextSlide}>
         <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
       </div>
     );

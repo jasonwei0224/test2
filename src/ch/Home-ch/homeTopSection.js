@@ -10,6 +10,7 @@ function HomeTopSection() {
         <div id="homeTopSection">
             <Row id="topSectionRow">
                 <Col className="firstCols">
+                  <div className="firstColTitle">選自社區朋友提供的天空照片</div>
                     <Slider_home/>
                     {/* <img id='leftImage' src={placeHolder}/> */}
                 </Col>

@@ -16,6 +16,7 @@ import "../../homeComponents/homeCss/homeMain.css";
 function ProjectScrollable(props) {
     return (
         <div id="projectsScrollingSection">
+          <div className="ScrollableTitle">請點選藝廊主題欣賞精采作品 </div>
           <ProjectNameRight url = "/sky-ch" image={sky_top_tor} name="Sky"/>
           <ProjectNameLeft  url ="/IAmDifferent-ch"image={different_top_tor} name="I am different, just like you"/>
           <ProjectNameRight url=""image={mirror_top_tor} name="Mirrors"/>
