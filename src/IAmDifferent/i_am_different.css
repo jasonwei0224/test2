@@ -9,6 +9,110 @@
 }
 
 
+
+.deck {
+	width: 100%;
+	background: #716F71;
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+  margin: 0 auto;
+}
+.deck .card {
+	height: 100px;
+	width: 100px;
+	margin: 0.2rem 0.2rem;
+	background: #141214;;
+	font-size: 0;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+	transform: rotateY(0);
+	/* background: #02b3e4; */
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background-image: "url(../assets/Different.jpg)";
+	display:inline;
+}
+.test123 {
+	border:1px solid black;
+	background-color: red;
+	width:150px;
+	height:150px;
+	position:reltaive;
+	z-index: 4;
+}
+.test123Inside {
+	position:absolute;
+	z-index: 3;
+	border:1px solid black;
+	background-color: red;
+	width:150px;
+	height:150px;
+}
+.test123.open {
+	border:1px solid black;
+	background-color: green;
+	width:30px;
+	height:30px;
+}
+.test123.show {
+	background-color: blue;
+	
+	/* background-image: url('../assets/doctor.jpg'); */
+
+}
+.deck .card.show {
+  font-size: 33px;
+  /* background-image: "url('../assets/Different.jpg')"; */
+  
+
+}
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+/* animations */
+@keyframes flipInY {
+	from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
 
