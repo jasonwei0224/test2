@@ -60,7 +60,7 @@ history.listen(location => {
           <Route path="/" exact component={IAmDifferent} />
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
-          {/*}<Route path="/test" component={test}></Route>*/}
+          <Route path="/test" component={test}></Route>
           <Route path="/PaulsApple" component={PaulsApple} />
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
