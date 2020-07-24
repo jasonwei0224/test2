@@ -14,6 +14,6 @@ for ($i = 0; $i< 36;$i++){
   $num = $index[$i];
     array_push($fileNameFinal, $filenamearray[$num]);
 }
-echo json_encode($index).json_encode($fileNameFinal);
+echo json_encode($fileNameFinal);
 
 ?>

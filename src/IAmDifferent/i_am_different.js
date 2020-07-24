@@ -11,9 +11,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo from "../programInfo";
 import "./i_am_different.css";
 import $ from "jquery";
-
 import Header from "../dummy/header";
-
 import { Link } from "react-router-dom";
 import NewsletterContactUs from "../newContactForm/newsletterContactUs";
 import Footer from "../footer-temp";
@@ -24,6 +22,8 @@ import MainContents_Important from "../modules/MainContents_Important";
 import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt";
 import MainContents_With_Bold from "../modules/MainContents_WithBold";
 import { Helmet } from "react-helmet";
+
+
 
 function IAmDifferent() {
   const diffForm = <Link to="IAmDifferent"></Link>;
@@ -39,16 +39,18 @@ function IAmDifferent() {
     align-items: center;
     background-color: yellow;
   `;
+
   const goToForm = () => {
     window.location = "/IAmDifferentForm";
   };
 
 
-  
   let test_array=[0,1,2,3,4,5]
   let actual_data=["teacher.jpg","nurse.jpg","instructor.jpg","master.jpg","police.jpg","programmer.jpg"]
 
-  let actual_data_test=["TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest", "TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest", "TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest"]
+  let actual_data_test=["TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest", "TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest", "TesttestetestetasetDoctor","ginacoquitlamkim@gmail.comgkDoctorasian","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttest.jpg","TesttestetestetasetDoctorasdf","ginacoquitlamkim@gmail.comgkDoctorasian","284JasonTEsttesttestDoctortesttest.jpg",
+  "JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","JasonVancouverjasonwei0224@gmail.comJasonDoctorTaiwaneseVancouver","TesttestetestetasetDoctor","192jasonVancouverjasonwei0224@gmail.comtestDoctortesttet"]
+
   let autual_data_test2=[];
   for(var i=0;i<actual_data_test.length;i++) {
     console.log("1 "+actual_data_test[i])
@@ -56,6 +58,7 @@ function IAmDifferent() {
     console.log("2 "+a);
     autual_data_test2.push(a);
   }
+
   function checktype(a) {
     if(a.search('Therapist')>=0) {
       return "Therapist.jpg";
@@ -82,10 +85,6 @@ function IAmDifferent() {
     }
   };
   console.log("Please asdfasdfasdf "+autual_data_test2);
-
-
-
-
   console.log("important very very"+actual_data_test.length);
   useEffect(()=> {
     console.log(test_array.length+"should be 6");
@@ -95,15 +94,34 @@ function IAmDifferent() {
     console.log(actual_data2.length+"should be 6");
   const deck = document.querySelector(".deck");
   var target=null;
+
+
+  async function getFileName(e){
+      let fileList = await fetch('IAmDiffGame.php')
+      let data = await fileList.json()
+      // console.log("the type of " + typeof(data))
+
+      actual_data_test = Object.values(data);
+      for(i =0; i< actual_data_test.length; i++){
+        actual_data_test[i] = "http://gallery.taiwanfest.ca/subjectPhotos/"+actual_data_test[i];
+      }
+      console.log(actual_data_test);
+  };
+
+
   function startGame(){
+
     console.log("Start game");
+    getFileName();
+    console.log("actual test data from server " + actual_data_test[0]);
+    console.log("The type of " + typeof(actual_data_test));
     var ready_list=test_array;
     var actual_data3=actual_data2;
 
-    
+
     console.log(ready_list);
     console.log(actual_data3);
-    
+
     for (var i= 0; i < actual_data3.length; i++){
       console.log("first"+actual_data3[i]);
         var tempoDiv=document.createElement('div');
@@ -111,7 +129,7 @@ function IAmDifferent() {
         tempoDiv.classList.add('test123')
         tempoDiv.setAttribute("id", "wrapper_"+tempString);
         tempoDiv.setAttribute("type", tempString);
-        
+
         deck.appendChild(tempoDiv);
         var tempoDivInside=document.createElement('div');
         tempoDivInside.classList.add('test123Inside')
@@ -133,19 +151,19 @@ function IAmDifferent() {
         }
         tempoDiv.appendChild(tempoDivInside);
         tempoDivInside.style.visibility='hidden';
-        
-      
-        tempoDiv.addEventListener("click", function() {     
+
+
+        tempoDiv.addEventListener("click", function() {
           console.log(this);
           console.log(this.getAttribute('type'));
           document.getElementById('inside_'+this.getAttribute('type')).style.visibility='visible';
           target=this.getAttribute('type');
           console.log(num+"num this is inside eventlistener");
           console.log(target+"target this is inside eventlistener");
-          
+
           if(num==target) {
             console.log("correct");
-            
+
             actual_data.splice(actual_data.indexOf(num));
             if(actual_data.length>0) {
               num=pick_job();
@@ -161,8 +179,8 @@ function IAmDifferent() {
             setTimeout(function() {
               document.getElementById(target2).style.visibility="hidden"
             },1000)
-            
-            
+
+
           }
 
         })
@@ -170,7 +188,7 @@ function IAmDifferent() {
 
     // var num=pick_job();
     // while(ready_list.length>0) {
-        
+
     //   console.log(num);
     //   console.log(id_of_thing);
     //   match_check(num, id_of_thing);
@@ -189,12 +207,12 @@ function IAmDifferent() {
     return actual_data[random_number].slice(0,-4);
   };
 
- 
+
     var num=pick_job();
-    console.log(num); 
+    console.log(num);
     console.log("before start game");
     startGame();
-    
+
     // if() {
     //   stop
     // }
@@ -206,7 +224,7 @@ function IAmDifferent() {
     // }
   }, [])
   return (
-    
+
     <div>
       <Container fluid>
         <Row>
@@ -219,8 +237,8 @@ function IAmDifferent() {
           </Col> */}
 
         <div class="deck" id="card-deck">
-            
-           
+
+
         </div>
         </Row>
         <ProgramInfo
