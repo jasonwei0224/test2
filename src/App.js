@@ -34,6 +34,10 @@ import Home2 from "./homeComponents/home_v2";
 import Home2_ch from "./ch/Home-ch/home_v2_ch";
 import ReactGA from 'react-ga';
 import OtherSideOfMask_ch from "./ch/OtherSideOfMask-ch/other_side_of_mask-ch";
+import SkyArtist_ch from "./ch/Sky-ch/skyArtist_ch";
+import SkyArtist_ch1 from "./ch/Sky-ch/skyArtist1_ch";
+import SkyArtist_ch2 from "./ch/Sky-ch/skyArtist2_ch";
+import SkyArtist_ch3 from "./ch/Sky-ch/skyArtist3_ch";
 import { createBrowserHistory } from 'history';
 
 import test  from "./IAmDifferent/test";
@@ -57,34 +61,44 @@ history.listen(location => {
         {/* <hr id="mobileLine"/> */}
 
 
-          <Route path="/" exact component={IAmDifferent} />
+
           {/*<Route path="/" component={() => {
      window.location.href = "https://torontotaiwanfest.ca/";}}/>*/}
-          <Route path="/test" component={test}></Route>
+        {/* <Route path="/test" component={test}></Route>*/}
+          <Route path="/" exact component={Home2} />
           <Route path="/PaulsApple" component={PaulsApple} />
-          <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
           <Route path="/OtherSideOfMask" component={OtherSideOfMask} />
           <Route path="/Mirror" component={Mirror} />
           <Route path="/SkyV2" component={Sky} />
-          <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/Sky" component={SkyV1}/>
           <Route path="/SkyArtist" component={SkyArtist}/>
           <Route path="/SkyArtist1" component={SkyArtist1}/>
           <Route path="/SkyArtist2" component={SkyArtist2}/>
           <Route path="/SkyArtist3" component={SkyArtist3}/>
-          <Route path="/Sky-ch" component={SkyV1_ch}/>
-          <Route path="/SkyV2-ch" component={Sky_ch} />
-          <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
-          <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
-          <Route path="/Home-ch" component={IAmDifferent_ch}/>
+          <Route path="/IAmDifferent" component={IAmDifferent} />
+          <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
+
+          <Route path="/-ch" exact component={Home2_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
           <Route path="/PeopleAndMask-ch" component={PeopleAndMask_ch}/>
-          <Route path="/Mirror-ch" component={Mirror_ch}/>
-          <Route path="/Home2" component={Home2}/>
-          <Route path="/Home2-ch" component={Home2_ch}/>
-          <Route path="/-ch" exact component={IAmDifferent_ch}/>
           <Route path="/OtherSideOfMask-ch" component={OtherSideOfMask_ch} />
+          <Route path="/Mirror-ch" component={Mirror_ch}/>
+          <Route path="/SkyV2-ch" component={Sky_ch} />
+          <Route path="/Sky-ch" component={SkyV1_ch}/>
+          <Route path="/SkyArtist-ch" component={SkyArtist_ch}/>
+          <Route path="/SkyArtist1-ch" component={SkyArtist_ch1}/>
+          <Route path="/SkyArtist2-ch" component={SkyArtist_ch2}/>
+          <Route path="/SkyArtist3-ch" component={SkyArtist_ch3}/>
+          <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
+          <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
+
+
+          {/*<Route path="/Home-ch" component={IAmDifferent_ch}/>*/}
+          {/*}<Route path="/Home2" component={Home2}/>
+          <Route path="/Home2-ch" component={Home2_ch}/>*/}
+
+
           </Switch>
         </Router>
       </div>

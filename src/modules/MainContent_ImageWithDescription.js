@@ -7,7 +7,7 @@ const ImageWithDescription = (props) => {
     <div>
     <Row>
       <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-        <img src={props.src} className="mainSection_Img"></img>
+        <img src={props.src} className="mainSection_Img_wd"></img>
       </Col>
     </Row>
     <Row>

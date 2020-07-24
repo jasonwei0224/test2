@@ -9,7 +9,7 @@ function HomeTopSection() {
         <div id="homeTopSection">
             <Row id="topSectionRow">
                 <Col className="firstCols">
-                  <div className="firstColTitle">SELECTED SKY PHOTOS FROM PEOPLE LIKE YOU</div>
+                  <div className="firstColTitle">SELECTED SKY PHOTOS <br></br> FROM PEOPLE LIKE YOU</div>
                     <Slider_home/>
                     {/* <img id='leftImage' src={placeHolder}/> */}
                 </Col>

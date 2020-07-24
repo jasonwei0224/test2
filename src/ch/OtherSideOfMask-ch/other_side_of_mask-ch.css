@@ -20,10 +20,22 @@
  text-align: center;
  display:block;
 }
+.emptyBlock{
+  padding-bottom: 5px;
+}
+.emptyBlock2{
+  padding-bottom: 40px;
+}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   .other-side-hint-ch{
    font-size: 25px;
+  }
+  .emptyBlock{
+    padding-bottom: 40px;
+  }
+  .emptyBlock2{
+    display:none;
   }
 }
 
@@ -31,6 +43,12 @@
 @media screen and (min-width: 768px) {
   .other-side-hint-ch{
    font-size: 25px;
+  }
+  .emptyBlock{
+    padding-bottom: 40px;
+  }
+  .emptyBlock2{
+    display:none;
   }
 }
 
@@ -45,5 +63,9 @@
 @media screen and (min-width: 1200px) {
   .other-side-hint-ch{
    font-size: 14px;
+  }
+  .emptyBlock2{
+    padding-bottom: 80px;
+    display:block
   }
 }

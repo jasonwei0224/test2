@@ -1,4 +1,8 @@
-/* 
+
+.people_and_mask_middele{
+    white-space: pre-line;
+}
+/*
 
 
 .mainContents {
@@ -9,8 +13,8 @@
 
 
 input[type="checkbox"]{
-  width: 30px; 
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 

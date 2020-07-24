@@ -25,8 +25,8 @@ function PaulsApple_ch() {
             />
 
             <ProgramInfo_ch
-              subtitle="Behind the Masks"
-              title="PAUL'S APPLES"
+              subtitle="口罩之說"
+              title="保羅的蘋果"
               artistName="Lady Hao Hao"
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"
               color="#D9C739"

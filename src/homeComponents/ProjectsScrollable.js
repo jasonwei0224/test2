@@ -15,7 +15,7 @@ import people_and_mask_top_tor from '../assets/people_and_mask_top_tor.jpg';
 function ProjectScrollable(props) {
     return (
         <div id="projectsScrollingSection">
-          <div className="ScrollableTitle">CHOOSE A GALLERY TO VIEW THE ARTWORKS </div>
+          <div className="ScrollableTitle">CHOOSE A GALLERY <br></br>TO VIEW THE ARTWORKS </div>
           <ProjectNameRight url="/sky"image={sky_top_tor} name="Sky"/>
           <ProjectNameLeft url="/IAmDifferent"image={different_top_tor} name="I am different, just like you"/>
           <ProjectNameRight url="" image={mirror_top_tor} name="Mirrors"/>

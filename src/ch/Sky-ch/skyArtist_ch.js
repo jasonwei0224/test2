@@ -1,19 +1,19 @@
 import React from 'react';
-import ImgSlider from '../img_slider';
+import ImgSlider from '../../img_slider';
 import Placeholder_Person from "../../assets/Placeholder_Person.jpg";
 import { Container } from "react-bootstrap";
 import ProgramInfo from '../programInfo-ch';
 import Second_Title from "../../modules/Second_Title"
-import MainContents_First from "../../modules/MainContents_First_Ch"
+import MainContents_First from "../../modules/MainContents_First_ch"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Img from "../../modules/MainContents_img"
 import MobileShareButton from "../../modules/mobileShareButton";
 import FooterCH from "../footer-ch";
-import SkyOtherArtists from '../../../skyOtherArtists';
+import SkyOtherArtists from '../../skyOtherArtists';
 import Slider from '../../modules/img_slider_final'
 
 
-function SkyArtist() {
+function SkyArtist_CH() {
   return (
     <div>
       <Container fluid style={{padding:"0"}}>
@@ -43,4 +43,4 @@ function SkyArtist() {
   );
 }
 
-export default SkyArtist;
+export default SkyArtist_CH;

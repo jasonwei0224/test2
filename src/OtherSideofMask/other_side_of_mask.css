@@ -15,6 +15,12 @@
   justify-content: center;
 }
 
+.emptyBlock{
+  padding-bottom: 5px;
+}
+.emptyBlock2{
+  padding-bottom: 40px;
+}
 .other-side-hint{
  text-align: center;
  display:block;
@@ -24,12 +30,24 @@
   .other-side-hint{
    font-size: 25px;
   }
+  .emptyBlock{
+    padding-bottom: 40px;
+  }
+  .emptyBlock2{
+    display:none;
+  }
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
   .other-side-hint{
    font-size: 25px;
+  }
+  .emptyBlock{
+    padding-bottom: 40px;
+  }
+  .emptyBlock2{
+    display:none;
   }
 }
 
@@ -38,11 +56,16 @@
   .other-side-hint{
    font-size: 25px;
   }
+
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
   .other-side-hint{
    font-size: 14px;
+  }
+  .emptyBlock2{
+    padding-bottom: 80px;
+    display:block
   }
 }

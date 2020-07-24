@@ -49,10 +49,11 @@ class OtherSideOfMask_ch extends Component {
 
               <MainContents_Middle_ch contents="「內心信仰的藝術品，又該如何說服自己，它很美卻又是病毒。」－ 藝術家Lady Hao Hao"></MainContents_Middle_ch>
                 <ImageWithDescriptionCH src={image1} description="What is something that you can see when you look up, no matter"></ImageWithDescriptionCH>
-
+                <div className="emptyBlock"></div>
                 <Second_Title_ch secondTitle="How To Interact With this Art Work"></Second_Title_ch>
                 <MainContents_Important_ch contents="口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。"></MainContents_Important_ch>
-                <Second_Title_ch secondTitle="About This Artist"></Second_Title_ch>
+                        <div className="emptyBlock"></div>
+              <Second_Title_ch secondTitle="About This Artist"></Second_Title_ch>
                 <MainContents_WithPicture src={image1} contents="asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads,asdf
@@ -63,7 +64,8 @@ class OtherSideOfMask_ch extends Component {
 
 
               <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
-          </Container>
+              <div className="emptyBlock2"></div>
+        </Container>
           <FooterCH/>
         </div>
         );

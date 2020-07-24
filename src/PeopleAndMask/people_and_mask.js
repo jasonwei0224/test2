@@ -42,6 +42,8 @@ const styles2 = {
   },
 };
 
+var text = `We pretend hearing nothing - letting people be terrified and stay in doubt\nWe pretend seeing nothing - Ignoring people who cry or get silenced\nWe choose saying nothing - despite seeing people who panic or scream\nPeople are free to hear nothing, see nothing and say nothing\nBut when the freedom is lost, people may have to live with a life feeling terrified, doubtful, silenced or a life involving constantly screaming, crying or panicking.
+`
 
 
 class PeopleAndMask extends Component {
@@ -90,15 +92,7 @@ class PeopleAndMask extends Component {
 
           </MainContents_Important>
 
-          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.">
+          <MainContents_Middle style={{color:"#0C3866"}} contents={text}>
           </MainContents_Middle>
 
 
@@ -119,23 +113,6 @@ class PeopleAndMask extends Component {
                 where you are and what time of day, it is there above the horizon.">
           </MainContents_Middle>
 
-
-          <Row>
-            <Col lg={{span:8, offset:2}} xs={{span:8, offset:2}}>
-              <img src={image2} style={{maxWidth: "100%", height: "auto", width:"100%"}}/>
-            </Col>
-          </Row>
-
-          <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon.">
-          </MainContents_Middle>
 
           <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"></MobileShareButton>
 

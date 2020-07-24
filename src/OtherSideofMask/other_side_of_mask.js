@@ -47,15 +47,15 @@ class OtherSideOfMask extends Component {
           <MainContents_Middle contents="It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm."></MainContents_Middle>
           <MainContents_Middle contents="This art piece portrays the irony that on the flip side of every beautiful story and gesture exists its potentially damaging impact. Further, the appearance of the inner side of the mask and its similarity to the media’s images of the SARS-CoV-2 virus reflects that it can be difficult for us to differentiate between what is poisonous and what is beautiful. In these current times, we must examine our past behaviours and reflect on how we can learn from them. It takes courage to understand ourselves and each other, and even more so to own our past mistakes."></MainContents_Middle>
           <MainContents_Middle contents="“The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow."></MainContents_Middle>
-          
+
           <ImageWithDescription src={image1} description="What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon."></ImageWithDescription>
-          
+          <div className="emptyBlock"></div>
           <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK"></Second_Title>
           <MainContents_Important contents=" What is something that you can see when you look up, no matter
             wherever you are in the world? The sky is one constant no matter
             where you are and what time of day, it is there above the horizon."></MainContents_Important>
-
-          <Second_Title secondTitle="ABOUT THIS ARTIST"></Second_Title>  
+          <div className="emptyBlock"></div>
+          <Second_Title secondTitle="ABOUT THIS ARTIST"></Second_Title>
           <MainContents_WithPicture src={image2} contents="asdf
           Despite our geographical differences,
           we all look towards that same sky that looms over our heads,asdf
@@ -64,6 +64,7 @@ class OtherSideOfMask extends Component {
           together."></MainContents_WithPicture>
 
           <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
+          <div className="emptyBlock2"></div>
         </Container>
 
         <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
