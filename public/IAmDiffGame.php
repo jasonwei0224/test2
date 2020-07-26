@@ -7,7 +7,15 @@ $index = [];
 $fileNameFinal = [];
 $numOfFile = count($filenamearray);
 for ($i = 0; $i < 36; $i++) {
-  array_push($index, rand(2,$numOfFile-1));
+  $ind = rand(2,$numOfFile-1);
+  while(true){
+    if(in_array($ind ,$index)){
+      $ind = rand(2,$numOfFile-1);
+    }else{
+      array_push($index, $ind);
+      break;
+    }
+  }
 }
 
 for ($i = 0; $i< 36;$i++){

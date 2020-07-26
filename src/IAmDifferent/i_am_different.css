@@ -7,20 +7,52 @@
   width:100%;
   height: auto;
 }
+.row{
+  margin-left: 0px !important;
+}
 
-
-
+.diff_top_row{
+  background-color: black;
+  width:90%;
+  margin:auto!important;
+  color:white;
+  font-size:23px;
+  padding:1rem;
+}
+.diff_bottom_row{
+  background-color: black;
+  width:90%;
+  margin:auto!important;
+  color: white;
+  font-size:23px;
+  padding:1rem;
+}
+.target{
+  background-color: red;
+  border-radius: 25px;
+  width:500px;
+  margin-left: 0px !important;
+  text-align: left !important;
+  padding-left: 20px;
+  font-weight:bold;
+  font-family: sofia-pro, sans-serif;
+}
+.info{
+  color:orange;
+  border-radius: 25px;
+  font-family: sofia-pro, sans-serif; 
+}
 .deck {
-	width: 100%;
+	width: 90%;
 	background: #716F71;
-	padding: 1rem;
+	/* padding: 1rem; */
 	border-radius: 4px;
 	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 .deck .card {
 	height: 100px;
@@ -48,38 +80,38 @@
 	background-image: "url(../assets/Different.jpg)";
 	display:inline;
 }
-.test123 {
+.card_outside {
 	border:1px solid black;
-	background-color: red;
-	width:150px;
-	height:150px;
-	position:reltaive;
+	background-image: url(../assets/diff_game_logo.png);
+	width:200px;
+	height:200px;
+	position:relative;
 	z-index: 4;
 }
-.test123Inside {
+.card_inside {
 	position:absolute;
 	z-index: 3;
 	border:1px solid black;
 	background-color: red;
-	width:150px;
-	height:150px;
+	width:200px;
+	height:200px;
 }
-.test123.open {
+.card_outside.open {
 	border:1px solid black;
 	background-color: green;
 	width:30px;
 	height:30px;
 }
-.test123.show {
+.card_outside.show {
 	background-color: blue;
-	
+
 	/* background-image: url('../assets/doctor.jpg'); */
 
 }
 .deck .card.show {
   font-size: 33px;
   /* background-image: "url('../assets/Different.jpg')"; */
-  
+
 
 }
 .deck .card.disabled {
@@ -120,15 +152,35 @@
 
 /* sm */
 @media screen and (min-width: 768px) {
- 
+
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-  
+
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-   
+
+}
+@media screen and (min-width: 2560px){
+  .deck {
+  	width: 50%;
+  	background: #716F71;
+  	padding: 1rem;
+  	border-radius: 4px;
+  	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+  	align-items: center;
+    margin: 0 auto;
+  }
+  .diff_top_row{
+    width:50%;
+  }
+  .diff_bottom_row{
+    width:50%;
+  }
 }
