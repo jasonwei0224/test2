@@ -11,7 +11,7 @@
         $subjectEthnicity = trim($_POST['subjectEthnicity']);
         $subjectCity = trim($_POST['subjectCity']);
 
-        $filename = rand(0,1000) . $senderFullname . $senderCity . $senderEmail . $subjectFirstName  . $subjectOccupation . $subjectEthnicity . $subjectCity . ".jpg";
+        $filename = rand(0,1000) . $senderFullname . $senderCity . $senderEmail . "(" . $subjectFirstName . ")"  . "(" .  $subjectOccupation . ")" . "(" . $subjectEthnicity . ")" . "(" . $subjectCity . ")" . ".jpg";
         $filename = str_replace(' ', '_', $filename);
         if($_FILES['subjectPhoto']['type'] === "image/jpeg" || $_FILES['subjectPhoto']['type'] === "image/png" && $_FILES['subjectPhoto']['size'] < 1000000) {
             move_uploaded_file($_FILES['subjectPhoto']['tmp_name'], "subjectPhotos/" . $filename);

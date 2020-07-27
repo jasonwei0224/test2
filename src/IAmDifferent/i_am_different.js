@@ -126,7 +126,7 @@ function IAmDifferent() {
   function startGame(){
 
     console.log("Start game");
-      $('div.target').text("Please look for other "+ target_occupation + "(s)");
+      $('span.target').text("Please look for other "+ target_occupation + "(s)");
 
     // console.log("actual test data from server " + actual_data_test[0]);
     // console.log("The type of " + typeof(actual_data_test));
@@ -150,7 +150,7 @@ function IAmDifferent() {
         tempoDivInside.classList.add('card_inside')
         // var stringtest=test_array[i];
         tempoDivInside.setAttribute("id", "inside_"+tempString);
-        // console.log(tempString);
+        console.log(tempString);
         tempoDivInside.style.backgroundImage = `url(${tempString})`
         tempoDivInside.style.backgroundSize = "contain";
         tempoDivInside.style.backgroundRepeat="no-repeat";
@@ -170,14 +170,21 @@ function IAmDifferent() {
         //   tempoDivInside.style.backgroundImage=`url(${programmer})`
         // }
         tempoDiv.appendChild(tempoDivInside);
-        tempoDivInside.style.visibility='hidden';
+       tempoDivInside.style.visibility='hidden';
 
 
         tempoDiv.addEventListener("click", function a() {
           // console.log(this);
-          // console.log("File Name: " +this.getAttribute('type'));
+          console.log("File Name: " +this.getAttribute('type'));
           document.getElementById('inside_'+this.getAttribute('type')).style.visibility='visible';
-          $('div.info').text(this.getAttribute('type'));
+          // var split_list = this.getAttribute('type').split("(");
+          // var name = split_list[1].replace(")", " ");
+          // name = name.replace("_", " ");
+          // var ethnicity = split_list[3].replace(")", " ");
+          // ethnicity = ethnicity.replace("_", " ");
+          // var city = split_list[4].replace(").jpg", " ");
+          // $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
+          $('span.info').text(this.getAttribute('type'));
           target=this.getAttribute('type');
           console.log("target_occupation: (in EL) " + target_occupation);
           // console.log("target: (in EL) " +target);
@@ -186,7 +193,7 @@ function IAmDifferent() {
           if(photo_occupation==target_occupation) { // problem with the target need a solution
             // console.log("correct");
 
-            document.getElementById('inside_'+this.getAttribute('type')).style.border="#00FF00 solid 3px";
+            document.getElementById('inside_'+this.getAttribute('type')).style.border="#00FF00 solid 10px";
             // autual_data_test2.splice(autual_data_test2.indexOf(target_occupation));
 
             photo_count_dic[target_occupation] = photo_count_dic[target_occupation] -1;
@@ -194,12 +201,13 @@ function IAmDifferent() {
             document.getElementById('wrapper_'+this.getAttribute('type')).removeEventListener("click", a);
             if(photo_count_dic[target_occupation]==0){
               console.log("game complete");
+                setTimeout(function() {
               document.getElementById("card-deck").style.visibility="hidden";
               document.getElementById("card-deck").style.display="none"
               document.getElementById("diff_top_row").style.display="none";
               document.getElementById("diff_bottom_row").style.display="none";
               document.getElementById("main_image_diff").style.display="block";
-              // document.getElementById()
+            },2000);
             }
 
             // if(autual_data_test2.length>0) {
@@ -216,7 +224,7 @@ function IAmDifferent() {
             // console.log("not correct");
             var incorrect_card='inside_'+target;
             // console.log(target2);
-            document.getElementById('inside_'+this.getAttribute('type')).style.border="red solid 3px";
+            document.getElementById('inside_'+this.getAttribute('type')).style.border="red solid 10px";
             // document.getElementById('inside_'+this.getAttribute('type')).innerHTML.style.color = "red";
             // document.getElementById('inside_'+this.getAttribute('type')).innerHTML.style.fontSize = "20px";
             // document.getElementById('inside_'+this.getAttribute('type')).innerHTML = "X";
@@ -278,34 +286,23 @@ function IAmDifferent() {
         startGame();
     };
     getFileName();
-    // startGame()
-    // document.getElementByClassName("info").setT。
-    // startGame();
 
-    // if() {
-    //   stop
-    // }
-
-    // while(list_job.length>0) {
-    //   var number=pick_job;
-    //   console.log(number);
-    //   console.log(target);
-    // }
   }, [])
   return (
 
     <div>
       <Container fluid>
+        <div style={{backgroundColor:"black"}}>
         <Row className="diff_top_row" id="diff_top_row">
           <Col lg={{ span: 6, offset: 0 }}>
-          <div className = "target" style={{textAlign:"center", margin:"auto"}}></div>
+          <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
         </Col>
         <Col lg={{ span: 6, offset: 0 }}>
-          <div className = "info" style={{textAlign:"center", margin:"auto"}}></div>
+          <div style={{textAlign:"center", margin:"auto"}}><span className = "info" ></span></div>
         </Col>
         </Row>
 
-        <Row>
+        <Row style={{backgroundColor: "black"}}>
           <Col
             lg={{ span: 12, offset: 0 }}
             xs={{ span: 12, offset: 0 }}
@@ -323,12 +320,13 @@ function IAmDifferent() {
         </Row>
         <Row className="diff_bottom_row" id ="diff_bottom_row">
           <Col>
-          <div className = "target" style={{textAlign:"center", margin:"auto"}}></div>
+          <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
         </Col>
         <Col>
-          <div className = "info" style={{textAlign:"center", margin:"auto"}}></div>
+          <div style={{textAlign:"center", margin:"auto"}}><span className = "info" ></span></div>
         </Col>
         </Row>
+      </div>
         <ProgramInfo
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"

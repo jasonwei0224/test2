@@ -30,17 +30,23 @@
 .target{
   background-color: red;
   border-radius: 25px;
-  width:500px;
+  /* width:500px; */
   margin-left: 0px !important;
   text-align: left !important;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-right: 20px;
   font-weight:bold;
   font-family: sofia-pro, sans-serif;
+  float:left;
 }
 .info{
   color:orange;
   border-radius: 25px;
-  font-family: sofia-pro, sans-serif; 
+  font-family: sofia-pro, sans-serif;
+  float:left;
+  padding-top: 10px;
 }
 .deck {
 	width: 90%;
@@ -93,6 +99,8 @@
 	z-index: 3;
 	border:1px solid black;
 	background-color: red;
+  /* background-image: url(../assets/diff_game_logo.png); */
+  /* filter:blur(8px); */
 	width:200px;
 	height:200px;
 }
