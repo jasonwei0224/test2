@@ -16,6 +16,7 @@ import IAmDifferentForm from "./IAmDifferent/i_am_different_form";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import SkyV1 from "./Sky/sky_v1";
+import UnbeingChinese from "./unbeingChinese/unbeingChinese";
 import SkyV1_ch from "./ch/Sky-ch/sky_v1-ch";
 import Sky_ch from "./ch/Sky-ch/sky-ch";
 import IAmDifferent_ch from "./ch/IAmDifferent-ch/i_am_different-ch";
@@ -78,6 +79,7 @@ history.listen(location => {
           <Route path="/SkyArtist3" component={SkyArtist3}/>
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
+          <Route path="/UnbeingChinese" component={UnbeingChinese}/>
 
           <Route path="/-ch" exact component={Home2_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
