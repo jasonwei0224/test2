@@ -292,7 +292,12 @@ function IAmDifferent() {
 
     <div>
       <Container fluid>
-        <div style={{backgroundColor:"black"}}>
+        <Row>
+            <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
+              <img className="main_image" src={different_img}/>
+            </Col>
+        </Row>
+      {/*  <div style={{backgroundColor:"black"}}>
         <Row className="diff_top_row" id="diff_top_row">
           <Col lg={{ span: 6, offset: 0 }}>
           <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
@@ -326,12 +331,12 @@ function IAmDifferent() {
           <div style={{textAlign:"center", margin:"auto"}}><span className = "info" ></span></div>
         </Col>
         </Row>
-      </div>
+      </div>*/}
         <ProgramInfo
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"
           artistName="TAIWANfest"
-          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse"
+          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>
 
@@ -359,7 +364,7 @@ function IAmDifferent() {
         <Button2
           onclick={goToForm}
           title="UPLOAD FRONT-LINE HERO PHOTO"
-          togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FIAmDifferent&amp;src=sdkpreparse"
+          togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent&amp;src=sdkpreparse"
         ></Button2>
       </Container>
       <div
