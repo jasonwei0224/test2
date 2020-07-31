@@ -11,34 +11,37 @@ import MainContents_Img from "../modules/MainContents_img"
 import Footer from "../footer-temp";
 import MobileShareButton from "../modules/mobileShareButton";
 import './unbeingChinese.css';
-
+import HoverImage from "react-hover-image"
 function UnbeingChinese() {
   const [isShown, setIsShown] = useState(false);
   return (
     <div>
       <Container fluid style={{padding:"0"}}>
-            {/* <img 
-              className="image_static"
-              src={sample_mao}        
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}></img>
-            {isShown && (
-              <img className="image_active" src={animate_sample_mao}></img> */}
-            {isShown ? 
-              <img 
-                className="image_active" 
-                src={animate_sample_mao}></img> :             
-              <img 
+            {/*}{isShown ?
+              <img
+                className="image_active"
+                src={animate_sample_mao}></img> :
+              <img
                 className="image_static"
-                src={sample_mao}        
+                src={sample_mao}
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}></img>
-            }
+            }*/}
+            <Row>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+            </Row>
+            <Row>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+              <Col><HoverImage src={sample_mao}  hoverSrc={animate_sample_mao} style={{width:'100%', height:"auto"}}></HoverImage></Col>
+            </Row>
 
         <ProgramInfo
-          subtitle="Behind the Masks"
-          title="PAUL'S APPLES"
-          artistName="Lady Hao Hao"
+          subtitle="I am different, just like you"
+          title='「Un」being Chinese'
+          artistName="Tong Zhou"
           url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>

@@ -94,6 +94,7 @@ history.listen(location => {
           <Route path="/SkyArtist3-ch" component={SkyArtist_ch3}/>
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
           <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
+          <Route path="/UnbeingChinese-ch" component={UnbeingChinese}/>
 
 
           {/*<Route path="/Home-ch" component={IAmDifferent_ch}/>*/}
