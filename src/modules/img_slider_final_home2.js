@@ -4,9 +4,12 @@ import './img_slider_final.css'
 import image1 from '../../src/assets/mask1.jpg'
 import image2 from '../../src/assets/mask2.jpg'
 import Dots_home from './img_slider_final_dots_home2'
-import homepage_placeholder_sm_1 from '../../src/assets/test1.jpg';
-import homepage_placeholder_sm_2 from '../../src/assets/test2.jpg';
-import homepage_placeholder_sm_3 from '../../src/assets/homepage_placeholder_sm_3.jpg';
+import Sky1 from '../assets/V-Sky1.jpg';
+import Sky3 from '../assets/V-Sky3.jpg';
+import Sky4 from '../assets/V-Sky4.jpg';
+import Sky5 from '../assets/V-Sky5.jpg';
+import Sky7 from '../assets/V-Sky7.jpg';
+import Sky8 from '../assets/V-Sky8.jpg';
 
 class Slider_home extends React.Component {
     constructor(props) {
@@ -14,7 +17,7 @@ class Slider_home extends React.Component {
 
       this.state = {
         images: [
-            homepage_placeholder_sm_1, homepage_placeholder_sm_2, homepage_placeholder_sm_3
+            Sky1, Sky3, Sky4, Sky5, Sky7, Sky8
         ],
         currentIndex: 0,
         translateValue: 0
@@ -90,7 +93,7 @@ class Slider_home extends React.Component {
   const Slide = ({ image }) => {
     const styles = {
       backgroundImage: `url(${image})`,
-      backgroundSize: '85% auto',
+      backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 40%'
     }

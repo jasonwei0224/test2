@@ -23,9 +23,6 @@ function ProjectScrollable(props) {
             <ProjectNameRight  url="" image={people_and_mask_top_tor} name=""/>
           <ProjectNameLeft  url="" image={apple_top_tor} name="Paul's Apples"/>
           <ProjectNameRight   url="" image={otherside_top_tor} name="The Other Side of Mask"/>
-
-
-            {/*}<ProjectNameLeft image={homepage_placeholder_sm_3} name="(UN) Being Chinese"/>*/}
             <div id="emptySpace"></div>
         </div>
     )

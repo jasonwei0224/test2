@@ -152,7 +152,7 @@ class SkyV1 extends Component {
               </Col>
           </Row>
 
-        <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2Fsky&amp;src=sdkpreparse" color="#D9C739">
+        <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse" color="#D9C739">
         </ProgramInfo>
 
         <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
@@ -203,7 +203,7 @@ class SkyV1 extends Component {
           <FormConsent inputId="checkbox-3" consent= "I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project."></FormConsent>
 
 
-            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2Fsky&amp;src=sdkpreparse"></Button1>
+            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"></Button1>
 
         </Form>
 

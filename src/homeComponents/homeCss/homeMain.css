@@ -12,7 +12,7 @@
 
 /* projectsScrollable.js */
 #projectsScrollingSection {
-    background-color: rgb(206, 188, 44);
+    background-color: #d9c639;
     overflow-y: scroll;
 }
 ::-webkit-scrollbar {
@@ -61,8 +61,19 @@
     padding-left: 3%;
     padding-right: 3%;
     box-sizing: unset;
+    padding-bottom: 100px;
+    border-bottom: 2px white solid;
 }
-
+#mainRow2{
+    width: 60%;
+    padding-top: 100px;
+    margin:auto !important;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: unset;
+    padding-bottom: 100px;
+    /* border-bottom: 2px white solid; */
+}
 
 /* homeTopSection.js */
 #homeTopSection {
@@ -226,19 +237,29 @@
 
 #homeMobileProjectType { /*changed*/
     color: #BE0027;
-    font-size:30px;
+    font-size:40px;
     font-family: sofia-pro, sans-serif;
 }
 
 #homeMobileProjectTitle { /* changed*/
     color: #246F79;
-    font-size: 40px;
+    font-size: 50px;
     font-family: sofia-pro, sans-serif;
 }
 
 .projectCols2{
   border-bottom: solid 3px;
   width:80%;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 /* xs < 768 */
 @media screen and (max-width: 767px) {
@@ -285,12 +306,14 @@
         padding-bottom: 5%;
         text-align: center;
         font-size: 40px;
+        font-weight:bold;
      }
      #home_colored_header_title2 {
        padding-top: 5%;
        padding-bottom: 5%;
        text-align: center;
        font-size: 40px;
+       font-weight:bold;
       }
 
     #homeFirstRow {
@@ -326,6 +349,19 @@
 
 /* sm */
 @media screen and (min-width: 768px) {
+  .ScrollableTitle{
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:50%;
+    color: white;
+    font-size:23px;
+    /* font-weight: bold; */
+  }
     #homeTopSection #projectsScroll {
         height: 40vh;
     }
@@ -363,12 +399,14 @@
         padding-bottom: 5%;
         text-align: center;
         font-size: 40px;
+        font-weight:bold;
      }
      #home_colored_header_title2{
        padding-top: 5%;
        padding-bottom: 5%;
        text-align: center;
        font-size: 40px;
+       font-weight:bold;
      }
 
     #homeThirdSection {
@@ -380,10 +418,35 @@
     .home_image{
       display:none;
     }
+    .firstColTitle{
+      text-align: center;
+      margin: auto;
+      margin-top: 70px;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      padding-left: 10px;
+      padding-right: 10px;
+      width:50%;
+      color: white;
+      font-size:23px;
+    }
 }
 
 /* md */
 @media screen and (min-width: 992px) {
+  .ScrollableTitle{
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:50%;
+    color: white;
+    font-size:23px;
+    /* font-weight: bold; */
+  }
     #projectLine {
         margin-top: 40%;
     }
@@ -447,6 +510,18 @@
     .home_image{
       display:block;
 
+    }
+    .firstColTitle{
+      text-align: center;
+      margin: auto;
+      margin-top: 70px;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      padding-left: 10px;
+      padding-right: 10px;
+      width:50%;
+      color: white;
+      font-size:23px;
     }
 }
 
@@ -521,27 +596,49 @@
       margin-bottom: 10px;
     }
     #home_colored_header_title{
-      text-align: left;
+      /* text-align: left; */
       font-size:30px;
       padding-top:5px;
       padding-bottom:5px;
+      margin-top:90px;
     }
     #home_colored_header_title2{
-      text-align: left;
+      /* text-align: left; */
       font-size:30px;
       padding-top:5px;
       padding-bottom:5px;
-      margin-top:120px;
+      margin-top:150px;
     }
     .home_image{
       display:block;
 
     }
 }
-@media screen and (min-width: 2560px) {
+
+@media screen and (min-width: 1800px) {
   #homeTopSection #projectsScroll {
       height: 70vh;
       /* height:800px; */
   }
-
+  .home_image{
+    display:block;
+    margin-bottom:120px;
+    margin-top:120px;
+  }
+  #home_colored_header_title2{
+    text-align: left;
+    font-size:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:140px;
+    text-align: center;
+  }
+  #home_colored_header_title{
+    text-align: left;
+    font-size:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:200px;
+    text-align: center;
+  }
 }

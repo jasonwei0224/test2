@@ -18,7 +18,7 @@ import Slider from '../modules/img_slider_final'
 function Sky() {
 
   const goToForm=()=> {
-    window.location='#/Sky';
+    window.location='Sky';
   };
 
   return (
@@ -30,7 +30,7 @@ function Sky() {
           subtitle="I'm different, just like you!"
           title="SKY"
           artistName="Jessica Sung / Jessica Sung / Jessica Sung / Jessica Sung"
-          url="https://www.facebook.com/sharer/sharer.php?u=https://www.acsea.ca/"
+          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
           color="#D9C739"
           ></ProgramInfo>
 
@@ -44,7 +44,7 @@ function Sky() {
         <Second_Title secondTitle="UNDER THE SAME SKY PROJECT" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
         <MainContents_Important contents="This province's condo insurance market is unhealthy and has saddled owners with sudden increases of an estimated 50 percent in Metro Vancouver, according to a three-month investigation by the B.C. Financial Services Authority."></MainContents_Important>
 
-        <Button1 onclick={goToForm} title="UPLOAD YOUR PHOTO" togoUrl="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2Fsky&amp;src=sdkpreparse"></Button1>
+        <Button1 onclick={goToForm} title="UPLOAD YOUR PHOTO" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"></Button1>
       </Container>
 
       <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

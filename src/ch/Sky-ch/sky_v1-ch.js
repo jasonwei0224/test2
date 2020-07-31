@@ -151,7 +151,7 @@ class SkyV1_ch extends Component {
             </Col>
         </Row>
 
-      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2Fsky-ch&amp;src=sdkpreparse"  color="#D9C739">
+      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky-ch&amp;src=sdkpreparse" color="#D9C739">
       </ProgramInfo_ch>
 
       <MainContents_First_ch contents="在同一片藍天下，當一切顏色歸零(Colour Zero)，回到一個個獨立的個體，人們究竟有何不同?"></MainContents_First_ch>
@@ -193,7 +193,7 @@ class SkyV1_ch extends Component {
       <FormConsent_ch inputId="checkbox-3" consent="我同意台灣文化節將我所拍攝的照片作為「頭頂同一片天計畫」節目的內容與相關宣傳使用。"></FormConsent_ch>
 
 
-        <ButtonCh onclick={this.submitForm} title="送出" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2Fsky-ch&amp;src=sdkpreparse" ></ButtonCh>
+        <ButtonCh onclick={this.submitForm} title="送出" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky-ch&amp;src=sdkpreparse" ></ButtonCh>
 
 
       </Form>
