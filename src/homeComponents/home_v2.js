@@ -89,7 +89,7 @@ function Home2() {
                             </Row>
                         </div>
                         <div id="projectInScroll">
-                            <Row id="mainRow">
+                            <Row id="mainRow2">
                                 <Col xl={{span:16, offset:0}} className="projectCols">
                                     <img onClick={()=>scrollToRef(myRef2)} id="projectImage" src={section_2}/>
                                 </Col>
