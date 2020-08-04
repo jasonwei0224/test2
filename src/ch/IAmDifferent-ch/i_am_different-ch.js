@@ -8,7 +8,7 @@ import "./i_am_different-ch.css";
 import { Link } from "react-router-dom";
 import FooterCH from "../footer-ch";
 import ButtonCh from "../../modules/ButtonCh"
-import Second_Title_ch from '../../modules/Second_TitleCh';
+import Second_Title_ch_bold from '../../modules/Second_TitleCh_Bold';
 import MainContents_Important_ch from "../../modules/MainContents_Important_ch";
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
 
@@ -53,7 +53,7 @@ function IAmDifferent() {
           color="#D9C739"
         ></ProgramInfo_ch>
 
-        <Second_Title_ch secondTitle="影像創作 X 線上互動"></Second_Title_ch>
+        <Second_Title_ch_bold secondTitle="影像創作 X 線上互動"></Second_Title_ch_bold>
 
         <MainContents_Important_ch contents="在疫情最辛苦艱難的時期，許多生命受苦臨危之際，醫護人員、警消人員、科學家、衛生官員這些專業人士，在拯救生命的同時，並不會過問危難者的族裔與身份。我們每一個人都會面臨生命終結的一天，當這些專業人士在救助受苦的人們，處理危急的情況當下，並不會過問對方的膚色族裔、語言文化、社經地位，那時，他們的眼中視一切生命皆為平等，不因求助者的外在條件、理想價值而有所不同。"></MainContents_Important_ch>
         <Row className="space_ch_imd"><Col></Col></Row>

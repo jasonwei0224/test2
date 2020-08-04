@@ -1,0 +1,19 @@
+import React from 'react';
+import { Button, Row, Col } from 'react-bootstrap';
+import './MainContents.css'
+
+const MainContents_Important_With_Border = (props) => {
+    return (
+        <div>
+            <Row className="mainSection_Important_Row_border">
+                <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}}  xs={{span:10, offset:1}}>
+                    <p style={{fontFamily: props.font}}>{props.contents}<br/></p>
+                    <div className="main_borderline" style={{borderTop: "1px solid #D9C739"}}></div>
+                </Col>
+
+            </Row>
+        </div>
+    );
+}
+
+export default MainContents_Important_With_Border;

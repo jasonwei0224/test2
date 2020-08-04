@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import NewsletterContactUs from "../newContactForm/newsletterContactUs";
 import Footer from "../footer-temp";
 import Button2 from "../modules/Button2";
-import Second_Title from "../modules/Second_Title";
+import Second_Title_Bold from "../modules/Second_Title_Bold";
 import MainContents_Middle from "../modules/MainContents_Middle";
 import MainContents_Important from "../modules/MainContents_Important";
 import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt";
@@ -177,14 +177,15 @@ function IAmDifferent() {
           // console.log(this);
           console.log("File Name: " +this.getAttribute('type'));
           document.getElementById('inside_'+this.getAttribute('type')).style.visibility='visible';
-          // var split_list = this.getAttribute('type').split("(");
+          var split_list = this.getAttribute('type').split("-");
+          // console.log(split_list);
           // var name = split_list[1].replace(")", " ");
-          // name = name.replace("_", " ");
-          // var ethnicity = split_list[3].replace(")", " ");
+          var name = split_list[1].replace("_", " ");
+          var ethnicity = split_list[3].replace("_", " ");
           // ethnicity = ethnicity.replace("_", " ");
-          // var city = split_list[4].replace(").jpg", " ");
-          // $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
-          $('span.info').text(this.getAttribute('type'));
+          var city = split_list[4].replace(".jpg", " ");
+          $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
+          // $('span.info').text(this.getAttribute('type'));
           target=this.getAttribute('type');
           console.log("target_occupation: (in EL) " + target_occupation);
           // console.log("target: (in EL) " +target);
@@ -297,7 +298,7 @@ function IAmDifferent() {
               <img className="main_image" src={different_img}/>
             </Col>
         </Row>
-      {/*  <div style={{backgroundColor:"black"}}>
+        {/*<div style={{backgroundColor:"black"}}>
         <Row className="diff_top_row" id="diff_top_row">
           <Col lg={{ span: 6, offset: 0 }}>
           <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
@@ -340,10 +341,10 @@ function IAmDifferent() {
           color="#D9C739"
         ></ProgramInfo>
 
-        <Second_Title
+        <Second_Title_Bold
           secondTitle="About This Work:"
           style={{ fontFamily: "sofia-pro Sans-serif" }}
-        ></Second_Title>
+        ></Second_Title_Bold>
 
         <MainContents_WithBold_Impt
           contents=""

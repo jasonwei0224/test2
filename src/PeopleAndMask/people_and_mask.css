@@ -3,17 +3,23 @@
     height:100%;
 }
 @media screen and (max-width: 767px) {
-
+  .desktop_artist{
+    display:none;
+  }
 }
 
 
 @media screen and (min-width: 768px) {
-
+  .desktop_artist{
+    display:none;
+  }
 }
 
 
 @media screen and (min-width: 992px) {
-
+  .desktop_artist{
+    display:none;
+  }
 }
 
 
@@ -22,4 +28,7 @@
         width:100%;
         height:100%;
     }
+  .display_artist{
+    display:hidden;
+  }
 }

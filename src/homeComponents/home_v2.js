@@ -59,7 +59,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
   const useMountEffect = (fun) => useEffect(fun, [])
 
 
-var text = `The world seems to have lost its order because we forget to give others space; nature seems to be protesting because we forget to be humble. Artists are risk takers and they dare to challenge the reality of our society.  For things words can’t express, let pictures do the talking.  For the warmth people can’t feel, maybe colours can ignite.  To appreciate our artists here, time and space are all is required. \n\n  The galleries of your photos are open now. Galleries of all participating artists will be open starting August 28th.`
+var text = `The world seems to have lost its order because we forget to give others space; nature seems to be protesting because we forget to be humble. Artists are risk takers and they dare to challenge the reality of our society.  For things words can’t express, let pictures do the talking.  For the warmth people can’t feel, maybe colours can ignite.  To appreciate our artists here, time and space are all that is required. \n\n  The galleries of your photos are open now. Galleries of all participating artists will be open starting August 28th.`
 
 function Home2() {
 
@@ -67,7 +67,7 @@ function Home2() {
     const myRef = useRef(null)
     const myRef2 = useRef(null)
     // const myRef3 = useRef(null)
-    useMountEffect(() => scrollToRef(myRef))
+    // useMountEffect(() => scrollToRef(myRef))
     return (
         <div id="homeMainDiv">
         <Row id="homeFirstRow">

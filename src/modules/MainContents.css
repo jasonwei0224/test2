@@ -12,6 +12,17 @@
     /* font-weight: normal; */
     color:#0C3866;
 }
+.mainSection_Row_adonis{
+  margin-top:10px;
+  margin-bottom:10px;
+  /* font-family: "adonis-web"; */
+  color:#0C3866;
+  font-family: "sofia-pro", Sans-serif;
+  /* font-weight: normal; */
+
+  font-size: 20px;
+  white-space: pre-line;
+}
 .mainSection_Row {
     margin-top:10px;
     margin-bottom:10px;
@@ -28,6 +39,12 @@
     font-weight: normal;
     color: #707070;
     font-size: 20px;
+}
+.mainSection_Important_Row_border{
+  font-family: "sofia-pro", Sans-serif;
+  font-weight: normal;
+  color: #707070;
+  font-size: 20px;
 }
 .mainSection_Img {
   display: block;
@@ -98,7 +115,14 @@
   font-size:20px;
   color:#707070;
 }
+.main_borderline{
+  /* padding-top:0px; */
+  margin-top: 70px;
+}
 @media screen and (max-width: 767px) {
+  .maincontent_withpic{
+    display:none;
+  }
   .mainSection_First_Row {
       font-size: 42px;
       margin-top:50px;
@@ -111,8 +135,25 @@
       margin-bottom:10px;
       color:#0C3866;
   }
+  .mainSection_Row_adonis{
+    margin-top:10px;
+    margin-bottom:10px;
+    /* font-family: "adonis-web"; */
+    color:#0C3866;
+    font-family: "sofia-pro", Sans-serif;
+    font-size:28px;
+    /* font-weight: normal; */
+
+    font-size: 20px;
+    white-space: pre-line;
+  }
+  .mainSection_Important_Row_border{
+    font-size: 35px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
   .mainSection_Important_Row {
-      font-size: 40px;
+      font-size: 35px;
       margin-top:10px;
       margin-bottom:10px;
   }
@@ -153,13 +194,18 @@
     margin-top: 20px;
     margin-bottom: 100px;
   }
+
   .picture_description_main_content{
-    display:block;
+    display:inline;
     color: #707070;
+    font-size: 40px;
   }
   .picture_description_main_content_ch{
     display:block;
     color: #707070;
+  }
+  .picture_description_title{
+    font-weight: bold
   }
 #mainSection_withPicture_div {
   display: none !important;
@@ -168,6 +214,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .maincontent_withpic{
+    display:none;
+  }
     .mainSection_First_Row {
         font-size: 42px;
         margin-top:50px;
@@ -180,11 +229,34 @@
         margin-bottom:10px;
         color:#0C3866;
     }
+    .mainSection_Row_twoArtist{
+      font-size: 40px;
+      margin-top:50px;
+      /* margin-bottom:10px; */
+      color:#0C3866;
+    }
+    .mainSection_Row_adonis{
+      font-size: 42px;
+      margin-top:50px;
+      margin-bottom:10px;
+      color:#0C3866;
+    }
+    .mainSection_Row_twoArtist_second{
+      font-size: 40px;
+      margin-top:0px;
+      margin-bottom:10px;
+      color:#0C3866;
+    }
     .mainSection_Important_Row {
-        font-size: 40px;
+        font-size: 35px;
         margin-top:10px;
         margin-bottom:10px;
     }
+      .mainSection_Important_Row_border{
+        font-size: 35px;
+        margin-top:10px;
+        margin-bottom:10px;
+      }
     .mainSection_First_Row_ch {
         font-size: 42px;
         margin-top: 50px;
@@ -225,14 +297,29 @@
     .picture_description_main_content{
       display:block;
       color: #707070;
+      font-size:40px;
+    }
+    .picture_description_main_content_twoartist{
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 20px !important;
+
     }
     .picture_description_main_content_ch{
       display:block;
       color: #707070;
     }
+    .picture_description_title{
+      margin-bottom:50px;
+      font-weight: bold;
+      font-size:40px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+  .maincontent_withpic{
+    display:none;
+  }
   .block{
     /* width:45px;
     height:50px;
@@ -243,6 +330,18 @@
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  .picture_description_main_content_twoartist{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 20px !important;
+
+      }
+  .picture_description_main_content_twoartist_bottom{
+    /* margin-top: 50px; */
+    margin-bottom: 30px;
+      font-size: 20px!important;
+  }
+
   .picture_description_main_content{
     display:block;
     color: #707070;
@@ -251,9 +350,16 @@
     display:block;
     color: #707070;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
+  .twoArtistPic{
+    display:block;
+  }
+  .maincontent_withpic{
+    display:block;
+  }
   .image_description{
     font-size:20px;
     margin-top:30px;
@@ -275,11 +381,23 @@
         font-size: 23px;
         color:#0C3866;
     }
+    .mainSection_Row_adonis{
+      margin-top:30px;
+      margin-bottom:10px;
+      font-size: 28px;
+      color:#0C3866;
+    }
     .mainSection_Important_Row {
         font-family: "sofia-pro", Sans-serif!important;
         font-size: 20px;
         margin-top:10px;
-        margin-bottom:10px;
+        margin-bottom:70px;
+    }
+    .mainSection_Important_Row_border{
+      font-family: "sofia-pro", Sans-serif!important;
+      font-size: 20px;
+      margin-top:10px;
+      margin-bottom:70px;
     }
     .mainSection_First_Row_ch {
         font-size: 23px;
@@ -322,15 +440,17 @@
     .main_content_text_column{
       margin-top: 0px;
       margin-bottom: 0px;
-      margin-left: 30px!important;
+      /* margin-left: 30px!important; */
     }
     .picture_description_main_content{
       display:inline;
       color: #707070;
+      font-size: 20px;
     }
     .picture_description_main_content_ch{
       display:inline;
       color: #707070;
+      font-size: 20px;
     }
     #mainSection_withPicture_div {
       display: inline-block !important;
@@ -338,5 +458,16 @@
     #mainSection_withPicture_Col {
       margin-left: 0px;
       padding-right: 0px;
+    }
+    .picture_description_title{
+      font-weight: bold;
+      font-size:20px;
+      margin-bottom:40px
+    }
+    .picture_description_main_content_twoartist{
+      margin-top: 40px;
+      margin-bottom: 10px;
+      /* font-size: 20px !important; */
+
     }
 }

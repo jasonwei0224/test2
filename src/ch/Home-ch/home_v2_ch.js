@@ -60,7 +60,7 @@ const useMountEffect = (fun) => useEffect(fun, [])
 const myRef = useRef(null)
 const myRef2 = useRef(null)
 // const myRef3 = useRef(null)
-useMountEffect(() => scrollToRef(myRef))
+// useMountEffect(() => scrollToRef(myRef))
     return (
 
         <div id="homeMainDiv">
