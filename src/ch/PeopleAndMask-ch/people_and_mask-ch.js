@@ -14,7 +14,7 @@ import walter from '../../assets/Walter.jpg'
 import Pagination from '../../modules/Pagination';
 import banner from '../../assets/placeholder.png';
 import ProgramInfoTwoArtistCH from "../programInfoTwoArtist-ch"
-import Second_Title from "../../modules/Second_Title"
+import Second_Title_ch from "../../modules/Second_TitleCh"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_TwoArtistPic_CH from "../../modules/MainContents_TwoArtistPic_CH"
@@ -48,12 +48,7 @@ const styles2 = {
   },
 };
 
-var text = `聽不見的人，把驚嚇的人當成跳舞的人，\n把質疑的人當成看書的人\n\n
-看不到的人，把哭泣的人當成演戲的人，\n把沉默的人當成無知的人\n\n
-不開口的人，把恐慌的人當成路過的人，\n把怒吼的人當成唱歌的人\n\n
-人有自由，選擇讓耳朵塞住了， 眼睛遮住了，嘴巴堵住了
-但是沒有自由可以也讓人，跳不了舞，看不了書，演不了戲，唱不了歌
-連裝無知、裝路過的選擇都沒了。
+var text = `聽不見的人，把驚嚇的人當成跳舞的人，把質疑的人當成看書的人\n看不到的人，把哭泣的人當成演戲的人，把沉默的人當成無知的人\n不開口的人，把恐慌的人當成路過的人，把怒吼的人當成唱歌的人\n\n人有自由，選擇讓耳朵塞住了， 眼睛遮住了，嘴巴堵住了\n\n但是，沒有自由可以也讓人，跳不了舞，看不了書，演不了戲，唱不了歌連裝無知、裝路過的選擇都沒了。
 `
 var images = [crying, panic, terrified]
 
@@ -93,7 +88,7 @@ class PeopleAndMask extends Component {
           </ProgramInfoTwoArtistCH>
 
 
-          <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
+          <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
 
 
           <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="創作系列共六件，請將滑鼠移到黃色圓點左右滑動。 "></MainContents_Important_With_Border>

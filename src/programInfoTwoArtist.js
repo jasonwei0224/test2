@@ -8,13 +8,13 @@ const ProgramInfoTwoArtist = (props) => {
         <div style={{marginBottom:"100px"}}>
             {/*}<Row className="PI-contents" style={{borderTop: "1px solid " + props.color }}>*/}
                 <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:10, offset:1}}  xs={{span:8, offset:2}}>
-                    <Row><p className="PI-subtitle">{props.subtitle}</p></Row>
-                    <Row><h1 className="PI-title_twoArtist">{props.title}</h1></Row>
+                    <Row><p className="PI-subtitle_twoArtist" style={{fontFamily:"sofia-pro, sans-serif"}}>{props.subtitle}</p></Row>
+                    <Row style={{fontFamily:"sofia-pro, sans-serif"}}><h1 className="PI-title_twoArtist"style={{fontFamily:"sofia-pro, sans-serif"}}>{props.title}</h1></Row>
                     <Row className="PI-secondlast">
-                        <Col className="PI-artist-two"><p className = "PI-Artist-p">{props.artistitle1}{props.artistName1}</p></Col>
+                        <Col className="PI-artist-two"><p className = "PI-Artist-p"style={{fontFamily:"sofia-pro, sans-serif"}}>{props.artistitle1}{props.artistName1}</p></Col>
                     </Row>
                     <Row className="PI-last">
-                        <Col className="PI-artist-two"><p className = "PI-Artist-p">{props.artistitle2}{props.artistName2}</p></Col>
+                        <Col className="PI-artist-two"><p className = "PI-Artist-p"style={{fontFamily:"sofia-pro, sans-serif"}}>{props.artistitle2}{props.artistName2}</p></Col>
                         <div className="PI-colButton"><Button className="PI-shareButton" href={props.url}>SHARE WITH FRIENDS</Button></div>
                     </Row>
                 </Col>

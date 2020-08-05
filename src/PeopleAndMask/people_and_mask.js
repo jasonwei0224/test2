@@ -47,7 +47,11 @@ const styles2 = {
   },
 };
 
-var text = `We pretend hearing nothing - letting people be terrified and stay in doubt\n\nWe pretend seeing nothing - Ignoring people who cry or get silenced\n\nWe choose saying nothing - despite seeing people who panic or scream\n\nPeople are free to hear nothing, see nothing and say nothing\nBut when the freedom is lost, people may have to live with a life feeling terrified, doubtful, silenced or a life involving constantly screaming, crying or panicking.
+var text = `We pretend hearing nothing - letting people be terrified and stay in doubt.\n
+We pretend seeing nothing - Ignoring people who cry or get silenced.\n
+We choose saying nothing - despite seeing people who panic or scream.\n
+People are free to hear nothing, see nothing and say nothing.\n
+But, when the freedom is lost, people may have to live with a life feeling terrified, doubtful, silenced or a life involving constantly screaming, crying or panicking.
 `
 var images = [crying, panic, terrified]
 
