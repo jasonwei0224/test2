@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
 import './MainContents.css'
 
-const MainContents_WithPicture = (props) => {
+const MainContents_OneArtist = (props) => {
     return (
         <div className="maincontent_withpic">
             <Row className="mainSection_Row">
@@ -21,4 +21,4 @@ const MainContents_WithPicture = (props) => {
     );
 }
 
-export default MainContents_WithPicture;
+export default MainContents_OneArtist;

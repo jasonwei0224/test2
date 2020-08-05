@@ -18,7 +18,6 @@ import Second_Title from "../modules/Second_Title"
 import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
 import MainContents_TwoArtistPic from "../modules/MainContents_TwoArtistPic"
-import MainContetns_WithPicture from "../modules/MainContents_WithPicture"
 import Footer from '../footer-temp';
 import Slider from './img_slider_final_people_and_mask'
 import MobileShareButton from "../modules/mobileShareButton";
@@ -98,19 +97,6 @@ class PeopleAndMask extends Component {
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
 
-
-        {/*  <Second_Title secondTitle="ABOUT THE ARTISTS"></Second_Title>
-        }  <MainContetns_WithPicture src={ladyhaohao} title="Lady Hao Hao" contents="Despite our geographical differences,
-          we all look towards that same sky that looms over our heads,asdf
-          Despite our geographical differences,
-          we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-          together."></MainContetns_WithPicture>
-        <div style={{padding:"15px"}}></div>
-        <MainContetns_WithPicture src={walter} title="Walter Kao" contents="Despite our geographical differences,
-          we all look towards that same sky that looms over our heads,asdf
-          Despite our geographical differences,
-          we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-          together."></MainContetns_WithPicture>*/}
         <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1="asdf
             Despite our geographical differences,
             we all look towards that same sky that looms over our heads,asdf

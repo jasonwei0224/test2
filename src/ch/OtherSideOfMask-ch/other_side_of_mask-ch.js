@@ -14,7 +14,7 @@ import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
 import Footer from '../../footer-temp';
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
 import MainContents_img from "../../modules/MainContents_img";
-import MainContents_WithPicture from "../../modules/MainContents_WithPicture";
+import MainContents_OneArtist from "../../modules/MainContents_OneArtist";
 import ImageWithDescriptionCH from"../../modules/MainContent_ImageWithDescription_Ch";
 import MainContents_First_ch from "../../modules/MainContents_First_ch";
 import FooterCH from "../footer-ch";
@@ -54,12 +54,12 @@ class OtherSideOfMask_ch extends Component {
                 <MainContents_Important_ch contents="口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。"></MainContents_Important_ch>
                         <div className="emptyBlock"></div>
               <Second_Title_ch secondTitle="About This Artist"></Second_Title_ch>
-                <MainContents_WithPicture src={image1} contents="asdf
+                <MainContents_OneArtist src={image1} contents="asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads,asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-                together."></MainContents_WithPicture>
+                together."></MainContents_OneArtist>
 
 
 

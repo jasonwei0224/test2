@@ -18,7 +18,6 @@ import Second_Title_ch from "../../modules/Second_TitleCh"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_TwoArtistPic_CH from "../../modules/MainContents_TwoArtistPic_CH"
-import MainContetns_WithPicture from "../../modules/MainContents_WithPicture"
 import Footer from '../../footer-temp';
 import Slider from './img_slider_final_people_and_mask'
 import MobileShareButton from "../../modules/mobileShareButton";
@@ -97,17 +96,7 @@ class PeopleAndMask extends Component {
           </MainContents_Middle>
 
 
-            {/*<Second_Title secondTitle="藝術家簡介"></Second_Title>
-      }  <MainContetns_WithPicture src={ladyhaohao} title="Lady Hao Hao" contents="Despite our geographical differences,
-          we all look towards that same sky that looms over our heads,asdf
-          Despite our geographical differences,
-          we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-          together."></MainContetns_WithPicture>
-        <MainContetns_WithPicture src={walter} title="Walter" contents="Despite our geographical differences,
-          we all look towards that same sky that looms over our heads,asdf
-          Despite our geographical differences,
-          we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-          together."></MainContetns_WithPicture>*/}
+
         <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1="asdf
             我是藝術家" pic2={walter} title2="高宇翔" contents2="asdf
                 我是藝術家二"></MainContents_TwoArtistPic_CH>

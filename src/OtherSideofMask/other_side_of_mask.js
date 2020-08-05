@@ -13,7 +13,7 @@ import Second_Title from "../modules/Second_Title"
 import MainContents_First from "../modules/MainContents_First";
 import MainContents_Middle from "../modules/MainContents_Middle"
 import MainContents_Important from "../modules/MainContents_Important"
-import MainContents_WithPicture from "../modules/MainContents_WithPicture"
+import MainContents_OneArtist from "../modules/MainContents_OneArtist"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_img from "../modules/MainContents_img";
@@ -56,12 +56,12 @@ class OtherSideOfMask extends Component {
             where you are and what time of day, it is there above the horizon."></MainContents_Important>
           <div className="emptyBlock"></div>
           <Second_Title secondTitle="ABOUT THIS ARTIST"></Second_Title>
-          <MainContents_WithPicture src={image2} contents="asdf
+          <MainContents_OneArtist src={image2} contents="asdf
           Despite our geographical differences,
           we all look towards that same sky that looms over our heads,asdf
           Despite our geographical differences,
           we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-          together."></MainContents_WithPicture>
+          together."></MainContents_OneArtist>
 
           <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
           <div className="emptyBlock2"></div>

@@ -12,7 +12,13 @@ import Footer from "../footer-temp";
 import MobileShareButton from "../modules/mobileShareButton";
 import './unbeingChinese.css';
 import HoverImage from "react-hover-image"
+import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
+import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
+import MainContents_OneArtist from "../modules/MainContents_OneArtist"
+import ladyhaohao from '../assets/Lady Hao Hao.jpg'
+
 function UnbeingChinese() {
+  var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial tension between Chinese and the rest has become a focal point and governments around the world have been asking China to be accountable for the pandemic; being Chinese has been challenging.  Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred Confucianism.  Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians. Political reasons aside, what is your artistic interpretation?`
   const [isShown, setIsShown] = useState(false);
   return (
     <div>
@@ -46,15 +52,21 @@ function UnbeingChinese() {
           color="#D9C739"
         ></ProgramInfo>
 
-        <Second_Title secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-        <MainContents_Important contents="This province's condo insurance market is unhealthy and has saddled owners with sudden increases of an estimated 50 percent in Metro Vancouver, according to a three-month investigation by the B.C. Financial Services Authority."></MainContents_Important>
+        <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
 
-        <MainContents_First contents="The first lesbian movie I loved was Heavenly Creatures, Peter Jacksonn's sumptuous 1994 fils starring a young Kate Winslet as a dangerously charismatic schoolgirl who enraptures a sallow classmate with her phantasmagoric fantasy world. In the end, they kill the classmate's mother. At age fourteen, that squared with my concept of love: predicated on fantasy, eroticized by power imbalance, likely to end in murder - not so much that of anyone's mother, but more likely of me, by the strength of my own whirling feelings."></MainContents_First>
-        <MainContents_Img src="https://via.placeholder.com/600x300"></MainContents_Img>
-        <MainContents_Middle contents="A year later, it was The Incredibly True Adventures of Two Girls in Love, Maria Maggenti's considerably less gothic tale of high school senior Randy (a young, butch Tina from The L Word), who has been sleeping with an older, married woman when she meets Evie, a rich and popular girl who stops at the gas station where Randy works. The movie ends with the two kissing amid a chaotic muddle of class tension, homophobic friends, and angry parents and school administrators. It was a perfect anthem for me at age fifteen, as I had recently begun making out with my rich best friend and was the only out kid in my high school class."></MainContents_Middle>
-        <MainContents_Img src="https://via.placeholder.com/600x300"></MainContents_Img>
-        <MainContents_Middle contents="After that came Bound, Chasing Amy, All Over Me, High Art, and But I'm a Cheerleader. I watched and re-watched all of these movies because they showed me myself. Not only because I was queer and prone to phantasmagoric imaginings - as well as to listening to Patti Smith on repeat, wearing stilettos, and heroin addicition - but also because they reflected and suggested my vision of love: as sexy and codependent, forged in opposition to some external conflict. It's no surprise that both I and the movies I worshiped relied upon a certain kind of high-femme, drug-addled, ambisexual Riot Grrrl iconography. After all, we grew out of the same '90s post-AIDS homophobia, Cindy Crawford-cum-heroin chic, third-wave feminist stew."></MainContents_Middle>
 
+
+        <MainContents_Important_With_Border style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
+        <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
+        </MainContents_Middle_Adonis>
+
+        <MainContents_OneArtist src={ladyhaohao} title="Tong Zhou" contents="asdf
+            Despite our geographical differences,
+            we all look towards that same sky that looms over our heads,asdf
+            Despite our geographical differences,
+            we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+            together."></MainContents_OneArtist>
+          <div className="people_padding"></div>
         <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>
       </Container>
 
