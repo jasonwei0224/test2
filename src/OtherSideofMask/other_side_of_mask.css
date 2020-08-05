@@ -1,11 +1,3 @@
-.img-other-side{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  padding-top:30px;
-  padding-bottom:30px;
-}
 .model3D-col{
   display: flex;
   width: 100%;
@@ -15,57 +7,22 @@
   justify-content: center;
 }
 
-.emptyBlock{
-  padding-bottom: 5px;
-}
-.emptyBlock2{
-  padding-bottom: 40px;
-}
-.other-side-hint{
- text-align: center;
- display:block;
-}
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  .other-side-hint{
-   font-size: 25px;
-  }
-  .emptyBlock{
-    padding-bottom: 40px;
-  }
-  .emptyBlock2{
-    display:none;
-  }
+
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
-  .other-side-hint{
-   font-size: 25px;
-  }
-  .emptyBlock{
-    padding-bottom: 40px;
-  }
-  .emptyBlock2{
-    display:none;
-  }
+
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-  .other-side-hint{
-   font-size: 25px;
-  }
 
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-  .other-side-hint{
-   font-size: 14px;
-  }
-  .emptyBlock2{
-    padding-bottom: 80px;
-    display:block
-  }
+
 }
