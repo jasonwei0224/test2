@@ -22,7 +22,6 @@ class MirrorBird extends React.Component {
     })
     
     $('#wrapper_mirror').one('click', function(e) {
-      console.log("Please done");
       $('#box_1').addClass('bird-container bird-container--one')
       $('#bird_1').addClass('bird bird--one')
       setTimeout(function() {
@@ -51,6 +50,30 @@ class MirrorBird extends React.Component {
                   $(".test2PlizWorking").css({"visibility":"hidden"});
 
                   $('#box_2').addClass('bird-container bird-container--four')
+                  setTimeout(function() {
+                    $('#container_box_bird_2').css({"display":"none"});
+                    $('#container_box_bird_3').css({"display":"block"});
+                    $('#container_box_bird_3').on('click', function() {
+                      $('#box_3').css({"display":"block"});
+                      $('#box_2').css({"z-index":"1"});
+                      $('#box_3').addClass('bird-container bird-container--five');
+                      $('#bird_3').addClass('bird bird--one');
+                      setTimeout(function() {
+                        $(".test3PlizWorking").css({"visibility":"visible"});
+                        $("#box_3").css({"display":"none"});
+
+                        $('.test3PlizWorking').on('click', function() {
+                          $(".test3PlizWorking").css({"visibility":"hidden"});
+
+                          $('#box_3').addClass('bird-container bird-container--six')
+                          setTimeout(function() {
+                            $('#container_box_bird_3').css({"display":"none"});
+                            $('#container_box_bird_4').css({"display":"block"});
+                          })
+                        })
+                      }, 4000)
+                    });
+                  }, 3000)
 
                 });
               }, 3000)
@@ -94,6 +117,23 @@ class MirrorBird extends React.Component {
           </div>
         </div>
         
+        <div id="container_box_bird_3" className="mirror-bird-container3">
+          <div id="box_3">
+            <div id="bird_3"></div>
+          </div>
+          <div class="test3PlizWorking">
+              <img src={pigeon}></img>
+          </div>
+        </div>
+
+        <div id="container_box_bird_4" className="mirror-bird-container4">
+          <div id="box_4">
+            <div id="bird_4"></div>
+          </div>
+          <div class="test4PlizWorking">
+              <img src={pigeon}></img>
+          </div>
+        </div>
       
       </div>
     );
