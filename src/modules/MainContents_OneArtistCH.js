@@ -6,9 +6,9 @@ import Second_Title from './Second_Title'
 const MainContents_OneArtist = (props) => {
     return (
         <div className="twoArtistPic">
-          <Second_Title secondTitle="ABOUT THE ARTIST"></Second_Title>
+          <Second_Title secondTitle="藝術家簡介"></Second_Title>
             <Row className="mainSection_Row">
-                <Col xl={{span:2, offset:2}} lg={{span:5, offset:1}} md={{span:5, offset:1}}  xs={{span:5, offset:1}} style={{marginRight:"0px",paddingRight:"0px"}}>
+                <Col xl={{span:2, offset:2}} lg={{span:5, offset:1}} md={{span:5, offset:1}} sm={{span:5, offset:1}}  xs={{span:5, offset:1}} style={{marginRight:"0px",paddingRight:"0px"}}>
                     <img src={props.src} className="mainSection_Img2"></img>
                 </Col>
               </Row>

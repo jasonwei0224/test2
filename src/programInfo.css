@@ -22,7 +22,7 @@
 .PI-subtitle {
     color: #0C3866;
     margin-top: 5%;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 40px;
     /* font-family: adonis-web !important; */
 }
@@ -38,8 +38,8 @@
     color:#BE0027;
     font-size: 50px;
     margin-bottom: 45px;
-    font-weight:bold;
-    font-family: adonis-web !important;
+    /* font-weight:bold; */
+    /* font-family: adonis-web !important; */
 }
 
 .PI-title_twoArtist {
@@ -61,6 +61,7 @@
     font-size: 19pt;
     padding: 0;
     font-style: italic;
+    padding-left: 0px!important;
 }
 .PI-artist-two{
   color: #0C3866;

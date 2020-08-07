@@ -1,0 +1,11 @@
+/* .UC_image_col{
+  padding: 0px;
+  margin-bottom: -100px!important;
+} */
+
+.image_static, .image_active {
+  margin: 0px;
+  width:100%;
+  height: auto;
+  overflow: hidden;
+} 

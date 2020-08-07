@@ -79,7 +79,7 @@ class PeopleAndMask extends Component {
 
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
-            title="People and Mask"
+            title="PEOPLE & MASK"
             artistitle1="Sketch Artist: "
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
