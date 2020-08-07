@@ -18,7 +18,7 @@ import MainContents_First from "../../modules/MainContents_First"
 import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important from "../../modules/MainContents_Important"
 import MainContents_Img from "../../modules/MainContents_img"
-import Footer from "../../footer-temp";
+import FooterCH from '../footer-ch';
 import MobileShareButton from "../../modules/mobileShareButton";
 import './unbeingChinese.css';
 import HoverImage from "react-hover-image"
@@ -83,8 +83,7 @@ function UnbeingChinese() {
           <div className="people_padding"></div>
         <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>
       </Container>
-
-      <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
+      <FooterCH></FooterCH>
     </div>
   );
 }

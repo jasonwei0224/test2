@@ -18,61 +18,47 @@ import doctor from "../assets/doctor.jpg";
 import firefighter from "../assets/firefighter.jpg";
 import MainContetn_TwoPic from "../modules/MainContent_TwoPic";
 import MirrorBird from "./mirrorBird"
-
+import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
+import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
+import MainContents_OneArtist from "../modules/MainContents_OneArtist"
+import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 
 class Mirror extends Component {
- 
+
     render() {
+      var text = `Like everything that is part of nature, skin is a gift people are given, and the colour tones were influenced by the places we lived, the sunlight we received or the weather we got. Differences in skin colour offer a convenient way to see people. Since when, did people turn these natural protectors into weapons to harm others?
+
+Follow the pigeon within the paintings as it travels through our everyday life. Picasso once used pigeons in his works to express people's longing for peace. Equality shouldn’t be so difficult to achieve because it is just like the air we can’t breath without. “I’m different, just like you.” Our differences are what make us all unique.
+
+Yen-Chun Lu of Taiwan uses the reflections of mirrors to show the sceneries and the stories that we might take for granted as we hope to connect and reflect on those often forgotten realities. When what has been hidden in the reflection of the mirror can no longer be hidden, any attempt to cover it up can make a conscious person feel distorted or isolated. No one wants to feel left out or alone, regardless of the intention behind it.
+
+An island in the middle of the ocean could be deemed insignificant or easily sacrificed as the world chases all things big and fast; when people are left with a moment to re-examine their past behaviours, they can finally discover that the island’s importance and beauty had been greatly ignored or overlooked.
+`
         return (
             <div className='mirror'>
-             
+
             <Container fluid>
                 <MirrorBird></MirrorBird>
-           
-            <ProgramInfo id="test" subtitle="Illustration" title="Mirroring" artistName="Mina Lu" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse" color="#D9C739"/>
-            <Second_Title secondTitle="Under the same sky project"></Second_Title>
-            <MainContents_Important contents=" What is something that you can see when you look up, no matter
-                    wherever you are in the world? The sky is one constant no matter
-                    where you are and what time of day, it is there above the horizon."></MainContents_Important>
 
-            <MainContents_Middle style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                    wherever you are in the world? The sky is one constant no matter
-                    where you are and what time of day, it is there above the horizon."></MainContents_Middle>
+            <ProgramInfo
+              id="test"
+              subtitle="Illustration"
+              title="Mirroring"
+              artistName="Artist: Mina Lu"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
+              color="#D9C739"/>
+            <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
+            <MainContents_Important_With_Border  style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
 
-            <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
-
-            <MainContents_Middle contents=" Despite our geographical differences,
-              we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-            together. "></MainContents_Middle>
-              <MainContents_img src={image1} className="img-other-side"></MainContents_img>
-              <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength. In all that the world has gone through, the unchanging sky gives
-              people a sense of hope and anticipation for the feeling of a
-              normal day to come again. Furthermore, Indigenous teachings and
-              stories about the sky can guide us in these times.
-              By giving each image a background story, we can implore others to
-              look to the sky and gain strength."></MainContents_Middle>
-
-
-            <MainContents_img src={image1}  className="img-other-side"></MainContents_img>
-            <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
-            people a sense of hope and anticipation for the feeling of a
-            normal day to come again. Furthermore, Indigenous teachings and
-            stories about the sky can guide us in these times.
-            By giving each image a background story, we can implore others to
-            look to the sky and gain strength. In all that the world has gone through, the unchanging sky gives
-            people a sense of hope and anticipation for the feeling of a
-            normal day to come again. Furthermore, Indigenous teachings and
-            stories about the sky can guide us in these times.
-            By giving each image a background story, we can implore others to
-            look to the sky and gain strength."></MainContents_Middle>
-
-            <MainContetn_TwoPic src={image1} className="img-other-side"></MainContetn_TwoPic>
-
+              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
+              </MainContents_Middle_Adonis>
+              <MainContents_OneArtist src={ladyhaohao} title="Mina Lu" contents="asdf
+                  Despite our geographical differences,
+                  we all look towards that same sky that looms over our heads,asdf
+                  Despite our geographical differences,
+                  we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+                  together."></MainContents_OneArtist>
+                <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>
 
