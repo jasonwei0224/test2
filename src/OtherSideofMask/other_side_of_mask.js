@@ -33,7 +33,13 @@ class OtherSideOfMask extends Component {
       <div>
         <Container fluid>
           <Row>
-            <Col lg={12} className="model3D-col" >
+            <Col lg={6} className="model3D-col" >
+            <div>
+              <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
+                  position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+              </div>
+            </Col>
+            <Col lg={6} className="model3D-col" >
             <div>
               <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
                   position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
@@ -45,12 +51,12 @@ class OtherSideOfMask extends Component {
             </Row>*/}
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
-            title="The Other Side of Mask"
+            title="THE OTHER SIDE OF MASK"
             artistitle1="Sketch Artist: "
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
             artistName2="Walter Kao"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse" 
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtist>
 
@@ -61,19 +67,18 @@ class OtherSideOfMask extends Component {
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
 
-          <ImageWithDescription src={image1} description="What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon."></ImageWithDescription>
 
-          <MainContents_TwoArtistPic 
-            pic1={ladyhaohao} 
+          <MainContents_TwoArtistPic
+            pic1={ladyhaohao}
             title1="Lady Hao Hao"
             contents1="asdf
             Despite our geographical differences,
             we all look towards that same sky that looms over our heads,asdf
             Despite our geographical differences,
             we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-            together." 
-            pic2={walter} 
-            title2="Walter Kao" 
+            together."
+            pic2={walter}
+            title2="Walter Kao"
             contents2="asdf
             Despite our geographical differences,
             we all look towards that same sky that looms over our heads,asdf
