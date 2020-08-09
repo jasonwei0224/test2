@@ -10,9 +10,9 @@ class MirrorBird extends React.Component {
     this.state={
       play:false,
       show:0,
-    }  
+    }
   }
-  
+
   componentDidMount=() =>{
 
     $('#test1_sq').on('mouseenter', function() {
@@ -20,7 +20,7 @@ class MirrorBird extends React.Component {
       audio.play()
       $('.mirror-bird-container').addClass('mirror-bird-container_after_hover ')
     })
-    
+
     $('#wrapper_mirror').one('click', function(e) {
       $('#box_1').addClass('bird-container bird-container--one')
       $('#bird_1').addClass('bird bird--one')
@@ -82,7 +82,7 @@ class MirrorBird extends React.Component {
         })
       }, 5000)
     });
-    
+
   }
   cancelCourse() {
     var taiwan = document.getElementByClassName("cls-5");
@@ -91,9 +91,9 @@ class MirrorBird extends React.Component {
       console.log("hovering taiwan");
     });
   }
- 
+
   render(){
-    
+
     return (
       <div id="wrapper_mirror" >
 
@@ -116,7 +116,7 @@ class MirrorBird extends React.Component {
               <img src={pigeon}></img>
           </div>
         </div>
-        
+
         <div id="container_box_bird_3" className="mirror-bird-container3">
           <div id="box_3">
             <div id="bird_3"></div>
@@ -134,7 +134,7 @@ class MirrorBird extends React.Component {
               <img src={pigeon}></img>
           </div>
         </div>
-      
+
       </div>
     );
   }
