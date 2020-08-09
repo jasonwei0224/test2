@@ -13,15 +13,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* // min-height: 100vh; */
 	min-height: 55rem;
-
-	background-image: url('../assets/doctor.jpg');
+	background-image: url('../assets/artist.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
 	padding: 2rem;
 }
+
 .mirror-bird-container_after_hover {
 	z-index: 3;
 	position: relative;
@@ -29,7 +28,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* // min-height: 100vh; */
 	min-height: 50rem;
 	background-image: url('../assets/doctor2.jpg');
 	background-blend-mode: soft-light;
@@ -41,35 +39,57 @@
 	z-index: 2;
 	position: relative;
 	overflow: hidden;
-	/* display: flex; */
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* // min-height: 100vh; */
-	min-height: 50rem;
-	background-image: url('../assets/firefighter.jpg');
+	min-height: 55rem;
+	background-image: url('../assets/doctor.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
 	padding: 2rem;
 	display:none;
+}
 
+.mirror-bird-container3 {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 55rem;
+	background-image: url('../assets/firefighter_2.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+	display:none;
+}
+.mirror-bird-container4 {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 55rem;
+	background-image: url('../assets/dancer.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+	display:none;
 }
 .bird {
-  background-image: url(../assets/pigeon4.svg);
-	/* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg); */
-	background-size: auto 100%;
-	width: 201px;
-  height: 332px;
-  /* width: 88px;
-	height: 125px; */
-	will-change: background-position;
-
-  animation-name: fly-cycle;
-  animation-timing-function: steps(5);
-	/* animation-timing-function: steps(10); */
+  	background-image: url(../assets/pigeon4.svg);
+  	background-size: auto 100%;
+  	width: 201px;
+  	height: 332px;
+  	will-change: background-position;
+  	animation-name: fly-cycle;
+  	animation-timing-function: steps(5);
 	animation-iteration-count: infinite;
-
-
 }
 .bird--one {
 	animation-duration: 1s;
@@ -80,31 +100,38 @@
 	animation-delay: -0.5s;
 }
 
-
-
 .bird-container {
-
-
-
-	/* animation-iteration-count: infinite; */
 
 }
 .test1PlizWorking {
 	position: absolute;
 	width:10%;
-	/* z-index: 4; */
 	top:320px;
 	right:35px;
 	visibility: hidden;
 }
 .test2PlizWorking {
 	position: absolute;
+	width:10%;
+	top:320px;
+	right:35px;
+	visibility: hidden;
+}
+.test3PlizWorking {
+	position: absolute;
 	width:8%;
-	/* z-index: 4; */
 	top:70px;
 	left:465px;
 	visibility: hidden;
 }
+.test4PlizWorking {
+	position: absolute;
+	width:8%;
+	top:70px;
+	left:465px;
+	visibility: hidden;
+}
+
 .test1_square {
 	position: absolute;
 	width:30px;
@@ -142,29 +169,56 @@
 	animation-fill-mode: forwards;
 	animation-play-state: unset;
 }
-
 .bird-container--three {
 	position: absolute;
-  top: 40%;
+  top: -15%;
 	left: -10%;
-	/* background-color: yellow; */
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
 	animation-name: fly-right-three;
+	/* background-color: green; */
 	animation-timing-function: linear;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-delay: 0;
 	animation-fill-mode: forwards;
 	animation-play-state: unset;
 }
 .bird-container--four {
 	position: absolute;
+  top: -25%;
+	left: 50%;
+	/* background-color: red; */
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-four;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	animation-delay: 0;
+	animation-fill-mode: forwards;
+	animation-play-state: unset;
+}
+.bird-container--five {
+	position: absolute;
+  top: 40%;
+	left: -10%;
+	/* background-color: yellow; */
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-five;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-delay: 0;
+	animation-fill-mode: forwards;
+	animation-play-state: unset;
+}
+.bird-container--six {
+	position: absolute;
   top: 2%;
 	left: 30%;
 	/* background-color: yellow; */
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
-	animation-name: fly-right-four;
+	animation-name: fly-right-six;
 	animation-timing-function: linear;
 	animation-duration: 5s;
 	animation-delay: 0;
@@ -236,8 +290,56 @@
 	}
 
 }
-
 @keyframes fly-right-three {
+
+	0% {
+		transform: translateY(2vh) translateX(-10vw) scale(2.0);
+	}
+
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(2.0);
+	}
+
+	20% {
+		transform: translateY(5vh) translateX(20vw) scale(1.5);
+	}
+
+	30% {
+		transform: translateY(10vh) translateX(30vw) scale(1.0);
+	}
+
+	40% {
+		transform: translateY(20vh) translateX(40vw) scale(0.6);
+	}
+
+	50% {
+		transform: translateY(35vh) translateX(50vw) scale(0.6);
+	}
+
+	60% {
+		transform: translateY(40vh) translateX(60vw) scale(0.6);
+	}
+
+	100% {
+		transform: translateY(90%) translateX(93vw) scale(0.8);
+		animation-play-state: paused;
+	}
+
+}
+@keyframes fly-right-four {
+	0% {
+		transform: scale(0.6) translateX(63vw) translateY(75vh);
+	}
+	30% {
+		transform: translateY(35vh) translateX(70vw) scale(0.6);
+	}
+	100% {
+		transform: translateY(50vh) translateX(100vw) scale(0.5);
+	}
+
+}
+
+@keyframes fly-right-five {
 
 	0% {
 		transform: scale(0.3) translateX(0vw);
@@ -253,7 +355,7 @@
 	}
 
 }
-@keyframes fly-right-four {
+@keyframes fly-right-six {
 
 	0% {
 		transform: scale(0.3) translateX(0vw);
@@ -270,7 +372,6 @@
 	}
 
 }
-
 @media screen and (max-width: 767px) {
   #wrapper_mirror{
     display:none;
@@ -346,138 +447,7 @@
 		animation-delay: 0;
 		animation-fill-mode: forwards;
 		animation-play-state: unset;
-	}
-
-	.bird-container--three {
-		position: absolute;
-	  top: 40%;
-		left: -10%;
-		/* background-color: yellow; */
-		transform: scale(0) translateX(-10vw);
-		will-change: transform;
-		animation-name: fly-right-three;
-		animation-timing-function: linear;
-		animation-duration: 2s;
-		animation-delay: 0;
-		animation-fill-mode: forwards;
-		animation-play-state: unset;
-	}
-	.bird-container--four {
-		position: absolute;
-	  top: 2%;
-		left: 30%;
-		/* background-color: yellow; */
-		transform: scale(0) translateX(-10vw);
-		will-change: transform;
-		animation-name: fly-right-four;
-		animation-timing-function: linear;
-		animation-duration: 5s;
-		animation-delay: 0;
-		animation-fill-mode: forwards;
-		animation-play-state: unset;
-	}
-
-
-
-	@keyframes fly-cycle {
-
-		100% {
-			background-position: -900px 0;
-		}
-
-	}
-
-	@keyframes fly-right-one {
-
-		0% {
-			transform: translateY(2vh) translateX(-10vw) scale(2.0);
-		}
-
-		10% {
-			transform: translateY(2vh) translateX(10vw) scale(2.0);
-		}
-
-		20% {
-			transform: translateY(5vh) translateX(20vw) scale(1.5);
-		}
-
-		30% {
-			transform: translateY(10vh) translateX(30vw) scale(1.0);
-		}
-
-		40% {
-			transform: translateY(20vh) translateX(40vw) scale(0.6);
-		}
-
-		50% {
-			transform: translateY(35vh) translateX(50vw) scale(0.6);
-		}
-
-		60% {
-			transform: translateY(40vh) translateX(60vw) scale(0.6);
-		}
-
-		100% {
-			transform: translateY(90%) translateX(93vw) scale(0.8);
-			animation-play-state: paused;
-		}
-
-	}
-	@keyframes fly-right-two {
-
-		0% {
-			transform: scale(0.6) translateX(63vw) translateY(75vh);
-		}
-
-
-
-		30% {
-			transform: translateY(35vh) translateX(70vw) scale(0.6);
-		}
-
-
-		100% {
-			transform: translateY(50vh) translateX(100vw) scale(0.5);
-		}
-
-	}
-
-	@keyframes fly-right-three {
-
-		0% {
-			transform: scale(0.3) translateX(0vw);
-		}
-
-		50% {
-			transform: translateY(-10vh) translateX(20vw) scale(0.6);
-		}
-
-
-		100% {
-			transform: translateY(-35vh) translateX(38vw) scale(0.6);
-		}
-
-	}
-	@keyframes fly-right-four {
-
-		0% {
-			transform: scale(0.3) translateX(0vw);
-		}
-
-		50% {
-			transform: translateY(10vh) translateX(50vw) scale(0.6);
-		}
-
-
-		100% {
-			transform: translateY(35vh) translateX(100vw) scale(0.6);
-			animation-play-state: paused;
-		}
-
-	}
-
-}
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 767px) {
 	.mirror-bird-container {
 		z-index: 3;
 		position: relative;
@@ -485,27 +455,207 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		/* // min-height: 100vh; */
-		min-height: 112rem;
-
-		background-image: url('../assets/doctor.jpg');
+		min-height: 45rem;
+		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
 		padding: 2rem;
 	}
+
+	.mirror-bird-container2 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		min-height: 45rem;
+		background-image: url('../assets/doctor.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+	.mirror-bird-container3 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/firefighter_2.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+	.mirror-bird-container4 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/dancer.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+
+}
+@media screen and (min-width: 992px) {
+	.mirror-bird-container {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 50rem;
+		background-image: url('../assets/artist.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+	}
+	.mirror-bird-container2 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		min-height: 50rem;
+		background-image: url('../assets/doctor.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+	.mirror-bird-container3 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/firefighter_2.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+	.mirror-bird-container4 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/dancer.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+
+
+}
+@media screen and (min-width: 1200px) {
+	.mirror-bird-container {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* min-height: 150vh; */
+		min-height: 65rem;
+		background-image: url('../assets/artist.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+	}
+	.mirror-bird-container2 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		/* min-height: 150vh; */
+		min-height: 65rem;
+		background-image: url('../assets/doctor.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+	.mirror-bird-container3 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/firefighter_2.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+	.mirror-bird-container4 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/dancer.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
 	.test1PlizWorking {
 		position: absolute;
 		width:10%;
-		/* z-index: 4; */
 		top:320px;
 		right:35px;
 		visibility: hidden;
 	}
 	.test2PlizWorking {
 		position: absolute;
+		width:10%;
+		top:320px;
+		right:35px;
+		visibility: hidden;
+	}
+	.test3PlizWorking {
+		position: absolute;
 		width:8%;
-		/* z-index: 4; */
+		top:70px;
+		left:465px;
+		visibility: hidden;
+	}
+	.test4PlizWorking {
+		position: absolute;
+		width:8%;
 		top:70px;
 		left:465px;
 		visibility: hidden;
@@ -516,7 +666,7 @@
 		height:30px;
 		/* z-index: 4; */
 		top:350px;
-		left:2135px;
+		left:1135px;
 		background-color: red;
 	}
 	.bird-container--one {
@@ -547,29 +697,469 @@
 		animation-fill-mode: forwards;
 		animation-play-state: unset;
 	}
-
 	.bird-container--three {
 		position: absolute;
-	  top: 40%;
+	  top: -15%;
 		left: -10%;
-		/* background-color: yellow; */
 		transform: scale(0) translateX(-10vw);
 		will-change: transform;
 		animation-name: fly-right-three;
+		/* background-color: green; */
 		animation-timing-function: linear;
-		animation-duration: 2s;
+		animation-duration: 4s;
 		animation-delay: 0;
 		animation-fill-mode: forwards;
 		animation-play-state: unset;
 	}
 	.bird-container--four {
 		position: absolute;
+	  top: -25%;
+		left: 50%;
+		/* background-color: red; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-four;
+		animation-timing-function: linear;
+		animation-duration: 15s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--five {
+		position: absolute;
+	  top: 40%;
+		left: -10%;
+		/* background-color: yellow; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-five;
+		animation-timing-function: linear;
+		animation-duration: 2s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--six {
+		position: absolute;
 	  top: 2%;
 		left: 30%;
 		/* background-color: yellow; */
 		transform: scale(0) translateX(-10vw);
 		will-change: transform;
+		animation-name: fly-right-six;
+		animation-timing-function: linear;
+		animation-duration: 5s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+
+
+	@keyframes fly-cycle {
+
+		100% {
+			background-position: -900px 0;
+		}
+	
+	}
+	
+	@keyframes fly-right-one {
+	
+		0% {
+			transform: translateY(2vh) translateX(-10vw) scale(2.0);
+		}
+	
+		10% {
+			transform: translateY(2vh) translateX(10vw) scale(2.0);
+		}
+	
+		20% {
+			transform: translateY(5vh) translateX(20vw) scale(1.5);
+		}
+	
+		30% {
+			transform: translateY(10vh) translateX(30vw) scale(1.0);
+		}
+	
+		40% {
+			transform: translateY(20vh) translateX(40vw) scale(0.6);
+		}
+	
+		50% {
+			transform: translateY(35vh) translateX(50vw) scale(0.6);
+		}
+	
+		60% {
+			transform: translateY(40vh) translateX(60vw) scale(0.6);
+		}
+	
+		100% {
+			transform: translateY(90%) translateX(93vw) scale(0.8);
+			animation-play-state: paused;
+		}
+	
+	}
+	@keyframes fly-right-two {
+	
+		0% {
+			transform: scale(0.6) translateX(63vw) translateY(75vh);
+		}
+	
+	
+	
+		30% {
+			transform: translateY(35vh) translateX(70vw) scale(0.6);
+		}
+	
+	
+		100% {
+			transform: translateY(50vh) translateX(100vw) scale(0.5);
+		}
+	
+	}
+	@keyframes fly-right-three {
+	
+		0% {
+			transform: translateY(2vh) translateX(-10vw) scale(2.0);
+		}
+	
+		10% {
+			transform: translateY(2vh) translateX(10vw) scale(2.0);
+		}
+	
+		20% {
+			transform: translateY(5vh) translateX(20vw) scale(1.5);
+		}
+	
+		30% {
+			transform: translateY(10vh) translateX(30vw) scale(1.0);
+		}
+	
+		40% {
+			transform: translateY(20vh) translateX(40vw) scale(0.6);
+		}
+	
+		50% {
+			transform: translateY(35vh) translateX(50vw) scale(0.6);
+		}
+	
+		60% {
+			transform: translateY(40vh) translateX(60vw) scale(0.6);
+		}
+	
+		100% {
+			transform: translateY(90%) translateX(93vw) scale(0.8);
+			animation-play-state: paused;
+		}
+	
+	}
+	@keyframes fly-right-four {
+	
+		0% {
+			transform: scale(0.6) translateX(63vw) translateY(75vh);
+		}
+	
+	
+	
+		30% {
+			transform: translateY(35vh) translateX(70vw) scale(0.6);
+		}
+	
+	
+		100% {
+			transform: translateY(50vh) translateX(100vw) scale(0.5);
+		}
+	
+	}
+	
+	@keyframes fly-right-five {
+	
+		0% {
+			transform: scale(0.3) translateX(0vw);
+		}
+	
+		50% {
+			transform: translateY(-10vh) translateX(20vw) scale(0.6);
+		}
+	
+	
+		100% {
+			transform: translateY(-35vh) translateX(38vw) scale(0.6);
+		}
+	
+	}
+	@keyframes fly-right-six {
+	
+		0% {
+			transform: scale(0.3) translateX(0vw);
+		}
+	
+		50% {
+			transform: translateY(10vh) translateX(50vw) scale(0.6);
+		}
+	
+	
+		100% {
+			transform: translateY(35vh) translateX(100vw) scale(0.6);
+			animation-play-state: paused;
+		}
+	
+	}
+
+}
+
+@media screen and (min-width: 1900px) { 
+	.mirror-bird-container {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 85rem;
+
+		background-image: url('../assets/artist.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+	}
+	
+	.mirror-bird-container2 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 85rem;
+
+		background-image: url('../assets/doctor.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+	.mirror-bird-container3 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/firefighter_2.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+	.mirror-bird-container4 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/dancer.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
+
+}
+@media screen and (min-width: 3840px) {
+	.mirror-bird-container {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 180rem;
+
+		background-image: url('../assets/artist.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: flex;
+	}
+	.mirror-bird-container2 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 180rem;
+		background-image: url('../assets/doctor.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+
+	.mirror-bird-container3 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 180rem;
+
+		background-image: url('../assets/firefighter_2.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+
+	.mirror-bird-container4 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 180rem;
+
+		background-image: url('../assets/dancer.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
+	}
+	.test1PlizWorking {
+		position: absolute;
+		width:10%;
+		top:320px;
+		right:35px;
+		visibility: hidden;
+	}
+	.test2PlizWorking {
+		position: absolute;
+		width:10%;
+		top:320px;
+		right:35px;
+		visibility: hidden;
+	}
+	.test3PlizWorking {
+		position: absolute;
+		width:8%;
+		top:70px;
+		left:465px;
+		visibility: hidden;
+	}
+	.test4PlizWorking {
+		position: absolute;
+		width:8%;
+		top:70px;
+		left:465px;
+		visibility: hidden;
+	}
+	.test1_square {
+		position: absolute;
+		width:30px;
+		height:30px;
+		/* z-index: 4; */
+		top:350px;
+		left:1135px;
+		background-color: red;
+	}
+	.bird-container--one {
+		position: absolute;
+	  top: -15%;
+		left: -10%;
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-one;
+		/* background-color: green; */
+		animation-timing-function: linear;
+		animation-duration: 4s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--two {
+		position: absolute;
+	  top: -25%;
+		left: 50%;
+		/* background-color: red; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-two;
+		animation-timing-function: linear;
+		animation-duration: 15s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--three {
+		position: absolute;
+	  top: -15%;
+		left: -10%;
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-three;
+		/* background-color: green; */
+		animation-timing-function: linear;
+		animation-duration: 4s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--four {
+		position: absolute;
+	  top: -25%;
+		left: 50%;
+		/* background-color: red; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
 		animation-name: fly-right-four;
+		animation-timing-function: linear;
+		animation-duration: 15s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--five {
+		position: absolute;
+	  top: 40%;
+		left: -10%;
+		/* background-color: yellow; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-five;
+		animation-timing-function: linear;
+		animation-duration: 2s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--six {
+		position: absolute;
+	  top: 2%;
+		left: 30%;
+		/* background-color: yellow; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-six;
 		animation-timing-function: linear;
 		animation-duration: 5s;
 		animation-delay: 0;
@@ -584,96 +1174,150 @@
 		100% {
 			background-position: -900px 0;
 		}
-
+	
 	}
-
+	
 	@keyframes fly-right-one {
-
+	
 		0% {
 			transform: translateY(2vh) translateX(-10vw) scale(2.0);
 		}
-
+	
 		10% {
 			transform: translateY(2vh) translateX(10vw) scale(2.0);
 		}
-
+	
 		20% {
 			transform: translateY(5vh) translateX(20vw) scale(1.5);
 		}
-
+	
 		30% {
 			transform: translateY(10vh) translateX(30vw) scale(1.0);
 		}
-
+	
 		40% {
 			transform: translateY(20vh) translateX(40vw) scale(0.6);
 		}
-
+	
 		50% {
 			transform: translateY(35vh) translateX(50vw) scale(0.6);
 		}
-
+	
 		60% {
 			transform: translateY(40vh) translateX(60vw) scale(0.6);
 		}
-
+	
 		100% {
 			transform: translateY(90%) translateX(93vw) scale(0.8);
 			animation-play-state: paused;
 		}
-
+	
 	}
 	@keyframes fly-right-two {
-
+	
 		0% {
 			transform: scale(0.6) translateX(63vw) translateY(75vh);
 		}
-
-
-
+	
+	
+	
 		30% {
 			transform: translateY(35vh) translateX(70vw) scale(0.6);
 		}
-
-
+	
+	
 		100% {
 			transform: translateY(50vh) translateX(100vw) scale(0.5);
 		}
-
+	
 	}
-
 	@keyframes fly-right-three {
-
+	
+		0% {
+			transform: translateY(2vh) translateX(-10vw) scale(2.0);
+		}
+	
+		10% {
+			transform: translateY(2vh) translateX(10vw) scale(2.0);
+		}
+	
+		20% {
+			transform: translateY(5vh) translateX(20vw) scale(1.5);
+		}
+	
+		30% {
+			transform: translateY(10vh) translateX(30vw) scale(1.0);
+		}
+	
+		40% {
+			transform: translateY(20vh) translateX(40vw) scale(0.6);
+		}
+	
+		50% {
+			transform: translateY(35vh) translateX(50vw) scale(0.6);
+		}
+	
+		60% {
+			transform: translateY(40vh) translateX(60vw) scale(0.6);
+		}
+	
+		100% {
+			transform: translateY(90%) translateX(93vw) scale(0.8);
+			animation-play-state: paused;
+		}
+	
+	}
+	@keyframes fly-right-four {
+	
+		0% {
+			transform: scale(0.6) translateX(63vw) translateY(75vh);
+		}
+	
+	
+	
+		30% {
+			transform: translateY(35vh) translateX(70vw) scale(0.6);
+		}
+	
+	
+		100% {
+			transform: translateY(50vh) translateX(100vw) scale(0.5);
+		}
+	
+	}
+	
+	@keyframes fly-right-five {
+	
 		0% {
 			transform: scale(0.3) translateX(0vw);
 		}
-
+	
 		50% {
 			transform: translateY(-10vh) translateX(20vw) scale(0.6);
 		}
-
-
+	
+	
 		100% {
 			transform: translateY(-35vh) translateX(38vw) scale(0.6);
 		}
-
+	
 	}
-	@keyframes fly-right-four {
-
+	@keyframes fly-right-six {
+	
 		0% {
 			transform: scale(0.3) translateX(0vw);
 		}
-
+	
 		50% {
 			transform: translateY(10vh) translateX(50vw) scale(0.6);
 		}
-
-
+	
+	
 		100% {
 			transform: translateY(35vh) translateX(100vw) scale(0.6);
 			animation-play-state: paused;
 		}
-
+	
 	}
 
 }
