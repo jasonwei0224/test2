@@ -1,0 +1,170 @@
+.slider_sky {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 990px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .testPliz_sky {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .slider-wrapper_sky {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide_sky {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .arrow_sky {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9C739;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+  }
+
+  .nextArrow_sky {
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    z-index: 999;
+    color: #fff;
+  }
+
+  .backArrow_sky {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    z-index: 999;
+    color: #fff;
+  }
+
+  .fa-arrow-right_sky:before, .fa-arrow-left_sky:before {
+    color: #222
+  }
+
+  #vids_sky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #vids_sky a:first-of-type {
+    margin-bottom: 5px;
+  }
+
+  .dotSpan_sky {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: default;
+    background-color: gray;
+    border-radius: 50%;
+
+  }
+
+.dot_pagination_sky {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 2560px) {
+  .slide_sky {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  .slider_sky {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      height: 1656px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+  .arrow_sky {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9C739;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+  }
+  .dot_pagination_sky {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dotSpan_sky {
+    margin-right: 5px;
+    cursor: default;
+    background-color: gray;
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+
+  }
+  .nextArrow_sky {
+    position: absolute;
+    top: 35%;
+    right: 70px;
+    z-index: 999;
+    color: #fff;
+  }
+
+  .backArrow_sky {
+    position: absolute;
+    top: 35%;
+    left: 70px;
+    z-index: 999;
+    color: #fff;
+  }
+}

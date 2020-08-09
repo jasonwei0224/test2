@@ -327,18 +327,12 @@
 
 }
 @keyframes fly-right-four {
-
 	0% {
 		transform: scale(0.6) translateX(63vw) translateY(75vh);
 	}
-
-
-
 	30% {
 		transform: translateY(35vh) translateX(70vw) scale(0.6);
 	}
-
-
 	100% {
 		transform: translateY(50vh) translateX(100vw) scale(0.5);
 	}
@@ -378,7 +372,81 @@
 	}
 
 }
+@media screen and (max-width: 767px) {
+  #wrapper_mirror{
+    display:none;
+  }
+}
 
+/* sm */
+@media screen and (min-width: 768px) {
+  #wrapper_mirror{
+    display:none;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  #wrapper_mirror{
+    display:none;
+  }
+}
+@media screen and (min-width: 1200px) {
+	#wrapper_mirror{
+    display:block;
+  }
+	.test1PlizWorking {
+		position: absolute;
+		width:10%;
+		/* z-index: 4; */
+		top:320px;
+		right:35px;
+		visibility: hidden;
+	}
+	.test2PlizWorking {
+		position: absolute;
+		width:8%;
+		/* z-index: 4; */
+		top:70px;
+		left:465px;
+		visibility: hidden;
+	}
+	.test1_square {
+		position: absolute;
+		width:30px;
+		height:30px;
+		/* z-index: 4; */
+		top:350px;
+		left:1135px;
+		background-color: red;
+	}
+	.bird-container--one {
+		position: absolute;
+	  top: -15%;
+		left: -10%;
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-one;
+		/* background-color: green; */
+		animation-timing-function: linear;
+		animation-duration: 4s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
+	}
+	.bird-container--two {
+		position: absolute;
+	  top: -25%;
+		left: 50%;
+		/* background-color: red; */
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-right-two;
+		animation-timing-function: linear;
+		animation-duration: 15s;
+		animation-delay: 0;
+		animation-fill-mode: forwards;
+		animation-play-state: unset;
 @media screen and (min-width: 767px) {
 	.mirror-bird-container {
 		z-index: 3;
@@ -934,7 +1002,6 @@
 		justify-content: center;
 		/* // min-height: 100vh; */
 		min-height: 180rem;
-
 		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;

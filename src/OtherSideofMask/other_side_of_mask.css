@@ -24,5 +24,7 @@
 
 /* lg */
 @media screen and (min-width: 1200px) {
-
+  .middle_text_other{
+    display:none;
+  }
 }

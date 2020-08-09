@@ -473,7 +473,7 @@
 		align-items: center;
 		justify-content: center;
 		/* // min-height: 100vh; */
-		min-height: 90rem;
+		min-height: 111rem;
 
 		background-image: url('../../assets/doctor.jpg');
 		background-blend-mode: soft-light;
