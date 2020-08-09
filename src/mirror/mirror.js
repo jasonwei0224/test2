@@ -53,7 +53,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
             <ProgramInfo
               id="test"
               subtitle="Illustration"
-              title="Mirroring"
+              title="Mirrors"
               artistName="Artist: Mina Lu"
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
