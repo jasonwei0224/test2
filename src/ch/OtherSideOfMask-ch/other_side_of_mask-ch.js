@@ -33,20 +33,23 @@ class OtherSideOfMask_ch extends Component {
         return (
           <div>
             <Container fluid>
-            <Row>
-              <Col lg={6} className ="model3D-col-ch">
-              <div>
-                <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
-                   position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
-               </div>
-              </Col>
-              <Col lg={6} className ="model3D-col-ch">
-              <div>
-                <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
-                   position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
-               </div>
-              </Col>
-            </Row>
+              <Row>
+                <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+                  <div>
+                    <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
+                      position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+                  </div>
+                </Col>
+                {/*}<Col className="middle_text_other" xl={{span:0, offset:0}} lg={{span:11, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
+                  <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>          </MainContents_Middle_Adonis>
+                </Col>*/}
+                <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
+                <div>
+                  <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
+                      position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+                  </div>
+                </Col>
+              </Row>
             {/*<Row className="other-side-hint-ch"><p>Click and drag or scroll to look around</p></Row>*/}
 
             <ProgramInfoTwoArtistCH
