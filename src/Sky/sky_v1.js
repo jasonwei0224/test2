@@ -21,6 +21,7 @@ import SuccessModal from '../successModal';
 import InvalidFileModal from '../invalidFileModal';
 import mainImage from '../assets/sky4.jpeg';
 import {Helmet} from "react-helmet";
+import Slider from './img_slider_final_sky'
 
 class SkyV1 extends Component {
 
@@ -142,15 +143,19 @@ class SkyV1 extends Component {
       })
   }
   render() {
+    var images =[mainImage, mainImage]
     return (
       <div>
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
-          <Row>
+
+            <Slider images={images}></Slider>
+
+          {/*}<Row>
               <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
                 <img className="main_image" src={mainImage}/>
               </Col>
-          </Row>
+          </Row>*/}
 
         <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse" color="#D9C739">
         </ProgramInfo>

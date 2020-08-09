@@ -12,7 +12,7 @@ import Button1 from "../modules/Button1";
 import Footer from "../footer-temp";
 import SkyImageGallery from "../skyImageGallery";
 // import './sky.css'
-import Slider from '../modules/img_slider_final'
+import Slider from './img_slider_final_sky'
 
 
 function Sky() {
@@ -21,10 +21,12 @@ function Sky() {
     window.location='Sky';
   };
 
+  var images = {image1, image2}
+
   return (
     <div>
       <Container fluid style={{padding:"0"}}>
-        <Slider/>
+        <Slider images={images}/>
 
         <ProgramInfo
           subtitle="I'm different, just like you!"

@@ -272,15 +272,28 @@
 }
 
 @media screen and (max-width: 767px) {
-
-
+  #wrapper_mirror{
+    display:none;
+  }
 }
-@media screen and (max-width: 992px) {
 
-
+/* sm */
+@media screen and (min-width: 768px) {
+  #wrapper_mirror{
+    display:none;
+  }
 }
-@media screen and (max-width: 1200px) {
 
+/* md */
+@media screen and (min-width: 992px) {
+  #wrapper_mirror{
+    display:none;
+  }
+}
+@media screen and (min-width: 1200px) {
+	#wrapper_mirror{
+    display:block;
+  }
 	.test1PlizWorking {
 		position: absolute;
 		width:10%;
@@ -473,7 +486,7 @@
 		align-items: center;
 		justify-content: center;
 		/* // min-height: 100vh; */
-		min-height: 90rem;
+		min-height: 112rem;
 
 		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
