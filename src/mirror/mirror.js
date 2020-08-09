@@ -26,6 +26,8 @@ import Slider from './img_slider_final_mirror'
 import slide1 from '../assets/artist_taiwan_color.jpg';
 import slide2 from '../assets/doctor.jpg';
 import slide3 from '../assets/firefighter.jpg'
+import slide4 from '../assets/dancer.jpg'
+import slide10 from '../assets/child.jpg'
 
 
 
@@ -40,7 +42,7 @@ Yen-Chun Lu of Taiwan uses the reflections of mirrors to show the sceneries and 
 
 An island in the middle of the ocean could be deemed insignificant or easily sacrificed as the world chases all things big and fast; when people are left with a moment to re-examine their past behaviours, they can finally discover that the island’s importance and beauty had been greatly ignored or overlooked.
 `
-var images = [slide1, slide2, slide3]
+var images = [slide1, slide2, slide3, slide4, slide10]
         return (
             <div className='mirror'>
 

@@ -22,6 +22,11 @@ class MirrorBird extends React.Component {
       audio.play()
       $('.mirror-bird-container').addClass('mirror-bird-container_after_hover ')
     })
+    $('#test2_sq').on('mouseenter', function() {
+      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      audio.play()
+      $('.mirror-bird-container').addClass('mirror-bird-container_after_hover ')
+    })
 
     $('#wrapper_mirror').one('click', function(e) {
       $('#box_1').addClass('bird-container bird-container--one')
@@ -112,6 +117,7 @@ class MirrorBird extends React.Component {
           <div class="test2PlizWorking">
               <img src={pigeon}></img>
           </div>
+            <div class="test2_square" id="test2_sq"></div>
         </div>
 
         <div id="container_box_bird_3" className="mirror-bird-container3">
@@ -121,6 +127,7 @@ class MirrorBird extends React.Component {
           <div class="test3PlizWorking">
               <img src={pigeon}></img>
           </div>
+            <div class="test2_square" id="test2_sq"></div>
         </div>
 
         <div id="container_box_bird_4" className="mirror-bird-container4">
@@ -131,6 +138,16 @@ class MirrorBird extends React.Component {
               <img src={pigeon}></img>
           </div>
         </div>
+
+        {/*}<div id="container_box_bird_10" className="mirror-bird-container4">
+          <div id="box_10">
+            <div id="bird_10"></div>
+          </div>
+          <div class="test10PlizWorking">
+              <img src={pigeon}></img>
+          </div>
+        </div>*/}
+
 
       </div>
     );

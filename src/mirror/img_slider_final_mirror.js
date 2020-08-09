@@ -85,9 +85,9 @@ class Slider extends React.Component {
   const Slide = ({ image }) => {
     const styles = {
       backgroundImage: `url(${image})`,
-      backgroundSize: 'auto 100%',
+      backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 60%'
+      backgroundPosition: '50% 0%'
     }
     return <div className="slide_mirror" style={styles}></div>
   }
