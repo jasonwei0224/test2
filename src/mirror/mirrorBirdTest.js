@@ -4,7 +4,7 @@ import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
 import pigeon from "../assets/pigeon_stop.svg";
 
-class MirrorBird extends React.Component {
+class MirrorBirdTest extends React.Component {
   constructor(props) {
     super(props);
     this.state={
@@ -12,8 +12,6 @@ class MirrorBird extends React.Component {
       show:0,
     }
   }
-
-
 
   componentDidMount=() =>{
 
@@ -139,4 +137,4 @@ class MirrorBird extends React.Component {
 }
 
 
-export default MirrorBird;
+export default MirrorBirdTest;

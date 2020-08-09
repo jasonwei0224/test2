@@ -42,6 +42,7 @@ import SkyArtist_ch2 from "./ch/Sky-ch/skyArtist2_ch";
 import SkyArtist_ch3 from "./ch/Sky-ch/skyArtist3_ch";
 import { createBrowserHistory } from 'history';
 
+import mirror_test from './mirror/mirrorBirdTest';
 import test  from "./IAmDifferent/test";
 
 // import"./Sky/sky_v1.css";
@@ -81,6 +82,8 @@ history.listen(location => {
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/UnbeingChinese" component={UnbeingChinese}/>
+
+          <Route path="/birdtest" component={mirror_test}></Route>
 
           <Route path="/-ch" exact component={Home2_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
