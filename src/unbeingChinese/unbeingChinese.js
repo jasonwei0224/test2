@@ -28,9 +28,11 @@ import MainContents_OneArtist from "../modules/MainContents_OneArtist"
 import tong from '../assets/Tong.jpg'
 
 function UnbeingChinese() {
-  var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial tension between Chinese and the rest has become a focal point and governments around the world have been asking China to be accountable for the pandemic; being Chinese has been challenging.
-  \nIronically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred Confucianism.
-  \n Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians. Political reasons aside, what is your artistic interpretation?
+  var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging.
+
+Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred ideas of Confucianism.
+
+Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians.  Political reasons aside, what is your artistic interpretation?
   `
   const [isShown, setIsShown] = useState(false);
   return (

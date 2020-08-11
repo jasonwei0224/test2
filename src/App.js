@@ -8,7 +8,7 @@ import PeopleAndMask from "./PeopleAndMask/people_and_mask";
 import OtherSideOfMask from "./OtherSideofMask/other_side_of_mask";
 import Mirror from "./mirror/mirror";
 import Sky from "./Sky/sky";
-import SkyArtist from "./Sky/skyArtist";
+// import SkyArtist from "./Sky/skyArtist";
 import SkyArtist1 from "./Sky/skyArtist1";
 import SkyArtist2 from "./Sky/skyArtist2";
 import SkyArtist3 from "./Sky/skyArtist3";
@@ -42,7 +42,9 @@ import SkyArtist_ch2 from "./ch/Sky-ch/skyArtist2_ch";
 import SkyArtist_ch3 from "./ch/Sky-ch/skyArtist3_ch";
 import { createBrowserHistory } from 'history';
 
+import mirror_test from './mirror/mirrorBirdTest';
 import test  from "./IAmDifferent/test";
+// import SkyArtist from "./Sky/sky";
 
 // import"./Sky/sky_v1.css";
 
@@ -74,13 +76,10 @@ history.listen(location => {
           <Route path="/Mirror" component={Mirror} />
           <Route path="/SkyV2" component={Sky} />
           <Route path="/Sky" component={SkyV1}/>
-          <Route path="/SkyArtist" component={SkyArtist}/>
-          <Route path="/SkyArtist1" component={SkyArtist1}/>
-          <Route path="/SkyArtist2" component={SkyArtist2}/>
-          <Route path="/SkyArtist3" component={SkyArtist3}/>
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>
           <Route path="/UnbeingChinese" component={UnbeingChinese}/>
+
 
           <Route path="/-ch" exact component={Home2_ch}/>
           <Route path="/PaulsApple-ch" component={PaulsApple_ch}/>
@@ -89,13 +88,10 @@ history.listen(location => {
           <Route path="/Mirror-ch" component={Mirror_ch}/>
           <Route path="/SkyV2-ch" component={Sky_ch} />
           <Route path="/Sky-ch" component={SkyV1_ch}/>
-          <Route path="/SkyArtist-ch" component={SkyArtist_ch}/>
-          <Route path="/SkyArtist1-ch" component={SkyArtist_ch1}/>
-          <Route path="/SkyArtist2-ch" component={SkyArtist_ch2}/>
-          <Route path="/SkyArtist3-ch" component={SkyArtist_ch3}/>
           <Route path="/IAmDifferent-ch" component={IAmDifferent_ch}/>
           <Route path="/IAmDifferentForm-ch" component={IAmDifferentForm_ch}/>
           <Route path="/UnbeingChinese-ch" component={UnbeingChineseCH}/>
+
 
 
           {/*<Route path="/Home-ch" component={IAmDifferent_ch}/>*/}

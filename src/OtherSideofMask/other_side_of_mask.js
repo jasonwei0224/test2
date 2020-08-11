@@ -16,8 +16,10 @@ import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import ImageWithDescription from"../modules/MainContent_ImageWithDescription";
 
-var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.\n
-This art piece portrays the irony that on the flip side of every beautiful story and gesture exists its potentially damaging impact. Further, the appearance of the inner side of the mask and its similarity to the media’s images of the SARS-CoV-2 virus reflects that it can be difficult for us to differentiate between what is poisonous and what is beautiful. In these current times, we must examine our past behaviours and reflect on how we can learn from them. It takes courage to understand ourselves and each other, and even more so to own our past mistakes.\n
+var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
+
+This art piece portrays the irony that on the flip side of every beautiful story and gesture exists its potentially damaging impact. Further, the appearance of the inner side of the mask and its similarity to the media’s images of the SARS-CoV-2 virus reflects that it can be difficult for us to differentiate between what is poisonous and what is beautiful. In these current times, we must examine our past behaviours and reflect on how we can learn from them. It takes courage to understand ourselves and each other, and even more so to own our past mistakes.
+
 “The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow.
 `
 
@@ -33,22 +35,22 @@ class OtherSideOfMask extends Component {
       <div>
         <Container fluid>
           <Row>
-            <Col lg={6} className="model3D-col" >
-            <div>
-              <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
+            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+              <div>
+                <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
                   position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
               </div>
             </Col>
-            <Col lg={6} className="model3D-col" >
+            {/*}<Col className="middle_text_other" xl={{span:0, offset:0}} lg={{span:11, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
+              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>          </MainContents_Middle_Adonis>
+            </Col>*/}
+            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
             <div>
-              <OBJModel src="./Bee.obj" textPath="" width="500" height="500"
+              <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
                   position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
               </div>
             </Col>
           </Row>
-          {/*<Row className="other-side-hint">
-              <p>Click and drag or scroll to look around</p>
-            </Row>*/}
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
             title="THE OTHER SIDE OF MASK"

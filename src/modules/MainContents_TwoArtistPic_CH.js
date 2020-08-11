@@ -11,7 +11,7 @@ const MainContents_TwoArtistPic_ch = (props) => {
                     <img src={props.pic1} className="mainSection_Img2"></img>
 
                 </Col>
-                <Col xl={{span:2, offset:0}} md={{span:5, offset:0}}  xs={{span:4, offset:0}} >
+                <Col xl={{span:2, offset:0}} md={{span:5, offset:0}}  xs={{span:4, offset:0}}  style={{marginRight:"0px",paddingRight:"0px"}}>
                   <img src={props.pic2} className="mainSection_Img2"></img>
                 </Col>
 

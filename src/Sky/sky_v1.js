@@ -21,6 +21,7 @@ import SuccessModal from '../successModal';
 import InvalidFileModal from '../invalidFileModal';
 import mainImage from '../assets/sky4.jpeg';
 import {Helmet} from "react-helmet";
+import Slider from './img_slider_final_sky'
 
 class SkyV1 extends Component {
 
@@ -142,37 +143,31 @@ class SkyV1 extends Component {
       })
   }
   render() {
+    var images =[mainImage, mainImage]
     return (
       <div>
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
-          <Row>
+
+            <Slider images={images}></Slider>
+
+          {/*}<Row>
               <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
                 <img className="main_image" src={mainImage}/>
               </Col>
-          </Row>
+          </Row>*/}
 
         <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse" color="#D9C739">
         </ProgramInfo>
 
-        <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter
-                wherever you are in the world? The sky is one constant no matter
-                where you are and what time of day, it is there above the horizon."></MainContents_First>
+        <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon."></MainContents_First>
 
-              <MainContents_Middle contents=" Despite our
-                geographical differences, we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-                together. "></MainContents_Middle>
-          <MainContents_Middle contents=" In all that the world has gone through, the unchanging sky gives
-                people a sense of hope and anticipation for the feeling of a
-                normal day to come again. Furthermore, Indigenous teachings and
-                stories about the sky can guide us in these times.
-                By giving each image a background story, we can implore others to
-                look to the sky and gain strength."></MainContents_Middle>
+              <MainContents_Middle contents=" We may be in different parts of the world but we are all under the same sky. Join us as we get together globally and capture the sky at the same moment in time. We often look to the sky to ponder questions and to self reflect. In all that the world has gone through, the unchanging sky gives people a sense of hope and anticipation for the feeling of a normal day to come again. While daylight allows us to see the colours of the world, looking beyond our differences, we are all the same."></MainContents_Middle>
 
 
         <Second_Title_Bold secondTitle="Under the same sky project"></Second_Title_Bold>
 
-        <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow us on social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
+        <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow Toronto TAIWANfest social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
 
 
         <FormSectionTitle title="PHOTOGRAPHER"></FormSectionTitle>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 // import ButtonSkinColor from './mirror/ButtonSkinColor';
-import './Mirror.css';
+import '../../mirror/Mirror.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from'@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from'@fortawesome/free-solid-svg-icons';
@@ -21,7 +21,13 @@ import MirrorBird_ch from "./mirrorBird_ch"
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
-import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
+import mina from '../../assets/人物照-Mina.jpg'
+import Slider from '../../mirror/img_slider_final_mirror'
+import slide1 from '../../assets/artist_taiwan_color.jpg';
+import slide2 from '../../assets/doctor.jpg';
+import slide3 from '../../assets/firefighter.jpg'
+import slide4 from '../../assets/dancer.jpg'
+import slide10 from '../../assets/child.jpg'
 
 class Mirror extends Component {
 
@@ -34,6 +40,7 @@ class Mirror extends Component {
 
 但是，若人們選擇正視汪洋中的孤島，將獲得初探世外桃源般的驚豔：島嶼有它遺世獨立的美麗，有著溫暖的人情感動，島上人們懷抱與世界連結的渴望之心！是時候，該停下來問自己，我們是否遺忘了什麼?
 `
+var images = [slide1, slide2, slide3, slide4, slide10]
         return (
             <div className='mirror'>
 
@@ -52,7 +59,7 @@ class Mirror extends Component {
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtistCH src={ladyhaohao} title="盧妍均" contents="asdf
+              <MainContents_OneArtistCH src={mina} title="盧妍均" contents="asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads,asdf
                   Despite our geographical differences,
