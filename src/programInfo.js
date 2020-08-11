@@ -8,8 +8,8 @@ const ProgramInfo = (props) => {
         <div style={{marginBottom:"100px"}}>
             <Row className="PI-contents">
                 <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:10, offset:1}}  xs={{span:8, offset:2}}>
-                    <Row><p className="PI-subtitle_twoArtist"style={{fontFamily:"sofia-pro, sans-serif"}}>{props.subtitle}</p></Row>
-                    <Row><h1 className="PI-title_twoArtist" style={{fontFamily:"sofia-pro, sans-serif"}}>{props.title}</h1></Row>
+                    <Row><p className="PI-subtitle_twoArtist">{props.subtitle}</p></Row>
+                    <Row><h1 className="PI-title_twoArtist">{props.title}</h1></Row>
                     <Row className="PI-last">
                         <Col className="PI-artist-two"style={{fontFamily:"sofia-pro, sans-serif"}}><p className="PI-Artist-p">{props.artistName}</p></Col>
                         <div className="PI-colButton"><Button className="PI-shareButton" href={props.url}>SHARE WITH FRIENDS</Button></div>

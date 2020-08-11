@@ -21,7 +21,7 @@ import MirrorBird from "../../mirror/mirrorBird"
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
-import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
+import mina from '../../assets/人物照-Mina.jpg'
 import Slider from '../../mirror/img_slider_final_mirror'
 import slide1 from '../../assets/artist_taiwan_color.jpg';
 import slide2 from '../../assets/doctor.jpg';
@@ -60,7 +60,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtistCH src={ladyhaohao} title="盧妍均" contents="asdf
+              <MainContents_OneArtistCH src={mina} title="盧妍均" contents="asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads,asdf
                   Despite our geographical differences,

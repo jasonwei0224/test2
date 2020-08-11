@@ -18,7 +18,7 @@
   margin-bottom:10px;
   /* font-family: "adonis-web"; */
   color:#0C3866;
-  font-family: "sofia-pro", Sans-serif;
+  /* font-family: adonis-web, serif; */
   /* font-weight: normal; */
 
   font-size: 20px;
@@ -28,6 +28,7 @@
     margin-top:10px;
     margin-bottom:10px;
     /* font-family: "adonis-web"; */
+
     color:#0C3866;
     font-family: "sofia-pro", Sans-serif;
     /* font-weight: normal; */
@@ -148,7 +149,7 @@
     margin-bottom:10px;
     /* font-family: "adonis-web"; */
     color:#0C3866;
-    font-family: "sofia-pro", Sans-serif;
+    font-family: sofia-pro, Sans-serif;
     font-size:28px;
     /* font-weight: normal; */
 
@@ -253,6 +254,7 @@
       margin-top:50px;
       margin-bottom:10px;
       color:#0C3866;
+      font-family: sofia-pro, Sans-serif;
     }
     .mainSection_Row_twoArtist_second{
       font-size: 40px;
@@ -414,6 +416,7 @@
       margin-bottom:10px;
       font-size: 28px;
       color:#0C3866;
+      font-family: adonis-web, serif;
     }
     .mainSection_Important_Row {
         font-family: "sofia-pro", Sans-serif!important;

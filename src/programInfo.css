@@ -16,13 +16,12 @@
   margin-top: 2%;
   font-family: 'adonis-web';
   overflow: hidden;
-
 }
 
 .PI-subtitle {
     color: #0C3866;
     margin-top: 5%;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 40px;
     /* font-family: adonis-web !important; */
 }
@@ -38,7 +37,7 @@
     color:#BE0027;
     font-size: 50px;
     margin-bottom: 45px;
-    /* font-weight:bold; */
+    font-weight:bold;
     /* font-family: adonis-web !important; */
 }
 
@@ -107,6 +106,12 @@ a.PI-shareButton:hover{
 } */
 
 @media screen and (max-width: 767px) {
+  .PI-title_twoArtist{
+    font-family: sofia-pro, sans-serif;
+  }
+  .PI-subtitle_twoArtist{
+    font-family: sofia-pro, sans-serif;
+  }
   /* .PI-title_twoArtist-ch{
     color:#BE0027;
     font-size: 50px;
@@ -121,6 +126,7 @@ a.PI-shareButton:hover{
   }
   .PI-Artist-p{
     font-size:30px;
+    font-family: sofia-pro, sans-serif;
   }
   .PI-artist-two{
     color: #0C3866;
@@ -129,6 +135,7 @@ a.PI-shareButton:hover{
     font-style: italic;
       padding-left: 0px!important;
       margin-bottom: 0px!important;
+      font-family: sofia-pro, sans-serif;
   }
   /* .PI-subtitle-ch {
       color: #0C3866;
@@ -216,21 +223,25 @@ a.PI-shareButton:hover{
 @media screen and (min-width: 1200px) {
   .PI-subtitle {
       font-size: 40px;
+      font-family: adonis-web, serif;
   }
   .PI-subtitle_twoArtist {
       font-size: 40px;
-      font-weight:normal;
+      font-weight:bold;
+      font-family: adonis-web, serif;
   }
 
   .PI-title {
       font-size: 50px;
       margin-bottom: 7.5%;
+      font-family: adonis-web, serif;
+      font-weight:bold;
   }
   .PI-title_twoArtist {
       font-size: 50px;
       margin-bottom: 3.5%;
-      font-weight: normal;
-
+      font-weight: bold;
+      font-family: adonis-web, serif;
   }
 
   .PI-artist {

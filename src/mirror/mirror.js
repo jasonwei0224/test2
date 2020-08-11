@@ -21,7 +21,7 @@ import MirrorBird from "./mirrorBird"
 import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
 import MainContents_OneArtist from "../modules/MainContents_OneArtist"
-import ladyhaohao from '../assets/Lady Hao Hao.jpg'
+import mina from '../assets/人物照-Mina.jpg'
 import Slider from './img_slider_final_mirror'
 import slide1 from '../assets/artist_taiwan_color.jpg';
 import slide2 from '../assets/doctor.jpg';
@@ -34,7 +34,7 @@ import slide10 from '../assets/child.jpg'
 class Mirror extends Component {
 
     render() {
-      var text = `Like everything that is part of nature, skin is a gift people are given, and the colour tones were influenced by the places we lived, the sunlight we received or the weather we got. Differences in skin colour offer a convenient way to see people. Since when, did people turn these natural protectors into weapons to harm others?
+      var text = `Like everything that is part of nature, skin is a gift people are given, and the colour tones are influenced by the places we lived, the sunlight we received or the weather we got. Differences in skin colour offer a convenient way to see people. Since when, did people turn these natural protectors into weapons to harm others?
 
 Follow the pigeon within the paintings as it travels through our everyday life. Picasso once used pigeons in his works to express people's longing for peace. Equality shouldn’t be so difficult to achieve because it is just like the air we can’t breath without. “I’m different, just like you.” Our differences are what make us all unique.
 
@@ -62,7 +62,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtist src={ladyhaohao} title="Mina Lu" contents="asdf
+              <MainContents_OneArtist src={mina} title="Mina Lu" contents="asdf
                   Despite our geographical differences,
                   we all look towards that same sky that looms over our heads,asdf
                   Despite our geographical differences,

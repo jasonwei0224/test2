@@ -1,13 +1,13 @@
-
+/*
 p.PI-subtitle-ch{
   font-family: sofia-pro, sans-serif;
 }
 h1.PI-title_twoArtist-ch{
   font-family: sofia-pro, sans-serif;
-}
+} */
 .PI-contents_ch {
     margin-top: 2%;
-    font-family: 'adonis-web';
+
     overflow: hidden;
 }
 
@@ -23,7 +23,7 @@ h1.PI-title_twoArtist-ch{
     font-size: 50px;
     margin-bottom: 45px;
     font-weight:bold;
-    font-family: 'adonis-web';
+  font-family: 'adonis-web';
 }
 
 .PI-last {
@@ -44,7 +44,7 @@ a.PI-shareButton_ch {
     border-radius: 25px;
     height: fit-content;
     width: fit-content;
-    font-family: "sofia-pro", Sans-serif;
+    font-family: sofia-pro, Sans-serif;
     overflow: hidden;
 
 }
@@ -68,13 +68,13 @@ a.PI-shareButton_ch:hover{
   color:#BE0027;
   font-size: 35px;
   margin-bottom: 45px;
-  /* font-weight:bold; */
+  font-weight:bold;
   /* font-family: "sofia-pro", Sans-serif !important; */
 }
 .PI-subtitle-ch {
     color: #0C3866;
     margin-top: 5%;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 30px;
     /* font-family: sofia-pro, sans-serif; */
 }
@@ -89,27 +89,30 @@ a.PI-shareButton_ch:hover{
   }
   .PI-subtitle_ch {
       font-size: 50px;
+        font-family: sofia-pro, sans-serif;
   }
   .PI-subtitle-ch {
       color: #0C3866;
       margin-top: 5%;
       /* font-weight: bold; */
       font-size: 40px;
-      /* font-family: sofia-pro, sans-serif; */
+      font-family: sofia-pro, sans-serif;
   }
   .PI-title_twoArtist-ch{
     color:#BE0027;
     font-size: 50px;
     margin-bottom: 45px;
     /* font-weight:bold; */
-    /* font-family: sofia-pro, sans-serif; */
+      font-family: sofia-pro, sans-serif;
   }
   .PI-title_ch {
       font-size: 60px;
+        font-family: sofia-pro, sans-serif;
   }
 
   .PI-artist_ch {
       font-size: 42px;
+        font-family: sofia-pro, sans-serif;
   }
   .PI-artist-two-ch{
     color: #0C3866;
@@ -118,7 +121,7 @@ a.PI-shareButton_ch:hover{
     font-style: italic;
       padding-left: 0px!important;
       margin-bottom: 0px!important;
-      /* font-family: "sofia-pro", Sans-serif !important; */
+      font-family: sofia-pro, sans-serif;
   }
 
 }
@@ -195,11 +198,13 @@ a.PI-shareButton_ch:hover{
 @media screen and (min-width: 1200px) {
   .PI-subtitle_ch {
       font-size: 40px;
+      font-family: adonis-web, serif;
   }
 
   .PI-title_ch {
       font-size: 50px;
       margin-bottom: 7.5%;
+      font-family: adonis-web, serif;
   }
 
   .PI-artist_ch {
@@ -218,7 +223,9 @@ a.PI-shareButton_ch:hover{
       color:#BE0027;
       font-size: 35px;
       margin-bottom: 45px;
+      font-family: adonis-web, serif;
       /* font-weight:bold; */
+
       /* font-family: sofia-pro, sans-serif !important; */
     }
     .PI-subtitle-ch {
