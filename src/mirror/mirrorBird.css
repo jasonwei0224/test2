@@ -81,6 +81,22 @@
 	padding: 2rem;
 	display:none;
 }
+
+.mirror-bird-container5 {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 55rem;
+	background-image: url('../assets/child.jpg');
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+	display:none;
+}
 .bird {
   	background-image: url(../assets/pigeon4.svg);
   	background-size: auto 100%;
@@ -103,34 +119,7 @@
 .bird-container {
 
 }
-.test1PlizWorking {
-	position: absolute;
-	width:10%;
-	top:320px;
-	right:35px;
-	visibility: hidden;
-}
-.test2PlizWorking {
-	position: absolute;
-	width:10%;
-	top:320px;
-	right:35px;
-	visibility: hidden;
-}
-.test3PlizWorking {
-	position: absolute;
-	width:8%;
-	top:70px;
-	left:465px;
-	visibility: hidden;
-}
-.test4PlizWorking {
-	position: absolute;
-	width:8%;
-	top:70px;
-	left:465px;
-	visibility: hidden;
-}
+
 
 .test1_square {
 	position: absolute;
@@ -439,6 +428,21 @@
 		padding: 2rem;
 		display:none;
 	}
+	.mirror-bird-container5 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/child.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
 
 }
 @media screen and (min-width: 992px) {
@@ -500,7 +504,21 @@
 		padding: 2rem;
 		display:none;
 	}
-
+	.mirror-bird-container5 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/child.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
 
 }
 @media screen and (min-width: 1200px) {
@@ -564,34 +582,22 @@
 		padding: 2rem;
 		display:none;
 	}
-	.test1PlizWorking {
-		position: absolute;
-		width:10%;
-		top:320px;
-		right:35px;
-		visibility: hidden;
+	.mirror-bird-container5 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/child.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
 	}
-	.test2PlizWorking {
-		position: absolute;
-		width:10%;
-		top:320px;
-		right:35px;
-		visibility: hidden;
-	}
-	.test3PlizWorking {
-		position: absolute;
-		width:8%;
-		top:70px;
-		left:465px;
-		visibility: hidden;
-	}
-	.test4PlizWorking {
-		position: absolute;
-		width:8%;
-		top:70px;
-		left:465px;
-		visibility: hidden;
-	}
+	
 	.test1_square {
 		position: absolute;
 		width:30px;
@@ -905,6 +911,21 @@
 		padding: 2rem;
 		display:none;
 	}
+	.mirror-bird-container5 {
+		z-index: 1;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 55rem;
+		background-image: url('../assets/child.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display:none;
+	}
 
 }
 @media screen and (min-width: 3840px) {
@@ -978,34 +999,25 @@
 		padding: 2rem;
 		display: none;
 	}
-	.test1PlizWorking {
-		position: absolute;
-		width:10%;
-		top:320px;
-		right:35px;
-		visibility: hidden;
+
+	.mirror-bird-container5 {
+		z-index: 3;
+		position: relative;
+		overflow: hidden;
+		
+		align-items: center;
+		justify-content: center;
+		/* // min-height: 100vh; */
+		min-height: 180rem;
+
+		background-image: url('../assets/child.jpg');
+		background-blend-mode: soft-light;
+		background-size: cover;
+		background-position: center center;
+		padding: 2rem;
+		display: none;
 	}
-	.test2PlizWorking {
-		position: absolute;
-		width:10%;
-		top:320px;
-		right:35px;
-		visibility: hidden;
-	}
-	.test3PlizWorking {
-		position: absolute;
-		width:8%;
-		top:70px;
-		left:465px;
-		visibility: hidden;
-	}
-	.test4PlizWorking {
-		position: absolute;
-		width:8%;
-		top:70px;
-		left:465px;
-		visibility: hidden;
-	}
+	
 	.test1_square {
 		position: absolute;
 		width:30px;
