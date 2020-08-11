@@ -1,10 +1,10 @@
 import React from 'react';
-import './mirrorBird.css';
+// import './mirrorBird-ch.css';
 import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
 import pigeon from "../../assets/pigeon_stop.svg";
 
-class MirrorBird extends React.Component {
+class MirrorBird_ch extends React.Component {
   constructor(props) {
     super(props);
     this.state={
@@ -102,4 +102,4 @@ class MirrorBird extends React.Component {
 }
 
 
-export default MirrorBird;
+export default MirrorBird_ch;

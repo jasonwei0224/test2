@@ -17,7 +17,7 @@ import MainContents_img from "../../modules/MainContents_img";
 import doctor from "../../assets/doctor.jpg";
 import firefighter from "../../assets/firefighter.jpg";
 import MainContetn_TwoPic from "../../modules/MainContent_TwoPic";
-import MirrorBird from "./mirrorBird"
+import MirrorBird_ch from "./mirrorBird_ch"
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
@@ -38,7 +38,7 @@ class Mirror extends Component {
             <div className='mirror'>
 
             <Container fluid>
-                <MirrorBird></MirrorBird>
+                <MirrorBird_ch></MirrorBird_ch>
 
             <ProgramInfo
               id="test"

@@ -25,60 +25,42 @@ class MirrorBird extends React.Component {
       $('#box_1').addClass('bird-container bird-container--one')
       $('#bird_1').addClass('bird bird--one')
       setTimeout(function() {
-        $(".test1PlizWorking").css({"visibility":"visible"});
-        $('#box_1').css({"display":"none"});
-        $('.test1PlizWorking').one('click', function(e) {
+        $('#container_box_bird_1').css({"display":"none"});
+        $('#container_box_bird_2').css({"display":"block"});
+
+        $('#container_box_bird_2').one('click', function(e) {
           e.preventDefault();
-          $('#box_1').css({"display":"block"});
-          $(".test1PlizWorking").css({"visibility":"hidden"});
-          $('#box_1').addClass('bird-container bird-container--two')
+          $('#box_2').addClass('bird-container bird-container--three')
+          $('#bird_2').addClass('bird bird--one')
+
           setTimeout(function() {
-            console.log("asdf?");
-            $('#container_box_bird_1').css({"display":"none"});
-            $('#container_box_bird_2').css({"display":"block"});
-            $('#container_box_bird_2').on('click', function() {
-              $('#box_2').css({"display":"block"});
-              $('#box_1').css({"z-index":"1"});
-              $('#box_2').addClass('bird-container bird-container--three')
-              $('#bird_2').addClass('bird bird--one')
+            $('#container_box_bird_2').css({"display":"none"});
+            $('#container_box_bird_3').css({"display":"block"});
+
+            $('#container_box_bird_3').one('click', function(e) {
+              e.preventDefault();
+              $('#box_3').addClass('bird-container bird-container--five')
+              $('#bird_3').addClass('bird bird--one')
 
               setTimeout(function() {
-                $(".test2PlizWorking").css({"visibility":"visible"});
-                $('#box_2').css({"display":"none"});
+                $('#container_box_bird_3').css({"display":"none"});
+                $('#container_box_bird_4').css({"display":"block"});
 
-                $('.test2PlizWorking').on('click', function() {
-                  $(".test2PlizWorking").css({"visibility":"hidden"});
+                $('#container_box_bird_4').one('click', function(e) {
+                  e.preventDefault();
+                  $('#box_4').addClass('bird-container bird-container--five')
+                  $('#bird_4').addClass('bird bird--one')
 
-                  $('#box_2').addClass('bird-container bird-container--four')
                   setTimeout(function() {
-                    $('#container_box_bird_2').css({"display":"none"});
-                    $('#container_box_bird_3').css({"display":"block"});
-                    $('#container_box_bird_3').on('click', function() {
-                      $('#box_3').css({"display":"block"});
-                      $('#box_2').css({"z-index":"1"});
-                      $('#box_3').addClass('bird-container bird-container--five');
-                      $('#bird_3').addClass('bird bird--one');
-                      setTimeout(function() {
-                        $(".test3PlizWorking").css({"visibility":"visible"});
-                        $("#box_3").css({"display":"none"});
-
-                        $('.test3PlizWorking').on('click', function() {
-                          $(".test3PlizWorking").css({"visibility":"hidden"});
-
-                          $('#box_3').addClass('bird-container bird-container--six')
-                          setTimeout(function() {
-                            $('#container_box_bird_3').css({"display":"none"});
-                            $('#container_box_bird_4').css({"display":"block"});
-                          })
-                        })
-                      }, 4000)
-                    });
-                  }, 3000)
+                    $('#container_box_bird_4').css({"display":"none"});
+                    $('#container_box_bird_5').css({"display":"block"});
+                  },5000);
 
                 });
-              }, 3000)
-            })
-          }, 2000)
+
+              }, 5000)
+            });
+          },5000)
         })
       }, 5000)
     });
@@ -100,10 +82,6 @@ class MirrorBird extends React.Component {
         <div id="container_box_bird_1" className="mirror-bird-container">
           <div id="box_1">
             <div id="bird_1"></div>
-
-          </div>
-          <div class="test1PlizWorking">
-              <img src={pigeon}></img>
           </div>
           <div class="test1_square" id="test1_sq"></div>
         </div>
@@ -112,17 +90,11 @@ class MirrorBird extends React.Component {
           <div id="box_2">
             <div id="bird_2"></div>
           </div>
-          <div class="test2PlizWorking">
-              <img src={pigeon}></img>
-          </div>
         </div>
         
         <div id="container_box_bird_3" className="mirror-bird-container3">
           <div id="box_3">
             <div id="bird_3"></div>
-          </div>
-          <div class="test3PlizWorking">
-              <img src={pigeon}></img>
           </div>
         </div>
 
@@ -130,8 +102,11 @@ class MirrorBird extends React.Component {
           <div id="box_4">
             <div id="bird_4"></div>
           </div>
-          <div class="test4PlizWorking">
-              <img src={pigeon}></img>
+        </div>
+
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_5">
+            <div id="bird_5"></div>
           </div>
         </div>
       
