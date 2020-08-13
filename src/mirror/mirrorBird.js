@@ -32,6 +32,11 @@ class MirrorBird extends React.Component {
       audio.play()
       $('.mirror-bird-container3').addClass('mirror-bird-container3_after_hover ')
     })
+    $('#test4_sq').on('mouseenter', function() {
+      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      audio.play()
+      $('.mirror-bird-container4').addClass('mirror-bird-container4_after_hover ')
+    })
 
     $('#wrapper_mirror').one('click', function(e) {
       $('#box_1').addClass('bird-container bird-container--one')
@@ -102,35 +107,29 @@ class MirrorBird extends React.Component {
           <div id="box_2">
             <div id="bird_2"></div>
           </div>
+          <div class="test2_square" id="test2_sq"></div>
         </div>
 
         <div id="container_box_bird_3" className="mirror-bird-container3">
           <div id="box_3">
             <div id="bird_3"></div>
           </div>
+          <div class="test3_square" id="test3_sq"></div>
         </div>
 
         <div id="container_box_bird_4" className="mirror-bird-container4">
           <div id="box_4">
             <div id="bird_4"></div>
           </div>
+          <div class="test4_square" id="test4_sq"></div>
         </div>
 
         <div id="container_box_bird_5" className="mirror-bird-container5">
           <div id="box_5">
             <div id="bird_5"></div>
           </div>
+          <div class="test5_square" id="test5_sq"></div>
         </div>
-
-        {/*}<div id="container_box_bird_10" className="mirror-bird-container4">
-          <div id="box_10">
-            <div id="bird_10"></div>
-          </div>
-          <div class="test10PlizWorking">
-              <img src={pigeon}></img>
-          </div>
-        </div>*/}
-
 
       </div>
     );
