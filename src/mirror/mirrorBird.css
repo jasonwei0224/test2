@@ -56,6 +56,12 @@
 	background-position: center center;
 	display:none;
 }
+.mirror-bird-container4_after_hover {
+	min-height: 68rem;
+	background-image: url('../assets/dancer-taiwan_color.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: cover;
+}
 
 .mirror-bird-container5 {
 	min-height: 55rem;
