@@ -7,94 +7,62 @@
 }
 
 .mirror-bird-container {
-	z-index: 3;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 68rem;
 	background-image: url('../assets/artist.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
-	background-position: center center;
-	padding: 2rem;
 }
 
 .mirror-bird-container_after_hover {
-	z-index: 3;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 68rem;
 	background-image: url('../assets/artist_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: cover;
-	background-position: center center;
-	padding: 2rem;
 }
 .mirror-bird-container2 {
-	z-index: 2;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 68rem;
-	background-image: url('../assets/doctor_1280x905.jpg');
+	background-image: url('../assets/doctor.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
 	display:none;
+}
+.mirror-bird-container2_after_hover {
+	min-height: 68rem;
+	background-image: url('../assets/doctor_1280x905.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: cover;
 }
 
 .mirror-bird-container3 {
-	z-index: 1;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 68rem;
 	background-image: url('../assets/firefighter_2.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
 	display:none;
 }
+.mirror-bird-container3_after_hover {
+	min-height: 68rem;
+	background-image: url('../assets/firefighter_2_hover.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: cover;
+}
 .mirror-bird-container4 {
-	z-index: 1;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 68rem;
 	background-image: url('../assets/dancer.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
 	display:none;
 }
 
 .mirror-bird-container5 {
-	z-index: 1;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-height: 55rem;
 	background-image: url('../assets/child.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
 	display:none;
 }
 .bird {
@@ -111,12 +79,6 @@
 	animation-duration: 1s;
 	animation-delay: -0.5s;
 }
-.bird--two {
-	animation-duration: 5s;
-	animation-delay: -0.5s;
-}
-
-
 
 
 .test1_square {
@@ -398,77 +360,42 @@
 
 @media screen and (min-width: 767px) {
 	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 45rem;
 		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 	}
-
 	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		align-items: center;
-		justify-content: center;
 		min-height: 45rem;
 		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 	.mirror-bird-container3 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/firefighter_2.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container4 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/dancer.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container5 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/child.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 
@@ -476,76 +403,42 @@
 
 @media screen and (min-width: 992px) {
 	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 50rem;
 		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 	}
 	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		align-items: center;
-		justify-content: center;
 		min-height: 50rem;
 		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 	.mirror-bird-container3 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/firefighter_2.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container4 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/dancer.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container5 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/child.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 }
@@ -557,79 +450,46 @@
   }
 }
 @media screen and (min-width: 1200px) {
+	#wrapper_mirror{
+		display:block;
+	  }
 	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* min-height: 150vh; */
 		min-height: 65rem;
 		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 	}
 	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		align-items: center;
-		justify-content: center;
-		/* min-height: 150vh; */
 		min-height: 65rem;
 		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container3 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/firefighter_2.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container4 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/dancer.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container5 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/child.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	
@@ -756,66 +616,7 @@
 		animation-fill-mode: forwards;
 		animation-play-state: unset;
 	}
-	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* min-height: 150vh; */
-		min-height: 68rem;
-		background-image: url('../assets/artist.jpg');
-		background-blend-mode: soft-light;
-		background-size: cover;
-		background-position: center center;
-		padding: 2rem;
-	}
-	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		align-items: center;
-		justify-content: center;
-		/* min-height: 150vh; */
-		min-height: 68rem;
-		background-image: url('../assets/doctor_1280x905.jpg');
-		background-blend-mode: soft-light;
-		background-size: cover;
-		background-position: center center;
-		padding: 2rem;
-		display:none;
-	}
-	.mirror-bird-container3 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 68rem;
-		background-image: url('../assets/firefighter_2.jpg');
-		background-blend-mode: soft-light;
-		background-size: cover;
-		background-position: center center;
-		padding: 2rem;
-		display:none;
-	}
-	.mirror-bird-container4 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 68rem;
-		background-image: url('../assets/dancer.jpg');
-		background-blend-mode: soft-light;
-		background-size: cover;
-		background-position: center center;
-		padding: 2rem;
-		display:none;
-	}
+
 
 	@keyframes fly-cycle {
 
@@ -969,15 +770,7 @@
 
 @media screen and (min-width: 1900px) {
 	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 111rem;
-
 		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
@@ -986,65 +779,35 @@
 	}
 
 	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 111rem;
-
-		background-image: url('../assets/doctor_1280x905.jpg');
+		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 	.mirror-bird-container3 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 111rem;
 		background-image: url('../assets/firefighter_2.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container4 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 111rem;
 		background-image: url('../assets/dancer.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 	.mirror-bird-container5 {
-		z-index: 1;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		min-height: 55rem;
 		background-image: url('../assets/child.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display:none;
 	}
 
@@ -1052,89 +815,46 @@
 
 @media screen and (min-width: 3840px) {
 	.mirror-bird-container {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 180rem;
-
 		background-image: url('../assets/artist.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: flex;
 	}
 	.mirror-bird-container2 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 180rem;
-		background-image: url('../assets/doctor_1280x905.jpg');
+		background-image: url('../assets/doctor.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 
 	.mirror-bird-container3 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 180rem;
-
 		background-image: url('../assets/firefighter_2.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 
 	.mirror-bird-container4 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 180rem;
-
 		background-image: url('../assets/dancer.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 
 	.mirror-bird-container5 {
-		z-index: 3;
-		position: relative;
-		overflow: hidden;
-		
-		align-items: center;
-		justify-content: center;
-		/* // min-height: 100vh; */
 		min-height: 180rem;
-
 		background-image: url('../assets/child.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
-		padding: 2rem;
 		display: none;
 	}
 	
