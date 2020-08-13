@@ -25,7 +25,12 @@ class MirrorBird extends React.Component {
     $('#test2_sq').on('mouseenter', function() {
       var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
       audio.play()
-      $('.mirror-bird-container').addClass('mirror-bird-container_after_hover ')
+      $('.mirror-bird-container2').addClass('mirror-bird-container2_after_hover ')
+    })
+    $('#test3_sq').on('mouseenter', function() {
+      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      audio.play()
+      $('.mirror-bird-container3').addClass('mirror-bird-container3_after_hover ')
     })
 
     $('#wrapper_mirror').one('click', function(e) {
