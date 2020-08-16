@@ -74,7 +74,7 @@ history.listen(location => {
           <Route path="/PeopleAndMask" component={PeopleAndMask} />
           <Route path="/OtherSideOfMask" component={OtherSideOfMask} />
           <Route path="/Mirror" component={Mirror} />
-          <Route path="/SkyV2" component={Sky} />
+          {/*}<Route path="/SkyV2" component={Sky} />*/}
           <Route path="/Sky" component={SkyV1}/>
           <Route path="/IAmDifferent" component={IAmDifferent} />
           <Route path="/IAmDifferentForm" component={IAmDifferentForm}/>

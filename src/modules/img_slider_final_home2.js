@@ -10,6 +10,12 @@ import Sky4 from '../assets/V-Sky4.jpg';
 import Sky5 from '../assets/V-Sky5.jpg';
 import Sky7 from '../assets/V-Sky7.jpg';
 import Sky8 from '../assets/V-Sky8.jpg';
+import Sky9 from '../assets/V2-Sky1.jpg';
+import Sky10 from '../assets/V2-Sky2.jpg';
+import Sky11 from '../assets/V2-Sky3.jpg';
+import Sky12 from '../assets/V2-Sky4.jpg';
+import Sky13 from '../assets/V2-Sky5.jpg';
+import Sky14 from '../assets/V2-Sky6.jpg';
 
 class Slider_home extends React.Component {
     constructor(props) {
@@ -17,7 +23,8 @@ class Slider_home extends React.Component {
 
       this.state = {
         images: [
-            Sky1, Sky3, Sky4, Sky5, Sky7, Sky8
+            Sky1, Sky3, Sky4, Sky5, Sky7, Sky8, Sky9,
+            Sky10, Sky11, Sky12, Sky13, Sky14
         ],
         currentIndex: 0,
         translateValue: 0
@@ -82,7 +89,7 @@ class Slider_home extends React.Component {
           <RightArrow
            goToNextSlide={this.goToNextSlide}
           />
-          <Dots_home slides={this.state.images} activeIndex={this.state.currentIndex}>asd</Dots_home>
+        {/*}<Dots_home slides={this.state.images} activeIndex={this.state.currentIndex}>asd</Dots_home>*/}
 
         </div>
       );

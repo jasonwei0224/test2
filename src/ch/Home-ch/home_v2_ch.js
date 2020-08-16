@@ -101,13 +101,13 @@ const myRef2 = useRef(null)
           <span  ref ={myRef} ><HomeColoredHeader title="我跟你的相同，就是我們都不同"/></span>
           <a href="/Sky-ch"><HoverImage className="home_image" hoverSrc ={sky_home_hover} src={sky_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
           <a href="/IAmDifferent-ch"><HoverImage className="home_image" hoverSrc ={we_are_all_home_hover} src={we_are_all_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
-          <a href=""><HoverImage className="home_image" hoverSrc ={chinese_home_hover} src={chinese_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
-          <a href=""><HoverImage className="home_image" hoverSrc ={mirror_home_hover} src={mirror_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href="/UnbeingChinese-ch"><HoverImage className="home_image" hoverSrc ={chinese_home_hover} src={chinese_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href="/Mirror-ch"><HoverImage className="home_image" hoverSrc ={mirror_home_hover} src={mirror_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
 
         <span  ref ={myRef2} ><HomeColoredHeader2 title="口罩之說 " image={homepage_placeholder_lg}/></span>
-          <a href=""><HoverImage className="home_image" hoverSrc ={otherside_home_hover} src={otherside_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
-          <a href=""><HoverImage className="home_image" hoverSrc ={apple_home_hover} src={apple_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
-          <a href=""><HoverImage className="home_image" hoverSrc ={people_and_mask_hover} src={people_and_mask} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href="/OtherSideOfMask-ch"><HoverImage className="home_image" hoverSrc ={otherside_home_hover} src={otherside_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href="/PaulsApple-ch"><HoverImage className="home_image" hoverSrc ={apple_home_hover} src={apple_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href="/PeopleAndMask-ch"><HoverImage className="home_image" hoverSrc ={people_and_mask_hover} src={people_and_mask} style={{width:'100%', height:"auto"}}></HoverImage></a>
 
           {/*}  <SponsorImgSlider id="sponsorSlider"/>*/}
         </div>
@@ -115,12 +115,12 @@ const myRef2 = useRef(null)
             <HomeColoredHeader title="我跟你的相同，就是我們都不同"/>
             <HomeMobileProject url="/Sky-ch"type="線上互動" title="頭頂同一片天計畫" image={sky_online_mobile}/>
             <HomeMobileProject url="/IAmDifferent-ch" type="線上互動" title="共同面對的我們" image={diff_online_mobile}/>
-            <HomeMobileProject url="" type="數位創作" title="「趣」中國化" image={chinese_mobile}/>
-            <HomeMobileProject url="" type="插畫創作" title="鏡子" image={mirror_mobile}/>
+            <HomeMobileProject url="/UnbeingChinese-ch" type="數位創作" title="「趣」中國化" image={chinese_mobile}/>
+            <HomeMobileProject url="/Mirror-ch" type="插畫創作" title="鏡子" image={mirror_mobile}/>
             <HomeColoredHeader title="口罩之說" image={homepage_placeholder_lg}/>
-            <HomeMobileProject url="" type="數位創作" title="一罩之隔" image={otherside_mobile}/>
-            <HomeMobileProject url="" type="數位創作" title="保羅的蘋果" image={apple_mobile}/>
-            <HomeMobileProject url="" type="素描創作" title="傲慢與偏見"image={mask_mobile}/>
+            <HomeMobileProject url="/OtherSideOfMask-ch" type="數位創作" title="一罩之隔" image={otherside_mobile}/>
+            <HomeMobileProject url="/PaulsApple-ch" type="數位創作" title="保羅的蘋果" image={apple_mobile}/>
+            <HomeMobileProject url="/PeopleAndMask-ch" type="素描創作" title="傲慢與偏見"image={mask_mobile}/>
 
         </div>
           <FooterCH></FooterCH>
