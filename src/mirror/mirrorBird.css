@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+/* @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 
 *,
-*::before,
-*::after {
-	box-sizing: border-box;
 }
+} */
 
 .mirror-bird-container {
 	min-height: 68rem;
-	background-image: url('../assets/artist.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
-
 .mirror-bird-container_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/artist_taiwan_color.jpg') !important;
@@ -21,7 +17,7 @@
 }
 .mirror-bird-container2 {
 	min-height: 68rem;
-	background-image: url('../assets/doctor.jpg');
+	background-image: url('../assets/healthcare\ professional.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
@@ -29,14 +25,14 @@
 }
 .mirror-bird-container2_after_hover {
 	min-height: 68rem;
-	background-image: url('../assets/doctor_1280x905.jpg') !important;
+	background-image: url('../assets/healthcare\ professional-taiwan\ color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
 
 .mirror-bird-container3 {
 	min-height: 68rem;
-	background-image: url('../assets/firefighter_2.jpg');
+	background-image: url('../assets/fireman.jpg');
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
@@ -44,7 +40,7 @@
 }
 .mirror-bird-container3_after_hover {
 	min-height: 68rem;
-	background-image: url('../assets/firefighter_2_hover.jpg') !important;
+	background-image: url('../assets/fireman_taiwan\ color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
@@ -52,13 +48,12 @@
 	min-height: 68rem;
 	background-image: url('../assets/dancer.jpg');
 	background-blend-mode: soft-light;
-	background-size: cover;
 	background-position: center center;
 	display:none;
 }
 .mirror-bird-container4_after_hover {
 	min-height: 68rem;
-	background-image: url('../assets/dancer-taiwan_color.jpg') !important;
+	background-image: url('../assets/dancer-taiwan\ color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
@@ -88,16 +83,10 @@
 
 
 .test1_square {
-	position: absolute;
-	width:30px;
-	height:30px;
-	/* z-index: 4; */
-	top:350px;
-	left:1135px;
+	position: relative;
 	background-color: red;
 }
 .test2_square {
-	position: absolute;
 	width:30px;
 	height:30px;
 	/* z-index: 4; */
@@ -122,6 +111,7 @@
 	top:350px;
 	left:1135px;
 	background-color: red;
+	position: absolute;
 }
 .test5_square {
 	position: absolute;
@@ -133,7 +123,6 @@
 	background-color: red;
 }
 .bird-container--one {
-	position: absolute;
   top: -15%;
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
@@ -158,6 +147,7 @@
 	animation-duration: 15s;
 	animation-delay: 0;
 	animation-fill-mode: forwards;
+	position: absolute;
 	animation-play-state: unset;
 }
 .bird-container--three {
@@ -175,7 +165,6 @@
 	animation-play-state: unset;
 }
 .bird-container--four {
-	position: absolute;
   top: -25%;
 	left: 50%;
 	/* background-color: red; */
@@ -342,7 +331,6 @@
 
 
 	100% {
-		transform: translateY(-35vh) translateX(38vw) scale(0.6);
 	}
 
 }
@@ -468,7 +456,7 @@
 	}
 	.mirror-bird-container2 {
 		min-height: 65rem;
-		background-image: url('../assets/doctor.jpg');
+		background-image: url('../assets/healthcare\ professional.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
@@ -476,7 +464,7 @@
 	}
 	.mirror-bird-container3 {
 		min-height: 55rem;
-		background-image: url('../assets/firefighter_2.jpg');
+		background-image: url('../assets/fireman.jpg');
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
@@ -501,12 +489,11 @@
 	
 	.test1_square {
 		position: absolute;
-		width:30px;
-		height:30px;
-		/* z-index: 4; */
-		top:350px;
-		left:1135px;
-		background-color: red;
+		width:20px;
+		height:40px;
+		bottom:25px;
+		left:85px;
+		background-size: cover;
 	}
 	.test2_square {
 		position: absolute;
@@ -772,7 +759,52 @@
 	}
 }
 
+@media screen and (min-width: 1280px) {
+	.test1_square {
+		position: absolute;
+		width:20px;
+		height:40px;
+		bottom:35px;
+		left:30px;
+		background-size: cover;
+	}
 
+}
+
+@media screen and (min-width: 1366px) {
+	.test1_square {
+		position: absolute;
+		width:20px;
+		height:40px;
+		bottom:35px;
+		left:30px;
+		background-size: cover;
+	}
+
+}
+
+@media screen and (min-width: 1536px) {
+	.test1_square {
+		position: absolute;
+		width:20px;
+		height:40px;
+		bottom:120px;
+		left:85px;
+		background-size: cover;
+	}
+
+}
+@media screen and (min-width: 1600px) {
+	.test1_square {
+		position: absolute;
+		width:20px;
+		height:40px;
+		bottom:170px;
+		left:90px;
+		background-size: cover;
+	}
+
+}
 
 @media screen and (min-width: 1900px) {
 	.mirror-bird-container {
@@ -815,6 +847,14 @@
 		background-size: cover;
 		background-position: center center;
 		display:none;
+	}
+	.test1_square {
+		position: relative;
+		width:30px;
+		height:50px;
+		bottom:400%;
+		left:10%;
+		background-size: cover;
 	}
 
 }
@@ -869,7 +909,7 @@
 		width:30px;
 		height:30px;
 		/* z-index: 4; */
-		top:350px;
+		top:50%;
 		left:1135px;
 		background-color: red;
 	}
