@@ -1,50 +1,61 @@
 import React from 'react';
+import ImgComparison from '../../img_comparison';
+// import { SocialIcon } from 'react-social-icons';
+import ProgramInfo from '../../programInfo';
+// import './pauls_apple-ch.css'
+import {Container, Row, Col} from 'react-bootstrap';
+import MainContents_Middle from "../../modules/MainContents_Middle"
+import MainContents_Important from "../../modules/MainContents_Important"
+import FooterCH from '../footer-ch';
+import Second_Title from "../../modules/Second_Title"
+import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
+import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
+import MobileShareButton from "../../modules/mobileShareButton";
+import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
 import ReactCompareImage from 'react-compare-image';
 import image1 from '../../assets/image1.jpg';
 import image2 from '../../assets/image2.jpg';
-import { Container } from "react-bootstrap";
-import ProgramInfo_ch from "../programInfo-ch";
-import Second_Title from "../../modules/Second_Title"
-import MainContents_First_ch from "../../modules/MainContents_First_ch"
-import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch"
-import MainContents_Important from "../../modules/MainContents_Important"
-import MainContents_Img from "../../modules/MainContents_img"
-import Footer from "../../footer-temp";
-import MobileShareButton from "../../modules/mobileShareButton";
-import Second_TitleCh from "../../modules/Second_TitleCh";
-import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
-import FooterCH from "../footer-ch";
 
 function PaulsApple_ch() {
+  var text =`”我深信自己比周遭的畫家，都要來得有力量。我這可不是隨便說說的，而是出自內心真誠的感受。對我來說，繪畫並不只是要追求外表上的完美畫面而已，而次要透過不段的創作，來表現隱含在完美之後的絕對與真實“ - 截自塞尚寫給母親的信
+
+現代繪畫之父保羅塞尚的靜物畫，創造立體結構與色彩明暗在視覺上的平衡與和諧還有真實。這位藝術家的靜物畫帶給世界如此珍貴的創作，價值連城的藝術品背後，是要我們看見隱含在完美之後的「絕對」與「真實」。
+
+在人類追求名利慾望的同時，自然已在不經意之間失序毀壞，當人們尚未擺脫流行疾病的陰影，盲目的追求與渴望將帶領我們通往何處? 自然中最單純的生態是否還依舊存在？無視蘋果被蟲蛀的現實，忽略帶口罩飲酒的矛盾，人類的生存狀態在經歷大自然的反撲後，汲汲營營的創造文明是否還有意義?
+
+靜物畫的拉丁文原文是：Vanitas，英文是 Vanity，中文為虛榮之意思，學習在多種非母語環境下創作的 Lady Hao Hao 想在大師們的藝術裡看見生存前後反思的意義，「人世既浮誇又短暫，我們，人一生，終有一死」。
+`
     return (
         <div>
-          <Container fluid style={{padding:"0"}}>
-            <ReactCompareImage
-              leftImage={image1}
-              rightImage={image2}
-            />
+            <Container fluid>
 
-            <ProgramInfo_ch
-              subtitle="口罩之說"
-              title="保羅的蘋果"
-              artistName="Lady Hao Hao"
-              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"
-              color="#D9C739"
-            ></ProgramInfo_ch>
+              <ReactCompareImage
+                leftImage={image1}
+                rightImage={image2}
+              />
 
-          <Second_TitleCh secondTitle="About This Work:" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_TitleCh>
-            <MainContents_Important contents="This province's condo insurance market is unhealthy and has saddled owners with sudden increases of an estimated 50 percent in Metro Vancouver, according to a three-month investigation by the B.C. Financial Services Authority."></MainContents_Important>
 
-            <MainContents_First_ch contents="The first lesbian movie I loved was Heavenly Creatures, Peter Jacksonn's sumptuous 1994 fils starring a young Kate Winslet as a dangerously charismatic schoolgirl who enraptures a sallow classmate with her phantasmagoric fantasy world. In the end, they kill the classmate's mother. At age fourteen, that squared with my concept of love: predicated on fantasy, eroticized by power imbalance, likely to end in murder - not so much that of anyone's mother, but more likely of me, by the strength of my own whirling feelings."></MainContents_First_ch>
-            <MainContents_Img src="https://via.placeholder.com/600x300"></MainContents_Img>
-            <MainContents_Middle_ch contents="A year later, it was The Incredibly True Adventures of Two Girls in Love, Maria Maggenti's considerably less gothic tale of high school senior Randy (a young, butch Tina from The L Word), who has been sleeping with an older, married woman when she meets Evie, a rich and popular girl who stops at the gas station where Randy works. The movie ends with the two kissing amid a chaotic muddle of class tension, homophobic friends, and angry parents and school administrators. It was a perfect anthem for me at age fifteen, as I had recently begun making out with my rich best friend and was the only out kid in my high school class."></MainContents_Middle_ch>
-            <MainContents_Img src="https://via.placeholder.com/600x300"></MainContents_Img>
-            <MainContents_Middle_ch contents="After that came Bound, Chasing Amy, All Over Me, High Art, and But I'm a Cheerleader. I watched and re-watched all of these movies because they showed me myself. Not only because I was queer and prone to phantasmagoric imaginings - as well as to listening to Patti Smith on repeat, wearing stilettos, and heroin addicition - but also because they reflected and suggested my vision of love: as sexy and codependent, forged in opposition to some external conflict. It's no surprise that both I and the movies I worshiped relied upon a certain kind of high-femme, drug-addled, ambisexual Riot Grrrl iconography. After all, we grew out of the same '90s post-AIDS homophobia, Cindy Crawford-cum-heroin chic, third-wave feminist stew."></MainContents_Middle_ch>
+           <ProgramInfo
+             id="test"
+             subtitle="口罩之說"
+             title="保羅的蘋果"
+             artistName="創作：Lady Hao Hao"
+             url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
+             color="#D9C739"/>
 
-            <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
-          </Container>
-
-          <FooterCH/>
+             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
+             <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="asdfasdfasdfasdfasdfS"></MainContents_Important_With_Border>
+             <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
+               <MainContents_OneArtistCH src={ladyhaohao} title="Lady Hao Hao" contents="asdf
+                   Despite our geographical differences,
+                   we all look towards that same sky that looms over our heads,asdf
+                   Despite our geographical differences,
+                   we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
+                   together."></MainContents_OneArtistCH>
+                 <div className="people_padding"></div>
+               <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
+               </Container>
+                 <FooterCH></FooterCH>
         </div>
     );
 }
