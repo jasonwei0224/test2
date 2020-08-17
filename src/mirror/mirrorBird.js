@@ -57,18 +57,18 @@ class MirrorBird extends React.Component {
                       setTimeout(function() {
                         e.preventDefault();
                         $('#container_box_bird_66').css({"display":"block"});
-                      }, 4000)
+                      }, 3000) //4000
                     });
 
-                  },3000)
+                  },500) //3000
 
                 });
 
-              }, 4000)
+              }, 500) //4000
             });
-          },4000)
+          },500) //4000
         })
-      }, 5000)
+      }, 500) //5000
     });
   }
 
@@ -90,6 +90,7 @@ class MirrorBird extends React.Component {
     }
   }
   refresh(){
+
     var box2 = document.getElementById("container_box_bird_5");
     box2.style.display="none"
     $('#container_box_bird_6').css({"display":"block"});
@@ -126,26 +127,32 @@ class MirrorBird extends React.Component {
                   setTimeout(function() {
                     e.preventDefault();
                     $('#container_box_bird_9').css({"display":"none"});
+                    $('#container_box_bird_10').css({"display":"block"});
+                    
+                    $('#container_box_bird_10').one('click', function(e) {
+                      $('#box_10').addClass('bird-container bird-container--one')
+                      $('#bird_10').addClass('bird bird--one')
 
-
-                    $('#container_box_bird_5').css({"display":"block"});
+                      setTimeout(function() {
+                        $('#container_box_bird_100').css({"display":"block"});
+                      },3000);
+                    });
 
               
 
-                  },1000)
+                  },1000) //1000
 
                 });
 
-              },3000)
+              },300) //3000
             });
-          },4000)
+          },400) //4000
         })
-      }, 5000)
+      }, 500) //5000
     });
   }
   refresh2(){
     var box2 = document.getElementById("container_box_bird_10");
-
     box2.style.display="none"
     $('#container_box_bird_11').css({"display":"block"});
     $('#wrapper_mirror').one('click', function(e) {
@@ -182,21 +189,7 @@ class MirrorBird extends React.Component {
                     e.preventDefault();
                     $('#container_box_bird_14').css({"display":"none"});
                     $('#container_box_bird_10').css({"display":"block"});
-                    // setTimeout(function() {
-                    //   e.preventDefault();
-                    //   $('#container_box_bird_10').one('click', function(e) {
-                    //     e.preventDefault();
-                    //     $('#box_10').addClass('bird-container bird-container--one')
-                    //     $('#bird_10').addClass('bird bird--one')
-                    //     setTimeout(function() {
-                    //       e.preventDefault();
-                    //      $('#container_box_bird_10').css({"display":"none"});
-                    //       $('#container_box_bird_5').css({"display":"block"});
-                    //       $('#container_box_bird_66').css({'display':'block'});
-
-                    //     }, 3000)
-                    //   })
-                    // },1000)
+           
 
                   },1000)
 
@@ -249,16 +242,19 @@ class MirrorBird extends React.Component {
             <div id="form_mirror">
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <h3>What symbols were common across all pictures? (excluding the pigeon) </h3>
+                      <p style={{"color":"white"}}>What symbols were common across all pictures? (excluding the pigeon) </p>
                   </Col>
               </Row>
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                       <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
                   </Col>
-                  <Button onClick={this.checkAnswer}>Submit</Button>
-                  <h3>Did you miss something? </h3>
-                  <Button onClick={this.refresh}>View the drawings again</Button>
+                  <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                    <Button onClick={this.checkAnswer}>Submit</Button>
+                    <p style={{"color":"white"}}>Did you miss something? </p>
+                    <Button onClick={this.refresh}>View the drawings again</Button>
+                  </Col>
+                  
               </Row>
             </div>
           </div>
@@ -284,9 +280,12 @@ class MirrorBird extends React.Component {
           </div>
         </div>
 
-        <div  id="container_box_bird_10"  className="mirror-bird-container5">
+        <div  id="container_box_bird_10"  className="mirror-bird-container5_after_hover">
+        <div id="box_10">
+            <div id="bird_10"></div>
+          </div>
           <div id="container_box_bird_100">
-            <div id="form_mirror">
+            <div id="form_mirror2">
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                       <h3>What symbols were common across all pictures? (excluding the pigeon) </h3>
@@ -294,7 +293,7 @@ class MirrorBird extends React.Component {
               </Row>
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
+                      <Form.Control id="user_input_mirror2" required size="lg"></Form.Control>
                   </Col>
                   <Button onClick={this.checkAnswer}>Submit</Button>
                   <h3>Did you miss something? </h3>
