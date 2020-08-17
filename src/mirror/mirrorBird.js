@@ -13,9 +13,6 @@ class MirrorBird extends React.Component {
       show:0,
     }
   }
-
-
-
   componentDidMount=() =>{
 
     // $('#test1_sq').on('mouseenter', function() {
@@ -78,7 +75,7 @@ class MirrorBird extends React.Component {
                         $('#container_box_bird_66').css({'display':'block'});
                       })
                     },5000)
-                    
+
                   },5000)
 
                 });
@@ -89,13 +86,78 @@ class MirrorBird extends React.Component {
         })
       }, 5000)
     });
-
   }
+
+
   cancelCourse() {
     var taiwan = document.getElementByClassName("cls-5");
     console.log(taiwan);
     taiwan.addEventListener("mouseover", function( event ) {
       console.log("hovering taiwan");
+    });
+  }
+
+  checkAnswer(){
+    var answer = document.getElementById("user_input_mirror").value;
+    console.log(answer)
+    if(answer.toUpperCase() == "TAIWAN"){
+      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      audio.play()
+    }
+  }
+  refresh(){
+    var box2 = document.getElementById("container_box_bird_66");
+    box2.style.display="none"
+    $('#container_box_bird_1').css({"display":"block"});
+    $('#wrapper_mirror').one('click', function(e) {
+      $('#box_1').addClass('bird-container bird-container--one')
+      $('#bird_1').addClass('bird bird--one')
+      setTimeout(function() {
+        $('#container_box_bird_1').css({"display":"none"});
+        $('#container_box_bird_2').css({"display":"block"});
+
+        $('#container_box_bird_2').one('click', function(e) {
+          e.preventDefault();
+          $('#box_2').addClass('bird-container bird-container--one')
+          $('#bird_2').addClass('bird bird--one')
+
+          setTimeout(function() {
+            $('#container_box_bird_2').css({"display":"none"});
+            $('#container_box_bird_3').css({"display":"block"});
+
+            $('#container_box_bird_3').one('click', function(e) {
+              e.preventDefault();
+              $('#box_3').addClass('bird-container bird-container--one')
+              $('#bird_3').addClass('bird bird--one')
+
+              setTimeout(function() {
+                $('#container_box_bird_3').css({"display":"none"});
+                $('#container_box_bird_4').css({"display":"block"});
+
+                $('#container_box_bird_4').one('click', function(e) {
+                  e.preventDefault();
+                  $('#box_4').addClass('bird-container bird-container--one')
+                  $('#bird_4').addClass('bird bird--one')
+
+                  setTimeout(function() {
+                    $('#container_box_bird_4').css({"display":"none"});
+                    $('#container_box_bird_5').css({"display":"block"});
+                    setTimeout(function() {
+                      $('#container_box_bird_5').one('click', function(e) {
+                        $('#container_box_bird_5').css({"display":"none"});
+                        $('#container_box_bird_66').css({'display':'block'});
+                      })
+                    },5000)
+
+                  },5000)
+
+                });
+
+              }, 5000)
+            });
+          },5000)
+        })
+      }, 5000)
     });
   }
 
@@ -150,9 +212,43 @@ class MirrorBird extends React.Component {
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                   <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
               </Col>
+              <Button onClick={this.checkAnswer}>Submit</Button>
+              <h3>Did you miss something? </h3>
+              <Button onClick={this.refresh}>View the drawings again</Button>
           </Row>
+        </div>
+        </div>
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_1">
+            <div id="bird_1"></div>
           </div>
+          {/* <div class="test5_square" id="test5_sq"></div> */}
+        </div>
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_2">
+            <div id="bird_2"></div>
           </div>
+          {/* <div class="test5_square" id="test5_sq"></div> */}
+        </div>
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_3">
+            <div id="bird_3"></div>
+          </div>
+          {/* <div class="test5_square" id="test5_sq"></div> */}
+        </div>
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_4">
+            <div id="bird_4"></div>
+          </div>
+          {/* <div class="test5_square" id="test5_sq"></div> */}
+        </div>
+        <div id="container_box_bird_5" className="mirror-bird-container5">
+          <div id="box_5">
+            <div id="bird_5"></div>
+          </div>
+          {/* <div class="test5_square" id="test5_sq"></div> */}
+        </div>
+
       </div>
     );
   }
