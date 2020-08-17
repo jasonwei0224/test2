@@ -4,6 +4,25 @@
 }
 } */
 
+body {
+	overflow-x: hidden;
+}
+
+#container_box_bird_66{
+
+	min-height: 68rem;
+ 
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url('../assets/Different.jpg');
+	display: flex;
+	 justify-content: center;
+	display:none;
+	color:black;
+	font-weight:bold
+ }
+
 .mirror-bird-container {
 	min-height: 68rem;
 	background-blend-mode: soft-light;
@@ -82,14 +101,14 @@
 }
 
 
-.test1_square {
+/* .test1_square {
 	position: relative;
 	background-color: red;
 }
 .test2_square {
 	width:30px;
 	height:30px;
-	/* z-index: 4; */
+
 	top:350px;
 	left:1135px;
 	background-color: red;
@@ -98,7 +117,7 @@
 	position: absolute;
 	width:30px;
 	height:30px;
-	/* z-index: 4; */
+
 	top:350px;
 	left:1135px;
 	background-color: red;
@@ -107,7 +126,7 @@
 	position: absolute;
 	width:30px;
 	height:30px;
-	/* z-index: 4; */
+
 	top:350px;
 	left:1135px;
 	background-color: red;
@@ -117,11 +136,11 @@
 	position: absolute;
 	width:30px;
 	height:30px;
-	/* z-index: 4; */
+
 	top:350px;
 	left:1135px;
 	background-color: red;
-}
+} */
 .bird-container--one {
   top: -15%;
 	left: -10%;
@@ -247,7 +266,7 @@
 	}
 
 	100% {
-		transform: translateY(90%) translateX(93vw) scale(0.8);
+		transform: translateY(90%) translateX(150vw) scale(0.8);
 		animation-play-state: paused;
 	}
 
@@ -453,6 +472,7 @@
 		background-blend-mode: soft-light;
 		background-size: cover;
 		background-position: center center;
+		overflow:hidden;
 	}
 	.mirror-bird-container2 {
 		min-height: 65rem;
@@ -487,7 +507,7 @@
 		display:none;
 	}
 	
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:20px;
 		height:40px;
@@ -499,7 +519,7 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
@@ -508,7 +528,7 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
@@ -517,11 +537,11 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
-	}
+	} */
 
 
 	.bird-container--one {
@@ -537,6 +557,7 @@
 		animation-delay: 0;
 		animation-fill-mode: forwards;
 		animation-play-state: unset;
+		
 	}
 	.bird-container--two {
 		position: absolute;
@@ -650,8 +671,9 @@
 		}
 
 		100% {
-			transform: translateY(90%) translateX(93vw) scale(0.8);
+			transform: translateY(90%) translateX(110vw) scale(0.8);
 			animation-play-state: paused;
+			overflow:hidden;
 		}
 
 	}
@@ -760,49 +782,49 @@
 }
 
 @media screen and (min-width: 1280px) {
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:20px;
 		height:40px;
 		bottom:35px;
 		left:30px;
 		background-size: cover;
-	}
+	} */
 
 }
 
 @media screen and (min-width: 1366px) {
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:20px;
 		height:40px;
 		bottom:35px;
 		left:30px;
 		background-size: cover;
-	}
+	} */
 
 }
 
 @media screen and (min-width: 1536px) {
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:20px;
 		height:40px;
 		bottom:120px;
 		left:85px;
 		background-size: cover;
-	}
+	} */
 
 }
 @media screen and (min-width: 1600px) {
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:20px;
 		height:40px;
 		bottom:170px;
 		left:90px;
 		background-size: cover;
-	}
+	} */
 
 }
 
@@ -848,14 +870,14 @@
 		background-position: center center;
 		display:none;
 	}
-	.test1_square {
+	/* .test1_square {
 		position: relative;
 		width:30px;
 		height:50px;
 		bottom:400%;
 		left:10%;
 		background-size: cover;
-	}
+	} */
 
 }
 
@@ -904,11 +926,11 @@
 		display: none;
 	}
 	
-	.test1_square {
+	/* .test1_square {
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:50%;
 		left:1135px;
 		background-color: red;
@@ -917,7 +939,7 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
@@ -926,7 +948,7 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
@@ -935,11 +957,11 @@
 		position: absolute;
 		width:30px;
 		height:30px;
-		/* z-index: 4; */
+
 		top:350px;
 		left:1135px;
 		background-color: red;
-	}
+	} */
 
 	.bird-container--one {
 		position: absolute;
