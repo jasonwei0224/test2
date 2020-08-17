@@ -416,8 +416,6 @@ body {
 	   display:none;
 	}
 
-
-
 	.bird-container--one {
 	   position: absolute;
 	  top: 25%;
@@ -509,7 +507,7 @@ body {
 	@keyframes fly-cycle {
 
 	   100% {
-		  background-position: -900px 0;
+		 background-position: -900px 0;
 	   }
 
 	}
@@ -517,106 +515,106 @@ body {
 	@keyframes fly-right-one {
 
 	   0% {
-		  transform: translateY(2vh) translateX(-10vw) scale(2.0);
+		 transform: translateY(2vh) translateX(-10vw) scale(2.0);
 	   }
 
 	   10% {
-		  transform: translateY(2vh) translateX(10vw) scale(2.0);
+		 transform: translateY(2vh) translateX(10vw) scale(2.0);
 	   }
 
 	   20% {
-		  transform: translateY(5vh) translateX(20vw) scale(1.5);
+		 transform: translateY(5vh) translateX(20vw) scale(1.5);
 	   }
 
 	   30% {
-		  transform: translateY(10vh) translateX(30vw) scale(1.0);
+		 transform: translateY(10vh) translateX(30vw) scale(1.0);
 	   }
 
 	   40% {
-		  transform: translateY(20vh) translateX(40vw) scale(0.6);
+		 transform: translateY(20vh) translateX(40vw) scale(0.6);
 	   }
 
 	   50% {
-		  transform: translateY(35vh) translateX(50vw) scale(0.6);
+		 transform: translateY(35vh) translateX(50vw) scale(0.6);
 	   }
 
 	   60% {
-		  transform: translateY(40vh) translateX(60vw) scale(0.6);
+		 transform: translateY(40vh) translateX(60vw) scale(0.6);
 	   }
 
 	   100% {
-		  transform: translateY(90%) translateX(110vw) scale(0.8);
-		  animation-play-state: paused;
-		  overflow:hidden;
+		 transform: translateY(90%) translateX(110vw) scale(0.8);
+		 animation-play-state: paused;
+		 overflow:hidden;
 	   }
 
 	}
 	@keyframes fly-right-two {
 
 	   0% {
-		  transform: scale(0.6) translateX(63vw) translateY(75vh);
+		 transform: scale(0.6) translateX(63vw) translateY(75vh);
 	   }
 
 
 
 	   30% {
-		  transform: translateY(35vh) translateX(70vw) scale(0.6);
+		 transform: translateY(35vh) translateX(70vw) scale(0.6);
 	   }
 
 
 	   100% {
-		  transform: translateY(50vh) translateX(100vw) scale(0.5);
+		 transform: translateY(50vh) translateX(100vw) scale(0.5);
 	   }
 
 	}
 	@keyframes fly-right-three {
 
 	   0% {
-		  transform: translateY(2vh) translateX(-10vw) scale(2.0);
+		 transform: translateY(2vh) translateX(-10vw) scale(2.0);
 	   }
 
 	   10% {
-		  transform: translateY(2vh) translateX(10vw) scale(2.0);
+		 transform: translateY(2vh) translateX(10vw) scale(2.0);
 	   }
 
 	   20% {
-		  transform: translateY(5vh) translateX(20vw) scale(1.5);
+		 transform: translateY(5vh) translateX(20vw) scale(1.5);
 	   }
 
 	   30% {
-		  transform: translateY(10vh) translateX(30vw) scale(1.0);
+		 transform: translateY(10vh) translateX(30vw) scale(1.0);
 	   }
 
 	   40% {
-		  transform: translateY(20vh) translateX(40vw) scale(0.6);
+		 transform: translateY(20vh) translateX(40vw) scale(0.6);
 	   }
 
 	   50% {
-		  transform: translateY(35vh) translateX(50vw) scale(0.6);
+		 transform: translateY(35vh) translateX(50vw) scale(0.6);
 	   }
 
 	   60% {
-		  transform: translateY(40vh) translateX(60vw) scale(0.6);
+		 transform: translateY(40vh) translateX(60vw) scale(0.6);
 	   }
 
 	   100% {
-		  transform: translateY(90%) translateX(93vw) scale(0.8);
-		  animation-play-state: paused;
+		 transform: translateY(90%) translateX(93vw) scale(0.8);
+		 animation-play-state: paused;
 	   }
 
 	}
 	@keyframes fly-right-four {
 
 	   0% {
-		  transform: scale(0.6) translateX(63vw) translateY(75vh);
+		 transform: scale(0.6) translateX(63vw) translateY(75vh);
 	   }
 	   30% {
-		  transform: translateY(35vh) translateX(70vw) scale(0.6);
+		 transform: translateY(35vh) translateX(70vw) scale(0.6);
 	   }
 
 
 	   100% {
-		  transform: translateY(50vh) translateX(100vw) scale(0.5);
+		 transform: translateY(50vh) translateX(100vw) scale(0.5);
 	   }
 
 	}
@@ -624,36 +622,36 @@ body {
 	@keyframes fly-right-five {
 
 	   0% {
-		  transform: scale(0.3) translateX(0vw);
+		 transform: scale(0.3) translateX(0vw);
 	   }
 
 	   50% {
-		  transform: translateY(-10vh) translateX(20vw) scale(0.6);
+		 transform: translateY(-10vh) translateX(20vw) scale(0.6);
 	   }
 
 
 	   100% {
-		  transform: translateY(-35vh) translateX(38vw) scale(0.6);
+		 transform: translateY(-35vh) translateX(38vw) scale(0.6);
 	   }
 
 	}
 	@keyframes fly-right-six {
 
 	   0% {
-		  transform: scale(0.3) translateX(0vw);
+		 transform: scale(0.3) translateX(0vw);
 	   }
 
 	   50% {
-		  transform: translateY(10vh) translateX(50vw) scale(0.6);
+		 transform: translateY(10vh) translateX(50vw) scale(0.6);
 	   }
 
 
 	   100% {
-		  transform: translateY(35vh) translateX(100vw) scale(0.6);
-		  animation-play-state: paused;
+		 transform: translateY(35vh) translateX(100vw) scale(0.6);
+		 animation-play-state: paused;
 	   }
 	}
- }
+  }
 
 /*
  @media screen and (min-width: 1900px) {

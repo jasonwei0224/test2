@@ -93,7 +93,7 @@ class MirrorBird extends React.Component {
     var box2 = document.getElementById("container_box_bird_5");
     box2.style.display="none"
     $('#container_box_bird_6').css({"display":"block"});
-    $('#wrapper_mirror').one('click', function(e) {
+    $('#container_box_bird_6').one('click', function(e) {
       $('#box_6').addClass('bird-container bird-container--one')
       $('#bird_6').addClass('bird bird--one')
       setTimeout(function() {
@@ -126,22 +126,11 @@ class MirrorBird extends React.Component {
                   setTimeout(function() {
                     e.preventDefault();
                     $('#container_box_bird_9').css({"display":"none"});
-                    $('#container_box_bird_10').css({"display":"block"});
-                    // setTimeout(function() {
-                    //   e.preventDefault();
-                    //   $('#container_box_bird_10').one('click', function(e) {
-                    //     e.preventDefault();
-                    //     $('#box_10').addClass('bird-container bird-container--one')
-                    //     $('#bird_10').addClass('bird bird--one')
-                    //     setTimeout(function() {
-                    //       e.preventDefault();
-                    //      $('#container_box_bird_10').css({"display":"none"});
-                    //       $('#container_box_bird_5').css({"display":"block"});
-                    //       $('#container_box_bird_66').css({'display':'block'});
 
-                    //     }, 3000)
-                    //   })
-                    // },1000)
+
+                    $('#container_box_bird_5').css({"display":"block"});
+
+              
 
                   },1000)
 
