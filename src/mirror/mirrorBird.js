@@ -57,18 +57,18 @@ class MirrorBird extends React.Component {
                       setTimeout(function() {
                         e.preventDefault();
                         $('#container_box_bird_66').css({"display":"block"});
-                      }, 5000)
+                      }, 4000)
                     });
 
-                  },1000)
+                  },3000)
 
                 });
 
-              }, 1000)
+              }, 4000)
             });
-          },1000)
+          },4000)
         })
-      }, 1000)
+      }, 5000)
     });
   }
 
@@ -126,13 +126,13 @@ class MirrorBird extends React.Component {
                   setTimeout(function() {
                     e.preventDefault();
                     $('#container_box_bird_9').css({"display":"none"});
-                    $('#container_box_bird_5').css({"display":"block"});
+                    $('#container_box_bird_10').css({"display":"block"});
                     // setTimeout(function() {
                     //   e.preventDefault();
                     //   $('#container_box_bird_10').one('click', function(e) {
                     //     e.preventDefault();
                     //     $('#box_10').addClass('bird-container bird-container--one')
-                    //     $('#bird_10').addClass('bird bird--one')                        
+                    //     $('#bird_10').addClass('bird bird--one')
                     //     setTimeout(function() {
                     //       e.preventDefault();
                     //      $('#container_box_bird_10').css({"display":"none"});
@@ -147,13 +147,80 @@ class MirrorBird extends React.Component {
 
                 });
 
-              }, 1000)
+              },3000)
             });
-          },1000)
+          },4000)
         })
-      }, 1000)
+      }, 5000)
     });
   }
+  refresh2(){
+    var box2 = document.getElementById("container_box_bird_10");
+
+    box2.style.display="none"
+    $('#container_box_bird_11').css({"display":"block"});
+    $('#wrapper_mirror').one('click', function(e) {
+      $('#box_11').addClass('bird-container bird-container--one')
+      $('#bird_11').addClass('bird bird--one')
+      setTimeout(function() {
+        $('#container_box_bird_11').css({"display":"none"});
+        $('#container_box_bird_12').css({"display":"block"});
+
+        $('#container_box_bird_12').one('click', function(e) {
+          e.preventDefault();
+          $('#box_12').addClass('bird-container bird-container--one')
+          $('#bird_12').addClass('bird bird--one')
+
+          setTimeout(function() {
+            $('#container_box_bird_12').css({"display":"none"});
+            $('#container_box_bird_13').css({"display":"block"});
+
+            $('#container_box_bird_13').one('click', function(e) {
+              e.preventDefault();
+              $('#box_13').addClass('bird-container bird-container--one')
+              $('#bird_13').addClass('bird bird--one')
+
+              setTimeout(function() {
+                $('#container_box_bird_13').css({"display":"none"});
+                $('#container_box_bird_14').css({"display":"block"});
+
+                $('#container_box_bird_14').one('click', function(e) {
+                  e.preventDefault();
+                  $('#box_14').addClass('bird-container bird-container--one')
+                  $('#bird_14').addClass('bird bird--one')
+
+                  setTimeout(function() {
+                    e.preventDefault();
+                    $('#container_box_bird_14').css({"display":"none"});
+                    $('#container_box_bird_10').css({"display":"block"});
+                    // setTimeout(function() {
+                    //   e.preventDefault();
+                    //   $('#container_box_bird_10').one('click', function(e) {
+                    //     e.preventDefault();
+                    //     $('#box_10').addClass('bird-container bird-container--one')
+                    //     $('#bird_10').addClass('bird bird--one')
+                    //     setTimeout(function() {
+                    //       e.preventDefault();
+                    //      $('#container_box_bird_10').css({"display":"none"});
+                    //       $('#container_box_bird_5').css({"display":"block"});
+                    //       $('#container_box_bird_66').css({'display':'block'});
+
+                    //     }, 3000)
+                    //   })
+                    // },1000)
+
+                  },1000)
+
+                });
+
+              },3000)
+            });
+          },4000)
+        })
+      }, 5000)
+    });
+  }
+
 
   render(){
 
@@ -206,12 +273,7 @@ class MirrorBird extends React.Component {
               </Row>
             </div>
           </div>
-        
-        </div>
-
-       
-
-
+              </div>
         <div id="container_box_bird_6" className="mirror-bird-container_after_hover">
           <div id="box_6">
             <div id="bird_6"></div>
@@ -232,12 +294,10 @@ class MirrorBird extends React.Component {
             <div id="bird_9"></div>
           </div>
         </div>
-        <div id="container_box_bird_10" className="mirror-bird-container5">
-          <div id="box_10">
-            <div id="bird_10"></div>
-          </div>
-          <div id="container_box_bird_11">
-            <div id="form_mirror2">
+
+        <div  id="container_box_bird_10"  className="mirror-bird-container5">
+          <div id="container_box_bird_100">
+            <div id="form_mirror">
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                       <h3>What symbols were common across all pictures? (excluding the pigeon) </h3>
@@ -245,13 +305,34 @@ class MirrorBird extends React.Component {
               </Row>
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <Form.Control id="user_input_mirror2" required size="lg"></Form.Control>
+                      <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
                   </Col>
                   <Button onClick={this.checkAnswer}>Submit</Button>
                   <h3>Did you miss something? </h3>
-                  <Button onClick={this.refresh}>View the drawings again</Button>
+                  <Button onClick={this.refresh2}>View the drawings again</Button>
               </Row>
             </div>
+          </div>
+        </div>
+
+        <div id="container_box_bird_11" className="mirror-bird-container_after_hover">
+          <div id="box_11">
+            <div id="bird_11"></div>
+          </div>
+        </div>
+        <div id="container_box_bird_12" className="mirror-bird-container2_after_hover">
+          <div id="box_12">
+            <div id="bird_12"></div>
+          </div>
+        </div>
+        <div id="container_box_bird_13" className="mirror-bird-container3_after_hover">
+          <div id="box_13">
+            <div id="bird_13"></div>
+          </div>
+        </div>
+        <div id="container_box_bird_14" className="mirror-bird-container4_after_hover">
+          <div id="box_14">
+            <div id="bird_14"></div>
           </div>
         </div>
 
