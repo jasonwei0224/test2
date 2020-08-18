@@ -123,6 +123,24 @@ body {
 	display:none;
 		background-repeat: no-repeat;
  }
+ .mirror-bird-container15{
+  min-height: 55rem;
+  background-image: url('../assets/child.jpg') !important;
+  background-blend-mode: soft-light;
+  background-size: contain;
+  display:none;
+ 	 background-repeat: no-repeat;
+ }
+ .mirror-bird-container15_after_hover{
+  min-height: 55rem;
+  background-image: url('../assets/child_taiwan_color.jpg') !important;
+  background-blend-mode: soft-light;
+  background-size: contain;
+  display:none;
+ 	 background-repeat: no-repeat;
+ }
+
+
 
 
  .bird {
@@ -292,6 +310,22 @@ body {
 		background-size: contain;
 		display:none;
 	 }
+	 .mirror-bird-container15{
+		min-height: 900px;
+		background-image: url('../assets/child_taiwan_color.jpg') !important;
+		background-blend-mode: soft-light;
+		background-size: contain;
+		display:none;
+			background-repeat: no-repeat;
+	 }
+	 .mirror-bird-container15_after_hover{
+		min-height: 900px;
+	  background-image: url('../assets/child_taiwan_color.jpg') !important;
+	  background-blend-mode: soft-light;
+	  background-size: contain;
+	  display:none;
+	 	 background-repeat: no-repeat;
+	 }
 	 #container_box_bird_100{
  	width:600px;
  	height:300px;
@@ -393,7 +427,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			min-height: 1000px;
 		 }
-
+		 .mirror-bird-container15{
+			min-height: 1000px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1000px;
+		}
 		.bird-container--one {
 		   position: absolute;
 		  top: 25%;
@@ -445,7 +484,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1050px;
 		 }
-
+		 .mirror-bird-container15{
+			min-height: 1050px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1050px;
+		}
 		.bird-container--one {
 		   position: absolute;
 		  top: 25%;
@@ -497,6 +541,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1100px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1100px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1100px;
+		}
 		 #container_box_bird_100{
 		 width:800px;
 		 height:300px;
@@ -536,6 +586,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1200px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1200px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1200px;
+		}
 		 #container_box_bird_100{
 		 width:800px;
 		 height:300px;
@@ -574,6 +630,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1200px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1200px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1200px;
+		}
 		 #container_box_bird_100{
 			width:900px;
 			height:300px;
@@ -612,6 +674,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1300px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1300px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1300px;
+		}
 		 #container_box_bird_100{
 			width:900px;
 			height:300px;
@@ -688,6 +756,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1500px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1500px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1500px;
+		}
 		 #container_box_bird_100{
 			width:900px;
 			height:300px;
@@ -726,6 +800,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1600px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1600px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1600px;
+		}
 		 #container_box_bird_100{
 			width:1000px;
 			height:300px;
@@ -764,6 +844,12 @@ body {
 		.mirror-bird-container5_after_hover {
 				min-height: 1700px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1700px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1700px;
+		}
 		 #container_box_bird_100{
 			width:1000px;
 			height:300px;
@@ -802,6 +888,12 @@ body {
 		.mirror-bird-container5_after_hover {
 				min-height: 1900px;
 		 }
+		 .mirror-bird-container15{
+			min-height: 1900px;
+		 }
+		 .mirror-bird-container15_after_hover{
+		 min-height: 1900px;
+		}
 		 #container_box_bird_100{
 			width:1000px;
 			height:300px;
