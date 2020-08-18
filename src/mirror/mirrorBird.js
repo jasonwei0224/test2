@@ -57,18 +57,18 @@ class MirrorBird extends React.Component {
                       setTimeout(function() {
                         e.preventDefault();
                         $('#container_box_bird_66').css({"display":"block"});
-                      }, 3000) //4000
+                      }, 4000) //4000
                     });
 
-                  },500) //3000
+                  },3000) //3000
 
                 });
 
-              }, 500) //4000
+              }, 4000) //4000
             });
-          },500) //4000
+          },400) //4000
         })
-      }, 500) //5000
+      }, 5000) //5000
     });
   }
 
@@ -128,7 +128,7 @@ class MirrorBird extends React.Component {
                     e.preventDefault();
                     $('#container_box_bird_9').css({"display":"none"});
                     $('#container_box_bird_10').css({"display":"block"});
-                    
+
                     $('#container_box_bird_10').one('click', function(e) {
                       $('#box_10').addClass('bird-container bird-container--one')
                       $('#bird_10').addClass('bird bird--one')
@@ -138,17 +138,17 @@ class MirrorBird extends React.Component {
                       },3000);
                     });
 
-              
+
 
                   },1000) //1000
 
                 });
 
-              },300) //3000
+              },3000) //3000
             });
-          },400) //4000
+          },4000) //4000
         })
-      }, 500) //5000
+      }, 5000) //5000
     });
   }
   refresh2(){
@@ -189,7 +189,7 @@ class MirrorBird extends React.Component {
                     e.preventDefault();
                     $('#container_box_bird_14').css({"display":"none"});
                     $('#container_box_bird_10').css({"display":"block"});
-           
+
 
                   },1000)
 
@@ -242,7 +242,9 @@ class MirrorBird extends React.Component {
             <div id="form_mirror">
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <p style={{"color":"white"}}>What symbols were common across all pictures? (excluding the pigeon) </p>
+                      <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                        Other than the pigeon, what is an image that has always been there?
+                        Try again if you have overlooked it.</p>
                   </Col>
               </Row>
               <Row>
@@ -251,10 +253,10 @@ class MirrorBird extends React.Component {
                   </Col>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                     <Button onClick={this.checkAnswer}>Submit</Button>
-                    <p style={{"color":"white"}}>Did you miss something? </p>
+                  {/*}  <p style={{"color":"white"}}>Did you miss something? </p>*/}
                     <Button onClick={this.refresh}>View the drawings again</Button>
                   </Col>
-                  
+
               </Row>
             </div>
           </div>
@@ -287,17 +289,21 @@ class MirrorBird extends React.Component {
           <div id="container_box_bird_100">
             <div id="form_mirror2">
               <Row>
-                  <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <h3>What symbols were common across all pictures? (excluding the pigeon) </h3>
-                  </Col>
-              </Row>
-              <Row>
-                  <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <Form.Control id="user_input_mirror2" required size="lg"></Form.Control>
-                  </Col>
+                <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                    <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                      Other than the pigeon, what is an image that has always been there?
+                      Try again if you have overlooked it. </p>
+                </Col>
+            </Row>
+            <Row>
+                <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                    <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
+                </Col>
+                <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                   <Button onClick={this.checkAnswer}>Submit</Button>
-                  <h3>Did you miss something? </h3>
+                  {/*}<p style={{"color":"white"}}>Did you miss something? </p>*/}
                   <Button onClick={this.refresh2}>View the drawings again</Button>
+                </Col>
               </Row>
             </div>
           </div>
