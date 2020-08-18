@@ -40,6 +40,13 @@ class Mirror extends Component {
 
 但是，若人們選擇正視汪洋中的孤島，將獲得初探世外桃源般的驚豔：島嶼有它遺世獨立的美麗，有著溫暖的人情感動，島上人們懷抱與世界連結的渴望之心！是時候，該停下來問自己，我們是否遺忘了什麼?
 `
+
+var artistTxt= `專精紙藝藝術多年，跳脫傳統繁複的結構設計，保持紙雕的精緻，融入創意的巧思。近來以策展形式呈現全台各地友善小農的深度土地故事，以及食品與天然環境之間的關係，期望帶動更多人用吃的行為創造更大的影響力。
+
+創作的過程裡，曾運用立體隧道書的概念呈現一條返鄉的路，探討自己、自然和塵土之間的關係。重返自己的故鄉貢寮，曾以創作響應世界糧食日、地球公民基金會等活動，試圖以設計藝術專長讓社會更好，相聚所有人的力量一起發聲。
+
+在創作裡不難看見，她熱愛的台灣一直深深地影響著她，並且被她重視著。台灣、加拿大與她之間越來越多的重疊與相似，都讓她更容易用創作為兩個國度找到一個美麗的對話共同表達。
+`
 var images = [slide1, slide2, slide3, slide4, slide10]
         return (
             <div className='mirror'>
@@ -59,12 +66,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtistCH src={mina} title="盧妍均" contents="asdf
-                  Despite our geographical differences,
-                  we all look towards that same sky that looms over our heads,asdf
-                  Despite our geographical differences,
-                  we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-                  together."></MainContents_OneArtistCH>
+              <MainContents_OneArtistCH src={mina} title="盧妍均" contents={artistTxt}></MainContents_OneArtistCH>
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>

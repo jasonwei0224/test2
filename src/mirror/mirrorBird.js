@@ -97,12 +97,14 @@ class MirrorBird extends React.Component {
     var answer = document.getElementById("user_input_mirror").value;
     console.log(answer)
     if(answer.toUpperCase() == "TAIWAN"){
-      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      var audio=new Audio('./猜對音效.mp3');
       audio.play()
     }else{
       document.getElementById("button_mirror1").style.backgroundColor = "red";
       document.getElementById("button_mirror2").style.backgroundColor = "red";
       document.getElementById("button_mirror3").style.backgroundColor = "red";
+      var audio=new Audio('./猜錯音效.mp3');
+      audio.play()
       for(var i = 0; i <200; i++){
         document.getElementById("button_mirror1").style.backgroundColor = "red";
         document.getElementById("button_mirror2").style.backgroundColor = "red";
@@ -265,7 +267,7 @@ class MirrorBird extends React.Component {
 
         <div id="container_box_bird_1" className="mirror-bird-container">
           <img id="pointerDiv" src={mouseClick}></img>
-          
+
           <div id="box_1">
             <div id="bird_1"></div>
           </div>
