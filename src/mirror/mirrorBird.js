@@ -4,6 +4,7 @@ import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
 import pigeon from "../assets/pigeon_stop.svg";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import mouseClick from '../../src/assets/mouseClick.gif'
 
 class MirrorBird extends React.Component {
   constructor(props) {
@@ -263,6 +264,8 @@ class MirrorBird extends React.Component {
       <div id="wrapper_mirror" >
 
         <div id="container_box_bird_1" className="mirror-bird-container">
+          <img id="pointerDiv" src={mouseClick}></img>
+          
           <div id="box_1">
             <div id="bird_1"></div>
           </div>
