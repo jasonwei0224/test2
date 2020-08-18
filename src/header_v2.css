@@ -384,7 +384,7 @@ img.langIconCh-v2{
 div.ml-auto{
   text-align: right;
   align-items: center!important;
-  margin-left: 50% !important;
+  margin-left: 30% !important;
 }
 #logo{
   display: none;
@@ -433,13 +433,13 @@ div.dropdown-menu.show{
 
 }
 img.langIcon-v2{
-  width:70%;
+  width:50%;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
 }
 img.langIconCh-v2{
-  width:70%;
+  width:50%;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
@@ -464,7 +464,7 @@ img.langIconCh-v2{
   div.ml-auto{
     text-align: right;
     align-items: center!important;
-    margin-left: 70% !important;
+    margin-left: 60% !important;
   }
   #responsive-navbar-nav{
     margin-top:50px;
