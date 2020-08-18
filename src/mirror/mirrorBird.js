@@ -4,6 +4,7 @@ import $ from "jquery";
 // window.$ = window.jQuery = jQuery;
 import pigeon from "../assets/pigeon_stop.svg";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import mouseClick from '../../src/assets/mouseClick.gif'
 
 class MirrorBird extends React.Component {
   constructor(props) {
@@ -65,19 +66,19 @@ class MirrorBird extends React.Component {
                           $('#bird_5').addClass('bird bird--one')
                               setTimeout(function() {
                                 $('#container_box_bird_66').css({"display":"block"});
-                              },4000);
+                              },4000);//4000
 
                             });
                       }, 4000) //4000
                     });
 
-                  },3000) //3000
+                  },4000) //3000
 
                 });
 
               }, 4000) //4000
             });
-          },400) //4000
+          },4000) //4000
         })
       }, 5000) //5000
     });
@@ -175,13 +176,13 @@ class MirrorBird extends React.Component {
                   }, 4000) //4000
                 });
 
-              },3000) //3000
+              },4000) //3000
 
             });
 
           }, 4000) //4000
         });
-      },400) //4000
+      },4000) //4000
       })
       }, 5000) //5000
       });
@@ -240,13 +241,13 @@ class MirrorBird extends React.Component {
                           $('#container_box_bird_102').css({"display":"block"});
                         },4000);
                       });
-                    }, 1000);
+                    }, 4000);
                     });
-                  },1000)
+                  },4000)
 
                 });
 
-              },3000)
+              },4000)
             });
           },4000)
         })
@@ -263,6 +264,8 @@ class MirrorBird extends React.Component {
       <div id="wrapper_mirror" >
 
         <div id="container_box_bird_1" className="mirror-bird-container">
+          <img id="pointerDiv" src={mouseClick}></img>
+          
           <div id="box_1">
             <div id="bird_1"></div>
           </div>

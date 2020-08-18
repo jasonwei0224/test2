@@ -2,6 +2,12 @@ body {
 	overflow-x: hidden;
  }
 
+ #pointerDiv {
+	 position:relative;
+	 left:50%;
+	 margin-top:35%; 
+ }
+
  #container_box_bird_66{
 	width:500px;
 	height:300px;
@@ -10,7 +16,7 @@ body {
 	font-weight:bold;
 	position:relative;
 	top:200px;
-	left:900px;
+	left:700px;
 	display: none;
   }
   #container_box_bird_100{
@@ -21,7 +27,18 @@ body {
 	font-weight:bold;
 	position:relative;
 	top:200px;
-	left:900px;
+	left:700px;
+	display: none;
+  }
+  #container_box_bird_102{
+	width:500px;
+	height:300px;
+	justify-content: center;
+	color:black;
+	font-weight:bold;
+	position:relative;
+	top:200px;
+	left:700px;
 	display: none;
   }
 	#container_box_bird_1000{
@@ -41,13 +58,15 @@ body {
 	background-blend-mode: soft-light;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/artist_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: contain;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container2 {
 	min-height: 68rem;
@@ -56,14 +75,16 @@ body {
 	background-size: contain;
 	background-position: center center;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container2_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/healthcare_professional_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: contain;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
 
  .mirror-bird-container3 {
@@ -73,14 +94,15 @@ body {
 	background-size: contain;
 	background-position: center center;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
  }
  .mirror-bird-container3_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/fireman_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: contain;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container4 {
 	min-height: 68rem;
@@ -88,14 +110,16 @@ body {
 	background-blend-mode: soft-light;
 	background-position: center center;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+
  }
  .mirror-bird-container4_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/dancer-taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
 	background-size: contain;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
 
  .mirror-bird-container5 {
@@ -105,7 +129,7 @@ body {
 	background-size: contain;
 	background-position: center center;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
  }
  .mirror-bird-container5_after_hover {
 	min-height: 55rem;
@@ -113,7 +137,8 @@ body {
 	background-blend-mode: soft-light;
 	background-size: contain;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container5_after_hover2 {
 	min-height: 55rem;
@@ -121,27 +146,27 @@ body {
 	background-blend-mode: soft-light;
 	background-size: contain;
 	display:none;
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center;
  }
  .mirror-bird-container15{
-  min-height: 55rem;
-  background-image: url('../assets/child.jpg') !important;
-  background-blend-mode: soft-light;
-  background-size: contain;
-  display:none;
- 	 background-repeat: no-repeat;
+	min-height: 55rem;
+	background-image: url('../assets/child.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: contain;
+	display:none;
+	background-repeat: no-repeat;	
+	background-position:center;
  }
  .mirror-bird-container15_after_hover{
-  min-height: 55rem;
-  background-image: url('../assets/child_taiwan_color.jpg') !important;
-  background-blend-mode: soft-light;
-  background-size: contain;
-  display:none;
- 	 background-repeat: no-repeat;
+	min-height: 55rem;
+	background-image: url('../assets/child_taiwan_color.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: contain;
+	display:none;
+	  background-repeat: no-repeat;
+	  background-position:center;
  }
-
-
-
 
  .bird {
 	  background-image: url(../assets/pigeon4.svg);
@@ -327,17 +352,18 @@ body {
 	 	 background-repeat: no-repeat;
 	 }
 	 #container_box_bird_100{
- 	width:600px;
- 	height:300px;
- 	top:200px;
- 	left:600px;
-  }
-	/* #container_box_bird_101{
- width:600px;
- height:300px;
- top:200px;
- left:600px;
- } */
+		width:600px;
+		height:300px;
+		top:200px;
+		left:600px;
+	}
+	#container_box_bird_102{
+		width:600px;
+		height:300px;
+		top:200px;
+		left:600px;
+	}
+
 	.bird-container--one {
 	   position: absolute;
 	  top: 25%;
@@ -431,7 +457,7 @@ body {
 			min-height: 1000px;
 		 }
 		 .mirror-bird-container15_after_hover{
-		 min-height: 1000px;
+			min-height: 1000px;
 		}
 		.bird-container--one {
 		   position: absolute;
@@ -446,13 +472,25 @@ body {
 		   animation-fill-mode: forwards;
 		   animation-play-state: unset;
 		}
-		#container_box_bird_100{
-		width:700px;
-		height:300px;
-		top:250px;
-		left:600px;
-	 }
+		#container_box_bird_66{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:700px;
 		}
+		#container_box_bird_100{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:700px;
+		}
+		#container_box_bird_102{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:700px;
+		}
+	}
 	@media screen and (min-width: 1400px) {
 		.mirror-bird-container {
 		   min-height: 1050px;
@@ -503,12 +541,24 @@ body {
 		   animation-fill-mode: forwards;
 		   animation-play-state: unset;
 		}
+		#container_box_bird_66{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:800px;
+		}
 		#container_box_bird_100{
-		width:800px;
-		height:300px;
-		top:250px;
-		left:700px;
-	 }
+			width:500px;
+			height:300px;
+			top:250px;
+			left:800px;
+		}
+		#container_box_bird_102{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:800px;
+		}
   }
   @media screen and (min-width: 1500px) {
 		.mirror-bird-container {
@@ -547,12 +597,24 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1100px;
 		}
+		#container_box_bird_66{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:850px;
+		   }
 		 #container_box_bird_100{
-		 width:800px;
-		 height:300px;
-		 top:300px;
-		 left:800px;
+			width:500px;
+			height:300px;
+			top:250px;
+			left:850px;
 		}
+		#container_box_bird_102{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:850px;
+		   }
   }
 
   @media screen and (min-width: 1600px) {
@@ -592,11 +654,23 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1200px;
 		}
-		 #container_box_bird_100{
-		 width:800px;
-		 height:300px;
-		 top:300px;
-		 left:800px;
+		#container_box_bird_66{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:900px;
+		   }
+		#container_box_bird_100{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:900px;
+		}
+		#container_box_bird_102{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:900px;
 		}
   }
   @media screen and (min-width: 1700px) {
@@ -636,12 +710,24 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1200px;
 		}
-		 #container_box_bird_100{
-			width:900px;
+		#container_box_bird_66{
+			width:500px;
 			height:300px;
-			top:300px;
-			left:900px;
-		 }
+			top:250px;
+			left:1000px;
+		   }
+		#container_box_bird_100{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:1000px;
+		}
+		#container_box_bird_102{
+			width:500px;
+			height:300px;
+			top:250px;
+			left:1000px;
+		}
   }
   @media screen and (min-width: 1800px) {
 		.mirror-bird-container {
@@ -680,11 +766,23 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1300px;
 		}
-		 #container_box_bird_100{
-			width:900px;
+		#container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:400px;
-			left:900px;
+			top:250px;
+			left:1000px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1000px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1000px;
 		 }
   }
   @media screen and (min-width: 1900px) {
@@ -718,16 +816,29 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1400px;
 		 }
-		 #container_box_bird_100{
-			width:900px;
+		 #container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:400px;
+			top:250px;
+			left:1100px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1100px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
 			left:1100px;
 		 }
   }
 	@media screen and (min-width: 2000px) {
 		.mirror-bird-container {
 			 min-height: 1500px;
+
 		}
 		.mirror-bird-container_after_hover {
 		     min-height: 1500px;
@@ -762,11 +873,23 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1500px;
 		}
-		 #container_box_bird_100{
-			width:900px;
+		#container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:400px;
-			left:1100px;
+			top:250px;
+			left:1200px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1200px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1200px;
 		 }
 	}
   @media screen and (min-width: 2200px) {
@@ -806,10 +929,22 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1600px;
 		}
-		 #container_box_bird_100{
-			width:1000px;
+		#container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:500px;
+			top:250px;
+			left:1300px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1300px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
 			left:1300px;
 		 }
   }
@@ -850,11 +985,23 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1700px;
 		}
-		 #container_box_bird_100{
-			width:1000px;
+		#container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:500px;
-			left:1300px;
+			top:250px;
+			left:1450px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1450px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1450px;
 		 }
   }
   @media screen and (min-width: 2560px) {
@@ -894,11 +1041,23 @@ body {
 		 .mirror-bird-container15_after_hover{
 		 min-height: 1900px;
 		}
-		 #container_box_bird_100{
-			width:1000px;
+		#container_box_bird_66{
+			width:600px;
 			height:300px;
-			top:600px;
-			left:1300px;
+			top:250px;
+			left:1550px;
+		   }
+		 #container_box_bird_100{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1550px;
+		 }
+		 #container_box_bird_102{
+			width:600px;
+			height:300px;
+			top:250px;
+			left:1550px;
 		 }
 
   }
