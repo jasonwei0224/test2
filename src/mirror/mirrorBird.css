@@ -272,7 +272,12 @@ body {
 		background-size: contain;
 		display:none;
 	 }
-
+	 #container_box_bird_100{
+ 	width:600px;
+ 	height:300px;
+ 	top:200px;
+ 	left:600px;
+  }
 	.bird-container--one {
 	   position: absolute;
 	  top: 25%;
@@ -376,6 +381,12 @@ body {
 		   animation-fill-mode: forwards;
 		   animation-play-state: unset;
 		}
+		#container_box_bird_100{
+		width:700px;
+		height:300px;
+		top:250px;
+		left:600px;
+	 }
 		}
 	@media screen and (min-width: 1400px) {
 		.mirror-bird-container {
@@ -422,7 +433,12 @@ body {
 		   animation-fill-mode: forwards;
 		   animation-play-state: unset;
 		}
-
+		#container_box_bird_100{
+		width:800px;
+		height:300px;
+		top:250px;
+		left:700px;
+	 }
   }
   @media screen and (min-width: 1500px) {
 		.mirror-bird-container {
@@ -455,6 +471,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1100px;
 		 }
+		 #container_box_bird_100{
+		 width:800px;
+		 height:300px;
+		 top:300px;
+		 left:800px;
+		}
   }
 
   @media screen and (min-width: 1600px) {
@@ -488,6 +510,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1200px;
 		 }
+		 #container_box_bird_100{
+		 width:800px;
+		 height:300px;
+		 top:300px;
+		 left:800px;
+		}
   }
   @media screen and (min-width: 1700px) {
 		.mirror-bird-container {
@@ -519,6 +547,12 @@ body {
 		}
 		.mirror-bird-container5_after_hover {
 			  min-height: 1200px;
+		 }
+		 #container_box_bird_100{
+			width:900px;
+			height:300px;
+			top:300px;
+			left:900px;
 		 }
   }
   @media screen and (min-width: 1800px) {
@@ -552,6 +586,12 @@ body {
 		.mirror-bird-container5_after_hover {
 			  min-height: 1300px;
 		 }
+		 #container_box_bird_100{
+			width:900px;
+			height:300px;
+			top:400px;
+			left:900px;
+		 }
   }
   @media screen and (min-width: 1900px) {
 		.mirror-bird-container {
@@ -583,6 +623,12 @@ body {
 		}
 		.mirror-bird-container5_after_hover {
 			  min-height: 1400px;
+		 }
+		 #container_box_bird_100{
+			width:900px;
+			height:300px;
+			top:400px;
+			left:1100px;
 		 }
   }
 	@media screen and (min-width: 2000px) {
@@ -619,8 +665,8 @@ body {
 		 #container_box_bird_100{
 			width:900px;
 			height:300px;
-			top:500px;
-			left:1200px;
+			top:400px;
+			left:1100px;
 		 }
 	}
   @media screen and (min-width: 2200px) {
