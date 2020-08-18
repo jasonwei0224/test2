@@ -38,9 +38,8 @@ class OtherSideOfMask extends Component {
           <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
                 <MTLModel
-                  mtl='./face_mask_1_subdiv_1.mtl'
-                  src='./face_mask_1_subdiv_1.obj'
-                  texPath="./public/texture/"
+                  mtl='./texture/MaskModel2.mtl'
+                  src='./texture/MaskModel2.obj'
                   width="1800">
                 </MTLModel>
               </div>
@@ -49,9 +48,8 @@ class OtherSideOfMask extends Component {
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
             <div>
               <OBJModel
-                mtl='./face_mask_1_subdiv_0.mtl'
-                src='./face_mask_1_subdiv_0.obj'
-                texPath="./public/texture/"
+                mtl='./MaskModel2.mtl'
+                src='./MaskModel2.obj'
                   width="1800">
               </OBJModel>
               </div>
