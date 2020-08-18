@@ -24,6 +24,17 @@ body {
 	left:900px;
 	display: none;
   }
+	#container_box_bird_1000{
+	width:500px;
+	height:300px;
+	justify-content: center;
+	color:black;
+	font-weight:bold;
+	position:relative;
+	top:200px;
+	left:900px;
+	display: none;
+  }
 
  .mirror-bird-container {
 	min-height: 68rem;
@@ -104,6 +115,15 @@ body {
 	display:none;
 		background-repeat: no-repeat;
  }
+ .mirror-bird-container5_after_hover2 {
+	min-height: 55rem;
+	background-image: url('../assets/children_after_hover.jpg') !important;
+	background-blend-mode: soft-light;
+	background-size: contain;
+	display:none;
+		background-repeat: no-repeat;
+ }
+
 
  .bird {
 	  background-image: url(../assets/pigeon4.svg);
@@ -278,6 +298,12 @@ body {
  	top:200px;
  	left:600px;
   }
+	/* #container_box_bird_101{
+ width:600px;
+ height:300px;
+ top:200px;
+ left:600px;
+ } */
 	.bird-container--one {
 	   position: absolute;
 	  top: 25%;
