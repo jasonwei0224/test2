@@ -1,0 +1,16 @@
+# Blender MTL File: 'mask.blend'
+# Material Count: 1
+
+newmtl face_mask_mat
+Ns 751.258253
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump F:\\projects\\photogrammetry\\medical\\mask_01\\face_mask_3d_stock\\textures\\face_mask_nor.PNG
+map_Kd F:\\projects\\photogrammetry\\medical\\mask_01\\face_mask_3d_stock\\textures\\face_mask_diffuse.PNG
+map_Ns F:\\projects\\photogrammetry\\medical\\mask_01\\face_mask_3d_stock\\textures\\face_mask_roughness.PNG
+map_d F:\\projects\\photogrammetry\\medical\\mask_01\\face_mask_3d_stock\\textures\\face_mask_opacity.PNG

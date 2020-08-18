@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './other_side_of_mask.css';
-import {OBJModel} from 'react-3d-viewer'
+import {OBJModel, MTLModel, GLTFModel, AmbientLight,DirectionLight} from 'react-3d-viewer'
 import image1 from '../assets/image1.jpg';
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import walter from '../assets/Walter.jpg'
@@ -35,19 +35,25 @@ class OtherSideOfMask extends Component {
       <div>
         <Container fluid>
           <Row>
-            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+          <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
-                <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                  position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+                <MTLModel
+                  mtl='./face_mask_1_subdiv_1.mtl'
+                  src='./face_mask_1_subdiv_1.obj'
+                  texPath="./public/texture/"
+                  width="1800">
+                </MTLModel>
               </div>
             </Col>
-            {/*}<Col className="middle_text_other" xl={{span:0, offset:0}} lg={{span:11, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>          </MainContents_Middle_Adonis>
-            </Col>*/}
+
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
             <div>
-              <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                  position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+              <OBJModel
+                mtl='./face_mask_1_subdiv_0.mtl'
+                src='./face_mask_1_subdiv_0.obj'
+                texPath="./public/texture/"
+                  width="1800">
+              </OBJModel>
               </div>
             </Col>
           </Row>

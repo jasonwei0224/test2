@@ -28,42 +28,48 @@ body {
  .mirror-bird-container {
 	min-height: 68rem;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
  }
  .mirror-bird-container_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/artist_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container2 {
 	min-height: 68rem;
 	background-image: url('../assets/healthcare\ professional.jpg');
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	display:none;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container2_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/healthcare_professional_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
+		background-repeat: no-repeat;
  }
 
  .mirror-bird-container3 {
 	min-height: 68rem;
 	background-image: url('../assets/fireman.jpg');
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	display:none;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container3_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/fireman_taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container4 {
 	min-height: 68rem;
@@ -71,29 +77,34 @@ body {
 	background-blend-mode: soft-light;
 	background-position: center center;
 	display:none;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container4_after_hover {
 	min-height: 68rem;
 	background-image: url('../assets/dancer-taiwan_color.jpg') !important;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
+		background-repeat: no-repeat;
  }
 
  .mirror-bird-container5 {
 	min-height: 55rem;
 	background-image: url('../assets/children_after_hover.jpg');
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	display:none;
+		background-repeat: no-repeat;
  }
  .mirror-bird-container5_after_hover {
 	min-height: 55rem;
 	background-image: url('../assets/children_after_hover.jpg') !important;
 	background-blend-mode: soft-light;
-	background-size: cover;
+	background-size: contain;
 	display:none;
+		background-repeat: no-repeat;
  }
+
  .bird {
 	  background-image: url(../assets/pigeon4.svg);
 	  background-size: auto 100%;
@@ -123,7 +134,7 @@ body {
 	animation-fill-mode: forwards;
 	animation-play-state: unset;
  }
- 
+
 
 
  @keyframes fly-cycle {
@@ -170,8 +181,6 @@ body {
 	}
 
  }
- 
-
 
  @media screen and (min-width: 767px) {
 	#wrapper_mirror{
@@ -189,78 +198,78 @@ body {
 	   display:block;
 	  }
 	.mirror-bird-container {
-	   min-height: 65rem;
+	   min-height: 900px;
 	   background-image: url('../assets/artist.jpg');
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   background-position: center center;
 	   overflow:hidden;
 	}
 	.mirror-bird-container_after_hover {
-	   min-height: 68rem;
+	    min-height: 900px;
 	   background-image: url('../assets/artist_taiwan_color.jpg') !important;
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   display:none
 	}
 	.mirror-bird-container2 {
-	   min-height: 65rem;
+	    min-height: 900px;
 	   background-image: url('../assets/healthcare\ professional.jpg');
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   background-position: center center;
 	   display:none;
 	}
 	.mirror-bird-container2_after_hover {
-	   min-height: 68rem;
+	    min-height: 900px;
 	   background-image: url('../assets/healthcare_professional_taiwan_color.jpg') !important;
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   display:none;
 	}
 	.mirror-bird-container3 {
-	   min-height: 55rem;
+	  min-height: 900px;
 	   background-image: url('../assets/fireman.jpg');
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   background-position: center center;
 	   display:none;
 	}
 	.mirror-bird-container3_after_hover {
-	   min-height: 68rem;
+	   min-height: 900px;
 	   background-image: url('../assets/fireman_taiwan_color.jpg') !important;
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   display:none;
 	}
 	.mirror-bird-container4 {
-	   min-height: 55rem;
+	    min-height: 900px;
 	   background-image: url('../assets/dancer.jpg');
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   background-position: center center;
 	   display:none;
 	}
 	.mirror-bird-container4_after_hover {
-	   min-height: 68rem;
+	    min-height: 900px;
 	   background-image: url('../assets/dancer-taiwan_color.jpg') !important;
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   display:none;
 	}
 	.mirror-bird-container5 {
-	   min-height: 55rem;
+	    min-height: 900px;
 	   background-image: url('../assets/children_after_hover.jpg');
 	   background-blend-mode: soft-light;
-	   background-size: cover;
+	   background-size: contain;
 	   background-position: center center;
 	   display:none;
 	}
 	.mirror-bird-container5_after_hover {
-		min-height: 55rem;
+	 min-height: 900px;
 		background-image: url('../assets/children_after_hover.jpg') !important;
 		background-blend-mode: soft-light;
-		background-size: cover;
+		background-size: contain;
 		display:none;
 	 }
 
@@ -276,10 +285,7 @@ body {
 	   animation-delay: 0;
 	   animation-fill-mode: forwards;
 	   animation-play-state: unset;
-
 	}
-	
-
 
 	@keyframes fly-cycle {
 
@@ -324,6 +330,412 @@ body {
 		 animation-play-state: paused;
 		 overflow:hidden;
 	   }
-
 	}
+	@media screen and (min-width: 1300px) {
+		.mirror-bird-container {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container_after_hover {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container2 {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container2_after_hover {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container3 {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container3_after_hover {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container4 {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container4_after_hover {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container5 {
+		   min-height: 1000px;
+		}
+		.mirror-bird-container5_after_hover {
+			min-height: 1000px;
+		 }
+
+		.bird-container--one {
+		   position: absolute;
+		  top: 25%;
+		   left: -10%;
+		   transform: scale(0) translateX(-10vw);
+		   will-change: transform;
+		   animation-name: fly-right-one;
+		   animation-timing-function: linear;
+		   animation-duration: 4s;
+		   animation-delay: 0;
+		   animation-fill-mode: forwards;
+		   animation-play-state: unset;
+		}
+		}
+	@media screen and (min-width: 1400px) {
+		.mirror-bird-container {
+		   min-height: 1050px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1050px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1050px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1050px;
+		 }
+
+		.bird-container--one {
+		   position: absolute;
+		  top: 25%;
+		   left: -10%;
+		   transform: scale(0) translateX(-10vw);
+		   will-change: transform;
+		   animation-name: fly-right-one;
+		   animation-timing-function: linear;
+		   animation-duration: 4s;
+		   animation-delay: 0;
+		   animation-fill-mode: forwards;
+		   animation-play-state: unset;
+		}
+
+  }
+  @media screen and (min-width: 1500px) {
+		.mirror-bird-container {
+		   min-height: 1100px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1100px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1100px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1100px;
+		 }
+  }
+
+  @media screen and (min-width: 1600px) {
+		.mirror-bird-container {
+		   min-height: 1200px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1200px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1200px;
+		 }
+  }
+  @media screen and (min-width: 1700px) {
+		.mirror-bird-container {
+		   min-height: 1200px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1200px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1200px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1200px;
+		 }
+  }
+  @media screen and (min-width: 1800px) {
+		.mirror-bird-container {
+		   min-height: 1300px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1300px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1300px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1300px;
+		 }
+  }
+  @media screen and (min-width: 1900px) {
+		.mirror-bird-container {
+		   min-height: 1400px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1400px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1400px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1400px;
+		 }
+  }
+	@media screen and (min-width: 2000px) {
+		.mirror-bird-container {
+			 min-height: 1500px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1500px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1500px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1500px;
+		 }
+		 #container_box_bird_100{
+			width:900px;
+			height:300px;
+			top:500px;
+			left:1200px;
+		 }
+	}
+  @media screen and (min-width: 2200px) {
+		.mirror-bird-container {
+		   min-height: 1600px;
+		}
+		.mirror-bird-container_after_hover {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container2 {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container2_after_hover {
+		    min-height: 1600px;
+		}
+		.mirror-bird-container3 {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container3_after_hover {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container4 {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container4_after_hover {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container5 {
+		     min-height: 1600px;
+		}
+		.mirror-bird-container5_after_hover {
+			  min-height: 1600px;
+		 }
+		 #container_box_bird_100{
+			width:1000px;
+			height:300px;
+			top:500px;
+			left:1300px;
+		 }
+  }
+  @media screen and (min-width: 2300px) {
+		.mirror-bird-container {
+		   min-height: 1700px;
+		}
+		.mirror-bird-container_after_hover {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container2 {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container2_after_hover {
+				min-height: 1700px;
+		}
+		.mirror-bird-container3 {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container3_after_hover {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container4 {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container4_after_hover {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container5 {
+				 min-height: 1700px;
+		}
+		.mirror-bird-container5_after_hover {
+				min-height: 1700px;
+		 }
+		 #container_box_bird_100{
+			width:1000px;
+			height:300px;
+			top:500px;
+			left:1300px;
+		 }
+  }
+  @media screen and (min-width: 2560px) {
+		.mirror-bird-container {
+		   min-height: 1900px;
+		}
+		.mirror-bird-container_after_hover {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container2 {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container2_after_hover {
+				min-height: 1900px;
+		}
+		.mirror-bird-container3 {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container3_after_hover {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container4 {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container4_after_hover {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container5 {
+				 min-height: 1900px;
+		}
+		.mirror-bird-container5_after_hover {
+				min-height: 1900px;
+		 }
+		 #container_box_bird_100{
+			width:1000px;
+			height:300px;
+			top:600px;
+			left:1300px;
+		 }
+
+  }
 }
