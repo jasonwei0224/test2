@@ -87,6 +87,8 @@ class MirrorBird extends React.Component {
     if(answer.toUpperCase() == "TAIWAN"){
       var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
       audio.play()
+    }else{
+      document.getElementByClassName("button_mirror").style.backgroundColor="Red";
     }
   }
   refresh(){
@@ -137,9 +139,6 @@ class MirrorBird extends React.Component {
                         $('#container_box_bird_100').css({"display":"block"});
                       },3000);
                     });
-
-
-
                   },1000) //1000
 
                 });
@@ -188,9 +187,7 @@ class MirrorBird extends React.Component {
                   setTimeout(function() {
                     e.preventDefault();
                     $('#container_box_bird_14').css({"display":"none"});
-                    $('#container_box_bird_10').css({"display":"block"});
-
-
+                    $('#container_box_bird_101').css({"display":"block"});
                   },1000)
 
                 });
@@ -202,7 +199,9 @@ class MirrorBird extends React.Component {
       }, 5000)
     });
   }
-
+  refreshPage(){
+    window.location.reload(false);
+  }
 
   render(){
 
@@ -254,7 +253,7 @@ class MirrorBird extends React.Component {
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                     <Button onClick={this.checkAnswer}>Submit</Button>
                   {/*}  <p style={{"color":"white"}}>Did you miss something? </p>*/}
-                    <Button onClick={this.refresh}>View the drawings again</Button>
+                    <Button className="button_mirror" onClick={this.refresh}>View the drawings again</Button>
                   </Col>
 
               </Row>
@@ -329,7 +328,31 @@ class MirrorBird extends React.Component {
             <div id="bird_14"></div>
           </div>
         </div>
-
+          <div  id="container_box_bird_101"  className="mirror-bird-container5_after_hover2">
+            <div id="box_15">
+                <div id="bird_15"></div>
+              </div>
+        <div id="container_box_bird_1000">
+          <div id="form_mirror3">
+            <Row>
+              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                  <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                    Other than the pigeon, what is an image that has always been there?
+                    Try again if you have overlooked it. </p>
+              </Col>
+          </Row>
+          <Row>
+              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                  <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
+              </Col>
+              <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
+                <Button onClick={this.checkAnswer}>Submit</Button>
+                <Button onClick={this.refreshPage}>View the drawings again</Button>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
