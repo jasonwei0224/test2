@@ -21,7 +21,13 @@ var text = `口罩是這次疫情保護人類、對抗病毒的武器；但是�
 「我在創作這幅畫作時，非常清楚的想要呈現一個美麗的畫面，而這個美麗的畫面卻是人們所害怕的事實。我足足花了兩個星期思考：『它』是什麼樣子？人們何時成為了病毒滋生的溫床，習慣它並與它共存？！\n
 「內心信仰的藝術品，又該如何說服自己，它很美卻又是病毒。」－ 藝術家Lady Hao Hao
 `
+var artistTxt1 =`加拿大台裔藝術家，高中時期移民來到加拿大，但因為寄宿家庭的限制不能畫畫，而回到台灣繼續與藝術為伍。在台灣大學畢業後，再次回到加拿大，在多元的土地上吸收養分。
 
+藝術一直都是她的精神糧食，唯一驕傲。創作對她來說，就是一連串的反思問答，在自我探索的過程中向自己提出一個個問題。近年來對「裝置藝術」的表現形式有著許多的好奇，在加拿大體驗著多元社區，學習著大師與偶像們的創作思維，累積她自己的作品。每次的創作發表，都看見藝術與人們之間的「呼應」、「討論」、「情緒」、「習慣」，探索和多元共舞。
+`
+
+var artistTxt2=`Emily Carr藝術學院畢業，專攻動畫藝術，熱愛電影，擅長用影像說故事；繪畫是他抒發情緒和連結生活的橋樑，插畫作品奇幻遼闊，充滿想像力與生命力。兼具 2D創作、3D動畫特效與影像剪輯等多方能力，高于翔細膩的心思往往帶給大家意想不到的思考面向，或許會畫畫的人天生有著一本魔法書，他就是那個厲害的魔術師。
+`
 class OtherSideOfMask_ch extends Component {
     render() {
         let audio = new Audio("/coughing.mp3")
@@ -68,9 +74,7 @@ class OtherSideOfMask_ch extends Component {
           <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
 
 
-          <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1="asdf
-            我是藝術家" pic2={walter} title2="高宇翔" contents2="asdf
-                我是藝術家二"></MainContents_TwoArtistPic_CH>
+          <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistTxt1} pic2={walter} title2="高宇翔" contents2={artistTxt2}></MainContents_TwoArtistPic_CH>
           <div className="people_padding"></div>
 
           <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
