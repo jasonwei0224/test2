@@ -96,7 +96,7 @@ export default class HeaderV2 extends React.Component {
                 <Nav className="ml-auto"style={{alignItems:"end"}}>
 
                     <Nav.Link className="navitem-v2" href="https://torontotaiwanfest.ca/toronto-2020/">HOME</Nav.Link>
-                    <Nav.Link className="navitem-v2" href="/">GALLERY HOME</Nav.Link>
+                    <Nav.Link className="navitem-v2" href="/">GALLERY DIRECTORY</Nav.Link>
                   <div className="nav-dropdown-wrapper">
                     <div className="nav-dropdown-wrapper2">
                       <NavDropdown bsPrefix="navitem-dropdown"title="GALLERY" alignCenter renderMenuOnMount={true}>
