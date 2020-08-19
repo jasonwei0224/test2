@@ -25,6 +25,12 @@ This art piece portrays the irony that on the flip side of every beautiful story
 
 “The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow.
 `
+var artistText1 = `A Taiwanese artist who immigrated to Canada during her high school years, but as she wasn’t allowed to draw or paint in Canada, she soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
+
+Art has always been her pride and joy and feeds her spirit. For her, creativity is like asking herself reflective questions and answering them in the process of self-discovery. In recent years, she has been curious about “installation art” and also experiencing the diverse communities in Canada, learning the creative thinking of experts, and accumulating her own creations. Each time she releases a piece, we see “echoes”, “discussions”, “emotions” and “habits” between art and people, exploring and dancing with diversity.
+`
+var artistText2 = `A graduate of the Emily Carr University of Art and Design who specializes in animation, loves movies, and is good at storytelling using images; painting is like a bridge that connects his emotions with life, and his artworks are diverse and are full of creativity and life. With the ability to create 2D and 3D animation special effects, Walter Kao is able to create the unexpected. Maybe artists that can draw were born with a spellbook, and are powerful magicians like Walter.
+`
 
 class OtherSideOfMask extends Component {
   render() {
@@ -37,6 +43,7 @@ class OtherSideOfMask extends Component {
     return (
       <div>
         <Container fluid>
+          <div style={{borderTop: "1px solid #D9C739"}}></div>
           <Row>
           <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
@@ -79,24 +86,7 @@ class OtherSideOfMask extends Component {
           </MainContents_Middle_Adonis>
 
 
-          <MainContents_TwoArtistPic
-            pic1={ladyhaohao}
-            title1="Lady Hao Hao"
-            contents1="asdf
-            Despite our geographical differences,
-            we all look towards that same sky that looms over our heads,asdf
-            Despite our geographical differences,
-            we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-            together."
-            pic2={walter}
-            title2="Walter Kao"
-            contents2="asdf
-            Despite our geographical differences,
-            we all look towards that same sky that looms over our heads,asdf
-            Despite our geographical differences,
-            we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-            together.">
-          </MainContents_TwoArtistPic>
+          <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="Walter Kao" contents2={artistText2}></MainContents_TwoArtistPic>
           <div className="people_padding"></div>
 
           <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>

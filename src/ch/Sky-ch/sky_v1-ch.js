@@ -180,7 +180,7 @@ class SkyV1_ch extends Component {
 
       <Form.Row style={{marginBottom:"30px"}}>
 
-          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
+          <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}} style={{paddingLeft:"none", paddingRight:"0px"}}>
             <Form.Control id="description" className="inputfield" as ="textArea" type="text" placeholder="請簡短分享照片的故事" size="lg"/>
           </Col>
       </Form.Row>

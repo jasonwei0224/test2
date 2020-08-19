@@ -66,6 +66,7 @@ class MirrorBird extends React.Component {
                           $('#bird_5').addClass('bird bird--one')
                               setTimeout(function() {
                                 $('#container_box_bird_66').css({"display":"block"});
+
                               },4000);//4000
 
                             });
@@ -172,7 +173,7 @@ class MirrorBird extends React.Component {
 
                           setTimeout(function() {
                             $('#container_box_bird_100').css({"display":"block"});
-                          },4000);
+              },4000);
 
                         });
                   }, 4000) //4000
@@ -187,6 +188,7 @@ class MirrorBird extends React.Component {
       },4000) //4000
       })
       }, 5000) //5000
+
       });
       }
   refresh2(){
@@ -241,6 +243,7 @@ class MirrorBird extends React.Component {
 
                         setTimeout(function() {
                           $('#container_box_bird_102').css({"display":"block"});
+
                         },4000);
                       });
                     }, 4000);
@@ -250,10 +253,11 @@ class MirrorBird extends React.Component {
                 });
 
               },4000)
+
             });
-          },4000)
+          },400)
         })
-      }, 5000)
+      }, 500)
     });
   }
   refreshPage(){
