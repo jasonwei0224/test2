@@ -5,7 +5,7 @@ body {
  #pointerDiv {
 	 position:relative;
 	 left:50%;
-	 margin-top:35%; 
+	 margin-top:35%;
  }
 
  #container_box_bird_66{
@@ -155,7 +155,7 @@ body {
 	background-blend-mode: soft-light;
 	background-size: contain;
 	display:none;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	background-position:center;
  }
  .mirror-bird-container15_after_hover{
@@ -337,7 +337,7 @@ body {
 	 }
 	 .mirror-bird-container15{
 		min-height: 900px;
-		background-image: url('../assets/child_taiwan_color.jpg') !important;
+		background-image: url('../assets/child.jpg') !important;
 		background-blend-mode: soft-light;
 		background-size: contain;
 		display:none;
