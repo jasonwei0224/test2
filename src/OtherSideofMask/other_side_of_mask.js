@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './other_side_of_mask.css';
-import {OBJModel, MTLModel, GLTFModel, AmbientLight,DirectionLight} from 'react-3d-viewer'
+import {OBJModel, MTLModel, GLTFModel, AmbientLight, JSONModel} from 'react-3d-viewer'
 import image1 from '../assets/image1.jpg';
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import walter from '../assets/Walter.jpg'
@@ -16,8 +16,17 @@ import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import ImageWithDescription from"../modules/MainContent_ImageWithDescription";
 
-import model1mtl from "../assets/texture/MaskModel1.mtl"
-import model1obj from "../assets/texture/MaskModel1.obj"
+// import model1mtl from "../assets/texture/MaskModel1.mtl"
+// import model1gltf from "../assets/texture2/MaskModel1.gltf"
+// import model1obj from "../assets/texture/MaskModel1.obj"
+import * as THREE from "three";
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+// import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+// import {DirectionLight} from "three/src/DirectionLight/DirectionLight.js"
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 
@@ -33,12 +42,95 @@ var artistText2 = `A graduate of the Emily Carr University of Art and Design who
 `
 
 class OtherSideOfMask extends Component {
+  componentDidMount() {
+    var scene = new THREE.Scene();
+    scene.background = new THREE.Color( 0xFFFFFFF );
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+    var renderer = new THREE.WebGLRenderer();
+    let mtlLoader = new MTLLoader();
+    let loader = new GLTFLoader();
+
+    // mtlLoader.setPath( './vase' );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    var directionalLight = new THREE.DirectionalLight
+    directionalLight.position.set(0,1,0);
+    directionalLight.castShadow=true;
+    scene.add(directionalLight)
+
+    // var light = new THREE.PointLight(0xc4c4c4,1)
+    // light.position.set(0, 300, 500)
+    // scene.add(light)
+    // var light2 = new THREE.PointLight(0xc4c4c4,1)
+    // light.position.set(500, 100, 0)
+    // scene.add(light2)
+    // var light3 = new THREE.PointLight(0xc4c4c4,1)
+    // light.position.set(0, 100,-500)
+    // scene.add(light3)
+    // var light4 = new THREE.PointLight(0xc4c4c4,1)
+    // light.position.set(0-500, 300, 0)
+    // scene.add(light4)
+
+   // camera.add( pointLight );
+    // document.body.appendChild( renderer.domElement );
+    // use ref as a mount point of the Three.js scene instead of the document.body
+    this.mount.appendChild( renderer.domElement );
+    this.controls = new OrbitControls(camera, renderer.domElement);
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+    var cube = new THREE.Mesh( geometry, material );
+    mtlLoader.load('./MaskModel1.mtl', (materials) =>{
+        materials.preload()
+        let objLoader = new OBJLoader();
+        objLoader.setMaterials(materials)
+        objLoader.load('./MaskModel1.obj', (object) => {
+          scene.add(object)
+              })
+      })
+    // mtlLoader.load('./vase/vase.mtl', (materials) =>{
+    //     materials.preload()
+    //     let objLoader = new OBJLoader();
+    //     objLoader.setMaterials(materials)
+    //     objLoader.load('./vase/vase.obj', (object) => {
+    //       scene.add(object)
+    //           })
+    //   })
+    // scene.add( cube );
+
+    camera.position.z = 5;
+    var animate = function () {
+      requestAnimationFrame( animate );
+      // cube.rotation.x += 0.01;
+      // cube.rotation.y += 0.01;
+      renderer.render( scene, camera );
+    };
+    animate();
+  }
+  // componentDidMount(){
+  //   let scene = new THREE.Scene()
+  //
+  //   let mtlLoader = new MTLLoader();
+  //
+  //   let objLoader = new OBJLoader();
+  //    var renderer = new THREE.WebGLRenderer();
+  //     this.mount.appendChild( renderer.domElement );
+  //   mtlLoader.load('../assets/texture2/MaskModel1.mtl', (materials) => {
+  //     materials.preload()
+  //     objLoader.setMaterials(materials)
+  //     objLoader.load('../assets/texture2/MaskModel1.obj', (object) => {
+  //       scene.add(object)
+  //     })
+  //   })
+  //   renderer.render(scene)
+  // }
+
   render() {
     let audio = new Audio("/coughing.mp3")
     const start = () => {
       console.log("clicked")
       audio.play()
     }
+
+
 
     return (
       <div>
@@ -47,12 +139,7 @@ class OtherSideOfMask extends Component {
           <Row>
           <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
-                <MTLModel
-                  mtl={model1mtl}
-                  src={model1obj}
-                  textPath="../assets/texture/"
-                  width="1800">
-                </MTLModel>
+                  <div ref={ref => (this.mount = ref)} />
               </div>
             </Col>
 

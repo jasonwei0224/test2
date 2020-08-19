@@ -5,7 +5,6 @@ import $ from "jquery";
 import pigeon from "../../assets/pigeon_stop.svg";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import mouseClick from '../../assets/mouseClick.gif'
-
 class MirrorBird extends React.Component {
   constructor(props) {
     super(props);
@@ -66,21 +65,22 @@ class MirrorBird extends React.Component {
                           $('#bird_5').addClass('bird bird--one')
                               setTimeout(function() {
                                 $('#container_box_bird_66').css({"display":"block"});
-                              },400);//4000
+
+                              },4000);//4000
 
                             });
-                      }, 400) //4000
+                      }, 4000) //4000
                     });
 
-                  },300) //3000
+                  },4000) //3000
 
                 });
 
-              }, 400) //4000
+              }, 4000) //4000
             });
-          },400) //4000
+          },4000) //4000
         })
-      }, 500) //5000
+      }, 5000) //5000
     });
   }
 
@@ -97,12 +97,14 @@ class MirrorBird extends React.Component {
     var answer = document.getElementById("user_input_mirror").value;
     console.log(answer)
     if(answer.toUpperCase() == "TAIWAN"){
-      var audio=new Audio('https://assets.coderrocketfuel.com/pomodoro-times-up.mp3');
+      var audio=new Audio('./猜對音效.mp3');
       audio.play()
     }else{
       document.getElementById("button_mirror1").style.backgroundColor = "red";
       document.getElementById("button_mirror2").style.backgroundColor = "red";
       document.getElementById("button_mirror3").style.backgroundColor = "red";
+      var audio=new Audio('./猜錯音效.mp3');
+      audio.play()
       for(var i = 0; i <200; i++){
         document.getElementById("button_mirror1").style.backgroundColor = "red";
         document.getElementById("button_mirror2").style.backgroundColor = "red";
@@ -170,21 +172,22 @@ class MirrorBird extends React.Component {
 
                           setTimeout(function() {
                             $('#container_box_bird_100').css({"display":"block"});
-                          },400);
+              },4000);
 
                         });
-                  }, 400) //4000
+                  }, 4000) //4000
                 });
 
-              },300) //3000
+              },4000) //3000
 
             });
 
-          }, 400) //4000
+          }, 4000) //4000
         });
-      },400) //4000
+      },4000) //4000
       })
-      }, 500) //5000
+      }, 5000) //5000
+
       });
       }
   refresh2(){
@@ -239,15 +242,17 @@ class MirrorBird extends React.Component {
 
                         setTimeout(function() {
                           $('#container_box_bird_102').css({"display":"block"});
-                        },400);
+
+                        },4000);
                       });
-                    }, 100);
+                    }, 4000);
                     });
-                  },100)
+                  },4000)
 
                 });
 
-              },300)
+              },4000)
+
             });
           },400)
         })
