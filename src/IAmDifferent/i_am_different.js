@@ -207,8 +207,10 @@ function IAmDifferent() {
               document.getElementById("card-deck").style.display="none"
               document.getElementById("diff_top_row").style.display="none";
               document.getElementById("diff_bottom_row").style.display="none";
-              document.getElementById("main_image_diff").style.display="block";
-            },2000);
+              var audio=new Audio('./猜對音效.mp3');
+              audio.play()
+            },3000);
+            document.getElementById("main_image_diff").style.display="block";
             }
 
             // if(autual_data_test2.length>0) {
@@ -293,12 +295,12 @@ function IAmDifferent() {
 
     <div>
       <Container fluid>
-        <Row>
+        {/*}<Row>
             <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
               <img className="main_image" src={different_img}/>
             </Col>
-        </Row>
-        {/*<div style={{backgroundColor:"black"}}>
+        </Row>*/}
+        <div style={{backgroundColor:"black"}}>
         <Row className="diff_top_row" id="diff_top_row">
           <Col lg={{ span: 6, offset: 0 }}>
           <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
@@ -332,7 +334,7 @@ function IAmDifferent() {
           <div style={{textAlign:"center", margin:"auto"}}><span className = "info" ></span></div>
         </Col>
         </Row>
-      </div>*/}
+      </div>
         <ProgramInfo
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"

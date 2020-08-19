@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './other_side_of_mask.css';
-import {OBJModel} from 'react-3d-viewer'
+import {OBJModel, MTLModel, GLTFModel, AmbientLight,DirectionLight} from 'react-3d-viewer'
 import image1 from '../assets/image1.jpg';
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import walter from '../assets/Walter.jpg'
@@ -15,6 +15,9 @@ import MainContents_TwoArtistPic from "../modules/MainContents_TwoArtistPic"
 import Footer from '../footer-temp';
 import MobileShareButton from "../modules/mobileShareButton";
 import ImageWithDescription from"../modules/MainContent_ImageWithDescription";
+
+import model1mtl from "../assets/texture/MaskModel1.mtl"
+import model1obj from "../assets/texture/MaskModel1.obj"
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 
@@ -42,21 +45,27 @@ class OtherSideOfMask extends Component {
         <Container fluid>
           <div style={{borderTop: "1px solid #D9C739"}}></div>
           <Row>
-            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+          <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
-                <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                  position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+                <MTLModel
+                  mtl={model1mtl}
+                  src={model1obj}
+                  textPath="../assets/texture/"
+                  width="1800">
+                </MTLModel>
               </div>
             </Col>
-            {/*}<Col className="middle_text_other" xl={{span:0, offset:0}} lg={{span:11, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>          </MainContents_Middle_Adonis>
-            </Col>*/}
-            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
+
+          {/*}  <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
             <div>
-              <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                  position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
+              <OBJModel
+                mtl={model1mtl}
+                src={model1obj}
+                textPath="../assets/texture/"
+                width="1800">
+              </OBJModel>
               </div>
-            </Col>
+            </Col>*/}
           </Row>
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"

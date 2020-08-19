@@ -58,6 +58,14 @@ var artistText2 = `Emily Carr藝術學院畢業，專攻動畫藝術，熱愛電
 `
 var images = [crying, panic, terrified]
 
+var artistTxt1 =`加拿大台裔藝術家，高中時期移民來到加拿大，但因為寄宿家庭的限制不能畫畫，而回到台灣繼續與藝術為伍。在台灣大學畢業後，再次回到加拿大，在多元的土地上吸收養分。
+
+藝術一直都是她的精神糧食，唯一驕傲。創作對她來說，就是一連串的反思問答，在自我探索的過程中向自己提出一個個問題。近年來對「裝置藝術」的表現形式有著許多的好奇，在加拿大體驗著多元社區，學習著大師與偶像們的創作思維，累積她自己的作品。每次的創作發表，都看見藝術與人們之間的「呼應」、「討論」、「情緒」、「習慣」，探索和多元共舞。
+`
+
+var artistTxt2=`Emily Carr藝術學院畢業，專攻動畫藝術，熱愛電影，擅長用影像說故事；繪畫是他抒發情緒和連結生活的橋樑，插畫作品奇幻遼闊，充滿想像力與生命力。兼具 2D創作、3D動畫特效與影像剪輯等多方能力，高于翔細膩的心思往往帶給大家意想不到的思考面向，或許會畫畫的人天生有著一本魔法書，他就是那個厲害的魔術師。
+`
+
 class PeopleAndMask extends Component {
   state = {
     index: 0,
@@ -104,7 +112,9 @@ class PeopleAndMask extends Component {
 
 
 
+
         <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="高宇翔" contents2={artistText2}></MainContents_TwoArtistPic_CH>
+
 
 
 

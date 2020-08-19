@@ -35,6 +35,7 @@ Ironically, some of the most influential people in Chinese history have all led 
 Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians.  Political reasons aside, what is your artistic interpretation?
   `
 
+
   var artistTxt = `Tong Zhou made waves with his work “The Courage” that was presented at 2019 TAIWANfest, and he returns this year with “(Un)being Chinese”, a new work that reflects on identity and stereotypes within our current climate. He shares with us the thoughts and influences that inspired these works, and the struggles he has faced with his own identity as a Chinese-Canadian. With more open-mindedness, can we aim to erase discrimination altogether?
 
   Tong Zhou is a Chinese-Canadian artist based in Toronto whose artwork questions the framework of what defines one’s own identity. His piece, titled “The Courage”, gave tribute to the remarkable individuals who led Taiwan to becoming the first Asian country that legalized same-sex marriage. This year, Tong Zhou will present “(Un)Being Chinese”, a work that challenges the stereotypes about those from Chinese-speaking cultures.`

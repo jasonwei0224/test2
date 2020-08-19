@@ -66,7 +66,9 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
+
               <MainContents_OneArtistCH src={mina} title="盧妍均" contents={artistText}></MainContents_OneArtistCH>
+
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>
