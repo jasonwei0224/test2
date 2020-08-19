@@ -42,6 +42,13 @@ Yen-Chun Lu of Taiwan uses the reflections of mirrors to show the sceneries and 
 
 An island in the middle of the ocean could be deemed insignificant or easily sacrificed as the world chases all things big and fast; when people are left with a moment to re-examine their past behaviours, they can finally discover that the island’s importance and beauty had been greatly ignored or overlooked.
 `
+
+var artistText = `A professional paper artist, known for her simplified but sophisticated and creative crafts. She recently curated the exhibition to showcase the profound bond between the local farmers in Taiwan and the land itself, as well as the relationship between food and the natural environment, allowing people to reflect and be aware of the way we eat in order to drive change.
+
+Inspired by the Pop-Up Tunnel book, she has used her talents to build “the way back home to Gongliao" as a reflection of herself, nature and the land.  She has also participated in various events, such as World Food Day and Citizen of the Earth, Taiwan alongside her crafts.  She believes that art has the power to unite everyone, and utilizes talents to make a contribution to society.
+
+It is not difficult to discern how her beloved Taiwan influences her works.  She values the land she grew up in, and uses her creations to find the connections and similarities between Taiwan and Canada.
+`
 var images = [slide1, slide2, slide3, slide4, slide10]
         return (
             <div className='mirror'>
@@ -62,12 +69,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtist src={mina} title="Mina Lu" contents="asdf
-                  Despite our geographical differences,
-                  we all look towards that same sky that looms over our heads,asdf
-                  Despite our geographical differences,
-                  we all look towards that same sky that looms over our heads, further reaffirming that we are all in this
-                  together."></MainContents_OneArtist>
+              <MainContents_OneArtist src={mina} title="Mina Lu" contents={artistText}></MainContents_OneArtist>
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>

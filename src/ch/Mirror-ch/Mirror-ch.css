@@ -1,4 +1,4 @@
-/* .container_modal {
+.container_modal {
     display: block;
     text-align: center;
 }
@@ -62,23 +62,21 @@
     color: white;
     opacity: 0.8;
     cursor: pointer;
-} */
-/* xs < 768 */
+}
+
 @media screen and (max-width: 767px) {
 
 }
 
-/* sm */
+
 @media screen and (min-width: 768px) {
 
 }
 
-/* md */
 @media screen and (min-width: 992px) {
 
 }
 
-/* lg */
 @media screen and (min-width: 1200px) {
 
 }

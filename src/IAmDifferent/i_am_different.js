@@ -342,7 +342,7 @@ function IAmDifferent() {
         ></ProgramInfo>
 
         <Second_Title_Bold
-          secondTitle="About This Work:"
+          secondTitle="How to interact with this work:"
           style={{ fontFamily: "sofia-pro Sans-serif" }}
         ></Second_Title_Bold>
 

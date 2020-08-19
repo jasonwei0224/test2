@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ImageSlider from '../imageSlider';
-import ProgramInfo from "../programInfo";
+import ProgramInfoThinLine from '../programInfoThinLine';
 import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import banner from '../assets/placeholder.png';
@@ -22,7 +22,7 @@ import InvalidFileModal from '../invalidFileModal';
 import mainImage from '../assets/sky4.jpeg';
 import {Helmet} from "react-helmet";
 import Slider from './img_slider_final_sky'
-
+import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 class SkyV1 extends Component {
 
   constructor(props) {
@@ -144,25 +144,33 @@ class SkyV1 extends Component {
   }
   render() {
     var images =[mainImage, mainImage]
+    var text =`What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon.
+
+Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents Eight massive lanterns at šxʷƛ̓ənəq Xwtl'e7énḵ Square (formally known as Vancouver Art Gallery North Plaza) in downtown Vancouver. These images show that despite our geographical differences, we all look towards that same sky that looms over our heads, further reaffirming that we are all in this together. Sky is built on the concept of removing the influence of colour; by looking past our differences, we can see that we are one and the same.`
     return (
       <div>
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
 
-            <Slider images={images}></Slider>
+          {/*}  <Slider images={images}></Slider>*/}
 
-          {/*}<Row>
-              <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
-                <img className="main_image" src={mainImage}/>
-              </Col>
-          </Row>*/}
+              <Row>
+                  <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
+                    <img className="main_image" src={mainImage}/>
+                  </Col>
+              </Row>
 
-        <ProgramInfo subtitle="I'm different, just like you!" title="UNDER THE SAME SKY PROJECT" artistName="TAIWANfest" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse" color="#D9C739">
-        </ProgramInfo>
 
-        <MainContents_First style={{color:"#0C3866"}} contents=" What is something that you can see when you look up, no matter wherever you are in the world? The sky is one constant no matter where you are and what time of day, it is there above the horizon."></MainContents_First>
+              <ProgramInfoThinLine
+                subtitle="I'm different, just like you!"
+                title="SKY"
+                artistName="Curator: Jessica Sung"
+                url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
+                color="#246f79"
+                ></ProgramInfoThinLine>
 
-              <MainContents_Middle contents=" We may be in different parts of the world but we are all under the same sky. Join us as we get together globally and capture the sky at the same moment in time. We often look to the sky to ponder questions and to self reflect. In all that the world has gone through, the unchanging sky gives people a sense of hope and anticipation for the feeling of a normal day to come again. While daylight allows us to see the colours of the world, looking beyond our differences, we are all the same."></MainContents_Middle>
+
+                <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
 
 
         <Second_Title_Bold secondTitle="Under the same sky project"></Second_Title_Bold>

@@ -171,15 +171,13 @@ align-items:center!important;
   width:100%;
 }
 img.langIcon-v2{
-  width:20%;
-  height:20%;
+  width:60px;
   margin-top: 15px;
   margin-right: 0px;
   margin-bottom:15px;
 }
 img.langIconCh-v2{
-  width:20%;
-  height:20%;
+  width:60px;
   margin-top: 15px;
   margin-right: 0px;
   margin-bottom:15px;
@@ -255,6 +253,8 @@ a.dropdown-item{
   font-size: 30px !important;
   text-align: center;
   border-bottom: solid 3px #D9C739;
+  padding-top:8px;
+  padding-bottom:8px;
 
 }
 a.dropdown-item:hover{
@@ -283,15 +283,13 @@ align-items:center!important;
   width:100%;
 }
 img.langIcon-v2{
-  width:20%;
-  height:20%;
+    width:60px;
   margin-top: 15px;
   margin-right: 0px;
   margin-bottom:15px;
 }
 img.langIconCh-v2{
-  width:20%;
-  height:20%;
+    width:60px;
   margin-top: 15px;
   margin-right: 0px;
   margin-bottom:15px;
@@ -344,14 +342,12 @@ div.ml-auto{
   width:100%;
 }
 img.langIcon-v2{
-  width:20%;
-  height:20%;
+  width:25px;
   margin-top: 30px;
   margin-right: 0px;
 }
 img.langIconCh-v2{
-  width:20%;
-  height:20%;
+    width:25px;
   margin-top: 30px;
   margin-right: 0px;
 }
@@ -382,7 +378,7 @@ img.langIconCh-v2{
 div.ml-auto{
   text-align: right;
   align-items: center!important;
-  margin-left: 50% !important;
+  margin-left: 30% !important;
 }
 #logo{
   display: none;
@@ -429,13 +425,13 @@ div.dropdown-menu.show{
 
 }
 img.langIcon-v2{
-  width:70%;
+    width:25px;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
 }
 img.langIconCh-v2{
-  width:70%;
+    width:25px;
   margin:auto;
   margin-left:80px;
   margin-bottom: 20px;
@@ -460,7 +456,7 @@ img.langIconCh-v2{
   div.ml-auto{
     text-align: right;
     align-items: center!important;
-    margin-left: 70% !important;
+    margin-left: 60% !important;
   }
   #responsive-navbar-nav{
     margin-top:50px;
