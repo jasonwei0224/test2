@@ -142,7 +142,7 @@ class OtherSideOfMask extends Component {
                 <MTLModel
                   mtl="./MaskModel1.mtl"
                   src="./MaskModel1.obj"
-                  textPath="../assets/texture/"
+                  textPath="./"
                   width="1800"height="800"
                   position={{x:0,y:-1.5,z:0}}>
 
@@ -158,7 +158,7 @@ class OtherSideOfMask extends Component {
               <MTLModel
                 mtl="./MaskModel2.mtl"
                 src="./MaskModel2.obj"
-                textPath="../assets/texture/"
+                textPath="./"
                 width="1800"
                  height="800"
                  position={{x:0,y:-1.5,z:0}}>

@@ -8,7 +8,7 @@ const ProgramInfo_ch = (props) => {
         <div style={{marginBottom:"100px"}}>
             <Row className="PI-contents">
                 <Col lx={{span:8, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{span:10, offset:1}}  xs={{span:8, offset:2}}>
-                    <Row><p className="PI-subtitle_twoArtist" >{props.subtitle}</p></Row>
+                    <Row><p className="PI-subtitle_twoArtist-ch" >{props.subtitle}</p></Row>
                     <Row><h1 className="PI-title_twoArtist">{props.title}</h1></Row>
                     <Row className="PI-last">
                         <Col className="PI-artist" style={{fontFamily:"sofia-pro, san-serif"}}><p>{props.artistName}</p></Col>
