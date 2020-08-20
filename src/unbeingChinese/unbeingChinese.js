@@ -26,6 +26,7 @@ import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
 import MainContents_OneArtist from "../modules/MainContents_OneArtist"
 import tong from '../assets/Tong.jpg'
+import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 
 function UnbeingChinese() {
   var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging.
@@ -81,8 +82,9 @@ Exactly who is playing the game?  The paradox of evolving or revolving identity 
 
 
 
-        <MainContents_Important_With_Border style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
-        <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
+          <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents="Hover your mouse over the 6 different pictures to see the artist’s creativity."
+          bold2="Mobile/Tablet: " contents2="Click on the 6 different pictures to see the artist’s creativity."></MainContents_Important_With_Border_two_bolder>
+                <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
         </MainContents_Middle_Adonis>
 
         <MainContents_OneArtist src={tong} title="Tong Zhou" contents={artistTxt}></MainContents_OneArtist>

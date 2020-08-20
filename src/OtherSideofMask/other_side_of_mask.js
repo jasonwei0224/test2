@@ -25,8 +25,7 @@ import * as THREE from "three";
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-// import {DirectionalLight} from "three/src/DirectionLight/DirectionLight.js"
-//
+
 import ModelDisplay from "./threeDModel";
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 

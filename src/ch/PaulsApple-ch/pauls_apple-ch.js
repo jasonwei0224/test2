@@ -50,7 +50,7 @@ var artistText1=`加拿大台裔藝術家，高中時期移民來到加拿大，
              color="#D9C739"/>
 
              <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-             <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="asdfasdfasdfasdfasdfS"></MainContents_Important_With_Border>
+               <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="請將滑鼠移到中間箭頭並左右滑動，看一看兩張圖有甚麼不同。"></MainContents_Important_With_Border>
              <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
                <MainContents_OneArtistCH src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtistCH>
                  <div className="people_padding"></div>
