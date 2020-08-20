@@ -25,9 +25,10 @@ import * as THREE from "three";
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-// import {DirectionLight} from "three/src/DirectionLight/DirectionLight.js"
+// import {DirectionalLight} from "three/src/DirectionLight/DirectionLight.js"
 //
 import ModelDisplay from "./threeDModel";
+import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 
@@ -52,7 +53,7 @@ class OtherSideOfMask extends Component {
     var renderer = new THREE.WebGLRenderer();
     renderer.setClearColor("#ffffff");
     renderer.setSize( window.innerWidth, 800);
-    this.mount.appendChild( renderer.domElement );
+    // this.mount.appendChild( renderer.domElement );
 
     // var renderer2 = new THREE.WebGLRenderer();
     // renderer2.setClearColor("#ffffff");
@@ -75,15 +76,21 @@ class OtherSideOfMask extends Component {
     // this.controls2 = new OrbitControls(camera2, renderer2.domElement);
 
     // lights
-    var light = new THREE.PointLight(0xffffff,1,0)
-    light.position.set(0, 200, 0)
+    var light = new THREE.DirectionalLight(0xffffff,1,0)
+    light.position.set(-100, 200, -100)
     scene.add(light)
-    var light2 = new THREE.PointLight(0xffffff,1,0)
+
+    var light2 = new THREE.DirectionalLight(0xffffff,1,0)
     light2.position.set(100, 200, 100)
     scene.add(light2)
-    var light3 = new THREE.PointLight(0xffffff,1,0)
-    light3.position.set(2000, 2000,50)
-    scene.add(light3)
+    // var light3 = new THREE.PointLight(0xffffff,1,0)
+    // light3.position.set(2000, 2000,50)
+    // scene.add(light3)
+    // var light4 = new THREE.PointLight(0xffffff,1.1,0)
+    // light4.position.set(-300, -100, -200)
+    // scene.add(light4)
+    const light6 = new THREE.AmbientLight(0xffffff, 1,0);
+    scene.add(light6)
     //
     // scene2.add(light3)
     // scene2.add(light)
@@ -91,7 +98,7 @@ class OtherSideOfMask extends Component {
 
     // loading material
     let mtlLoader = new MTLLoader();
-    mtlLoader.load("./MaskModel2.mtl", (materials) =>{
+    mtlLoader.load("./MaskModel1.mtl", (materials) =>{
       materials.preload()
       let objLoader = new OBJLoader();
       objLoader.setMaterials(materials)
@@ -140,7 +147,13 @@ class OtherSideOfMask extends Component {
           <div style={{borderTop: "1px solid #D9C739"}}></div>
           <Row>
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
-                <div ref={ref => (this.mount = ref)} />
+                {/*}<div ref={ref => (this.mount = ref)} />*/}
+                <MTLModel src="./MaskModel1.obj" mtl="./MaskModel1.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                  <AmbientLight color={0xffffff}/>
+               <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+               <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+
+                </MTLModel>
             {/*}<ModelDisplay obj="./MaskModel1.obj" mtl="./MaskModel1.mtl"></ModelDisplay>*/}
        </Col>
        <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
@@ -167,9 +180,8 @@ class OtherSideOfMask extends Component {
           </ProgramInfoTwoArtist>
 
           <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-          <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="What is something that you can see when you look up, no matter
-            wherever you are in the world? The sky is one constant no matter
-            where you are and what time of day, it is there above the horizon."></MainContents_Important_With_Border>
+            <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents="There are a total of two 3D Models. Click and drag to look at different angles of the 3D models; to see details, scroll to zoom in."
+            bold2="Mobile/Tablet: " contents2="There are a total of two 3D Models. Tap and drag your finger left/right to rotate the 3D model. Pinch in and out to zoom. "></MainContents_Important_With_Border_two_bolder>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
 
