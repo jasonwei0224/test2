@@ -28,6 +28,7 @@ import slide2 from '../../assets/doctor.jpg';
 import slide3 from '../../assets/firefighter.jpg'
 import slide4 from '../../assets/dancer.jpg'
 import slide10 from '../../assets/child.jpg'
+import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 
 class Mirror extends Component {
 
@@ -47,6 +48,8 @@ var artistText=`專精紙藝藝術多年，跳脫傳統繁複的結構設計，�
 
 在創作裡不難看見，她熱愛的台灣一直深深地影響著她，並且被她重視著。台灣、加拿大與她之間越來越多的重疊與相似，都讓她更容易用創作為兩個國度找到一個美麗的對話共同表達。
 `
+var instruction1 = `此作品一共有五張創作，請用滑鼠點擊圖片來體驗藝術家想告訴你的訊息
+若回答正確時，將會播放音樂，若回答錯誤，「重看一次」按鈕將會閃爍`
 var images = [slide1, slide2, slide3, slide4, slide10]
         return (
             <div className='mirror'>
@@ -62,9 +65,9 @@ var images = [slide1, slide2, slide3, slide4, slide10]
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-            <MainContents_Important_With_Border  style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
-
-              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
+              <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
+              bold2="手機/平板: " contents2="此作品一共有五張創作，互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看不同創作"></MainContents_Important_With_Border_two_bolder_ch>
+    <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
 
               <MainContents_OneArtistCH src={mina} title="盧妍均" contents={artistText}></MainContents_OneArtistCH>

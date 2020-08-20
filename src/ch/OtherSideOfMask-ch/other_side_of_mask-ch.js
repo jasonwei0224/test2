@@ -15,6 +15,7 @@ import MainContents_TwoArtistPic_CH from "../../modules/MainContents_TwoArtistPi
 import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
 import ImageWithDescriptionCH from"../../modules/MainContent_ImageWithDescription_Ch";
 import FooterCH from "../footer-ch";
+import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 
 var text = `口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。\n
 透過這樣的作品呈現，讓人不禁懷疑，到底那一面是「保護」？那一面是我們應該相信的「真實」？我們常常經由語言與行為，表達傷害與歧視；在這次的疫情裡，我們也看見了許多美麗包裝下的話術，說出來的卻是醜陋的意涵與不實的陳述。這次的疫情如此嚴重，究竟是因為病毒肆虐，還是我們選擇性無視那真實的訊息？\n
@@ -28,6 +29,7 @@ var artistText1 = `加拿大台裔藝術家，高中時期移民來到加拿大�
 `
 var artistText2 = `Emily Carr藝術學院畢業，專攻動畫藝術，熱愛電影，擅長用影像說故事；繪畫是他抒發情緒和連結生活的橋樑，插畫作品奇幻遼闊，充滿想像力與生命力。兼具 2D創作、3D動畫特效與影像剪輯等多方能力，高于翔細膩的心思往往帶給大家意想不到的思考面向，或許會畫畫的人天生有著一本魔法書，他就是那個厲害的魔術師。
 `
+var instruction1=`此作品共有兩個創作，請用滑鼠左右的移動，可觀賞作品的不同角度。上下滑動，將可拉近與拉遠觀看作品。`
 class OtherSideOfMask_ch extends Component {
     render() {
         let audio = new Audio("/coughing.mp3")
@@ -71,7 +73,8 @@ class OtherSideOfMask_ch extends Component {
           </ProgramInfoTwoArtistCH>
 
           <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
-          <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="asdfasdfasdfasdfasdfS"></MainContents_Important_With_Border>
+            <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
+            bold2="手機/平板: " contents2="此作品共有兩個創作，請用手指左右的移動，可觀賞作品的不同角度。請用手指向外與向內推動，將可拉近與拉遠觀看作品。"></MainContents_Important_With_Border_two_bolder_ch>
           <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
 
 
