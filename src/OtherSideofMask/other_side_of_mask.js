@@ -102,6 +102,9 @@ class OtherSideOfMask extends Component {
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div ref={ref => (this.mount = ref)} />
          </Col>
+         <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+           <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl"></MTLModel>
+      </Col>
           </Row>
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
