@@ -42,20 +42,20 @@ var artistText2 = `A graduate of the Emily Carr University of Art and Design who
 `
 
 class OtherSideOfMask extends Component {
-  componentDidMount() {
-    var scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0xFFFFFFF );
-    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-    var renderer = new THREE.WebGLRenderer();
-    let mtlLoader = new MTLLoader();
-    let loader = new GLTFLoader();
-
-    // mtlLoader.setPath( './vase' );
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    var directionalLight = new THREE.DirectionalLight
-    directionalLight.position.set(0,1,0);
-    directionalLight.castShadow=true;
-    scene.add(directionalLight)
+  // componentDidMount() {
+  //   var scene = new THREE.Scene();
+  //   scene.background = new THREE.Color( 0xFFFFFFF );
+  //   var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+  //   var renderer = new THREE.WebGLRenderer();
+  //   let mtlLoader = new MTLLoader();
+  //   let loader = new GLTFLoader();
+  //
+  //   // mtlLoader.setPath( './vase' );
+  //   renderer.setSize( window.innerWidth, window.innerHeight );
+  //   var directionalLight = new THREE.DirectionalLight
+  //   directionalLight.position.set(0,1,0);
+  //   directionalLight.castShadow=true;
+  //   scene.add(directionalLight)
 
     // var light = new THREE.PointLight(0xc4c4c4,1)
     // light.position.set(0, 300, 500)
@@ -73,38 +73,38 @@ class OtherSideOfMask extends Component {
    // camera.add( pointLight );
     // document.body.appendChild( renderer.domElement );
     // use ref as a mount point of the Three.js scene instead of the document.body
-    this.mount.appendChild( renderer.domElement );
-    this.controls = new OrbitControls(camera, renderer.domElement);
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    var cube = new THREE.Mesh( geometry, material );
-    mtlLoader.load('./MaskModel1.mtl', (materials) =>{
-        materials.preload()
-        let objLoader = new OBJLoader();
-        objLoader.setMaterials(materials)
-        objLoader.load('./MaskModel1.obj', (object) => {
-          scene.add(object)
-              })
-      })
-    // mtlLoader.load('./vase/vase.mtl', (materials) =>{
-    //     materials.preload()
-    //     let objLoader = new OBJLoader();
-    //     objLoader.setMaterials(materials)
-    //     objLoader.load('./vase/vase.obj', (object) => {
-    //       scene.add(object)
-    //           })
-    //   })
-    // scene.add( cube );
-
-    camera.position.z = 5;
-    var animate = function () {
-      requestAnimationFrame( animate );
-      // cube.rotation.x += 0.01;
-      // cube.rotation.y += 0.01;
-      renderer.render( scene, camera );
-    };
-    animate();
-  }
+  //   this.mount.appendChild( renderer.domElement );
+  //   this.controls = new OrbitControls(camera, renderer.domElement);
+  //   var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+  //   var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+  //   var cube = new THREE.Mesh( geometry, material );
+  //   mtlLoader.load('./MaskModel1.mtl', (materials) =>{
+  //       materials.preload()
+  //       let objLoader = new OBJLoader();
+  //       objLoader.setMaterials(materials)
+  //       objLoader.load('./MaskModel1.obj', (object) => {
+  //         scene.add(object)
+  //             })
+  //     })
+  //   // mtlLoader.load('./vase/vase.mtl', (materials) =>{
+  //   //     materials.preload()
+  //   //     let objLoader = new OBJLoader();
+  //   //     objLoader.setMaterials(materials)
+  //   //     objLoader.load('./vase/vase.obj', (object) => {
+  //   //       scene.add(object)
+  //   //           })
+  //   //   })
+  //   // scene.add( cube );
+  //
+  //   camera.position.z = 5;
+  //   var animate = function () {
+  //     requestAnimationFrame( animate );
+  //     // cube.rotation.x += 0.01;
+  //     // cube.rotation.y += 0.01;
+  //     renderer.render( scene, camera );
+  //   };
+  //   animate();
+  // }
   // componentDidMount(){
   //   let scene = new THREE.Scene()
   //
@@ -139,20 +139,32 @@ class OtherSideOfMask extends Component {
           <Row>
           <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <div>
-                  <div ref={ref => (this.mount = ref)} />
+                <MTLModel
+                  mtl="./MaskModel1.mtl"
+                  src="./MaskModel1.obj"
+                  textPath="../assets/texture/"
+                  width="1800"height="800"
+                  position={{x:0,y:-1.5,z:0}}>
+
+                </MTLModel>
               </div>
+              {/*<div>
+                  <div ref={ref => (this.mount = ref)} />
+              </div>*/}
             </Col>
 
-          {/*}  <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
+          <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
             <div>
-              <OBJModel
-                mtl={model1mtl}
-                src={model1obj}
+              <MTLModel
+                mtl="./MaskModel2.mtl"
+                src="./MaskModel2.obj"
                 textPath="../assets/texture/"
-                width="1800">
-              </OBJModel>
+                width="1800"
+                 height="800"
+                 position={{x:0,y:-1.5,z:0}}>
+              </MTLModel>
               </div>
-            </Col>*/}
+            </Col>
           </Row>
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"

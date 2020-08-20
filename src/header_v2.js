@@ -108,7 +108,7 @@ export default class HeaderV2 extends React.Component {
                         <NavDropdown.Item bsPrefix="dropdown-item"href="/UnbeingChinese">(UN) BEING CHINESE</NavDropdown.Item>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="/Mirror">MIRRORS</NavDropdown.Item>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="/OtherSideOfMask">THE OTHER SIDE OF MASKS</NavDropdown.Item>
-                        <NavDropdown.Item bsPrefix="dropdown-item"href="/PaulsApple">PAUL'S APPLE</NavDropdown.Item>
+                        <NavDropdown.Item bsPrefix="dropdown-item"href="/PaulsApple">PAUL'S APPLES</NavDropdown.Item>
                         <NavDropdown.Item bsPrefix="dropdown-item"href="/PeopleAndMask">PEOPLE AND MASK</NavDropdown.Item>
                       </NavDropdown>
                     </div>
