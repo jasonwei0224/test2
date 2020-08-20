@@ -21,6 +21,7 @@ import MainContents_TwoArtistPic from "../modules/MainContents_TwoArtistPic"
 import Footer from '../footer-temp';
 import Slider from './img_slider_final_people_and_mask'
 import MobileShareButton from "../modules/mobileShareButton";
+import MainContents_Important_With_Border_one_bolder from "../modules/MainContents_Important_with_border_one_bold"
 
 const styles = {
   root: {
@@ -95,10 +96,8 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
           </ProgramInfoTwoArtist>
 
           <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-
-
-
-          <MainContents_Important_With_Border style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
+            <MainContents_Important_With_Border_one_bolder style={{color:"#0C3866"}} bold="Desktop/Tablet/Mobile: " contents="Click on the dots on either side of the screen to view the art works (total of 6 pieces).
+  "></MainContents_Important_With_Border_one_bolder>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
 

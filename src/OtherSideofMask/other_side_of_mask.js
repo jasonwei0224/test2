@@ -26,7 +26,7 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 // import {DirectionLight} from "three/src/DirectionLight/DirectionLight.js"
-//
+import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 import ModelDisplay from "./threeDModel";
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
@@ -167,9 +167,8 @@ class OtherSideOfMask extends Component {
           </ProgramInfoTwoArtist>
 
           <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-          <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="What is something that you can see when you look up, no matter
-            wherever you are in the world? The sky is one constant no matter
-            where you are and what time of day, it is there above the horizon."></MainContents_Important_With_Border>
+            <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents="There are a total of two 3D Models. Click and drag to look at different angles of the 3D models; to see details, scroll to zoom in."
+            bold2="Mobile/Tablet: " contents2="There are a total of two 3D Models. Tap and drag your finger left/right to rotate the 3D model. Pinch in and out to zoom. "></MainContents_Important_With_Border_two_bolder>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
 

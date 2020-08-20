@@ -28,7 +28,7 @@ import slide2 from '../assets/doctor.jpg';
 import slide3 from '../assets/firefighter.jpg'
 import slide4 from '../assets/dancer.jpg'
 import slide10 from '../assets/child.jpg'
-
+import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 
 
 class Mirror extends Component {
@@ -65,7 +65,8 @@ var images = [slide1, slide2, slide3, slide4, slide10]
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-            <MainContents_Important_With_Border  style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
+              <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents=" There are a total of 5 pictures. Click on the picture to discover the messages that the artist is trying to convey. If you answer correctly, a joyful melody will be played. If you answer incorrectly, the “view artworks again” button will flash along with an error sound."
+              bold2="Mobile/Tablet: " contents2="There are a total of 5 pictures. To view the animations, please use a laptop with your browser maximized. For tablets and phones, please click on the dots on either side of the screen to navigate between drawings."></MainContents_Important_With_Border_two_bolder>
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>

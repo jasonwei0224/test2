@@ -12,8 +12,8 @@ import Second_Title_ch_bold from '../../modules/Second_TitleCh_Bold';
 import MainContents_Important_ch from "../../modules/MainContents_Important_ch";
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
-
-
+import Second_Title_ch from '../../modules/Second_TitleCh';
+import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 
 
 function IAmDifferent() {
@@ -43,6 +43,9 @@ function IAmDifferent() {
 上傳照片的民眾，不僅可能在台灣文化節網站看到自己、親友或世界各地相同職業人士的照片，還能在我們的網站上進行影像互動體驗，一起邀更多朋友響應 "I’m different, just like you."
 
 8/28起，上傳照片的朋友，可以在網站上，看到自己分享的照片，以及體驗影像互動遊戲!`
+
+var instruction1 = `此互動作品是由這次疫情中保護我們的前線作業人員一起完成的互動遊戲，讓我們好好的認識他們！遊戲的問題在左上方，請滑鼠點擊圖片並找出職業相同的前線人員們。
+`
   return (
     <div>
       <Container fluid>
@@ -58,6 +61,9 @@ function IAmDifferent() {
           url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent-ch&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo_ch>
+        <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
+          <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
+          bold2="手機/平板: " contents2="互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看照片。"></MainContents_Important_With_Border_two_bolder_ch>
 
         <Second_Title_ch_bold secondTitle="影像創作 X 線上互動"></Second_Title_ch_bold>
 

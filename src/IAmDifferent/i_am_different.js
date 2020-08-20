@@ -23,8 +23,8 @@ import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt";
 import MainContents_With_Bold from "../modules/MainContents_WithBold";
 import { Helmet } from "react-helmet";
 import different_img from "../assets/Different.jpg";
-
-
+import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
+import Second_Title from "../modules/Second_Title"
 
 function IAmDifferent() {
   const diffForm = <Link to="IAmDifferent"></Link>;
@@ -343,10 +343,10 @@ function IAmDifferent() {
           color="#D9C739"
         ></ProgramInfo>
 
-        <Second_Title_Bold
-          secondTitle="How to interact with this work:"
-          style={{ fontFamily: "sofia-pro Sans-serif" }}
-        ></Second_Title_Bold>
+        <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK:" style={{fontFamily: "sofia-pro"}}></Second_Title>
+        <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents="This interactive piece is completed by frontline workers who kept us safe during the pandemic. Let us get to know them! Look for all the pictures that are of the occupation shown on the top-left and bottom left of the screen."
+          bold2="Mobile/Tablet: " contents2="Please use a laptop to view this project. For tablets and phones, please click on the dots on either side of the screen to navigate between drawings."></MainContents_Important_With_Border_two_bolder>
+
 
         <MainContents_WithBold_Impt
           contents=""

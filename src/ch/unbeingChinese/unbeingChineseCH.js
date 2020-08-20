@@ -26,6 +26,7 @@ import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
 import tong from '../../assets/Tong.jpg'
+import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 
 function UnbeingChinese() {
   var text= `一個出生在中國的藝術家，掙扎的選擇了放棄「中國人」的身分，到了加拿大。就當他以為別人會以「加拿大人」看待他時，他的「中國人」身分就重新回到他身上。疫情發生了，許多人開始歧視「中國人」的身分，許多政府開始針對「中國」，這個身分又再度產生困擾。然而有「趣」的是，今天所謂的中國化是否也曾經在不同的世代被挑戰了呢？在加拿大，不同族裔的人都曾經為了文化認同而困擾，日裔與越裔的加拿大人都曾有過這樣的經歷。讓我們試著先不要用政治語言來解讀，看看藝術是否可以帶給我們一些有趣的角度？`
@@ -76,7 +77,8 @@ function UnbeingChinese() {
 
 
 
-        <MainContents_Important_With_Border style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
+        <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents="請將滑鼠移至每一張圖片的上方，即可發現藝術家的創意"
+        bold2="手機/平板: " contents2="請將手指點擊每一張圖片，即可發現藝術家的創意"></MainContents_Important_With_Border_two_bolder_ch>
         <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
         </MainContents_Middle_Adonis>
 

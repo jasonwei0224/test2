@@ -49,8 +49,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
         ></ProgramInfo>
 
         <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-        <MainContents_Important_With_Border  style={{color:"#0C3866"}} contents=" Click Left and right to navigate the art works "></MainContents_Important_With_Border>
-
+<MainContents_Important_With_Border contents="Click and drag the bar in the middle to see the difference."></MainContents_Important_With_Border>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
                         </MainContents_Middle_Adonis>
         <MainContents_OneArtist src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtist>
