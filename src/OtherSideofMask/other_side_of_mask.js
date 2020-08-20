@@ -48,12 +48,14 @@ class OtherSideOfMask extends Component {
     // add renderer
     var renderer = new THREE.WebGLRenderer();
     renderer.setClearColor("#ffffff");
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, 800);
     this.mount.appendChild( renderer.domElement );
 
     // add camera
-    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-    camera.position.z = 5;
+    var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000 );
+    camera.position.z = -3;
+    camera.position.y = -1;
+    camera.position.x = -3;
 
     // camera controls
     this.controls = new OrbitControls(camera, renderer.domElement);
@@ -63,10 +65,10 @@ class OtherSideOfMask extends Component {
     light.position.set(0, 200, 0)
     scene.add(light)
     var light2 = new THREE.PointLight(0xffffff,1,0)
-    light.position.set(100, 200, 100)
+    light2.position.set(100, 200, 100)
     scene.add(light2)
     var light3 = new THREE.PointLight(0xffffff,1,0)
-    light.position.set(-100, -200, -100)
+    light3.position.set(2000, 2000,50)
     scene.add(light3)
 
     // loading material
@@ -76,6 +78,11 @@ class OtherSideOfMask extends Component {
       let objLoader = new OBJLoader();
       objLoader.setMaterials(materials)
       objLoader.load('./MaskModel1.obj', (object) => {
+        object.rotation.x = -28/180* Math.PI;
+        object.rotation.y = -50/180*Math.PI;
+        // object.geometry.center()
+        THREE.Geometry()
+        object.translateY(-1.5);
         scene.add(object)
       })
     })
