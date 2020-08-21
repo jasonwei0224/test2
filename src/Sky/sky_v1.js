@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ImageSlider from '../imageSlider';
-import ProgramInfoThinLine from '../programInfoThinLine';
+import ProgramInfo from '../programInfo';
 import {Link} from 'react-router-dom'
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import banner from '../assets/placeholder.png';
@@ -151,71 +151,47 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
       <div>
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
-
           {/*}  <Slider images={images}></Slider>*/}
-
-              <Row>
-                  <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
-                    <img className="main_image" src={mainImage}/>
-                  </Col>
-              </Row>
-
-
-              <ProgramInfoThinLine
-                subtitle="I'm different, just like you!"
-                title="SKY"
-                artistName="Curator: Jessica Sung"
-                url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
-                color="#246f79"
-                ></ProgramInfoThinLine>
+            <Row>
+              <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
+                <img className="main_image" src={mainImage}/>
+              </Col>
+            </Row>
+            <ProgramInfo
+              subtitle="I'm different, just like you!"
+              title="SKY"
+              artistName="TAIWANfest"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
+              color="#D9C739"
+              ></ProgramInfo>
 
 
-                <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
-
-
+              <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
         <Second_Title_Bold secondTitle="Under the same sky project"></Second_Title_Bold>
-
         <MainContents_Important contents="Be part of the art with our Under the same sky project. Follow Toronto TAIWANfest social media to find out when to take a photo of the sky wherever you are globally and upload your photo for a chance to be featured. Click the link below for more details."></MainContents_Important>
-
-
         <FormSectionTitle title="PHOTOGRAPHER"></FormSectionTitle>
-
         <Form encType="multipart/form-data">
-
           <FormComponent formId="firstName" formClassName="inputfield_form" placeHolder="First Name"> </FormComponent>
           <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="Last Name"> </FormComponent>
           <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
-
           <FormSectionTitle title="PHOTO INFO"></FormSectionTitle>
-
           <Form.Row style={{marginBottom:"30px"}}>
-
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control id="description" as ="textArea" className="inputfield" type="text" placeholder="Description" size="lg"/>
               </Col>
           </Form.Row>
-
           <FormComponent formId="location" formClassName="inputfield_form" placeHolder="Location"> </FormComponent>
           <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
-
-
-
-
           <FormFile FormId="subjectFile" onChange={this.onChange} hint="File must be .jpg or .png and under 1MB"></FormFile>
-
           <FormConsent inputId="checkbox-3" consent= "I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project."></FormConsent>
-
-
-            <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"></Button1>
-
+          <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"></Button1>
         </Form>
-
         <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
         <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />
         <InvalidFileModal show={this.state.showInvalidFile} onClick={()=>this.invalidFile()} />
-
+            <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
         </Container>
-      <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
+
     </div>
 
     );

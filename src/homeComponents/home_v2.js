@@ -36,8 +36,8 @@ import sky_home_project_hover from '../assets/T-Under the Same Sky Project only.
 import we_are_all_home_mobile from '../assets/T-We are in this together online-en word.jpg';
 import we_are_all_home_mobile_hover from '../assets/T-We are in this together online-en.jpg';
 import apple_home_mobile from'../assets/T-Pual_s Apple-en word.jpg';
-import apple_home_mobile_hover from '../assets/T-UN being Chinese-en word.jpg';
-import chinese_home_mobile from '../assets/T-Pual_s Apple-en.jpg';
+import apple_home_mobile_hover from '../assets/T-Pual_s Apple-en.jpg';
+import chinese_home_mobile from '../assets/T-UN being Chinese-en word.jpg';
 import chinese_home_mobile_hover from '../assets/T-UN being Chinese-en.jpg'
 import mirror_home_mobile from '../assets/T-Mirrios-en word.jpg';
 import mirror_home_mobile_hover from '../assets/T-Mirrios-ch.jpg'

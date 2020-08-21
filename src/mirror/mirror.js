@@ -25,7 +25,7 @@ import mina from '../assets/人物照-Mina.jpg'
 import Slider from './img_slider_final_mirror'
 import slide1 from '../assets/artist_taiwan_color.jpg';
 import slide2 from '../assets/doctor.jpg';
-import slide3 from '../assets/firefighter.jpg'
+import slide3 from '../assets/fireman.jpg'
 import slide4 from '../assets/dancer.jpg'
 import slide10 from '../assets/child.jpg'
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
@@ -55,13 +55,13 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
             <Container fluid>
                 <MirrorBird></MirrorBird>
-                <Slider className="test" images={images}></Slider>
+                <Slider className="test"></Slider>
 
             <ProgramInfo
               id="test"
               subtitle="Illustration"
               title="Mirrors"
-              artistName="Artist: Mina Lu"
+              artistName="Artist: Yen-Chun Lu"
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
@@ -70,7 +70,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtist src={mina} title="Mina Lu" contents={artistText}></MainContents_OneArtist>
+              <MainContents_OneArtist src={mina} title="Yen-Chun Lu" contents={artistText}></MainContents_OneArtist>
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>

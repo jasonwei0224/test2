@@ -67,6 +67,7 @@
     margin-right: auto;
     width: 25%;
     margin-top: 10px;
+    overflow: hidden;
   }
   #mobileLine {
     visibility: hidden;
@@ -81,6 +82,7 @@
     margin-right: auto;
     width: 21%;
     margin-top: 25px;
+      overflow: hidden;
   }
   #mobileLine {
     visibility: hidden;

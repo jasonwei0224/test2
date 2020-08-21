@@ -18,6 +18,8 @@
   color:white;
   font-size:23px;
   padding:1rem;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 .diff_bottom_row{
   background-color: black;
@@ -170,6 +172,14 @@
 
 /* lg */
 @media screen and (min-width: 1200px) {
+  .diff_top_row{
+    background-color: black;
+    width:90%;
+    margin:auto!important;
+    color:white;
+    font-size:23px;
+    padding:1rem;
+  }
 
 }
 @media screen and (min-width: 2560px){
