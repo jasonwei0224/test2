@@ -57,12 +57,12 @@ var t = `手機 / 平板`
 
             <Container fluid>
                 <MirrorBird_ch></MirrorBird_ch>
-
+                  <Slider className="test"></Slider>  
             <ProgramInfo
               id="test"
               subtitle="插畫創作"
               title="鏡子"
-              artistName="創作：盧妍均"
+              artistName="藝術家：盧妍均"
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>

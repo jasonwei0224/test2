@@ -19,7 +19,7 @@ import MainContents_Middle from "../../modules/MainContents_Middle"
 import MainContents_Important from "../../modules/MainContents_Important"
 import MainContents_Img from "../../modules/MainContents_img"
 import FooterCH from '../footer-ch';
-import MobileShareButton from "../../modules/mobileShareButton";
+import MobileShareButton from "../../modules/mobileShareButton-ch";
 import './unbeingChinese.css';
 import HoverImage from "react-hover-image"
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"

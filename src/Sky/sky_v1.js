@@ -164,7 +164,7 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
               <ProgramInfoThinLine
                 subtitle="I'm different, just like you!"
                 title="SKY"
-                artistName="Curator: Jessica Sung"
+                artistName="TAIWANfest"
                 url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
                 color="#246f79"
                 ></ProgramInfoThinLine>

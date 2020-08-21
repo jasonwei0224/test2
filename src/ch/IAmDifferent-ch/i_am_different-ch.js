@@ -343,7 +343,7 @@ var pick_job = function (){
           <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
           bold2="手機 / 平板: " contents2="互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看照片。"></MainContents_Important_With_Border_two_bolder_ch>
 
-        <Second_Title_ch_bold secondTitle="影像創作 X 線上互動"></Second_Title_ch_bold>
+        <Second_Title_ch secondTitle="影像創作 X 線上互動"></Second_Title_ch>
 
         <MainContents_Important_ch contents="在疫情最辛苦艱難的時期，許多生命受苦臨危之際，醫護人員、警消人員、科學家、衛生官員這些專業人士，在拯救生命的同時，並不會過問危難者的族裔與身份。我們每一個人都會面臨生命終結的一天，當這些專業人士在救助受苦的人們，處理危急的情況當下，並不會過問對方的膚色族裔、語言文化、社經地位，那時，他們的眼中視一切生命皆為平等，不因求助者的外在條件、理想價值而有所不同。"></MainContents_Important_ch>
         <Row className="space_ch_imd"><Col></Col></Row>

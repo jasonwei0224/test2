@@ -302,10 +302,10 @@ function IAmDifferent() {
         </Row>*/}
         <div style={{backgroundColor:"black"}}>
         <Row className="diff_top_row" id="diff_top_row">
-          <Col lg={{ span: 6, offset: 0 }}>
+          <Col>
           <div style={{textAlign:"center", margin:"auto"}}><span className = "target" ></span></div>
         </Col>
-        <Col lg={{ span: 6, offset: 0 }}>
+        <Col>
           <div style={{textAlign:"center", margin:"auto"}}><span className = "info" ></span></div>
         </Col>
         </Row>
@@ -359,6 +359,7 @@ function IAmDifferent() {
           bold=" “I’m different, just like you!” "
           contents2="Everyone should be proud of their differences and the only certainty for the world is that everyone is different regardless of birthplaces, lifestyles, skin colours or languages spoken."></MainContents_With_Bold>
 
+  
         <Button2
           onclick={goToForm}
           title="UPLOAD FRONT-LINE HERO PHOTO"
@@ -374,9 +375,7 @@ function IAmDifferent() {
           alignItems: "center",
         }}
       ></div>
-      <Row style={{ justifyContent: "center", alignItems: "center" }}>
-        {/*<NewsletterContactUs></NewsletterContactUs>*/}
-      </Row>
+
     <Footer content="&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
     </div>
   );

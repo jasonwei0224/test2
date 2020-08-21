@@ -55,13 +55,13 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
             <Container fluid>
                 <MirrorBird></MirrorBird>
-                <Slider className="test" images={images}></Slider>
+                <Slider className="test"></Slider>
 
             <ProgramInfo
               id="test"
               subtitle="Illustration"
               title="Mirrors"
-              artistName="Artist: Mina Lu"
+              artistName="Artist: Yen-Chun Lu"
               url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
@@ -70,7 +70,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
-              <MainContents_OneArtist src={mina} title="Mina Lu" contents={artistText}></MainContents_OneArtist>
+              <MainContents_OneArtist src={mina} title="Yen-Chun Lu" contents={artistText}></MainContents_OneArtist>
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>

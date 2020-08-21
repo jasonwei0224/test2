@@ -7,7 +7,7 @@ const Second_Title_Bold = (props) => {
         <div>
             <Row style={{marginTop:"40px"}}>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <p className ="second_Title_P_bold">{props.secondTitle}</p>
+                    <p className ="second_Title_P">{props.secondTitle}</p>
                 </Col>
             </Row>
 
