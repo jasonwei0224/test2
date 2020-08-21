@@ -1,19 +1,19 @@
 import React from 'react';
 import SimpleImageSlider from "react-simple-image-slider";
 import './img_slider_final_people_and_mask.css'
-import image1 from '../../src/assets/mask1.jpg'
-import image2 from '../../src/assets/mask2.jpg'
-import image3 from '../../src/assets/mask3.jpg'
-import image4 from '../../src/assets/mask4.jpg'
-import image5 from '../../src/assets/mask5.jpg'
-// import Dots from './img_slider_final_dots_people_and_mask'
+import scream from '../assets/1-1280-800Scream.jpg'
+import panic from '../assets/2-1280-800Panic.jpg';
+import crying from '../assets/3-1280-800Crying.jpg';
+import doubt from '../assets/4-1280-800Doubt.jpg';
+import terrified from '../assets/5-1280-800Terrified.jpg'
+import silence from '../assets/6-1280-800Silence.jpg'
 
 class Slider extends React.Component {
     constructor(props) {
       super(props)
 
       this.state = {
-        images: props.images,
+        images: [scream, panic, crying, doubt, terrified, silence],
         currentIndex: 0,
         translateValue: 0
       }

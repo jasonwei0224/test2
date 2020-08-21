@@ -5,7 +5,7 @@ import "./Second_Title.css"
 const Second_Title = (props) => {
     return (
         <div>
-            <Row style={{marginTop:"40px"}}>
+            <Row style={{marginTop:"50px"}}>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
                     <p className ="second_Title_P">{props.secondTitle}</p>
                 </Col>

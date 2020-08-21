@@ -126,7 +126,8 @@ a.PI-shareButton_ch:hover{
   }
   .PI-artist-two-ch{
     color: #0C3866;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight:bold;
     padding: 0;
     font-style: italic;
       padding-left: 0px!important;
@@ -157,7 +158,8 @@ a.PI-shareButton_ch:hover{
   }
   .PI-artist-two-ch{
     color: #0C3866;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight:bold;
     padding: 0;
     font-style: italic;
       padding-left: 0px!important;
@@ -207,6 +209,16 @@ a.PI-shareButton_ch:hover{
       .PI-subtitle_twoArtist-ch {
           font-size: 50px;
       }
+      .PI-artist-two-ch{
+        color: #0C3866;
+        font-size: 30px;
+        font-weight:normal;
+        padding: 0;
+        font-style: italic;
+          padding-left: 0px!important;
+          margin-bottom: 0px!important;
+          /* font-family: "sofia-pro", Sans-serif !important; */
+      }
   }
 
 @media screen and (min-width: 1200px) {
@@ -214,7 +226,16 @@ a.PI-shareButton_ch:hover{
       font-size: 40px;
       font-family: adonis-web, serif;
   }
-
+  .PI-artist-two-ch{
+    color: #0C3866;
+    font-size: 30px;
+    font-weight:normal;
+    padding: 0;
+    font-style: italic;
+      padding-left: 0px!important;
+      margin-bottom: 0px!important;
+      /* font-family: "sofia-pro", Sans-serif !important; */
+  }
   .PI-title_ch {
       font-size: 50px;
       margin-bottom: 7.5%;

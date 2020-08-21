@@ -1,14 +1,10 @@
 import React from 'react';
 import SimpleImageSlider from "react-simple-image-slider";
 import './img_slider_final_people_and_mask.css'
-// import image1 from '../../src/assets/mask1.jpg'
-// import image2 from '../../src/assets/mask2.jpg'
-// import image3 from '../../src/assets/mask3.jpg'
-// import image4 from '../../src/assets/mask4.jpg'
-// import image5 from '../../src/assets/mask5.jpg'
-// import Dots from './img_slider_final_dots_people_and_mask'
+
 
 class Slider extends React.Component {
+  // var images = [scream, panic, crying, doubt, terrified, silence]
     constructor(props) {
       super(props)
 

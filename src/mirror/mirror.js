@@ -66,7 +66,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
               color="#D9C739"/>
             <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
               <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents=" There are a total of 5 pictures. Click on the picture to discover the messages that the artist is trying to convey. If you answer correctly, a joyful melody will be played. If you answer incorrectly, the “view artworks again” button will flash along with an error sound."
-              bold2="Mobile/Tablet: " contents2="There are a total of 5 pictures. To view the animations, please use a laptop with your browser maximized. For tablets and phones, please click on the dots on either side of the screen to navigate between drawings."></MainContents_Important_With_Border_two_bolder>
+              bold2="Mobile / Tablet: " contents2="There are a total of 5 pictures. To view the animations, please use a laptop with your browser maximized. For tablets and phones, please click on the dots on either side of the screen to navigate between drawings."></MainContents_Important_With_Border_two_bolder>
 
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>

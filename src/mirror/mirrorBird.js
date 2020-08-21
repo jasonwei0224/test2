@@ -5,6 +5,9 @@ import $ from "jquery";
 import pigeon from "../assets/pigeon_stop.svg";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import mouseClick from '../../src/assets/mouseClick.gif'
+import mouseClick2 from '../assets/mouseClick2.png'
+import mouseClick3 from '../assets/mouseClick3.png'
+import mouseClick4 from '../assets/mouseClick4.png'
 
 class MirrorBird extends React.Component {
   constructor(props) {
@@ -17,6 +20,7 @@ class MirrorBird extends React.Component {
   componentDidMount=() =>{
 
     $('#wrapper_mirror').one('click', function(e) {
+      $('#pointerDiv').css({"display":"none"});
       $('#box_1').addClass('bird-container bird-container--one')
       $('#bird_1').addClass('bird bird--one')
       setTimeout(function() {
@@ -270,7 +274,7 @@ class MirrorBird extends React.Component {
       <div id="wrapper_mirror" >
 
         <div id="container_box_bird_1" className="mirror-bird-container">
-          <img id="pointerDiv" src={mouseClick}></img>
+          {/*}<img id="pointerDiv" src={mouseClick4}></img>*/}
 
           <div id="box_1">
             <div id="bird_1"></div>

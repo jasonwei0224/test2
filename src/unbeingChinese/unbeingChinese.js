@@ -83,7 +83,7 @@ Exactly who is playing the game?  The paradox of evolving or revolving identity 
 
 
           <MainContents_Important_With_Border_two_bolder  style={{color:"#0C3866"}} bold="Desktop: " contents="Hover your mouse over the 6 different pictures to see the artist’s creativity."
-          bold2="Mobile/Tablet: " contents2="Click on the 6 different pictures to see the artist’s creativity."></MainContents_Important_With_Border_two_bolder>
+          bold2="Mobile / Tablet: " contents2="Click on the 6 different pictures to see the artist’s creativity."></MainContents_Important_With_Border_two_bolder>
                 <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
         </MainContents_Middle_Adonis>
 
