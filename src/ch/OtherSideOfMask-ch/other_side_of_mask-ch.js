@@ -68,7 +68,7 @@ class OtherSideOfMask_ch extends Component {
             <ProgramInfoTwoArtistCH
             subtitle="口罩之說"
             title="一罩之隔"
-            artistitle1="創作： "
+            artistitle1="藝術家： "
             artistName1="Lady Hao Hao"
             artistitle2="3D  藝術： "
             artistName2="高于翔"

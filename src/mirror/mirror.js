@@ -25,7 +25,7 @@ import mina from '../assets/人物照-Mina.jpg'
 import Slider from './img_slider_final_mirror'
 import slide1 from '../assets/artist_taiwan_color.jpg';
 import slide2 from '../assets/doctor.jpg';
-import slide3 from '../assets/firefighter.jpg'
+import slide3 from '../assets/fireman.jpg'
 import slide4 from '../assets/dancer.jpg'
 import slide10 from '../assets/child.jpg'
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"

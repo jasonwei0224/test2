@@ -5,10 +5,10 @@ import './img_slider_final_mirror.css'
 // import Dots from './img_slider_final_dots_mirror_and_mask'
 
 import slide1 from '../assets/artist_taiwan_color.jpg';
-import slide2 from '../assets/doctor.jpg';
-import slide3 from '../assets/firefighter.jpg'
-import slide4 from '../assets/dancer.jpg'
-import slide10 from '../assets/child.jpg'
+import slide2 from '../assets/healthcare_professional_taiwan_color.jpg';
+import slide3 from '../assets/fireman_taiwan_color.jpg'
+import slide4 from '../assets/dancer-taiwan_color.jpg'
+import slide10 from '../assets/child_taiwan_color.jpg'
 
 class MirrorSlider extends React.Component {
     constructor(props) {
