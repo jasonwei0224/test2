@@ -143,30 +143,36 @@ class OtherSideOfMask extends Component {
       <div>
         <Container fluid>
           <div style={{borderTop: "1px solid #D9C739"}}></div>
-          {/* <Row>
-            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
-              <MTLModel src="./MaskModel1.obj" mtl="./MaskModel1.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
-                <AmbientLight color={0xffffff}/>
-                <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
-                <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
-              </MTLModel>
-            </Col>
-            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
-              <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
-                <AmbientLight color={0xffffff}/>
-                <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
-                <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
-              </MTLModel>
-            </Col>
-          </Row> */}
-          <Row>
+            <Row>
+              <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+                  {/*}<div ref={ref => (this.mount = ref)} />*/}
+                  <MTLModel src="./MaskModel1.obj" mtl="./MaskModel1.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                    <AmbientLight color={0xffffff}/>
+                 <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+                 <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+
+                  </MTLModel>
+              {/*}<ModelDisplay obj="./MaskModel1.obj" mtl="./MaskModel1.mtl"></ModelDisplay>*/}
+         </Col>
+         <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+
+
+           <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+             <AmbientLight color={0xffffff}/>
+          <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+          <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+
+           </MTLModel>
+        </Col>
+      </Row>
+          {/*}<Row>
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <ThreeScene mtl="./MaskModel1.mtl" obj="./MaskModel1.obj"/>
             </Col>
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <ThreeScene mtl="./MaskModel2.mtl" obj="./MaskModel2.obj"/>
             </Col>
-          </Row>
+          </Row>*/} 
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
             title="THE OTHER SIDE OF MASK"
