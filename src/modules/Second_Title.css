@@ -29,8 +29,9 @@
   .second_Title_P{
       color:#BE0027;
       font-size: 35px;
-      /* font-weight: bold; */
+      font-weight: bold;
       font-family: "sofia-pro", Sans-serif;
+      margin-top: 85px;
   }
   .second_Title_P_bold{
     color:#BE0027;
@@ -59,8 +60,9 @@
     .second_Title_P{
         color:#BE0027;
         font-size: 35px;
-        /* font-weight: bold; */
+        font-weight: bold;
         font-family: "sofia-pro", Sans-serif;
+        margin-top: 85px;
     }
     .second_Title_P_bold{
       color:#BE0027;
@@ -90,6 +92,7 @@
       font-size: 40px;
       /* font-weight: bold; */
       font-family: "sofia-pro", Sans-serif;
+          margin-top: 0px;
   }
   .second_Title_P_bold{
     color:#BE0027;
@@ -119,6 +122,7 @@
         font-size: 20px !important;
         /* font-weight: bold; */
         font-family: "sofia-pro", Sans-serif;
+            margin-top: 0px;
         margin-bottom: 20px;
     }
     .second_Title_P_bold{

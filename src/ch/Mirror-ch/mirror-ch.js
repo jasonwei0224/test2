@@ -51,6 +51,7 @@ var artistText=`專精紙藝藝術多年，跳脫傳統繁複的結構設計，�
 var instruction1 = `此作品一共有五張創作，請用滑鼠點擊圖片來體驗藝術家想告訴你的訊息
 若回答正確時，將會播放音樂，若回答錯誤，「重看一次」按鈕將會閃爍`
 var images = [slide1, slide2, slide3, slide4, slide10]
+var t = `手機 / 平板`
         return (
             <div className='mirror'>
 
@@ -66,7 +67,7 @@ var images = [slide1, slide2, slide3, slide4, slide10]
               color="#D9C739"/>
             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
               <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
-              bold2="手機 / 平板: " contents2="此作品一共有五張創作，互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看不同創作"></MainContents_Important_With_Border_two_bolder_ch>
+              bold2={t} contents2="此作品一共有五張創作，互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看不同創作"></MainContents_Important_With_Border_two_bolder_ch>
     <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
 
