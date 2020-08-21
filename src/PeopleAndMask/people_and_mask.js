@@ -3,12 +3,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { virtualize, bindKeyboard } from 'react-swipeable-views-utils';
 import { mod } from 'react-swipeable-views-core';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import crying from '../assets/1280-600Crying.jpg';
-import panic from '../assets/1280-600Panic.jpg';
-import terrified from '../assets/1280-600Terrified.jpg'
-import crying8 from '../assets/1280-800Crying.jpg';
-import panic8 from '../assets/1280-800Panic.jpg';
-import terrified8 from '../assets/1280-800Terrified.jpg'
+
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import walter from '../assets/Walter.jpg'
 import Pagination from '../modules/Pagination';
@@ -22,6 +17,8 @@ import Footer from '../footer-temp';
 import Slider from './img_slider_final_people_and_mask'
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_Important_With_Border_one_bolder from "../modules/MainContents_Important_with_border_one_bold"
+
+
 
 const styles = {
   root: {
@@ -53,7 +50,7 @@ We choose to say nothing - despite seeing people who panic or scream.\n
 People are free to hear nothing, see nothing and say nothing.\n
 But, when the freedom is lost, people may have to live with a life feeling terrified, doubtful, silenced or a life involving constantly screaming, crying or panicking.
 `
-var images = [crying, panic, terrified]
+// var images = [crying, panic, terrified]
 
 class PeopleAndMask extends Component {
   state = {
@@ -80,7 +77,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
         <Container fluid>
           <div style={{borderTop: "1px solid #D9C739"}}></div>
           <Row>
-            <Slider images={images}></Slider>
+            <Slider></Slider>
           </Row>
 
           <ProgramInfoTwoArtist

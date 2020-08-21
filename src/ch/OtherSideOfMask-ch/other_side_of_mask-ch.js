@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './other_side_of_mask-ch.css';
-import {OBJModel} from 'react-3d-viewer'
 import image1 from '../../assets/image1.jpg';
 import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
 import walter from '../../assets/Walter.jpg'
@@ -16,6 +15,7 @@ import MobileShareButton_ch from "../../modules/mobileShareButton-ch";
 import ImageWithDescriptionCH from"../../modules/MainContent_ImageWithDescription_Ch";
 import FooterCH from "../footer-ch";
 import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
+import {OBJModel, MTLModel, GLTFModel, AmbientLight,DirectionLight, JSONModel} from 'react-3d-viewer'
 
 var text = `口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。\n
 透過這樣的作品呈現，讓人不禁懷疑，到底那一面是「保護」？那一面是我們應該相信的「真實」？我們常常經由語言與行為，表達傷害與歧視；在這次的疫情裡，我們也看見了許多美麗包裝下的話術，說出來的卻是醜陋的意涵與不實的陳述。這次的疫情如此嚴重，究竟是因為病毒肆虐，還是我們選擇性無視那真實的訊息？\n
@@ -42,24 +42,28 @@ class OtherSideOfMask_ch extends Component {
           <div>
             <Container fluid>
               <div style={{borderTop: "1px solid #D9C739"}}></div>
-              <Row>
-                <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
-                  <div>
-                    <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                      position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
-                  </div>
-                </Col>
-                {/*}<Col className="middle_text_other" xl={{span:0, offset:0}} lg={{span:11, offset:1}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
-                  <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>          </MainContents_Middle_Adonis>
-                </Col>*/}
-                <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="model3D-col" >
-                <div>
-                  <OBJModel src="./Bee.obj" textPath="" width="1800" height="600"
-                      position={{x:0,y:-10,z:0}} style={{backgroundColor:"black"}}/>
-                  </div>
-                </Col>
-              </Row>
-            {/*<Row className="other-side-hint-ch"><p>Click and drag or scroll to look around</p></Row>*/}
+                <Row>
+                  <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+                      {/*}<div ref={ref => (this.mount = ref)} />*/}
+                      <MTLModel src="./MaskModel1.obj" mtl="./MaskModel1.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                        <AmbientLight color={0xffffff}/>
+                     <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+                     <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+
+                      </MTLModel>
+                  {/*}<ModelDisplay obj="./MaskModel1.obj" mtl="./MaskModel1.mtl"></ModelDisplay>*/}
+             </Col>
+             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+
+
+               <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                 <AmbientLight color={0xffffff}/>
+              <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+              <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+
+               </MTLModel>
+            </Col>
+          </Row>
 
             <ProgramInfoTwoArtistCH
             subtitle="口罩之說"
