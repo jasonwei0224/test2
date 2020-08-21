@@ -18,10 +18,11 @@ h1.PI-title_twoArtist-ch{
     font-size: 40px;
 }
 .PI-subtitle_twoArtist-ch {
-    color: #246f79;
+    color: #0C3866;
     margin-top: 5%;
     font-weight: bold;
     font-size: 40px;
+    /* font-family: Sofia-pro, sans-S; */
     /* font-family: adonis-web !important; */
 }
 .PI-title_ch {
