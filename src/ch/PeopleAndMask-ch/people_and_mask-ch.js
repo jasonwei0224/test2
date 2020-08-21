@@ -106,7 +106,7 @@ class PeopleAndMask extends Component {
           <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
 
 
-            <MainContents_Important_With_Border_one_bolder  style={{color:"#0C3866"}} bold="桌機/手機/平板: " contents={instruction1} bold2="" contents2=""
+            <MainContents_Important_With_Border_one_bolder  style={{color:"#0C3866"}} bold="桌機 / 手機 / 平板: " contents={instruction1} bold2="" contents2=""
             ></MainContents_Important_With_Border_one_bolder>
           <MainContents_Middle style={{color:"#0C3866"}} contents={text}>
           </MainContents_Middle>

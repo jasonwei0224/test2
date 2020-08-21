@@ -96,7 +96,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
           </ProgramInfoTwoArtist>
 
           <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
-            <MainContents_Important_With_Border_one_bolder style={{color:"#0C3866"}} bold="Desktop/Tablet/Mobile: " contents="Click on the dots on either side of the screen to view the art works (total of 6 pieces).
+            <MainContents_Important_With_Border_one_bolder style={{color:"#0C3866"}} bold="Desktop / Tablet / Mobile: " contents="Click on the dots on either side of the screen to view the art works (total of 6 pieces).
   "></MainContents_Important_With_Border_one_bolder>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>

@@ -74,7 +74,7 @@ class OtherSideOfMask_ch extends Component {
 
           <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
             <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
-            bold2="手機/平板: " contents2="此作品共有兩個創作，請用手指左右的移動，可觀賞作品的不同角度。請用手指向外與向內推動，將可拉近與拉遠觀看作品。"></MainContents_Important_With_Border_two_bolder_ch>
+            bold2="手機 / 平板: " contents2="此作品共有兩個創作，請用手指左右的移動，可觀賞作品的不同角度。請用手指向外與向內推動，將可拉近與拉遠觀看作品。"></MainContents_Important_With_Border_two_bolder_ch>
           <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
 
 

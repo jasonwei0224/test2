@@ -63,7 +63,7 @@ var instruction1 = `此互動作品是由這次疫情中保護我們的前線作
         ></ProgramInfo_ch>
         <Second_Title_ch secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title_ch>
           <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
-          bold2="手機/平板: " contents2="互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看照片。"></MainContents_Important_With_Border_two_bolder_ch>
+          bold2="手機 / 平板: " contents2="互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看照片。"></MainContents_Important_With_Border_two_bolder_ch>
 
         <Second_Title_ch_bold secondTitle="影像創作 X 線上互動"></Second_Title_ch_bold>
 
