@@ -145,6 +145,14 @@ a.PI-shareButton:hover{
       font-size: 40px;
       font-family: sofia-pro, sans-serif;
   } */
+  .PI-artist {
+        color: #0C3866;
+        font-size: 35px;
+        padding: 0;
+        font-style: italic;
+        font-weight: bold;
+        padding-left: 0px!important;
+    }
 }
 
 @media only screen and (min-width: 768px) {
