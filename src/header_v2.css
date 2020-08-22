@@ -149,6 +149,8 @@ a.dropdown-item{
 a.dropdown-item:hover{
   background-color: #D9C739;
   color:white;
+  padding-top:16px;
+  padding-bottom:16px;
 }
 .dropdown-item{
   text-align: center!important;

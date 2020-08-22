@@ -4,7 +4,7 @@ import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import './IAmDifferentForm.css'
 import Footer from '../footer-temp';
 import fire from '../firebase/file';
-import different_img from "../assets/Different.jpg";
+import different_img from "../assets/ToghtherPhoto.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
 import FormComponent from "../modules/formComponent"
@@ -165,7 +165,9 @@ class IAmDifferentForm extends Component {
             <FormComponent formId="senderCity" formClassName="inputfield_form" placeHolder="City And Country"> </FormComponent>
             <FormComponent formId="senderEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
             <FormComponent formId="subjectFirstName" formClassName="inputfield_form" placeHolder="Subject's First Name"> </FormComponent>
-            <Form.Row style={{marginBottom:"30px"}}>
+
+          <Row>
+          {/*}<Form.Row style={{marginBottom:"30px"}}>*/}
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                   <Form.Control bsCustomPrefix = 'inputfield_selection' className=  'inputfield_selection' id="subjectOccupation" as="select" >
                     <option>Doctor</option>
@@ -181,8 +183,8 @@ class IAmDifferentForm extends Component {
                   </Form.Control>
 
                 </Col>
-            </Form.Row>
-
+            {/*}</Form.Row>*/}
+            </Row>
             <FormComponent formId="subjectEthnicity" formClassName="inputfield_form" placeHolder="Ethnicity"> </FormComponent>
             <FormComponent formId="subjectCity" formClassName="inputfield_form" placeHolder="City, Country"> </FormComponent>
 

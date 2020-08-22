@@ -21,7 +21,7 @@ import SuccessModal from '../successModal';
 import InvalidFileModal from '../invalidFileModal';
 import mainImage from '../assets/sky4.jpeg';
 import {Helmet} from "react-helmet";
-import Slider from './img_slider_final_sky'
+import Slider from './img_slider_final_sky3'
 import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 class SkyV1 extends Component {
 
@@ -151,7 +151,7 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
       <div>
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
-          {/*}  <Slider images={images}></Slider>*/}
+           <Slider></Slider>
             <Row>
               <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
                 <img className="main_image" src={mainImage}/>
@@ -175,11 +175,14 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
           <FormComponent formId="lastName" formClassName="inputfield_form" placeHolder="Last Name"> </FormComponent>
           <FormComponent formId="userEmail" formClassName="inputfield_form" placeHolder="Email"> </FormComponent>
           <FormSectionTitle title="PHOTO INFO"></FormSectionTitle>
-          <Form.Row style={{marginBottom:"30px"}}>
+
+          <Row>
+          {/*}<Form.Row style={{marginBottom:"30px"}}>*/}
               <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} xs={{span:10, offset:1}}>
                 <Form.Control id="description" as ="textArea" className="inputfield" type="text" placeholder="Description" size="lg"/>
               </Col>
-          </Form.Row>
+          {/*</Form.Row>*/}
+          </Row>
           <FormComponent formId="location" formClassName="inputfield_form" placeHolder="Location"> </FormComponent>
           <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
           <FormFile FormId="subjectFile" onChange={this.onChange} hint="File must be .jpg or .png and under 1MB"></FormFile>

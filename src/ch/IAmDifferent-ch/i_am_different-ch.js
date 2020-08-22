@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import CardGame_ch from "./cardGame-ch";
 import styled from "@emotion/styled";
-import different_img from "../../assets/Different.jpg";
+import different_img from "../../assets/ToghtherPhoto.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
 import "./i_am_different-ch.css";
@@ -12,7 +12,8 @@ import Second_Title_ch_bold from '../../modules/Second_TitleCh_Bold';
 import MainContents_Important_ch from "../../modules/MainContents_Important_ch";
 import MainContents_Middle_ch from "../../modules/MainContents_Middle_ch";
 import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
-import Second_Title_ch from '../../modules/Second_TitleCh_NoMargin';
+import Second_Title_ch from '../../modules/Second_TitleCh';
+import Second_Title_ch2 from '../../modules/Second_TitleCh_NoMargin';
 import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 import $ from "jquery";
 
@@ -345,7 +346,7 @@ var pick_job = function (){
           <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
           bold2="手機 / 平板: " contents2="互動作品必須使用桌機電腦觀看，手機與平板介面請點擊左右兩邊的圓點觀看照片。"></MainContents_Important_With_Border_two_bolder_ch>
 
-        <Second_Title_ch secondTitle="影像創作 X 線上互動"></Second_Title_ch>
+        <Second_Title_ch2 secondTitle="影像創作 X 線上互動"></Second_Title_ch2>
 
         <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
         {/*}<MainContents_Middle_ch contents="若世界以專業領域、社會貢獻的成就來對待每一個人，給予每個人付出後應得的尊重；人們不再以膚色外表、出身背景評斷、喜惡他人，是否才能真正地將每個人當作獨立的個人看待?"></MainContents_Middle_ch>
@@ -356,16 +357,7 @@ var pick_job = function (){
         <ButtonCh onclick={goToForm} title="上傳照片" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent-ch&amp;src=sdkpreparse"></ButtonCh>
 
       </Container>
-      <div
-        lg={{ span: 3, offset: 3 }}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginBottom: "2%",
-          alignItems: "center",
-        }}
-      >
-      </div>
+
 
       <FooterCH/>
     </div>
