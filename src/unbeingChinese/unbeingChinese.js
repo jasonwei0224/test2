@@ -29,13 +29,8 @@ import tong from '../assets/Tong.jpg'
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 
 function UnbeingChinese() {
-  var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging.
-
-Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred ideas of Confucianism.
-
-Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians.  Political reasons aside, what is your artistic interpretation?
-  `
-
+  var text= `Tong was born in China. After residing in Canada for many years, he had to make a decision to evolve into a new identity as a “Canadian”. While he believes that people would treat him as a Canadian, it is apparent however that some people always see him as “Chinese” first. During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging. Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred ideas of Confucianism. Exactly who is playing the game? The paradox of evolving or revolving identity isn’t a new phenomenon in Canada; just ask Japanese Canadians or Vietnamese Canadians. Political reasons aside, what is your artistic interpretation?
+`
 
   var artistTxt = `Tong Zhou made waves with his work “The Courage” that was presented at 2019 TAIWANfest, and he returns this year with “(Un)being Chinese”, a new work that reflects on identity and stereotypes within our current climate. He shares with us the thoughts and influences that inspired these works, and the struggles he has faced with his own identity as a Chinese-Canadian. With more open-mindedness, can we aim to erase discrimination altogether?
 

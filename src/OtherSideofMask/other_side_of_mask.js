@@ -28,6 +28,7 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import ThreeScene from "./ThreeScene";
 import ModelDisplay from "./threeDModel";
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
+import MaskInfo from './maskInfo'
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 
@@ -154,7 +155,7 @@ class OtherSideOfMask extends Component {
                   </MTLModel>
               {/*}<ModelDisplay obj="./MaskModel1.obj" mtl="./MaskModel1.mtl"></ModelDisplay>*/}
          </Col>
-         <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+         <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col2" >
 
 
            <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
@@ -172,14 +173,14 @@ class OtherSideOfMask extends Component {
             <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
               <ThreeScene mtl="./MaskModel2.mtl" obj="./MaskModel2.obj"/>
             </Col>
-          </Row>*/} 
+          </Row>*/}
           <ProgramInfoTwoArtist
             subtitle="Behind the Masks"
             title="THE OTHER SIDE OF MASK"
             artistitle1="Sketch Artist: "
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
-            artistName2="Walter Kao"
+            artistName2="Walter Kao / Yani-X"
             url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtist>
@@ -189,9 +190,18 @@ class OtherSideOfMask extends Component {
             bold2="Mobile / Tablet: " contents2="There are a total of two 3D Models. Tap and drag your finger left/right to rotate the 3D model. Pinch in and out to zoom. "></MainContents_Important_With_Border_two_bolder>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
           </MainContents_Middle_Adonis>
+          <Row>
+            <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col3" >
+              <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                <AmbientLight color={0xffffff}/>
+                <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+                <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+              </MTLModel>
+           </Col>
+          </Row>
+          <MaskInfo></MaskInfo>
 
-
-          <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="Walter Kao" contents2={artistText2}></MainContents_TwoArtistPic>
+          <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="Walter Kao / Yani-X" contents2={artistText2}></MainContents_TwoArtistPic>
           <div className="people_padding"></div>
 
           <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>

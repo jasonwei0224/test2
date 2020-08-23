@@ -16,6 +16,7 @@ import ImageWithDescriptionCH from"../../modules/MainContent_ImageWithDescriptio
 import FooterCH from "../footer-ch";
 import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
 import {OBJModel, MTLModel, GLTFModel, AmbientLight,DirectionLight, JSONModel} from 'react-3d-viewer'
+import MaskInfo from './maskInfo_ch'
 
 var text = `口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。\n
 透過這樣的作品呈現，讓人不禁懷疑，到底那一面是「保護」？那一面是我們應該相信的「真實」？我們常常經由語言與行為，表達傷害與歧視；在這次的疫情裡，我們也看見了許多美麗包裝下的話術，說出來的卻是醜陋的意涵與不實的陳述。這次的疫情如此嚴重，究竟是因為病毒肆虐，還是我們選擇性無視那真實的訊息？\n
@@ -71,7 +72,7 @@ class OtherSideOfMask_ch extends Component {
             artistitle1="藝術家： "
             artistName1="Lady Hao Hao"
             artistitle2="3D  藝術： "
-            artistName2="高于翔"
+            artistName2="高于翔 / Yani-X"
             url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtistCH>
@@ -80,9 +81,18 @@ class OtherSideOfMask_ch extends Component {
             <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
             bold2="手機 / 平板: " contents2="此作品共有兩個創作，請用手指左右的移動，可觀賞作品的不同角度。請用手指向外與向內推動，將可拉近與拉遠觀看作品。"></MainContents_Important_With_Border_two_bolder_ch>
           <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
+            <Row>
+              <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col3" >
+                <MTLModel src="./MaskModel2.obj" mtl="./MaskModel2.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
+                  <AmbientLight color={0xffffff}/>
+                  <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
+                  <DirectionLight color={0xff00ff} position={{x:-100,y:200,z:-100}}/>
+                </MTLModel>
+             </Col>
+            </Row>
+          <MaskInfo></MaskInfo>
 
-
-            <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="高宇翔" contents2={artistText2}></MainContents_TwoArtistPic_CH>
+            <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="高宇翔 / Yani-X" contents2={artistText2}></MainContents_TwoArtistPic_CH>
 
 
           <div className="people_padding"></div>

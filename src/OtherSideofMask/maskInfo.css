@@ -1,0 +1,94 @@
+.otherside_artwork_name{
+  background-color: #246f79;
+  color:white;
+  margin-top:50px;
+  margin-bottom:50px;
+  outline:none;
+  border:none;
+  border-radius: 50px;
+  padding-left: 80px;
+  padding-right:80px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.otherside_artwork_name_mobile{
+  background-color: #246f79;
+  color:white;
+  margin-top:150px;
+  margin-bottom:150px;
+  outline:none;
+  border:none;
+  border-radius: 50px;
+  padding-left: 80px;
+  padding-right:80px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.otherside_artwork_name2{
+  background-color: #246f79;
+  color:white;
+  margin-top:50px;
+  margin-bottom:50px;
+  outline:none;
+  border:none;
+  border-radius: 50px;
+  padding-left: 60px;
+  padding-right:60px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.otherside_artwork_name2_mobile{
+  background-color: #246f79;
+  color:white;
+  margin-top:150px;
+  margin-bottom:150px;
+  outline:none;
+  border:none;
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.otherside_artwork_name:hover, .otherside_artwork_name2:hover{
+  cursor: context-menu !important;
+}
+@media screen and (max-width: 767px) {
+  .desktop_mask_info{
+    display:none
+  }
+  .otherside_artwork_name_mobile, .otherside_artwork_name2_mobile{
+    font-size: 42px
+  }
+  .maskInfo_mobile_spacing{
+    margin-top:50px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .desktop_mask_info{
+    display:none
+  }
+  .otherside_artwork_name_mobile, .otherside_artwork_name2_mobile{
+    font-size: 42px;
+  }
+  .maskInfo_mobile_spacing{
+    margin-top:200px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .desktop_mask_info{
+    display:block
+  }
+  .mobile_mask_info{
+    display:none
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+}
