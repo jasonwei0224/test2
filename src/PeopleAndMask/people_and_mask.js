@@ -86,7 +86,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
             artistitle1="Sketch Artist: "
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
-            artistName2="Walter Kao"
+            artistName2="Walter Kao / Yani-X"
             url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"
             color="#D9C739">
 

@@ -91,7 +91,7 @@ class PeopleAndMask extends Component {
             artistitle1="創作： "
             artistName1="Lady Hao Hao"
             artistitle2="3D  藝術： "
-            artistName2="高于翔"
+            artistName2="高于翔 / Yani-X"
             url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"
             color="#D9C739">
 
