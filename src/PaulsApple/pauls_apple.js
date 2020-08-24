@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactCompareImage from 'react-compare-image';
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
+import image1 from '../assets/paulsapples1.jpg';
+import image2 from '../assets/paulsapples2.jpg';
 import { Container } from "react-bootstrap";
 import ProgramInfo from '../programInfo';
 import Second_Title from "../modules/Second_Title"
