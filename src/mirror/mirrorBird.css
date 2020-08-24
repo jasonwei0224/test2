@@ -2,10 +2,15 @@ body {
 	overflow-x: hidden;
  }
 
+ #button_mirror1, #button_mirror2, #button_mirror3{
+		margin-left: 20px;
+ }
+
  #pointerDiv {
 	 position:relative;
 	 left:50%;
 	 margin-top:35%;
+	 width:10%
  }
 
  #container_box_bird_66{

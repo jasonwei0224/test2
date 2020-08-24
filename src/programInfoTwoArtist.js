@@ -15,7 +15,7 @@ const ProgramInfoTwoArtist = (props) => {
                     </Row>
                     <Row className="PI-last">
                         <Col className="PI-artist-two"><p className = "PI-Artist-p">{props.artistitle2}{props.artistName2}</p></Col>
-                        <div className="PI-colButton"><Button className="PI-shareButton" href={props.url}>SHARE WITH FRIENDS</Button></div>
+                        <div className="PI-colButton"><Button className="PI-shareButton" href={props.url}  target="_blank" rel="noopener noreferrer">SHARE WITH FRIENDS</Button></div>
                     </Row>
                 </Col>
             {/*}</Row>*/}

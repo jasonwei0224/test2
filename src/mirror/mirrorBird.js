@@ -5,9 +5,9 @@ import $ from "jquery";
 import pigeon from "../assets/pigeon_stop.svg";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import mouseClick from '../../src/assets/mouseClick.gif'
-import mouseClick2 from '../assets/mouseClick2.png'
-import mouseClick3 from '../assets/mouseClick3.png'
-import mouseClick4 from '../assets/mouseClick4.png'
+import mouseClick2 from '../assets/mirror_hint_red.png'
+import mouseClick3 from '../assets/mirror_hint_white.png'
+
 
 class MirrorBird extends React.Component {
   constructor(props) {
@@ -63,17 +63,18 @@ class MirrorBird extends React.Component {
                         e.preventDefault();
                         $('#container_box_bird_15').css({"display":"none"});
                         $('#container_box_bird_5').css({"display":"block"});
+                        $('#container_box_bird_66').css({"display":"block"});
 
-                        $('#container_box_bird_5').one('click', function(e) {
-                          e.preventDefault();
-                          $('#box_5').addClass('bird-container bird-container--one')
-                          $('#bird_5').addClass('bird bird--one')
-                              setTimeout(function() {
-                                $('#container_box_bird_66').css({"display":"block"});
-
-                              },4000);//4000
-
-                            });
+                        // $('#container_box_bird_5').one('click', function(e) {
+                        //   e.preventDefault();
+                        //   $('#box_5').addClass('bird-container bird-container--one')
+                        //   $('#bird_5').addClass('bird bird--one')
+                        //       setTimeout(function() {
+                        //         $('#container_box_bird_66').css({"display":"block"});
+                        //
+                        //       },4000);//4000
+                        //
+                        //     });
                       }, 4000) //4000
                     });
 
@@ -104,6 +105,57 @@ class MirrorBird extends React.Component {
     if(answer.toUpperCase() == "TAIWAN"){
       var audio=new Audio('./猜對音效.mp3');
       audio.play()
+      document.getElementById("question_txt").innerText= "Correct!!"
+    }else{
+      document.getElementById("button_mirror1").style.backgroundColor = "red";
+      document.getElementById("button_mirror2").style.backgroundColor = "red";
+      document.getElementById("button_mirror3").style.backgroundColor = "red";
+      var audio=new Audio('./猜錯音效.mp3');
+      audio.play()
+      for(var i = 0; i <200; i++){
+        document.getElementById("button_mirror1").style.backgroundColor = "red";
+        document.getElementById("button_mirror2").style.backgroundColor = "red";
+        document.getElementById("button_mirror3").style.backgroundColor = "red";
+        setTimeout(function(){
+          document.getElementById("button_mirror1").style.backgroundColor = "blue";
+          document.getElementById("button_mirror2").style.backgroundColor = "blue";
+          document.getElementById("button_mirror3").style.backgroundColor = "blue";
+        },500);
+      }
+    }
+  }
+  checkAnswer2(){
+    var answer = document.getElementById("user_input_mirror2").value;
+    console.log(answer)
+    if(answer.toUpperCase() == "TAIWAN"){
+      var audio=new Audio('./猜對音效.mp3');
+      audio.play()
+      document.getElementById("question_txt2").innerText= "Correct!!"
+    }else{
+      document.getElementById("button_mirror1").style.backgroundColor = "red";
+      document.getElementById("button_mirror2").style.backgroundColor = "red";
+      document.getElementById("button_mirror3").style.backgroundColor = "red";
+      var audio=new Audio('./猜錯音效.mp3');
+      audio.play()
+      for(var i = 0; i <200; i++){
+        document.getElementById("button_mirror1").style.backgroundColor = "red";
+        document.getElementById("button_mirror2").style.backgroundColor = "red";
+        document.getElementById("button_mirror3").style.backgroundColor = "red";
+        setTimeout(function(){
+          document.getElementById("button_mirror1").style.backgroundColor = "blue";
+          document.getElementById("button_mirror2").style.backgroundColor = "blue";
+          document.getElementById("button_mirror3").style.backgroundColor = "blue";
+        },500);
+      }
+    }
+  }
+  checkAnswer3(){
+    var answer = document.getElementById("user_input_mirror3").value;
+    console.log(answer)
+    if(answer.toUpperCase() == "TAIWAN" || answer =="台灣"){
+      var audio=new Audio('./猜對音效.mp3');
+      audio.play()
+      document.getElementById("question_txt3").innerText= "Correct!!"
     }else{
       document.getElementById("button_mirror1").style.backgroundColor = "red";
       document.getElementById("button_mirror2").style.backgroundColor = "red";
@@ -170,16 +222,16 @@ class MirrorBird extends React.Component {
                           e.preventDefault();
                         $('#container_box_bird_16').css({"display":"none"});
                         $('#container_box_bird_10').css({"display":"block"});
-
-                        $('#container_box_bird_10').one('click', function(e) {
-                          $('#box_10').addClass('bird-container bird-container--one')
-                          $('#bird_10').addClass('bird bird--one')
-
-                          setTimeout(function() {
-                            $('#container_box_bird_100').css({"display":"block"});
-              },4000);
-
-                        });
+                        $('#container_box_bird_100').css({"display":"block"});
+              //           $('#container_box_bird_10').one('click', function(e) {
+              //             $('#box_10').addClass('bird-container bird-container--one')
+              //             $('#bird_10').addClass('bird bird--one')
+              //
+              //             setTimeout(function() {
+              //               $('#container_box_bird_100').css({"display":"block"});
+              // },4000);
+              //
+              //           });
                   }, 4000) //4000
                 });
 
@@ -241,15 +293,17 @@ class MirrorBird extends React.Component {
                     setTimeout(function() {
                       $('#container_box_bird_17').css({"display":"none"});
                       $('#container_box_bird_101').css({"display":"block"});
-                      $('#container_box_bird_101').one('click', function(e) {
-                        $('#box_101').addClass('bird-container bird-container--one')
-                        $('#bird_101').addClass('bird bird--one')
+                        $('#container_box_bird_102').css({"display":"block"});
 
-                        setTimeout(function() {
-                          $('#container_box_bird_102').css({"display":"block"});
-
-                        },4000);
-                      });
+                      // $('#container_box_bird_101').one('click', function(e) {
+                      //   $('#box_101').addClass('bird-container bird-container--one')
+                      //   $('#bird_101').addClass('bird bird--one')
+                      //
+                      //   setTimeout(function() {
+                      //     $('#container_box_bird_102').css({"display":"block"});
+                      //
+                      //   },4000);
+                      // });
                     }, 4000);
                     });
                   },4000)
@@ -259,9 +313,9 @@ class MirrorBird extends React.Component {
               },4000)
 
             });
-          },400)
+          },4000)
         })
-      }, 500)
+      }, 5000)
     });
   }
   refreshPage(){
@@ -274,7 +328,7 @@ class MirrorBird extends React.Component {
       <div id="wrapper_mirror" >
 
         <div id="container_box_bird_1" className="mirror-bird-container">
-          {/*}<img id="pointerDiv" src={mouseClick4}></img>*/}
+          <img id="pointerDiv" src={mouseClick3}></img>
 
           <div id="box_1">
             <div id="bird_1"></div>
@@ -313,7 +367,7 @@ class MirrorBird extends React.Component {
             <div id="form_mirror">
               <Row>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                      <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                      <p  id="question_txt" style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
                         Other than the pigeon, what is an image that has always been there?
                         Try again if you have overlooked it.</p>
                   </Col>
@@ -366,17 +420,17 @@ class MirrorBird extends React.Component {
             <div id="form_mirror2">
               <Row>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                    <p id="question_txt2" style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
                       Other than the pigeon, what is an image that has always been there?
                       Try again if you have overlooked it. </p>
                 </Col>
             </Row>
             <Row>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
+                    <Form.Control id="user_input_mirror2" required size="lg"></Form.Control>
                 </Col>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                  <Button onClick={this.checkAnswer}>Submit</Button>
+                  <Button onClick={this.checkAnswer2}>Submit</Button>
                   {/*}<p style={{"color":"white"}}>Did you miss something? </p>*/}
                   <Button  id="button_mirror2" onClick={this.refresh2}>View the drawings again</Button>
                 </Col>
@@ -418,17 +472,17 @@ class MirrorBird extends React.Component {
             <div id="form_mirror2">
               <Row>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <p style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
+                    <p id="question_txt3"style={{"color":"white"}}>In life, we often see things that are obvious to us and leave out others who are deemed insignificant but valuable.
                       Other than the pigeon, what is an image that has always been there?
                       Try again if you have overlooked it. </p>
                 </Col>
             </Row>
             <Row>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
+                    <Form.Control id="user_input_mirror3" required size="lg"></Form.Control>
                 </Col>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                  <Button  onClick={this.checkAnswer}>Submit</Button>
+                  <Button  onClick={this.checkAnswer3}>Submit</Button>
                   {/*}<p style={{"color":"white"}}>Did you miss something? </p>*/}
                   <Button id ="button_mirror3" onClick={this.refreshPage}>Restart</Button>
                 </Col>

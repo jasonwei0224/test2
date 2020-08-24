@@ -12,7 +12,7 @@ const ProgramInfo_ch = (props) => {
                     <Row><h1 className="PI-title_twoArtist">{props.title}</h1></Row>
                     <Row className="PI-last">
                         <Col className="PI-artist"><p>{props.artistName}</p></Col>
-                        <div className="PI-col-button_ch"><Button className="PI-shareButton" href={props.url}>分享給朋友</Button></div>
+                        <div className="PI-col-button_ch"><Button className="PI-shareButton" href={props.url}  target="_blank" rel="noopener noreferrer" >分享給朋友</Button></div>
                     </Row>
                 </Col>
             </Row>
