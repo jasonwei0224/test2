@@ -338,7 +338,7 @@ var pick_job = function (){
         <ProgramInfo_ch
           subtitle="我跟你的相同，就是我們都不同 "
           title="共同面對的我們"
-          artistName="台灣文化節"
+          artistName="策展人：蘇冠誌"
           url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent-ch&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo_ch>

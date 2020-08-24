@@ -10,7 +10,7 @@ import Pagination from '../../modules/Pagination';
 import banner from '../../assets/placeholder.png';
 import ProgramInfoTwoArtistCH from "../programInfoTwoArtist-ch"
 import Second_Title_ch from "../../modules/Second_TitleCh"
-import MainContents_Middle from "../../modules/MainContents_Middle"
+import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
 import MainContents_Important_With_Border from "../../modules/MainContents_Important_with_border"
 import MainContents_TwoArtistPic_CH from "../../modules/MainContents_TwoArtistPic_CH"
 import Footer from '../../footer-temp';
@@ -103,13 +103,13 @@ class PeopleAndMask extends Component {
 
             <MainContents_Important_With_Border_one_bolder  style={{color:"#0C3866"}} bold="桌機 / 手機 / 平板: " contents={instruction1} bold2="" contents2=""
             ></MainContents_Important_With_Border_one_bolder>
-          <MainContents_Middle style={{color:"#0C3866"}} contents={text}>
-          </MainContents_Middle>
+          <MainContents_Middle_Adonis style={{color:"#0C3866"}} contents={text}>
+          </MainContents_Middle_Adonis>
 
 
 
 
-        <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="高宇翔" contents2={artistText2}></MainContents_TwoArtistPic_CH>
+        <MainContents_TwoArtistPic_CH pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="高于翔" contents2={artistText2}></MainContents_TwoArtistPic_CH>
 
 
 

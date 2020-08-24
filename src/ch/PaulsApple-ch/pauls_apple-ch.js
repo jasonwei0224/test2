@@ -4,7 +4,7 @@ import ImgComparison from '../../img_comparison';
 import ProgramInfo from '../programInfo-ch';
 // import './pauls_apple-ch.css'
 import {Container, Row, Col} from 'react-bootstrap';
-import MainContents_Middle from "../../modules/MainContents_Middle"
+import MainContents_Middle_Adonis from "../../modules/MainContents_Middle_Adonis"
 import MainContents_Important from "../../modules/MainContents_Important"
 import FooterCH from '../footer-ch';
 import Second_Title from "../../modules/Second_Title"
@@ -51,7 +51,7 @@ var artistText1=`加拿大台裔藝術家，高中時期移民來到加拿大，
 
              <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
                <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="請將滑鼠移到中間箭頭並左右滑動，看一看兩張圖有甚麼不同。"></MainContents_Important_With_Border>
-             <MainContents_Middle style={{color:"#0C3866"}} contents={text}></MainContents_Middle>
+             <MainContents_Middle_Adonis style={{color:"#0C3866"}} contents={text}></MainContents_Middle_Adonis>
                <MainContents_OneArtistCH src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtistCH>
                  <div className="people_padding"></div>
                <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>

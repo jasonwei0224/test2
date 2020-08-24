@@ -17,7 +17,7 @@ import SkyImageGallery from "../../skyImageGallery";
 function Sky_ch() {
 
   const goToForm=()=> {
-    window.location='#/Sky';
+    window.location='Sky-ch';
   };
 
   return (

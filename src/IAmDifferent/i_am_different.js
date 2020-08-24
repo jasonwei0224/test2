@@ -338,7 +338,7 @@ function IAmDifferent() {
         <ProgramInfo
           subtitle="I'm different, just like you"
           title="WE ARE ALL IN THIS TOGETHER"
-          artistName="TAIWANfest"
+          artistName="Curator: Toy Su"
           url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>
@@ -366,7 +366,7 @@ function IAmDifferent() {
           togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferent&amp;src=sdkpreparse"
         ></Button2>
       </Container>
-    
+
 
     <Footer content="&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
     </div>

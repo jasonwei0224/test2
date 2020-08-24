@@ -150,7 +150,7 @@ class SkyV1_ch extends Component {
 
 當數字「8」轉為橫向成為「∞」無限符號，象徵天空的無邊無際、遼闊遠大。膚色、外貌、族裔、語言、文化，不會是限制人類理解彼此的界線；「∞」也象徵愛的永恆，當人們能互相欣賞不一樣的美麗，平等地認同彼此的存在價值，共同創造了人類永續未來的機會。
 
-在台灣文化節活動期間，拍下【中午十二點】的天空照片上傳分享，立即加入我們 ! 在夏天的尾聲，透過看著同一片天空的不同風景，感受不同的空間氛圍，不受地域和時間限制，貼近彼此，相互作伴 !`
+在台灣文化節活動期間，拍下天空的照片上傳分享，立即加入我們 ! 在夏天的尾聲，透過看著同一片天空的不同風景，感受不同的空間氛圍，不受地域和時間限制，貼近彼此，相互作伴 !`
     return (
       <div>
       {/*<ImageSlider className="mainImage" />*/}
@@ -168,13 +168,13 @@ class SkyV1_ch extends Component {
             <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
 
 
-      <Second_Title_ch secondTitle="我跟你的相同，就是我們都不同"></Second_Title_ch>
+      <Second_Title_ch secondTitle="同一片天計畫"></Second_Title_ch>
 
 
       <MainContents_Important_ch contents="在地球上不同位置的我們，相約在同一時刻拍下天空的包羅萬象。"></MainContents_Important_ch>
       <MainContents_Important_ch contents="美麗的天空一直包容著我們每一個人的不一樣，無論是缺陷或完美；人類的命運因為疫情改變了，種族之間的歧視日漸嚴重，讓社會人心惶惶 ；我們抬頭望向藍天，看到希望、感受到空間、見識到渺小，誰貴誰賤？"></MainContents_Important_ch>
       <MainContents_Important_ch contents=" 我們都不一樣，我們也都一樣 !"></MainContents_Important_ch>
-      <MainContents_Important_ch contents="台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享【中午十二點】的天空，與世界一起反歧視、一起追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
+      <MainContents_Important_ch contents="台灣文化節邀請您追蹤我們的 Facebook 一起拍攝分享天空，與世界一起反歧視、一起追求平等。期待有更多人看到您的天空攝影作品 !"></MainContents_Important_ch>
   <Row className="space"><Col></Col></Row>
     <FormSectionTitle_ch title="攝影師資訊"></FormSectionTitle_ch>
 
@@ -200,7 +200,7 @@ class SkyV1_ch extends Component {
 
       <FormFile FormId="subjectFile" onChange={this.onChange} hint="檔案格式必須為jpg或png，且檔案大小在1MB以下"></FormFile>
 
-      <FormConsent_ch inputId="checkbox-3" consent="我同意台灣文化節將我所拍攝的照片作為「頭頂同一片天計畫」節目的內容與相關宣傳使用。"></FormConsent_ch>
+      <FormConsent_ch inputId="checkbox-3" consent="我同意台灣文化節將我所拍攝的照片作為「同一片天計畫」節目的內容與相關宣傳使用。"></FormConsent_ch>
 
 
         <ButtonCh onclick={this.submitForm} title="送出" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky-ch&amp;src=sdkpreparse" ></ButtonCh>

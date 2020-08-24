@@ -152,11 +152,11 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
         {/*<ImageSlider className="mainImage"/>*/}
         <Container fluid>
            <Slider></Slider>
-            <Row>
+            {/*}<Row>
               <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
                 <img className="main_image" src={mainImage}/>
               </Col>
-            </Row>
+            </Row>*/}
             <ProgramInfo
               subtitle="I'm different, just like you!"
               title="SKY"

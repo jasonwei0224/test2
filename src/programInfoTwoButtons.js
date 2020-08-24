@@ -15,7 +15,7 @@ const ProgramInfoTB = (props) => {
                         <Col className="artist"><p>Artist: {props.artistName}</p></Col>
                         <div className="col-button">
                             <Button className="upload" href={props.url}>UPLOAD YOUR SKY</Button>
-                            <Button className="share" href={props.url}>SHARE WITH FRIEND</Button>
+                            <Button className="share" href={props.url}  target="_blank" rel="noopener noreferrer" >SHARE WITH FRIEND</Button>
                         </div>
                     </Row>
                 </Col>
