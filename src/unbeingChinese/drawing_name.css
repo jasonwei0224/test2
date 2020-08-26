@@ -1,0 +1,44 @@
+.sky_desktop_artists{
+  display:none;
+}
+
+a.DA_artName:hover{
+  color:#2f6e79;
+}
+.DA_artName{
+ color:#707070;
+ border-bottom: 1px solid #D9C739;
+ padding-bottom:10px;
+ margin-bottom:50px
+}
+.drawing_space{
+  padding-bottom: 50px;
+}
+.DA_artName_mobile{
+  color:#707070;
+  border-bottom: 1px solid #D9C739;
+  padding-bottom:10px;
+  margin-bottom:50px;
+  font-size: 35px;
+}
+@media screen and (min-width: 992px) {
+  .sky_mobile_artists{
+    display:none;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .DA_first_col{
+    margin-top: 30px;
+  }
+
+  .sky_desktop_artists{
+    display:block;
+  }
+
+}
+
+@media screen and (min-width: 2560px){
+
+}

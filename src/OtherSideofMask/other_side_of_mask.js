@@ -29,7 +29,7 @@ import ThreeScene from "./ThreeScene";
 import ModelDisplay from "./threeDModel";
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 import MaskInfo from './maskInfo'
-import other_side_hint from "../assets/otherside_hint.png"
+import other_side_hint from "../assets/otherside_red_hint.png"
 
 var text = `It is said that words can be sharper than a knife, and oftentimes we say things that are hurtful without it ever being our intention. The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 
@@ -149,11 +149,21 @@ class OtherSideOfMask extends Component {
     return (
       <div>
         <Container fluid>
+
           <div style={{borderTop: "1px solid #D9C739"}}></div>
+          {/*}<Row>
+              <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
+                <img id="other_side_hint1" className="" style={{width:"15%"}}  src={other_side_hint}></img>
+              </Col>
+              <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col2" >
+                <img id="other_side_hint2" className="" style={{width:"15%"}} src={other_side_hint}></img>
+              </Col>
+          </Row>*/}
             <Row>
+
               <Col xl={{span:6, offset:0}} lg={{span:12, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}className="model3D-col" >
                   {/*}<div ref={ref => (this.mount = ref)} />*/}
-                    <img id="other_side_hint1" className="otherside_hint" src={other_side_hint}></img>
+                  <img id="other_side_hint1" className="otherside_hint"src={other_side_hint}></img>
                   <MTLModel src="./MaskModel1.obj" mtl="./MaskModel1.mtl" width="1800" height="800" position={{x:0.5,y:-1.25,z:1}} rotation={{x:-1.3,y:1.20,z:1.5}}>
                     <AmbientLight color={0xffffff}/>
                  <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>

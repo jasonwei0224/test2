@@ -54,6 +54,10 @@ import HoverImage from "react-hover-image"
 function Home2() {
   var text = `世界的紛亂，可能是我們人沒有給彼此空間；\n 大自然的抗議，可能是我們沒有跟它保持距離。\n 藝術家具有冒險的精神，挑戰現實的勇氣。\n文字無法傳達的，讓畫面來說話；\n 感受不到的溫度，讓顏色來點燃。\n在這裡欣賞藝術家的作品，唯一需要的是時間與空間 \n\n 「分享系列藝廊」已開放，其他藝廊將於八月二十八日開放
 `
+
+var text2= `線上互動藝廊節目，特別感謝此技術團隊的付出`
+var creators = `Jason Wei / Gina Kim / Sangwook Yun / Eric Chang / Jessica Chu / Flemming Chow
+ Yuni Hur / Sherry Guo`
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 const useMountEffect = (fun) => useEffect(fun, [])
 
@@ -122,6 +126,27 @@ const myRef2 = useRef(null)
             <HomeMobileProject url="/PaulsApple-ch" type="數位創作" title="保羅的蘋果" image={apple_mobile}/>
             <HomeMobileProject url="/PeopleAndMask-ch" type="素描創作" title="傲慢與偏見"image={mask_mobile}/>
 
+        </div>
+        <div>
+          <Row>
+              <Col xl={{span:10, offset:1}} lg={{span:10, offset:2}} sm={{span:10, offset:1}}>
+                <div className="home_border_top" style={{borderTop:"solid 1px #d9c639"}}/>
+              </Col>
+          </Row>
+          <Row>
+            <Col xl={{span:4, offset:4}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_title">-特別感謝-</Col>
+          </Row>
+          <Row>
+            <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_text">{text2}</Col>
+          </Row>
+          <Row>
+            <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_name">{creators}</Col>
+          </Row>
+          <Row>
+              <Col xl={{span:10, offset:1}} lg={{span:6, offset:2}} sm={{span:10, offset:1}}>
+                <div className="home_border_bottom"style={{borderTop:"solid 1px #d9c639"}}/>
+              </Col>
+          </Row>
         </div>
           <FooterCH></FooterCH>
         </div>

@@ -12,7 +12,7 @@ import MainContents_Img from "../modules/MainContents_img"
 import Footer from "../footer-temp";
 import MobileShareButton from "../modules/mobileShareButton";
 import MainContents_Important_With_Border from "../modules/MainContents_Important_with_border"
-// import './pauls_apple.css'
+import './pauls_apple.css'
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 import MainContents_OneArtist from "../modules/MainContents_OneArtist"
@@ -24,7 +24,7 @@ The still life paintings of Paul Cezanne, the father of modern painting, created
 
 While mankind pursued fame and wealth, nature has been inadvertently destroyed. When people have not yet escaped the shadow of the pandemic, where will blind pursuit and desire lead us? Has nature’s pure way of life been tainted or does it still exist? In ignoring the reality that perfect apples left uneaten eventually rot, there is a contradiction in choosing the pleasure of drinking, over the need to protect others by using masks. In humankind’s current state of existence experiencing this challenge set by nature, does the creation of culture still have meaning?
 
-The original Latin text of the still life painting is: Vanitas, and in English it means Vanity. Lady Hao Hao, who has learned to create in a variety of non-native languages, wants to see within the art of the masters, the significance shown in the reflection of before and after survival. "The world is so grandiose and short. We, as humans, are but mortal."
+The original Latin text of the still life painting is "Vanitas," in English it means Vanity. Lady Hao Hao, who has learned to create in a variety of non-native languages, wants to see within the art of the masters, the significance shown in the reflection of before and after survival. "The world is so grandiose and short. We, as humans, are but mortal."
 `
 
 var artistText1=`A Taiwanese artist who immigrated to Canada during her high school years, but as she wasn’t allowed to draw or paint in Canada, she soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
@@ -35,11 +35,21 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
   return (
     <div>
       <Container fluid style={{padding:"0"}}>
+      <div className="compare_slider_desktop">
         <ReactCompareImage
           leftImage={image1}
           rightImage={image2}
+          vertical={true}
+          sliderPositionPercentage="0.92"
         />
-
+      </div>
+      <div className="compare_slider_mobile">
+      <ReactCompareImage
+          leftImage={image1}
+          rightImage={image2}
+          sliderPositionPercentage="0.9"
+        />
+    </div>
         <ProgramInfo
           subtitle="Behind the Masks"
           title="PAUL'S APPLES"

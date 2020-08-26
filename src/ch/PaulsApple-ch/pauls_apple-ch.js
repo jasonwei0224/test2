@@ -35,11 +35,21 @@ var artistText1=`加拿大台裔藝術家，高中時期移民來到加拿大，
         <div>
             <Container fluid>
 
+              <div className="compare_slider_desktop">
+                <ReactCompareImage
+                  leftImage={image1}
+                  rightImage={image2}
+                  vertical={true}
+                  sliderPositionPercentage="0.92"
+                />
+              </div>
+              <div className="compare_slider_mobile">
               <ReactCompareImage
-                leftImage={image1}
-                rightImage={image2}
-              />
-
+                  leftImage={image1}
+                  rightImage={image2}
+                  sliderPositionPercentage="0.9"
+                />
+            </div>
 
            <ProgramInfo
              id="test"

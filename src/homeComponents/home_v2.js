@@ -60,7 +60,10 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 
 var text = `The world seems to have lost its order because we forget to give others space; nature seems to be protesting because we forget to be humble. Artists are risk takers and they dare to challenge the reality of our society.  For things words can’t express, let pictures do the talking.  For the warmth people can’t feel, maybe colours can ignite.  To appreciate our artists here, time and space are all that is required. \n\n  The galleries of your photos are open now. Galleries of all participating artists will be open starting August 28th.`
-
+var text2= `The virtual gallery is made possible with the following people.
+Their hard work and creativity in developing this site is greatly appreciated.`
+var creators = `Jason Wei / Gina Kim / Sangwook Yun / Eric Chang / Jessica Chu / Flemming Chow
+ Yuni Hur / Sherry Guo`
 function Home2() {
 
 
@@ -124,6 +127,28 @@ function Home2() {
             <HomeMobileProject url="/OtherSideOfMask"type="DIGITAL PAINTING" title="THE OTHER SIDE OF MASK" image={otherside_home_mobile} hover={otherside_home_mobile_hover}/>
             <HomeMobileProject url="/PaulsApple"type="DIGITAL PAINTING" title="PAUL'S APPLE" image={apple_home_mobile} hover={apple_home_mobile_hover}/>
             <HomeMobileProject url="/PeopleAndMask"type="SKETCH" title="PEOPLE AND MASK"image={people_and_mask_mobile} hover={people_and_mask_mobile_hover}/>
+        </div>
+
+        <div>
+          <Row>
+              <Col xl={{span:10, offset:1}} lg={{span:10, offset:2}} sm={{span:10, offset:1}}>
+                <div className="home_border_top" style={{borderTop:"solid 2px #d9c639"}}/>
+              </Col>
+          </Row>
+          <Row>
+            <Col xl={{span:4, offset:4}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_title">-ACKNOWLEDGEMENT-</Col>
+          </Row>
+          <Row>
+            <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_text">{text2}</Col>
+          </Row>
+          <Row>
+            <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_name">{creators}</Col>
+          </Row>
+          <Row>
+              <Col xl={{span:10, offset:1}} lg={{span:6, offset:2}} sm={{span:10, offset:1}}>
+                <div className="home_border_bottom"style={{borderTop:"solid 2px #d9c639"}}/>
+              </Col>
+          </Row>
         </div>
           <Footer content="&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>
         </div>

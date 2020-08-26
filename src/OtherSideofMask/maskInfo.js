@@ -21,7 +21,7 @@ class maskInfo extends Component {
         <Col xl={{span:4, offset:0}} lg={{span:4, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}}><img src={otherSidePic2} style={{width:"100%", height:"auto"}}></img></Col>
       </Row>
       <Row>
-        <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="mask_info_col" style={{textAlign:"center"}}><Button bsPrefix="otherside_artwork_name" className="otherside_artwork_name" >VIRUS OF<br/>UNINTEED AGRESSION</Button></Col>
+        <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="mask_info_col" style={{textAlign:"center"}}><Button bsPrefix="otherside_artwork_name" className="otherside_artwork_name" >VIRUS OF<br/>UNINTENDED AGRESSION</Button></Col>
         <Col xl={{span:4, offset:0}} lg={{span:4, offset:0}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} style={{textAlign:"center"}}><Button bsPrefix="otherside_artwork_name2" className="otherside_artwork_name2">VIRUS OF<br/>SUBCONSCIOUS SUSPICION</Button></Col>
       </Row>
       <Row>
@@ -54,7 +54,7 @@ class maskInfo extends Component {
     <div className="mobile_mask_info">
     <Row>
       <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}><img src={otherSidePic1} style={{width:"100%", height:"auto"}}></img></Col>
-      <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="mask_info_col" style={{textAlign:"center"}}><Button bsPrefix="otherside_artwork_name_mobile" className="otherside_artwork_name_mobile" >VIRUS OF UNINTEED AGRESSION</Button></Col>
+      <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:12, offset:0}} xs={{span:12, offset:0}} className="mask_info_col" style={{textAlign:"center"}}><Button bsPrefix="otherside_artwork_name_mobile" className="otherside_artwork_name_mobile" >VIRUS OF UNINTENDED AGRESSION</Button></Col>
         <Col xl={{span:4, offset:2}} lg={{span:4, offset:2}} md= {{span:10, offset:1}} xs={{span:10, offset:1}}>
         <ReactPlayer
                     controls={true}

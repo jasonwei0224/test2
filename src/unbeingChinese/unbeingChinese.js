@@ -27,9 +27,14 @@ import MainContents_Important_With_Border from "../modules/MainContents_Importan
 import MainContents_OneArtist from "../modules/MainContents_OneArtist"
 import tong from '../assets/Tong.jpg'
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
+import Drawing_Name from './drawing_name';
 
 function UnbeingChinese() {
-  var text= `Tong was born in China. After residing in Canada for many years, he had to make a decision to evolve into a new identity as a “Canadian”. While he believes that people would treat him as a Canadian, it is apparent however that some people always see him as “Chinese” first. During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging. Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred ideas of Confucianism. Exactly who is playing the game? The paradox of evolving or revolving identity isn’t a new phenomenon in Canada; just ask Japanese Canadians or Vietnamese Canadians. Political reasons aside, what is your artistic interpretation?
+  var text= `He was born in China and had to make a decision to choose a new identity to become “Canadian”.  While he wants other people to see him like a Canadian, his “Chinese” identity returned right after his arrival in Canada.  During the pandemic, the racial undertones in interactions between the Chinese and the rest of the population has become a focal point and governments around the world have been asking China to be held accountable for the pandemic; being Chinese has been challenging.
+
+Ironically, some of the most influential people in Chinese history have all led movements of Un-being Chinese and many Chinese today have also been challenging the ever-sacred ideas of Confucianism.
+
+Exactly who is playing the game?  The paradox of evolving or revolving identity isn’t a new phenomenon in Canada, just ask Japanese Canadians or Vietnamese Canadians.  Political reasons aside, what is your artistic interpretation?
 `
 
   var artistTxt = `Tong Zhou made waves with his work “The Courage” that was presented at 2019 TAIWANfest, and he returns this year with “(Un)being Chinese”, a new work that reflects on identity and stereotypes within our current climate. He shares with us the thoughts and influences that inspired these works, and the struggles he has faced with his own identity as a Chinese-Canadian. With more open-mindedness, can we aim to erase discrimination altogether?
@@ -40,6 +45,7 @@ function UnbeingChinese() {
   return (
     <div>
       <Container fluid style={{padding:"0"}}>
+        <div style={{borderTop: "1px solid rgb(217, 199, 57)"}}></div>
             {/*}{isShown ?
               <img
                 className="image_active"
@@ -73,7 +79,7 @@ function UnbeingChinese() {
           color="#D9C739"
         ></ProgramInfo>
 
-        <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
+      <Second_Title secondTitle="HOW TO INTERACT WITH THIS WORK" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
 
 
 
@@ -81,7 +87,7 @@ function UnbeingChinese() {
           bold2="Mobile / Tablet: " contents2="Click on the 6 different pictures to see the artist’s creativity."></MainContents_Important_With_Border_two_bolder>
                 <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
         </MainContents_Middle_Adonis>
-
+         <Drawing_Name></Drawing_Name>
         <MainContents_OneArtist src={tong} title="Tong Zhou" contents={artistTxt}></MainContents_OneArtist>
           <div className="people_padding"></div>
         <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>

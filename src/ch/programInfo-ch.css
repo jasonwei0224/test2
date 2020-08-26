@@ -87,6 +87,7 @@ a.PI-shareButton_ch:hover{
 }
 .PI-Artist-p-ch{
     margin-bottom: 0px !important;
+    font-weight: bold
 }
 @media screen and (max-width: 767px) {
   .PI-subtitle_twoArtist-ch{
