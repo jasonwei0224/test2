@@ -13,8 +13,8 @@ import MainContents_OneArtistCH from "../../modules/MainContents_OneArtistCH"
 import MobileShareButton from "../../modules/mobileShareButton";
 import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
 import ReactCompareImage from 'react-compare-image';
-import image1 from '../../assets/image1.jpg';
-import image2 from '../../assets/image2.jpg';
+import image1 from '../../assets/paulsapples1.jpg';
+import image2 from '../../assets/paulsapples2.jpg';
 
 function PaulsApple_ch() {
   var text =`”我深信自己比周遭的畫家，都要來得有力量。我這可不是隨便說說的，而是出自內心真誠的感受。對我來說，繪畫並不只是要追求外表上的完美畫面而已，而次要透過不段的創作，來表現隱含在完美之後的絕對與真實“ - 截自塞尚寫給母親的信
@@ -35,11 +35,21 @@ var artistText1=`加拿大台裔藝術家，高中時期移民來到加拿大，
         <div>
             <Container fluid>
 
+              <div className="compare_slider_desktop">
+                <ReactCompareImage
+                  leftImage={image1}
+                  rightImage={image2}
+                  vertical={true}
+                  sliderPositionPercentage="0.92"
+                />
+              </div>
+              <div className="compare_slider_mobile">
               <ReactCompareImage
-                leftImage={image1}
-                rightImage={image2}
-              />
-
+                  leftImage={image1}
+                  rightImage={image2}
+                  sliderPositionPercentage="0.9"
+                />
+            </div>
 
            <ProgramInfo
              id="test"

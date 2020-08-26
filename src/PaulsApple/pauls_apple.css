@@ -1,0 +1,27 @@
+
+
+@media screen and (max-width: 767px) {
+  .compare_slider_desktop{
+    display:none
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .compare_slider_desktop{
+    display:none
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .compare_slider_mobile{
+    display:none
+  }
+  .compare_slider_desktop{
+    display:block
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+}
