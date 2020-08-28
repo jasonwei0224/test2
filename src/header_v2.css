@@ -327,7 +327,7 @@ a.dropdown-toggle.navitem-dropdown{
 }
 a.dropdown-item{
   font-size: 30px;
-  text-align: left !important;
+  text-align: center !important;
 }
 .dropdown-item{
   text-align: center!important;
@@ -348,12 +348,12 @@ div.ml-auto{
   width:100%;
 }
 img.langIcon-v2{
-  width:25px;
+  width:35px;
   margin-top: 30px;
   margin-right: 0px;
 }
 img.langIconCh-v2{
-    width:25px;
+    width:35px;
   margin-top: 30px;
   margin-right: 0px;
 }
@@ -398,6 +398,7 @@ a.dropdown-item{
   font-size: 14px!important;
   padding-top:8px;
   padding-bottom:8px;
+  text-align: left!important;
 }
 
 a.navitem-v2{

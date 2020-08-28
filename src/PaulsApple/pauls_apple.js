@@ -54,7 +54,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
           subtitle="Behind the Masks"
           title="PAUL'S APPLES"
           artistName="Artist: Lady Hao Hao"
-          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse"
+          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPaulsApple&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>
 
@@ -65,7 +65,7 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
         <MainContents_OneArtist src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtist>
                           <div className="people_padding"></div>
 
-        <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>
+        <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>
       </Container>
 
       <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

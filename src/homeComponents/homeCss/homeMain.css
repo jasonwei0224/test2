@@ -1,4 +1,17 @@
 /* home_v2.js  */
+
+.sm_col{
+  text-align: center;
+  margin-bottom: 120px;
+}
+.sm_col_desktop{
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.social-icon{
+    margin-right: 20px;
+}
 #homeFirstRow {
     width: 100%;
     margin: 0;
@@ -291,6 +304,9 @@
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
+  .sm_col_desktop{
+    display:none;
+  }
 
     #projectName {
         font-size: 40px;
@@ -379,16 +395,25 @@
 
     }
     .ack_text{
-      font-szie:40px;
+      font-size:40px;
     }
     .ack_name{
-      font-szie:40px
+      font-size:40px
     }
-
+    .sm_col{
+      margin-top:30px;
+    }
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
+  .sm_col{
+    margin-top:80px;
+  }
+  .sm_col_desktop{
+    display:none;
+  }
+
   .home_border_top{
     margin-top: 80px;
   }
@@ -491,6 +516,17 @@
 
 /* md */
 @media screen and (min-width: 992px) {
+  .ack_title{
+
+    font-size:25px;
+
+  }
+  .ack_text{
+    font-size:20px;
+  }
+  .ack_name{
+    font-size:20px
+  }
   .ScrollableTitle{
     text-align: center;
     margin: auto;
@@ -508,7 +544,7 @@
         margin-top: 40%;
     }
     #homeTopSection #projectsScroll {
-        height: 50vh;
+        height: 85vh;
     }
     #topSectionRow .firstCols #leftImage{
         height: 50vh;
@@ -519,6 +555,7 @@
         padding-left: 10%;
         padding-right: 10%;
         font-size: 20px;
+        text-align: center;
     }
     /* #homeProjectRight .homeProjectBlankCol {
         padding-top: 0px;
@@ -545,10 +582,12 @@
     #home_colored_header_title {
         padding-top: 0;
         padding-bottom: 0;
+        font-size:30px
      }
     #home_colored_header_title{
       padding-top:0;
       padding-bottom: 0;
+      font-size:30px
     }
     #homeMobileIntro {
         display: none;
@@ -580,6 +619,9 @@
       color: white;
       font-size:23px;
     }
+    .sm_col_desktop{
+      display:block
+    }
 }
 
 /* lg */
@@ -587,6 +629,9 @@
     /* .projectRows2{
       border-bottom:2px solid;
     } */
+    .sm_col{
+      margin-top:0px
+    }
     .home_border_top{
       margin-top: 30px;
     }
@@ -725,8 +770,13 @@
       padding-bottom: 40px;
     margin-top:40px
   }
+  .sm_col{
+    text-align: center;
+    margin-bottom: 200px;
+  }
 }
 @media screen and (min-wdith: 2560px){
+
   .home_border_top{
     margin-top: 0px;
     padding-bottom: 40px;

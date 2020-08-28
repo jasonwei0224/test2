@@ -70,7 +70,7 @@ function UnbeingChinese() {
           subtitle="我跟你的相同，就是我們都不同"
           title='「趣」中國化'
           artistName="藝術家：周童"
-          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse"
+          url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FUnbeingChinese-ch&amp;src=sdkpreparse"
           color="#D9C739"
         ></ProgramInfo>
 
@@ -83,10 +83,10 @@ function UnbeingChinese() {
         <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
         </MainContents_Middle_Adonis>
         <Drawing_Names></Drawing_Names>
-        
+
         <MainContents_OneArtistCH src={tong} title="周童" contents={artistTxt}></MainContents_OneArtistCH>
           <div className="people_padding"></div>
-        <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>
+        <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FUnbeingChinese-ch&amp;src=sdkpreparse"  ></MobileShareButton>
       </Container>
       <FooterCH></FooterCH>
     </div>

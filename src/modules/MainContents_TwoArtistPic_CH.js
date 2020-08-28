@@ -7,11 +7,11 @@ const MainContents_TwoArtistPic_ch = (props) => {
         <div className = "twoArtistPic">
           <Second_Title secondTitle="藝術家簡介"></Second_Title>
             <Row className="mainSection_Row">
-                <Col xl={{span:2, offset:2}} md={{span:5, offset:1}}  xs={{span:4, offset:1}} style={{marginRight:"0px",paddingRight:"0px"}}>
+                <Col xl={{span:2, offset:2}} md={{span:3, offset:1}}  xs={{span:4, offset:1}} style={{marginRight:"0px",paddingRight:"0px"}}>
                     <img src={props.pic1} className="mainSection_Img2"></img>
 
                 </Col>
-                <Col xl={{span:2, offset:0}} md={{span:5, offset:0}}  xs={{span:4, offset:0}}  style={{marginRight:"0px",paddingRight:"0px"}}>
+                <Col xl={{span:2, offset:0}} md={{span:3, offset:0}}  xs={{span:4, offset:0}}  style={{marginRight:"0px",paddingRight:"0px"}}>
                   <img src={props.pic2} className="mainSection_Img2"></img>
                 </Col>
 

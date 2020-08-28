@@ -198,7 +198,7 @@ class OtherSideOfMask extends Component {
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
             artistName2="Walter Kao / Yani-X"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtist>
 
@@ -221,7 +221,7 @@ class OtherSideOfMask extends Component {
           <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="Walter Kao" contents2={artistText2}></MainContents_TwoArtistPic>
           <div className="people_padding"></div>
 
-          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
+          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask&amp;src=sdkpreparse"></MobileShareButton>
         </Container>
 
         <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

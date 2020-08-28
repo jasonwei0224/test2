@@ -185,15 +185,15 @@ a.PI-shareButton_ch:hover{
   @media only screen and (min-width: 992px) {
 
       .PI-subtitle_ch {
-          font-size: 50px;
+          font-size: 40px;
       }
 
       .PI-title_ch {
-          font-size: 60px;
+          font-size: 50px;
       }
 
       .PI-artist_ch {
-          font-size: 50px;
+          font-size: 28px;
       }
 
       a.PI-shareButton_ch {
@@ -203,14 +203,14 @@ a.PI-shareButton_ch:hover{
       }
       .PI-title_twoArtist-ch{
         color:#BE0027;
-        font-size: 60px;
+        font-size: 35px;
         margin-bottom: 45px;
         /* font-weight:bold; */
       /* font-family: sofia-pro, sans-serif; */
       }
 
       .PI-subtitle_twoArtist-ch {
-          font-size: 50px;
+          font-size: 35px;
       }
       .PI-artist-two-ch{
         color: #0C3866;

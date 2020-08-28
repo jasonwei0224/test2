@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import CardGame_ch from "./cardGame-ch";
 import styled from "@emotion/styled";
-import different_img from "../../assets/ToghtherPhoto.jpg";
+import different_img from "../../assets/TogetherPhoto.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProgramInfo_ch from "../programInfo-ch";
 import "./i_am_different-ch.css";
@@ -49,7 +49,9 @@ function IAmDifferent() {
 
 var instruction1 = `此互動作品是由這次疫情中保護我們的前線作業人員一起完成的互動遊戲，讓我們好好的認識他們！遊戲的問題在左上方，請滑鼠點擊圖片並找出職業相同的前線人員們。
 `
-let occupation_list=["Doctor","Paramedic","Nurse","Pharmacist","Therapist","Healthcare Technician", "Firefighter", "Police", "Social Service Worker"]
+// let test_array=[0,1,2,3,4,5]
+// let occupation_list=["Doctor","Paramedic","Nurse","Pharmacist","Therapist","Healthcare Technician", "Firefighter", "Police", "Social Service Worker"]
+let occupation_list=["Nurse","Police"]
 let actual_data_test=["1TesttestetestetasetTherapistaaaa","2ginacoquitlamkim@gmail.comgkTherapistasian",
 "3TesttestetestetasetNurseaaaa","4192jasonVancouverjasonwei0224@gmail.comtestTherapisttesttest.jpg",
 "5TesttestetestetasetDoctorasdf","6ginacoquitlamkim@gmail.comgkNurseasian",
@@ -86,29 +88,37 @@ let photo_count_dic= {
 let autual_data_test2=[];
 
 function checktype(file_name) {
-  if(file_name.search('Therapist')>=0) {
-    return "Therapist";
-  }else if(file_name.search("Other")>=0) {
-    return "Other"
-  }else if(file_name.search("Social_Service_Worker")>=0) {
-    return "Social Service Worker"
-  }else if(file_name.search("Police")>=0) {
+  // if(file_name.search('Therapist')>=0) {
+  //   return "Therapist";
+  // }else if(file_name.search("Other")>=0) {
+  //   return "Other"
+  // }else if(file_name.search("Social_Service_Worker")>=0) {
+  //   return "Social Service Worker"
+  // }else if(file_name.search("Police")>=0) {
+  //   return "Police"
+  // }else if(file_name.search("Pharmacist")>=0) {
+  //   return "Pharmacist"
+  // }else if(file_name.search("Nurse")>=0) {
+  //   return "Nurse"
+  // }else if(file_name.search("Paramedic")>=0) {
+  //   return "Paramedic"
+  // }else if(file_name.search("Healthcare_Technician")>=0) {
+  //   return "Healthcare Technician"
+  // }else if(file_name.search("Firefighter")>=0) {
+  //   return "Firefighter"
+  // }else if(file_name.search("Doctor")>=0) {
+  //   return "Doctor"
+  // }else {
+  //   return -1;
+  // }
+  if(file_name.search("police")>=0) {
     return "Police"
-  }else if(file_name.search("Pharmacist")>=0) {
-    return "Pharmacist"
-  }else if(file_name.search("Nurse")>=0) {
+  }else if(file_name.search("nurse")>=0) {
     return "Nurse"
-  }else if(file_name.search("Paramedic")>=0) {
-    return "Paramedic"
-  }else if(file_name.search("Healthcare_Technician")>=0) {
-    return "Healthcare Technician"
-  }else if(file_name.search("Firefighter")>=0) {
-    return "Firefighter"
-  }else if(file_name.search("Doctor")>=0) {
-    return "Doctor"
   }else {
     return -1;
   }
+
 };
 
 useEffect(()=> {
@@ -127,10 +137,17 @@ var target=null;
 function startGame(){
 
   console.log("Start game");
-    $('span.target').text("Please look for other "+ target_occupation + "(s)");
+  var target_occupation_ch="";
+  if(target_occupation == "Police"){
+    target_occupation_ch = "警察"
+  }else if(target_occupation == "Nurse"){
+    target_occupation_ch = "護士"
+  }
 
-  // console.log("actual test data from server " + actual_data_test[0]);
-  // console.log("The type of " + typeof(actual_data_test));
+    $('span.target').text("請尋找 "+ target_occupation_ch );
+
+  console.log("actual test data from server " + actual_data_test[0]);
+  console.log("The type of " + typeof(actual_data_test));
   // var ready_list=test_array;
   // var actual_data_test3=actual_data_test;
 
@@ -178,15 +195,14 @@ function startGame(){
         // console.log(this);
         console.log("File Name: " +this.getAttribute('type'));
         document.getElementById('inside_'+this.getAttribute('type')).style.visibility='visible';
-        var split_list = this.getAttribute('type').split("-");
+        // var split_list = this.getAttribute('type').split("-");
         // console.log(split_list);
-        // var name = split_list[1].replace(")", " ");
-        var name = split_list[1].replace("_", " ");
-        var ethnicity = split_list[3].replace("_", " ");
-        // ethnicity = ethnicity.replace("_", " ");
-        var city = split_list[4].replace(".jpg", " ");
-        $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
-        // $('span.info').text(this.getAttribute('type'));
+
+        // var name = split_list[1].replace("_", " ");
+        // var ethnicity = split_list[3].replace("_", " ");
+        // var city = split_list[4].replace(".jpg", " ");
+        // $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
+         $('span.info').text("謝謝! ");
         target=this.getAttribute('type');
         console.log("target_occupation: (in EL) " + target_occupation);
         // console.log("target: (in EL) " +target);
@@ -203,13 +219,16 @@ function startGame(){
           document.getElementById('wrapper_'+this.getAttribute('type')).removeEventListener("click", a);
           if(photo_count_dic[target_occupation]==0){
             console.log("game complete");
-              setTimeout(function() {
+            var audio=new Audio('./猜對音效.mp3');
+            audio.play()
+            setTimeout(function() {
+
             document.getElementById("card-deck").style.visibility="hidden";
             document.getElementById("card-deck").style.display="none"
             document.getElementById("diff_top_row").style.display="none";
             document.getElementById("diff_bottom_row").style.display="none";
-            var audio=new Audio('./猜對音效.mp3');
-            audio.play()
+
+
           },3000);
           document.getElementById("main_image_diff").style.display="block";
           }
@@ -269,12 +288,13 @@ var pick_job = function (){
       let fileList = await fetch('IAmDiffGame.php')
       // console.log(fileList.text)
       let data = await fileList.json()
-      // console.log(data)
+      console.log(data)
       // console.log("the type of " + typeof(data))
 
       actual_data_test = Object.values(data);
       for(i =0; i< actual_data_test.length; i++){
-        actual_data_test[i] = "http://gallery.taiwanfest.ca/subjectPhotos/"+actual_data_test[i];
+        // actual_data_test[i] = "http://gallerytest.torontotaiwanfest.ca/subjectPhotos/"+actual_data_test[i];
+        actual_data_test[i] = "http://gallery.torontotaiwanfest.ca/subjectPhotos/"+actual_data_test[i];
       }
       for(var i=0;i<actual_data_test.length;i++) {
         // console.log("1 "+i +" "+ actual_data_test[i])
@@ -295,7 +315,7 @@ var pick_job = function (){
   return (
     <div>
       <Container fluid>
-        {/*}<Row>
+        {/*<Row>
             <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} bsPrefix="image_col">
               <img className="main_image" src={different_img}/>
             </Col>

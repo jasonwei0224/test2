@@ -53,16 +53,10 @@
     display:none;
   }
   .otherside_hint{
-    position:relative;
-    z-index: 999999;
-    left:140%;
-    width:20%
+    display:none
   }
   .otherside_hint2{
-    position:relative;
-    z-index: 999999;
-    left:140%;
-    width:20%
+    display:none
   }
 }
 

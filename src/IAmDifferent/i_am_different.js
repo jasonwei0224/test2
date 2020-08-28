@@ -22,7 +22,7 @@ import MainContents_Important from "../modules/MainContents_Important";
 import MainContents_WithBold_Impt from "../modules/MainContents_WithBold_Impt";
 import MainContents_With_Bold from "../modules/MainContents_WithBold";
 import { Helmet } from "react-helmet";
-import different_img from "../assets/Different.jpg";
+import different_img from "../assets/TogetherPhoto.jpg";
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
 import Second_Title from "../modules/Second_Title"
 
@@ -48,7 +48,8 @@ function IAmDifferent() {
 
 
   // let test_array=[0,1,2,3,4,5]
-  let occupation_list=["Doctor","Paramedic","Nurse","Pharmacist","Therapist","Healthcare Technician", "Firefighter", "Police", "Social Service Worker"]
+  // let occupation_list=["Doctor","Paramedic","Nurse","Pharmacist","Therapist","Healthcare Technician", "Firefighter", "Police", "Social Service Worker"]
+  let occupation_list=["Nurse","Police"]
   let actual_data_test=["1TesttestetestetasetTherapistaaaa","2ginacoquitlamkim@gmail.comgkTherapistasian",
   "3TesttestetestetasetNurseaaaa","4192jasonVancouverjasonwei0224@gmail.comtestTherapisttesttest.jpg",
   "5TesttestetestetasetDoctorasdf","6ginacoquitlamkim@gmail.comgkNurseasian",
@@ -85,29 +86,37 @@ function IAmDifferent() {
   let autual_data_test2=[];
 
   function checktype(file_name) {
-    if(file_name.search('Therapist')>=0) {
-      return "Therapist";
-    }else if(file_name.search("Other")>=0) {
-      return "Other"
-    }else if(file_name.search("Social_Service_Worker")>=0) {
-      return "Social Service Worker"
-    }else if(file_name.search("Police")>=0) {
+    // if(file_name.search('Therapist')>=0) {
+    //   return "Therapist";
+    // }else if(file_name.search("Other")>=0) {
+    //   return "Other"
+    // }else if(file_name.search("Social_Service_Worker")>=0) {
+    //   return "Social Service Worker"
+    // }else if(file_name.search("Police")>=0) {
+    //   return "Police"
+    // }else if(file_name.search("Pharmacist")>=0) {
+    //   return "Pharmacist"
+    // }else if(file_name.search("Nurse")>=0) {
+    //   return "Nurse"
+    // }else if(file_name.search("Paramedic")>=0) {
+    //   return "Paramedic"
+    // }else if(file_name.search("Healthcare_Technician")>=0) {
+    //   return "Healthcare Technician"
+    // }else if(file_name.search("Firefighter")>=0) {
+    //   return "Firefighter"
+    // }else if(file_name.search("Doctor")>=0) {
+    //   return "Doctor"
+    // }else {
+    //   return -1;
+    // }
+    if(file_name.search("police")>=0) {
       return "Police"
-    }else if(file_name.search("Pharmacist")>=0) {
-      return "Pharmacist"
-    }else if(file_name.search("Nurse")>=0) {
+    }else if(file_name.search("nurse")>=0) {
       return "Nurse"
-    }else if(file_name.search("Paramedic")>=0) {
-      return "Paramedic"
-    }else if(file_name.search("Healthcare_Technician")>=0) {
-      return "Healthcare Technician"
-    }else if(file_name.search("Firefighter")>=0) {
-      return "Firefighter"
-    }else if(file_name.search("Doctor")>=0) {
-      return "Doctor"
     }else {
       return -1;
     }
+
   };
 
   useEffect(()=> {
@@ -126,10 +135,14 @@ function IAmDifferent() {
   function startGame(){
 
     console.log("Start game");
-      $('span.target').text("Please look for other "+ target_occupation + "(s)");
+      if(target_occupation == "Police"){
+        $('span.target').text("Please look for police officers.");
+      }else{
+        $('span.target').text("Please look for "+ target_occupation + "(s)");
+      }
 
-    // console.log("actual test data from server " + actual_data_test[0]);
-    // console.log("The type of " + typeof(actual_data_test));
+    console.log("actual test data from server " + actual_data_test[0]);
+    console.log("The type of " + typeof(actual_data_test));
     // var ready_list=test_array;
     // var actual_data_test3=actual_data_test;
 
@@ -177,15 +190,14 @@ function IAmDifferent() {
           // console.log(this);
           console.log("File Name: " +this.getAttribute('type'));
           document.getElementById('inside_'+this.getAttribute('type')).style.visibility='visible';
-          var split_list = this.getAttribute('type').split("-");
+          // var split_list = this.getAttribute('type').split("-");
           // console.log(split_list);
-          // var name = split_list[1].replace(")", " ");
-          var name = split_list[1].replace("_", " ");
-          var ethnicity = split_list[3].replace("_", " ");
-          // ethnicity = ethnicity.replace("_", " ");
-          var city = split_list[4].replace(".jpg", " ");
-          $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
-          // $('span.info').text(this.getAttribute('type'));
+
+          // var name = split_list[1].replace("_", " ");
+          // var ethnicity = split_list[3].replace("_", " ");
+          // var city = split_list[4].replace(".jpg", " ");
+          // $('span.info').text("Thank you, " + name +" a " + ethnicity + " in " + city);
+           $('span.info').text("Thank you!");
           target=this.getAttribute('type');
           console.log("target_occupation: (in EL) " + target_occupation);
           // console.log("target: (in EL) " +target);
@@ -202,13 +214,16 @@ function IAmDifferent() {
             document.getElementById('wrapper_'+this.getAttribute('type')).removeEventListener("click", a);
             if(photo_count_dic[target_occupation]==0){
               console.log("game complete");
-                setTimeout(function() {
+              var audio=new Audio('./猜對音效.mp3');
+              audio.play()
+              setTimeout(function() {
+
               document.getElementById("card-deck").style.visibility="hidden";
               document.getElementById("card-deck").style.display="none"
               document.getElementById("diff_top_row").style.display="none";
               document.getElementById("diff_bottom_row").style.display="none";
-              var audio=new Audio('./猜對音效.mp3');
-              audio.play()
+
+
             },3000);
             document.getElementById("main_image_diff").style.display="block";
             }
@@ -268,12 +283,13 @@ function IAmDifferent() {
         let fileList = await fetch('IAmDiffGame.php')
         // console.log(fileList.text)
         let data = await fileList.json()
-        // console.log(data)
+        console.log(data)
         // console.log("the type of " + typeof(data))
 
         actual_data_test = Object.values(data);
         for(i =0; i< actual_data_test.length; i++){
-          actual_data_test[i] = "http://gallery.taiwanfest.ca/subjectPhotos/"+actual_data_test[i];
+          // actual_data_test[i] = "http://gallerytest.torontotaiwanfest.ca/subjectPhotos/"+actual_data_test[i];
+          actual_data_test[i] = "http://gallery.torontotaiwanfest.ca/subjectPhotos/"+actual_data_test[i];
         }
         for(var i=0;i<actual_data_test.length;i++) {
           // console.log("1 "+i +" "+ actual_data_test[i])

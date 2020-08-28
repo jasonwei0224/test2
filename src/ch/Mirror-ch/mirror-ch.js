@@ -57,13 +57,13 @@ var t = `手機 / 平板`
 
             <Container fluid>
                 <MirrorBird_ch></MirrorBird_ch>
-                  <Slider className="test"></Slider>  
+                  <Slider className="test"></Slider>
             <ProgramInfo
               id="test"
               subtitle="插畫創作"
               title="鏡子"
               artistName="藝術家：盧妍均"
-              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FMirror-ch&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
               <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
@@ -74,7 +74,7 @@ var t = `手機 / 平板`
               <MainContents_OneArtistCH src={mina} title="盧妍均" contents={artistText}></MainContents_OneArtistCH>
 
                 <div className="people_padding"></div>
-            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
+            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FMirror-ch&amp;src=sdkpreparse" ></MobileShareButton>
           </Container>
 
           <FooterCH></FooterCH>

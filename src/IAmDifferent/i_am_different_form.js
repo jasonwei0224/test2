@@ -4,7 +4,7 @@ import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import './IAmDifferentForm.css'
 import Footer from '../footer-temp';
 import fire from '../firebase/file';
-import different_img from "../assets/ToghtherPhoto.jpg";
+import different_img from "../assets/TogetherPhoto.jpg";
 import Button1 from "../modules/Button1";
 import FormSectionTitle from "../modules/FormSection_Title"
 import FormComponent from "../modules/formComponent"

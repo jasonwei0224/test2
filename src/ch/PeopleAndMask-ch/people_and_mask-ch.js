@@ -92,7 +92,7 @@ class PeopleAndMask extends Component {
             artistName1="Lady Hao Hao"
             artistitle2="3D  藝術： "
             artistName2="高于翔 / Yani-X"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPeopleAndMask-ch&amp;src=sdkpreparse"
             color="#D9C739">
 
           </ProgramInfoTwoArtistCH>
@@ -115,7 +115,7 @@ class PeopleAndMask extends Component {
 
 
               <div className="people_padding"></div>
-          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FPeopleAndMask&amp;src=sdkpreparse"></MobileShareButton>
+          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPeopleAndMask-ch&amp;src=sdkpreparse"></MobileShareButton>
 
         </Container>
         <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

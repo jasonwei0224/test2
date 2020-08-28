@@ -161,7 +161,7 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
               subtitle="I'm different, just like you!"
               title="SKY"
               artistName="TAIWANfest"
-              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky&amp;src=sdkpreparse"
               color="#D9C739"
               ></ProgramInfo>
 
@@ -187,7 +187,7 @@ Working with photographers in Canada and Taiwan, Vancouver TAIWANfest presents E
           <FormComponent formId="date" formClassName="inputfield_form" placeHolder="Date"> </FormComponent>
           <FormFile FormId="subjectFile" onChange={this.onChange} hint="File must be .jpg or .png and under 1MB"></FormFile>
           <FormConsent inputId="checkbox-3" consent= "I consent TAIWANfest to use the submitted photo(s) as part of the &quot;Under the same sky&quot; Project."></FormConsent>
-          <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FSky&amp;src=sdkpreparse"></Button1>
+          <Button1 onclick={this.submitForm} title="SUBMIT" togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky&amp;src=sdkpreparse"></Button1>
         </Form>
         <IncompleteFormModal show={this.state.show2} onClick={()=>this.handleModal2()} />
         <SuccessModal show={this.state.show} onClick={()=>this.handleModal()} />

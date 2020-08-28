@@ -11,10 +11,10 @@ const ProgramInfoTwoArtistCH = (props) => {
                     <Row><p className="PI-subtitle-ch" >{props.subtitle}</p></Row>
                     <Row><h1 className="PI-title_twoArtist-ch" >{props.title}</h1></Row>
                     <Row className="PI-secondlast">
-                        <Col className="PI-artist-two-ch"><p className = "PI-Artist-p-ch" >{props.artistitle1}{props.artistName1}</p></Col>
+                        <Col className="PI-artist"><p>{props.artistitle1}{props.artistName1}</p></Col>
                     </Row>
                     <Row className="PI-last">
-                        <Col className="PI-artist-two-ch"><p className = "PI-Artist-p-ch">{props.artistitle2}{props.artistName2}</p></Col>
+                        <Col className="PI-artist"><p>{props.artistitle2}{props.artistName2}</p></Col>
                         <div className="PI-colButton"><Button className="PI-shareButton" href={props.url}  target="_blank" rel="noopener noreferrer" >分享給朋友</Button></div>
                     </Row>
                 </Col>

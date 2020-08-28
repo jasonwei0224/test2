@@ -203,26 +203,26 @@ a.PI-shareButton:hover{
   @media only screen and (min-width: 992px) {
 
       .PI-subtitle {
-          font-size: 50px;
+          font-size: 40px;
       }
       .PI-subtitle_twoArtist {
-          font-size: 50px;
+          font-size: 40px;
       }
 
       .PI-title {
-          font-size: 60px;
+          font-size: 50px;
       }
       .PI-title_twoArtist {
-          font-size: 60px;
+          font-size: 50px;
 
       }
       .PI-artist {
-          font-size: 50px;
+          font-size: 32px;
           font-weight:normal;
       }
       .PI-Artist-p{
-        font-weight: bold;
-        font-size:42px;
+        font-weight: normal;
+        font-size:30px;
       }
       .PI-artist-two{
         color: #0C3866;
@@ -270,7 +270,7 @@ a.PI-shareButton:hover{
   }
   .PI-Artist-p{
     font-size:30px;
-    font-weight: bold
+    font-weight: normal
   }
 
   a.PI-shareButton {
