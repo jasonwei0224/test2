@@ -29,7 +29,7 @@ import slide3 from '../../assets/firefighter.jpg'
 import slide4 from '../../assets/dancer.jpg'
 import slide10 from '../../assets/child.jpg'
 import MainContents_Important_With_Border_two_bolder_ch from "../../modules/MainContents_Important_with_border_two_bold_ch"
-
+import { SocialIcon } from 'react-social-icons';
 class Mirror extends Component {
 
     render() {
@@ -57,13 +57,13 @@ var t = `手機 / 平板`
 
             <Container fluid>
                 <MirrorBird_ch></MirrorBird_ch>
-                  <Slider className="test"></Slider>  
+                  <Slider className="test"></Slider>
             <ProgramInfo
               id="test"
               subtitle="插畫創作"
               title="鏡子"
               artistName="藝術家：盧妍均"
-              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"
+              url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FMirror-ch&amp;src=sdkpreparse"
               color="#D9C739"/>
             <Second_Title secondTitle="作品互動方式：" style={{fontFamily: "sofia-pro Sans-serif"}}></Second_Title>
               <MainContents_Important_With_Border_two_bolder_ch  style={{color:"#0C3866"}} bold="桌機: " contents={instruction1}
@@ -72,9 +72,29 @@ var t = `手機 / 平板`
               </MainContents_Middle_Adonis>
 
               <MainContents_OneArtistCH src={mina} title="盧妍均" contents={artistText}></MainContents_OneArtistCH>
+                <div className="media_col">
+                <Row >
+                    <Col className="SA_artistInfo" xl={{span:10, offset:2}} lg={{span:10, offset:2}} md={{span:1, offset:1}} sm={{ span:1, offset:1}} xs={{span:1, offset:1}}>
+                      <span className="SA_artistInfo">藝術家資訊 :</span>
+                        <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:mlu@threed.tw"/>
+                      </Col>
+                  </Row>
+              </div>
+                <div className="media_col2">
+                    <Row >
+                      <Col className="SA_artistInfo2" xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                        <span className="SA_artistInfo2">藝術家資訊 :</span>
+                        </Col>
+                    </Row>
+                    <Row>
+                      <Col xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                        <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:mlu@threed.tw"/>
+                      </Col>
+                    </Row>
+                    </div>
 
                 <div className="people_padding"></div>
-            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
+            <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FMirror-ch&amp;src=sdkpreparse" ></MobileShareButton>
           </Container>
 
           <FooterCH></FooterCH>

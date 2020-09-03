@@ -4,6 +4,9 @@
 /* * {
   overflow-x: hidden;
 } */
+.inputfield{
+    margin-bottom: 30px;
+}
 .main_image{
   margin: 0px;
   width:100%;

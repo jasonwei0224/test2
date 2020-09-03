@@ -389,7 +389,7 @@ class MirrorBird extends React.Component {
                       <Form.Control id="user_input_mirror" required size="lg"></Form.Control>
                   </Col>
                   <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                    <Button onClick={this.checkAnswer}>Submit</Button>
+                    <Button  className="mirror_submit" onClick={this.checkAnswer}>Submit</Button>
                   {/*}  <p style={{"color":"white"}}>Did you miss something? </p>*/}
                     <Button id="button_mirror1" onClick={this.refresh}>View the drawings again</Button>
                   </Col>
@@ -442,7 +442,7 @@ class MirrorBird extends React.Component {
                     <Form.Control id="user_input_mirror2" required size="lg"></Form.Control>
                 </Col>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                  <Button onClick={this.checkAnswer2}>Submit</Button>
+                  <Button className="mirror_submit" onClick={this.checkAnswer2}>Submit</Button>
                   {/*}<p style={{"color":"white"}}>Did you miss something? </p>*/}
                   <Button  id="button_mirror2" onClick={this.refresh2}>View the drawings again</Button>
                 </Col>
@@ -494,7 +494,7 @@ class MirrorBird extends React.Component {
                     <Form.Control id="user_input_mirror3" required size="lg"></Form.Control>
                 </Col>
                 <Col xl={{span:8, offset:2}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}}>
-                  <Button  onClick={this.checkAnswer3}>Submit</Button>
+                  <Button  className="mirror_submit" onClick={this.checkAnswer3}>Submit</Button>
                   {/*}<p style={{"color":"white"}}>Did you miss something? </p>*/}
                   <Button id ="button_mirror3" onClick={this.refreshPage}>Restart</Button>
                 </Col>

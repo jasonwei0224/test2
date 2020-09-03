@@ -49,10 +49,11 @@ import chinese_mobile_hover from "../../assets/T-UN being Chinese-ch.jpg"
 import section_1 from '../../assets/Tor-ch-1.jpg';
 import section_2 from '../../assets/Tor-ch-2.jpg';
 import HoverImage from "react-hover-image"
+import { SocialIcon } from 'react-social-icons';
 
 
 function Home2() {
-  var text = `世界的紛亂，可能是我們人沒有給彼此空間；\n 大自然的抗議，可能是我們沒有跟它保持距離。\n 藝術家具有冒險的精神，挑戰現實的勇氣。\n文字無法傳達的，讓畫面來說話；\n 感受不到的溫度，讓顏色來點燃。\n在這裡欣賞藝術家的作品，唯一需要的是時間與空間 \n\n 「分享系列藝廊」已開放，其他藝廊將於八月二十八日開放
+  var text = `世界的紛亂，可能是我們人沒有給彼此空間；\n 大自然的抗議，可能是我們沒有跟它保持距離。\n 藝術家具有冒險的精神，挑戰現實的勇氣。\n文字無法傳達的，讓畫面來說話；\n 感受不到的溫度，讓顏色來點燃。\n在這裡欣賞藝術家的作品，唯一需要的是時間與空間
 `
 
 var text2= `線上互動藝廊節目，特別感謝此技術團隊的付出`
@@ -101,6 +102,48 @@ const myRef2 = useRef(null)
         </Row>
         <HomeMobileIntro/>
         <HomeSecondSection id="homeSecondSection" header={text}/>
+        {/*<div id="homeThirdSection">
+          <span  ref ={myRef} ><HomeColoredHeader title="我跟你的相同，就是我們都不同"/></span>
+          <a href=""><HoverImage className="home_image" hoverSrc ={sky_home_hover} src={sky_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href=""><HoverImage className="home_image" hoverSrc ={we_are_all_home_hover} src={we_are_all_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href=""><HoverImage className="home_image" hoverSrc ={chinese_home_hover} src={chinese_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href=""><HoverImage className="home_image" hoverSrc ={mirror_home_hover} src={mirror_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+
+        <span  ref ={myRef2} ><HomeColoredHeader2 title="口罩之說 " image={homepage_placeholder_lg}/></span>
+          <a href=""><HoverImage className="home_image" hoverSrc ={otherside_home_hover} src={otherside_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href=""><HoverImage className="home_image" hoverSrc ={apple_home_hover} src={apple_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
+          <a href=""><HoverImage className="home_image" hoverSrc ={people_and_mask_hover} src={people_and_mask} style={{width:'100%', height:"auto"}}></HoverImage></a>
+
+
+        </div>
+        <Row>
+          <Col xl={{span:4, offset:4}} lg={{span:4, offset:4}} md={{span:10, offset:1}} sm={{span:10, offset:1}} className="sm_col_desktop">
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="facebook" url="https://www.facebook.com/TAIWANfestToronto"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="twitter" url="https://twitter.com/TaiwanfestT"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="youtube" url="https://www.youtube.com/channel/UCks29jGeDZirdgN77qB849Q"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="instagram" url="https://www.instagram.com/taiwanfest.toronto/"/>
+
+          </Col>
+        </Row>
+        <div id="homeThirdSectionMobile">
+            <HomeColoredHeader title="我跟你的相同，就是我們都不同"/>
+            <HomeMobileProject url=""type="線上互動" title="頭頂同一片天計畫" image={sky_online_mobile}/>
+            <HomeMobileProject url="" type="線上互動" title="共同面對的我們" image={diff_online_mobile}/>
+            <HomeMobileProject url="" type="數位創作" title="「趣」中國化" image={chinese_mobile}/>
+            <HomeMobileProject url="" type="插畫創作" title="鏡子" image={mirror_mobile}/>
+            <HomeColoredHeader title="口罩之說" image={homepage_placeholder_lg}/>
+            <HomeMobileProject url="" type="數位創作" title="一罩之隔" image={otherside_mobile}/>
+            <HomeMobileProject url="" type="數位創作" title="保羅的蘋果" image={apple_mobile}/>
+            <HomeMobileProject url="" type="素描創作" title="傲慢與偏見"image={mask_mobile}/>
+              <Row>
+                <Col xl={{span:4, offset:4}} lg={{span:4, offset:4}} md={{span:4, offset:4}} sm={{span:10, offset:1}} className="sm_col">
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="facebook" url="https://www.facebook.com/TAIWANfestToronto" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="instagram" url="https://twitter.com/TaiwanfestT" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="youtube" url="https://www.youtube.com/channel/UCks29jGeDZirdgN77qB849Q" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="twitter" url="https://www.instagram.com/taiwanfest.toronto/" style={{ height: 100, width: 100 }} />
+                </Col>
+              </Row>
+        </div>*/}
         <div id="homeThirdSection">
           <span  ref ={myRef} ><HomeColoredHeader title="我跟你的相同，就是我們都不同"/></span>
           <a href="/Sky-ch"><HoverImage className="home_image" hoverSrc ={sky_home_hover} src={sky_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
@@ -112,9 +155,16 @@ const myRef2 = useRef(null)
           <a href="/OtherSideOfMask-ch"><HoverImage className="home_image" hoverSrc ={otherside_home_hover} src={otherside_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
           <a href="/PaulsApple-ch"><HoverImage className="home_image" hoverSrc ={apple_home_hover} src={apple_home} style={{width:'100%', height:"auto"}}></HoverImage></a>
           <a href="/PeopleAndMask-ch"><HoverImage className="home_image" hoverSrc ={people_and_mask_hover} src={people_and_mask} style={{width:'100%', height:"auto"}}></HoverImage></a>
-
-          {/*}  <SponsorImgSlider id="sponsorSlider"/>*/}
         </div>
+        <Row>
+          <Col xl={{span:4, offset:4}} lg={{span:4, offset:4}} md={{span:10, offset:1}} sm={{span:10, offset:1}} className="sm_col_desktop">
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="facebook" url="https://www.facebook.com/TAIWANfestToronto"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="twitter" url="https://twitter.com/TaiwanfestT"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="youtube" url="https://www.youtube.com/channel/UCks29jGeDZirdgN77qB849Q"/>
+            <SocialIcon target="_blank" rel="noopener noreferrer" network="instagram" url="https://www.instagram.com/taiwanfest.toronto/"/>
+
+          </Col>
+        </Row>
         <div id="homeThirdSectionMobile">
             <HomeColoredHeader title="我跟你的相同，就是我們都不同"/>
             <HomeMobileProject url="/Sky-ch"type="線上互動" title="頭頂同一片天計畫" image={sky_online_mobile}/>
@@ -125,11 +175,18 @@ const myRef2 = useRef(null)
             <HomeMobileProject url="/OtherSideOfMask-ch" type="數位創作" title="一罩之隔" image={otherside_mobile}/>
             <HomeMobileProject url="/PaulsApple-ch" type="數位創作" title="保羅的蘋果" image={apple_mobile}/>
             <HomeMobileProject url="/PeopleAndMask-ch" type="素描創作" title="傲慢與偏見"image={mask_mobile}/>
-
+              <Row>
+                <Col xl={{span:4, offset:4}} lg={{span:4, offset:4}} md={{span:4, offset:4}} sm={{span:10, offset:1}} className="sm_col">
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="facebook" url="https://www.facebook.com/TAIWANfestToronto" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="instagram" url="https://twitter.com/TaiwanfestT" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="youtube" url="https://www.youtube.com/channel/UCks29jGeDZirdgN77qB849Q" style={{ height: 100, width: 100 }} />
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="twitter" url="https://www.instagram.com/taiwanfest.toronto/" style={{ height: 100, width: 100 }} />
+                </Col>
+              </Row>
         </div>
         <div>
           <Row>
-              <Col xl={{span:10, offset:1}} lg={{span:10, offset:2}} sm={{span:10, offset:1}}>
+              <Col xl={{span:8, offset:2}} lg={{span:8, offset:2}} md={{span:10, offset:1}} sm={{span:10, offset:1}}>
                 <div className="home_border_top" style={{borderTop:"solid 1px #d9c639"}}/>
               </Col>
           </Row>
@@ -143,7 +200,7 @@ const myRef2 = useRef(null)
             <Col xl={{span:6, offset:3}} lg={{span:10, offset:1}} sm={{span:10, offset:1}}xs={{span:10, offset:1}} className="ack_name">{creators}</Col>
           </Row>
           <Row>
-              <Col xl={{span:10, offset:1}} lg={{span:6, offset:2}} sm={{span:10, offset:1}}>
+              <Col xl={{span:8, offset:2}} lg={{span:8, offset:2}} sm={{span:10, offset:1}}>
                 <div className="home_border_bottom"style={{borderTop:"solid 1px #d9c639"}}/>
               </Col>
           </Row>

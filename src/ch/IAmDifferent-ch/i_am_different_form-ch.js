@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Form, Button, Modal, Dropdown} from 'react-bootstrap';
 import ProgramInfo_ch from "../programInfo-ch"
-import different_img from "../../assets/ToghtherPhoto.jpg";
+import different_img from "../../assets/TogetherPhoto.jpg";
 
 import './IAmDifferentForm-ch.css'
 import FooterCH from "../footer-ch";
@@ -149,7 +149,8 @@ class IAmDifferentForm extends Component {
             </Col>
           </Row>
 
-          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferentForm-ch&amp;src=sdkpreparse" color="#0C3866"></ProgramInfo_ch>
+          <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="共同面對的我們" artistName="台灣文化節"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferentForm-ch&amp;src=sdkpreparse"   color="#0C3866"></ProgramInfo_ch>
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>
         <FormSectionTitle_ch title="照片資訊"></FormSectionTitle_ch>
 
@@ -193,7 +194,7 @@ class IAmDifferentForm extends Component {
 
 
 
-            <ButtonCh title="送出" onclick={this.submitForm} url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferentForm-ch&amp;src=sdkpreparse"></ButtonCh>
+            <ButtonCh title="送出" onclick={this.submitForm} url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FIAmDifferentForm-ch&amp;src=sdkpreparse" ></ButtonCh>
 
 
           </Form>

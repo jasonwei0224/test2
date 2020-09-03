@@ -106,12 +106,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .second_Title_P{
+  /* .second_Title_P{
       color:#BE0027;
       font-size: 40px;
-      /* font-weight: bold; */
       font-family: "sofia-pro", Sans-serif;
-          margin-top: 0px;
   }
   .second_Title_P_bold{
     color:#BE0027;
@@ -132,7 +130,7 @@
     font-weight: bold;
     font-family: "sofia-pro", Sans-serif;
       margin-top: 85px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {

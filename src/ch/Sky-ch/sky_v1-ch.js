@@ -162,7 +162,8 @@ class SkyV1_ch extends Component {
             </Col>
         </Row>*/}
 
-      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="頭頂同一片天計畫" artistName="台灣文化節" url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky-ch&amp;src=sdkpreparse" color="#D9C739">
+      <ProgramInfo_ch subtitle="我跟你的相同，就是我們都不同" title="同一片天計畫" artistName="台灣文化節"
+        url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fsky-ch&amp;src=sdkpreparse" color="#D9C739">
       </ProgramInfo_ch>
 
             <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}></MainContents_Middle_Adonis>

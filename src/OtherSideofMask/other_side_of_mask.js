@@ -37,7 +37,7 @@ This art piece portrays the irony that on the flip side of every beautiful story
 
 “The Other Side of Masks” serves as a reminder that our words and actions, in spite of their beauty, can also hold unintentional danger. And just like the two sides of a mask, we must see both sides in order to grow.
 `
-var artistText1 = `A Taiwanese artist who immigrated to Canada during her high school years, but as she wasn’t allowed to draw or paint in Canada, she soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
+var artistText1 = `A Taiwanese artist who immigrated to Canada during her high school years, but her home stay wouldn’t allow to draw or paint in Canada. She soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
 
 Art has always been her pride and joy and feeds her spirit. For her, creativity is like asking herself reflective questions and answering them in the process of self-discovery. In recent years, she has been curious about “installation art” and also experiencing the diverse communities in Canada, learning the creative thinking of experts, and accumulating her own creations. Each time she releases a piece, we see “echoes”, “discussions”, “emotions” and “habits” between art and people, exploring and dancing with diversity.
 `
@@ -198,7 +198,7 @@ class OtherSideOfMask extends Component {
             artistName1="Lady Hao Hao"
             artistitle2="3D Artist: "
             artistName2="Walter Kao / Yani-X"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtist>
 
@@ -221,7 +221,7 @@ class OtherSideOfMask extends Component {
           <MainContents_TwoArtistPic pic1={ladyhaohao} title1="Lady Hao Hao"contents1={artistText1} pic2={walter} title2="Walter Kao" contents2={artistText2}></MainContents_TwoArtistPic>
           <div className="people_padding"></div>
 
-          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask&amp;src=sdkpreparse"></MobileShareButton>
+          <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask&amp;src=sdkpreparse"></MobileShareButton>
         </Container>
 
         <Footer content= "&copy; 2020 TAIWANESE CANADIAN ASSOCIATION OF TORONTO"></Footer>

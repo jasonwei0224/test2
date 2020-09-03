@@ -22,7 +22,7 @@ import other_side_hint from "../../assets/otherside_red_hint.png"
 var text = `口罩是這次疫情保護人類、對抗病毒的武器；但是當它翻轉180度後，竟然發現口罩內側最貼近我們、隔著自己與別人的那一面，色彩張狂，圖案詭譎，即使你想仔細觀看卻看不清楚！那貌似美麗的畫面是什麼？為什麼這樣美麗的創作，卻包裹在口罩裡面？這是我們希望每一位觀看者看見作品時，都能產生的好奇與疑問。\n
 透過這樣的作品呈現，讓人不禁懷疑，到底那一面是「保護」？那一面是我們應該相信的「真實」？我們常常經由語言與行為，表達傷害與歧視；在這次的疫情裡，我們也看見了許多美麗包裝下的話術，說出來的卻是醜陋的意涵與不實的陳述。這次的疫情如此嚴重，究竟是因為病毒肆虐，還是我們選擇性無視那真實的訊息？\n
 「我在創作這幅畫作時，非常清楚的想要呈現一個美麗的畫面，而這個美麗的畫面卻是人們所害怕的事實。我足足花了兩個星期思考：『它』是什麼樣子？人們何時成為了病毒滋生的溫床，習慣它並與它共存？！\n
-「內心信仰的藝術品，又該如何說服自己，它很美卻又是病毒。」－ 藝術家Lady Hao Hao
+「內心信仰的藝術品，又該如何說服自己，它很美卻又是病毒。」－ 藝術家 Lady Hao Hao
 `
 
 var artistText1 = `加拿大台裔藝術家，高中時期移民來到加拿大，但因為寄宿家庭的限制不能畫畫，而回到台灣繼續與藝術為伍。在台灣大學畢業後，再次回到加拿大，在多元的土地上吸收養分。
@@ -88,7 +88,7 @@ class OtherSideOfMask_ch extends Component {
             artistName1="Lady Hao Hao"
             artistitle2="3D  藝術： "
             artistName2="高于翔 / Yani-X"
-            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"
+            url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask-ch&amp;src=sdkpreparse"
             color="#D9C739">
           </ProgramInfoTwoArtistCH>
 
@@ -112,7 +112,7 @@ class OtherSideOfMask_ch extends Component {
 
           <div className="people_padding"></div>
 
-          <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FOtherSideOfMask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
+          <MobileShareButton_ch togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2Fothersideofmask-ch&amp;src=sdkpreparse"></MobileShareButton_ch>
         </Container>
           <FooterCH/>
         </div>
