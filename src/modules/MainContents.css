@@ -1,3 +1,27 @@
+.social-icon{
+  margin-right: 20px
+}
+.SA_artistInfo{
+    color:#0C3866;
+    margin-top:auto;
+    margin-bottom:auto;
+    font-weight: bold;
+    font-size:20px;
+    margin-right: 20px;
+}
+.SA_artistInfo2{
+  color:#0C3866;
+  /* margin-top:auto; */
+  /* margin-bottom:auto; */
+  font-weight: bold;
+  font-size:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.media_col{
+  margin-top:60px;
+  margin-bottom:80px;
+}
 
 .mainSection_two_img{
   width: 100%;
@@ -125,6 +149,25 @@
 
 }
 @media screen and (max-width: 767px) {
+  .social-icon{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .SA_artistInfo{
+    font-size: 30px;
+  }
+  .SA_artistInfo2{
+    font-size: 35px;
+    margin-bottom: 70px;
+  }
+  .media_col{
+    display: none;
+  }
+  .media_col2{
+    display: block;
+    margin-top:60px;
+    margin-bottom:90px;
+  }
   .main_borderline{
     margin-top: 70px;
     margin-bottom:20px;
@@ -225,6 +268,25 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .social-icon{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .SA_artistInfo{
+    font-size: 30px;
+  }
+  .SA_artistInfo2{
+    font-size: 35px;
+    margin-bottom: 70px;
+  }
+  .media_col{
+    display: none;
+  }
+  .media_col2{
+    display: block;
+    margin-top:60px;
+    margin-bottom:90px;
+  }
   .main_borderline{
     margin-top: 70px;
     margin-bottom:20px;
@@ -334,6 +396,25 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .social-icon{
+    height: 50px !important;
+    width:50px !important;
+  }
+  .SA_artistInfo{
+    font-size: 30px;
+  }
+  .SA_artistInfo2{
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+  .media_col{
+    display: none;
+  }
+  .media_col2{
+    display: block;
+    margin-top:50px;
+    margin-bottom:80px;
+  }
   .main_borderline{
     margin-top: 70px;
     margin-bottom:20px;
@@ -380,6 +461,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .social-icon{
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .SA_artistInfo{
+    font-size: 18px;
+  }
+  .SA_artistInfo2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .media_col2{
+    display: none;
+  }
+  .media_col{
+    display: block;
+  }
   .main_borderline{
     margin-top: 70px;
     margin-bottom:0px;

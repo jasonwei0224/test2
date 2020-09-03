@@ -29,6 +29,7 @@ import slide3 from '../assets/fireman.jpg'
 import slide4 from '../assets/dancer.jpg'
 import slide10 from '../assets/child.jpg'
 import MainContents_Important_With_Border_two_bolder from "../modules/MainContents_Important_with_border_two_bold"
+import { SocialIcon } from 'react-social-icons';
 
 
 class Mirror extends Component {
@@ -71,6 +72,26 @@ var images = [slide1, slide2, slide3, slide4, slide10]
               <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
               </MainContents_Middle_Adonis>
               <MainContents_OneArtist src={mina} title="Yen-Chun Lu" contents={artistText}></MainContents_OneArtist>
+                <div className="media_col">
+                <Row >
+                    <Col className="SA_artistInfo" xl={{span:10, offset:2}} lg={{span:10, offset:2}} md={{span:1, offset:1}} sm={{ span:1, offset:1}} xs={{span:1, offset:1}}>
+                      <span className="SA_artistInfo">ARTIST INFO:</span>
+                        <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:mlu@threed.tw"/>
+                      </Col>
+                  </Row>
+              </div>
+                <div className="media_col2">
+                    <Row >
+                      <Col className="SA_artistInfo2" xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                        <span className="SA_artistInfo2">ARTIST INFO:</span>
+                        </Col>
+                    </Row>
+                    <Row>
+                      <Col xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                        <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:mlu@threed.tw"/>
+                      </Col>
+                    </Row>
+                    </div>
                 <div className="people_padding"></div>
             <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2F%23%2FMirror&amp;src=sdkpreparse"></MobileShareButton>
           </Container>

@@ -16,6 +16,8 @@ import './pauls_apple.css'
 import ladyhaohao from '../assets/Lady Hao Hao.jpg'
 import MainContents_Middle_Adonis from "../modules/MainContents_Middle_Adonis"
 import MainContents_OneArtist from "../modules/MainContents_OneArtist"
+import { Button, Row, Col } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
 function PaulsApple() {
   var text =`I am convinced that I am more powerful than the painters around me. I am not just saying it casually, but from the sincere feelings in my heart. For me, painting is not just to pursue a perfect image on the surface, but through a non-written creation, to express the absolute and truth behind perfection. These are the feelings expressed in Cezanne's letter to his mother.
@@ -27,7 +29,7 @@ While mankind pursued fame and wealth, nature has been inadvertently destroyed. 
 The original Latin text of the still life painting is "Vanitas," in English it means Vanity. Lady Hao Hao, who has learned to create in a variety of non-native languages, wants to see within the art of the masters, the significance shown in the reflection of before and after survival. "The world is so grandiose and short. We, as humans, are but mortal."
 `
 
-var artistText1=`A Taiwanese artist who immigrated to Canada during her high school years, but as she wasn’t allowed to draw or paint in Canada, she soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
+var artistText1=`A Taiwanese artist who immigrated to Canada during her high school years, but her home stay wouldn’t allow to draw or paint in Canada. She soon returned to Taiwan to pursue those desires. After she graduated from university in Taiwan, she returned to Canada to absorb the essence of this diverse land.
 
 Art has always been her pride and joy and feeds her spirit. For her, creativity is like asking herself reflective questions and answering them in the process of self-discovery. In recent years, she has been curious about “installation art” and also experiencing the diverse communities in Canada, learning the creative thinking of experts, and accumulating her own creations. Each time she releases a piece, we see “echoes”, “discussions”, “emotions” and “habits” between art and people, exploring and dancing with diversity.
 `
@@ -63,6 +65,26 @@ Art has always been her pride and joy and feeds her spirit. For her, creativity 
           <MainContents_Middle_Adonis style={{color:"#0C3866"}} font="adonis-web" contents={text}>
                         </MainContents_Middle_Adonis>
         <MainContents_OneArtist src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtist>
+          <div className="media_col">
+          <Row >
+              <Col className="SA_artistInfo" xl={{span:10, offset:2}} lg={{span:10, offset:2}} md={{span:1, offset:1}} sm={{ span:1, offset:1}} xs={{span:1, offset:1}}>
+                <span className="SA_artistInfo">ARTIST INFO:</span>
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:theladyhaohao@gmail.com"/>
+                </Col>
+            </Row>
+        </div>
+          <div className="media_col2">
+              <Row >
+                <Col className="SA_artistInfo2" xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                  <span className="SA_artistInfo2">ARTIST INFO:</span>
+                  </Col>
+              </Row>
+              <Row>
+                <Col xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                  <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:theladyhaohao@gmail.com"/>
+                </Col>
+              </Row>
+              </div>
                           <div className="people_padding"></div>
 
         <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPaulsApple&amp;src=sdkpreparse" ></MobileShareButton>

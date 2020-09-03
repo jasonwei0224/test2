@@ -15,6 +15,7 @@ import ladyhaohao from '../../assets/Lady Hao Hao.jpg'
 import ReactCompareImage from 'react-compare-image';
 import image1 from '../../assets/paulsapples1.jpg';
 import image2 from '../../assets/paulsapples2.jpg';
+import { SocialIcon } from 'react-social-icons';
 
 function PaulsApple_ch() {
   var text =`”我深信自己比周遭的畫家，都要來得有力量。我這可不是隨便說說的，而是出自內心真誠的感受。對我來說，繪畫並不只是要追求外表上的完美畫面而已，而次要透過不段的創作，來表現隱含在完美之後的絕對與真實“ - 截自塞尚寫給母親的信
@@ -63,6 +64,26 @@ var artistText1=`加拿大台裔藝術家，高中時期移民來到加拿大，
                <MainContents_Important_With_Border style={{color:"#0C3866"}} contents="請將滑鼠移到中間箭頭並上下滑動，看一看兩張圖有甚麼不同。"></MainContents_Important_With_Border>
              <MainContents_Middle_Adonis style={{color:"#0C3866"}} contents={text}></MainContents_Middle_Adonis>
                <MainContents_OneArtistCH src={ladyhaohao} title="Lady Hao Hao" contents={artistText1}></MainContents_OneArtistCH>
+                 <div className="media_col">
+                 <Row >
+                     <Col className="SA_artistInfo" xl={{span:10, offset:2}} lg={{span:10, offset:2}} md={{span:1, offset:1}} sm={{ span:1, offset:1}} xs={{span:1, offset:1}}>
+                       <span className="SA_artistInfo">藝術家資訊 :</span>
+                         <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:theladyhaohao@gmail.com"/>
+                       </Col>
+                   </Row>
+               </div>
+                 <div className="media_col2">
+                     <Row >
+                       <Col className="SA_artistInfo2" xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                         <span className="SA_artistInfo2">藝術家資訊 :</span>
+                         </Col>
+                     </Row>
+                     <Row>
+                       <Col xl={{span:10, offset:2}} lg={{span:10, offset:1}} md={{span:10, offset:1}} sm={{ span:10, offset:1}} xs={{span:10, offset:1}}>
+                         <SocialIcon target="_blank" rel="noopener noreferrer" network="mailto" url="mailto:theladyhaohao@gmail.com"/>
+                       </Col>
+                     </Row>
+                     </div>
                  <div className="people_padding"></div>
                <MobileShareButton togoUrl="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgallery.torontotaiwanfest.ca%2FPaulsApple-ch&amp;src=sdkpreparse" ></MobileShareButton>
                </Container>
