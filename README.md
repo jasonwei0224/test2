@@ -15,13 +15,13 @@ This is a project done for Toronto TAIWANfest an annual festival organized by As
 
 ### Program Information:
 * Under the same sky project 
-   * looking past our diffference we can see that we are one and the same
+   * Looking past our diffference we can see that we are one and the same.
 * We are all in this together
-   * Card flipping game looking for a certain occupation
-   * highlight essentail workers and deliver message that we may look different and have varied values, we are all in this together
+   * Card flipping game looking for a certain occupation.
+   * Highlight essentail workers and deliver message that we may look different and have varied values, we are all in this together.
 * (Un)Being Chinese
-   * Artwork by Chinese born Canadian Tong Zhou 
-   * A lighter way to examine our identities
+   * Artwork by Chinese born Canadian Tong Zhou.
+   * A lighter way to examine our identities.
 * Mirror
    * Difference in skin color offer a convenient way to see poele, but when did people turn these into weapons to harm others?
 * The other side of masks
