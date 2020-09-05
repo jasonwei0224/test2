@@ -1,5 +1,6 @@
 # 2020 TAIWANfest Onlie Art Gallery
-This is an ReactJS web app that provides [Toronto TAIWANfest](http://torontotaiwanfest.ca/) attendees to attend the festival online 
+This is an ReactJS web app that is part of [2020 Toronto TAIWANfest](http://torontotaiwanfest.ca/) which switched to virtual programming due to the ongoing COVID-19 Pandemic.
+The web app provides festival attendees to continue particiapte in the festival through viewing various interactive artworks. 
 
 ## Table of contents
 * [Project Background ](#project-background)
@@ -12,12 +13,19 @@ This is an ReactJS web app that provides [Toronto TAIWANfest](http://torontotaiw
 ## Project Background 
 This is a project done for Toronto TAIWANfest an annual festival organized by Asian-Canadian Special Event Association. 
 
-### Programs:
-* Under the same sky project
+### Program Information:
+* Under the same sky project 
+   * looking past our diffference we can see that we are one and the same
 * We are all in this together
+   * Card flipping game looking for a certain occupation
+   * highlight essentail workers and deliver message that we may look different and have varied values, we are all in this together
 * (Un)Being Chinese
+   * Artwork by Chinese born Canadian Tong Zhou 
+   * A lighter way to examine our identities
 * Mirror
+   * Difference in skin color offer a convenient way to see poele, but when did people turn these into weapons to harm others?
 * The other side of masks
+  * The purpose of masks is to protect us from getting sick or prevent the spreading of disease, but sometimes it is our own actions or words that do more harm.
 * Paul's Apples
 * People and Mask
 
